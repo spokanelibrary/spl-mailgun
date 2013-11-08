@@ -74,6 +74,7 @@ function spl_mailgun_newsletter_list_meta_box($object, $box) { ?>
 			<option value="dev">Development</option>
 			<option value="test">Test Message</option>
 			<option value="all">All Subscribers</option>
+			<option value="todo">ToDo: Get these from mailgun</option>
 		</select>
 	</p>
 <?php }
