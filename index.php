@@ -19,7 +19,7 @@ function spl_mailgun_newsletter() {
 		'name'               => _x( 'Newsletters', 'post type general name' ),
 		'singular_name'      => _x( 'Newsletter', 'post type singular name' ),
 		'add_new'            => _x( 'Add New', 'newsletter' ),
-		'add_new_item'       => __( 'Add New Newsletters' ),
+		'add_new_item'       => __( 'Add New Newsletter' ),
 		'edit_item'          => __( 'Edit Newsletter' ),
 		'new_item'           => __( 'New Newsletter' ),
 		'all_items'          => __( 'All Newsletters' ),
