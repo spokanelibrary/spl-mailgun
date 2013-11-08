@@ -15,7 +15,35 @@ Version: 0.1
 */
 
 function spl_mailgun_newsletter() {
-	$args = array();
+	$labels = array(
+		'name'               => _x( 'Newsletters', 'post type general name' ),
+		'singular_name'      => _x( 'Newsletter', 'post type singular name' ),
+		'add_new'            => _x( 'Add New', 'newsletter' ),
+		'add_new_item'       => __( 'Add New Newsletters' ),
+		'edit_item'          => __( 'Edit Newsletter' ),
+		'new_item'           => __( 'New Newsletter' ),
+		'all_items'          => __( 'All Newsletters' ),
+		'view_item'          => __( 'View Newsletters' ),
+		'search_items'       => __( 'Search Newsletters' ),
+		'not_found'          => __( 'No newsletters found' ),
+		'not_found_in_trash' => __( 'No newsletters found in the Trash' ), 
+		'parent_item_colon'  => '',
+		'menu_name'          => 'Newsletters'
+	);
+	$args = array(
+		'labels'        => $labels,
+		'description'   => 'Newsletters',
+		'public'        => true,
+		'menu_position' => 5,
+		'supports'      => array( 'title'
+														, 'editor'
+														, 'thumbnail'
+														//, 'excerpt'
+														//, 'comments' 
+														),
+		'has_archive'   => true,
+	);
+
 	register_post_type( 'newsletter', $args );	
 }
 add_action( 'init', 'spl_mailgun_newsletter' );
