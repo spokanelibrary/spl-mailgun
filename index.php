@@ -14,5 +14,12 @@ Author URI: http://seangirard.com
 Version: 0.1
 */
 
+function spl_mailgun_newsletter() {
+	$args = array();
+	register_post_type( 'newsletter', $args );	
+}
+add_action( 'init', 'spl_mailgun_newsletter' );
+
+
 
 ?>
