@@ -53,7 +53,9 @@ function spl_mailgun_newsletter_box() {
         'spl_mailgun_newsletter_box',
         __( 'Newsletter Info', 'spl_mailgun_newsletter_box_display' ),
         'spl_mailgun_newsletter_box_box_content',
-        'label'
+        'newsletter',
+        'side',
+        'high'
     );
 }
 add_action( 'add_meta_boxes', 'spl_mailgun_newsletter_box' );
