@@ -62,7 +62,7 @@ function spl_mailgun_newsletter_meta_boxes_setup() {
 	);
 }
 
-function spl_mailgun_newsletter_list_meta_box($object, $box) ?>
+function spl_mailgun_newsletter_list_meta_box($object, $box) { ?>
 
 	<?php wp_nonce_field( basename( __FILE__ ), 'spl_mailgun_newsletter_list_nonce' ); ?>
 
