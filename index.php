@@ -67,7 +67,7 @@ function spl_mailgun_newsletter_list_meta_box($object, $box) { ?>
 	<?php wp_nonce_field( basename( __FILE__ ), 'spl_mailgun_newsletter_list_nonce' ); ?>
 
 	<p>
-		<label for="spl-mailgun-newsletter-list"><?php _e( "Add a custom CSS class, which will be applied to WordPress' post class.", 'example' ); ?></label>
+		<label for="spl-mailgun-newsletter-list"><?php _e( "Choose a mailing list' post class.", 'example' ); ?></label>
 		<br />
 		<input class="widefat" type="text" name="spl-mailgun-newsletter-list" id="spl-mailgun-newsletter-list" value="<?php echo esc_attr( get_post_meta( $object->ID, 'spl_mailgun_newsletter_list_meta_box', true ) ); ?>" size="30" />
 	</p>
