@@ -99,7 +99,7 @@ function spl_newsletter_metaboxes( $meta_boxes ) {
                                               , 'id' => $prefix . 'newsletter_post_1'
                                               , 'type' => 'post_select'
                                           )
-                                          array('name' => 'Select Post'
+                                        , array('name' => 'Select Post'
                                               , 'desc' => ''
                                               , 'id' => $prefix . 'newsletter_post_2'
                                               , 'type' => 'post_select'
