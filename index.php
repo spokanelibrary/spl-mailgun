@@ -154,8 +154,8 @@ function spl_newsletter_metaboxes( $meta_boxes ) {
                                               , 'desc' => ''
                                               , 'id' => $prefix . 'newsletter_post_'.$i
                                               , 'type' => 'post_select'
-                                              , 'limit' => 10
-                                              , 'post_type' => 'page'
+                                              , 'limit' => 20 // limit number of options
+                                              , 'post_type' => 'post' // post_type to query for
                                           );
   }
 
@@ -183,6 +183,7 @@ function sm_cmb_render_post_select( $field, $meta ) {
 	$post_type = ($field['post_type'] ? $field['post_type'] : 'post');
 	$limit = ($field['limit'] ? $field['limit'] : '-1');
 	echo '<select name="', $field['id'], '" id="', $field['id'], '">';
+	// get_posts orders by post_date desc?
 	$posts = get_posts('post_type='.$post_type.'&numberposts='.$limit.'&posts_per_page='.$limit);
 	
 	echo '<option value="">None</option>';
