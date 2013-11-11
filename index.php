@@ -19,14 +19,14 @@ We're using this metabox toolkit
 https://github.com/jaredatch/Custom-Metaboxes-and-Fields-for-WordPress
 */
 // make sure the metabox class exists
-function spl_mailgun_initialize_cmb_meta_boxes() {
+function spl_mailgun_init_cmb_meta_boxes() {
   if ( !class_exists( 'cmb_Meta_Box' ) ) {
     require_once( plugin_basename('/metabox/init.php') );
   }
 }
-add_action( 'init', 'spl_mailgun_initialize_cmb_meta_boxes', 9999 );
+add_action( 'init', 'spl_mailgun_init_cmb_meta_boxes', 9999 );
 
-function spl_mailgun_newsletter() {
+function spl_mailgun_init_newsletter() {
 	$labels = array(
 		'name'               => _x( 'Newsletters', 'post type general name' ),
 		'singular_name'      => _x( 'Newsletter', 'post type singular name' ),
@@ -58,7 +58,9 @@ function spl_mailgun_newsletter() {
 
 	register_post_type( 'newsletter', $args );	
 }
-add_action( 'init', 'spl_mailgun_newsletter' );
+add_action( 'init', 'spl_mailgun_init_newsletter' );
+
+
 
 add_action( 'load-post.php', 'spl_mailgun_newsletter_meta_boxes_setup' );
 add_action( 'load-post-new.php', 'spl_mailgun_newsletter_meta_boxes_setup' );
