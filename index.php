@@ -86,7 +86,7 @@ function spl_mailgun_newsletter_publish_control($object, $box) {
 	<p>
 		<label for="spl-mailgun-newsletter-address">Send to this address:</label>
 		<br />
-		<input type="text" name="spl-mailgun-newsletter-address" id="spl-mailgun-newsletter-address" />
+		<input class="widefat" type="text" name="spl-mailgun-newsletter-address" id="spl-mailgun-newsletter-address" />
 	</p>
 	';
 	echo $email;
