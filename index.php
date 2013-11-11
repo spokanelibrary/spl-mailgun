@@ -85,6 +85,24 @@ function spl_newsletter_metaboxes( $meta_boxes ) {
                                     )
                   );
 
+  $meta_boxes[] = array('id' => 'spl_post_select'
+                      , 'title' => 'Select Post'
+                      , 'pages' => array('newsletter') // post type
+                      //, 'show_on' => array( 'key' => 'page-template', 'value' => 'template-newsletter.php' )
+                      , 'context' => 'normal'
+                      , 'priority' => 'high'
+                      , 'show_names' => true // Show field names on the left
+                      
+                      , 'fields' => array(
+                                          array('name' => 'Select Post'
+                                              , 'desc' => ''
+                                              , 'id' => $prefix . 'newsletter_post'
+                                              , 'type' => 'post_select'
+                                          )
+                                    )
+                      
+                  );
+
   return $meta_boxes;
 }
 
@@ -123,10 +141,32 @@ function spl_mailgun_newsletter_list_meta_box($object, $box) { ?>
 ?>
 
 <?php
-add_action( 'cmb_render_text_email', 'rrh_cmb_render_text_email', 10, 2 );
-function rrh_cmb_render_text_email( $field, $meta ) {
-    echo '<input type="text" name="', $field['id'], '" id="', $field['id'], '" value="', $meta ? $meta : $field['std'], '" style="width:97%" />','<p class="cmb_metabox_description">', $field['desc'], '</p>';
+// render post select
+add_action( 'cmb_render_post_select', 'sm_cmb_render_post_select', 10, 2 );
+
+function sm_cmb_render_post_select( $field, $meta ) {
+	$post_type = ($field['post_type'] ? $field['post_type'] : 'post');
+	$limit = ($field['limit'] ? $field['limit'] : '-1');
+	echo '<select name="', $field['id'], '" id="', $field['id'], '">';
+	$posts = get_posts('post_type='.$post_type.'&numberposts='.$limit.'&posts_per_page='.$limit);
+	
+	foreach ( $posts as $art ) {
+		if ($art->ID == $meta ) {
+			echo '<option value="' . $art->ID . '" selected>' . get_the_title($art->ID) . '</option>';
+		} else {
+			echo '<option value="' . $art->ID . '  ">' . get_the_title($art->ID) . '</option>';
+		}
+	}
+	echo '</select>';
+	echo '<p class="cmb_metabox_description">', $field['desc'], '</p>';
 }
+
+// the field doesnt really need any validation, but just in case
+add_filter( 'cmb_validate_post_select', 'rrh_cmb_validate_post_select' );
+function rrh_cmb_validate_post_select( $new ) {
+    return $new;
+}
+
 ?>
 
 <?php
