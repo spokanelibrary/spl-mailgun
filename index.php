@@ -54,9 +54,10 @@ function spl_mailgun_init_newsletter() {
 														//, 'comments' 
 														),
 		'has_archive'   => true,
+		'slug'					=> 'newsletters'
 	);
 
-	register_post_type( 'newsletter', $args );	
+	register_post_type( 'spl_mailgun_newsletter', $args );	
 }
 add_action( 'init', 'spl_mailgun_init_newsletter' );
 
