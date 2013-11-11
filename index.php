@@ -69,8 +69,8 @@ function spl_mailgun_newsletter_meta_boxes_setup() {
 function spl_newsletter_metaboxes( $meta_boxes ) {
   $prefix = '_cmb_'; // Prefix for all fields
 
-  $meta_boxes[] = array('id' => 'spl_newsletter_intro'
-                      , 'title' => 'Newsletter Intro'
+  $meta_boxes[] = array('id' => 'spl_sidebar_intro'
+                      , 'title' => 'Sidebar Intro'
                       , 'pages' => array('newsletter') // post type
                       //, 'show_on' => array( 'key' => 'page-template', 'value' => 'template-newsletter.php' )
                       , 'context' => 'normal'
@@ -79,14 +79,14 @@ function spl_newsletter_metaboxes( $meta_boxes ) {
                       , 'fields' => array(
                                           array('name' => 'Headline'
                                               , 'desc' => ''
-                                              , 'id' => $prefix . 'newsletter_headline'
+                                              , 'id' => $prefix . 'sidebar_headline'
                                               , 'type' => 'text_medium'
                                           )
                                     )
                   );
 
   $meta_boxes[] = array('id' => 'spl_post_select'
-                      , 'title' => 'Select Post'
+                      , 'title' => 'Add Posts'
                       , 'pages' => array('newsletter') // post type
                       //, 'show_on' => array( 'key' => 'page-template', 'value' => 'template-newsletter.php' )
                       , 'context' => 'normal'
@@ -96,7 +96,12 @@ function spl_newsletter_metaboxes( $meta_boxes ) {
                       , 'fields' => array(
                                           array('name' => 'Select Post'
                                               , 'desc' => ''
-                                              , 'id' => $prefix . 'newsletter_post'
+                                              , 'id' => $prefix . 'newsletter_post_1'
+                                              , 'type' => 'post_select'
+                                          )
+                                          array('name' => 'Select Post'
+                                              , 'desc' => ''
+                                              , 'id' => $prefix . 'newsletter_post_2'
                                               , 'type' => 'post_select'
                                           )
                                     )
@@ -150,6 +155,7 @@ function sm_cmb_render_post_select( $field, $meta ) {
 	echo '<select name="', $field['id'], '" id="', $field['id'], '">';
 	$posts = get_posts('post_type='.$post_type.'&numberposts='.$limit.'&posts_per_page='.$limit);
 	
+	echo '<option value="">None</option>';
 	foreach ( $posts as $art ) {
 		if ($art->ID == $meta ) {
 			echo '<option value="' . $art->ID . '" selected>' . get_the_title($art->ID) . '</option>';
