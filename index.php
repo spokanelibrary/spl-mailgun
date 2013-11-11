@@ -103,27 +103,24 @@ function spl_newsletter_metaboxes( $meta_boxes ) {
                                     )
                   );
 
+  $associate = array();
+  for ( $i=1; $i<=10; $i++ ) {
+  	$associate[] = array('name' => 'Select Post'
+                                              , 'desc' => ''
+                                              , 'id' => $prefix . 'newsletter_post_'.$i
+                                              , 'type' => 'post_select'
+                                          );
+  }
+
   $meta_boxes[] = array('id' => 'spl_post_select'
                       , 'title' => 'Add Posts to Newsletter'
                       , 'pages' => array('newsletter') // post type
-                      , 'desc' => 'This is a short description.'
                       //, 'show_on' => array( 'key' => 'page-template', 'value' => 'template-newsletter.php' )
                       , 'context' => 'normal'
                       , 'priority' => 'high'
                       , 'show_names' => true // Show field names on the left
                       
-                      , 'fields' => array(
-                                          array('name' => 'Select Post'
-                                              , 'desc' => ''
-                                              , 'id' => $prefix . 'newsletter_post_1'
-                                              , 'type' => 'post_select'
-                                          )
-                                        , array('name' => 'Select Post'
-                                              , 'desc' => ''
-                                              , 'id' => $prefix . 'newsletter_post_2'
-                                              , 'type' => 'post_select'
-                                          )
-                                    )
+                      , 'fields' => $associate
                       
                   );
 
