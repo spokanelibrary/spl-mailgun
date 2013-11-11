@@ -72,7 +72,7 @@ function spl_mailgun_newsletter_init_publish() {
 		'spl_mailgun_newsletter_publish_control',		// Callback function
 		'newsletter',																// Admin page (or post type)
 		'side',																			// Context
-		'high'																			// Priority
+		'default'																		// Priority
 	);
 }
 if ( is_admin() ) {
