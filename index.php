@@ -183,6 +183,7 @@ function sm_cmb_render_post_select( $field, $meta ) {
 	$post_type = ($field['post_type'] ? $field['post_type'] : 'post');
 	$limit = ($field['limit'] ? $field['limit'] : '-1');
 	$category = ($field['category'] ? $field['category'] : '-1');
+	echo $category;
 	echo '<select name="', $field['id'], '" id="', $field['id'], '">';
 	// get_posts orders by post_date desc?
 	$posts = get_posts('post_type='.$post_type.'&category='.$category.'&numberposts='.$limit.'&posts_per_page='.$limit);
