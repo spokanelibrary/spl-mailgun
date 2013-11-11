@@ -67,7 +67,7 @@ add_action( 'init', 'spl_mailgun_init_newsletter' );
 function spl_mailgun_newsletter_init_publish() {
 	add_meta_box(
 		'spl_mailgun_newsletter_list',			// Unique ID
-		esc_html__( 'Send Newsletter', 'list' ),		// Title
+		'Send Newsletter',		// Title
 		'spl_mailgun_newsletter_publish_control',		// Callback function
 		'newsletter',					// Admin page (or post type)
 		'side',					// Context
@@ -83,7 +83,7 @@ function spl_mailgun_newsletter_publish_control($object, $box) { ?>
 	<?php wp_nonce_field( basename( __FILE__ ), 'spl_mailgun_newsletter_list_nonce' ); ?>
 
 	<p>
-		<label for="spl-mailgun-newsletter-list"><?php _e( "Choose a mailing list", 'list' ); ?></label>
+		<label for="spl-mailgun-newsletter-list">Choose a mailing list:</label>
 		<br />
 		<select class="widefat" type="text" name="spl-mailgun-newsletter-list" id="spl-mailgun-newsletter-list" value="<?php echo esc_attr( get_post_meta( $object->ID, 'spl_mailgun_newsletter_list_meta_box', true ) ); ?>">
 			<option value="none">None (do not send)</option>
