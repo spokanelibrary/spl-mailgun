@@ -78,10 +78,11 @@ add_action( 'load-post.php', 'spl_mailgun_newsletter_init_publish' );
 add_action( 'load-post-new.php', 'spl_mailgun_newsletter_init_publish' );
 
 
-function spl_mailgun_newsletter_publish_control($object, $box) { ?>
+function spl_mailgun_newsletter_publish_control($object, $box) {
 
-	<?php wp_nonce_field( basename( __FILE__ ), 'spl_mailgun_newsletter_list_nonce' ); ?>
+	wp_nonce_field( basename( __FILE__ ), 'spl_mailgun_newsletter_list_nonce' );
 
+	$list = '
 	<p>
 		<label for="spl-mailgun-newsletter-list">Choose a mailing list:</label>
 		<br />
@@ -93,21 +94,16 @@ function spl_mailgun_newsletter_publish_control($object, $box) { ?>
 			<option value="todo">ToDo: Get these from mailgun</option>
 		</select>
 	</p>
-	<!--
-	<p>
-		A message is sent to the selected list each time the newsletter is updated.
-	</p>
-	-->
-	<?php 
+	';
+	echo $list;
+
 		submit_button( __( 'Send Now' )
 										, 'primary large'
 										, 'spl_mailgun_newsletter_send'
 										, false
 										//, array( 'tabindex' => '5', 'accesskey' => 'p' ) 
 										); 
-	?>
-
-<?php }
+}
 ?>
 
 <?php
