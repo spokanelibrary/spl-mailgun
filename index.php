@@ -34,7 +34,7 @@ function spl_mailgun_newsletter() {
 		'labels'        => $labels,
 		'description'   => 'Newsletters',
 		'public'        => true,
-		'menu_position' => 7,
+		'menu_position' => 9,
 		'supports'      => array( 'title'
 														, 'editor'
 														, 'thumbnail'
@@ -127,12 +127,11 @@ function spl_mailgun_newsletter_list_meta_box($object, $box) { ?>
 
 
 <?php
-
-add_action( 'init', 'spl_initialize_cmb_meta_boxes', 9999 );
-function spl_initialize_cmb_meta_boxes() {
+// make sure the metabox class exists
+add_action( 'init', 'spl_mailgun_initialize_cmb_meta_boxes', 9999 );
+function spl_mailgun_initialize_cmb_meta_boxes() {
   if ( !class_exists( 'cmb_Meta_Box' ) ) {
     require_once( plugin_basename('/metabox/init.php') );
   }
 }
-
 ?>
