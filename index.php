@@ -109,7 +109,7 @@ function spl_mailgun_newsletter_send_control($object, $box) {
 	$note = '
 	<p>
 		<strong>Reminder:</strong>
-		Save your changes <em>before</em> sending!
+		Save newsletter <em>before</em> sending!
 	</p>
 	';
 	echo $note;
