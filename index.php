@@ -112,6 +112,7 @@ function spl_mailgun_newsletter_send_control($object, $box) {
 		Save your changes <em>before</em> sending!
 	</p>
 	';
+	echo $note;
 
 	submit_button( __( 'Send Now' )
 									, 'primary large'
