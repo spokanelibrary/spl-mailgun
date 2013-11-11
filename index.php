@@ -56,7 +56,7 @@ function spl_mailgun_init_newsletter() {
 														//, 'comments' 
 														),
 		'has_archive'   => true,
-		'slug'					=> 'newsletters'
+		'slug'					=> 'newsletters',
 		'register_meta_box_cb' => 'spl_mailgun_newsletter_init_publish'
 	);
 
