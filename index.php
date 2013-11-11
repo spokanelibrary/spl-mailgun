@@ -84,7 +84,7 @@ function spl_mailgun_newsletter_publish_control($object, $box) {
 
 	$email = '
 	<p>
-		<label for="spl-mailgun-newsletter-address">Send to address:</label>
+		<label for="spl-mailgun-newsletter-address">Send to this address:</label>
 		<br />
 		<input type="text" name="spl-mailgun-newsletter-address" id="spl-mailgun-newsletter-address" />
 	</p>
@@ -96,7 +96,7 @@ function spl_mailgun_newsletter_publish_control($object, $box) {
 		<label for="spl-mailgun-newsletter-list">Choose a mailing list:</label>
 		<br />
 		<select class="widefat" type="text" name="spl-mailgun-newsletter-list" id="spl-mailgun-newsletter-list">
-			<option value="none">None (will not send)</option>
+			<option value="none" selected>None</option>
 			<option value="eva">Just Eva!</option>
 			<option value="dev">Dev (sg)</option>
 			<option value="test">Test Group</option>
