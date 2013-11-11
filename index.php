@@ -51,6 +51,13 @@ add_action( 'init', 'spl_mailgun_newsletter' );
 add_action( 'load-post.php', 'spl_mailgun_newsletter_meta_boxes_setup' );
 add_action( 'load-post-new.php', 'spl_mailgun_newsletter_meta_boxes_setup' );
 
+add_action( 'edit_page_form', 'my_second_editor' );
+function my_second_editor() {
+    // get and set $content somehow...
+    wp_editor( $content, 'mysecondeditor' );
+}
+
+
 function spl_mailgun_newsletter_meta_boxes_setup() {
 	add_meta_box(
 		'spl_mailgun_newsletter_list',			// Unique ID
