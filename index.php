@@ -85,6 +85,24 @@ function spl_newsletter_metaboxes( $meta_boxes ) {
                                     )
                   );
 
+  $meta_boxes[] = array('id' => 'spl_sidebar_content'
+                      , 'title' => 'Sidebar'
+                      , 'pages' => array('newsletter') // post type
+                      //, 'show_on' => array( 'key' => 'page-template', 'value' => 'template-newsletter.php' )
+                      , 'context' => 'normal'
+                      , 'priority' => 'high'
+                      , 'show_names' => false // Show field names on the left
+                      , 'fields' => array(
+                                          array(
+																								'name' => 'Test wysiwyg',
+																								'desc' => 'field description (optional)',
+																								'id' => $prefix . 'test_wysiwyg',
+																								'type' => 'wysiwyg',
+																								'options' => array(),
+																							)
+                                    )
+                  );
+
   $meta_boxes[] = array('id' => 'spl_post_select'
                       , 'title' => 'Add Posts'
                       , 'pages' => array('newsletter') // post type
