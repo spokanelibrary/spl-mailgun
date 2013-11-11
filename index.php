@@ -19,7 +19,7 @@ function spl_mailgun_newsletter() {
 		'name'               => _x( 'Newsletters', 'post type general name' ),
 		'singular_name'      => _x( 'Newsletter', 'post type singular name' ),
 		'add_new'            => _x( 'Add New', 'newsletter' ),
-		'add_new_item'       => __( 'Add New Newsletter' ),
+		'add_new_item'       => __( 'Add a New Newsletter' ),
 		'edit_item'          => __( 'Edit Newsletter' ),
 		'new_item'           => __( 'New Newsletter' ),
 		'all_items'          => __( 'All Newsletters' ),
@@ -104,8 +104,9 @@ function spl_newsletter_metaboxes( $meta_boxes ) {
                   );
 
   $meta_boxes[] = array('id' => 'spl_post_select'
-                      , 'title' => 'Add Posts'
+                      , 'title' => 'Add Posts to Newsletter'
                       , 'pages' => array('newsletter') // post type
+                      , 'desc' => 'This is a short description.'
                       //, 'show_on' => array( 'key' => 'page-template', 'value' => 'template-newsletter.php' )
                       , 'context' => 'normal'
                       , 'priority' => 'high'
