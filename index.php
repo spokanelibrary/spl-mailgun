@@ -182,11 +182,10 @@ add_action( 'cmb_render_post_select', 'sm_cmb_render_post_select', 10, 2 );
 function sm_cmb_render_post_select( $field, $meta ) {
 	$post_type = ($field['post_type'] ? $field['post_type'] : 'post');
 	$limit = ($field['limit'] ? $field['limit'] : '-1');
-	$category = ($field['category'] ? '&category='.$field['category'] : '');
-	echo $category;
+	$category = ($field['category'] ? $field['category'] : '');
 	echo '<select name="', $field['id'], '" id="', $field['id'], '">';
 	// get_posts orders by post_date desc?
-	$posts = get_posts('post_type='.$post_type.$category.'&numberposts='.$limit.'&posts_per_page='.$limit);
+	$posts = get_posts('post_type='.$post_type.'&category='.$category.'&numberposts='.$limit.'&posts_per_page='.$limit);
 	
 	echo '<option value="">None</option>';
 	foreach ( $posts as $art ) {
