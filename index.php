@@ -34,7 +34,7 @@ function spl_mailgun_newsletter() {
 		'labels'        => $labels,
 		'description'   => 'Newsletters',
 		'public'        => true,
-		'menu_position' => 9,
+		'menu_position' => 4,
 		'supports'      => array( 'title'
 														, 'editor'
 														, 'thumbnail'
