@@ -84,7 +84,7 @@ function spl_mailgun_newsletter_list_meta_box($object, $box) { ?>
 		A message is sent to the selected list each time the newsletter is updated.
 	</p>
 
-	<?php submit_button( __( 'Publish' ), 'primary', 'publish', false, array( 'tabindex' => '5', 'accesskey' => 'p' ) ); ?>
+	<?php submit_button( __( 'Send' ), 'primary', 'publish', false, array( 'tabindex' => '5', 'accesskey' => 'p' ) ); ?>
 <?php }
 
 
