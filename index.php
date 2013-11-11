@@ -155,6 +155,7 @@ function spl_newsletter_metaboxes( $meta_boxes ) {
                                               , 'id' => $prefix . 'newsletter_post_'.$i
                                               , 'type' => 'post_select'
                                               , 'limit' => 10
+                                              , 'post_type' => 'page'
                                           );
   }
 
@@ -181,7 +182,6 @@ add_action( 'cmb_render_post_select', 'sm_cmb_render_post_select', 10, 2 );
 function sm_cmb_render_post_select( $field, $meta ) {
 	$post_type = ($field['post_type'] ? $field['post_type'] : 'post');
 	$limit = ($field['limit'] ? $field['limit'] : '-1');
-	echo $limit;
 	echo '<select name="', $field['id'], '" id="', $field['id'], '">';
 	$posts = get_posts('post_type='.$post_type.'&numberposts='.$limit.'&posts_per_page='.$limit);
 	
