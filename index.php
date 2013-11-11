@@ -184,7 +184,7 @@ function sm_cmb_render_post_select( $field, $meta ) {
 	$limit = ($field['limit'] ? $field['limit'] : '-1');
 	echo '<select name="', $field['id'], '" id="', $field['id'], '">';
 	// get_posts orders by post_date desc?
-	$posts = get_posts('post_type='.$post_type.'&numberposts='.$limit.'&posts_per_page='.$limit);
+	$posts = get_posts('post_type='.$post_type.'&numberposts='.$limit.'&posts_per_page='.$limit.'&category=1');
 	
 	echo '<option value="">None</option>';
 	foreach ( $posts as $art ) {
