@@ -86,7 +86,7 @@ function spl_mailgun_newsletter_publish_control($object, $box) {
 	<p>
 		<label for="spl-mailgun-newsletter-list">Choose a mailing list:</label>
 		<br />
-		<select class="widefat" type="text" name="spl-mailgun-newsletter-list" id="spl-mailgun-newsletter-list" value="<?php echo esc_attr( get_post_meta( $object->ID, 'spl_mailgun_newsletter_list_meta_box', true ) ); ?>">
+		<select class="widefat" type="text" name="spl-mailgun-newsletter-list" id="spl-mailgun-newsletter-list">
 			<option value="none">None (do not send)</option>
 			<option value="dev">Development</option>
 			<option value="test">Test Message</option>
