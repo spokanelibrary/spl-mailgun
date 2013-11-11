@@ -104,9 +104,7 @@ function spl_mailgun_newsletter_publish_control($object, $box) {
 										//, array( 'tabindex' => '5', 'accesskey' => 'p' ) 
 										); 
 }
-?>
 
-<?php
 function spl_newsletter_metaboxes( $meta_boxes ) {
   $prefix = '_cmb_'; // Prefix for all fields
 
