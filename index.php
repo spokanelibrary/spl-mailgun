@@ -156,7 +156,7 @@ function spl_newsletter_metaboxes( $meta_boxes ) {
                                               , 'type' => 'post_select'
                                               , 'limit' => 20 // limit number of options
                                               , 'post_type' => 'post' // post_type to query for
-                                          		, 'category' => 2
+                                          		, 'category' => 5
                                           );
   }
 
