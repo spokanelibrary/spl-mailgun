@@ -95,7 +95,7 @@ function spl_mailgun_newsletter_publish_control($object, $box) {
 	<p>
 		<label for="spl-mailgun-newsletter-list">Choose a mailing list:</label>
 		<br />
-		<select class="widefat" type="text" name="spl-mailgun-newsletter-list" id="spl-mailgun-newsletter-list">
+		<select class="" type="text" name="spl-mailgun-newsletter-list" id="spl-mailgun-newsletter-list">
 			<option value="none" selected>None</option>
 			<option value="eva">Just Eva!</option>
 			<option value="dev">Dev (sg)</option>
