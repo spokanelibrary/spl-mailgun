@@ -75,7 +75,7 @@ function spl_newsletter_metaboxes( $meta_boxes ) {
                       //, 'show_on' => array( 'key' => 'page-template', 'value' => 'template-newsletter.php' )
                       , 'context' => 'normal'
                       , 'priority' => 'high'
-                      , 'show_names' => false // Show field names on the left
+                      , 'show_names' => true // Show field names on the left
                       , 'fields' => array(
                                           array('name' => 'Headline'
                                               , 'desc' => ''
