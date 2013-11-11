@@ -106,12 +106,19 @@ function spl_mailgun_newsletter_send_control($object, $box) {
 	';
 	echo $list;
 
-		submit_button( __( 'Send Now' )
-										, 'primary large'
-										, 'spl_mailgun_newsletter_send'
-										, false
-										//, array( 'tabindex' => '5', 'accesskey' => 'p' ) 
-										); 
+	$note = '
+	<p>
+		<strong>Reminder:</strong>
+		Save your changes <em>before</em> sending!
+	</p>
+	';
+
+	submit_button( __( 'Send Now' )
+									, 'primary large'
+									, 'spl_mailgun_newsletter_send'
+									, false
+									//, array( 'tabindex' => '5', 'accesskey' => 'p' ) 
+									); 
 }
 
 function spl_newsletter_metaboxes( $meta_boxes ) {
