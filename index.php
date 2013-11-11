@@ -66,16 +66,16 @@ add_action( 'init', 'spl_mailgun_init_newsletter' );
 
 function spl_mailgun_newsletter_init_publish() {
 	add_meta_box(
-		'spl_mailgun_newsletter_list',			// Unique ID
-		'Send Newsletter',		// Title
+		'spl_mailgun_newsletter_publish_control',		// Unique ID
+		'Send Newsletter',													// Title
 		'spl_mailgun_newsletter_publish_control',		// Callback function
-		'newsletter',					// Admin page (or post type)
-		'side',					// Context
-		'high'					// Priority
+		'newsletter',																// Admin page (or post type)
+		'side',																			// Context
+		'high'																			// Priority
 	);
 }
-add_action( 'load-post.php', 'spl_mailgun_newsletter_init_publish' );
-add_action( 'load-post-new.php', 'spl_mailgun_newsletter_init_publish' );
+add_action( array('load-post.php', 'load-post-new.php'), 'spl_mailgun_newsletter_init_publish' );
+//add_action( 'load-post-new.php', 'spl_mailgun_newsletter_init_publish' );
 
 
 function spl_mailgun_newsletter_publish_control($object, $box) {
