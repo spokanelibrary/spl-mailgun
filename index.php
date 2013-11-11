@@ -67,13 +67,10 @@ function spl_mailgun_newsletter_list_meta_box($object, $box) { ?>
 	<?php wp_nonce_field( basename( __FILE__ ), 'spl_mailgun_newsletter_list_nonce' ); ?>
 
 	<p>
-		<input type="checkbox" />
-	</p>
-	<p>
 		<label for="spl-mailgun-newsletter-list"><?php _e( "Choose a mailing list", 'list' ); ?></label>
 		<br />
 		<select class="widefat" type="text" name="spl-mailgun-newsletter-list" id="spl-mailgun-newsletter-list" value="<?php echo esc_attr( get_post_meta( $object->ID, 'spl_mailgun_newsletter_list_meta_box', true ) ); ?>">
-			<option value="none">Do not send</option>
+			<option value="none">No List (Do not send)</option>
 			<option value="dev">Development</option>
 			<option value="test">Test Message</option>
 			<option value="all">All Subscribers</option>
