@@ -122,7 +122,8 @@ function spl_mailgun_newsletter_send_control($object, $box) {
 									); 
 }
 
-function spl_newsletter_metaboxes( $meta_boxes ) {
+// newsletter metataboxes
+function spl_mailgun_newsletter_cmb_meta_boxes( $meta_boxes ) {
   $prefix = '_cmb_'; // Prefix for all fields
 
   $meta_boxes[] = array('id' => 'spl_sidebar_intro'
@@ -191,8 +192,9 @@ function spl_newsletter_metaboxes( $meta_boxes ) {
 
   return $meta_boxes;
 }
+add_filter( 'cmb_meta_boxes', 'spl_mailgun_newsletter_cmb_meta_boxes' );
 
-add_filter( 'cmb_meta_boxes', 'spl_newsletter_metaboxes' );
+
 
 // render post select
 add_action( 'cmb_render_post_select', 'sm_cmb_render_post_select', 10, 2 );
