@@ -103,9 +103,15 @@ function spl_newsletter_metaboxes( $meta_boxes ) {
                                     )
                   );
 
-  $associate = array();
+  $fields = array();
+  $fields[] = array(
+											'name' => 'Test Title',
+											'desc' => 'This is a title description',
+											'type' => 'title',
+											'id' => $prefix . 'test_title'
+										);
   for ( $i=1; $i<=10; $i++ ) {
-  	$associate[] = array('name' => 'Select Post'
+  	$fields[] = array('name' => 'Post # ' . $i . ':'
                                               , 'desc' => ''
                                               , 'id' => $prefix . 'newsletter_post_'.$i
                                               , 'type' => 'post_select'
@@ -120,7 +126,7 @@ function spl_newsletter_metaboxes( $meta_boxes ) {
                       , 'priority' => 'high'
                       , 'show_names' => true // Show field names on the left
                       
-                      , 'fields' => $associate
+                      , 'fields' => $fields
                       
                   );
 
