@@ -57,33 +57,29 @@ function spl_mailgun_init_newsletter() {
 														),
 		'has_archive'   => true,
 		'slug'					=> 'newsletters',
-		'register_meta_box_cb' => 'spl_mailgun_newsletter_init_publish'
+		'register_meta_box_cb' => 'spl_mailgun_newsletter_init_send'
 	);
 
 	register_post_type( 'newsletter', $args );	
 }
 add_action( 'init', 'spl_mailgun_init_newsletter' );
 
-
-function spl_mailgun_newsletter_init_publish() {
+// register send controls (called from: spl_mailgun_init_newsletter)
+function spl_mailgun_newsletter_init_send() {
 	add_meta_box(
-		'spl_mailgun_newsletter_publish_control',		// Unique ID
-		'Send Newsletter',													// Title
-		'spl_mailgun_newsletter_publish_control',		// Callback function
-		'newsletter',																// Admin page (or post type)
-		'side',																			// Context
-		'default'																		// Priority
+		'spl_mailgun_newsletter_send_control',		// Unique ID
+		'Send Newsletter',												// Title
+		'spl_mailgun_newsletter_send_control',		// Callback function
+		'newsletter',															// Admin page (or post type)
+		'side',																		// Context
+		'default'																	// Priority
 	);
 }
-if ( is_admin() ) {
-	//add_action( 'spl_mailgun_init_newsletter', 'spl_mailgun_newsletter_init_publish' );
-	//add_action( 'load-post.php', 'spl_mailgun_newsletter_init_publish' );
-	//add_action( 'load-post-new.php', 'spl_mailgun_newsletter_init_publish' );
-}
 
-function spl_mailgun_newsletter_publish_control($object, $box) {
+// render send controls (called from: spl_mailgun_newsletter_init_send)
+function spl_mailgun_newsletter_send_control($object, $box) {
 
-	wp_nonce_field( basename( __FILE__ ), 'spl_mailgun_newsletter_list_nonce' );
+	wp_nonce_field( basename( __FILE__ ), 'spl_mailgun_newsletter_send_nonce' );
 
 	$email = '
 	<p>
