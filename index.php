@@ -51,13 +51,6 @@ add_action( 'init', 'spl_mailgun_newsletter' );
 add_action( 'load-post.php', 'spl_mailgun_newsletter_meta_boxes_setup' );
 add_action( 'load-post-new.php', 'spl_mailgun_newsletter_meta_boxes_setup' );
 
-add_action( 'edit_page_form', 'my_second_editor' );
-function my_second_editor() {
-    // get and set $content somehow...
-		$content = 'my content';
-    wp_editor( $content, 'mysecondeditor' );
-}
-
 
 function spl_mailgun_newsletter_meta_boxes_setup() {
 	add_meta_box(
@@ -69,6 +62,33 @@ function spl_mailgun_newsletter_meta_boxes_setup() {
 		'default'					// Priority
 	);
 }
+
+
+
+
+function spl_newsletter_metaboxes( $meta_boxes ) {
+  $prefix = '_cmb_'; // Prefix for all fields
+
+  $meta_boxes[] = array('id' => 'spl_newsletter_intro'
+                      , 'title' => 'Newsletter Intro'
+                      , 'pages' => array('newsletter') // post type
+                      //, 'show_on' => array( 'key' => 'page-template', 'value' => 'template-newsletter.php' )
+                      , 'context' => 'normal'
+                      , 'priority' => 'high'
+                      , 'show_names' => true // Show field names on the left
+                      , 'fields' => array(
+                                          array('name' => 'Headline'
+                                              , 'desc' => ''
+                                              , 'id' => $prefix . 'newsletter_headline'
+                                              , 'type' => 'text_medium'
+                                          )
+                                    )
+                  );
+
+  return $meta_boxes;
+}
+
+add_filter( 'cmb_meta_boxes', 'spl_newsletter_metaboxes' );
 
 function spl_mailgun_newsletter_list_meta_box($object, $box) { ?>
 
