@@ -77,12 +77,20 @@ function spl_mailgun_newsletter_list_meta_box($object, $box) { ?>
 			<option value="todo">ToDo: Get these from mailgun</option>
 		</select>
 	</p>
+	<!--
 	<p>
 		A message is sent to the selected list each time the newsletter is updated.
 	</p>
+	-->
+	<?php 
+		submit_button( __( 'Send Now' )
+										, 'primary large'
+										, 'spl_mailgun_newsletter_send'
+										, false
+										//, array( 'tabindex' => '5', 'accesskey' => 'p' ) 
+										); 
+	?>
 
-	<?php submit_button( __( 'Send Now' ), 'primary large', 'spl_mailgun_newsletter_send', false, array( 'tabindex' => '5', 'accesskey' => 'p' ) ); ?>
 <?php }
-
 
 ?>
