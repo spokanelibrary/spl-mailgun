@@ -74,7 +74,9 @@ function spl_mailgun_newsletter_init_publish() {
 		'high'																			// Priority
 	);
 }
-add_action( array('load-post.php', 'load-post-new.php'), 'spl_mailgun_newsletter_init_publish' );
+
+add_action( 'spl_mailgun_init_newsletter', 'spl_mailgun_newsletter_init_publish' );
+//add_action( 'load-post.php', 'spl_mailgun_newsletter_init_publish' );
 //add_action( 'load-post-new.php', 'spl_mailgun_newsletter_init_publish' );
 
 
