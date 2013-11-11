@@ -105,12 +105,12 @@ function spl_newsletter_metaboxes( $meta_boxes ) {
 
   $fields = array();
   $fields[] = array(
-											'name' => 'Test Title',
-											'desc' => 'This is a title description',
+											//'name' => 'Select Posts',
+											'desc' => 'Posts are added to the newsletter in the order shown below',
 											'type' => 'title',
 											'id' => $prefix . 'test_title'
 										);
-  for ( $i=1; $i<=10; $i++ ) {
+  for ( $i=1; $i<=9; $i++ ) {
   	$fields[] = array('name' => 'Post # ' . $i . ':'
                                               , 'desc' => ''
                                               , 'id' => $prefix . 'newsletter_post_'.$i
