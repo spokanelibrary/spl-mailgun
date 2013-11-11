@@ -130,9 +130,9 @@ function spl_mailgun_newsletter_list_meta_box($object, $box) { ?>
 
 add_action( 'init', 'spl_initialize_cmb_meta_boxes', 9999 );
 function spl_initialize_cmb_meta_boxes() {
-  if ( !class_exists( 'cmb_Meta_Box' ) ) {
-    require_once( get_plugins_directory() . '/metabox/init.php' );
-  }
+  //if ( !class_exists( 'cmb_Meta_Box' ) ) {
+    //require_once( get_plugins_directory() . '/metabox/init.php' );
+  //}
 }
 
 ?>
