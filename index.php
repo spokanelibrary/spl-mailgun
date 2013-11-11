@@ -69,6 +69,7 @@ function spl_mailgun_newsletter_list_meta_box($object, $box) { ?>
 	<p>
 		<label for="spl-mailgun-newsletter-list"><?php _e( "Choose a mailing list", 'list' ); ?></label>
 		<br />
+		<input type="checkbox" />
 		<select class="widefat" type="text" name="spl-mailgun-newsletter-list" id="spl-mailgun-newsletter-list" value="<?php echo esc_attr( get_post_meta( $object->ID, 'spl_mailgun_newsletter_list_meta_box', true ) ); ?>">
 			<option value="none">Do not send</option>
 			<option value="dev">Development</option>
@@ -76,6 +77,9 @@ function spl_mailgun_newsletter_list_meta_box($object, $box) { ?>
 			<option value="all">All Subscribers</option>
 			<option value="todo">ToDo: Get these from mailgun</option>
 		</select>
+	</p>
+	<p>
+		A message is sent to the selected list each time the newsletter is updated.
 	</p>
 <?php }
 
