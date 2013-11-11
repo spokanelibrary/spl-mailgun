@@ -122,9 +122,12 @@ function spl_mailgun_newsletter_list_meta_box($object, $box) { ?>
 <?php }
 ?>
 
-
-
-
+<?php
+add_action( 'cmb_render_text_email', 'rrh_cmb_render_text_email', 10, 2 );
+function rrh_cmb_render_text_email( $field, $meta ) {
+    echo '<input type="text" name="', $field['id'], '" id="', $field['id'], '" value="', $meta ? $meta : $field['std'], '" style="width:97%" />','<p class="cmb_metabox_description">', $field['desc'], '</p>';
+}
+?>
 
 <?php
 // make sure the metabox class exists
