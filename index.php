@@ -57,7 +57,7 @@ function spl_mailgun_init_newsletter() {
 		'slug'					=> 'newsletters'
 	);
 
-	register_post_type( 'spl_mailgun_newsletter', $args );	
+	register_post_type( 'newsletter', $args );	
 }
 add_action( 'init', 'spl_mailgun_init_newsletter' );
 
