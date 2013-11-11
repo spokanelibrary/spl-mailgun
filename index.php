@@ -66,26 +66,26 @@ add_action( 'init', 'spl_mailgun_init_newsletter' );
 
 function spl_mailgun_newsletter_init_publish() {
 	add_meta_box(
-		'spl_mailgun_newsletter_publish',			// Unique ID
-		esc_html__( 'Send Newsletter'),		// Title
-		'spl_mailgun_newsletter_publish_control',		// Callback function
+		'spl_mailgun_newsletter_list',			// Unique ID
+		esc_html__( 'Send Newsletter', 'list' ),		// Title
+		'spl_mailgun_newsletter_list_meta_box',		// Callback function
 		'newsletter',					// Admin page (or post type)
 		'side',					// Context
-		'normal'					// Priority
+		'high'					// Priority
 	);
 }
 add_action( 'load-post.php', 'spl_mailgun_newsletter_init_publish' );
 add_action( 'load-post-new.php', 'spl_mailgun_newsletter_init_publish' );
 
-function spl_mailgun_newsletter_publish_control($object, $box) {
 
-	wp_nonce_field( basename( __FILE__ ), 'spl_mailgun_newsletter_publish_nonce' );
+function spl_mailgun_newsletter_list_meta_box($object, $box) { ?>
 
-	$list = '
+	<?php wp_nonce_field( basename( __FILE__ ), 'spl_mailgun_newsletter_list_nonce' ); ?>
+
 	<p>
-		<label for="spl-mailgun-newsletter-list">Choose a mailing list:</label>
+		<label for="spl-mailgun-newsletter-list"><?php _e( "Choose a mailing list", 'list' ); ?></label>
 		<br />
-		<select class="widefat" type="text" name="spl-mailgun-newsletter-list" id="spl-mailgun-newsletter-list">
+		<select class="widefat" type="text" name="spl-mailgun-newsletter-list" id="spl-mailgun-newsletter-list" value="<?php echo esc_attr( get_post_meta( $object->ID, 'spl_mailgun_newsletter_list_meta_box', true ) ); ?>">
 			<option value="none">None (do not send)</option>
 			<option value="dev">Development</option>
 			<option value="test">Test Message</option>
@@ -93,17 +93,24 @@ function spl_mailgun_newsletter_publish_control($object, $box) {
 			<option value="todo">ToDo: Get these from mailgun</option>
 		</select>
 	</p>
-	';
-	echo $list;
-
-	submit_button( __( 'Send Now' )
+	<!--
+	<p>
+		A message is sent to the selected list each time the newsletter is updated.
+	</p>
+	-->
+	<?php 
+		submit_button( __( 'Send Now' )
 										, 'primary large'
 										, 'spl_mailgun_newsletter_send'
 										, false
 										//, array( 'tabindex' => '5', 'accesskey' => 'p' ) 
 										); 
-}
+	?>
 
+<?php }
+?>
+
+<?php
 function spl_newsletter_metaboxes( $meta_boxes ) {
   $prefix = '_cmb_'; // Prefix for all fields
 
@@ -170,9 +177,12 @@ function spl_newsletter_metaboxes( $meta_boxes ) {
 
   return $meta_boxes;
 }
+
 add_filter( 'cmb_meta_boxes', 'spl_newsletter_metaboxes' );
 
 // render post select
+add_action( 'cmb_render_post_select', 'sm_cmb_render_post_select', 10, 2 );
+
 function sm_cmb_render_post_select( $field, $meta ) {
 	$post_type = ($field['post_type'] ? $field['post_type'] : 'post');
 	$limit = ($field['limit'] ? $field['limit'] : '-1');
@@ -190,7 +200,6 @@ function sm_cmb_render_post_select( $field, $meta ) {
 	echo '</select>';
 	echo '<p class="cmb_metabox_description">', $field['desc'], '</p>';
 }
-add_action( 'cmb_render_post_select', 'sm_cmb_render_post_select', 10, 2 );
 
 // the field doesnt really need any validation, but just in case
 add_filter( 'cmb_validate_post_select', 'rrh_cmb_validate_post_select' );
