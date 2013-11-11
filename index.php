@@ -54,7 +54,7 @@ add_action( 'load-post-new.php', 'spl_mailgun_newsletter_meta_boxes_setup' );
 function spl_mailgun_newsletter_meta_boxes_setup() {
 	add_meta_box(
 		'spl_mailgun_newsletter_list',			// Unique ID
-		esc_html__( 'Newsletter List', 'list' ),		// Title
+		esc_html__( 'Send Newsletter', 'list' ),		// Title
 		'spl_mailgun_newsletter_list_meta_box',		// Callback function
 		'newsletter',					// Admin page (or post type)
 		'side',					// Context
