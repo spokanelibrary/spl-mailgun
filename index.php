@@ -71,21 +71,21 @@ function spl_mailgun_newsletter_init_publish() {
 		'spl_mailgun_newsletter_publish_control',		// Callback function
 		'newsletter',					// Admin page (or post type)
 		'side',					// Context
-		'high'					// Priority
+		'normal'					// Priority
 	);
 }
 add_action( 'load-post.php', 'spl_mailgun_newsletter_init_publish' );
 add_action( 'load-post-new.php', 'spl_mailgun_newsletter_init_publish' );
 
+function spl_mailgun_newsletter_publish_control($object, $box) {
 
-function spl_mailgun_newsletter_publish_control($object, $box) { ?>
+	wp_nonce_field( basename( __FILE__ ), 'spl_mailgun_newsletter_publish_nonce' );
 
-	<?php wp_nonce_field( basename( __FILE__ ), 'spl_mailgun_newsletter_list_nonce' ); ?>
-
+	$list = '
 	<p>
-		<label for="spl-mailgun-newsletter-list"><?php _e( "Choose a mailing list", 'list' ); ?></label>
+		<label for="spl-mailgun-newsletter-list">Choose a mailing list:</label>
 		<br />
-		<select class="widefat" type="text" name="spl-mailgun-newsletter-list" id="spl-mailgun-newsletter-list" value="<?php echo esc_attr( get_post_meta( $object->ID, 'spl_mailgun_newsletter_list_meta_box', true ) ); ?>">
+		<select class="widefat" type="text" name="spl-mailgun-newsletter-list" id="spl-mailgun-newsletter-list">
 			<option value="none">None (do not send)</option>
 			<option value="dev">Development</option>
 			<option value="test">Test Message</option>
@@ -93,24 +93,17 @@ function spl_mailgun_newsletter_publish_control($object, $box) { ?>
 			<option value="todo">ToDo: Get these from mailgun</option>
 		</select>
 	</p>
-	<!--
-	<p>
-		A message is sent to the selected list each time the newsletter is updated.
-	</p>
-	-->
-	<?php 
-		submit_button( __( 'Send Now' )
+	';
+	echo $list;
+
+	submit_button( __( 'Send Now' )
 										, 'primary large'
 										, 'spl_mailgun_newsletter_send'
 										, false
 										//, array( 'tabindex' => '5', 'accesskey' => 'p' ) 
 										); 
-	?>
+}
 
-<?php }
-?>
-
-<?php
 function spl_newsletter_metaboxes( $meta_boxes ) {
   $prefix = '_cmb_'; // Prefix for all fields
 
@@ -177,12 +170,9 @@ function spl_newsletter_metaboxes( $meta_boxes ) {
 
   return $meta_boxes;
 }
-
 add_filter( 'cmb_meta_boxes', 'spl_newsletter_metaboxes' );
 
 // render post select
-add_action( 'cmb_render_post_select', 'sm_cmb_render_post_select', 10, 2 );
-
 function sm_cmb_render_post_select( $field, $meta ) {
 	$post_type = ($field['post_type'] ? $field['post_type'] : 'post');
 	$limit = ($field['limit'] ? $field['limit'] : '-1');
@@ -200,6 +190,7 @@ function sm_cmb_render_post_select( $field, $meta ) {
 	echo '</select>';
 	echo '<p class="cmb_metabox_description">', $field['desc'], '</p>';
 }
+add_action( 'cmb_render_post_select', 'sm_cmb_render_post_select', 10, 2 );
 
 // the field doesnt really need any validation, but just in case
 add_filter( 'cmb_validate_post_select', 'rrh_cmb_validate_post_select' );
