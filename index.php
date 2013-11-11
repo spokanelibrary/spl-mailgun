@@ -89,6 +89,7 @@ function spl_mailgun_newsletter_publish_control($object, $box) {
 		<input type="text" name="spl-mailgun-newsletter-address" id="spl-mailgun-newsletter-address" />
 	</p>
 	';
+	echo $email;
 
 	$list = '
 	<p>
