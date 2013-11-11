@@ -82,14 +82,23 @@ function spl_mailgun_newsletter_publish_control($object, $box) {
 
 	wp_nonce_field( basename( __FILE__ ), 'spl_mailgun_newsletter_list_nonce' );
 
+	$email = '
+	<p>
+		<label for="spl-mailgun-newsletter-address">Send to address:</label>
+		<br />
+		<input type="text" name="spl-mailgun-newsletter-address" id="spl-mailgun-newsletter-address" />
+	</p>
+	';
+
 	$list = '
 	<p>
 		<label for="spl-mailgun-newsletter-list">Choose a mailing list:</label>
 		<br />
 		<select class="widefat" type="text" name="spl-mailgun-newsletter-list" id="spl-mailgun-newsletter-list">
-			<option value="none">None (do not send)</option>
-			<option value="dev">Development</option>
-			<option value="test">Test Message</option>
+			<option value="none">None (will not send)</option>
+			<option value="eva">Just Eva!</option>
+			<option value="dev">Dev (sg)</option>
+			<option value="test">Test Group</option>
 			<option value="all">All Subscribers</option>
 			<option value="todo">ToDo: Get these from mailgun</option>
 		</select>
