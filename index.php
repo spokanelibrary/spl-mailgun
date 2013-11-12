@@ -31,28 +31,13 @@ class SPL_Mailgun_Newsletter {
 		}
 	}
 
-	public function initNewsletter() {
+	function initNewsletter() {
 		add_action( 'init', array( $this, 'registerPostType' ) );
 	} // initNewsletter()
 
-	public function registerPostType() {
-		$labels = array(
-			'name'               => _x( 'Newsletters', 'post type general name' ),
-			'singular_name'      => _x( 'Newsletter', 'post type singular name' ),
-			'add_new'            => _x( 'Add New', 'newsletter' ),
-			'add_new_item'       => __( 'Add a New Newsletter' ),
-			'edit_item'          => __( 'Edit Newsletter' ),
-			'new_item'           => __( 'New Newsletter' ),
-			'all_items'          => __( 'All Newsletters' ),
-			'view_item'          => __( 'View Newsletters' ),
-			'search_items'       => __( 'Search Newsletters' ),
-			'not_found'          => __( 'No newsletters found' ),
-			'not_found_in_trash' => __( 'No newsletters found in the Trash' ), 
-			'parent_item_colon'  => '',
-			'menu_name'          => 'Newsletters'
-		);
+	function registerPostType() {
 		$args = array(
-			'labels'        => $labels,
+			'labels'        => $this->getPostTypeLabels(),
 			'description'   => 'Newsletters',
 			'public'        => true,
 			'menu_position' => 30,
@@ -69,6 +54,27 @@ class SPL_Mailgun_Newsletter {
 
 		register_post_type( 'newsletter', $args );	
 	} // registerPostType()
+
+	function getPostTypeLabels() {
+		$labels = array(
+			'name'               => _x( 'Newsletters', 'post type general name' ),
+			'singular_name'      => _x( 'Newsletter', 'post type singular name' ),
+			'add_new'            => _x( 'Add New', 'newsletter' ),
+			'add_new_item'       => __( 'Add a New Newsletter' ),
+			'edit_item'          => __( 'Edit Newsletter' ),
+			'new_item'           => __( 'New Newsletter' ),
+			'all_items'          => __( 'All Newsletters' ),
+			'view_item'          => __( 'View Newsletters' ),
+			'search_items'       => __( 'Search Newsletters' ),
+			'not_found'          => __( 'No newsletters found' ),
+			'not_found_in_trash' => __( 'No newsletters found in the Trash' ), 
+			'parent_item_colon'  => '',
+			'menu_name'          => 'Newsletters'
+		);
+
+		return $labels;
+	} // getPostTypeLabels()
+
 
 }
 
