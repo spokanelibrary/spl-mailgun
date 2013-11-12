@@ -33,7 +33,7 @@ function spl_news_post_select($post, $id) {
 		echo wpautop($attach->post_content);
 
 		$anchor = '
-		<a href="'.$anchor.'"
+		<a href="'.$permalink.'"
 				class="btn btn-success">More &rarr;</a>
 		';
 		echo $anchor;
