@@ -14,10 +14,16 @@ Author URI: http://seangirard.com
 Version: 0.1
 */
 
-/*
-thanks to
-https://github.com/jaredatch/Custom-Metaboxes-and-Fields-for-WordPress
-*/
+class SPL_Mailgun_Newsletter {
+
+	var $config;
+
+	function __construct() {
+
+	}
+
+}
+
 
 // register custom postype (newsletter)
 function spl_mailgun_init_newsletter() {
@@ -209,9 +215,8 @@ function spl_mailgun_newsletter_cmb_meta_boxes( $meta_boxes ) {
 }
 add_filter( 'cmb_meta_boxes', 'spl_mailgun_newsletter_cmb_meta_boxes' );
 
-// https://github.com/jaredatch/Custom-Metaboxes-and-Fields-for-WordPress/wiki/Adding-your-own-field-types
-
 // custom cmb metabox: post_select
+// https://github.com/jaredatch/Custom-Metaboxes-and-Fields-for-WordPress/wiki/Adding-your-own-field-types
 function sm_cmb_render_post_select( $field, $meta ) {
 	$post_type = ($field['post_type'] ? $field['post_type'] : 'post');
 	$limit = ($field['limit'] ? $field['limit'] : '-1');
@@ -241,6 +246,7 @@ function rrh_cmb_validate_post_select( $new ) {
 add_filter( 'cmb_validate_post_select', 'rrh_cmb_validate_post_select' );
 
 // make sure the metabox class exists
+//https://github.com/jaredatch/Custom-Metaboxes-and-Fields-for-WordPress
 function spl_mailgun_init_cmb_meta_boxes() {
   if ( !class_exists( 'cmb_Meta_Box' ) ) {
     require_once( plugin_basename('/metabox/init.php') );
