@@ -11,7 +11,8 @@
       <?php the_content(); ?>
     </div>
     <aside>
-    	<?php spl_mail_news_sidebar_content($post); ?>
+    	<h2><?php spl_news_sidebar_headline($post); ?></h2>
+    	<?php spl_news_sidebar_content($post); ?>
     </aside>
     <footer>
 
