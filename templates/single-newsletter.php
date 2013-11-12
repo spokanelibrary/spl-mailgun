@@ -20,8 +20,17 @@
     </div>
   </div>
 
-	<?php spl_news_post_select($post, 1); ?>
-
+  <div class="row-fluid">
+		<div class="col-sm-4">
+			<?php spl_news_post_select($post, 1); ?>
+		</div>
+		<div class="col-sm-4">
+			<?php spl_news_post_select($post, 2); ?>
+		</div>
+		<div class="col-sm-4">
+			<?php spl_news_post_select($post, 3); ?>
+		</div>
+	</div>
 
   <footer>
 
