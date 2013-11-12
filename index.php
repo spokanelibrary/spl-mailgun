@@ -202,21 +202,19 @@ class SPL_Mailgun_Newsletter {
 												'id' => $prefix . 'post_select_title'
 											);
 	  for ( $i=1; $i<=9; $i++ ) {
-
-	  	$fields[] = array('name' => 'Excerpt Only?',
-												'desc' => '',
-												'id' => $prefix . 'post_select_excerpt_'.$i,
-												'type' => 'checkbox',
-											);
-
 	  	$fields[] = array('name' => 'Post # ' . $i . ':'
                       , 'desc' => ''
-                      , 'id' => $prefix . 'newsletter_post_'.$i
+                      , 'id' => $prefix . 'post_select_'.$i
                       , 'type' => 'post_select'
                       , 'limit' => 20 // limit number of options (posts)
                       , 'post_type' => 'post' // post_type to query for
                   		, 'category' => 5
 	                    );
+	  	$fields[] = array('name' => '',
+												'desc' => 'Excerpt Only?',
+												'id' => $prefix . 'post_select_excerpt_'.$i,
+												'type' => 'checkbox',
+											);
 	  }
 
 	  $meta_boxes[] = array('id' => $prefix . 'post_select_id'
