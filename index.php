@@ -24,7 +24,7 @@ class SPL_Mailgun_Newsletter {
 
 	var $config;
 
-	function __construct($config=null) {
+	function __construct() {
 
 	}
 
