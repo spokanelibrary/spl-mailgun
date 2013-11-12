@@ -43,7 +43,8 @@ class SPL_Mailgun_Newsletter {
 
 	function registerPostTemplates($template) {
 		echo plugin_dir_path(__FILE__);
-		$post_types = array( 'project' );
+		echo '<br />';
+		$post_types = array( 'newsletter' );
 
     if ( is_post_type_archive( $post_types ) 
     	&& ! file_exists( get_stylesheet_directory() . '/archive-newsletter.php' ) ) {
