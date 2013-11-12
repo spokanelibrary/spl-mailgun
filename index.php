@@ -18,13 +18,20 @@ Version: 0.1
 require('config.php');
 
 $config = new SPL_Mailgun_Newsletter_Config();
-$newsletter = new SPL_Mailgun_Newsletter();
+$newsletter = new SPL_Mailgun_Newsletter($config);
 
 class SPL_Mailgun_Newsletter {
 
 	var $config;
 
-	function __construct() {
+	function __construct($config=null) {
+		if ( !is_null($config) ) {
+			$this->config = $config;
+			$this->initNewsletter();
+		}
+	}
+
+	public function initNewsletter() {
 
 	}
 
@@ -61,7 +68,7 @@ function spl_mailgun_init_newsletter() {
 														),
 		'has_archive'   => true,
 		'slug'					=> 'newsletters',
-		'register_meta_box_cb' => 'spl_mailgun_newsletter_init_send'
+		'register_meta_box_cb' => 'spl_mailgun_newsletter_init_send_control'
 	);
 
 	register_post_type( 'newsletter', $args );	
@@ -69,7 +76,7 @@ function spl_mailgun_init_newsletter() {
 add_action( 'init', 'spl_mailgun_init_newsletter' );
 
 // register send controls (called from: spl_mailgun_init_newsletter)
-function spl_mailgun_newsletter_init_send() {
+function spl_mailgun_newsletter_init_send_control() {
 	add_meta_box(
 		'spl_mailgun_newsletter_send_control',		// Unique ID
 		'Send Newsletter',												// Title
