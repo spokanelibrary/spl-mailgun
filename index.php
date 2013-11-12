@@ -42,21 +42,19 @@ class SPL_Mailgun_Newsletter {
 	} // initNewsletter()
 
 	function registerPostTemplates($template) {
-		echo plugin_dir_path(__FILE__);
-		echo '<br />';
 		$post_types = array( 'newsletter' );
-
+		/*
     if ( is_post_type_archive( $post_types ) 
     	&& ! file_exists( get_stylesheet_directory() . '/archive-newsletter.php' ) ) {
-        //$template = 'path/to/list/template/in/plugin/folder.php';
+      $template = plugin_dir_path(__FILE__) . 'templates/archive-newsletter.php';
     }
+    */
     if ( is_singular( $post_types )
-     && ! file_exists( get_stylesheet_directory() . '/single-newsletter.php' ) ) {
-        //$template = 'path/to/singular/template/in/plugin/folder.php';
+    	&& ! file_exists( get_stylesheet_directory() . '/single-newsletter.php' ) ) {
+      $template = plugin_dir_path(__FILE__) . 'templates/archive-newsletter.php';
     }
 
     return $template;
-
 	} // registerPostTemplates()
 	
 	function registerPostType() {
