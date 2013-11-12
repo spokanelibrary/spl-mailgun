@@ -137,7 +137,7 @@ function spl_mailgun_newsletter_send_control($object, $box) {
 									, 'spl_mailgun_newsletter_send'
 									, false
 									,array('style'=>'float:right;')
-									//, array( 'tabindex' => '5', 'accesskey' => 'p' ) 
+									//, array( 'tabindex' => '10', 'accesskey' => 's' ) 
 									); 
 	echo '
 	</p>
@@ -152,7 +152,7 @@ function spl_mailgun_newsletter_cmb_meta_boxes( $meta_boxes ) {
   $meta_boxes[] = array('id' => $prefix . 'sidebar_headline_id'
                       , 'title' => 'Sidebar Headline'
                       , 'pages' => array('newsletter') // post type
-                      //, 'show_on' => array( 'key' => 'page-template', 'value' => 'template-newsletter.php' )
+                      //, 'show_on' => array()
                       , 'context' => 'normal'
                       , 'priority' => 'high'
                       , 'show_names' => false
@@ -168,7 +168,7 @@ function spl_mailgun_newsletter_cmb_meta_boxes( $meta_boxes ) {
   $meta_boxes[] = array('id' => $prefix . 'sidebar_content_id'
                       , 'title' => 'Sidebar Content'
                       , 'pages' => array('newsletter') // post type
-                      //, 'show_on' => array( 'key' => 'page-template', 'value' => 'template-newsletter.php' )
+                      //, 'show_on' => array()
                       , 'context' => 'normal'
                       , 'priority' => 'high'
                       , 'show_names' => false
@@ -204,7 +204,7 @@ function spl_mailgun_newsletter_cmb_meta_boxes( $meta_boxes ) {
   $meta_boxes[] = array('id' => $prefix . 'post_select_id'
                       , 'title' => 'Add Posts to Newsletter'
                       , 'pages' => array('newsletter') // post type
-                      //, 'show_on' => array( 'key' => 'page-template', 'value' => 'template-newsletter.php' )
+                      //, 'show_on' => array()
                       , 'context' => 'normal'
                       , 'priority' => 'high'
                       , 'show_names' => true  
@@ -217,11 +217,9 @@ function spl_mailgun_newsletter_cmb_meta_boxes( $meta_boxes ) {
 }
 add_filter( 'cmb_meta_boxes', 'spl_mailgun_newsletter_cmb_meta_boxes' );
 
-
+// https://github.com/jaredatch/Custom-Metaboxes-and-Fields-for-WordPress/wiki/Adding-your-own-field-types
 
 // custom cmb metabox: post_select
-add_action( 'cmb_render_post_select', 'sm_cmb_render_post_select', 10, 2 );
-
 function sm_cmb_render_post_select( $field, $meta ) {
 	$post_type = ($field['post_type'] ? $field['post_type'] : 'post');
 	$limit = ($field['limit'] ? $field['limit'] : '-1');
@@ -241,11 +239,13 @@ function sm_cmb_render_post_select( $field, $meta ) {
 	echo '</select>';
 	echo '<p class="cmb_metabox_description">', $field['desc'], '</p>';
 }
+add_action( 'cmb_render_post_select', 'sm_cmb_render_post_select', 10, 2 );
+
 
 // the field doesnt really need any validation, but just in case
-add_filter( 'cmb_validate_post_select', 'rrh_cmb_validate_post_select' );
 function rrh_cmb_validate_post_select( $new ) {
     return $new;
 }
+add_filter( 'cmb_validate_post_select', 'rrh_cmb_validate_post_select' );
 
 ?>
