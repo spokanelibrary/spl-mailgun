@@ -14,7 +14,7 @@ Author URI: http://seangirard.com
 Version: 0.1
 */
 
-//require('options.php');
+require('options.php');
 require('config.php');
 
 //$config = new SPL_Mailgun_Newsletter_Config();
