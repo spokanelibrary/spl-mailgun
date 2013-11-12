@@ -25,10 +25,10 @@ class SPL_Mailgun_Newsletter {
 	var $config;
 
 	function __construct($config=null) {
-		//if ( !is_null($config) ) {
+		if ( !is_null($config) ) {
 			$this->config = $config;
 			$this->initNewsletter();
-		//}
+		}
 	}
 
 	public function initNewsletter() {
@@ -36,6 +36,7 @@ class SPL_Mailgun_Newsletter {
 	}
 
 	protected function registerPostType() {
+		echo 'this is a test!';
 		$labels = array(
 			'name'               => _x( 'Newsletters', 'post type general name' ),
 			'singular_name'      => _x( 'Newsletter', 'post type singular name' ),
