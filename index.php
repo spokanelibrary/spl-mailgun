@@ -34,33 +34,31 @@ class SPL_Mailgun_Newsletter {
 	function initNewsletter() {
 		add_action( 'init', array( $this, 'registerPostType' ) );
 
-		//https://github.com/jaredatch/Custom-Metaboxes-and-Fields-for-WordPress
-		add_action( 'init', array($this, 'initCmbMetaBoxes'), 9999 );
-		
+		add_action( 'init', array($this, 'initCmbMetaBoxes'), 9999 );		
 	} // initNewsletter()
 
 	function initCmbMetaBoxes() {
-		// make sure the metabox class exists
-	  if ( !class_exists( 'cmb_Meta_Box' ) ) {
+		//https://github.com/jaredatch/Custom-Metaboxes-and-Fields-for-WordPress
+		if ( !class_exists( 'cmb_Meta_Box' ) ) {
 	    require_once( plugin_basename('/metabox/init.php') );
 	  }
 	} // initCmbMetaBoxes()
 
 	function registerPostType() {
 		$args = array(
-			'labels'        => $this->getPostTypeLabels(),
-			'description'   => 'Newsletters',
-			'public'        => true,
-			'menu_position' => 30,
-			'supports'      => array( 'title'
+			'labels'        => $this->getPostTypeLabels()
+		,	'description'   => 'Newsletters'
+		,	'public'        => true
+		,	'menu_position' => 30
+		,	'supports'      => array( 'title'
 															, 'editor'
 															, 'thumbnail'
 															//, 'excerpt'
 															//, 'comments' 
 															),
-			'has_archive'   => true,
-			'slug'					=> 'newsletters',
-			'register_meta_box_cb' => array($this, 'initPublishControls')
+		,	'has_archive'   => true
+		,	'slug'					=> 'newsletters'
+		,	'register_meta_box_cb' => array($this, 'initPublishControls')
 		);
 
 		register_post_type( 'newsletter', $args );	
