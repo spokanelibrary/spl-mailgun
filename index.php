@@ -32,12 +32,29 @@ class SPL_Mailgun_Newsletter {
 	}
 
 	function initNewsletter() {
+		$this->registerPostTemplates();
+
 		add_action( 'init', array( $this, 'registerPostType' ) );
 		add_action( 'init', array($this, 'initCmbMetaBoxes'), 9999 );
 
 		add_filter( 'cmb_meta_boxes', array($this, 'getNewsletterCmbMetaBoxes') );
 	} // initNewsletter()
 
+	function registerPostTemplates() {
+		add_filter('single_template', array($this, 'registerPostTemplateSingle'));
+
+	} // registerPostTemplates()
+
+	function registerPostTemplateSingle($single) {
+		global $wp_query, $post;
+
+		/* Checks for single template by post type */
+		if ($post->post_type == "newsletter"){
+		    if(file_exists(PLUGIN_PATH. '/templates/single.php'))
+		        return PLUGIN_PATH . '/templates/single.php';
+		}
+		    return $single;
+	} // registerPostTemplateSingle()
 	
 	function registerPostType() {
 		$args = array(
