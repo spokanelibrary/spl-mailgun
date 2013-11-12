@@ -47,7 +47,7 @@ class SPL_Mailgun_Newsletter {
 
 	function registerPostTemplateSingle($single) {
 		global $wp_query, $post;
-
+		echo PLUGIN_PATH;
 		/* Checks for single template by post type */
 		if ($post->post_type == "newsletter"){
 		    if(file_exists(PLUGIN_PATH. '/templates/single.php'))
