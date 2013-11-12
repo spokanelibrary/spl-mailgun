@@ -12,7 +12,7 @@
     </div>
     <div class="col-sm-5">
     	<h4><?php spl_news_sidebar_headline($post); ?></h4>
-    	<div class='panel' style="border-width-left">
+    	<div class='panel panel-default' style="border-width-left:5px;">
     		<div class="panel-body">
   	  	<?php spl_news_sidebar_content($post); ?>
 	  	  </div>
