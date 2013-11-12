@@ -77,16 +77,83 @@ class SPL_Mailgun_Newsletter {
 
 	function initPublishControls() {
 		add_meta_box(
-			'spl_mailgun_newsletter_send_control',		// Unique ID
-			'Send Newsletter',												// Title
-			'spl_mailgun_newsletter_send_control',		// Callback function
-			'newsletter',															// Admin page (or post type)
-			'side',																		// Context
-			'default'																	// Priority
+			'spl_mailgun_newsletter_publish_controls'	// Unique ID
+		,	'Send Newsletter'													// Title
+		,	array($this, 'getPublishConrols')					// Callback function
+		,	'newsletter'															// Admin page (or post type)
+		, 'side'																		// Context
+		, 'default'																	// Priority
 		);
-	}
+	} // initPublishControls()
 
-}
+	function getPublishConrols() {
+		wp_nonce_field( basename( __FILE__ ), 'spl_mailgun_newsletter_send_nonce' );
+
+		$tmpl = '
+		<p>
+			<label for="spl-mailgun-newsletter-tempate">Choose a template:</label>
+			<br />
+			<select class="widefat" name="spl-mailgun-newsletter-template" id="spl-mailgun-newsletter-template">
+				<option value="none" selected>Default</option>
+				<option value="todo">ToDo: Get these from directory scan</option>
+			</select>
+		</p>
+		';
+		echo $tmpl;
+
+		$list = '
+		<p>
+			<label for="spl-mailgun-newsletter-list">Choose a mailing list:</label>
+			<br />
+			<select class="widefat" name="spl-mailgun-newsletter-list" id="spl-mailgun-newsletter-list">
+				<option value="none" selected>None</option>
+				<option value="eva">Just Eva!</option>
+				<option value="dev">Dev (sg)</option>
+				<option value="test">Test Group</option>
+				<option value="all">All Subscribers</option>
+				<option value="todo">ToDo: Get these from mailgun</option>
+			</select>
+		</p>
+		';
+		echo $list;
+
+		$email = '
+		<p>
+			<label for="spl-mailgun-newsletter-address">CC this address:</label>
+			<br />
+			<input class="widefat" type="text" name="spl-mailgun-newsletter-address" id="spl-mailgun-newsletter-address" />
+		</p>
+		';
+		echo $email;
+
+		$note = '
+		<p>
+			<strong>Reminder:</strong>
+			Save newsletter <em>before</em> sending!
+		</p>
+		';
+		//echo $note;
+
+		echo '
+		<p>
+		<input type="checkbox" name="spl-mailgun-newsletter-confirm" id="spl-mailgun-newsletter-confirm" />
+		<label for="spl-mailgun-newsletter-confirm">Let\'s do this.</label>
+		';
+
+		submit_button( __( 'Send Now' )
+										, 'primary large'
+										, 'spl_mailgun_newsletter_send'
+										, false
+										,array('style'=>'float:right;')
+										//, array( 'tabindex' => '10', 'accesskey' => 's' ) 
+										); 
+		echo '
+		</p>
+		<div class="clear"></div>
+		';
+	} // getPublishConrols()
+
+} // SPL_Mailgun_Newsletter
 
 /*
 // register custom postype (newsletter)
