@@ -11,7 +11,7 @@
       <?php the_content(); ?>
     </div>
     <div class="col-sm-4">
-    	<h4 class="text-muted"><?php spl_news_sidebar_headline($post); ?></h4>
+    	<h4 class="text-warning"><?php spl_news_sidebar_headline($post); ?></h4>
     	<div class='panel panel-warning' style="border-left-width:5px;">
     		<div class="panel-body">
   	  	<?php spl_news_sidebar_content($post); ?>
