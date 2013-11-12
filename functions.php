@@ -27,7 +27,7 @@ function spl_news_post_select($post, $id) {
 													); 
 
 	if ( !empty($select) ) {
-		$attach = get_post($post->ID);
+		$attach = get_post($select);
 	
 		echo '<h4>'.$attach->post_title.'</h4>';
 		echo wpautop($attach->post_content);
