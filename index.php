@@ -145,6 +145,7 @@ class SPL_Mailgun_Newsletter {
 										); 
 		echo '
 		</p>
+		<div class="clear"></div>
 		';
 
 		$note = '
@@ -153,7 +154,7 @@ class SPL_Mailgun_Newsletter {
 			Save newsletter <em>before</em> sending!
 		</p>
 		';
-		echo $note;
+		//echo $note;
 
 	} // getPublishConrols()
 
@@ -235,7 +236,7 @@ class SPL_Mailgun_Newsletter {
 	function initCmbMetaBoxes() {
 		//https://github.com/jaredatch/Custom-Metaboxes-and-Fields-for-WordPress
 		if ( !class_exists( 'cmb_Meta_Box' ) ) {
-	    require_once( plugin_basename('/metabox/init.php') );
+	    require_once( plugin_basename('/lib/metabox/init.php') );
 	  }
 	  // https://github.com/jaredatch/Custom-Metaboxes-and-Fields-for-WordPress/wiki/Adding-your-own-field-types
 	  add_action( 'cmb_render_post_select', array($this, 'renderPostSelect'), 10, 2 );
