@@ -15,17 +15,9 @@ Version: 0.1
 */
 
 /*
-We're using this metabox toolkit
+thanks to
 https://github.com/jaredatch/Custom-Metaboxes-and-Fields-for-WordPress
 */
-
-// make sure the metabox class exists
-function spl_mailgun_init_cmb_meta_boxes() {
-  if ( !class_exists( 'cmb_Meta_Box' ) ) {
-    require_once( plugin_basename('/metabox/init.php') );
-  }
-}
-add_action( 'init', 'spl_mailgun_init_cmb_meta_boxes', 9999 );
 
 // register custom postype (newsletter)
 function spl_mailgun_init_newsletter() {
@@ -247,5 +239,13 @@ function rrh_cmb_validate_post_select( $new ) {
     return $new;
 }
 add_filter( 'cmb_validate_post_select', 'rrh_cmb_validate_post_select' );
+
+// make sure the metabox class exists
+function spl_mailgun_init_cmb_meta_boxes() {
+  if ( !class_exists( 'cmb_Meta_Box' ) ) {
+    require_once( plugin_basename('/metabox/init.php') );
+  }
+}
+add_action( 'init', 'spl_mailgun_init_cmb_meta_boxes', 9999 );
 
 ?>
