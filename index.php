@@ -43,7 +43,6 @@ class SPL_Mailgun_Newsletter {
 
 	function registerPostTemplates($template) {
 		$post_types = array( 'newsletter' );
-		echo $template . '<br />';
 		/*
     if ( is_post_type_archive( $post_types ) 
     	&& ! file_exists( get_stylesheet_directory() . '/archive-newsletter.php' ) ) {
@@ -54,7 +53,7 @@ class SPL_Mailgun_Newsletter {
     	&& ! file_exists( get_stylesheet_directory() . '/single-newsletter.php' ) ) {
       $template = plugin_dir_path(__FILE__) . 'templates/single-newsletter.php';
     }
-    echo $template . '<br />';
+    
     return $template;
 	} // registerPostTemplates()
 	
