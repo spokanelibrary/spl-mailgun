@@ -20,8 +20,12 @@ function spl_news_post_select($post, $id) {
 	$select = get_post_meta($post->ID
 													, '_spl_mailgun_newsletter_post_select_'.$id
 													, true 
+													);
+	$excerpt = get_post_meta($post->ID
+													, '_spl_mailgun_newsletter_post_select_excerpt_'.$id
+													, true 
 													); 
-	echo $select;
+	echo $select . ' : ' . $excerpt;
 }
 
 ?>
