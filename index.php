@@ -49,7 +49,7 @@ class SPL_Mailgun_Newsletter {
 															),
 			'has_archive'   => true,
 			'slug'					=> 'newsletters',
-			//'register_meta_box_cb' => 'spl_mailgun_newsletter_init_send_control'
+			'register_meta_box_cb' => array($this, 'initPublishControls')
 		);
 
 		register_post_type( 'newsletter', $args );	
@@ -75,6 +75,16 @@ class SPL_Mailgun_Newsletter {
 		return $labels;
 	} // getPostTypeLabels()
 
+	function initPublishControls() {
+		add_meta_box(
+			'spl_mailgun_newsletter_send_control',		// Unique ID
+			'Send Newsletter',												// Title
+			'spl_mailgun_newsletter_send_control',		// Callback function
+			'newsletter',															// Admin page (or post type)
+			'side',																		// Context
+			'default'																	// Priority
+		);
+	}
 
 }
 
