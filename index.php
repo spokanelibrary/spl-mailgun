@@ -149,7 +149,7 @@ function spl_mailgun_newsletter_send_control($object, $box) {
 function spl_mailgun_newsletter_cmb_meta_boxes( $meta_boxes ) {
   $prefix = '_spl_mailgun_newsletter_'; // Prefix for all fields
 
-  $meta_boxes[] = array('id' => $prefix . 'sidebar_headline'
+  $meta_boxes[] = array('id' => $prefix . 'sidebar_headline_id'
                       , 'title' => 'Sidebar Headline'
                       , 'pages' => array('newsletter') // post type
                       //, 'show_on' => array( 'key' => 'page-template', 'value' => 'template-newsletter.php' )
@@ -165,7 +165,7 @@ function spl_mailgun_newsletter_cmb_meta_boxes( $meta_boxes ) {
                                     )
                   );
 
-  $meta_boxes[] = array('id' => $prefix . 'sidebar_content'
+  $meta_boxes[] = array('id' => $prefix . 'sidebar_content_id'
                       , 'title' => 'Sidebar Content'
                       , 'pages' => array('newsletter') // post type
                       //, 'show_on' => array( 'key' => 'page-template', 'value' => 'template-newsletter.php' )
@@ -201,7 +201,7 @@ function spl_mailgun_newsletter_cmb_meta_boxes( $meta_boxes ) {
                                           );
   }
 
-  $meta_boxes[] = array('id' => $prefix . 'post_select'
+  $meta_boxes[] = array('id' => $prefix . 'post_select_id'
                       , 'title' => 'Add Posts to Newsletter'
                       , 'pages' => array('newsletter') // post type
                       //, 'show_on' => array( 'key' => 'page-template', 'value' => 'template-newsletter.php' )
