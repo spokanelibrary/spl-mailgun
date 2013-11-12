@@ -16,4 +16,8 @@ function spl_news_sidebar_content($post) {
 													));
 }
 
+function spl_news_post($post, $id) {
+	echo $id;
+}
+
 ?>

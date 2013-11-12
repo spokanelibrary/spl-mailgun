@@ -20,6 +20,7 @@
     </div>
   </div>
 
+	<?php spl_news_post($post, 1); ?>
 
 
   <footer>
