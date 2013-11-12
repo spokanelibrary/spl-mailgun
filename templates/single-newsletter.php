@@ -7,10 +7,10 @@
   </div>
 
   <div class="row-fluid">
-    <div class="col-sm-7">
+    <div class="col-sm-8">
       <?php the_content(); ?>
     </div>
-    <div class="col-sm-5">
+    <div class="col-sm-4">
     	<h4 class="text-muted"><?php spl_news_sidebar_headline($post); ?></h4>
     	<div class='panel panel-primary' style="border-left-width:5px;">
     		<div class="panel-body">
