@@ -33,7 +33,9 @@ class SPL_Mailgun_Newsletter {
 
 	function initNewsletter() {
 		add_action( 'init', array( $this, 'registerPostType' ) );
-		add_action( 'init', array($this, 'initCmbMetaBoxes'), 9999 );		
+		add_action( 'init', array($this, 'initCmbMetaBoxes'), 9999 );
+
+		add_filter( 'cmb_meta_boxes', array($this, 'getNewsletterCmbMetaBoxes') );
 	} // initNewsletter()
 
 	
@@ -155,7 +157,75 @@ class SPL_Mailgun_Newsletter {
 		';
 	} // getPublishConrols()
 
+	function getNewsletterCmbMetaBoxes( $meta_boxes ) {
+	  $prefix = '_spl_mailgun_newsletter_'; // Prefix for all fields
 
+	  $meta_boxes[] = array('id' => $prefix . 'sidebar_headline_id'
+	                      , 'title' => 'Sidebar Headline'
+	                      , 'pages' => array('newsletter') // post type
+	                      //, 'show_on' => array()
+	                      , 'context' => 'normal'
+	                      , 'priority' => 'high'
+	                      , 'show_names' => false
+	                      , 'fields' => array(
+	                                          array('name' => 'Headline'
+	                                              , 'desc' => 'optional'
+	                                              , 'id' => $prefix . 'sidebar_headline'
+	                                              , 'type' => 'text'
+	                                          )
+	                                    )
+	                  );
+
+	  $meta_boxes[] = array('id' => $prefix . 'sidebar_content_id'
+	                      , 'title' => 'Sidebar Content'
+	                      , 'pages' => array('newsletter') // post type
+	                      //, 'show_on' => array()
+	                      , 'context' => 'normal'
+	                      , 'priority' => 'high'
+	                      , 'show_names' => false
+	                      , 'fields' => array(
+	                                          array(
+																									'name' => 'Sidebar',
+																									'desc' => 'optional',
+																									'id' => $prefix . 'sidebar_content',
+																									'type' => 'wysiwyg',
+																									'options' => array()
+																								)
+	                                    )
+	                  );
+
+	  $fields = array();
+	  $fields[] = array(
+												//'name' => 'Select Posts',
+												'desc' => 'Posts are added to the newsletter in the order shown below',
+												'type' => 'title',
+												'id' => $prefix . 'post_select_title'
+											);
+	  for ( $i=1; $i<=9; $i++ ) {
+	  	$fields[] = array('name' => 'Post # ' . $i . ':'
+	                                              , 'desc' => ''
+	                                              , 'id' => $prefix . 'newsletter_post_'.$i
+	                                              , 'type' => 'post_select'
+	                                              , 'limit' => 20 // limit number of options (posts)
+	                                              , 'post_type' => 'post' // post_type to query for
+	                                          		, 'category' => 5
+	                                          );
+	  }
+
+	  $meta_boxes[] = array('id' => $prefix . 'post_select_id'
+	                      , 'title' => 'Add Posts to Newsletter'
+	                      , 'pages' => array('newsletter') // post type
+	                      //, 'show_on' => array()
+	                      , 'context' => 'normal'
+	                      , 'priority' => 'high'
+	                      , 'show_names' => true  
+	                      
+	                      , 'fields' => $fields
+	                      
+	                  );
+
+	  return $meta_boxes;
+	} // getNewsletterCmbMetaBoxes()
 
 	function initCmbMetaBoxes() {
 		//https://github.com/jaredatch/Custom-Metaboxes-and-Fields-for-WordPress
@@ -168,8 +238,6 @@ class SPL_Mailgun_Newsletter {
 	  add_filter( 'cmb_validate_post_select', array($this, 'validatePostSelect') );
 	} // initCmbMetaBoxes()
 
-
-	// custom cmb metabox: post_select
 	function renderPostSelect( $field, $meta ) {
 		$post_type = ($field['post_type'] ? $field['post_type'] : 'post');
 		$limit = ($field['limit'] ? $field['limit'] : '-1');
@@ -188,13 +256,13 @@ class SPL_Mailgun_Newsletter {
 		}
 		echo '</select>';
 		echo '<p class="cmb_metabox_description">', $field['desc'], '</p>';
-	}
+	} // renderPostSelect()
 	
 	function validatePostSelect( $new ) {
 	  // stub
 	  return $new;
-	}
-	
+	} // validatePostSelect()
+
 } // SPL_Mailgun_Newsletter
 
 /*
