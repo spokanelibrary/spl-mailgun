@@ -7,13 +7,21 @@
       <h1><?php the_title(); ?></h1>
       <?php// get_template_part('templates/entry-meta'); ?>
     </header>
-    <div class="newsletter-content">
-      <?php the_content(); ?>
-    </div>
-    <aside>
-    	<h2><?php spl_news_sidebar_headline($post); ?></h2>
-    	<?php spl_news_sidebar_content($post); ?>
-    </aside>
+
+    <div class="row-fluid">
+	    <div class="col-sm-8">
+	      <?php the_content(); ?>
+	    </div>
+	    <div class="col-sm-4">
+	    	<div class='alert alert-info'>
+	  	  	<h3><?php spl_news_sidebar_headline($post); ?></h3>
+		    	<?php spl_news_sidebar_content($post); ?>
+		    </div>
+	    </div>
+	  </div>
+
+
+
     <footer>
 
     </footer>
