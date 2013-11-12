@@ -57,18 +57,18 @@ class SPL_Mailgun_Newsletter {
 
 	function getPostTypeLabels() {
 		$labels = array(
-			'name'               => _x( 'Newsletters', 'post type general name' ),
-			'singular_name'      => _x( 'Newsletter', 'post type singular name' ),
-			'add_new'            => _x( 'Add New', 'newsletter' ),
-			'add_new_item'       => __( 'Add a New Newsletter' ),
-			'edit_item'          => __( 'Edit Newsletter' ),
-			'new_item'           => __( 'New Newsletter' ),
-			'all_items'          => __( 'All Newsletters' ),
-			'view_item'          => __( 'View Newsletters' ),
-			'search_items'       => __( 'Search Newsletters' ),
-			'not_found'          => __( 'No newsletters found' ),
-			'not_found_in_trash' => __( 'No newsletters found in the Trash' ), 
-			'parent_item_colon'  => '',
+			'name'               => _x( 'Newsletters', 'post type general name' )
+		,	'singular_name'      => _x( 'Newsletter', 'post type singular name' )
+		,	'add_new'            => _x( 'Add New', 'newsletter' )
+		,	'add_new_item'       => __( 'Add a New Newsletter' )
+		,	'edit_item'          => __( 'Edit Newsletter' )
+		,	'new_item'           => __( 'New Newsletter' )
+		,	'all_items'          => __( 'All Newsletters' )
+		,	'view_item'          => __( 'View Newsletters' )
+		,	'search_items'       => __( 'Search Newsletters' )
+		,	'not_found'          => __( 'No newsletters found' )
+		,	'not_found_in_trash' => __( 'No newsletters found in the Trash' )
+		,	'parent_item_colon'  => ''
 			'menu_name'          => 'Newsletters'
 		);
 
