@@ -1,5 +1,6 @@
 <?php //get_template_part('templates/content', 'single'); ?>
-
+<div class="row-fluid">
+<div class="col-sm-12">
 <?php while (have_posts()) : the_post(); ?>
 	<div class="page-header">
     <h1><?php the_title(); ?></h1>
@@ -36,4 +37,7 @@
 
   </footer>
   <?php //comments_template('/templates/comments.php'); ?>
+
 <?php endwhile; ?>
+</div>
+</div>
