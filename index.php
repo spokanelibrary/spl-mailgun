@@ -69,7 +69,7 @@ class SPL_Mailgun_Newsletter {
 		,	'not_found'          => __( 'No newsletters found' )
 		,	'not_found_in_trash' => __( 'No newsletters found in the Trash' )
 		,	'parent_item_colon'  => ''
-			'menu_name'          => 'Newsletters'
+		,	'menu_name'          => 'Newsletters'
 		);
 
 		return $labels;
