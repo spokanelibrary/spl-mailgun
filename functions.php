@@ -25,7 +25,14 @@ function spl_news_post_select($post, $id) {
 													, '_spl_mailgun_newsletter_post_select_excerpt_'.$id
 													, true 
 													); 
-	echo $select . ' : ' . $excerpt;
+
+	if ( !empty($select) ) {
+		$attach = get_post($post->ID);
+	
+		echo '<h4>'.$attach->post_title.'</h4>';
+		echo wpautop($attach->post_content);
+	}
+
 }
 
 ?>
