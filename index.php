@@ -37,25 +37,22 @@ class SPL_Mailgun_Newsletter {
 		add_action( 'init', array( $this, 'registerPostType' ) );
 		add_action( 'init', array($this, 'initCmbMetaBoxes'), 9999 );
 
+		add_filter( 'template_include', array($this, 'registerPostTemplates'));
 		add_filter( 'cmb_meta_boxes', array($this, 'getNewsletterCmbMetaBoxes') );
 	} // initNewsletter()
 
-	function registerPostTemplates() {
-		add_filter('single_template', array($this, 'registerPostTemplateSingle'));
+	function registerPostTemplates($template) {
+		echo $template;
+		$post_types = array( 'project' );
+
+    if ( is_post_type_archive( $post_types ) && ! file_exists( get_stylesheet_directory() . '/archive-project.php' ) )
+        //$template = 'path/to/list/template/in/plugin/folder.php';
+    if ( is_singular( $post_types ) && ! file_exists( get_stylesheet_directory() . '/single-project.php' ) )
+        //$template = 'path/to/singular/template/in/plugin/folder.php';
+
+    return $template;
 
 	} // registerPostTemplates()
-
-	function registerPostTemplateSingle($single) {
-		global $wp_query, $post;
-		/* Checks for single template by post type */
-		if ($post->post_type == "newsletter"){
-			echo plugin_basename(__FILE__).'/templates/single.php';
-			if(file_exists(plugin_basename('/templates/single.php'))) {
-		    	return plugin_basename('/templates/single.php');
-		  }
-		}
-		    return $single;
-	} // registerPostTemplateSingle()
 	
 	function registerPostType() {
 		$args = array(
