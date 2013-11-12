@@ -16,8 +16,12 @@ function spl_news_sidebar_content($post) {
 													));
 }
 
-function spl_news_post($post, $id) {
-	echo $id;
+function spl_news_post_select($post, $id) {
+	$select = get_post_meta($post->ID
+													, '_spl_mailgun_newsletter_post_select_'.$id
+													, true 
+													); 
+	echo $select;
 }
 
 ?>

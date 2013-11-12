@@ -20,7 +20,7 @@
     </div>
   </div>
 
-	<?php spl_news_post($post, 1); ?>
+	<?php spl_news_post_select($post, 1); ?>
 
 
   <footer>
