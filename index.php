@@ -135,7 +135,7 @@ function spl_mailgun_newsletter_send_control($object, $box) {
 									, 'primary large'
 									, 'spl_mailgun_newsletter_send'
 									, false
-									array('style'=>'float:right;')
+									,array('style'=>'float:right;')
 									//, array( 'tabindex' => '5', 'accesskey' => 'p' ) 
 									); 
 }
