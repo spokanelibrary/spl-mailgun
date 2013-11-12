@@ -46,14 +46,14 @@ class SPL_Mailgun_Newsletter {
 		/*
     if ( is_post_type_archive( $post_types ) 
     	&& ! file_exists( get_stylesheet_directory() . '/archive-newsletter.php' ) ) {
-      $template = plugin_dir_path(__FILE__) . 'templates/archive-newsletter.php';
+      $template = plugin_dir_path(__FILE__) . '/templates/archive-newsletter.php';
     }
     */
     if ( is_singular( $post_types )
     	&& ! file_exists( get_stylesheet_directory() . '/single-newsletter.php' ) ) {
-      $template = plugin_dir_path(__FILE__) . 'templates/archive-newsletter.php';
+      $template = plugin_dir_path(__FILE__) . '/templates/archive-newsletter.php';
     }
-
+    echo $template . '<br />';
     return $template;
 	} // registerPostTemplates()
 	
