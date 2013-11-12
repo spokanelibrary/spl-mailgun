@@ -33,10 +33,9 @@ class SPL_Mailgun_Newsletter {
 
 	public function initNewsletter() {
 		add_action( 'init', array( $this, 'registerPostType' ) );
-	}
+	} // initNewsletter()
 
-	protected function registerPostType() {
-		echo 'this is a test!';
+	public function registerPostType() {
 		$labels = array(
 			'name'               => _x( 'Newsletters', 'post type general name' ),
 			'singular_name'      => _x( 'Newsletter', 'post type singular name' ),
@@ -69,7 +68,7 @@ class SPL_Mailgun_Newsletter {
 		);
 
 		register_post_type( 'newsletter', $args );	
-	}
+	} // registerPostType()
 
 }
 
