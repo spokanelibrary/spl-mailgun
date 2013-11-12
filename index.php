@@ -126,6 +126,8 @@ function spl_mailgun_newsletter_send_control($object, $box) {
 	';
 	echo $note;
 
+	echo '<input type="checkbox" />';
+
 	submit_button( __( 'Send Now' )
 									, 'primary large'
 									, 'spl_mailgun_newsletter_send'
