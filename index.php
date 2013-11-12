@@ -130,14 +130,6 @@ class SPL_Mailgun_Newsletter {
 		';
 		echo $email;
 
-		$note = '
-		<p>
-			<strong>Reminder:</strong>
-			Save newsletter <em>before</em> sending!
-		</p>
-		';
-		//echo $note;
-
 		echo '
 		<p>
 		<input type="checkbox" name="spl-mailgun-newsletter-confirm" id="spl-mailgun-newsletter-confirm" />
@@ -153,8 +145,16 @@ class SPL_Mailgun_Newsletter {
 										); 
 		echo '
 		</p>
-		<div class="clear"></div>
 		';
+
+		$note = '
+		<p>
+			<strong>Reminder:</strong>
+			Save newsletter <em>before</em> sending!
+		</p>
+		';
+		echo $note;
+
 	} // getPublishConrols()
 
 	function getNewsletterCmbMetaBoxes( $meta_boxes ) {
