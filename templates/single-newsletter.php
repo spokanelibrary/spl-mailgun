@@ -12,8 +12,10 @@
     </div>
     <div class="col-sm-5">
     	<h4><?php spl_news_sidebar_headline($post); ?></h4>
-    	<div class='well well-sm'>
+    	<div class='panel' style="border-width-left">
+    		<div class="panel-body">
   	  	<?php spl_news_sidebar_content($post); ?>
+	  	  </div>
 	    </div>
     </div>
   </div>
