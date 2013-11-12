@@ -1,5 +1,5 @@
 <?php
-/*
+
 class SPL_Mailgun_Newsletter_Config {
 
 	var $publickey = 'my-public-key';
@@ -7,6 +7,5 @@ class SPL_Mailgun_Newsletter_Config {
 	var $campaignid = 'my-campaign-id';
 
 }
-*/
 
 ?>
