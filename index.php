@@ -49,6 +49,7 @@ class SPL_Mailgun_Newsletter {
 		global $wp_query, $post;
 		/* Checks for single template by post type */
 		if ($post->post_type == "newsletter"){
+				echo 'test!';
 		    if(file_exists(plugin_basename('/templates/single.php')))
 		        return plugin_basename('/templates/single.php');
 		}
