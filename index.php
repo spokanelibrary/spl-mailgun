@@ -141,7 +141,7 @@ class SPL_Mailgun_Newsletter {
 		echo '
 		<p>
 		<input type="checkbox" name="spl-mailgun-newsletter-confirm" id="spl-mailgun-newsletter-confirm" />
-		<label for="spl-mailgun-newsletter-confirm">Let\'s do this.</label>
+		<label for="spl-mailgun-newsletter-confirm"><strong>Let\'s do this.</strong></label>
 		';
 
 		submit_button( __( 'Send Now' )
@@ -197,7 +197,7 @@ class SPL_Mailgun_Newsletter {
 	  $fields = array();
 	  $fields[] = array(
 												//'name' => 'Select Posts',
-												'desc' => 'Posts are added to the newsletter in the order shown below',
+												'desc' => 'Posts are added to the newsletter in the order shown below.',
 												'type' => 'title',
 												'id' => $prefix . 'post_select_title'
 											);
