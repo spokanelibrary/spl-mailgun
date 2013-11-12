@@ -33,7 +33,18 @@ class SPL_Mailgun_Newsletter {
 
 	function initNewsletter() {
 		add_action( 'init', array( $this, 'registerPostType' ) );
+
+		//https://github.com/jaredatch/Custom-Metaboxes-and-Fields-for-WordPress
+		add_action( 'init', array($this, 'initCmbMetaBoxes'), 9999 );
+		
 	} // initNewsletter()
+
+	function initCmbMetaBoxes() {
+		// make sure the metabox class exists
+	  if ( !class_exists( 'cmb_Meta_Box' ) ) {
+	    require_once( plugin_basename('/metabox/init.php') );
+	  }
+	} // initCmbMetaBoxes()
 
 	function registerPostType() {
 		$args = array(
