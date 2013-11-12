@@ -29,7 +29,7 @@ function spl_news_post_select($post, $id) {
 	if ( !empty($select) ) {
 		$attach = get_post($select);
 		$permalink = get_permalink($select);
-		echo '<h4>'.$attach->post_title.'</h4>';
+		echo '<p class="lead">'.$attach->post_title.'</p>';
 		echo wpautop($attach->post_content);
 
 		$anchor = '
