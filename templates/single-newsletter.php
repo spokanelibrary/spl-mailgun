@@ -1,13 +1,6 @@
 <?php //get_template_part('templates/content', 'single'); ?>
 
 <?php while (have_posts()) : the_post(); ?>
-	<?php
-	$spl_mail_news['sidebar'] = wpautop(get_post_meta($post->ID
-																									, '_spl_mailgun_newsletter_sidebar_content'
-																									, true 
-																									)
-																			);
-	?>
 
   <article <?php post_class(); ?>>
     <header class="page-header">
@@ -18,7 +11,7 @@
       <?php the_content(); ?>
     </div>
     <aside>
-    	<?php echo $spl_mail_news['sidebar']; ?>
+    	<?php spl_mail_news_sidebar_content($post); ?>
     </aside>
     <footer>
 

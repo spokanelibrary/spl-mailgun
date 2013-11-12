@@ -16,9 +16,13 @@ Version: 0.1
 
 //require('options.php');
 require('config.php');
+require('functions.php');
 
 $config = new SPL_Mailgun_Newsletter_Config();
 $newsletter = new SPL_Mailgun_Newsletter($config);
+
+
+
 
 class SPL_Mailgun_Newsletter {
 
