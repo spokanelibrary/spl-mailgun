@@ -13,9 +13,9 @@
 	      <?php the_content(); ?>
 	    </div>
 	    <div class="col-sm-5">
+	    	<h4><?php spl_news_sidebar_headline($post); ?></h4>
 	    	<div class='well well-sm'>
-	  	  	<h4><?php spl_news_sidebar_headline($post); ?></h4>
-		    	<?php spl_news_sidebar_content($post); ?>
+	  	  	<?php spl_news_sidebar_content($post); ?>
 		    </div>
 	    </div>
 	  </div>
