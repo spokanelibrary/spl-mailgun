@@ -42,7 +42,43 @@ class SPL_Mailgun_Newsletter {
 		if ( !class_exists( 'cmb_Meta_Box' ) ) {
 	    require_once( plugin_basename('/metabox/init.php') );
 	  }
+
+	  // https://github.com/jaredatch/Custom-Metaboxes-and-Fields-for-WordPress/wiki/Adding-your-own-field-types
+	  add_action( 'cmb_render_post_select', array($this, 'renderPostSelect'), 10, 2 );
+	  add_filter( 'cmb_validate_post_select', array($this, 'validatePostSelect') );
 	} // initCmbMetaBoxes()
+
+
+	// custom cmb metabox: post_select
+	function renderPostSelect( $field, $meta ) {
+		$post_type = ($field['post_type'] ? $field['post_type'] : 'post');
+		$limit = ($field['limit'] ? $field['limit'] : '-1');
+		$category = ($field['category'] ? $field['category'] : '');
+		echo '<select name="', $field['id'], '" id="', $field['id'], '">';
+		// get_posts orders by post_date desc?
+		$posts = get_posts('post_type='.$post_type.'&category='.$category.'&numberposts='.$limit.'&posts_per_page='.$limit);
+		
+		echo '<option value="">None</option>';
+		foreach ( $posts as $art ) {
+			if ($art->ID == $meta ) {
+				echo '<option value="' . $art->ID . '" selected>' . get_the_title($art->ID) . '</option>';
+			} else {
+				echo '<option value="' . $art->ID . '  ">' . get_the_title($art->ID) . '</option>';
+			}
+		}
+		echo '</select>';
+		echo '<p class="cmb_metabox_description">', $field['desc'], '</p>';
+	}
+	
+
+	// the field doesnt really need any validation, but just in case
+	function validatePostSelect( $new ) {
+	    return $new;
+	}
+	
+
+
+
 
 	function registerPostType() {
 		$args = array(
