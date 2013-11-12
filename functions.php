@@ -31,7 +31,12 @@ function spl_news_post_select($post, $id) {
 		$permalink = get_permalink($select);
 		echo '<h4>'.$attach->post_title.'</h4>';
 		echo wpautop($attach->post_content);
-		echo $permalink;
+
+		$anchor = '
+		<a href="'.$anchor.'"
+				class="btn btn-success">More &rarr;</a>
+		';
+		echo $anchor;
 	}
 
 }
