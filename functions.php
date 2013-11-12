@@ -32,7 +32,7 @@ function spl_news_post_select($post, $id) {
 		echo '<p class="lead">'.$attach->post_title.'</p>';
 
 		if ( !empty($excerpt) ) {
-			echo wpautop($attach->post_excerpt);
+			echo wp_trim_excerpt($attach->post_excerpt);
 		} else {
 			echo wpautop($attach->post_content);
 		}
