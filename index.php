@@ -18,7 +18,7 @@ require('options.php');
 require('config.php');
 
 $config = new SPL_Mailgun_Newsletter_Config();
-$newsletter = new SPL_Mailgun_Newsletter($config);
+//$newsletter = new SPL_Mailgun_Newsletter($config);
 
 class SPL_Mailgun_Newsletter {
 
