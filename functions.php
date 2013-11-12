@@ -35,7 +35,7 @@ function spl_news_post_select($post, $id) {
 			if (!empty($attach->post_excerpt)) { 
 				echo wpautop($attach->post_excerpt);
 			} else {
-				echo wpautop(wp_trim_words($attach->post_content, 100));
+				echo wpautop(wp_trim_words($attach->post_content, 80));
 			}
 		} else {
 			echo wpautop($attach->post_content);
