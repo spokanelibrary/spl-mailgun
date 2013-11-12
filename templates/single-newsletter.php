@@ -13,7 +13,7 @@
 	      <?php the_content(); ?>
 	    </div>
 	    <div class="col-sm-4">
-	    	<div class='well well-sm'>
+	    	<div class='well well-small'>
 	  	  	<h3><?php spl_news_sidebar_headline($post); ?></h3>
 		    	<?php spl_news_sidebar_content($post); ?>
 		    </div>
