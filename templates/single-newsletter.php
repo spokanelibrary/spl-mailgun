@@ -11,8 +11,8 @@
       <?php the_content(); ?>
     </div>
     <div class="col-sm-5">
-    	<h4 class="text-primary"><?php spl_news_sidebar_headline($post); ?></h4>
-    	<div class='panel panel-default' style="border-left-width:5px;">
+    	<h4 class="text-success"><?php spl_news_sidebar_headline($post); ?></h4>
+    	<div class='panel panel-primary' style="border-left-width:5px;">
     		<div class="panel-body">
   	  	<?php spl_news_sidebar_content($post); ?>
 	  	  </div>
