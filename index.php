@@ -126,7 +126,10 @@ function spl_mailgun_newsletter_send_control($object, $box) {
 	';
 	echo $note;
 
-	echo '<input type="checkbox" />';
+	echo '
+	<input type="checkbox" name="spl-mailgun-newsletter-confirm" id="spl-mailgun-newsletter-confirm" />
+	<label for="spl-mailgun-newsletter-confirm">Let\'s do this.</label>
+	';
 
 	submit_button( __( 'Send Now' )
 									, 'primary large'
