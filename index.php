@@ -203,14 +203,10 @@ class SPL_Mailgun_Newsletter {
 											);
 	  for ( $i=1; $i<=9; $i++ ) {
 
-	  	$fields[] = array('name' => '',
+	  	$fields[] = array('name' => 'Excerpt Only?',
 												'desc' => '',
-												'id' => $prefix . 'post_select_display_'.$i,
-												'type' => 'radio_inline',
-												'options' => array(
-													array('name' => 'Option One', 'value' => 'standard'),
-													array('name' => 'Option Two', 'value' => 'custom')			
-												)
+												'id' => $prefix . 'post_select_excerpt_'.$i,
+												'type' => 'checkbox',
 											);
 
 	  	$fields[] = array('name' => 'Post # ' . $i . ':'
