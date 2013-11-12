@@ -29,27 +29,21 @@ function spl_news_post_select($post, $id) {
 	if ( !empty($select) ) {
 		$attach = get_post($select);
 		$permalink = get_permalink($select);
-		echo '<p class="lead">'.$attach->post_title.'</p>';
+		echo '<p class="lead"><a href="'.$permalink.'">'.$attach->post_title.'</a></p>';
 
 		if ( !empty($excerpt) ) {
 			if (!empty($attach->post_excerpt)) { 
-				echo wpautop($attach->post_excerpt);
-				echo '&hellip;';
+				echo wpautop($attach->post_excerpt.'&hellip;');
 			} else {
 				echo wpautop(wp_trim_words($attach->post_content));
-				$anchor = '
-				<a href="'.$permalink.'"
-						class="btn btn-success">Full Story &rarr;</a>
-				';
 			}
 		} else {
 			echo wpautop($attach->post_content);
-			$anchor = '
-			<a href="'.$permalink.'"
-					class="btn btn-success">Continue &rarr;</a>
-			';
 		}
-		
+		$anchor = '
+		<a href="'.$permalink.'"
+				class="btn btn-success">Continue &rarr;</a>
+		';
 		echo $anchor;
 	}
 
