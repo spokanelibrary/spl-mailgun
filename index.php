@@ -81,20 +81,23 @@ function spl_mailgun_newsletter_send_control($object, $box) {
 
 	wp_nonce_field( basename( __FILE__ ), 'spl_mailgun_newsletter_send_nonce' );
 
-	$email = '
+	$tmpl = '
 	<p>
-		<label for="spl-mailgun-newsletter-address">Send to this address:</label>
+		<label for="spl-mailgun-newsletter-tempate">Choose a template:</label>
 		<br />
-		<input class="widefat" type="text" name="spl-mailgun-newsletter-address" id="spl-mailgun-newsletter-address" />
+		<select class="widefat" name="spl-mailgun-newsletter-template" id="spl-mailgun-newsletter-template">
+			<option value="none" selected>Default</option>
+			<option value="todo">ToDo: Get these from directory scan</option>
+		</select>
 	</p>
 	';
-	echo $email;
+	echo $tmpl;
 
 	$list = '
 	<p>
 		<label for="spl-mailgun-newsletter-list">Choose a mailing list:</label>
 		<br />
-		<select class="widefat" type="text" name="spl-mailgun-newsletter-list" id="spl-mailgun-newsletter-list">
+		<select class="widefat" name="spl-mailgun-newsletter-list" id="spl-mailgun-newsletter-list">
 			<option value="none" selected>None</option>
 			<option value="eva">Just Eva!</option>
 			<option value="dev">Dev (sg)</option>
@@ -105,6 +108,15 @@ function spl_mailgun_newsletter_send_control($object, $box) {
 	</p>
 	';
 	echo $list;
+
+	$email = '
+	<p>
+		<label for="spl-mailgun-newsletter-address">CC this address:</label>
+		<br />
+		<input class="widefat" type="text" name="spl-mailgun-newsletter-address" id="spl-mailgun-newsletter-address" />
+	</p>
+	';
+	echo $email;
 
 	$note = '
 	<p>
@@ -196,7 +208,7 @@ add_filter( 'cmb_meta_boxes', 'spl_mailgun_newsletter_cmb_meta_boxes' );
 
 
 
-// render post select
+// custom cmb metabox: post_select
 add_action( 'cmb_render_post_select', 'sm_cmb_render_post_select', 10, 2 );
 
 function sm_cmb_render_post_select( $field, $meta ) {
