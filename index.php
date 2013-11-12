@@ -165,7 +165,7 @@ function spl_mailgun_newsletter_cmb_meta_boxes( $meta_boxes ) {
                                     )
                   );
 
-  $meta_boxes[] = array('id' => $prefix . 'sidebar_content_id'
+  $meta_boxes[] = array('id' => $prefix . 'sidebar_content'
                       , 'title' => 'Sidebar Content'
                       , 'pages' => array('newsletter') // post type
                       //, 'show_on' => array( 'key' => 'page-template', 'value' => 'template-newsletter.php' )
