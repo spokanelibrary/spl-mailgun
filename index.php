@@ -203,8 +203,8 @@ class SPL_Mailgun_Newsletter {
 											);
 	  for ( $i=1; $i<=9; $i++ ) {
 
-	  	$fields[] = array('name' => 'Display',
-												'desc' => 'field description (optional)',
+	  	$fields[] = array('name' => '',
+												'desc' => '',
 												'id' => $prefix . 'post_select_display_'.$i,
 												'type' => 'radio_inline',
 												'options' => array(
