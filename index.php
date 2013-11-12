@@ -127,6 +127,7 @@ function spl_mailgun_newsletter_send_control($object, $box) {
 	echo $note;
 
 	echo '
+	<p>
 	<input type="checkbox" name="spl-mailgun-newsletter-confirm" id="spl-mailgun-newsletter-confirm" />
 	<label for="spl-mailgun-newsletter-confirm">Let\'s do this.</label>
 	';
@@ -138,6 +139,9 @@ function spl_mailgun_newsletter_send_control($object, $box) {
 									,array('style'=>'float:right;')
 									//, array( 'tabindex' => '5', 'accesskey' => 'p' ) 
 									); 
+	echo '
+	</p>
+	';
 }
 
 // newsletter metataboxes
