@@ -13,6 +13,8 @@ Author: Sean Girard
 Author URI: http://seangirard.com
 Version: 0.1
 */
+	
+require('config.php');
 
 class SPL_Mailgun_Newsletter {
 
