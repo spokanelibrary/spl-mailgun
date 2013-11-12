@@ -10,7 +10,7 @@ function spl_news_sidebar_headline($post) {
 }
 
 function spl_news_sidebar_content($post) {
-	echo wpautop(get_post_meta($post->ID
+	echo apply_filters('the_content', get_post_meta($post->ID
 													, '_spl_mailgun_newsletter_sidebar_content'
 													, true 
 													));
@@ -35,10 +35,10 @@ function spl_news_post_select($post, $id) {
 			if (!empty($attach->post_excerpt)) { 
 				echo wpautop($attach->post_excerpt);
 			} else {
-				echo apply_filters('the_content', wp_trim_words($attach->post_content, 80));
+				echo wpautop(wp_trim_words($attach->post_content, 80));
 			}
 		} else {
-			echo apply_filters('the_content', $attach->post_content);
+			echo wpautop($attach->post_content);
 		}
 		$anchor = '
 		<a href="'.$permalink.'"
