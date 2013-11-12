@@ -13,14 +13,18 @@ Author: Sean Girard
 Author URI: http://seangirard.com
 Version: 0.1
 */
-	
+
+require('options.php');
 require('config.php');
+
+$config = new SPL_Mailgun_Newsletter_Config();
+$newsletter = new SPL_Mailgun_Newsletter($config);
 
 class SPL_Mailgun_Newsletter {
 
 	var $config;
 
-	function __construct() {
+	function __construct($config=null) {
 
 	}
 
