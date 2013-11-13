@@ -32,8 +32,9 @@
     <div class="col-sm-4">
     	<aside class="aside">
 				<p class="lead">	
-					<strong><?php spl_news_sidebar_headline($post); ?></strong>
+					<?php spl_news_sidebar_headline($post); ?>
 				</p>
+				<hr />
 		  	<?php spl_news_sidebar_content($post); ?>
 		  	<div class="clearfix"></div>
 		  </aside>
