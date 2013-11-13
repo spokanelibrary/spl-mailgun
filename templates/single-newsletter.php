@@ -3,7 +3,7 @@
 <?php while (have_posts()) : the_post(); ?>
 	<div class="page-header">
     <h1>
-    	<small>From the News Desk at Spokane Public Library</small>
+    	<small>From the News Desk at Spokane Public Library:</small>
     </h1>
     <?php// get_template_part('templates/entry-meta'); ?>
   </div>
@@ -12,11 +12,13 @@
     <div class="col-sm-8">
     	<div class="panel panel-default" style="border-left-width:5px;">
     		<div class="panel-heading">
+    			<span class="pull-right">
+    				<a href="#">Subscribe</a>
+    			</span>
     			<span class="text-muted">
     				<i class="glyphicon glyphicon-send"></i>
     				<strong><?php the_date(); ?></strong>
     			</span>
-    			
     		</div>
     		<div class="panel-body">
 		      <h3 class="page-header">
