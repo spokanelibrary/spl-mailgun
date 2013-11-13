@@ -5,7 +5,7 @@ class SPL_Mailgun_Newsletter_Settings {
 	private $options;
 
 	function __construct() {
-		add_action( 'admin_menu', array( $this, 'add_plugin_page' ) );
+		//add_action( 'admin_menu', array( $this, 'add_plugin_page' ) );
     //add_action( 'admin_init', array( $this, 'page_init' ) );
 	}
 
