@@ -19,17 +19,11 @@
     </div><!-- /.col -->
     <div class="col-sm-4">
     	<aside class="aside">
-	    	<div class="panel panel-warning" style="border-left-width:5px;">
-	    		<div class="panel-heading">
-	    			<h4>
-	    			<?php spl_news_sidebar_headline($post); ?>
-	    			</h4>
-	    		</div>
-	    		<div class="panel-body">
-				  	<?php spl_news_sidebar_content($post); ?>
-				  	<div class="clearfix"></div>
-				  </div>
-		  	</div>
+  			<h4>
+  			<?php spl_news_sidebar_headline($post); ?>
+  			</h4>
+		  	<?php spl_news_sidebar_content($post); ?>
+		  	<div class="clearfix"></div>
 		  </aside>
     </div><!-- /.col -->
   </div><!-- /.row -->
