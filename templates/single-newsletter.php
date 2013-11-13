@@ -36,12 +36,12 @@
     	</div>
     </div><!-- /.col -->
     <div class="col-sm-4">
-    	<h3 class="text-center">
+    	<h3 class="">
     		<?php spl_news_sidebar_headline($post); ?>
 			</h3>
 			<aside class="aside">
 		  	<?php spl_news_sidebar_content($post); ?>
-		  	<div class="clearfix"></div>
+		  	<hr />
 		  </aside>
     </div><!-- /.col -->
   </div><!-- /.row -->
