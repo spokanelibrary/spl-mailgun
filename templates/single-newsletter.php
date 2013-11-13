@@ -31,10 +31,9 @@
     </div><!-- /.col -->
     <div class="col-sm-4">
     	<aside class="aside">
-				<p class="lead">	
+				<div class="alert alert-success">	
 					<?php spl_news_sidebar_headline($post); ?>
-				</p>
-				<hr />
+				</div>
 		  	<?php spl_news_sidebar_content($post); ?>
 		  	<div class="clearfix"></div>
 		  </aside>
