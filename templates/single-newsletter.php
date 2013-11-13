@@ -13,9 +13,9 @@
     	<div class="panel panel-default" style="border-left-width:5px;">
     		<div class="panel-heading">
     			<div class="pull-right">
-    				<span class="label label-default">
+    				<span class="text-muted">
     				<i class="glyphicon glyphicon-send"></i>
-    				<strong><?php the_date(); ?></strong>
+    				<h5><?php the_date(); ?></h5>
 	    			</span>
     			</div>
     			<h3>
