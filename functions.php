@@ -42,7 +42,7 @@ function spl_news_post_select($post, $id) {
 		}
 		$anchor = '
 		<a href="'.$permalink.'"
-				class="btn btn-success">Continue &rarr;</a>
+				class="btn btn-success">Read More &rarr;</a>
 		';
 		echo $anchor;
 	}
