@@ -11,10 +11,12 @@
       <?php the_content(); ?>
     </div>
     <div class="col-sm-4">
-    	<h4 class="text-warning"><?php spl_news_sidebar_headline($post); ?></h4>
+    	<h4>
+    		<span class="label label-warning"><?php spl_news_sidebar_headline($post); ?></span>
+    	</h4>
     	
-  		  	<?php spl_news_sidebar_content($post); ?>
-  		  	<div class="clearfix"></div>
+	  	<?php spl_news_sidebar_content($post); ?>
+	  	<div class="clearfix"></div>
 	  	  
     </div>
   </div>
