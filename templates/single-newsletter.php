@@ -12,7 +12,10 @@
     <div class="col-sm-8">
     	<div class="panel panel-default" style="border-left-width:5px;">
     		<div class="panel-heading">
-    			
+    			<span class="pull-right text-muted">
+    				<i class="glyphicon glyphicon-send"></i>
+    				<strong><?php the_date(); ?></strong>
+    			</span>
     			<h3>
     				<i class="glyphicon glyphicon-list text-muted"></i>
     				<?php the_title(); ?>
@@ -29,7 +32,7 @@
     <div class="col-sm-4">
     	<aside class="aside">
   			<div class="panel panel-primary">
-  				<div class="panel-heading">
+  				<div class="panel-body">
   					<p class="lead">	
 	  					<?php spl_news_sidebar_headline($post); ?>
   					</p>
