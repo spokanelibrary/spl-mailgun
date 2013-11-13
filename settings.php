@@ -113,7 +113,6 @@ class SPL_Mailgun_Newsletter_Settings {
             isset( $this->options['title'] ) ? esc_attr( $this->options['title']) : ''
         );
     }
-}
 
 } // SPL_Mailgun_Newsletter_Settings
 
