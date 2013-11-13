@@ -14,7 +14,7 @@
     	<h3>
     		<span class="label label-warning" style="display:block;"><?php spl_news_sidebar_headline($post); ?></span>
     	</h3>
-    	<div class="panel panel-warning">
+    	<div class="panel panel-warning" style="border-left-width:5px;">
     		<div class="panel-body">
 			  	<?php spl_news_sidebar_content($post); ?>
 			  	<div class="clearfix"></div>
