@@ -39,6 +39,7 @@
     	<h3 class="text-center">
     		<?php spl_news_sidebar_headline($post); ?>
 			</h3>
+			<hr />
 			<aside class="aside">
 		  	<?php spl_news_sidebar_content($post); ?>
 		  	<div class="clearfix"></div>
