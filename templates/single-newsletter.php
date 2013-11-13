@@ -13,10 +13,10 @@
     	<div class="panel panel-default" style="border-left-width:5px;">
     		<div class="panel-heading">
     			<h3>
-    				<span class="pull-right text-muted">
+    				<small class="pull-right text-muted">
 	    				<i class="glyphicon glyphicon-send"></i>
 	    				<strong><?php the_date(); ?></strong>
-	    			</span>
+	    			</small>
     				<i class="glyphicon glyphicon-list text-muted"></i>
     				<?php the_title(); ?>
     			</h3>
