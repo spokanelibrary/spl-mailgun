@@ -14,7 +14,7 @@
     		<div class="panel-heading">
     			<span class="pull-right text-muted">
     				<i class="glyphicon glyphicon-send"></i>
-    				Published: <?php the_date(); ?>
+    				<strong><?php the_date(); ?></strong>
     			</span>
     			<h3>
     				<i class="glyphicon glyphicon-list text-muted"></i>
