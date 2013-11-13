@@ -101,7 +101,6 @@ class SPL_Mailgun_Newsletter_Settings {
             '<input type="text" id="id_number" name="my_option_name[id_number]" value="%s" />',
             isset( $this->options['id_number'] ) ? esc_attr( $this->options['id_number']) : ''
         );
-        print_r($args);
     }
 
     /** 
