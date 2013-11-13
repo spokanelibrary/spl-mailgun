@@ -16,12 +16,13 @@
     				<i class="glyphicon glyphicon-send"></i>
     				<strong><?php the_date(); ?></strong>
     			</span>
-    			<h3>
+    			
+    		</div>
+    		<div class="panel-body">
+		      <h3>
     				<i class="glyphicon glyphicon-list text-muted"></i>
     				<?php the_title(); ?>
     			</h3>
-    		</div>
-    		<div class="panel-body">
 		      <?php the_content(); ?>
       	</div>
     		<p class="lead text-center text-muted">
