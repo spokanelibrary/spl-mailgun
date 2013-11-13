@@ -23,6 +23,9 @@
     		</div>
     		<div class="panel-body">
 		      <?php the_content(); ?>
+		      <p class="lead center">
+		      	<i class="glyphicon glyphicon-leaf"></i>
+		      </p>
       	</div>
     	</div>
     </div><!-- /.col -->
