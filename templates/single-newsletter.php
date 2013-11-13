@@ -12,14 +12,14 @@
     <div class="col-sm-8">
     	<div class="panel panel-default" style="border-left-width:5px;">
     		<div class="panel-heading">
-    			<p class="pull-right lead">
+    			<div class="pull-right">
     				<span class="label label-default">
     				<i class="glyphicon glyphicon-send"></i>
     				<strong><?php the_date(); ?></strong>
 	    			</span>
-    			</p>
+    			</div>
     			<h3>
-    				<small class="glyphicon glyphicon-list text-muted"></small>
+    				<i class="glyphicon glyphicon-list text-muted"></i>
     				<?php the_title(); ?>
     			</h3>
     		</div>
