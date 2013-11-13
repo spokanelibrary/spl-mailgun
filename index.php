@@ -35,7 +35,7 @@ class SPL_Mailgun_Newsletter {
 
 	function initNewsletter() {
 		$post_types = array( 'newsletter' );
-		if ( is_singular( $post_types ) {
+		if ( is_singular( $post_types ) ) {
 		$this->registerPostTemplates();
 
 		add_action( 'init', array( $this, 'registerPostType' ) );
