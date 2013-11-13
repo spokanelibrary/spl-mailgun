@@ -22,11 +22,9 @@
     			</span>
     		</div>
     		<div class="panel-body">
-    			<div class="page-header">
-			      <h3>
-	    				<?php the_title(); ?>
-	    			</h3>
-	    		</div>
+		      <h3 class="page-header text-muted">
+    				<?php the_title(); ?>
+    			</h3>
 		      <?php the_content(); ?>
       	</div>
     		<p class="lead text-center text-muted">
