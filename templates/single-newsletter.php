@@ -12,7 +12,7 @@
     <div class="col-sm-8">
     	<div class="panel panel-default" style="border-left-width:5px;">
     		<div class="panel-heading">
-    			<span class="pull-right text-muted">
+    			<span class="pull-right label label-default">
     				<i class="glyphicon glyphicon-send"></i>
     				<strong><?php the_date(); ?></strong>
     			</span>
@@ -24,11 +24,9 @@
     		<div class="panel-body">
 		      <?php the_content(); ?>
       	</div>
-      	<div class="panel-footer panel-transparent">
-      		<p class="lead text-center text-muted">
-		      	<i class="glyphicon glyphicon-leaf"></i>
-		      </p>
-      	</div>
+    		<p class="lead text-center text-muted">
+	      	<i class="glyphicon glyphicon-leaf"></i>
+	      </p>
     	</div>
     </div><!-- /.col -->
     <div class="col-sm-4">
