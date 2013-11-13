@@ -14,9 +14,11 @@
     	<h3>
     		<span class="label label-warning" style="display:block;"><?php spl_news_sidebar_headline($post); ?></span>
     	</h3>
-    	<div class="well well-sm">
-		  	<?php spl_news_sidebar_content($post); ?>
-		  	<div class="clearfix"></div>
+    	<div class="panel panel-warning">
+    		<div class="panel-body">
+			  	<?php spl_news_sidebar_content($post); ?>
+			  	<div class="clearfix"></div>
+			  </div>
 	  	</div>
     </div>
   </div>
