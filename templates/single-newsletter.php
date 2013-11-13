@@ -1,5 +1,5 @@
 <?php //get_template_part('templates/content', 'single'); ?>
-
+<div class="spl-news">
 <?php while (have_posts()) : the_post(); ?>
 	<div class="page-header">
     <h1><?php the_title(); ?></h1>
@@ -47,3 +47,4 @@
   <?php //comments_template('/templates/comments.php'); ?>
 
 <?php endwhile; ?>
+</div>
