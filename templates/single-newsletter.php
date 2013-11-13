@@ -19,7 +19,7 @@
 	    			</span>
     			</p>
     			<h3>
-    				<i class="glyphicon glyphicon-list text-muted"></i>
+    				<small class="glyphicon glyphicon-list text-muted"></small>
     				<?php the_title(); ?>
     			</h3>
     		</div>
