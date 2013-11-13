@@ -23,7 +23,7 @@
     			</span>
     		</div>
     		<div class="panel-body">
-		      <h3 class="page-header text-primary">
+		      <h3 class="page-header text-success">
     				<?php the_title(); ?>
     			</h3>
 		      <?php the_content(); ?>
