@@ -45,22 +45,22 @@ class SPL_Mailgun_Newsletter_Settings {
 
       add_settings_section(
           'setting_section_id', // ID
-          'My Custom Settings', // Title
+          'Mailgun Api', // Title
           array( $this, 'print_section_info' ), // Callback
           'spl-mailgun-newsletter-settings' // Page
       );  
 
       add_settings_field(
-          'id_number', // ID
-          'ID Number', // Title 
+          'mailgun_public_key', // ID
+          'Public Key', // Title 
           array( $this, 'id_number_callback' ), // Callback
           'spl-mailgun-newsletter-settings', // Page
           'setting_section_id' // Section           
       );      
 
       add_settings_field(
-          'title', 
-          'Title', 
+          'mailgun_private_key', 
+          'Private Key', 
           array( $this, 'title_callback' ), 
           'spl-mailgun-newsletter-settings', 
           'setting_section_id'
