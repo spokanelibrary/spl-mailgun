@@ -23,7 +23,9 @@
     		</div>
     		<div class="panel-body">
 		      <?php the_content(); ?>
-		      <p class="lead text-center text-muted">
+      	</div>
+      	<div class="panel-footer">
+      		<p class="lead text-center text-muted">
 		      	<i class="glyphicon glyphicon-leaf"></i>
 		      </p>
       	</div>
