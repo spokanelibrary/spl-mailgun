@@ -21,45 +21,6 @@ require('functions.php');
 $config = new SPL_Mailgun_Newsletter_Config();
 $newsletter = new SPL_Mailgun_Newsletter($config);
 
-// todo: move to theme
-// <img src="http://beta.spokanelibrary.org/wordpress/media/E8V7392-150x150.jpg" alt="http://beta.spokanelibrary.org/connect/" width="150" height="150" class="alignright size-thumbnail wp-image-49" />
-// [caption id="attachment_52" align="alignright" width="150"]<img src="http://beta.spokanelibrary.org/wordpress/media/E8V7488-150x150.jpg" alt="http://beta.spokanelibrary.org/connect/" width="150" height="150" class="size-thumbnail wp-image-52" /> plus lens flare[/caption]
-/*
-add_filter( 'image_send_to_editor', 'spl_set_image_attributes', 10, 9 );
-function spl_set_image_attributes($html, $id, $caption, $title, $align, $url, $size) {
-  $img = "<figure id='post-$id media-$id' class='figure align$align'>";
-  $img .= '<img src="'.$url.'" alt="'.$title.'" class="size-'.$size.'">';
-  if ($caption) {
-      $img .= "<figcaption>$caption</figcaption>";
-  }
-  $img .= "</figure>";
-  return $img;
-}
-*/
-
-//	https://gist.github.com/mkdizajn/7352469
-//----------------------------------------------------------/
-//  responsive images [ 1) add img-responsive class 2) remove dimensions ]
-//----------------------------------------------------------/
- 
-function bootstrap_responsive_images( $html ){
-  $classes = 'img-responsive'; // separated by spaces, e.g. 'img image-link'
- 
-  // check if there are already classes assigned to the anchor
-  if ( preg_match('/<img.*? class="/', $html) ) {
-    $html = preg_replace('/(<img.*? class=".*?)(".*?\/>)/', '$1 ' . $classes . ' $2', $html);
-  } else {
-    $html = preg_replace('/(<img.*?)(\/>)/', '$1 class="' . $classes . '" $2', $html);
-  }
-  // remove dimensions from images,, does not need it!
-  $html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
-  return $html;
-}
-add_filter( 'the_content','bootstrap_responsive_images',10 );
-add_filter( 'post_thumbnail_html', 'bootstrap_responsive_images', 10 );
-
-
-
 class SPL_Mailgun_Newsletter {
 
 	var $config;
