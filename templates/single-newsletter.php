@@ -16,10 +16,10 @@
     				<i class="glyphicon glyphicon-send"></i>
     				<strong><?php the_date(); ?></strong>
     			</span>
-    			<h2>
+    			<h3 style="text-success">
     				<i class="glyphicon glyphicon-list text-muted"></i>
     				<?php the_title(); ?>
-    			</h2>
+    			</h3>
     		</div>
     		<div class="panel-body">
 		      <?php the_content(); ?>
