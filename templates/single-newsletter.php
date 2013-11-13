@@ -31,7 +31,7 @@
     </div><!-- /.col -->
     <div class="col-sm-4">
     	<aside class="aside">
-				<h3 class="text-center">	
+				<h3 class="text-center text-success">	
 					
 						<?php spl_news_sidebar_headline($post); ?>
 					
