@@ -6,10 +6,10 @@
     <?php// get_template_part('templates/entry-meta'); ?>
   </div>
 
-  <div class="row-fluid">
+  <div class="row">
     <div class="col-sm-8">
       <?php the_content(); ?>
-    </div>
+    </div><!-- /.col -->
     <div class="col-sm-4">
     	<aside class="aside">
 	    	<div class="panel panel-warning" style="border-left-width:5px;">
@@ -24,23 +24,23 @@
 				  </div>
 		  	</div>
 		  </aside>
-    </div>
-  </div>
+    </div><!-- /.col -->
+  </div><!-- /.row -->
 
-  <div class="row-fluid">
+  <div class="row">
 		<div class="col-sm-4">
 			<?php spl_news_post_select($post, 1); ?>
 			<hr />
-		</div>
+		</div><!-- /.col -->
 		<div class="col-sm-4">
 			<?php spl_news_post_select($post, 2); ?>
 			<hr />
-		</div>
+		</div><!-- /.col -->
 		<div class="col-sm-4">
 			<?php spl_news_post_select($post, 3); ?>
 			<hr />
-		</div>
-	</div>
+		</div><!-- /.col -->
+	</div><!-- /.row -->
 
   <footer>
 
