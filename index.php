@@ -21,9 +21,9 @@ require('functions.php');
 $config = new SPL_Mailgun_Newsletter_Config();
 $newsletter = new SPL_Mailgun_Newsletter($config);
 
-//if ( is_admin() ) {
-	//$admin = new SPL_Mailgun_Newsletter_Admin();
-//}
+if ( is_admin() ) {
+	$admin = new SPL_Mailgun_Newsletter_Settings();
+}
 
 class SPL_Mailgun_Newsletter {
 
