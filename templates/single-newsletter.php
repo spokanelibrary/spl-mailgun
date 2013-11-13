@@ -4,8 +4,8 @@
 	<div class="page-header">
     <h1>
     	<i class="glyphicon glyphicon-comment"></i>
-    	From the News Desk 
-    	<small>of Spokane Public Library</small>
+    	Published
+    	<small>on this day</small>
     </h1>
     <?php// get_template_part('templates/entry-meta'); ?>
   </div>
