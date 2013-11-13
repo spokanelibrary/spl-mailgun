@@ -12,7 +12,7 @@
     <div class="col-sm-8">
     	<div class="panel panel-default" style="border-left-width:5px;">
     		<div class="panel-heading">
-    			<span class="pull-right text-muted">
+    			<span class="label pull-right text-muted">
     				<i class="glyphicon glyphicon-send"></i>
     				<strong><?php the_date(); ?></strong>
     			</span>
