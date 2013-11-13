@@ -19,7 +19,8 @@ class SPL_Mailgun_Newsletter_Settings {
 	  );
   }
 
-  public function create_admin_page() {
+  public function create_admin_page($options) {
+  	print_r($options);
   	$this->options = get_option( 'my_option_name' );
     echo '<div class="wrap">';
     screen_icon();
