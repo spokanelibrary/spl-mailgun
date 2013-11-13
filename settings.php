@@ -29,7 +29,7 @@ class SPL_Mailgun_Newsletter_Settings {
     echo '<form method="post" action="options.php">';
     // hidden setting fields
     settings_fields( 'my_option_group' );   
-    do_settings_sections( 'my-setting-admin' );
+    do_settings_sections( 'spl-mailgun-newsletter-settings' );
     submit_button();         
     echo '</form>';
     echo '</div>';    
