@@ -12,7 +12,7 @@
     </div>
     <div class="col-sm-4">
     	<h4 class="text-warning"><?php spl_news_sidebar_headline($post); ?></h4>
-    	<div class="clearfix" style="border-left: 5px solid #ccc;">
+    	<div class="lead">
   	  	<?php spl_news_sidebar_content($post); ?>
 	  	</div>
     </div>
