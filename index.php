@@ -21,6 +21,19 @@ require('functions.php');
 $config = new SPL_Mailgun_Newsletter_Config();
 $newsletter = new SPL_Mailgun_Newsletter($config);
 
+// todo: move to theme
+// <img src="http://beta.spokanelibrary.org/wordpress/media/E8V7392-150x150.jpg" alt="http://beta.spokanelibrary.org/connect/" width="150" height="150" class="alignright size-thumbnail wp-image-49" />
+// [caption id="attachment_52" align="alignright" width="150"]<img src="http://beta.spokanelibrary.org/wordpress/media/E8V7488-150x150.jpg" alt="http://beta.spokanelibrary.org/connect/" width="150" height="150" class="size-thumbnail wp-image-52" /> plus lens flare[/caption]
+add_filter( 'image_send_to_editor', 'spl_set_image_attributes', 10, 9 );
+function spl_set_image_attributes($html, $id, $caption, $title, $align, $url, $size) {
+  $img = "<figure id='post-$id media-$id' class='figure align$align'>";
+  $img .= "<img src='$url' alt='$title' class='size-$size'>";
+  if ($caption) {
+      $img .= "<figcaption>$caption</figcaption>";
+  }
+  $img .= "</figure>";
+  return $img;
+}
 
 class SPL_Mailgun_Newsletter {
 
@@ -34,19 +47,14 @@ class SPL_Mailgun_Newsletter {
 	}
 
 	function initNewsletter() {
-		$post_types = array( 'newsletter' );
-		
+		$this->registerPostTemplates();
+
 		add_action( 'init', array( $this, 'registerPostType' ) );
 		add_action( 'init', array($this, 'initCmbMetaBoxes'), 9999 );
-		
-		if ( is_singular( $post_types ) ) {
-			$this->registerPostTemplates();
 
-			add_filter( 'template_include', array($this, 'registerPostTemplates'));
-			add_filter( 'cmb_meta_boxes', array($this, 'getNewsletterCmbMetaBoxes') );
-			//add_filter('get_image_tag', array($this, 'setImageAttributes'), 0, 4);
-			add_filter( 'image_send_to_editor', array($this, 'setImageAttributes'), 10, 9 );
-		}
+		add_filter( 'template_include', array($this, 'registerPostTemplates'));
+		add_filter( 'cmb_meta_boxes', array($this, 'getNewsletterCmbMetaBoxes') );
+		
 	} // initNewsletter()
 
 	function registerPostTemplates($template) {
@@ -104,16 +112,6 @@ class SPL_Mailgun_Newsletter {
 
 		return $labels;
 	} // getPostTypeLabels()
-
-	function setImageAttributes($html, $id, $caption, $title, $align, $url, $size) {
-    $html5 = "<figure id='post-$id media-$id' class='figure align$align'>";
-    $html5 .= "<img src='$url' alt='$title' class='size-$size'>";
-    if ($caption) {
-        $html5 .= "<figcaption>$caption</figcaption>";
-    }
-    $html5 .= "</figure>";
-    return $html5;
-	}
 
 	function initPublishControls() {
 		add_meta_box(
