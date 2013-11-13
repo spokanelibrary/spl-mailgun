@@ -16,7 +16,7 @@
     				<i class="glyphicon glyphicon-send"></i>
     				<strong><?php the_date(); ?></strong>
     			</span>
-    			<h3>
+    			<h3 style="margin-top:none;">
     				<i class="glyphicon glyphicon-list text-muted"></i>
     				<?php the_title(); ?>
     			</h3>
@@ -32,9 +32,7 @@
     <div class="col-sm-4">
     	<aside class="aside">
 				<h3 class="text-center text-success">	
-					
-						<?php spl_news_sidebar_headline($post); ?>
-					
+					<?php spl_news_sidebar_headline($post); ?>
 				</h3>
 				<hr />
 		  	<?php spl_news_sidebar_content($post); ?>
