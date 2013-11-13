@@ -22,6 +22,7 @@
 		      <h3 class="page-header">
     				<?php the_title(); ?>
     			</h3>
+    			<hr />
 		      <?php the_content(); ?>
       	</div>
     		<p class="lead text-center text-muted">
