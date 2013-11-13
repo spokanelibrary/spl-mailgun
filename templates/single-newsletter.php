@@ -31,11 +31,11 @@
     </div><!-- /.col -->
     <div class="col-sm-4">
     	<aside class="aside">
-				<blockquote>	
-					<p>
+				<h3 class="label label-default">	
+					<span>
 						<?php spl_news_sidebar_headline($post); ?>
-					</p>
-				</blockquote>
+					</span>
+				</h3>
 		  	<?php spl_news_sidebar_content($post); ?>
 		  	<div class="clearfix"></div>
 		  </aside>
