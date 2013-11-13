@@ -30,9 +30,9 @@
     	</div>
     </div><!-- /.col -->
     <div class="col-sm-4">
-			<h3 class="text-center text-success">	
+			<p class="lead text-center">	
 				<?php spl_news_sidebar_headline($post); ?>
-			</h3>
+			</p>
 			<hr />
 			<aside class="aside">
 		  	<?php spl_news_sidebar_content($post); ?>
