@@ -19,25 +19,9 @@ class SPL_Mailgun_Newsletter_Settings {
 	  );
   }
 
-  public function create_admin_page()
-    {
-        // Set class property
-        $this->options = get_option( 'my_option_name' );
-        ?>
-        <div class="wrap">
-            <?php screen_icon(); ?>
-            <h2>My Settings</h2>           
-            <form method="post" action="options.php">
-            <?php
-                // This prints out all hidden setting fields
-                settings_fields( 'my_option_group' );   
-                do_settings_sections( 'my-setting-admin' );
-                submit_button(); 
-            ?>
-            </form>
-        </div>
-        <?php
-    }
+  public function create_admin_page() {
+      
+  }
 
 } // SPL_Mailgun_Newsletter_Settings
 
