@@ -2,7 +2,11 @@
 <div class="spl-news">
 <?php while (have_posts()) : the_post(); ?>
 	<div class="page-header">
-    <h1>From the News Desk</h1>
+    <h1>
+    	<i class="glyphicon glyphicon-comment"></i>
+    	From the News Desk 
+    	<small>of Spokane Public Library</small>
+    </h1>
     <?php// get_template_part('templates/entry-meta'); ?>
   </div>
 
