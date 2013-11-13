@@ -27,7 +27,7 @@ $newsletter = new SPL_Mailgun_Newsletter($config);
 add_filter( 'image_send_to_editor', 'spl_set_image_attributes', 10, 9 );
 function spl_set_image_attributes($html, $id, $caption, $title, $align, $url, $size) {
   $img = "<figure id='post-$id media-$id' class='figure align$align'>";
-  $img .= "<img src='$url' alt='$title' class='size-$size'>";
+  $img .= '<img src="'.$url.'" alt="'.$title.'" class="size-'.$size.'">';
   if ($caption) {
       $img .= "<figcaption>$caption</figcaption>";
   }
