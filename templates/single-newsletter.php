@@ -30,6 +30,7 @@
       	</div>
     		<p class="lead text-center text-muted">
     			&hellip;
+    			&nbsp;
 	      	<i class="glyphicon glyphicon-leaf"></i>
 	      	&hellip;
 	      </p>
