@@ -32,9 +32,9 @@
     <div class="col-sm-4">
     	<aside class="aside">
 				<h3>	
-					<span class="label label-default center-block">
+					<div class="label label-default center-block">
 						<?php spl_news_sidebar_headline($post); ?>
-					</span>
+					</div>
 				</h3>
 		  	<?php spl_news_sidebar_content($post); ?>
 		  	<div class="clearfix"></div>
