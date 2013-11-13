@@ -36,9 +36,11 @@
     	</div>
     </div><!-- /.col -->
     <div class="col-sm-4">
+    	<div class="alert alert-warning">
 			<p class="lead text-center">	
-				<span class="label label-warning" style="display:inline-block;"><?php spl_news_sidebar_headline($post); ?></span>
+				<span class="label label-warning"><?php spl_news_sidebar_headline($post); ?></span>
 			</p>
+		</div>
 			<aside class="aside">
 		  	<?php spl_news_sidebar_content($post); ?>
 		  	<div class="clearfix"></div>
