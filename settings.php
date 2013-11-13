@@ -53,7 +53,7 @@ class SPL_Mailgun_Newsletter_Settings {
       add_settings_field(
           'mailgun_public_key', // ID
           'Public Key', // Title 
-          array( $this, 'id_number_callback' ), // Callback
+          array( $this, 'public_key_callback' ), // Callback
           'spl-mailgun-newsletter-settings', // Page
           'setting_section_id' // Section           
       );      
@@ -95,8 +95,9 @@ class SPL_Mailgun_Newsletter_Settings {
     /** 
      * Get the settings option array and print one of its values
      */
-    public function id_number_callback()
+    public function id_number_callback($args)
     {
+    		echo print_r($args, true);
         printf(
             '<input type="text" id="id_number" name="my_option_name[id_number]" value="%s" />',
             isset( $this->options['id_number'] ) ? esc_attr( $this->options['id_number']) : ''
