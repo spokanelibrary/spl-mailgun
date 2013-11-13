@@ -43,6 +43,8 @@ class SPL_Mailgun_Newsletter {
 
 		add_filter( 'template_include', array($this, 'registerPostTemplates'));
 		add_filter( 'cmb_meta_boxes', array($this, 'getNewsletterCmbMetaBoxes') );
+		add_filter('get_image_tag', array($this, 'setImageAttributes'), 0, 4);
+
 	} // initNewsletter()
 
 	function registerPostTemplates($template) {
@@ -100,6 +102,22 @@ class SPL_Mailgun_Newsletter {
 
 		return $labels;
 	} // getPostTypeLabels()
+
+	function setImageAttributes($html, $id, $alt, $title) {
+		return preg_replace(array(
+				'/'.str_replace('//','//',get_bloginfo('url')).'/i',
+				'/s+width="d+"/i',
+				'/s+height="d+"/i',
+				'/alt=""/i'
+			),
+			array(
+				'',
+				'',
+				'',
+				'alt="' . $title . '"'
+			),
+			$html);
+	}
 
 	function initPublishControls() {
 		add_meta_box(
