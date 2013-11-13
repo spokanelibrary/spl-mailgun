@@ -33,9 +33,11 @@
     </div><!-- /.col -->
     <div class="col-sm-4">
     	<aside class="aside">
-  			<p class="lead">
-  			<span class="label label-default" style="display:block;"><?php spl_news_sidebar_headline($post); ?></span>
-  			</p>
+  			<div class="panel panel-warning">
+  				<div class="panel-heading">
+  			<?php spl_news_sidebar_headline($post); ?>
+  			</div>
+  		</div>
 		  	<?php spl_news_sidebar_content($post); ?>
 		  	<div class="clearfix"></div>
 		  </aside>
