@@ -15,15 +15,15 @@ Version: 0.1
 */
 
 require('config.php');
-require('settings.php');
+//require('settings.php');
 require('functions.php');
 
 $config = new SPL_Mailgun_Newsletter_Config();
 $newsletter = new SPL_Mailgun_Newsletter($config);
 
-if ( is_admin() ) {
-	$admin = new SPL_Mailgun_Newsletter_Admin();
-}
+//if ( is_admin() ) {
+	//$admin = new SPL_Mailgun_Newsletter_Admin();
+//}
 
 class SPL_Mailgun_Newsletter {
 
