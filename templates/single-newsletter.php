@@ -3,7 +3,6 @@
 <?php while (have_posts()) : the_post(); ?>
 	<div class="page-header">
     <h1>
-    	<i class="glyphicon glyphicon-send"></i>
     	<small>on this day</small>
     </h1>
     <?php// get_template_part('templates/entry-meta'); ?>
@@ -13,7 +12,10 @@
     <div class="col-sm-8">
     	<div class="panel panel-default" style="border-left-width:5px;">
     		<div class="panel-heading">
-    			<span class="pull-right">Published:</span>
+    			<span class="pull-right text-muted">
+    				<i class="glyphicon glyphicon-send"></i>
+    				Published:
+    			</span>
     			<h3>
     				<i class="glyphicon glyphicon-list text-muted"></i>
     				<?php the_title(); ?>
