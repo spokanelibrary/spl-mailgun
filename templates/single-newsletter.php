@@ -31,13 +31,9 @@
     </div><!-- /.col -->
     <div class="col-sm-4">
     	<aside class="aside">
-  			<div class="panel panel-primary">
-  				<div class="panel-body">
-  					<p class="lead">	
-	  					<?php spl_news_sidebar_headline($post); ?>
-  					</p>
-  				</div>
-  			</div>
+				<p class="lead">	
+					<strong><?php spl_news_sidebar_headline($post); ?></strong>
+				</p>
 		  	<?php spl_news_sidebar_content($post); ?>
 		  	<div class="clearfix"></div>
 		  </aside>
