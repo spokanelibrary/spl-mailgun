@@ -31,11 +31,13 @@
     </div><!-- /.col -->
     <div class="col-sm-4">
     	<aside class="aside">
-				<h3 class="label label-default">	
-					<span>
-						<?php spl_news_sidebar_headline($post); ?>
-					</span>
-				</h3>
+					
+					<div class="label label-default">
+						<h3>
+							<?php spl_news_sidebar_headline($post); ?>
+						</h3>
+					</div>
+				
 		  	<?php spl_news_sidebar_content($post); ?>
 		  	<div class="clearfix"></div>
 		  </aside>
