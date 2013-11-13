@@ -3,7 +3,8 @@
 <?php while (have_posts()) : the_post(); ?>
 	<div class="page-header">
     <h1>
-    	<small>From the News Desk at Spokane Public Library:</small>
+    	News
+    	<small>from Spokane Public Library</small>
     </h1>
     <?php// get_template_part('templates/entry-meta'); ?>
   </div>
