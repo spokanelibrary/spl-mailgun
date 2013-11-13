@@ -24,7 +24,7 @@
     <div class="col-sm-4">
     	<aside class="aside">
   			<h4>
-  			<?php spl_news_sidebar_headline($post); ?>
+  			<span class="label label-warning" style="display:block;"><?php spl_news_sidebar_headline($post); ?></span>
   			</h4>
 		  	<?php spl_news_sidebar_content($post); ?>
 		  	<div class="clearfix"></div>
