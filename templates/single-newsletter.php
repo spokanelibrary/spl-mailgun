@@ -14,7 +14,7 @@
     	<h4 class="text-warning"><?php spl_news_sidebar_headline($post); ?></h4>
     	<div class="well well-sm">
   	  	<?php spl_news_sidebar_content($post); ?>
-  	  	<div class="clear"></div>
+  	  	<div class="clearfix"></div>
 	  	</div>
     </div>
   </div>
