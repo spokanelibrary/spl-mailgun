@@ -23,7 +23,7 @@
     		</div>
     		<div class="panel-body">
 		      <?php the_content(); ?>
-		      <p class="lead center">
+		      <p class="lead text-center text-muted">
 		      	<i class="glyphicon glyphicon-leaf"></i>
 		      </p>
       	</div>
