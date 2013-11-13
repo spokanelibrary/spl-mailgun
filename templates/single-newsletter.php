@@ -11,18 +11,19 @@
       <?php the_content(); ?>
     </div>
     <div class="col-sm-4">
-    	
-    	<div class="panel panel-warning" style="border-left-width:5px;">
-    		<div class="panel-heading">
-    			<h4>
-    			<?php spl_news_sidebar_headline($post); ?>
-    			</h4>
-    		</div>
-    		<div class="panel-body">
-			  	<?php spl_news_sidebar_content($post); ?>
-			  	<div class="clearfix"></div>
-			  </div>
-	  	</div>
+    	<aside class="aside">
+	    	<div class="panel panel-warning" style="border-left-width:5px;">
+	    		<div class="panel-heading">
+	    			<h4>
+	    			<?php spl_news_sidebar_headline($post); ?>
+	    			</h4>
+	    		</div>
+	    		<div class="panel-body">
+				  	<?php spl_news_sidebar_content($post); ?>
+				  	<div class="clearfix"></div>
+				  </div>
+		  	</div>
+		  </aside>
     </div>
   </div>
 
