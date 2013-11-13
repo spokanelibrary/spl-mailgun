@@ -13,6 +13,7 @@
     	<div class="panel panel-default" style="border-left-width:5px;">
     		<div class="panel-heading">
     			<span class="pull-right">
+    				<i class="glyphicon glyphicon-envelope text-primary"></i>
     				<a href="#">Subscribe</a>
     			</span>
     			<span class="text-muted">
