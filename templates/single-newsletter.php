@@ -33,7 +33,6 @@
 			<p class="lead text-center">	
 				<?php spl_news_sidebar_headline($post); ?>
 			</p>
-			<hr />
 			<aside class="aside">
 		  	<?php spl_news_sidebar_content($post); ?>
 		  	<div class="clearfix"></div>
