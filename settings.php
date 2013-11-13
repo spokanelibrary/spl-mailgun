@@ -2,7 +2,7 @@
 
 class SPL_Mailgun_Newsletter_Settings {
 
-	public $options;
+	private $options;
 
 	function __construct() {
 		add_action( 'admin_menu', array( $this, 'add_plugin_page' ) );
@@ -11,20 +11,21 @@ class SPL_Mailgun_Newsletter_Settings {
 	
 	public function add_plugin_page() {
 	  add_options_page(
-	      'SPL Newsletter Settings', 
-	      'SPL Newsletter', 
-	      'manage_options', 
-	      'spl-mailgun-newsletter-settings', 
-	      array( $this, 'create_admin_page' )
+      'SPL Newsletter Settings' 						// page titlebar
+      ,'SPL Newsletter'											// menu label
+      ,'manage_options'											// capability
+      ,'spl-mailgun-newsletter-settings' 		// menu slug
+      ,array( $this, 'create_admin_page' ) 	// callback
 	  );
   }
 
-  public function create_admin_page($options) {
-  	echo print_r($options, true);
+  public function create_admin_page() {
   	$this->options = get_option( 'my_option_name' );
+  	echo print_r($this->options, true);
+
     echo '<div class="wrap">';
     screen_icon();
-    echo '<h2>My Settings</h2>';        
+    echo '<h2>SPL Newsletter Settings</h2>';        
     echo '<form method="post" action="options.php">';
     // hidden setting fields
     settings_fields( 'my_option_group' );   
