@@ -20,6 +20,7 @@
     				<i class="glyphicon glyphicon-list text-muted"></i>
     				<?php the_title(); ?>
     			</h3>
+    			<div class="clearfix"></div>
     		</div>
     		<div class="panel-body">
 		      <?php the_content(); ?>
