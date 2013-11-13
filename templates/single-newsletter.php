@@ -19,7 +19,6 @@
 	    			</span>
     			</p>
     			<h3>
-    				<i class="glyphicon glyphicon-list text-muted"></i>
     				<?php the_title(); ?>
     			</h3>
     		</div>
@@ -36,7 +35,8 @@
   			<div class="panel panel-primary">
   				<div class="panel-heading">
   					<p class="lead">	
-	  					<strong><?php spl_news_sidebar_headline($post); ?></strong>
+  						<i class="glyphicon glyphicon-list"></i>
+	  					<?php spl_news_sidebar_headline($post); ?>
   					</p>
   				</div>
   			</div>
