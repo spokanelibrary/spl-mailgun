@@ -19,8 +19,7 @@
     			
     		</div>
     		<div class="panel-body">
-		      <h3>
-    				<i class="glyphicon glyphicon-list text-muted"></i>
+		      <h3 class="page-header">
     				<?php the_title(); ?>
     			</h3>
 		      <?php the_content(); ?>
