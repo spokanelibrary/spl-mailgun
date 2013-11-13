@@ -42,7 +42,7 @@ class SPL_Mailgun_Newsletter {
 		add_filter( 'template_include', array($this, 'registerPostTemplates'));
 		add_filter( 'cmb_meta_boxes', array($this, 'getNewsletterCmbMetaBoxes') );
 		//add_filter('get_image_tag', array($this, 'setImageAttributes'), 0, 4);
-		add_filter( 'image_send_to_editor', 'setImageAttributes', 10, 9 );
+		add_filter( 'image_send_to_editor', array($this, 'setImageAttributes'), 10, 9 );
 
 	} // initNewsletter()
 
