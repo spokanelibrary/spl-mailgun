@@ -23,9 +23,9 @@
     		</div>
     		<div class="panel-body">
     			<div class="page-header">
-			      <h1 class="page-header">
-	    				<small><?php the_title(); ?></small>
-	    			</h1>
+			      <h3>
+	    				<?php the_title(); ?>
+	    			</h3>
 	    		</div>
 		      <?php the_content(); ?>
       	</div>
