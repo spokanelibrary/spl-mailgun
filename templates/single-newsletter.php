@@ -28,7 +28,6 @@
     			</h3>
 		      <?php the_content(); ?>
       	</div>
-      	<hr />
     		<p class="lead text-center text-muted">
 	      	<i class="glyphicon glyphicon-leaf"></i>
 	      </p>
