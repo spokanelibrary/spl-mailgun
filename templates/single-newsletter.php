@@ -12,12 +12,10 @@
     <div class="col-sm-8">
     	<div class="panel panel-default" style="border-left-width:5px;">
     		<div class="panel-heading">
-    			<div class="pull-right">
-    				<span class="text-muted">
+    			<span class="pull-right text-muted">
     				<i class="glyphicon glyphicon-send"></i>
-    				<h5><?php the_date(); ?></h5>
-	    			</span>
-    			</div>
+    				<strong><?php the_date(); ?></strong>
+    			</span>
     			<h3>
     				<i class="glyphicon glyphicon-list text-muted"></i>
     				<?php the_title(); ?>
