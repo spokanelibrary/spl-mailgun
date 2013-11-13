@@ -13,8 +13,10 @@
     <div class="col-sm-4">
     	<h4 class="text-warning"><?php spl_news_sidebar_headline($post); ?></h4>
     	<div class="panel panel-default">
-  	  	<?php spl_news_sidebar_content($post); ?>
-  	  	<div class="clearfix"></div>
+  	  	<div class="panel-body">
+  		  	<?php spl_news_sidebar_content($post); ?>
+  		  	<div class="clearfix"></div>
+	  	  </div>
 	  	</div>
     </div>
   </div>
