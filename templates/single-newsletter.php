@@ -31,8 +31,8 @@
     </div><!-- /.col -->
     <div class="col-sm-4">
     	<aside class="aside">
-				<div class="alert alert-success">	
-					<?php spl_news_sidebar_headline($post); ?>
+				<div class="alert alert-warning">	
+					<h4><?php spl_news_sidebar_headline($post); ?></h4>
 				</div>
 		  	<?php spl_news_sidebar_content($post); ?>
 		  	<div class="clearfix"></div>
