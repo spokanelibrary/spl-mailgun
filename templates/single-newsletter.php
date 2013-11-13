@@ -29,7 +29,9 @@
 		      <?php the_content(); ?>
       	</div>
     		<p class="lead text-center text-muted">
+    			&hellip;
 	      	<i class="glyphicon glyphicon-leaf"></i>
+	      	&hellip;
 	      </p>
     	</div>
     </div><!-- /.col -->
