@@ -4,7 +4,7 @@
 	<div class="page-header">
     <h1>
     	News
-    	<small>from Spokane Public Library</small>
+    	<small>from the Library</small>
     </h1>
     <?php// get_template_part('templates/entry-meta'); ?>
   </div>
