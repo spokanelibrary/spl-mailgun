@@ -24,6 +24,7 @@ $newsletter = new SPL_Mailgun_Newsletter($config);
 // todo: move to theme
 // <img src="http://beta.spokanelibrary.org/wordpress/media/E8V7392-150x150.jpg" alt="http://beta.spokanelibrary.org/connect/" width="150" height="150" class="alignright size-thumbnail wp-image-49" />
 // [caption id="attachment_52" align="alignright" width="150"]<img src="http://beta.spokanelibrary.org/wordpress/media/E8V7488-150x150.jpg" alt="http://beta.spokanelibrary.org/connect/" width="150" height="150" class="size-thumbnail wp-image-52" /> plus lens flare[/caption]
+/*
 add_filter( 'image_send_to_editor', 'spl_set_image_attributes', 10, 9 );
 function spl_set_image_attributes($html, $id, $caption, $title, $align, $url, $size) {
   $img = "<figure id='post-$id media-$id' class='figure align$align'>";
@@ -34,6 +35,7 @@ function spl_set_image_attributes($html, $id, $caption, $title, $align, $url, $s
   $img .= "</figure>";
   return $img;
 }
+*/
 
 class SPL_Mailgun_Newsletter {
 
