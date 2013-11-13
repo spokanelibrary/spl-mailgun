@@ -8,7 +8,11 @@
 
   <div class="row">
     <div class="col-sm-8">
-      <?php the_content(); ?>
+    	<div class="panel panel-default" style="border-left-width:5px;">
+    		<div class="panel-body">
+		      <?php the_content(); ?>
+      	</div>
+    	</div>
     </div><!-- /.col -->
     <div class="col-sm-4">
     	<aside class="aside">
