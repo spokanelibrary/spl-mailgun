@@ -21,18 +21,6 @@ require('functions.php');
 $config = new SPL_Mailgun_Newsletter_Config();
 $newsletter = new SPL_Mailgun_Newsletter($config);
 
-// image and caption replace 
-function html5_insert_image($html, $id, $caption, $title, $align, $url, $size) {
-    $html5 = "<figure id='post-$id media-$id' class='figure align$align'>";
-    $html5 .= "<img src='$url' alt='$title' class='size-$size'>";
-    if ($caption) {
-        $html5 .= "<figcaption>$caption</figcaption>";
-    }
-    $html5 .= "</figure>";
-    return $html5;
-}
-add_filter( 'image_send_to_editor', 'html5_insert_image', 10, 9 );
-
 
 class SPL_Mailgun_Newsletter {
 
@@ -54,6 +42,7 @@ class SPL_Mailgun_Newsletter {
 		add_filter( 'template_include', array($this, 'registerPostTemplates'));
 		add_filter( 'cmb_meta_boxes', array($this, 'getNewsletterCmbMetaBoxes') );
 		//add_filter('get_image_tag', array($this, 'setImageAttributes'), 0, 4);
+		add_filter( 'image_send_to_editor', 'setImageAttributes', 10, 9 );
 
 	} // initNewsletter()
 
@@ -113,20 +102,14 @@ class SPL_Mailgun_Newsletter {
 		return $labels;
 	} // getPostTypeLabels()
 
-	function setImageAttributes($html, $id, $alt, $title) {
-		return preg_replace(array(
-				'/'.str_replace('//','//',get_bloginfo('url')).'/i',
-				'/s+width="d+"/i',
-				'/s+height="d+"/i',
-				'/alt=""/i'
-			),
-			array(
-				'',
-				'',
-				'',
-				'alt="' . $title . '"'
-			),
-			$html);
+	function setImageAttributes($html, $id, $caption, $title, $align, $url, $size) {
+    $html5 = "<figure id='post-$id media-$id' class='figure align$align'>";
+    $html5 .= "<img src='$url' alt='$title' class='size-$size'>";
+    if ($caption) {
+        $html5 .= "<figcaption>$caption</figcaption>";
+    }
+    $html5 .= "</figure>";
+    return $html5;
 	}
 
 	function initPublishControls() {
