@@ -11,8 +11,8 @@ class SPL_Mailgun_Newsletter_Settings {
 	
 	public function add_plugin_page() {
 	  add_options_page(
-	      'Newsletters', 
-	      'My Settings', 
+	      'Newsletter Settings', 
+	      'Newsletter', 
 	      'manage_options', 
 	      'spl-mailgun-newsletter-settings', 
 	      array( $this, 'create_admin_page' )
