@@ -23,12 +23,12 @@
     			</span>
     		</div>
     		<div class="panel-body">
-		      <h3 class="page-header text-muted">
+		      <h3 class="page-header text-primary">
     				<?php the_title(); ?>
     			</h3>
 		      <?php the_content(); ?>
       	</div>
-    		<p class="lead text-center text-primary">
+    		<p class="lead text-center text-muted">
 	      	<i class="glyphicon glyphicon-leaf"></i>
 	      </p>
     	</div>
