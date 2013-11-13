@@ -21,7 +21,17 @@ require('functions.php');
 $config = new SPL_Mailgun_Newsletter_Config();
 $newsletter = new SPL_Mailgun_Newsletter($config);
 
-
+// image and caption replace 
+function html5_insert_image($html, $id, $caption, $title, $align, $url, $size) {
+    $html5 = "<figure id='post-$id media-$id' class='figure align$align'>";
+    $html5 .= "<img src='$url' alt='$title' class='size-$size'>";
+    if ($caption) {
+        $html5 .= "<figcaption>$caption</figcaption>";
+    }
+    $html5 .= "</figure>";
+    return $html5;
+}
+add_filter( 'image_send_to_editor', 'html5_insert_image', 10, 9 );
 
 
 class SPL_Mailgun_Newsletter {
