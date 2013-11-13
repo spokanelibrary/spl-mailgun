@@ -14,9 +14,9 @@
     	
     	<div class="panel panel-warning" style="border-left-width:5px;">
     		<div class="panel-heading">
-    			<h3>
+    			<h4>
     			<?php spl_news_sidebar_headline($post); ?>
-    			</h3>
+    			</h4>
     		</div>
     		<div class="panel-body">
 			  	<?php spl_news_sidebar_content($post); ?>
