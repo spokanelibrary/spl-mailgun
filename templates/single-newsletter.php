@@ -36,6 +36,7 @@
 						<?php spl_news_sidebar_headline($post); ?>
 					
 				</h3>
+				<hr />
 		  	<?php spl_news_sidebar_content($post); ?>
 		  	<div class="clearfix"></div>
 		  </aside>
