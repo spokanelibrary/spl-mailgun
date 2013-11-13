@@ -12,7 +12,7 @@
     </div>
     <div class="col-sm-4">
     	<h4>
-    		<span class="label label-warning"><?php spl_news_sidebar_headline($post); ?></span>
+    		<div class="label label-warning"><?php spl_news_sidebar_headline($post); ?></div>
     	</h4>
     	
 	  	<?php spl_news_sidebar_content($post); ?>
