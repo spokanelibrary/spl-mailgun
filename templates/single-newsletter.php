@@ -11,9 +11,9 @@
       <?php the_content(); ?>
     </div>
     <div class="col-sm-4">
-    	<h4>
+    	<h3>
     		<span class="label label-warning" style="display:block;"><?php spl_news_sidebar_headline($post); ?></span>
-    	</h4>
+    	</h3>
     	
 	  	<?php spl_news_sidebar_content($post); ?>
 	  	<div class="clearfix"></div>
