@@ -32,7 +32,7 @@
     <div class="col-sm-4">
     	<aside class="aside">
 				<h3>	
-					<div class="label label-default center-block">
+					<div class="label label-default" style="display:block;">
 						<?php spl_news_sidebar_headline($post); ?>
 					</div>
 				</h3>
