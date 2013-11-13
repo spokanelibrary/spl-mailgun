@@ -6,7 +6,7 @@ class SPL_Mailgun_Newsletter_Settings {
 
 	function __construct() {
 		add_action( 'admin_menu', array( $this, 'add_plugin_page' ) );
-    //add_action( 'admin_init', array( $this, 'page_init' ) );
+    add_action( 'admin_init', array( $this, 'page_init' ) );
 	}
 	
 	public function add_plugin_page() {
@@ -21,7 +21,7 @@ class SPL_Mailgun_Newsletter_Settings {
 
   public function create_admin_page() {
   	$this->options = get_option( 'my_option_name' );
-  	echo print_r($this->options, true);
+  	//echo print_r($this->options, true);
 
     echo '<div class="wrap">';
     screen_icon();
