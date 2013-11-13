@@ -31,7 +31,7 @@
     </div><!-- /.col -->
     <div class="col-sm-4">
 			<p class="lead text-center">	
-				<?php spl_news_sidebar_headline($post); ?>
+				<span class="label label-warning"><?php spl_news_sidebar_headline($post); ?></span>
 			</p>
 			<aside class="aside">
 		  	<?php spl_news_sidebar_content($post); ?>
