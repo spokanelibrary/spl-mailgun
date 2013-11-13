@@ -33,7 +33,7 @@
     </div><!-- /.col -->
     <div class="col-sm-4">
     	<aside class="aside">
-  			<div class="panel panel-warning">
+  			<div class="panel panel-default">
   				<div class="panel-heading">
   			<?php spl_news_sidebar_headline($post); ?>
   			</div>
