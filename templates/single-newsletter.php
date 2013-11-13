@@ -14,7 +14,7 @@
     <div class="col-sm-8">
     	<div class="panel panel-default" style="border-left-width:5px;">
     		<div class="panel-heading">
-    			<h2><?php the_title(); ?></h2>
+    			<h3><?php the_title(); ?></h3>
     		</div>
     		<div class="panel-body">
 		      <?php the_content(); ?>
