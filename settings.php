@@ -23,10 +23,10 @@ class SPL_Mailgun_Newsletter_Settings {
   public function setPluginOptionsConfig() {
   	$config = new stdClass();
 
-  	$sections = array(
+  	$headings = array(
 											'spl-mailgun-newsletter-api'=>'Mailgun keys are required.'
 									);
-  	$config->sections = $sections;
+  	$config->headings = $headings;
 
   	$this->config = $config;
   }
@@ -88,7 +88,7 @@ class SPL_Mailgun_Newsletter_Settings {
   }
 
   public function getSectionHeading($section) {
-    print $this->config->sections[$section['id']];
+    print $this->config->headings[$section['id']];
   }
 
   public function getSettingsFieldText($args) {
@@ -107,23 +107,11 @@ class SPL_Mailgun_Newsletter_Settings {
     	foreach ( $input as $k => $v ) {
     		$sanitized[$k] = sanitize_text_field($v);
     	}
+    	return $sanitized;
+    } else {
+    	return $input;
     }
-    return $sanitized;
-    /*
-    $new_input = array();
-    if( isset( $input['id_number'] ) )
-        $new_input['id_number'] = absint( $input['id_number'] );
-
-    if( isset( $input['title'] ) )
-        $new_input['title'] = sanitize_text_field( $input['title'] );
-
-    return $new_input;
-    */
-
-    return $input;
   }
-
-
 
 } // SPL_Mailgun_Newsletter_Settings
 
