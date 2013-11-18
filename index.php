@@ -302,6 +302,11 @@ class SPL_Mailgun_Newsletter {
 
 	// MAILGUN INTEGRATION
 
+	function getMailgunAddressValidation($address) {
+
+
+	}
+
 	function getMailgunMailingLists() {
 		/*
 		$params = array('address'=>'sgirard@spokanelibrary.org');
@@ -316,14 +321,14 @@ class SPL_Mailgun_Newsletter {
 		$api = 'https://api.mailgun.net/v2/';
 		$auth = array('user'=>'api', 'pass'=>$this->config->plugin['mailgun-private-key']);
 		//print_r($api..'lists');
-		return print_r($this->curlProxy($api.'lists', $params, 'get', $auth), true);
+		return print_r($this->curlJSON($api.'lists', $params, 'get', $auth), true);
 
 	}
 
 
 
 
-	function jsonCurl($url, $params, $method='post', $auth=null) {
+	function curlJSON($url, $params, $method='post', $auth=null) {
 		//return $this->curlProxy($url, $params, $method, $auth);
     return json_decode($this->curlProxy($url, $params, $method, $auth), true);
   }
