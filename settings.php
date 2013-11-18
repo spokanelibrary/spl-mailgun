@@ -25,7 +25,7 @@ class SPL_Mailgun_Newsletter_Settings {
 
   	$headings = array(
 											'spl-mailgun-newsletter-api' => 'Mailgun keys are required.'
-										,	'spl-mailgun-newsletter-display' => 'Additional display options:'	
+										,	'spl-mailgun-newsletter-display' => 'Enter a Post Category ID (integer) to filter the list of related posts.'	
 								);
   	$config->headings = $headings;
 
