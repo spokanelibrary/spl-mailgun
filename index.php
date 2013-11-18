@@ -123,7 +123,7 @@ class SPL_Mailgun_Newsletter {
 		$api = 'https://api.mailgun.net/v2/';
 		$auth = array('user'=>'api', 'pass'=>$this->config->plugin['mailgun-public-key']);
 
-		print_r($this->jsonCurl($api.$domain.'/'.'messages', $post, $auth));
+		print_r($this->jsonCurl($api.'/'.'address/validate', $post, $auth));
 
 		wp_nonce_field( basename( __FILE__ ), 'spl_mailgun_newsletter_send_nonce' );
 
