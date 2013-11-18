@@ -73,12 +73,9 @@ class SPL_Mailgun_Newsletter_Settings {
     );      
   }
 
-  /** 
-   * Print the Section text
-   */
-  public function getSectionMailgunApi()
-  {
-      //print 'Enter your mailgun keys:';
+  public function getSectionMailgunApi($args) {
+  	print_r($args);
+    //print 'Enter your mailgun keys:';
   }
 
   public function getSettingsFieldText($args) {
