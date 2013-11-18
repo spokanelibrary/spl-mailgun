@@ -54,7 +54,7 @@ class SPL_Mailgun_Newsletter_Settings {
     register_setting(
     	'spl-mailgun-newsletter-settings-group' 	// option group
     , 'spl-mailgun-newsletter' 									// option name
-    ,	array( $this, 'sanitize' ) 								// sanitize
+    ,	array( $this, 'sanitizeSettingsField' ) 	// sanitize callback
     );
 
     add_settings_section(
@@ -101,7 +101,7 @@ class SPL_Mailgun_Newsletter_Settings {
     );
   }
 
-  public function sanitize( $input ) {
+  public function sanitizeSettingsField( $input ) {
     /*
     $new_input = array();
     if( isset( $input['id_number'] ) )
@@ -112,6 +112,9 @@ class SPL_Mailgun_Newsletter_Settings {
 
     return $new_input;
     */
+
+    print_r($input);
+
     return $input;
   }
 
