@@ -24,8 +24,9 @@ class SPL_Mailgun_Newsletter_Settings {
   	$config = new stdClass();
 
   	$headings = array(
-											'spl-mailgun-newsletter-api'=>'Mailgun keys are required.'
-									);
+											'spl-mailgun-newsletter-api' => 'Mailgun keys are required.'
+										,	'spl-mailgun-newsletter-display' => 'Additional display options:'	
+								);
   	$config->headings = $headings;
 
   	$this->config = $config;
@@ -95,7 +96,14 @@ class SPL_Mailgun_Newsletter_Settings {
     , array('option'=>'spl-mailgun-newsletter'	// callback args
     			,	'id'=>'mailgun-domain'
     			) 
-    );      
+    ); 
+
+    add_settings_section(
+    	'spl-mailgun-newsletter-display' 					// id
+    ,	'Display Options' 												// title
+    ,	array( $this, 'getSectionHeading' )		 		// callback
+    ,	'spl-mailgun-newsletter-settings' 				// page
+    );     
   }
 
   function getSectionHeading($section) {
