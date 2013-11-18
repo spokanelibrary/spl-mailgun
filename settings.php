@@ -11,15 +11,15 @@ class SPL_Mailgun_Newsletter_Settings {
 	
 	public function addPluginOptionsPage() {
 	  add_options_page(
-      'SPL Newsletter Settings' 						// page titlebar
-      ,'SPL Newsletter'											// menu label
-      ,'manage_options'											// capability
-      ,'spl-mailgun-newsletter-settings' 		// menu slug
-      ,array( $this, 'create_admin_page' ) 	// callback
+      'SPL Newsletter Settings' 								// page titlebar
+      ,'SPL Newsletter'													// menu label
+      ,'manage_options'													// capability
+      ,'spl-mailgun-newsletter-settings' 				// menu slug
+      ,array( $this, 'buildPluginOptionsPage' ) // callback
 	  );
   }
 
-  public function create_admin_page() {
+  public function buildPluginOptionsPage() {
   	$this->options = get_option( 'spl-mailgun-newsletter' );
   	//print_r($this->options);
 
