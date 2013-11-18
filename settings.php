@@ -21,7 +21,7 @@ class SPL_Mailgun_Newsletter_Settings {
 
   public function create_admin_page() {
   	$this->options = get_option( 'spl-mailgun-newsletter-settings' );
-  	//echo print_r($this->options, true);
+  	echo print_r($this->options, true);
 
     echo '<div class="wrap">';
     screen_icon();
@@ -47,7 +47,7 @@ class SPL_Mailgun_Newsletter_Settings {
       add_settings_section(
       	'spl-mailgun-newsletter-api' 							// ID
       ,	'Mailgun Api' 														// Title
-      ,	array( $this, 'print_section_info' ) 			// Callback
+      ,	array( $this, 'mailgun_api_section' ) 		// Callback
       ,	'spl-mailgun-newsletter-settings' 				// Page
       );  
 
@@ -97,7 +97,7 @@ class SPL_Mailgun_Newsletter_Settings {
     /** 
      * Print the Section text
      */
-    public function print_section_info()
+    public function mailgun_api_section()
     {
         print 'Enter your settings below:';
     }
@@ -107,7 +107,6 @@ class SPL_Mailgun_Newsletter_Settings {
             '<input type="text" id="'.$args['id'].'" name="'.$args['option'].'['.$args['id'].']" value="%s" />',
             isset( $this->options[$args['id']] ) ? esc_attr( $this->options[$args['id']]) : ''
         );
-        echo PHP_EOL;
     }
 
 
