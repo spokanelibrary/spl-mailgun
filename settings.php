@@ -103,7 +103,18 @@ class SPL_Mailgun_Newsletter_Settings {
     ,	'Display Options' 												// title
     ,	array( $this, 'getSectionHeading' )		 		// callback
     ,	'spl-mailgun-newsletter-settings' 				// page
-    );     
+    );   
+
+    add_settings_field(
+    	'post-category-filter' 										// id
+    ,	'Post Category to show (empty for all)' 	// title
+    ,	array( $this, 'getSettingsFieldText' ) 		// callback
+    ,	'spl-mailgun-newsletter-settings' 				// page
+    ,	'spl-mailgun-newsletter-display'					// section
+    , array('option'=>'spl-mailgun-newsletter'	// callback args
+    			,	'id'=>'post-category-filter'
+    			) 
+    );   
   }
 
   function getSectionHeading($section) {
