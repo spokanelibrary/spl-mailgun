@@ -23,7 +23,7 @@ class SPL_Mailgun_Newsletter_Settings {
   public function getPluginOptionsPage() {
   	$sections = array(
 											'spl-mailgun-newsletter-api'=>'Mailgun keys are required.'
-									)
+									);
   	$this->config = array('section'=>$section);
 										
 		);
