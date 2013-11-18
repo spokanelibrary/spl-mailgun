@@ -28,7 +28,7 @@ class SPL_Mailgun_Newsletter_Settings {
     echo '<h2>SPL Newsletter Settings</h2>';        
     echo '<form method="post" action="options.php">';
     // hidden setting fields
-    settings_fields( 'my_option_group' );   
+    settings_fields( 'spl-mailgun-newsletter-settings-group' );   
     do_settings_sections( 'spl-mailgun-newsletter-settings' );
     submit_button();         
     echo '</form>';
