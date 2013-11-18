@@ -239,7 +239,7 @@ class SPL_Mailgun_Newsletter {
                       , 'type' => 'post_select'
                       , 'limit' => 20 // limit number of options (posts)
                       , 'post_type' => 'post' // post_type to query for
-                  		, 'category' => $this->config->custom->category
+                  		, 'category' => $this->config->plugin['post-category-filter']
 	                    );
 	  	$fields[] = array('name' => '',
 												'desc' => 'Excerpt Only?',
