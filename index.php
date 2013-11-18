@@ -118,22 +118,7 @@ class SPL_Mailgun_Newsletter {
 
 	function getPublishConrols() {
 		//print_r( $this->config );
-		/*
-		$params = array('address'=>'sgirard@spokanelibrary.org');
-		$domain = 'spokanelibrary.mailgun.org';
-		$api = 'https://api.mailgun.net/v2/';
-		$auth = array('user'=>'api', 'pass'=>$this->config->plugin['mailgun-public-key']);
-		print_r($this->jsonCurl($api.'address/validate', $params, 'get', $auth));
-		*/
-		//$params = array('address'=>'sgirard@spokanelibrary.org');
-		$params = null;
-		$domain = 'spokanelibrary.mailgun.org';
-		$api = 'https://api.mailgun.net/v2/';
-		$auth = array('user'=>'api', 'pass'=>$this->config->plugin['mailgun-private-key']);
-		//print_r($api..'lists');
-		print_r($this->curlProxy($api.'lists', $params, 'get', $auth));
-
-
+		
 		wp_nonce_field( basename( __FILE__ ), 'spl_mailgun_newsletter_send_nonce' );
 
 		$tmpl = '
@@ -162,6 +147,8 @@ class SPL_Mailgun_Newsletter {
 			</select>
 		</p>
 		';
+		$list .= $this->getMailgunMailingLists();
+
 		echo $list;
 
 		$email = '
@@ -310,6 +297,31 @@ class SPL_Mailgun_Newsletter {
 	  // stub
 	  return $new;
 	} // validatePostSelect()
+
+
+
+	// MAILGUN INTEGRATION
+
+	function getMailgunMailingLists() {
+		/*
+		$params = array('address'=>'sgirard@spokanelibrary.org');
+		$domain = 'spokanelibrary.mailgun.org';
+		$api = 'https://api.mailgun.net/v2/';
+		$auth = array('user'=>'api', 'pass'=>$this->config->plugin['mailgun-public-key']);
+		print_r($this->jsonCurl($api.'address/validate', $params, 'get', $auth));
+		*/
+		//$params = array('address'=>'sgirard@spokanelibrary.org');
+		$params = null;
+		$domain = 'spokanelibrary.mailgun.org';
+		$api = 'https://api.mailgun.net/v2/';
+		$auth = array('user'=>'api', 'pass'=>$this->config->plugin['mailgun-private-key']);
+		//print_r($api..'lists');
+		return print_r($this->curlProxy($api.'lists', $params, 'get', $auth), true);
+
+	}
+
+
+
 
 	function jsonCurl($url, $params, $method='post', $auth=null) {
 		//return $this->curlProxy($url, $params, $method, $auth);
