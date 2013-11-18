@@ -314,8 +314,12 @@ class SPL_Mailgun_Newsletter {
     curl_setopt($ch, CURLOPT_URL, $url);
     //curl_setopt($ch, CURLOPT_HEADER, false);
 
-    // set ntlm auth params
-    curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_NTLM);  
+    // follow redirects
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+    
+    // set auth params
+    //curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_NTLM);  
+    curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_ANY);
     curl_setopt($ch, CURLOPT_USERPWD, $auth['user'] . ':' . $auth['pass']);
     //curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0)"); 
     
