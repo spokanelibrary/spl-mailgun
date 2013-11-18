@@ -103,7 +103,10 @@ class SPL_Mailgun_Newsletter_Settings {
 
     public function settings_field_text($args) {
    		printf(
-	          '<input type="text" id="'.$args['id'].'" name="'.$args['option'].'['.$args['id'].']" value="%s" />'
+	          '<input type="text" 
+	          				id="'.$args['id'].'" 
+	          				name="'.$args['option'].'['.$args['id'].']" 
+	          				value="%s" />'
 	          ,isset( $this->options[$args['id']] ) ? esc_attr( $this->options[$args['id']]) : ''
       );
     }
