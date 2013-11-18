@@ -57,7 +57,9 @@ class SPL_Mailgun_Newsletter_Settings {
       ,	array( $this, 'settings_field_text' ) 	// Callback
       ,	'spl-mailgun-newsletter-settings' 			// Page
       ,	'spl-mailgun-newsletter-api' 						// Section 
-      , array('this'=>'that')          
+      , array('option'=>'spl-mailgun-newsletter'
+      			,	'id'=>'mailgun-public-key'
+      			)          
       );      
 
       add_settings_field(
@@ -98,10 +100,10 @@ class SPL_Mailgun_Newsletter_Settings {
     }
 
     public function settings_field_text($args) {
-     		print_r($args);
-        printf(
-            '<input type="text" id="id_number" name="my_option_name[id_number]" value="%s" />',
-            isset( $this->options['id_number'] ) ? esc_attr( $this->options['id_number']) : ''
+     		
+     		printf(
+            '<input type="text" id="'.$args['id'].'" name="'.$args['option'].'['.$args['id'].']" value="%s" />',
+            isset( $this->options[$args['id']] ) ? esc_attr( $this->options[$args['id']]) : ''
         );
     }
 
