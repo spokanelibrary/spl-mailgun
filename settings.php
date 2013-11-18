@@ -98,6 +98,7 @@ class SPL_Mailgun_Newsletter_Settings {
      */
     public function public_key_callback($args)
     {
+     		print_r($args);
         printf(
             '<input type="text" id="id_number" name="my_option_name[id_number]" value="%s" />',
             isset( $this->options['id_number'] ) ? esc_attr( $this->options['id_number']) : ''
