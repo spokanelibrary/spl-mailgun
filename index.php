@@ -118,12 +118,12 @@ class SPL_Mailgun_Newsletter {
 
 	function getPublishConrols() {
 		//print_r( $this->config );
-		$post = array('address'=>'sgirard@spokanelibrary.org');
+		$params = array('address'=>'sgirard@spokanelibrary.org');
 		$domain = 'spokanelibrary.mailgun.org';
 		$api = 'https://api.mailgun.net/v2/';
 		$auth = array('user'=>'api', 'pass'=>$this->config->plugin['mailgun-public-key']);
 
-		print_r($this->jsonCurl($api.'address/validate', $post, $auth));
+		print_r($this->jsonCurl($api.'address/validate', $params, 'get', $auth));
 
 		wp_nonce_field( basename( __FILE__ ), 'spl_mailgun_newsletter_send_nonce' );
 
@@ -302,17 +302,23 @@ class SPL_Mailgun_Newsletter {
 	  return $new;
 	} // validatePostSelect()
 
-	function jsonCurl($uri, $api, $auth=null) {
-		//return $uri . http_build_query($api);
-		return $this->curlProxy($uri, $api, $auth);
-    return json_decode($this->curlProxy($uri, $api, $auth), true);
+	function jsonCurl($url, $params, $method='post', $auth=null) {
+		return $this->curlProxy($url, $params, $method, $auth);
+    return json_decode($this->curlProxy($url, $params, $method, $auth), true);
   }
 
-  function curlProxy($url, $params, $auth=null) {
+  function curlProxy($url, $params, $method='post', $auth=null) {
     // create a new cURL resource
     $ch = curl_init();
  		
-    $url .= '?' . http_build_query($params);
+ 		if ( 'post' == $method ) {
+ 			// setup for an http post
+    	curl_setopt($ch, CURLOPT_POST, 1);
+    	// 'cause cURL doesn't like multi-dimensional arrays
+  	  curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
+ 		} elseif ( 'get' == $method ) {
+    	$url .= '?' . http_build_query($params);
+  	}
 
     // set URL and other appropriate options
     curl_setopt($ch, CURLOPT_URL, $url);
@@ -336,12 +342,6 @@ class SPL_Mailgun_Newsletter {
         curl_setopt($ch, CURLOPT_USERAGENT, $ua);
     }
  
-    // setup for an http post
-    //curl_setopt($ch, CURLOPT_POST, 1);
-    // 'cause cURL doesn't like multi-dimensional arrays
-    //curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
- 	
-
     // grab URL
     $result = curl_exec($ch);
  
