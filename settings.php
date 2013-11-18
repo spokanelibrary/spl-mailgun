@@ -53,7 +53,7 @@ class SPL_Mailgun_Newsletter_Settings {
     add_settings_field(
       'mailgun-public-key' 											// ID
     ,	'Public Key' 															// Title 
-    ,	array( $this, 'settings_field_text' ) 		// Callback
+    ,	array( $this, 'getSettingsFieldText' ) 		// Callback
     ,	'spl-mailgun-newsletter-settings' 				// Page
     ,	'spl-mailgun-newsletter-api' 							// Section 
     , array('option'=>'spl-mailgun-newsletter'	// Callback Args
@@ -64,7 +64,7 @@ class SPL_Mailgun_Newsletter_Settings {
     add_settings_field(
     	'mailgun-private-key' 										// ID
     ,	'Private Key' 														// Title
-    ,	array( $this, 'settings_field_text' ) 		// Callback
+    ,	array( $this, 'getSettingsFieldText' ) 		// Callback
     ,	'spl-mailgun-newsletter-settings' 				// Page
     ,	'spl-mailgun-newsletter-api'							// Section
     , array('option'=>'spl-mailgun-newsletter'	// Callback Args
@@ -101,7 +101,7 @@ class SPL_Mailgun_Newsletter_Settings {
         //print 'Enter your settings below:';
     }
 
-    public function settings_field_text($args) {
+    public function getSettingsFieldText($args) {
    		printf(
 	          '<input type="text" 
 	          				id="'.$args['id'].'" 
