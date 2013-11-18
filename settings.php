@@ -39,31 +39,31 @@ class SPL_Mailgun_Newsletter_Settings {
   {        
       register_setting(
           'spl-mailgun-newsletter-settings-group', // Option group
-          'my_option_name', // Option name
+          'spl-mailgun-newsletter', // Option name
           array( $this, 'sanitize' ) // Sanitize
       );
 
       add_settings_section(
-          'setting_section_id', // ID
+          'spl-mailgun-newsletter-api', // ID
           'Mailgun Api', // Title
           array( $this, 'print_section_info' ), // Callback
           'spl-mailgun-newsletter-settings' // Page
       );  
 
       add_settings_field(
-          'mailgun_public_key', // ID
+          'mailgun-public-key', // ID
           'Public Key', // Title 
-          array( $this, 'id_number_callback' ), // Callback
+          array( $this, 'public_key_callback' ), // Callback
           'spl-mailgun-newsletter-settings', // Page
-          'setting_section_id' // Section           
+          'pl-mailgun-newsletter-api' // Section           
       );      
 
       add_settings_field(
-          'mailgun_private_key', 
+          'mailgun-private-key', 
           'Private Key', 
-          array( $this, 'title_callback' ), 
+          array( $this, 'private_key_callback' ), 
           'spl-mailgun-newsletter-settings', 
-          'setting_section_id'
+          'pl-mailgun-newsletter-api'
       );      
   }
 
