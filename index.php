@@ -30,7 +30,9 @@ class SPL_Mailgun_Newsletter {
 	var $config;
 
 	function __construct($config=null) {
-		if ( !is_null($config) && isset($config->plugin['mailgun-private-key']) ) {
+		if ( !is_null($config) 
+					&& isset($config->plugin['mailgun-public-key']) 
+					&& isset($config->plugin['mailgun-private-key']) ) {
 			$this->config = $config;
 			$this->initNewsletter();
 		}
@@ -115,7 +117,8 @@ class SPL_Mailgun_Newsletter {
 	} // initPublishControls()
 
 	function getPublishConrols() {
-		print_r( $this->config );
+		//print_r( $this->config );
+		print_r($this->jsonCurl('http://api.spokanelibrary.org/v2/it-academy'));
 
 		wp_nonce_field( basename( __FILE__ ), 'spl_mailgun_newsletter_send_nonce' );
 
@@ -293,6 +296,40 @@ class SPL_Mailgun_Newsletter {
 	  // stub
 	  return $new;
 	} // validatePostSelect()
+
+	function jsonCurl($uri, $api) {
+    return json_decode($this->curlPostProxy($uri, $api), true);
+  }
+
+  function curlPostProxy($url, $post) {
+    // create a new cURL resource
+    $ch = curl_init();
+ 
+    // set URL and other appropriate options
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_HEADER, false);
+    
+    // set returntransfer to true to prevent browser echo
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+ 
+    $ua = $_SERVER['HTTP_USER_AGENT']; // optional
+    if (isset($ua)) {
+        curl_setopt($ch, CURLOPT_USERAGENT, $ua);
+    }
+ 
+    // setup for an http post
+    curl_setopt($ch, CURLOPT_POST, 1);
+    // 'cause cURL doesn't like multi-dimensional arrays
+    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post));
+ 
+    // grab URL
+    $result = curl_exec($ch);
+ 
+    // close cURL resource, and free up system resources
+    curl_close($ch);
+    
+    return $result;
+  }
 
 } // SPL_Mailgun_Newsletter
 
