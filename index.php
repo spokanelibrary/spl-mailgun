@@ -304,10 +304,10 @@ class SPL_Mailgun_Newsletter {
 
 	function jsonCurl($uri, $api, $auth=null) {
 		return $this->curlAuthPostProxy($uri, $api, $auth);
-    return json_decode($this->curlAuthProxy($uri, $api, $auth), true);
+    return json_decode($this->curlProxy($uri, $api, $auth), true);
   }
 
-  function curlAuthProxy($url, $post, $auth=null) {
+  function curlProxy($url, $params, $auth=null) {
     // create a new cURL resource
     $ch = curl_init();
  
@@ -325,8 +325,6 @@ class SPL_Mailgun_Newsletter {
     	curl_setopt($ch, CURLOPT_USERPWD, $auth['user'] . ':' . $auth['pass']);
     }
 
-    //curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0)"); 
-    
     // set returntransfer to true to prevent browser echo
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
  
@@ -336,9 +334,9 @@ class SPL_Mailgun_Newsletter {
     }
  
     // setup for an http post
-    //curl_setopt($ch, CURLOPT_POST, 1);
+    curl_setopt($ch, CURLOPT_POST, 1);
     // 'cause cURL doesn't like multi-dimensional arrays
-    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post));
+    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
  
     // grab URL
     $result = curl_exec($ch);
