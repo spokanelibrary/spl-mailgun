@@ -95,7 +95,7 @@ class SPL_Mailgun_Newsletter_Settings {
     /** 
      * Get the settings option array and print one of its values
      */
-    public function id_number_callback($args)
+    public function public_key_callback($args)
     {
         printf(
             '<input type="text" id="id_number" name="my_option_name[id_number]" value="%s" />',
@@ -106,7 +106,7 @@ class SPL_Mailgun_Newsletter_Settings {
     /** 
      * Get the settings option array and print one of its values
      */
-    public function title_callback()
+    public function private_key_callback()
     {
         printf(
             '<input type="text" id="title" name="my_option_name[title]" value="%s" />',
