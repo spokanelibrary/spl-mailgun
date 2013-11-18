@@ -123,7 +123,7 @@ class SPL_Mailgun_Newsletter {
 		$api = 'https://api.mailgun.net/v2/';
 		$auth = array('user'=>'api', 'pass'=>$this->config->plugin['mailgun-public-key']);
 
-		print_r($this->jsonCurl($api.'/'.'address/validate', $post, $auth));
+		print_r($this->jsonCurl($api.'address/validate', $post, $auth));
 
 		wp_nonce_field( basename( __FILE__ ), 'spl_mailgun_newsletter_send_nonce' );
 
@@ -303,7 +303,7 @@ class SPL_Mailgun_Newsletter {
 	} // validatePostSelect()
 
 	function jsonCurl($uri, $api, $auth=null) {
-		return $uri;
+		//return $uri;
     return json_decode($this->curlAuthPostProxy($uri, $api, $auth), true);
   }
 
