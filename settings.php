@@ -54,7 +54,7 @@ class SPL_Mailgun_Newsletter_Settings {
       add_settings_field(
 	      'mailgun-public-key' 										// ID
       ,	'Public Key' 														// Title 
-      ,	array( $this, 'public_key_callback' ) 	// Callback
+      ,	array( $this, 'settings_field_text' ) 	// Callback
       ,	'spl-mailgun-newsletter-settings' 			// Page
       ,	'spl-mailgun-newsletter-api' 						// Section 
       , array('this'=>'that')          
@@ -76,6 +76,7 @@ class SPL_Mailgun_Newsletter_Settings {
      */
     public function sanitize( $input )
     {
+      /*
         $new_input = array();
         if( isset( $input['id_number'] ) )
             $new_input['id_number'] = absint( $input['id_number'] );
@@ -84,6 +85,8 @@ class SPL_Mailgun_Newsletter_Settings {
             $new_input['title'] = sanitize_text_field( $input['title'] );
 
         return $new_input;
+      */
+      return $input;
     }
 
     /** 
@@ -93,6 +96,15 @@ class SPL_Mailgun_Newsletter_Settings {
     {
         print 'Enter your settings below:';
     }
+
+    public function settings_field_text($args) {
+     		print_r($args);
+        printf(
+            '<input type="text" id="id_number" name="my_option_name[id_number]" value="%s" />',
+            isset( $this->options['id_number'] ) ? esc_attr( $this->options['id_number']) : ''
+        );
+    }
+
 
     /** 
      * Get the settings option array and print one of its values
