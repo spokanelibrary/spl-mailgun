@@ -21,10 +21,14 @@ class SPL_Mailgun_Newsletter_Settings {
   }
 
   public function setPluginOptionsConfig() {
+  	$config = new stdClass();
+
   	$sections = array(
 											'spl-mailgun-newsletter-api'=>'Mailgun keys are required.'
 									);
-  	$this->config->sections = $sections;
+  	$config->sections = $sections;
+
+  	$this->config = $config;
   }
 
   public function getPluginOptionsPage() {
