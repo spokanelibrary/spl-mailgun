@@ -6,7 +6,7 @@ class SPL_Mailgun_Newsletter_Settings {
 
 	function __construct() {
 		add_action( 'admin_menu', array( $this, 'addPluginOptionsPage' ) );
-    add_action( 'admin_init', array( $this, 'page_init' ) );
+    add_action( 'admin_init', array( $this, 'initPluginOptionsPage' ) );
 	}
 	
 	public function addPluginOptionsPage() {
@@ -36,7 +36,7 @@ class SPL_Mailgun_Newsletter_Settings {
     echo '</div>';    
   }
   
-  public function page_init()
+  public function initPluginOptionsPage()
   {        
       register_setting(
       	'spl-mailgun-newsletter-settings-group' 	// Option group
