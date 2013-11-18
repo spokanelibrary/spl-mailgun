@@ -38,7 +38,7 @@ class SPL_Mailgun_Newsletter_Settings {
   public function page_init()
   {        
       register_setting(
-          'my_option_group', // Option group
+          'spl-mailgun-newsletter-settings-group', // Option group
           'my_option_name', // Option name
           array( $this, 'sanitize' ) // Sanitize
       );
