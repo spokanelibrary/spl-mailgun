@@ -107,7 +107,7 @@ class SPL_Mailgun_Newsletter_Settings {
 
     add_settings_field(
     	'post-category-filter' 										// id
-    ,	'Post Category to show (empty for all)' 	// title
+    ,	'Post Category Filter (empty for none)' 	// title
     ,	array( $this, 'getSettingsFieldText' ) 		// callback
     ,	'spl-mailgun-newsletter-settings' 				// page
     ,	'spl-mailgun-newsletter-display'					// section
@@ -124,6 +124,7 @@ class SPL_Mailgun_Newsletter_Settings {
   function getSettingsFieldText($args) {
  		printf(
           '<input type="text" 
+          				class="widefat"
           				id="'.$args['id'].'" 
           				name="'.$args['option'].'['.$args['id'].']" 
           				value="%s" />'
