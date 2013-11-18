@@ -20,13 +20,16 @@ class SPL_Mailgun_Newsletter_Settings {
 	  );
   }
 
-  public function getPluginOptionsPage() {
-  	
+  public function setPluginOptionsConfig() {
   	$sections = array(
 											'spl-mailgun-newsletter-api'=>'Mailgun keys are required.'
 									);
   	$this->config->sections = $sections;
-			
+  }
+
+  public function getPluginOptionsPage() {
+  	$this->setPluginOptionsConfig();
+
   	$this->options = get_option( 'spl-mailgun-newsletter' );
   	//print_r($this->options);
 
@@ -53,7 +56,7 @@ class SPL_Mailgun_Newsletter_Settings {
     add_settings_section(
     	'spl-mailgun-newsletter-api' 							// id
     ,	'Mailgun Api' 														// title
-    ,	array( $this, 'getSectionMailgunApi' ) 		// callback
+    ,	array( $this, 'getSectionHeading' )		 		// callback
     ,	'spl-mailgun-newsletter-settings' 				// page
     );  
 
@@ -80,7 +83,7 @@ class SPL_Mailgun_Newsletter_Settings {
     );      
   }
 
-  protected function getSectionMailgunApi($section) {
+  public function getSectionHeading($section) {
     print $this->config->sections[$section['id']];
   }
 
