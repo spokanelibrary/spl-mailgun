@@ -56,7 +56,8 @@ class SPL_Mailgun_Newsletter_Settings {
       ,	'Public Key' 														// Title 
       ,	array( $this, 'public_key_callback' ) 	// Callback
       ,	'spl-mailgun-newsletter-settings' 			// Page
-      ,	'spl-mailgun-newsletter-api' 						// Section           
+      ,	'spl-mailgun-newsletter-api' 						// Section 
+      , array('this'=>'that')          
       );      
 
       add_settings_field(
