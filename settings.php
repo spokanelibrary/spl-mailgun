@@ -19,7 +19,7 @@ class SPL_Mailgun_Newsletter_Settings {
 	  );
   }
 
-  protected function create_admin_page() {
+  public function create_admin_page() {
   	$this->options = get_option( 'spl-mailgun-newsletter' );
   	//print_r($this->options);
 
