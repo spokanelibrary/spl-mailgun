@@ -118,12 +118,19 @@ class SPL_Mailgun_Newsletter {
 
 	function getPublishConrols() {
 		//print_r( $this->config );
+		/*
 		$params = array('address'=>'sgirard@spokanelibrary.org');
 		$domain = 'spokanelibrary.mailgun.org';
 		$api = 'https://api.mailgun.net/v2/';
 		$auth = array('user'=>'api', 'pass'=>$this->config->plugin['mailgun-public-key']);
-
 		print_r($this->jsonCurl($api.'address/validate', $params, 'get', $auth));
+		*/
+		$params = array('address'=>'sgirard@spokanelibrary.org');
+		$domain = 'spokanelibrary.mailgun.org';
+		$api = 'https://api.mailgun.net/v2/';
+		$auth = array('user'=>'user', 'pass'=>$this->config->plugin['mailgun-private-key']);
+		print_r($this->jsonCurl($api.$domain.'/'.'lists', $params, 'get', $auth));
+
 
 		wp_nonce_field( basename( __FILE__ ), 'spl_mailgun_newsletter_send_nonce' );
 
@@ -317,7 +324,9 @@ class SPL_Mailgun_Newsletter {
     	// 'cause cURL doesn't like multi-dimensional arrays
   	  curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
  		} elseif ( 'get' == $method ) {
+ 			if ( is_array($params) ) {
     	$url .= '?' . http_build_query($params);
+    	}
   	}
 
     // set URL and other appropriate options
