@@ -303,6 +303,7 @@ class SPL_Mailgun_Newsletter {
 	} // validatePostSelect()
 
 	function jsonCurl($uri, $api) {
+		return 'test';
     return json_decode($this->curlAuthPostProxy($uri, $api), true);
   }
 
@@ -316,7 +317,7 @@ class SPL_Mailgun_Newsletter {
 
     // follow redirects
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-    
+
     // set auth params
     //curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_NTLM);  
     curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_ANY);
