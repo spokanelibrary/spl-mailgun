@@ -81,7 +81,7 @@ class SPL_Mailgun_Newsletter_Settings {
   }
 
   public function getSectionMailgunApi($section) {
-    print 'test';
+    print $section['id'];
     //print $this->config->sections[$section['id']];
   }
 
