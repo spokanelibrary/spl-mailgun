@@ -21,7 +21,7 @@ class SPL_Mailgun_Newsletter_Settings {
 
   public function create_admin_page() {
   	$this->options = get_option( 'spl-mailgun-newsletter' );
-  	print_r($this->options);
+  	//print_r($this->options);
 
     echo '<div class="wrap">';
     screen_icon();
@@ -99,7 +99,7 @@ class SPL_Mailgun_Newsletter_Settings {
      */
     public function mailgun_api_section()
     {
-        print 'Enter your settings below:';
+        //print 'Enter your settings below:';
     }
 
     public function settings_field_text($args) {
