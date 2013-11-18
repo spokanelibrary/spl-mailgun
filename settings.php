@@ -84,6 +84,17 @@ class SPL_Mailgun_Newsletter_Settings {
     , array('option'=>'spl-mailgun-newsletter'	// callback args
     			,	'id'=>'mailgun-private-key'
     			) 
+    );   
+
+    add_settings_field(
+    	'mailgun-domain' 													// id
+    ,	'Domain' 																	// title
+    ,	array( $this, 'getSettingsFieldText' ) 		// callback
+    ,	'spl-mailgun-newsletter-settings' 				// page
+    ,	'spl-mailgun-newsletter-api'							// section
+    , array('option'=>'spl-mailgun-newsletter'	// callback args
+    			,	'id'=>'mailgun-domain'
+    			) 
     );      
   }
 

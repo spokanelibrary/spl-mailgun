@@ -16,6 +16,12 @@ class SPL_Mailgun_Newsletter_Config {
 
 		$settings->category = 5; // post category to show in list (empty for all)
 
+		$mailgun = new stdClass();
+		$mailgun->api = 'https://api.mailgun.net/v2/';
+		$mailgun->user = 'api';
+
+		$settings->mailgun = $mailgun;
+
 		return $settings;
 	}
 
