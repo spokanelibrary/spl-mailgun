@@ -24,7 +24,7 @@ class SPL_Mailgun_Newsletter_Settings {
   	$sections = array(
 											'spl-mailgun-newsletter-api'=>'Mailgun keys are required.'
 									);
-  	$this->config = array('section'=>$section);
+  	$this->config->sections = $sections;
 										
 		);
   	$this->options = get_option( 'spl-mailgun-newsletter' );
@@ -81,7 +81,7 @@ class SPL_Mailgun_Newsletter_Settings {
   }
 
   public function getSectionMailgunApi($section) {
-    print $this->sections[$section['id']];
+    print $this->config->sections[$section['id']];
   }
 
   public function getSettingsFieldText($args) {
