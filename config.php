@@ -2,12 +2,21 @@
 
 class SPL_Mailgun_Newsletter_Config {
 
-	var $settings;
-
-	var $campaign = 'my-campaign-id';
+	var $custom;
+	var $plugin;
 
 	function __construct() {
-		$this->settings = get_option( 'spl-mailgun-newsletter' );
+		$this->custom = $this->getCustomSettings();
+		// get settings defined in admin interface
+		$this->plugin = get_option( 'spl-mailgun-newsletter' );
+	}
+
+	public function getCustomSettings() {
+		$settings = new stdClass();
+
+		$settings->campaign = 'my-campaign-id';
+
+		return $settings;
 	}
 
 }
