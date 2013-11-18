@@ -1,4 +1,11 @@
 <?php //get_template_part('templates/content', 'single'); ?>
+
+<?php
+	$settings = get_option( 'spl-mailgun-newsletter' );
+
+	print_r($settings);
+?>
+
 <div class="spl-news">
 <?php while (have_posts()) : the_post(); ?>
 	<div class="page-header">
