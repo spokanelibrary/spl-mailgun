@@ -302,12 +302,11 @@ class SPL_Mailgun_Newsletter {
 	  return $new;
 	} // validatePostSelect()
 
-	function jsonCurl($uri, $api) {
-		return 'test';
-    return json_decode($this->curlAuthPostProxy($uri, $api), true);
+	function jsonCurl($uri, $api, $auth) {
+    return json_decode($this->curlAuthPostProxy($uri, $api, $auth), true);
   }
 
-  function curlAuthPostProxy($url, $post, $auth) {
+  function curlAuthPostProxy($url, $post, $auth=null;) {
     // create a new cURL resource
     $ch = curl_init();
  
@@ -319,9 +318,12 @@ class SPL_Mailgun_Newsletter {
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
 
     // set auth params
-    //curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_NTLM);  
-    curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_ANY);
-    curl_setopt($ch, CURLOPT_USERPWD, $auth['user'] . ':' . $auth['pass']);
+    if ( is_array($auth) ) {
+    	//curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_NTLM);  
+    	curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_ANY);
+    	curl_setopt($ch, CURLOPT_USERPWD, $auth['user'] . ':' . $auth['pass']);
+    }
+
     //curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0)"); 
     
     // set returntransfer to true to prevent browser echo
