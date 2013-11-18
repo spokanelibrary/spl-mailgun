@@ -115,6 +115,8 @@ class SPL_Mailgun_Newsletter {
 	} // initPublishControls()
 
 	function getPublishConrols() {
+		print_r( $this->config );
+
 		wp_nonce_field( basename( __FILE__ ), 'spl_mailgun_newsletter_send_nonce' );
 
 		$tmpl = '

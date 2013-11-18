@@ -13,10 +13,10 @@ class SPL_Mailgun_Newsletter_Settings {
 	public function addPluginOptionsPage() {
 	  add_options_page(
       'SPL Newsletter Settings' 								// page titlebar
-      ,'SPL Newsletter'													// menu label
-      ,'manage_options'													// capability
-      ,'spl-mailgun-newsletter-settings' 				// menu slug
-      ,array( $this, 'getPluginOptionsPage' ) 	// callback
+    ,	'SPL Newsletter'													// menu label
+    ,	'manage_options'													// capability
+    ,	'spl-mailgun-newsletter-settings' 				// menu slug
+    ,	array( $this, 'getPluginOptionsPage' ) 		// callback
 	  );
   }
 
@@ -97,7 +97,7 @@ class SPL_Mailgun_Newsletter_Settings {
           				id="'.$args['id'].'" 
           				name="'.$args['option'].'['.$args['id'].']" 
           				value="%s" />'
-          ,isset( $this->options[$args['id']] ) ? esc_attr( $this->options[$args['id']]) : ''
+        ,	isset( $this->options[$args['id']] ) ? esc_attr( $this->options[$args['id']]) : ''
     );
   }
 
