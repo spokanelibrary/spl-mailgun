@@ -306,7 +306,7 @@ class SPL_Mailgun_Newsletter {
     return json_decode($this->curlAuthPostProxy($uri, $api, $auth), true);
   }
 
-  function curlAuthPostProxy($url, $post, $auth=null;) {
+  function curlAuthPostProxy($url, $post, $auth=null) {
     // create a new cURL resource
     $ch = curl_init();
  
