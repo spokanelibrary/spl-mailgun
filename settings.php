@@ -20,8 +20,8 @@ class SPL_Mailgun_Newsletter_Settings {
   }
 
   public function create_admin_page() {
-  	$this->options = get_option( 'spl-mailgun-newsletter-settings' );
-  	echo print_r($this->options, true);
+  	$this->options = get_option( 'spl-mailgun-newsletter' );
+  	print_r($this->options);
 
     echo '<div class="wrap">';
     screen_icon();
