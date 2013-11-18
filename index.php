@@ -125,7 +125,8 @@ class SPL_Mailgun_Newsletter {
 		$auth = array('user'=>'api', 'pass'=>$this->config->plugin['mailgun-public-key']);
 		print_r($this->jsonCurl($api.'address/validate', $params, 'get', $auth));
 		*/
-		$params = array('address'=>'sgirard@spokanelibrary.org');
+		//$params = array('address'=>'sgirard@spokanelibrary.org');
+		$params = null;
 		$domain = 'spokanelibrary.mailgun.org';
 		$api = 'https://api.mailgun.net/v2/';
 		$auth = array('user'=>'api', 'pass'=>$this->config->plugin['mailgun-private-key']);
