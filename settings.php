@@ -48,6 +48,7 @@ class SPL_Mailgun_Newsletter_Settings {
     ,	'Mailgun Api' 														// title
     ,	array( $this, 'getSectionMailgunApi' ) 		// callback
     ,	'spl-mailgun-newsletter-settings' 				// page
+    , array('this')
     );  
 
     add_settings_field(
