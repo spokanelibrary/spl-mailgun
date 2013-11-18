@@ -39,35 +39,38 @@ class SPL_Mailgun_Newsletter_Settings {
   public function page_init()
   {        
       register_setting(
-      	'spl-mailgun-newsletter-settings-group' // Option group
-      , 'spl-mailgun-newsletter' 								// Option name
-      ,	array( $this, 'sanitize' ) 							// Sanitize
+      	'spl-mailgun-newsletter-settings-group' 	// Option group
+      , 'spl-mailgun-newsletter' 									// Option name
+      ,	array( $this, 'sanitize' ) 								// Sanitize
       );
 
       add_settings_section(
-      	'spl-mailgun-newsletter-api' 						// ID
-      ,	'Mailgun Api' 													// Title
-      ,	array( $this, 'print_section_info' ) 		// Callback
-      ,	'spl-mailgun-newsletter-settings' 			// Page
+      	'spl-mailgun-newsletter-api' 							// ID
+      ,	'Mailgun Api' 														// Title
+      ,	array( $this, 'print_section_info' ) 			// Callback
+      ,	'spl-mailgun-newsletter-settings' 				// Page
       );  
 
       add_settings_field(
-	      'mailgun-public-key' 										// ID
-      ,	'Public Key' 														// Title 
-      ,	array( $this, 'settings_field_text' ) 	// Callback
-      ,	'spl-mailgun-newsletter-settings' 			// Page
-      ,	'spl-mailgun-newsletter-api' 						// Section 
-      , array('option'=>'spl-mailgun-newsletter'
+	      'mailgun-public-key' 											// ID
+      ,	'Public Key' 															// Title 
+      ,	array( $this, 'settings_field_text' ) 		// Callback
+      ,	'spl-mailgun-newsletter-settings' 				// Page
+      ,	'spl-mailgun-newsletter-api' 							// Section 
+      , array('option'=>'spl-mailgun-newsletter'	// Callback Args
       			,	'id'=>'mailgun-public-key'
       			)          
       );      
 
       add_settings_field(
-      	'mailgun-private-key' 									// ID
-      ,	'Private Key' 													// Title
-      ,	array( $this, 'private_key_callback' ) 	// Callback
-      ,	'spl-mailgun-newsletter-settings' 			// Page
-      ,	'spl-mailgun-newsletter-api'						// Section
+      	'mailgun-private-key' 										// ID
+      ,	'Private Key' 														// Title
+      ,	array( $this, 'settings_field_text' ) 		// Callback
+      ,	'spl-mailgun-newsletter-settings' 				// Page
+      ,	'spl-mailgun-newsletter-api'							// Section
+      , array('option'=>'spl-mailgun-newsletter'	// Callback Args
+      			,	'id'=>'mailgun-private-key'
+      			) 
       );      
   }
 
@@ -100,36 +103,14 @@ class SPL_Mailgun_Newsletter_Settings {
     }
 
     public function settings_field_text($args) {
-     		
      		printf(
             '<input type="text" id="'.$args['id'].'" name="'.$args['option'].'['.$args['id'].']" value="%s" />',
             isset( $this->options[$args['id']] ) ? esc_attr( $this->options[$args['id']]) : ''
         );
+        echo PHP_EOL;
     }
 
 
-    /** 
-     * Get the settings option array and print one of its values
-     */
-    public function public_key_callback($args)
-    {
-     		print_r($args);
-        printf(
-            '<input type="text" id="id_number" name="my_option_name[id_number]" value="%s" />',
-            isset( $this->options['id_number'] ) ? esc_attr( $this->options['id_number']) : ''
-        );
-    }
-
-    /** 
-     * Get the settings option array and print one of its values
-     */
-    public function private_key_callback()
-    {
-        printf(
-            '<input type="text" id="title" name="my_option_name[title]" value="%s" />',
-            isset( $this->options['title'] ) ? esc_attr( $this->options['title']) : ''
-        );
-    }
 
 } // SPL_Mailgun_Newsletter_Settings
 
