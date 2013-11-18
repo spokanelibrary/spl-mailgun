@@ -39,32 +39,32 @@ class SPL_Mailgun_Newsletter_Settings {
   public function page_init()
   {        
       register_setting(
-          'spl-mailgun-newsletter-settings-group' // Option group
-          ,'spl-mailgun-newsletter' // Option name
-          ,array( $this, 'sanitize' ) // Sanitize
+      	'spl-mailgun-newsletter-settings-group' // Option group
+      , 'spl-mailgun-newsletter' 								// Option name
+      ,	array( $this, 'sanitize' ) 							// Sanitize
       );
 
       add_settings_section(
-          'spl-mailgun-newsletter-api' // ID
-          ,'Mailgun Api' // Title
-          ,array( $this, 'print_section_info' ) // Callback
-          ,'spl-mailgun-newsletter-settings' // Page
+      	'spl-mailgun-newsletter-api' 						// ID
+      ,	'Mailgun Api' 													// Title
+      ,	array( $this, 'print_section_info' ) 		// Callback
+      ,	'spl-mailgun-newsletter-settings' 			// Page
       );  
 
       add_settings_field(
-          'mailgun-public-key' // ID
-          ,'Public Key' // Title 
-          ,array( $this, 'public_key_callback' ) // Callback
-          ,'spl-mailgun-newsletter-settings' // Page
-          ,'spl-mailgun-newsletter-api' // Section           
+	      'mailgun-public-key' 										// ID
+      ,	'Public Key' 														// Title 
+      ,	array( $this, 'public_key_callback' ) 	// Callback
+      ,	'spl-mailgun-newsletter-settings' 			// Page
+      ,	'spl-mailgun-newsletter-api' 						// Section           
       );      
 
       add_settings_field(
-          'mailgun-private-key' 
-          ,'Private Key' 
-          ,array( $this, 'private_key_callback' ) 
-          ,'spl-mailgun-newsletter-settings' 
-          ,'spl-mailgun-newsletter-api'
+      	'mailgun-private-key' 									// ID
+      ,	'Private Key' 													// Title
+      ,	array( $this, 'private_key_callback' ) 	// Callback
+      ,	'spl-mailgun-newsletter-settings' 			// Page
+      ,	'spl-mailgun-newsletter-api'						// Section
       );      
   }
 
