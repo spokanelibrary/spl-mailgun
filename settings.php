@@ -102,6 +102,13 @@ class SPL_Mailgun_Newsletter_Settings {
   }
 
   public function sanitizeSettingsField( $input ) {
+    if ( is_array($input) ) {
+    	$sanitized = array();
+    	foreach ( $input as $k => $v ) {
+    		$sanitized[$k] = sanitize_text_field($v);
+    	}
+    }
+    return $sanitized;
     /*
     $new_input = array();
     if( isset( $input['id_number'] ) )
@@ -112,8 +119,6 @@ class SPL_Mailgun_Newsletter_Settings {
 
     return $new_input;
     */
-
-    print_r($input);
 
     return $input;
   }
