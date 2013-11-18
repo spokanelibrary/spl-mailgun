@@ -310,7 +310,9 @@ class SPL_Mailgun_Newsletter {
   function curlProxy($url, $params, $auth=null) {
     // create a new cURL resource
     $ch = curl_init();
- 
+ 		
+    $url .= http_build_query($params);
+
     // set URL and other appropriate options
     curl_setopt($ch, CURLOPT_URL, $url);
     //curl_setopt($ch, CURLOPT_HEADER, false);
@@ -334,10 +336,11 @@ class SPL_Mailgun_Newsletter {
     }
  
     // setup for an http post
-    curl_setopt($ch, CURLOPT_POST, 1);
+    //curl_setopt($ch, CURLOPT_POST, 1);
     // 'cause cURL doesn't like multi-dimensional arrays
-    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
- 
+    //curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
+ 	
+
     // grab URL
     $result = curl_exec($ch);
  
