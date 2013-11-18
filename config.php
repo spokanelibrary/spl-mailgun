@@ -11,7 +11,7 @@ class SPL_Mailgun_Newsletter_Config {
 		$this->plugin = get_option( 'spl-mailgun-newsletter' );
 	}
 
-	public function getCustomSettings() {
+	function getCustomSettings() {
 		$settings = new stdClass();
 
 		$settings->campaign = 'my-campaign-id';

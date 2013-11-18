@@ -10,7 +10,7 @@ class SPL_Mailgun_Newsletter_Settings {
     add_action( 'admin_init', array( $this, 'initPluginOptionsPage' ) );
 	}
 	
-	public function addPluginOptionsPage() {
+	function addPluginOptionsPage() {
 	  add_options_page(
       'SPL Newsletter Settings' 								// page titlebar
     ,	'SPL Newsletter'													// menu label
@@ -20,7 +20,7 @@ class SPL_Mailgun_Newsletter_Settings {
 	  );
   }
 
-  public function setPluginOptionsConfig() {
+  function setPluginOptionsConfig() {
   	$config = new stdClass();
 
   	$headings = array(
@@ -31,7 +31,7 @@ class SPL_Mailgun_Newsletter_Settings {
   	$this->config = $config;
   }
 
-  public function getPluginOptionsPage() {
+  function getPluginOptionsPage() {
   	$this->setPluginOptionsConfig();
 
   	$this->options = get_option( 'spl-mailgun-newsletter' );
@@ -50,7 +50,7 @@ class SPL_Mailgun_Newsletter_Settings {
     echo '</div>';    
   }
   
-  public function initPluginOptionsPage() {        
+  function initPluginOptionsPage() {        
     register_setting(
     	'spl-mailgun-newsletter-settings-group' 	// option group
     , 'spl-mailgun-newsletter' 									// option name
@@ -87,11 +87,11 @@ class SPL_Mailgun_Newsletter_Settings {
     );      
   }
 
-  public function getSectionHeading($section) {
+  function getSectionHeading($section) {
     print $this->config->headings[$section['id']];
   }
 
-  public function getSettingsFieldText($args) {
+  function getSettingsFieldText($args) {
  		printf(
           '<input type="text" 
           				id="'.$args['id'].'" 
@@ -101,7 +101,7 @@ class SPL_Mailgun_Newsletter_Settings {
     );
   }
 
-  public function sanitizeSettingsField( $input ) {
+  function sanitizeSettingsField( $input ) {
     if ( is_array($input) ) {
     	$sanitized = array();
     	foreach ( $input as $k => $v ) {

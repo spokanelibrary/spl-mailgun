@@ -30,7 +30,7 @@ class SPL_Mailgun_Newsletter {
 	var $config;
 
 	function __construct($config=null) {
-		if ( !is_null($config) ) {
+		if ( !is_null($config) && isset($config->plugin['mailgun-private-key']) ) {
 			$this->config = $config;
 			$this->initNewsletter();
 		}
