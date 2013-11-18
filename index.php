@@ -118,11 +118,12 @@ class SPL_Mailgun_Newsletter {
 
 	function getPublishConrols() {
 		//print_r( $this->config );
-		$post = array();
+		$post = array('address'=>'sgirard@spokanelibrary.org');
 		$domain = 'spokanelibrary.mailgun.org';
 		$api = 'https://api.mailgun.net/v2/';
+		$auth = array('user'=>'api', 'pass'=>$this->config->plugin['mailgun-public-key']);
 
-		print_r($this->jsonCurl($api.$domain.'/'.'messages'));
+		print_r($this->jsonCurl($api.$domain.'/'.'messages', $post, $auth));
 
 		wp_nonce_field( basename( __FILE__ ), 'spl_mailgun_newsletter_send_nonce' );
 
@@ -302,16 +303,21 @@ class SPL_Mailgun_Newsletter {
 	} // validatePostSelect()
 
 	function jsonCurl($uri, $api) {
-    return json_decode($this->curlPostProxy($uri, $api), true);
+    return json_decode($this->curlAuthPostProxy($uri, $api), true);
   }
 
-  function curlPostProxy($url, $post) {
+  function curlAuthPostProxy($url, $post, $auth) {
     // create a new cURL resource
     $ch = curl_init();
  
     // set URL and other appropriate options
     curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_HEADER, false);
+    //curl_setopt($ch, CURLOPT_HEADER, false);
+
+    // set ntlm auth params
+    curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_NTLM);  
+    curl_setopt($ch, CURLOPT_USERPWD, $auth['user'] . ':' . $auth['pass']);
+    //curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0)"); 
     
     // set returntransfer to true to prevent browser echo
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
