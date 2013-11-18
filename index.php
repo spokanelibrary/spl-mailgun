@@ -118,7 +118,11 @@ class SPL_Mailgun_Newsletter {
 
 	function getPublishConrols() {
 		//print_r( $this->config );
-		print_r($this->jsonCurl('http://api.spokanelibrary.org/v2/it-academy'));
+		$post = array();
+		$domain = 'spokanelibrary.mailgun.org';
+		$api = 'https://api.mailgun.net/v2/';
+
+		print_r($this->jsonCurl($api.$domain.'/'.'messages'));
 
 		wp_nonce_field( basename( __FILE__ ), 'spl_mailgun_newsletter_send_nonce' );
 
