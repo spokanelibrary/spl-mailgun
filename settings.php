@@ -15,11 +15,11 @@ class SPL_Mailgun_Newsletter_Settings {
       ,'SPL Newsletter'													// menu label
       ,'manage_options'													// capability
       ,'spl-mailgun-newsletter-settings' 				// menu slug
-      ,array( $this, 'buildPluginOptionsPage' ) // callback
+      ,array( $this, 'getPluginOptionsPage' ) 	// callback
 	  );
   }
 
-  public function buildPluginOptionsPage() {
+  public function getPluginOptionsPage() {
   	$this->options = get_option( 'spl-mailgun-newsletter' );
   	//print_r($this->options);
 
@@ -38,78 +38,72 @@ class SPL_Mailgun_Newsletter_Settings {
   
   public function initPluginOptionsPage() {        
     register_setting(
-    	'spl-mailgun-newsletter-settings-group' 	// Option group
-    , 'spl-mailgun-newsletter' 									// Option name
-    ,	array( $this, 'sanitize' ) 								// Sanitize
+    	'spl-mailgun-newsletter-settings-group' 	// option group
+    , 'spl-mailgun-newsletter' 									// option name
+    ,	array( $this, 'sanitize' ) 								// sanitize
     );
 
     add_settings_section(
-    	'spl-mailgun-newsletter-api' 							// ID
-    ,	'Mailgun Api' 														// Title
-    ,	array( $this, 'mailgun_api_section' ) 		// Callback
-    ,	'spl-mailgun-newsletter-settings' 				// Page
+    	'spl-mailgun-newsletter-api' 							// id
+    ,	'Mailgun Api' 														// title
+    ,	array( $this, 'getSectionMailgunApi' ) 		// callback
+    ,	'spl-mailgun-newsletter-settings' 				// page
     );  
 
     add_settings_field(
-      'mailgun-public-key' 											// ID
-    ,	'Public Key' 															// Title 
-    ,	array( $this, 'getSettingsFieldText' ) 		// Callback
-    ,	'spl-mailgun-newsletter-settings' 				// Page
-    ,	'spl-mailgun-newsletter-api' 							// Section 
-    , array('option'=>'spl-mailgun-newsletter'	// Callback Args
+      'mailgun-public-key' 											// id
+    ,	'Public Key' 															// title 
+    ,	array( $this, 'getSettingsFieldText' ) 		// callback
+    ,	'spl-mailgun-newsletter-settings' 				// page
+    ,	'spl-mailgun-newsletter-api' 							// section 
+    , array('option'=>'spl-mailgun-newsletter'	// callback args
     			,	'id'=>'mailgun-public-key'
     			)          
     );      
 
     add_settings_field(
-    	'mailgun-private-key' 										// ID
-    ,	'Private Key' 														// Title
-    ,	array( $this, 'getSettingsFieldText' ) 		// Callback
-    ,	'spl-mailgun-newsletter-settings' 				// Page
-    ,	'spl-mailgun-newsletter-api'							// Section
-    , array('option'=>'spl-mailgun-newsletter'	// Callback Args
+    	'mailgun-private-key' 										// id
+    ,	'Private Key' 														// title
+    ,	array( $this, 'getSettingsFieldText' ) 		// callback
+    ,	'spl-mailgun-newsletter-settings' 				// page
+    ,	'spl-mailgun-newsletter-api'							// section
+    , array('option'=>'spl-mailgun-newsletter'	// callback args
     			,	'id'=>'mailgun-private-key'
     			) 
     );      
   }
 
-  /**
-     * Sanitize each setting field as needed
-     *
-     * @param array $input Contains all settings fields as array keys
-     */
-    public function sanitize( $input )
-    {
-      /*
-        $new_input = array();
-        if( isset( $input['id_number'] ) )
-            $new_input['id_number'] = absint( $input['id_number'] );
+  /** 
+   * Print the Section text
+   */
+  public function getSectionMailgunApi()
+  {
+      //print 'Enter your mailgun keys:';
+  }
 
-        if( isset( $input['title'] ) )
-            $new_input['title'] = sanitize_text_field( $input['title'] );
+  public function getSettingsFieldText($args) {
+ 		printf(
+          '<input type="text" 
+          				id="'.$args['id'].'" 
+          				name="'.$args['option'].'['.$args['id'].']" 
+          				value="%s" />'
+          ,isset( $this->options[$args['id']] ) ? esc_attr( $this->options[$args['id']]) : ''
+    );
+  }
 
-        return $new_input;
-      */
-      return $input;
-    }
+  public function sanitize( $input ) {
+    /*
+    $new_input = array();
+    if( isset( $input['id_number'] ) )
+        $new_input['id_number'] = absint( $input['id_number'] );
 
-    /** 
-     * Print the Section text
-     */
-    public function mailgun_api_section()
-    {
-        //print 'Enter your settings below:';
-    }
+    if( isset( $input['title'] ) )
+        $new_input['title'] = sanitize_text_field( $input['title'] );
 
-    public function getSettingsFieldText($args) {
-   		printf(
-	          '<input type="text" 
-	          				id="'.$args['id'].'" 
-	          				name="'.$args['option'].'['.$args['id'].']" 
-	          				value="%s" />'
-	          ,isset( $this->options[$args['id']] ) ? esc_attr( $this->options[$args['id']]) : ''
-      );
-    }
+    return $new_input;
+    */
+    return $input;
+  }
 
 
 
