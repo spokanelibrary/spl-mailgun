@@ -303,8 +303,8 @@ class SPL_Mailgun_Newsletter {
 	} // validatePostSelect()
 
 	function jsonCurl($uri, $api, $auth=null) {
-		return $uri . http_build_query($api);
-		//return $this->curlProxy($uri, $api, $auth);
+		//return $uri . http_build_query($api);
+		return $this->curlProxy($uri, $api, $auth);
     return json_decode($this->curlProxy($uri, $api, $auth), true);
   }
 
@@ -312,7 +312,7 @@ class SPL_Mailgun_Newsletter {
     // create a new cURL resource
     $ch = curl_init();
  		
-    $url .= http_build_query($params);
+    $url .= '?' . http_build_query($params);
 
     // set URL and other appropriate options
     curl_setopt($ch, CURLOPT_URL, $url);
