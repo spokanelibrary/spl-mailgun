@@ -129,6 +129,7 @@ class SPL_Mailgun_Newsletter {
 		$domain = 'spokanelibrary.mailgun.org';
 		$api = 'https://api.mailgun.net/v2/';
 		$auth = array('user'=>'user', 'pass'=>$this->config->plugin['mailgun-private-key']);
+		print_r($api.$domain.'/'.'lists');
 		print_r($this->curlProxy($api.$domain.'/'.'lists', $params, 'get', $auth));
 
 
