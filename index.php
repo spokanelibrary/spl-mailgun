@@ -181,7 +181,7 @@ class SPL_Mailgun_Newsletter {
 
 		echo '<hr />';
 
-		echo 'You have to check this box to make the magic happen:';
+		echo 'Check this box to make the magic happen:';
 
 		echo '
 		<p>
