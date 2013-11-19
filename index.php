@@ -40,11 +40,11 @@ class SPL_Mailgun_Newsletter {
 
 	function initNewsletter() {
 		$this->registerPostTemplates();
-		//wp_mail( 'sgirard@spokanelibrary.org', 'test', 'message' );
+
 		add_action( 'init', array( $this, 'registerPostType' ) );
 		add_action( 'init', array($this, 'initCmbMetaBoxes'), 9999 );
 
-		add_action( 'save_post', array( $this, 'registerSaveHandler' ) );
+		//add_action( 'save_post', array( $this, 'registerSaveHandler' ) );
 
 		add_filter( 'template_include', array($this, 'registerPostTemplates'));
 		add_filter( 'cmb_meta_boxes', array($this, 'getNewsletterCmbMetaBoxes') );
@@ -52,6 +52,7 @@ class SPL_Mailgun_Newsletter {
 	} // initNewsletter()
 
 	function registerPostTemplates($template) {
+		wp_mail( 'sgirard@spokanelibrary.org', 'test', 'message' );
 		$post_types = array( 'newsletter' );
 		/*
     if ( is_post_type_archive( $post_types ) 
