@@ -330,11 +330,20 @@ class SPL_Mailgun_Newsletter {
 	} // getMailgunAddressValidation()
 
 	function getMailgunMailingLists() {
-		$api = $this->config->custom->mailgun->api;
-		$auth = array('user'=>'api', 'pass'=>$this->config->plugin['mailgun-private-key']);
-		return $this->curlJSON($api.'lists', null, 'get', $auth);
+		$api = $this->getMailgunApi().'lists';
+		$auth = array('user'=>$this->config->custom->mailgun->user
+								, 'pass'=>$this->config->plugin['mailgun-private-key']);
+
+		return $this->curlJSON($api, null, 'get', $auth);
 	} // getMailgunMailingLists()
 
+	function getMailgunApi() {
+		return $this->config->custom->mailgun->api;
+	}
+
+	function getMailgunUser() {
+
+	}
 
 	function curlJSON($url, $params, $method='post', $auth=null) {
 		//return $this->curlProxy($url, $params, $method, $auth);
