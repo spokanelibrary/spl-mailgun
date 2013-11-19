@@ -337,8 +337,8 @@ class SPL_Mailgun_Newsletter {
 									, 'subject'=>$subject
 									, 'text'=>$message
 										);
-		return $api;
-		//return $this->curlJSON($api, $params, 'get', $auth);
+		//return $auth;
+		return $this->curlProxy($api, $params, 'get', $auth);
 	} // sendMailgunMessage()
 	
 
