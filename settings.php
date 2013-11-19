@@ -107,7 +107,7 @@ class SPL_Mailgun_Newsletter_Settings {
 
     add_settings_field(
     	'post-category-filter' 										// id
-    ,	'Post Category Filter (empty for none)' 	// title
+    ,	'Post Category Filter' 	// title
     ,	array( $this, 'getSettingsFieldText' ) 		// callback
     ,	'spl-mailgun-newsletter-settings' 				// page
     ,	'spl-mailgun-newsletter-display'					// section
@@ -119,13 +119,13 @@ class SPL_Mailgun_Newsletter_Settings {
 
     add_settings_field(
       'post-quantity-filter'                    // id
-    , '# of Posts to show (empty for all)'      // title
+    , 'Number of Posts to show'                 // title
     , array( $this, 'getSettingsFieldText' )    // callback
     , 'spl-mailgun-newsletter-settings'         // page
     , 'spl-mailgun-newsletter-display'          // section
     , array('option'=>'spl-mailgun-newsletter'  // callback args
           , 'id'=>'post-quantity-filter'
-          , 'label'=>'Leave empty to show unlimited posts. (not really recommended)'
+          , 'label'=>'Leave empty to show unlimited posts. (Not really recommended.)'
           ) 
     );   
   
