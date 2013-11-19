@@ -69,7 +69,7 @@ class SPL_Mailgun_Newsletter {
 
 	function registerSaveHandler() {
 		$post_types = array( 'newsletter' );
-		if ( is_singular( $post_types ) {
+		if ( is_singular( $post_types ) ) {
 
 			wp_mail( 'sgirard@spokanelibrary.org', 'test', 'message' );
 
