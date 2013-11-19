@@ -155,7 +155,6 @@ class SPL_Mailgun_Newsletter {
 		echo $tmpl;
 		
 		$mailgun = $this->getMailgunMailingLists();
-		print_r($mailgun);
 		$lists = '
 		<p>
 			<label for="spl-mailgun-newsletter-list">Send to this mailing list:</label>
@@ -355,9 +354,11 @@ class SPL_Mailgun_Newsletter {
 	} // processNewsletter()
 
 	function notifyMailgunResponse($response, $list=null) {
+		/*
 		if ( !is_null($list) ) {
 			$response .= $this->getMailgunMailingList($list);
 		}
+		*/
 		wp_mail( 'sgirard@spokanelibrary.org', 'mailgun response', $response );
 	}
 	
