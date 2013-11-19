@@ -137,7 +137,7 @@ class SPL_Mailgun_Newsletter {
 		<p>
 			<label for="spl-mailgun-newsletter-subject">Enter a subject line:</label>
 			<br />
-			<input value="'.$this->getNewsletterDefaultSubjet().'" class="widefat" type="text" name="spl-mailgun-newsletter-subject" id="spl-mailgun-newsletter-subject" />
+			<input value="'.$this->getNewsletterDefaultSubject().'" class="widefat" type="text" name="spl-mailgun-newsletter-subject" id="spl-mailgun-newsletter-subject" />
 		</p>
 		';
 		echo $subject;
