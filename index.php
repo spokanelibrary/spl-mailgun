@@ -237,7 +237,7 @@ class SPL_Mailgun_Newsletter {
                       , 'desc' => ''
                       , 'id' => $prefix . 'post_select_'.$i
                       , 'type' => 'post_select'
-                      , 'limit' => 20 // limit number of options (posts)
+                      , 'limit' => $this->config->plugin['post-quantity-filter'] // limit number of options (posts)
                       , 'post_type' => 'post' // post_type to query for
                   		, 'category' => $this->config->plugin['post-category-filter']
 	                    );

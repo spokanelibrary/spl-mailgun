@@ -24,7 +24,7 @@ class SPL_Mailgun_Newsletter_Settings {
   	$config = new stdClass();
 
   	$headings = array(
-											'spl-mailgun-newsletter-api' => 'Mailgun keys are required.'
+											'spl-mailgun-newsletter-api' => 'Mailgun keys and domain are required.'
 										,	'spl-mailgun-newsletter-display' => 'Enter a Post Category ID (integer) to filter the list of related posts.'	
 								);
   	$config->headings = $headings;
@@ -84,6 +84,7 @@ class SPL_Mailgun_Newsletter_Settings {
     ,	'spl-mailgun-newsletter-api'							// section
     , array('option'=>'spl-mailgun-newsletter'	// callback args
     			,	'id'=>'mailgun-private-key'
+          , 'label_for'=>'My Label'
     			) 
     );   
 
