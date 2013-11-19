@@ -143,8 +143,8 @@ class SPL_Mailgun_Newsletter {
 				<option value="none" selected>None</option>
 		';
 		
-		foreach ($lists as $list) {
-			$tmpl .= '<option value="none" selected>None</option>';
+		foreach ($lists->items as $list) {
+			$tmpl .= '<option value="'.$list->address.'">'.$list->description.'</option>';
 		}
 
 		$tmpl .= '
@@ -152,7 +152,7 @@ class SPL_Mailgun_Newsletter {
 		</p>
 		';
 		
-		$tmpl .= '<pre>'.print_r($this->getMailgunMailingLists()).'</pre>';
+		//$tmpl .= '<pre>'.print_r($this->getMailgunMailingLists()).'</pre>';
 
 		echo $tmpl;
 
