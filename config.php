@@ -14,9 +14,9 @@ class SPL_Mailgun_Newsletter_Config {
 	function getCustomSettings() {
 		$settings = new stdClass();
 
-		// ToDo:
-		// slug?
-
+		// ToDo: slug? ...
+		
+		$settings->post_type = 'newsletter';
 
 		$mailgun = new stdClass();
 		$mailgun->api = 'https://api.mailgun.net/v2/';

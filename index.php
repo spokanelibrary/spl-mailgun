@@ -77,11 +77,13 @@ class SPL_Mailgun_Newsletter {
 
 		}
 		*/
+		if ( is_admin() 
+			&& ( $this->config->custom->post_type == $_POST['post_type']) ) {
 
-		$msg = $id . '<br />' . print_r($_POST, true);
+			$msg = $id . '<br />' . print_r($_POST, true);
 
-		wp_mail( 'sgirard@spokanelibrary.org', 'test', $msg );
-		//echo 'saved a newsletter!';
+			wp_mail( 'sgirard@spokanelibrary.org', 'test', $msg );
+		}
 	} // registerSaveHandler()
 	
 	function registerPostType() {
@@ -158,7 +160,7 @@ class SPL_Mailgun_Newsletter {
 			<label for="spl-mailgun-newsletter-list">Send to this mailing list:</label>
 			<br />
 			<select class="widefat" name="spl-mailgun-newsletter-list" id="spl-mailgun-newsletter-list">
-				<option value="none" selected>None</option>
+				<option value="" selected>None</option>
 		';
 		foreach ($lists->items as $list) {
 			$tmpl .= '<option value="'.$list->address.'">'.$list->description.'</option>';
