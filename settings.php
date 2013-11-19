@@ -116,7 +116,7 @@ class SPL_Mailgun_Newsletter_Settings {
     ,	'spl-mailgun-newsletter-display'					// section
     , array('option'=>'spl-mailgun-newsletter'	// callback args
     			,	'id'=>'post-category-filter'
-          , 'label'=>'Leave empty to show posts from all categories'
+          , 'label'=>'Leave empty to show posts from all categories (ok to do)'
     			) 
     ); 
 
