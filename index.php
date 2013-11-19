@@ -137,7 +137,7 @@ class SPL_Mailgun_Newsletter {
 		
 		$tmpl = '
 		<p>
-			<label for="spl-mailgun-newsletter-list">Choose a mailing list:</label>
+			<label for="spl-mailgun-newsletter-list">Send to this mailing list:</label>
 			<br />
 			<select class="widefat" name="spl-mailgun-newsletter-list" id="spl-mailgun-newsletter-list">
 				<option value="none" selected>None</option>
@@ -158,7 +158,7 @@ class SPL_Mailgun_Newsletter {
 
 		$email = '
 		<p>
-			<label for="spl-mailgun-newsletter-address">CC this address:</label>
+			<label for="spl-mailgun-newsletter-address">Send to this address:</label>
 			<br />
 			<input class="widefat" type="text" name="spl-mailgun-newsletter-address" id="spl-mailgun-newsletter-address" />
 		</p>
