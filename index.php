@@ -134,10 +134,7 @@ class SPL_Mailgun_Newsletter {
 		echo $tmpl;
 		
 		$lists = $this->getMailgunMailingLists();
-		foreach ($lists as $list) {
-
-		}
-
+		
 		$tmpl = '
 		<p>
 			<label for="spl-mailgun-newsletter-list">Choose a mailing list:</label>
@@ -145,13 +142,17 @@ class SPL_Mailgun_Newsletter {
 			<select class="widefat" name="spl-mailgun-newsletter-list" id="spl-mailgun-newsletter-list">
 				<option value="none" selected>None</option>
 		';
+		
+		foreach ($lists as $list) {
+
+		}
 
 		$tmpl .= '
 			</select>
 		</p>
 		';
 		
-		$tmpl .= '<pre>'.print_r($this->getMailgunMailingLists()).'</pre>';
+		//$tmpl .= '<pre>'.print_r($this->getMailgunMailingLists()).'</pre>';
 
 		echo $tmpl;
 
