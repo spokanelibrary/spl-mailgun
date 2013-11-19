@@ -318,11 +318,24 @@ class SPL_Mailgun_Newsletter {
 		//$msg = print_r($msg, true);
 		
 		//$msg = $id.'<br />'.$list.'<br />'.$address.'<br />'.$template;
-		$msg = $this->getMailgunFrom();
-		wp_mail( 'sgirard@spokanelibrary.org', 'test', $msg );
+		$from = $this->getMailgunFrom();
+		$to = 'sgirard@spokanelibrary.org';
+		$subject = 'My Subject';
+		$message = 'My message.';
+
+		$this->sendMailgunMessage($from, $to, $subject, $message);
+
+		//wp_mail( 'sgirard@spokanelibrary.org', 'test', $msg );
 	} // processNewsletter()
 
 	function sendMailgunMessage($from, $to, $subject, $message) {
+		$api = $this->getMailgunApi().$this->getMailgunDomain().'/'.'messages';
+		$auth = $this->getMailgunPrivateAuth();
+		$params = array('from'=>$from
+									, 'to'=>$to
+									, 'subject'=>$subject
+									, 'text'=>$message
+										);
 
 	} // sendMailgunMessage()
 
@@ -341,17 +354,6 @@ class SPL_Mailgun_Newsletter {
 
 		return $this->curlJSON($api, $params, 'get', $auth);
 	} // getMailgunMailingLists()
-
-	function getMailgunFrom() {
-		$from = null;
-		$from .= $this->config->plugin['mailgun-from-name'];
-		$from .= ' ';
-		$from .= '<';
-		$from .= $this->config->plugin['mailgun-from-address'];
-		$from .= '>';
-
-		return $from;
-	}
 
 	function getMailgunApi() {
 		return $this->config->custom->mailgun->api;
@@ -373,6 +375,17 @@ class SPL_Mailgun_Newsletter {
 								, 'pass'=>$this->getMailgunPrivateKey()
 								);
 		return $auth;
+	}
+
+	function getMailgunFrom() {
+		$from = null;
+		$from .= $this->config->plugin['mailgun-from-name'];
+		$from .= ' ';
+		$from .= '<';
+		$from .= $this->config->plugin['mailgun-from-address'];
+		$from .= '>';
+
+		return $from;
 	}
 
 	function getMailgunDomain() {
