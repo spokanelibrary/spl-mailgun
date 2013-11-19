@@ -385,7 +385,7 @@ class SPL_Mailgun_Newsletter {
 	function getMailgunMailingList($address) {
 		$api = $this->getMailgunApi().'lists'.'/'.$address;
 		$auth = $this->getMailgunPrivateAuth();
-		$params = null;
+		$params = array();
 
 		return $this->curlJSON($api, $params, 'get', $auth);
 	} // getMailgunMailingList()
