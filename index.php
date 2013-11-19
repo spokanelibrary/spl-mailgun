@@ -388,12 +388,12 @@ class SPL_Mailgun_Newsletter {
 		$params = null;
 
 		return $this->curlJSON($api, $params, 'get', $auth);
-	} // getMailgunMailingLists()
+	} // getMailgunMailingList()
 
 	function getMailgunMailingLists() {
 		$api = $this->getMailgunApi().'lists';
 		$auth = $this->getMailgunPrivateAuth();
-		$params = null;
+		$params = array();
 
 		return $this->curlJSON($api, $params, 'get', $auth);
 	} // getMailgunMailingLists()
