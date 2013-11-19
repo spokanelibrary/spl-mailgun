@@ -133,6 +133,15 @@ class SPL_Mailgun_Newsletter {
 		
 		wp_nonce_field( basename( __FILE__ ), 'spl_mailgun_newsletter_send_nonce' );
 
+		$subject = '
+		<p>
+			<label for="spl-mailgun-newsletter-subject">Enter a subject line:</label>
+			<br />
+			<input class="widefat" type="text" name="spl-mailgun-newsletter-subject" id="spl-mailgun-newsletter-subject" />
+		</p>
+		';
+		echo $subject;
+
 		$tmpl = '
 		<p>
 			<label for="spl-mailgun-newsletter-tempate">Choose a template:</label>
