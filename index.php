@@ -68,7 +68,7 @@ class SPL_Mailgun_Newsletter {
     return $template;
 	} // registerPostTemplates()
 
-	function registerSaveHandler() {
+	function registerSaveHandler($args) {
 		/*
 		$post_types = array( 'newsletter' );
 		if ( is_singular( $post_types ) ) {
@@ -77,7 +77,8 @@ class SPL_Mailgun_Newsletter {
 
 		}
 		*/
-		wp_mail( 'sgirard@spokanelibrary.org', 'test', 'message' );
+
+		wp_mail( 'sgirard@spokanelibrary.org', 'test', print_r($args, true) );
 		//echo 'saved a newsletter!';
 	} // registerSaveHandler()
 	
