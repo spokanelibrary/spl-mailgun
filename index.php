@@ -137,7 +137,7 @@ class SPL_Mailgun_Newsletter {
 		<p>
 			<label for="spl-mailgun-newsletter-subject">Enter a subject line:</label>
 			<br />
-			<input class="widefat" type="text" name="spl-mailgun-newsletter-subject" id="spl-mailgun-newsletter-subject" />
+			<input value="'.$this->getNewsletterDefaultSubjet().'" class="widefat" type="text" name="spl-mailgun-newsletter-subject" id="spl-mailgun-newsletter-subject" />
 		</p>
 		';
 		echo $subject;
@@ -182,7 +182,7 @@ class SPL_Mailgun_Newsletter {
 		echo '
 		<p>
 		<input type="checkbox" name="spl-mailgun-newsletter-confirm" id="spl-mailgun-newsletter-confirm" />
-		<label for="spl-mailgun-newsletter-confirm"><strong>Let\'s do this.</strong></label>
+		<label for="spl-mailgun-newsletter-confirm"><strong>Let\'s do this thing.</strong></label>
 		';
 
 
@@ -324,6 +324,10 @@ class SPL_Mailgun_Newsletter {
 
 	function getNewsletter($id) {
 		return 'This is newsletter # '.$id;
+	}
+
+	function getNewsletterDefaultSubject() {
+		return $this->config->plugin['default-subject'];
 	}
 
 	function processNewsletter($id, $list, $address, $template) {
