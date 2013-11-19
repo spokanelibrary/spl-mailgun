@@ -60,7 +60,7 @@ class SPL_Mailgun_Newsletter_Settings {
 
     add_settings_section(
     	'spl-mailgun-newsletter-api' 							// id
-    ,	'Mailgun Api' 														// title
+    ,	'Mailgun Api Config' 														// title
     ,	array( $this, 'getSectionHeading' )		 		// callback
     ,	'spl-mailgun-newsletter-settings' 				// page
     );  
