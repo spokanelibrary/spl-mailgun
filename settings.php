@@ -73,6 +73,7 @@ class SPL_Mailgun_Newsletter_Settings {
     ,	'spl-mailgun-newsletter-api' 							// section 
     , array('option'=>'spl-mailgun-newsletter'	// callback args
     			,	'id'=>'mailgun-public-key'
+          , 'class'=>'widefat'
     			)          
     );      
 
@@ -84,6 +85,7 @@ class SPL_Mailgun_Newsletter_Settings {
     ,	'spl-mailgun-newsletter-api'							// section
     , array('option'=>'spl-mailgun-newsletter'	// callback args
     			,	'id'=>'mailgun-private-key'
+          , 'class'=>'widefat'
           ) 
     );   
 
@@ -95,6 +97,7 @@ class SPL_Mailgun_Newsletter_Settings {
     ,	'spl-mailgun-newsletter-api'							// section
     , array('option'=>'spl-mailgun-newsletter'	// callback args
     			,	'id'=>'mailgun-domain'
+          , 'class'=>'widefat'
     			) 
     ); 
 
@@ -138,7 +141,7 @@ class SPL_Mailgun_Newsletter_Settings {
   function getSettingsFieldText($args) {
  		printf(
           '<input type="text" 
-          				class="widefat"
+          				class="'.$args['class'].'"
           				id="'.$args['id'].'" 
           				name="'.$args['option'].'['.$args['id'].']" 
           				value="%s" />
