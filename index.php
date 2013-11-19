@@ -313,15 +313,20 @@ class SPL_Mailgun_Newsletter {
 
 	// MAILGUN INTEGRATION
 
+	function getNewsletter($id) {
+		return 'This is newsletter # '.$id;
+	}
+
 	function processNewsletter($id, $list, $address, $template) {
 		//$msg = $this->getMailgunAddressValidation('sgirard@spokanelibrary.org');
 		//$msg = print_r($msg, true);
-		
 		//$msg = $id.'<br />'.$list.'<br />'.$address.'<br />'.$template;
+		
+
 		$from = $this->getMailgunFrom();
 		$to = 'sgirard@spokanelibrary.org';
 		$subject = 'My Subject';
-		$message = 'My message.';
+		$message = $this->getNewsletter();
 
 		$message = $this->sendMailgunMessage($from, $to, $subject, $message);
 
