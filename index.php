@@ -178,7 +178,7 @@ class SPL_Mailgun_Newsletter {
 		';
 
 		echo '
-		<div class="update">
+		<div class="updated">
 		Remember the milk.
 		</div>
 		';
