@@ -145,31 +145,30 @@ class SPL_Mailgun_Newsletter {
 		';
 		echo $tmpl;
 		
-		$lists = $this->getMailgunMailingLists();
-		$tmpl = '
+		$mailgun = $this->getMailgunMailingLists();
+		$lists = '
 		<p>
 			<label for="spl-mailgun-newsletter-list">Send to this mailing list:</label>
 			<br />
 			<select class="widefat" name="spl-mailgun-newsletter-list" id="spl-mailgun-newsletter-list">
 				<option value="" selected>None</option>
 		';
-		foreach ($lists->items as $list) {
-			$tmpl .= '<option value="'.$list->address.'">'.$list->description.'</option>';
+		foreach ($mailgun->items as $list) {
+			$lists .= '<option value="'.$list->address.'">'.$list->description.'</option>';
 		}
-		$tmpl .= '
+		$lists .= '
 			</select>
 		</p>
 		';
-		echo $tmpl;
+		echo $lists;
 
-		$email = '
+		echo '
 		<p>
 			<label for="spl-mailgun-newsletter-address">Send to this address:</label>
 			<br />
 			<input class="widefat" type="text" name="spl-mailgun-newsletter-address" id="spl-mailgun-newsletter-address" />
 		</p>
 		';
-		echo $email;
 
 		echo '
 		<p>
@@ -177,11 +176,6 @@ class SPL_Mailgun_Newsletter {
 		<label for="spl-mailgun-newsletter-confirm"><strong>Let\'s do this.</strong></label>
 		';
 
-		echo '
-		<div class="updated">
-		Remember the milk.
-		</div>
-		';
 
 		submit_button( __( 'Send Now' )
 										, 'primary large'
