@@ -314,12 +314,19 @@ class SPL_Mailgun_Newsletter {
 	// MAILGUN INTEGRATION
 
 	function processNewsletter($id, $list, $address, $template) {
-
-		$msg = $id.'<br />'.$list.'<br />'.$address.'<br />'.$template.'<br />'.print_r($_POST, true);
+		$msg = $this->getMailgunAddressValidation('sgirard@spokanelibrary.org');
+		$msg = print_r($msg, true);
+		//$msg = $id.'<br />'.$list.'<br />'.$address.'<br />'.$template.'<br />'.print_r($_POST, true);
+		
 		wp_mail( 'sgirard@spokanelibrary.org', 'test', $msg );
 	} // processNewsletter()
 
 	function getMailgunAddressValidation($address) {
+		$api = $this->getMailgunApi().'address/validate';
+		$auth = $this->getMailgunPublicAuth();
+		$params = array('address'=>'sgirard@spokanelibrary.org');
+
+		return $this->curlJSON($api, $params, 'get', $auth);
 		/*
 		$params = array('address'=>'sgirard@spokanelibrary.org');
 		$domain = 'spokanelibrary.mailgun.org';
@@ -332,8 +339,9 @@ class SPL_Mailgun_Newsletter {
 	function getMailgunMailingLists() {
 		$api = $this->getMailgunApi().'lists';
 		$auth = $this->getMailgunPrivateAuth();
+		$params = null;
 
-		return $this->curlJSON($api, null, 'get', $auth);
+		return $this->curlJSON($api, $params, 'get', $auth);
 	} // getMailgunMailingLists()
 
 	function getMailgunApi() {
