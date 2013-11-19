@@ -98,6 +98,7 @@ class SPL_Mailgun_Newsletter_Settings {
     , array('option'=>'spl-mailgun-newsletter'	// callback args
     			,	'id'=>'mailgun-domain'
           , 'class'=>'widefat'
+          , 'label'=>'e.g. example.mailgun.org'
     			) 
     ); 
 
@@ -123,7 +124,7 @@ class SPL_Mailgun_Newsletter_Settings {
     , array('option'=>'spl-mailgun-newsletter'  // callback args
           , 'id'=>'mailgun-from-address'
           , 'class'=>'widefat'
-          , 'label'=>'e.g. me@example.org'
+          , 'label'=>'e.g. me@example.mailgun.org'
           ) 
     ); 
 
