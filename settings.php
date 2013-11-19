@@ -102,18 +102,6 @@ class SPL_Mailgun_Newsletter_Settings {
     ); 
 
     add_settings_field(
-      'mailgun-from-address'                    // id
-    , 'From Address'                            // title
-    , array( $this, 'getSettingsFieldText' )    // callback
-    , 'spl-mailgun-newsletter-settings'         // page
-    , 'spl-mailgun-newsletter-api'              // section
-    , array('option'=>'spl-mailgun-newsletter'  // callback args
-          , 'id'=>'mailgun-from-address'
-          , 'class'=>'widefat'
-          ) 
-    ); 
-
-    add_settings_field(
       'mailgun-from-name'                       // id
     , 'Display Name'                            // title
     , array( $this, 'getSettingsFieldText' )    // callback
@@ -122,8 +110,22 @@ class SPL_Mailgun_Newsletter_Settings {
     , array('option'=>'spl-mailgun-newsletter'  // callback args
           , 'id'=>'mailgun-from-name'
           , 'class'=>'widefat'
+          , 'label'=>'e.g. My Name'
           ) 
     );
+
+    add_settings_field(
+      'mailgun-from-address'                    // id
+    , 'From Address'                            // title
+    , array( $this, 'getSettingsFieldText' )    // callback
+    , 'spl-mailgun-newsletter-settings'         // page
+    , 'spl-mailgun-newsletter-api'              // section
+    , array('option'=>'spl-mailgun-newsletter'  // callback args
+          , 'id'=>'mailgun-from-address'
+          , 'class'=>'widefat'
+          , 'label'=>'e.g. me@example.org'
+          ) 
+    ); 
 
     add_settings_section(
     	'spl-mailgun-newsletter-display' 					// id
