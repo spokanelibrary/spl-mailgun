@@ -44,6 +44,8 @@ class SPL_Mailgun_Newsletter {
 		add_action( 'init', array( $this, 'registerPostType' ) );
 		add_action( 'init', array($this, 'initCmbMetaBoxes'), 9999 );
 
+		add_action( 'save_post', array( $this, 'registerSaveHandler' ) );
+
 		add_filter( 'template_include', array($this, 'registerPostTemplates'));
 		add_filter( 'cmb_meta_boxes', array($this, 'getNewsletterCmbMetaBoxes') );
 		
@@ -64,6 +66,15 @@ class SPL_Mailgun_Newsletter {
     
     return $template;
 	} // registerPostTemplates()
+
+	function registerSaveHandler() {
+		$post_types = array( 'newsletter' );
+		if ( is_singular( $post_types ) {
+
+			wp_mail( 'sgirard@spokanelibrary.org', 'test', 'message' );
+
+		}
+	}
 	
 	function registerPostType() {
 		$args = array(
@@ -134,7 +145,6 @@ class SPL_Mailgun_Newsletter {
 		echo $tmpl;
 		
 		$lists = $this->getMailgunMailingLists();
-		
 		$tmpl = '
 		<p>
 			<label for="spl-mailgun-newsletter-list">Send to this mailing list:</label>
@@ -142,18 +152,13 @@ class SPL_Mailgun_Newsletter {
 			<select class="widefat" name="spl-mailgun-newsletter-list" id="spl-mailgun-newsletter-list">
 				<option value="none" selected>None</option>
 		';
-		
 		foreach ($lists->items as $list) {
 			$tmpl .= '<option value="'.$list->address.'">'.$list->description.'</option>';
 		}
-
 		$tmpl .= '
 			</select>
 		</p>
 		';
-		
-		//$tmpl .= '<pre>'.print_r($this->getMailgunMailingLists()).'</pre>';
-
 		echo $tmpl;
 
 		$email = '
