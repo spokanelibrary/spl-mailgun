@@ -326,7 +326,7 @@ class SPL_Mailgun_Newsletter {
 		$from = $this->getMailgunFrom();
 		$to = 'sgirard@spokanelibrary.org';
 		$subject = 'My Subject';
-		$message = $this->getNewsletter();
+		$message = $this->getNewsletter($id);
 
 		$message = $this->sendMailgunMessage($from, $to, $subject, $message);
 

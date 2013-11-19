@@ -26,6 +26,7 @@ class SPL_Mailgun_Newsletter_Settings {
   	$headings = array(
 											'spl-mailgun-newsletter-api' => 'Dig it: all Mailgun settings are REQUIRED'
 										,	'spl-mailgun-newsletter-display' => 'Filter Posts shown in "Add Posts to Newsletter" menus'	
+                    , 'spl-mailgun-newsletter-defaults' => 'Be sensible.' 
 								);
   	$config->headings = $headings;
 
@@ -158,6 +159,14 @@ class SPL_Mailgun_Newsletter_Settings {
           , 'label'=>'Leave empty to show unlimited posts (not recommended)'
           ) 
     );   
+
+    add_settings_section(
+      'spl-mailgun-newsletter-defaults'         // id
+    , 'Newsletter Defaults'                     // title
+    , array( $this, 'getSectionHeading' )       // callback
+    , 'spl-mailgun-newsletter-settings'         // page
+    );   
+
   
   } // initPluginOptionsPage()
 
