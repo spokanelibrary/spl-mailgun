@@ -330,13 +330,9 @@ class SPL_Mailgun_Newsletter {
 	} // getMailgunAddressValidation()
 
 	function getMailgunMailingLists() {
-		$params = null;
-		$domain = 'spokanelibrary.mailgun.org';
-		$api = 'https://api.mailgun.net/v2/';
+		$api = $this->config->custom->mailgun->api;
 		$auth = array('user'=>'api', 'pass'=>$this->config->plugin['mailgun-private-key']);
-		//print_r($api..'lists');
-		return $this->curlJSON($api.'lists', $params, 'get', $auth);
-
+		return $this->curlJSON($api.'lists', null, 'get', $auth);
 	} // getMailgunMailingLists()
 
 
