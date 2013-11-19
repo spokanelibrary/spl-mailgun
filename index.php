@@ -330,7 +330,7 @@ class SPL_Mailgun_Newsletter {
 
 	function curlJSON($url, $params, $method='post', $auth=null) {
 		//return $this->curlProxy($url, $params, $method, $auth);
-    return json_decode($this->curlProxy($url, $params, $method, $auth), true);
+    return json_decode($this->curlProxy($url, $params, $method, $auth));
   }
 
   function curlProxy($url, $params, $method='post', $auth=null) {
