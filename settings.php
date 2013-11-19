@@ -91,7 +91,7 @@ class SPL_Mailgun_Newsletter_Settings {
 
     add_settings_field(
     	'mailgun-domain' 													// id
-    ,	'Domain' 																	// title
+    ,	'SMTP Domain' 														// title
     ,	array( $this, 'getSettingsFieldText' ) 		// callback
     ,	'spl-mailgun-newsletter-settings' 				// page
     ,	'spl-mailgun-newsletter-api'							// section
@@ -99,6 +99,18 @@ class SPL_Mailgun_Newsletter_Settings {
     			,	'id'=>'mailgun-domain'
           , 'class'=>'widefat'
     			) 
+    ); 
+
+    add_settings_field(
+      'mailgun-address'                         // id
+    , 'From Address'                            // title
+    , array( $this, 'getSettingsFieldText' )    // callback
+    , 'spl-mailgun-newsletter-settings'         // page
+    , 'spl-mailgun-newsletter-api'              // section
+    , array('option'=>'spl-mailgun-newsletter'  // callback args
+          , 'id'=>'mailgun-address'
+          , 'class'=>'widefat'
+          ) 
     ); 
 
     add_settings_section(
