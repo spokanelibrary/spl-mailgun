@@ -323,9 +323,9 @@ class SPL_Mailgun_Newsletter {
 		$subject = 'My Subject';
 		$message = 'My message.';
 
-		$this->sendMailgunMessage($from, $to, $subject, $message);
+		$msg = $this->sendMailgunMessage($from, $to, $subject, $message);
 
-		//wp_mail( 'sgirard@spokanelibrary.org', 'test', $msg );
+		wp_mail( 'sgirard@spokanelibrary.org', 'mailgun response', $msg );
 	} // processNewsletter()
 
 	function sendMailgunMessage($from, $to, $subject, $message) {
@@ -343,7 +343,7 @@ class SPL_Mailgun_Newsletter {
 	function getMailgunAddressValidation($address) {
 		$api = $this->getMailgunApi().'address/validate';
 		$auth = $this->getMailgunPublicAuth();
-		$params = array('address'=>'sgirard@spokanelibrary.org');
+		$params = array('address'=>$address);
 
 		return $this->curlJSON($api, $params, 'get', $auth);
 	} // getMailgunAddressValidation()
