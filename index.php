@@ -155,6 +155,7 @@ class SPL_Mailgun_Newsletter {
 		echo $tmpl;
 		
 		$mailgun = $this->getMailgunMailingLists();
+		print_r($mailgun);
 		$lists = '
 		<p>
 			<label for="spl-mailgun-newsletter-list">Send to this mailing list:</label>
