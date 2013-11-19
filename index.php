@@ -202,7 +202,7 @@ class SPL_Mailgun_Newsletter {
 
 		$note = '
 		<p>
-			Check the box to make some magic happen.
+			Check the box to make the magic happen.
 		</p>
 		';
 		echo $note;
@@ -347,13 +347,16 @@ class SPL_Mailgun_Newsletter {
 
 		if ( !empty($list) ) {
 			$response = $this->sendMailgunMessage($from, $list, $subject, $message);
-			$this->notifyMailgunResponse($response);
+			$this->notifyMailgunResponse($response, $list);
 		}
 		
 		
 	} // processNewsletter()
 
-	function notifyMailgunResponse($response) {
+	function notifyMailgunResponse($response, $list=null) {
+		if ( !is_null($list) ) {
+			$response .= $this->getMailgunMailingList($list);
+		}
 		wp_mail( 'sgirard@spokanelibrary.org', 'mailgun response', $response );
 	}
 	
@@ -377,6 +380,14 @@ class SPL_Mailgun_Newsletter {
 
 		return $this->curlJSON($api, $params, 'get', $auth);
 	} // getMailgunAddressValidation()
+
+	function getMailgunMailingList($address) {
+		$api = $this->getMailgunApi().'lists'.'/'.$address;
+		$auth = $this->getMailgunPrivateAuth();
+		$params = null;
+
+		return $this->curlJSON($api, $params, 'get', $auth);
+	} // getMailgunMailingLists()
 
 	function getMailgunMailingLists() {
 		$api = $this->getMailgunApi().'lists';
