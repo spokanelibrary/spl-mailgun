@@ -24,7 +24,7 @@ class SPL_Mailgun_Newsletter_Settings {
   	$config = new stdClass();
 
   	$headings = array(
-											'spl-mailgun-newsletter-api' => 'All Mailgun are REQUIRED'
+											'spl-mailgun-newsletter-api' => 'All Mailgun settings are REQUIRED'
 										,	'spl-mailgun-newsletter-display' => 'Filter Posts shown in "Add Posts to Newsletter" menus'	
 								);
   	$config->headings = $headings;
