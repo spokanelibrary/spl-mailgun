@@ -331,8 +331,7 @@ class SPL_Mailgun_Newsletter {
 
 	function getMailgunMailingLists() {
 		$api = $this->getMailgunApi().'lists';
-		$auth = array('user'=>$this->config->custom->mailgun->user
-								, 'pass'=>$this->config->plugin['mailgun-private-key']);
+		$auth = $this->getMailgunPrivateAuth();
 
 		return $this->curlJSON($api, null, 'get', $auth);
 	} // getMailgunMailingLists()
@@ -342,7 +341,29 @@ class SPL_Mailgun_Newsletter {
 	}
 
 	function getMailgunUser() {
+		return $this->config->custom->mailgun->user;
+	}
 
+	function getMailgunPublicKey() {
+		return $this->config->plugin['mailgun-public-key'];
+	}
+
+	function getMailgunPublicAuth() {
+		$auth = array('user'=>$this->getMailgunUser()
+								, 'pass'=>getMailgunPublicKey()
+								);
+		return $auth;
+	}
+
+	function getMailgunPrivateAuth() {
+		$auth = array('user'=>$this->getMailgunUser()
+								, 'pass'=>getMailgunPrivateKey()
+								);
+		return $auth;
+	}
+
+	function getMailgunPrivateKey() {
+		return $this->config->plugin['mailgun-private-key'];
 	}
 
 	function curlJSON($url, $params, $method='post', $auth=null) {
