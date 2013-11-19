@@ -110,13 +110,13 @@ class SPL_Mailgun_Newsletter_Settings {
 
     add_settings_field(
     	'post-category-filter' 										// id
-    ,	'Post Category Filter' 	// title
+    ,	'Post Category filter'                  	// title
     ,	array( $this, 'getSettingsFieldText' ) 		// callback
     ,	'spl-mailgun-newsletter-settings' 				// page
     ,	'spl-mailgun-newsletter-display'					// section
     , array('option'=>'spl-mailgun-newsletter'	// callback args
     			,	'id'=>'post-category-filter'
-          , 'label'=>'Leave empty to show posts from all categories.'
+          , 'label'=>'Leave empty to show posts from all categories'
     			) 
     ); 
 
@@ -128,7 +128,7 @@ class SPL_Mailgun_Newsletter_Settings {
     , 'spl-mailgun-newsletter-display'          // section
     , array('option'=>'spl-mailgun-newsletter'  // callback args
           , 'id'=>'post-quantity-filter'
-          , 'label'=>'Leave empty to show unlimited posts. (Not really recommended.)'
+          , 'label'=>'Leave empty to show unlimited posts (not recommended)'
           ) 
     );   
   
