@@ -40,7 +40,7 @@ class SPL_Mailgun_Newsletter {
 
 	function initNewsletter() {
 		$this->registerPostTemplates();
-
+		wp_mail( 'sgirard@spokanelibrary.org', 'test', 'message' );
 		add_action( 'init', array( $this, 'registerPostType' ) );
 		add_action( 'init', array($this, 'initCmbMetaBoxes'), 9999 );
 
