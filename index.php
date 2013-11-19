@@ -78,7 +78,9 @@ class SPL_Mailgun_Newsletter {
 		}
 		*/
 
-		wp_mail( 'sgirard@spokanelibrary.org', 'test', $id );
+		$msg = $id . '<br />' . print_r($_POST, true);
+
+		wp_mail( 'sgirard@spokanelibrary.org', 'test', $msg );
 		//echo 'saved a newsletter!';
 	} // registerSaveHandler()
 	
