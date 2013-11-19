@@ -147,7 +147,7 @@ class SPL_Mailgun_Newsletter {
 			</select>
 		</p>
 		';
-		$list .= $this->getMailgunMailingLists();
+		$list .= '<pre>'.$this->getMailgunMailingLists().'</pre>';
 
 		echo $list;
 
