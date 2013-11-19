@@ -25,7 +25,7 @@ class SPL_Mailgun_Newsletter_Settings {
 
   	$headings = array(
 											'spl-mailgun-newsletter-api' => 'Mailgun keys and domain are required.'
-										,	'spl-mailgun-newsletter-display' => 'Enter a Post Category ID (integer) to filter the list of related posts.'	
+										,	'spl-mailgun-newsletter-display' => ''	
 								);
   	$config->headings = $headings;
 
@@ -84,8 +84,7 @@ class SPL_Mailgun_Newsletter_Settings {
     ,	'spl-mailgun-newsletter-api'							// section
     , array('option'=>'spl-mailgun-newsletter'	// callback args
     			,	'id'=>'mailgun-private-key'
-          , 'label'=>'My Label'
-    			) 
+          ) 
     );   
 
     add_settings_field(
@@ -114,6 +113,7 @@ class SPL_Mailgun_Newsletter_Settings {
     ,	'spl-mailgun-newsletter-display'					// section
     , array('option'=>'spl-mailgun-newsletter'	// callback args
     			,	'id'=>'post-category-filter'
+          , 'label'=>'Leave empty to show posts from all categories.'
     			) 
     ); 
 
@@ -125,6 +125,7 @@ class SPL_Mailgun_Newsletter_Settings {
     , 'spl-mailgun-newsletter-display'          // section
     , array('option'=>'spl-mailgun-newsletter'  // callback args
           , 'id'=>'post-quantity-filter'
+          , 'label'=>'Leave empty to show unlimited posts. (not really recommended)'
           ) 
     );   
   
