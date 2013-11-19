@@ -317,8 +317,8 @@ class SPL_Mailgun_Newsletter {
 		//$msg = $this->getMailgunAddressValidation('sgirard@spokanelibrary.org');
 		//$msg = print_r($msg, true);
 		
-		$msg = $id.'<br />'.$list.'<br />'.$address.'<br />'.$template;
-		
+		//$msg = $id.'<br />'.$list.'<br />'.$address.'<br />'.$template;
+		$msg = $this->getMailgunFrom();
 		wp_mail( 'sgirard@spokanelibrary.org', 'test', $msg );
 	} // processNewsletter()
 
@@ -341,6 +341,14 @@ class SPL_Mailgun_Newsletter {
 
 		return $this->curlJSON($api, $params, 'get', $auth);
 	} // getMailgunMailingLists()
+
+	function getMailgunFrom() {
+		$from = $this->config->plugin['mailgun-from-name'];
+		$from .= ' ';
+		$from .= '<';
+		$from .= $this->config->plugin['mailgun-from-address'];
+		$from .= '>';
+	}
 
 	function getMailgunApi() {
 		return $this->config->custom->mailgun->api;
