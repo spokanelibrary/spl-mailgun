@@ -14,7 +14,9 @@ class SPL_Mailgun_Newsletter_Config {
 	function getCustomSettings() {
 		$settings = new stdClass();
 
-		$settings->category = 5; // post category to show in list (empty for all)
+		// ToDo:
+		// slug?
+
 
 		$mailgun = new stdClass();
 		$mailgun->api = 'https://api.mailgun.net/v2/';

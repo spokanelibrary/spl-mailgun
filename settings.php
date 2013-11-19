@@ -18,7 +18,7 @@ class SPL_Mailgun_Newsletter_Settings {
     ,	'spl-mailgun-newsletter-settings' 				// menu slug
     ,	array( $this, 'getPluginOptionsPage' ) 		// callback
 	  );
-  }
+  } // addPluginOptionsPage()
 
   function setPluginOptionsConfig() {
   	$config = new stdClass();
@@ -30,7 +30,7 @@ class SPL_Mailgun_Newsletter_Settings {
   	$config->headings = $headings;
 
   	$this->config = $config;
-  }
+  } // setPluginOptionsConfig()
 
   function getPluginOptionsPage() {
   	$this->setPluginOptionsConfig();
@@ -49,7 +49,7 @@ class SPL_Mailgun_Newsletter_Settings {
     submit_button();         
     echo '</form>';
     echo '</div>';    
-  }
+  } // getPluginOptionsPage()
   
   function initPluginOptionsPage() {        
     register_setting(
@@ -114,12 +114,24 @@ class SPL_Mailgun_Newsletter_Settings {
     , array('option'=>'spl-mailgun-newsletter'	// callback args
     			,	'id'=>'post-category-filter'
     			) 
+    ); 
+
+    add_settings_field(
+      'post-quantity-filter'                    // id
+    , '# of Posts to show (empty for all)'      // title
+    , array( $this, 'getSettingsFieldText' )    // callback
+    , 'spl-mailgun-newsletter-settings'         // page
+    , 'spl-mailgun-newsletter-display'          // section
+    , array('option'=>'spl-mailgun-newsletter'  // callback args
+          , 'id'=>'post-quantity-filter'
+          ) 
     );   
-  }
+  
+  } // initPluginOptionsPage()
 
   function getSectionHeading($section) {
     print $this->config->headings[$section['id']];
-  }
+  } // getSectionHeading()
 
   function getSettingsFieldText($args) {
  		printf(
@@ -130,7 +142,7 @@ class SPL_Mailgun_Newsletter_Settings {
           				value="%s" />'
         ,	isset( $this->options[$args['id']] ) ? esc_attr( $this->options[$args['id']]) : ''
     );
-  }
+  } // getSettingsFieldText()
 
   function sanitizeSettingsField( $input ) {
     if ( is_array($input) ) {
@@ -142,7 +154,7 @@ class SPL_Mailgun_Newsletter_Settings {
     } else {
     	return $input;
     }
-  }
+  } // sanitizeSettingsField()
 
 } // SPL_Mailgun_Newsletter_Settings
 
