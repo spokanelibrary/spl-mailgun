@@ -100,7 +100,7 @@ class SPL_Mailgun_Newsletter_Settings {
 
     add_settings_section(
     	'spl-mailgun-newsletter-display' 					// id
-    ,	'Post Display Options' 										// title
+    ,	'Post Display' 										        // title
     ,	array( $this, 'getSectionHeading' )		 		// callback
     ,	'spl-mailgun-newsletter-settings' 				// page
     );   
