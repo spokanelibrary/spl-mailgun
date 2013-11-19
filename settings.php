@@ -84,7 +84,7 @@ class SPL_Mailgun_Newsletter_Settings {
     ,	'spl-mailgun-newsletter-api'							// section
     , array('option'=>'spl-mailgun-newsletter'	// callback args
     			,	'id'=>'mailgun-private-key'
-          , 'label_for'=>'My Label'
+          , 'label'=>'My Label'
     			) 
     );   
 
@@ -140,7 +140,8 @@ class SPL_Mailgun_Newsletter_Settings {
           				class="widefat"
           				id="'.$args['id'].'" 
           				name="'.$args['option'].'['.$args['id'].']" 
-          				value="%s" />'
+          				value="%s" />
+          <label>'.$args['label'].'</label>'
         ,	isset( $this->options[$args['id']] ) ? esc_attr( $this->options[$args['id']]) : ''
     );
   } // getSettingsFieldText()
