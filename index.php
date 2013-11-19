@@ -342,12 +342,20 @@ class SPL_Mailgun_Newsletter {
 
 		if ( !empty($address) ) {
 			$response = $this->sendMailgunMessage($from, $address, $subject, $message);
-			wp_mail( 'sgirard@spokanelibrary.org', 'mailgun response', $response );
+			$this->notifyMailgunResponse($response);
+		}
+
+		if ( !empty($list) ) {
+			$response = $this->sendMailgunMessage($from, $list, $subject, $message);
+			$this->notifyMailgunResponse($response);
 		}
 		
 		
 	} // processNewsletter()
 
+	function notifyMailgunResponse($response) {
+		wp_mail( 'sgirard@spokanelibrary.org', 'mailgun response', $response );
+	}
 	
 	function sendMailgunMessage($from, $to, $subject, $message) {
 		$api = $this->getMailgunApi().$this->getMailgunDomain().'/'.'messages';
