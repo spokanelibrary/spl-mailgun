@@ -132,8 +132,13 @@ class SPL_Mailgun_Newsletter {
 		</p>
 		';
 		echo $tmpl;
+		
+		$lists = $this->getMailgunMailingLists();
+		foreach ($lists as $list) {
 
-		$list = '
+		}
+
+		$tmpl = '
 		<p>
 			<label for="spl-mailgun-newsletter-list">Choose a mailing list:</label>
 			<br />
@@ -141,14 +146,14 @@ class SPL_Mailgun_Newsletter {
 				<option value="none" selected>None</option>
 		';
 
-		$list .= '
+		$tmpl .= '
 			</select>
 		</p>
 		';
 		
-		$list .= '<pre>'.$this->getMailgunMailingLists().'</pre>';
+		$tmpl .= '<pre>'.print_r($this->getMailgunMailingLists()).'</pre>';
 
-		echo $list;
+		echo $tmpl;
 
 		$email = '
 		<p>
@@ -320,7 +325,7 @@ class SPL_Mailgun_Newsletter {
 		$api = 'https://api.mailgun.net/v2/';
 		$auth = array('user'=>'api', 'pass'=>$this->config->plugin['mailgun-private-key']);
 		//print_r($api..'lists');
-		return print_r($this->curlJSON($api.'lists', $params, 'get', $auth), true);
+		return $this->curlJSON($api.'lists', $params, 'get', $auth);
 
 	}
 
