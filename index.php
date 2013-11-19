@@ -181,8 +181,6 @@ class SPL_Mailgun_Newsletter {
 
 		echo '<hr />';
 
-		echo 'Check this box to make the magic happen:';
-
 		echo '
 		<p>
 		<input type="checkbox" name="spl-mailgun-newsletter-confirm" id="spl-mailgun-newsletter-confirm" />
@@ -204,11 +202,10 @@ class SPL_Mailgun_Newsletter {
 
 		$note = '
 		<p>
-			<strong>Reminder:</strong>
-			Save newsletter <em>before</em> sending!
+			Check the box to make magic happen.
 		</p>
 		';
-		//echo $note;
+		echo $note;
 
 	} // getPublishConrols()
 
