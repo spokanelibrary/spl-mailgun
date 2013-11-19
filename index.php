@@ -365,7 +365,7 @@ class SPL_Mailgun_Newsletter {
 	}
 
 	function getMailgunDomain() {
-		return $this->config->plugin['mailgun-domain']
+		return $this->config->plugin['mailgun-domain'];
 	}
 
 	function getMailgunPublicKey() {
