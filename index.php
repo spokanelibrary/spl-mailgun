@@ -344,22 +344,22 @@ class SPL_Mailgun_Newsletter {
 		return $this->config->custom->mailgun->user;
 	}
 
-	function getMailgunPublicKey() {
-		return $this->config->plugin['mailgun-public-key'];
-	}
-
 	function getMailgunPublicAuth() {
 		$auth = array('user'=>$this->getMailgunUser()
-								, 'pass'=>getMailgunPublicKey()
+								, 'pass'=>$this->getMailgunPublicKey()
 								);
 		return $auth;
 	}
 
 	function getMailgunPrivateAuth() {
 		$auth = array('user'=>$this->getMailgunUser()
-								, 'pass'=>getMailgunPrivateKey()
+								, 'pass'=>$this->getMailgunPrivateKey()
 								);
 		return $auth;
+	}
+
+	function getMailgunPublicKey() {
+		return $this->config->plugin['mailgun-public-key'];
 	}
 
 	function getMailgunPrivateKey() {
