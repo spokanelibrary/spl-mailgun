@@ -343,11 +343,14 @@ class SPL_Mailgun_Newsletter {
 	} // getMailgunMailingLists()
 
 	function getMailgunFrom() {
-		$from = $this->config->plugin['mailgun-from-name'];
+		$from = null;
+		$from .= $this->config->plugin['mailgun-from-name'];
 		$from .= ' ';
 		$from .= '<';
 		$from .= $this->config->plugin['mailgun-from-address'];
 		$from .= '>';
+
+		return $from;
 	}
 
 	function getMailgunApi() {
