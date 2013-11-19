@@ -139,14 +139,13 @@ class SPL_Mailgun_Newsletter {
 			<br />
 			<select class="widefat" name="spl-mailgun-newsletter-list" id="spl-mailgun-newsletter-list">
 				<option value="none" selected>None</option>
-				<option value="eva">Just Eva!</option>
-				<option value="dev">Dev (sg)</option>
-				<option value="test">Test Group</option>
-				<option value="all">All Subscribers</option>
-				<option value="todo">ToDo: Get these from mailgun</option>
+		';
+
+		$list .= '
 			</select>
 		</p>
 		';
+		
 		$list .= '<pre>'.$this->getMailgunMailingLists().'</pre>';
 
 		echo $list;
