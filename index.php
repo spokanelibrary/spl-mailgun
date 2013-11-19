@@ -73,7 +73,7 @@ class SPL_Mailgun_Newsletter {
 			&& ( $this->config->custom->post_type == $_POST['post_type'])
 			&& !empty($_POST['spl-mailgun-newsletter-confirm']) ) {
 
-			$this->processNewsletter($id, $_POST['spl-mailgun-newsletter-list'], $_POST['spl-mailgun-newsletter-address'], $_POST['spl-mailgun-newsletter-template']);
+			$this->processNewsletter($id, $_POST['spl-mailgun-newsletter-subject'], $_POST['spl-mailgun-newsletter-list'], $_POST['spl-mailgun-newsletter-address'], $_POST['spl-mailgun-newsletter-template']);
 		}
 	} // registerSaveHandler()
 
@@ -330,7 +330,7 @@ class SPL_Mailgun_Newsletter {
 		return $this->config->plugin['default-subject'];
 	}
 
-	function processNewsletter($id, $list, $address, $template) {
+	function processNewsletter($id, $subject, $list, $address, $template) {
 		//$msg = $this->getMailgunAddressValidation('sgirard@spokanelibrary.org');
 		//$msg = print_r($msg, true);
 		//$msg = $id.'<br />'.$list.'<br />'.$address.'<br />'.$template;
@@ -338,7 +338,6 @@ class SPL_Mailgun_Newsletter {
 
 		$from = $this->getMailgunFrom();
 		$to = 'sgirard@spokanelibrary.org';
-		$subject = 'My Subject';
 		$message = $this->getNewsletter($id);
 
 		$message = $this->sendMailgunMessage($from, $to, $subject, $message);
