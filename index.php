@@ -179,10 +179,14 @@ class SPL_Mailgun_Newsletter {
 		</p>
 		';
 
+		echo '<hr />';
+
+		echo 'You have to check this box to make the magic happen:';
+
 		echo '
 		<p>
 		<input type="checkbox" name="spl-mailgun-newsletter-confirm" id="spl-mailgun-newsletter-confirm" />
-		<label for="spl-mailgun-newsletter-confirm"><strong>Let\'s do this thing.</strong></label>
+		<label for="spl-mailgun-newsletter-confirm"><strong>Let\'s do this thing!</strong></label>
 		';
 
 
