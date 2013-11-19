@@ -336,7 +336,8 @@ class SPL_Mailgun_Newsletter {
 									, 'subject'=>$subject
 									, 'text'=>$message
 										);
-
+		
+		return $this->curlJSON($api, $params, 'get', $auth);
 	} // sendMailgunMessage()
 
 	function getMailgunAddressValidation($address) {
