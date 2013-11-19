@@ -100,7 +100,7 @@ class SPL_Mailgun_Newsletter_Settings {
           , 'class'=>'widefat'
     			) 
     ); 
-
+    /*
     add_settings_field(
       'mailgun-address'                         // id
     , 'From Address'                            // title
@@ -112,6 +112,7 @@ class SPL_Mailgun_Newsletter_Settings {
           , 'class'=>'widefat'
           ) 
     ); 
+    */
 
     add_settings_section(
     	'spl-mailgun-newsletter-display' 					// id
