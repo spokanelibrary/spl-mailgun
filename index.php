@@ -69,27 +69,14 @@ class SPL_Mailgun_Newsletter {
 	} // registerPostTemplates()
 
 	function registerSaveHandler($id) {
-		/*
-		$post_types = array( 'newsletter' );
-		if ( is_singular( $post_types ) ) {
-			echo 'test';
-			//wp_mail( 'sgirard@spokanelibrary.org', 'test', 'message' );
-
-		}
-		*/
 		if ( is_admin() 
 			&& ( $this->config->custom->post_type == $_POST['post_type'])
 			&& !empty($_POST['spl-mailgun-newsletter-confirm']) ) {
 
-			$this->sendNewsletter($id);
+			$this->processNewsletter($id, $_POST['spl-mailgun-newsletter-list'], $_POST['spl-mailgun-newsletter-address'], $_POST['spl-mailgun-newsletter-template']);
 		}
 	} // registerSaveHandler()
 
-	function sendNewsletter($id) {
-		$msg = $id . '<br />' . print_r($_POST, true);
-		wp_mail( 'sgirard@spokanelibrary.org', 'test', $msg );
-	}
-	
 	function registerPostType() {
 		$args = array(
 			'labels'        => $this->getPostTypeLabels()
@@ -326,12 +313,13 @@ class SPL_Mailgun_Newsletter {
 
 	// MAILGUN INTEGRATION
 
+	function processNewsletter($id, $list, $address, $template) {
+
+		$msg = $id.'<br />'.$list.'<br />'.$address.'<br />'.$template.'<br />'.print_r($_POST, true);
+		wp_mail( 'sgirard@spokanelibrary.org', 'test', $msg );
+	} // processNewsletter()
+
 	function getMailgunAddressValidation($address) {
-
-
-	}
-
-	function getMailgunMailingLists() {
 		/*
 		$params = array('address'=>'sgirard@spokanelibrary.org');
 		$domain = 'spokanelibrary.mailgun.org';
@@ -339,7 +327,9 @@ class SPL_Mailgun_Newsletter {
 		$auth = array('user'=>'api', 'pass'=>$this->config->plugin['mailgun-public-key']);
 		print_r($this->jsonCurl($api.'address/validate', $params, 'get', $auth));
 		*/
-		//$params = array('address'=>'sgirard@spokanelibrary.org');
+	} // getMailgunAddressValidation()
+
+	function getMailgunMailingLists() {
 		$params = null;
 		$domain = 'spokanelibrary.mailgun.org';
 		$api = 'https://api.mailgun.net/v2/';
@@ -347,9 +337,7 @@ class SPL_Mailgun_Newsletter {
 		//print_r($api..'lists');
 		return $this->curlJSON($api.'lists', $params, 'get', $auth);
 
-	}
-
-
+	} // getMailgunMailingLists()
 
 
 	function curlJSON($url, $params, $method='post', $auth=null) {
