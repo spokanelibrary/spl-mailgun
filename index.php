@@ -323,9 +323,9 @@ class SPL_Mailgun_Newsletter {
 		$subject = 'My Subject';
 		$message = 'My message.';
 
-		$msg = $this->sendMailgunMessage($from, $to, $subject, $message);
+		//$msg = $this->sendMailgunMessage($from, $to, $subject, $message);
 
-		wp_mail( 'sgirard@spokanelibrary.org', 'mailgun response', $msg );
+		wp_mail( 'sgirard@spokanelibrary.org', 'mailgun response', $message );
 	} // processNewsletter()
 
 	function sendMailgunMessage($from, $to, $subject, $message) {
