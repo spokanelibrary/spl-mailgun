@@ -177,6 +177,12 @@ class SPL_Mailgun_Newsletter {
 		<label for="spl-mailgun-newsletter-confirm"><strong>Let\'s do this.</strong></label>
 		';
 
+		echo '
+		<div class="update">
+		Remember the milk.
+		</div>
+		';
+
 		submit_button( __( 'Send Now' )
 										, 'primary large'
 										, 'spl_mailgun_newsletter_send'
