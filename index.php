@@ -202,7 +202,7 @@ class SPL_Mailgun_Newsletter {
 
 		$note = '
 		<p>
-			Check the box to make magic happen.
+			Check the box to make some magic happen.
 		</p>
 		';
 		echo $note;
@@ -338,12 +338,14 @@ class SPL_Mailgun_Newsletter {
 		
 
 		$from = $this->getMailgunFrom();
-		$to = 'sgirard@spokanelibrary.org';
 		$message = $this->getNewsletter($id);
 
-		$message = $this->sendMailgunMessage($from, $to, $subject, $message);
-
-		wp_mail( 'sgirard@spokanelibrary.org', 'mailgun response', $message );
+		if ( !empty($address) ) {
+			$response = $this->sendMailgunMessage($from, $address, $subject, $message);
+			wp_mail( 'sgirard@spokanelibrary.org', 'mailgun response', $response );
+		}
+		
+		
 	} // processNewsletter()
 
 	
