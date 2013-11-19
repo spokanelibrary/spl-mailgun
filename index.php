@@ -318,7 +318,7 @@ class SPL_Mailgun_Newsletter {
 		//$msg = print_r($msg, true);
 		
 		//$msg = $id.'<br />'.$list.'<br />'.$address.'<br />'.$template;
-		//$from = $this->getMailgunFrom();
+		$from = $this->getMailgunFrom();
 		$to = 'sgirard@spokanelibrary.org';
 		$subject = 'My Subject';
 		$message = 'My message.';
