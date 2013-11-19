@@ -167,6 +167,18 @@ class SPL_Mailgun_Newsletter_Settings {
     , 'spl-mailgun-newsletter-settings'         // page
     );   
 
+    add_settings_field(
+      'default-subject'                         // id
+    , 'Default Subject Line'                    // title
+    , array( $this, 'getSettingsFieldText' )    // callback
+    , 'spl-mailgun-newsletter-settings'         // page
+    , 'spl-mailgun-newsletter-defaults'         // section
+    , array('option'=>'spl-mailgun-newsletter'  // callback args
+          , 'id'=>'default-subject'
+          , 'class'=>'widefat'
+          ) 
+    );
+
   
   } // initPluginOptionsPage()
 
