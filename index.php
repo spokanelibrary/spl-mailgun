@@ -318,7 +318,7 @@ class SPL_Mailgun_Newsletter {
 		//$msg = print_r($msg, true);
 		
 		//$msg = $id.'<br />'.$list.'<br />'.$address.'<br />'.$template;
-		$from = $this->getMailgunFrom();
+		//$from = $this->getMailgunFrom();
 		$to = 'sgirard@spokanelibrary.org';
 		$subject = 'My Subject';
 		$message = 'My message.';
@@ -328,7 +328,7 @@ class SPL_Mailgun_Newsletter {
 		wp_mail( 'sgirard@spokanelibrary.org', 'mailgun response', $message );
 	} // processNewsletter()
 
-	/*
+	
 	function sendMailgunMessage($from, $to, $subject, $message) {
 		$api = $this->getMailgunApi().$this->getMailgunDomain().'/'.'messages';
 		$auth = $this->getMailgunPrivateAuth();
@@ -337,10 +337,10 @@ class SPL_Mailgun_Newsletter {
 									, 'subject'=>$subject
 									, 'text'=>$message
 										);
-		
-		return $this->curlJSON($api, $params, 'get', $auth);
+		return 'params';
+		//return $this->curlJSON($api, $params, 'get', $auth);
 	} // sendMailgunMessage()
-	*/
+	
 
 	function getMailgunAddressValidation($address) {
 		$api = $this->getMailgunApi().'address/validate';
