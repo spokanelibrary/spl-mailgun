@@ -24,8 +24,8 @@ class SPL_Mailgun_Newsletter_Settings {
   	$config = new stdClass();
 
   	$headings = array(
-											'spl-mailgun-newsletter-api' => 'Mailgun keys and domain are required.'
-										,	'spl-mailgun-newsletter-display' => ''	
+											'spl-mailgun-newsletter-api' => 'Mailgun keys and domain are *required*'
+										,	'spl-mailgun-newsletter-display' => 'Filter Posts shown in "Add Posts to Newsletter"'	
 								);
   	$config->headings = $headings;
 
