@@ -328,6 +328,7 @@ class SPL_Mailgun_Newsletter {
 		wp_mail( 'sgirard@spokanelibrary.org', 'mailgun response', $message );
 	} // processNewsletter()
 
+	/*
 	function sendMailgunMessage($from, $to, $subject, $message) {
 		$api = $this->getMailgunApi().$this->getMailgunDomain().'/'.'messages';
 		$auth = $this->getMailgunPrivateAuth();
@@ -339,6 +340,7 @@ class SPL_Mailgun_Newsletter {
 		
 		return $this->curlJSON($api, $params, 'get', $auth);
 	} // sendMailgunMessage()
+	*/
 
 	function getMailgunAddressValidation($address) {
 		$api = $this->getMailgunApi().'address/validate';
