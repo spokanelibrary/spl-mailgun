@@ -357,8 +357,8 @@ class SPL_Mailgun_Newsletter {
 	function notifyMailgunResponse($response, $list=null) {
 		
 		if ( !is_null($list) ) {
-			$response .= $list;
-			//$response .= $this->getMailgunMailingList($list);
+			//$response .= $list;
+			$response .= $this->getMailgunMailingList($list);
 		}
 		
 		wp_mail( 'sgirard@spokanelibrary.org', 'mailgun response', $response );
@@ -390,7 +390,7 @@ class SPL_Mailgun_Newsletter {
 		$auth = $this->getMailgunPrivateAuth();
 		$params = array();
 
-		return $this->curlJSON($api, $params, 'get', $auth);
+		return $this->curlProxy($api, $params, 'get', $auth);
 	} // getMailgunMailingList()
 
 	function getMailgunMailingLists() {
