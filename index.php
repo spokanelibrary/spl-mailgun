@@ -338,9 +338,9 @@ class SPL_Mailgun_Newsletter {
 	// MAILGUN INTEGRATION
 
 	function getNewsletterHTML($id, $template) {
-		$newsletter = get_post($id);
+		//$newsletter = get_post($id);
 
-		$myvar = $newsletter['post_title'];
+		//$myvar = $newsletter['post_title'];
 
 		//return print_r($_POST, true);
 		$template = plugin_dir_path(__FILE__).'emails/'.$template;
