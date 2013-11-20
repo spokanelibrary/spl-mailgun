@@ -355,11 +355,12 @@ class SPL_Mailgun_Newsletter {
 	} // processNewsletter()
 
 	function notifyMailgunResponse($response, $list=null) {
-		/*
+		
 		if ( !is_null($list) ) {
-			$response .= $this->getMailgunMailingList($list);
+			$response .= $list;
+			//$response .= $this->getMailgunMailingList($list);
 		}
-		*/
+		
 		wp_mail( 'sgirard@spokanelibrary.org', 'mailgun response', $response );
 	}
 	
