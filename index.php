@@ -338,6 +338,9 @@ class SPL_Mailgun_Newsletter {
 	// MAILGUN INTEGRATION
 
 	function getNewsletterHTML($id, $template) {
+		remove_filter( 'the_content','bootstrap_responsive_images',10 );
+		remove_filter( 'post_thumbnail_html', 'bootstrap_responsive_images', 10 );
+
 		$news = get_post($id);
 
 		$title = $news->post_title;
