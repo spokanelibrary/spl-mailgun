@@ -53,8 +53,8 @@ img {
   display: block;
 }
 
-img.alignright { float: right; margin-left: 10px; }
-img.alignleft { float: left; padding-right: 10px; }
+.alignright { float: right; margin-left: 10px; }
+.alignleft { float: left; margin-right: 10px; }
 
 center {
   width: 100%;
