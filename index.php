@@ -341,7 +341,11 @@ class SPL_Mailgun_Newsletter {
 		//return print_r($_POST, true);
 		$template = plugin_dir_path(__FILE__).'emails/'.$template;
 		if ( file_exists($template) ) {
-			$template = file_get_contents($template);
+			//$template = file_get_contents($template);
+			ob_start();
+			include($template);
+			$template = ob_get_contents();
+			ob_end_clean ();
 		}
 		return $template;
 		//return 'This is newsletter # '.$id;
