@@ -143,22 +143,23 @@ class SPL_Mailgun_Newsletter {
 		echo $subject;
 
 		$templates = scandir(plugin_dir_path(__FILE__).'emails');
-		if ( is_array($templates) ) {
-			foreach( $templates as $template ) {
-				if ( !is_dir($template) ) {
-					print_r($template);
-				}
-			}
-		}
-		print_r($templates);
-
 		$tmpl = '
 		<p>
 			<label for="spl-mailgun-newsletter-tempate">Choose a template:</label>
 			<br />
 			<select class="widefat" name="spl-mailgun-newsletter-template" id="spl-mailgun-newsletter-template">
-				<option value="none" selected>Default</option>
-				<option value="todo">ToDo: Get these from directory scan</option>
+			';
+
+		if ( is_array($templates) ) {
+			foreach( $templates as $template ) {
+				if ( !is_dir($template) ) {
+					echo '<option value"'.$template.'">'.$template.'</option>';
+				}
+			}
+		}
+		//print_r($templates);
+
+		$tmpl .= '
 			</select>
 		</p>
 		';
