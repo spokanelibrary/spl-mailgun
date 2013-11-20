@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width"/>
-	<style>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width"/>
+  <style>
 /**********************************************
 * Ink v1.0.3 - Copyright 2013 ZURB Inc        *
 **********************************************/
@@ -297,8 +297,9 @@ img.center {
 
 /* Typography */
 
-body, table.body, h1, h2, h3, h4, h5, h6, p { 
+body, h1, h2, h3, h4, h5, h6, p { 
   color: #222222;
+  display: block; 
   font-family: "Helvetica", "Arial", sans-serif; 
   font-weight: normal; 
   padding:0; 
@@ -317,7 +318,7 @@ h3 {font-size: 32px;}
 h4 {font-size: 28px;}
 h5 {font-size: 24px;}
 h6 {font-size: 20px;}
-body, table.body, p {font-size: 14px;line-height:19px;}
+body, p {font-size: 14px;line-height:19px;}
 
 p { 
   padding-bottom: 10px;
@@ -749,7 +750,7 @@ body.outlook p {
 
   </style>
   <style>
-		
+    
     table.facebook td {
       background: #3b5998;
       border-color: #2d4473;
@@ -828,12 +829,17 @@ body.outlook p {
       }
     }
 
-	</style>
+
+  .alignright { float: right; margin-left: 10px; }
+  .alignleft { float: left; margin-right: 10px; }
+  .wp-caption {  }
+  .wp-caption-text { clear: both; font-style: italic; }
+  </style>
 </head>
 <body>
-	<table class="body">
-		<tr>
-			<td class="center" align="center" valign="top">
+  <table class="body">
+    <tr>
+      <td class="center" align="center" valign="top">
         <center>
          
           <table class="row header">
@@ -877,9 +883,8 @@ body.outlook p {
                       <table class="twelve columns">
                         <tr>
                           <td>
-                            <h1>Hi, Susan Calvin</h1>
-                						<p class="lead">Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae.</p>
-                						<p>Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae. consequat vel lacus. Sed iaculis pulvinar ligula, ornare fringilla ante viverra et. In hac habitasse platea dictumst. Donec vel orci mi, eu congue justo. Integer eget odio est, eget malesuada lorem. Aenean sed tellus dui, vitae viverra risus. Nullam massa sapien, pulvinar eleifend fringilla id, convallis eget nisi. Mauris a sagittis dui. Pellentesque non lacinia mi. Fusce sit amet libero sit amet erat venenatis sollicitudin vitae vel eros. Cras nunc sapien, interdum sit amet porttitor ut, congue quis urna.</p>
+                            <h1><?php echo $title; ?></h1>
+                            <?php echo $content; ?>
                           </td>
                           <td class="expander"></td>
                         </tr>
@@ -993,8 +998,8 @@ body.outlook p {
           </table> 
 
         </center>
-			</td>
-		</tr>
-	</table>
+      </td>
+    </tr>
+  </table>
 </body>
 </html>

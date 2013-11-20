@@ -901,7 +901,9 @@ body.outlook p {
                       <table class="twelve columns">
                         <tr>
                           <td class="panel">
-                            <p>Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae. <a href="#">Click it! »</a></p>
+                            <p>
+                              <?php echo $trace; ?> 
+                              <a href="#">Click it! »</a></p>
                           </td>
                           <td class="expander"></td>
                         </tr>

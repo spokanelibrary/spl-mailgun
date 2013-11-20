@@ -341,12 +341,14 @@ class SPL_Mailgun_Newsletter {
 		remove_filter( 'the_content','bootstrap_responsive_images',10 );
 		remove_filter( 'post_thumbnail_html', 'bootstrap_responsive_images', 10 );
 
-		$news = get_post($id);
+		$post = get_post($id);
 
-		$title = $news->post_title;
+		$title = $post->post_title;
 		$content = str_replace(array('<figure','</figure>','<figcaption','</figcaption>')
 													,array('<div', '</div>', '<div', '</div>')
-													,apply_filters('the_content', $news->post_content));
+													,apply_filters('the_content', $post->post_content));
+
+		$trace = print_r($post, true);
 
 		//$myvar = $newsletter['post_title'];
 
