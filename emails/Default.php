@@ -1,209 +1,1001 @@
- 
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-   "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-        <meta name="viewport" content="width=device-width;initial-scale=1.0; user-scalable=1;" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Progressive Disclosure sample template</title>
-<style>
-body, p {
-  font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust:none;
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width"/>
+  <style>
+/**********************************************
+* Ink v1.0.3 - Copyright 2013 ZURB Inc        *
+**********************************************/
+
+/* Client-specific Styles & Reset */
+
+#outlook a { 
+  padding:0; 
+} 
+
+body{ 
+  width:100% !important; 
+  -webkit-text-size-adjust:100%; 
+  -ms-text-size-adjust:100%; 
+  margin:0; 
+  padding:0;
 }
-a:hover {
-  text-decoration: underline !important;
+
+.ExternalClass { 
+  width:100%;
+} 
+
+.ExternalClass, 
+.ExternalClass p, 
+.ExternalClass span, 
+.ExternalClass font, 
+.ExternalClass td, 
+.ExternalClass div { 
+  line-height: 100%; 
+} 
+
+#backgroundTable { 
+  margin:0; 
+  padding:0; 
+  width:100% !important; 
+  line-height: 100% !important; 
 }
-td.contentblock h4 {
-  color:#444444 !important;
-  font-size:16px;
-  line-height:24px;
-  margin-top:0;
-  margin-bottom:10px;
-  padding-top:0;
-  padding-bottom:0;
-  font-weight:normal;
-}
-td.contentblock h4 a {
-  color:#444444;
-  text-decoration:none;
-}
-td.contentblock p {
-  color:#888888;
-  font-size:13px;
-  line-height:19px;
-  margin-top:0;
-  margin-bottom:12px;
-  padding-top:0;
-  padding-bottom:0;
-  font-weight:normal;
-}
-td.contentblock p a {
-  color:#3ca7dd;
-  text-decoration:none;
-}
-.readmore {
-  font-size: 13px;
-  color: #85bdad;
-}
-.ReadMsgBody {
-  width: 100%;
-}
-.ExternalClass {
-  width: 100%;
-}
-img {
+
+img { 
+  outline:none; 
+  text-decoration:none; 
+  -ms-interpolation-mode: bicubic;
+  width: auto;
+  max-width: 100%; 
+  float: left; 
+  clear: both; 
   display: block;
 }
-a.mobileshow, .mobilehide {
+
+center {
+  width: 100%;
+  min-width: 580px;
+}
+
+a img { 
+  border: none;
+}
+
+p {
+  margin: 0 0 0 10px;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td { 
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  border-collapse: collapse !important; 
+}
+
+table, tr, td {
+  padding: 0;
+  vertical-align: top;
+  text-align: left;
+}
+
+hr {
+  color: #d9d9d9; 
+  background-color: #d9d9d9; 
+  height: 1px; 
+  border: none;
+}
+
+/* Responsive Grid */
+
+table.body {
+  height: 100%;
+  width: 100%;
+}
+
+table.container {
+  width: 580px;
+  margin: 0 auto;
+  text-align: inherit;
+}
+
+table.row { 
+  padding: 0px; 
+  width: 100%;
+  position: relative;
+}
+
+table.container table.row {
+  display: block;
+}
+
+td.wrapper {
+  padding: 10px 20px 0px 0px;
+  position: relative;
+}
+
+table.columns,
+table.column {
+  margin: 0 auto;
+}
+
+table.columns td,
+table.column td {
+  padding: 0px 0px 10px; 
+}
+
+table.columns td.sub-columns,
+table.column td.sub-columns,
+table.columns td.sub-column,
+table.column td.sub-column {
+  padding-right: 3.448276%;
+}
+
+table.row td.last,
+table.container td.last {
+  padding-right: 0px;
+}
+
+table.one { width: 30px; }
+table.two { width: 80px; }
+table.three { width: 130px; }
+table.four { width: 180px; }
+table.five { width: 230px; }
+table.six { width: 280px; }
+table.seven { width: 330px; }
+table.eight { width: 380px; }
+table.nine { width: 430px; }
+table.ten { width: 480px; }
+table.eleven { width: 530px; }
+table.twelve { width: 580px; }
+
+table.one center { min-width: 30px; }
+table.two center { min-width: 80px; }
+table.three center { min-width: 130px; }
+table.four center { min-width: 180px; }
+table.five center { min-width: 230px; }
+table.six center { min-width: 280px; }
+table.seven center { min-width: 330px; }
+table.eight center { min-width: 380px; }
+table.nine center { min-width: 430px; }
+table.ten center { min-width: 480px; }
+table.eleven center { min-width: 530px; }
+table.twelve center { min-width: 580px; }
+
+td.one { width: 8.333333% !important; }
+td.two { width: 16.666666% !important; }
+td.three { width: 25% !important; }
+td.four { width: 33.333333% !important; }
+td.five { width: 41.666666% !important; }
+td.six { width: 50% !important; }
+td.seven { width: 58.333333% !important; }
+td.eight { width: 66.666666% !important; }
+td.nine { width: 75% !important; }
+td.ten { width: 83.333333% !important; }
+td.eleven { width: 91.666666% !important; }
+td.twelve { width: 100% !important; }
+
+td.offset-by-one { padding-left: 50px; }
+td.offset-by-two { padding-left: 100px; }
+td.offset-by-three { padding-left: 150px; }
+td.offset-by-four { padding-left: 200px; }
+td.offset-by-five { padding-left: 250px; }
+td.offset-by-six { padding-left: 300px; }
+td.offset-by-seven { padding-left: 350px; }
+td.offset-by-eight { padding-left: 400px; }
+td.offset-by-nine { padding-left: 450px; }
+td.offset-by-ten { padding-left: 500px; }
+td.offset-by-eleven { padding-left: 550px; }
+
+td.sub-offset-by-one { padding-left: 5.172413% !important; }
+td.sub-offset-by-two { padding-left: 13.793102% !important; }
+td.sub-offset-by-three { padding-left: 22.413791% !important; }
+td.sub-offset-by-four { padding-left: 31.034480% !important; }
+td.sub-offset-by-five { padding-left: 39.655169% !important; }
+td.sub-offset-by-six { padding-left: 48.275858% !important; }
+td.sub-offset-by-seven { padding-left: 56.896547% !important; }
+td.sub-offset-by-eight { padding-left: 65.517236% !important; }
+td.sub-offset-by-nine { padding-left: 74.137925% !important; }
+td.sub-offset-by-ten { padding-left: 82.758614% !important; }
+td.sub-offset-by-eleven { padding-left: 91.379303% !important; }
+
+td.expander {
+  visibility: hidden;
+  width: 0px;
+  padding: 0 !important;
+}
+
+table.columns .text-pad {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+table.columns .left-text-pad {
+  padding-left: 10px;
+}
+
+table.columns .right-text-pad {
+  padding-right: 10px;
+}
+
+/* Block Grid */
+
+.block-grid {
+  width: 100%;
+  max-width: 580px;
+}
+
+.block-grid td {
+  display: inline-block;
+  padding:10px;
+}
+
+.two-up td {
+  width:270px;
+}
+
+.three-up td {
+  width:173px;
+}
+
+.four-up td {
+  width:125px;
+}
+
+.five-up td {
+  width:96px;
+}
+
+.six-up td {
+  width:76px;
+}
+
+.seven-up td {
+  width:62px;
+}
+
+.eight-up td {
+  width:52px;
+}
+
+/* Alignment & Visibility Classes */
+
+table.center, td.center {
+  text-align: center;
+}
+
+h1.center,
+h2.center,
+h3.center,
+h4.center,
+h5.center,
+h6.center {
+  text-align: center;
+}
+
+span.center {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+img.center {
+  margin: 0 auto;
+  float: none;
+}
+
+.show-for-small,
+.hide-for-desktop {
   display: none;
-  color: #fff; /*for Gmail */
 }
- 
-/* Mobile stylesheet for iPhone and Android */
- 
-@media only screen and (max-width: 480px) {
- table {
- position: relative;
+
+/* Typography */
+
+body, h1, h2, h3, h4, h5, h6, p { 
+  color: #222222;
+  display: block; 
+  font-family: "Helvetica", "Arial", sans-serif; 
+  font-weight: normal; 
+  padding:0; 
+  margin: 0;
+  text-align: left; 
+  line-height: 1.3;
 }
- a[class="mobileshow"], a[class="mobilehide"] {
- display: block !important;
- color: #fff !important;
- background-color: #aaa;
- border-radius: 20px;
- padding: 0 8px;
- text-decoration: none;
- font-weight: bold;
- font-size: 11px;
- position: absolute;
- top: 25px;
- right: 10px;
- text-align: center;
- width: 40px;
+
+h1, h2, h3, h4, h5, h6 {
+  word-break: normal;
 }
- div[class="article"] {
- display: none;
+
+h1 {font-size: 40px;}
+h2 {font-size: 36px;}
+h3 {font-size: 32px;}
+h4 {font-size: 28px;}
+h5 {font-size: 24px;}
+h6 {font-size: 20px;}
+body, p {font-size: 14px;line-height:19px;}
+
+p { 
+  padding-bottom: 10px;
 }
- a.mobileshow:hover {
- visibility: hidden;
+
+small {
+  font-size: 10px;
 }
- .mobileshow:hover + .article,
- .article:hover {
-  /* .article:hover to inherit the state of a tapped link, keeping the box visible - eg */
- display: inline !important;
+
+a {
+  color: #2ba6cb; 
+  text-decoration: none;
 }
- div[class="header"] {
- font-size: 16px !important;
+
+a:hover { 
+  color: #2795b6 !important;
 }
- table[class="table"], td[class="cell"] {
- width: 320px !important;
+
+a:active { 
+  color: #2795b6 !important;
 }
- td[class="footershow"] {
- width: 320px !important;
- padding-left: 25px;
- padding-right: 25px;
+
+a:visited { 
+  color: #2ba6cb !important;
 }
- table[class="hide"], img[class="hide"], td[class="hide"] {
- display: none !important;
+
+h1 a, 
+h2 a, 
+h3 a, 
+h4 a, 
+h5 a, 
+h6 a {
+  color: #2ba6cb !important;
 }
- img[class="divider"] {
- height: 1px !important;
+
+h1 a:active, 
+h2 a:active,  
+h3 a:active, 
+h4 a:active, 
+h5 a:active, 
+h6 a:active { 
+  color: #2ba6cb !important; 
+} 
+
+h1 a:visited, 
+h2 a:visited,  
+h3 a:visited, 
+h4 a:visited, 
+h5 a:visited, 
+h6 a:visited { 
+  color: #2ba6cb !important; 
+} 
+
+/* Panels */
+
+td.panel {
+  background: #f2f2f2;
+  border: 1px solid #d9d9d9;
+  padding: 10px !important;
 }
- p[class="reminder"] {
- font-size: 11px !important;
+
+/* Buttons */
+
+table.button,
+table.tiny-button,
+table.small-button,
+table.medium-button,
+table.large-button {
+  width: 100%;
+  overflow: hidden;
 }
- h4[class="secondary"] {
- line-height: 22px !important;
- margin-bottom: 15px !important;
- font-size: 18px !important;
+
+table.button td,
+table.tiny-button td,
+table.small-button td,
+table.medium-button td,
+table.large-button td {
+  display: block;
+  width: auto !important;
+  text-align: center;
+  background: #2ba6cb;
+  border: 1px solid #2284a1;
+  color: #ffffff;
+  padding: 8px 0;
 }
+
+table.tiny-button td {
+  padding: 5px 0 4px;
 }
- @media screen and (device-width: 480px) and (device-height: 360px), screen and (device-width: 360px) and (device-height: 480px), screen and (device-width: 320px) and (device-height: 240px) {
- .article {
- display: inline !important;
+
+table.small-button td {
+  padding: 8px 0 7px;
 }
- a.mobileshow, a.mobilehide {
- display: none !important;
+
+table.medium-button td {
+  padding: 12px 0 10px;
 }
+
+table.large-button td {
+  padding: 21px 0 18px;
 }
-</style>
+
+table.button td a,
+table.tiny-button td a,
+table.small-button td a,
+table.medium-button td a,
+table.large-button td a {
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+table.tiny-button td a {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+table.small-button td a {
+  font-size: 16px;
+}
+
+table.medium-button td a {
+  font-size: 20px;
+}
+
+table.large-button td a {
+  font-size: 24px;
+}
+
+table.button:hover td,
+table.button:visited td,
+table.button:active td {
+  background: #2795b6 !important;
+}
+
+table.button:hover td a,
+table.button:visited td a,
+table.button:active td a {
+  color: #fff !important;
+}
+
+table.button:hover td,
+table.tiny-button:hover td,
+table.small-button:hover td,
+table.medium-button:hover td,
+table.large-button:hover td {
+  background: #2795b6 !important;
+}
+
+table.button:hover td a,
+table.button:active td a,
+table.button td a:visited,
+table.tiny-button:hover td a,
+table.tiny-button:active td a,
+table.tiny-button td a:visited,
+table.small-button:hover td a,
+table.small-button:active td a,
+table.small-button td a:visited,
+table.medium-button:hover td a,
+table.medium-button:active td a,
+table.medium-button td a:visited,
+table.large-button:hover td a,
+table.large-button:active td a,
+table.large-button td a:visited {
+  color: #ffffff !important; 
+}
+
+table.secondary td {
+  background: #e9e9e9;
+  border-color: #d0d0d0;
+  color: #555;
+}
+
+table.secondary td a {
+  color: #555;
+}
+
+table.secondary:hover td {
+  background: #d0d0d0 !important;
+  color: #555;
+}
+
+table.secondary:hover td a,
+table.secondary td a:visited,
+table.secondary:active td a {
+  color: #555 !important;
+}
+
+table.success td {
+  background: #5da423;
+  border-color: #457a1a;
+}
+
+table.success:hover td {
+  background: #457a1a !important;
+}
+
+table.alert td {
+  background: #c60f13;
+  border-color: #970b0e;
+}
+
+table.alert:hover td {
+  background: #970b0e !important;
+}
+
+table.radius td {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+table.round td {
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+}
+
+.button table,
+.tiny-button table,
+.small-button table,
+.medium-button table,
+.large-button table {
+  width: 100%;
+  overflow: hidden;
+}
+
+.button table td,
+.tiny-button table td,
+.small-button table td,
+.medium-button table td,
+.large-button table td {
+  display: block;
+  width: auto !important;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  background: #2ba6cb;
+  border: 1px solid #2284a1;
+}
+
+.tiny-button table td {
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.button table td,
+.small-button table td {
+  padding: 8px 15px;
+  font-size: 16px;
+}
+
+.medium-button table td {
+  padding: 12px 24px;
+  font-size: 20px;
+}
+
+.large-button table td {
+  padding: 21px 30px;
+  font-size: 24px;
+}
+
+.button:hover table td,
+.tiny-button:hover table td,
+.small-button:hover table td,
+.medium-button:hover table td,
+.large-button:hover table td {
+  background: #2795b6 !important;
+}
+
+.button,
+.button:hover,
+.button:active,
+.button:visited,
+.tiny-button,
+.tiny-button:hover,
+.tiny-button:active,
+.tiny-button:visited,
+.small-button,
+.small-button:hover,
+.small-button:active,
+.small-button:visited,
+.medium-button,
+.medium-button:hover,
+.medium-button:active,
+.medium-button:visited,
+.large-button,
+.large-button:hover,
+.large-button:active,
+.large-button:visited {
+  color: #ffffff !important; 
+  font-family: Helvetica, Arial, sans-serif; 
+  text-decoration: none;
+}
+
+.secondary table td {
+  background: #e9e9e9;
+  border-color: #d0d0d0;
+}
+
+.secondary:hover table td {
+  background: #d0d0d0 !important;
+}
+
+.success table td {
+  background: #5da423;
+  border-color: #457a1a;
+}
+
+.success:hover table td {
+  background: #457a1a !important;
+}
+
+.alert table td {
+  background: #c60f13;
+  border-color: #970b0e;
+}
+
+.alert:hover table td {
+  background: #970b0e !important;
+}
+
+.radius table td {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.round table td {
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+}
+
+/* Outlook First */
+
+body.outlook p {
+  display: inline !important;
+}
+
+/*  Media Queries */
+
+@media only screen and (max-width: 600px) {
+
+  table[class="body"] img {
+    width: auto !important;
+    height: auto !important;
+  }
+
+  table[class="body"] center {
+    min-width: 0 !important;
+  }
+
+  table[class="body"] .container {
+    width: 95% !important;
+  }
+
+  table[class="body"] .row {
+    width: 100% !important;
+    display: block !important;
+  }
+
+  table[class="body"] .wrapper {
+    display: block !important;
+    padding-right: 0 !important;
+  }
+
+  table[class="body"] .columns,
+  table[class="body"] .column {
+    table-layout: fixed !important;
+    float: none !important;
+    width: 100% !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    display: block !important;
+  }
+
+  table[class="body"] .wrapper.first .columns,
+  table[class="body"] .wrapper.first .column {
+    display: table !important;
+  }
+
+  table[class="body"] table.columns td,
+  table[class="body"] table.column td {
+    width: 100% !important;
+  }
+
+  table[class="body"] td.offset-by-one,
+  table[class="body"] td.offset-by-two,
+  table[class="body"] td.offset-by-three,
+  table[class="body"] td.offset-by-four,
+  table[class="body"] td.offset-by-five,
+  table[class="body"] td.offset-by-six,
+  table[class="body"] td.offset-by-seven,
+  table[class="body"] td.offset-by-eight,
+  table[class="body"] td.offset-by-nine,
+  table[class="body"] td.offset-by-ten,
+  table[class="body"] td.offset-by-eleven {
+    padding-left: 0 !important;
+  }
+
+  table[class="body"] .expander {
+    width: 9999px !important;
+  }
+
+  table[class="body"] .right-text-pad {
+    padding-left: 10px !important;
+  }
+
+  table[class="body"] .left-text-pad {
+    padding-right: 10px !important;
+  }
+
+  table[class="body"] .hide-for-small,
+  table[class="body"] .show-for-desktop {
+    display: none !important;
+  }
+
+  table[class="body"] .show-for-small,
+  table[class="body"] .hide-for-desktop {
+    display: inherit !important;
+  }
+}
+
+  </style>
+  <style>
+    
+    table.facebook td {
+      background: #3b5998;
+      border-color: #2d4473;
+    }
+
+    table.facebook:hover td {
+      background: #2d4473 !important;
+    }
+
+    table.twitter td {
+      background: #00acee;
+      border-color: #0087bb;
+    }
+
+    table.twitter:hover td {
+      background: #0087bb !important;
+    }
+
+    table.google-plus td {
+      background-color: #DB4A39;
+      border-color: #CC0000;
+    }
+
+    table.google-plus:hover td {
+      background: #CC0000 !important;
+    }
+
+    .template-label {
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 11px;
+    }
+
+    .callout .wrapper {
+      padding-bottom: 20px;
+    }
+
+    .callout .panel {
+      background: #ECF8FF;
+      border-color: #b9e5ff;
+    }
+
+    .header {
+      background: #999999;
+    }
+
+    .footer .wrapper {
+      background: #ebebeb;
+    }
+
+    .footer h5 {
+      padding-bottom: 10px;
+    }
+
+    table.columns .text-pad {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    table.columns .left-text-pad {
+      padding-left: 10px;
+    }
+
+    table.columns .right-text-pad {
+      padding-right: 10px;
+    }
+
+    @media only screen and (max-width: 600px) {
+
+      table[class="body"] .right-text-pad {
+        padding-left: 10px !important;
+      }
+
+      table[class="body"] .left-text-pad {
+        padding-right: 10px !important;
+      }
+    }
+
+  </style>
 </head>
-<body bgcolor="#e4e4e4" style="margin: 0; padding: 0;">
-<table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#e4e4e4">
-  <tr>
-    <td bgcolor="#e4e4e4" width="100%"><table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="table">
-        <tr>
-          <td width="600" class="cell"><br>
-            <table width="100%" cellpadding="0" cellspacing="0" border="0">
-              <tr>
-                <td bgcolor="#ef3101" nowrap><img border="0" src="images/spacer.gif" width="5" height="1"></td>
-                <td width="100%" bgcolor="#ffffff"><table width="100%" cellpadding="20" cellspacing="0" border="0">
+<body>
+  <table class="body">
+    <tr>
+      <td class="center" align="center" valign="top">
+        <center>
+         
+          <table class="row header">
+            <tr>
+              <td class="center" align="center">
+                <center>
+          
+                  <table class="container">
                     <tr>
-                      <td bgcolor="#ffffff" class="contentblock"><h4 class="secondary"><strong><a href="http://en.wikipedia.org/wiki/Kitten" class="link">Kittens</a></strong> </h4>
-                        <p>A kitten is a juvenile domesticated cat.</p>
-                        <a href="#" class="mobilehide">Hide</a> <a href="#" class="mobileshow">Show</a>
-                        <div class="article">
-                          <p class="bodytext"><img src="http://placekitten.com/75/75" style="margin: 0 10px 10px 0; float: left;" >A feline litter usually consists of two to five kittens. To survive, kittens need the care of their mother for the first several weeks of their life. Kittens are highly social animals and spend most of their waking hours playing and interacting with available companions.</p>
-                        </div>
-                        <a href="http://en.wikipedia.org/wiki/Kitten" class="readmore">Read the full article</a></td>
-                    </tr>
-                  </table></td>
-              </tr>
-            </table>
-            <img border="0" src="images/spacer.gif" width="1" height="15" class="divider"><br>
-            <table width="100%" cellpadding="0" cellspacing="0" border="0">
-              <tr>
-                <td bgcolor="#ef3101" nowrap><img border="0" src="images/spacer.gif" width="5" height="1"></td>
-                <td width="100%" bgcolor="#ffffff"><table width="100%" cellpadding="20" cellspacing="0" border="0">
-                    <tr>
-                      <td bgcolor="#ffffff" class="contentblock"><h4 class="secondary"> <strong><a href="http://en.wikipedia.org/wiki/Kitten" class="link">Etymology</a></strong> </h4>
-                        <p>The word &quot;kitten&quot; derives from Middle English kitoun (ketoun, kyton etc.), which itself came from Old French chitoun, cheton: &quot;kitten&quot;.</p>
-                        <a href="#" class="mobilehide">Hide</a> <a href="#" class="mobileshow">Show</a>
-                        <div class="article">
-                          <p class="bodytext"><img src="http://placekitten.com/75/75" style="margin: 0 10px 10px 0; float: left;"> The young of big cats are called cubs rather than <a href="#">kittens</a>. Either term may be used for the young of smaller wild felids such as ocelots, caracals, and lynx, but &quot;kitten&quot; is usually more common for these species.</p>
-                        </div>
-                        <a href="http://en.wikipedia.org/wiki/Kitten" class="readmore">Read the full article</a></td>
-                    </tr>
-                  </table></td>
-              </tr>
-            </table>
-            <img border="0" src="images/spacer.gif" width="1" height="15" class="divider"><br></td>
-        </tr>
-      </table>
-      <img border="0" src="images/spacer.gif" width="1" height="25" class="divider"><br>
-      <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#f2f2f2">
-        <tr>
-          <td><img border="0" src="images/spacer.gif" width="1" height="25" class="divider"><br>
-            <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="table">
-              <tr>
-                <td width="600" nowrap bgcolor="#f2f2f2" class="cell"><table width="600" cellpadding="0" cellspacing="0" border="0" class="table">
-                    <tr>
-                      <td width="380" valign="top" class="footershow"><img border="0" src="images/spacer.gif" width="1" height="8" class="divider"><br>
-                        <p style="color:#a6a6a6;font-size:12px;font-family:Helvetica,Arial,sans-serif;margin-top:0;margin-bottom:15px;padding-top:0;padding-bottom:0;line-height:18px;" class="reminder">You’re receiving this because you’re an awesome ABC Widgets customer or subscribed via <a href="http://www.abcwidgets.com/" style="color:#a6a6a6;text-decoration:underline;">our site</a>.</p>
-                        <p style="color:#c9c9c9;font-size:12px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
-                          <preferences style="color:#3ca7dd;text-decoration:none;">Edit your subscription</preferences>
-                          &nbsp;&nbsp;|&nbsp;&nbsp;
-                          <unsubscribe style="color:#3ca7dd;text-decoration:none;">Unsubscribe instantly</unsubscribe>
-                        </p></td>
-                      <td align="right" width="220" style="color:#a6a6a6;font-size:12px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;text-shadow: 0 1px 0 #ffffff;" valign="top" class="hide"><table cellpadding="0" cellspacing="0" border="0">
+                      <td class="wrapper last">
+            
+                        <table class="twelve columns">
                           <tr>
-                            <td><a href="http://www.flickr.com/photos/freshview"><img border="0" src="images/flickr.gif" width="42" height="32" alt="See our photos on Flickr"></a></td>
-                            <td><a href="http://twitter.com/campaignmonitor"><img border="0" src="images/twitter.gif" width="42" height="32" alt="Follow us on Twitter"></a></td>
-                            <td><a href="http://www.facebook.com/campaignmonitor"><img border="0" src="images/facebook.gif" width="32" height="32" alt="Visit us on Facebook"></a></td>
+                            <td class="six sub-columns">
+                              <img src="http://placehold.it/200x50">
+                            </td>
+                            <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
+                              <span class="template-label">BASIC</span>
+                            </td>
+                                
                           </tr>
                         </table>
-                        <img border="0" src="images/spacer.gif" width="1" height="10"><br>
-                        <p style="color:#b3b3b3;font-size:11px;line-height:15px;font-family:Helvetica,Arial,sans-serif;margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0;font-weight:bold;">ABC Widgets</p>
-                        <p style="color:#b3b3b3;font-size:11px;line-height:15px;font-family:Helvetica,Arial,sans-serif;margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0;font-weight:normal;">87 Street Avenue, California, USA</p></td>
+            
+                      </td>
                     </tr>
-                  </table></td>
-              </tr>
-            </table>
-            <img border="0" src="images/spacer.gif" width="1" height="25" class="divider"><br></td>
-        </tr>
-      </table></td>
-  </tr>
-</table>
+                  </table>
+          
+                </center>
+              </td>
+            </tr>
+          </table> 
+
+          <table class="container">
+            <tr>
+              <td>
+              
+                <table class="row">
+                  <tr>
+                    <td class="wrapper last">
+                  
+                      <table class="twelve columns">
+                        <tr>
+                          <td>
+                            <h1>Hi, Susan Calvin</h1>
+                            <p class="lead">Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae.</p>
+                            <p>Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae. consequat vel lacus. Sed iaculis pulvinar ligula, ornare fringilla ante viverra et. In hac habitasse platea dictumst. Donec vel orci mi, eu congue justo. Integer eget odio est, eget malesuada lorem. Aenean sed tellus dui, vitae viverra risus. Nullam massa sapien, pulvinar eleifend fringilla id, convallis eget nisi. Mauris a sagittis dui. Pellentesque non lacinia mi. Fusce sit amet libero sit amet erat venenatis sollicitudin vitae vel eros. Cras nunc sapien, interdum sit amet porttitor ut, congue quis urna.</p>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+                  
+                    </td>
+                  </tr>
+                </table>
+              
+                <table class="row callout">
+                  <tr>
+                    <td class="wrapper last">
+
+                      <table class="twelve columns">
+                        <tr>
+                          <td class="panel">
+                            <p>Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae. <a href="#">Click it! »</a></p>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+
+                    </td>
+                  </tr>
+                </table>
+              
+                <table class="row footer">
+                  <tr>
+                    <td class="wrapper">
+                            
+                      <table class="six columns">
+                        <tr>
+                          <td class="left-text-pad">
+
+                            <h5>Connect With Us:</h5>
+
+                            <table class="tiny-button facebook">
+                              <tr>
+                                <td>
+                                  <a href="#">Facebook</a>
+                                </td>
+                              </tr>
+                            </table>
+
+                            <br>
+
+                            <table class="tiny-button twitter">
+                              <tr>
+                                <td>
+                                  <a href="#">Twitter</a>
+                                </td>
+                              </tr>
+                            </table>
+
+                            <br>
+
+                            <table class="tiny-button google-plus">
+                              <tr>
+                                <td>
+                                  <a href="#">Google +</a>
+                                </td>
+                              </tr>
+                            </table>
+
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+
+                    </td>
+                    <td class="wrapper last">
+
+                      <table class="six columns">
+                        <tr>
+                          <td class="last right-text-pad">
+                            <h5>Contact Info:</h5>
+                            <p>Phone: 408.341.0600</p>
+                            <p>Email: <a href="mailto:hseldon@trantor.com">hseldon@trantor.com</a></p>
+                          </td>          
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+
+                    </td>
+                  </tr>
+                </table>
+              
+              
+                <table class="row">
+                  <tr>
+                    <td class="wrapper last">
+            
+                      <table class="twelve columns">
+                        <tr>
+                          <td align="center">
+                            <center>
+                              <p style="text-align:center;"><a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Unsubscribe</a></p>
+                            </center>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+            
+                    </td>
+                  </tr>
+                </table>
+              
+              <!-- container end below -->
+              </td>
+            </tr>
+          </table> 
+
+        </center>
+      </td>
+    </tr>
+  </table>
 </body>
 </html>
