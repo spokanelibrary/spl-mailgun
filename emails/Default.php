@@ -879,7 +879,7 @@ body.outlook p {
                         <tr>
                           <td>
                             <h1><?php echo $news->post_title; ?></h1>
-                            <?php echo $news->post_content; ?>
+                            <?php echo apply_filters('the_content',$news->post_content); ?>
                           </td>
                           <td class="expander"></td>
                         </tr>
