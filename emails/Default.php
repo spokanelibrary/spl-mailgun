@@ -832,8 +832,8 @@ body.outlook p {
 
   .alignright { float: right; margin-left: 10px; }
   .alignleft { float: left; margin-right: 10px; }
-  .wp-caption { background-color: #ccc; }
-  .wp-caption-text { font-weight: bold; }
+  .wp-caption {  }
+  .wp-caption-text { font-style: italic; }
   </style>
 </head>
 <body>

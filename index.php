@@ -342,7 +342,7 @@ class SPL_Mailgun_Newsletter {
 
 		$title = $news->post_title;
 		$content = str_replace(array('<figure','</figure>','<figcaption','</figcaption>')
-													,array('<div', '</div>', '<span', '</span>')
+													,array('<div', '</div>', '<div', '</div>')
 													,apply_filters('the_content', $news->post_content));
 
 		//$myvar = $newsletter['post_title'];
