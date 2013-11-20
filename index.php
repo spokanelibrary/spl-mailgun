@@ -398,7 +398,7 @@ class SPL_Mailgun_Newsletter {
 			$this->notifyMailgunResponse($response, $list);
 		}
 		
-		add_action('admin_notices', 'this is my message');
+		add_action( 'admin_head', 'my message' );
 		
 	} // processNewsletter()
 
