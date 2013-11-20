@@ -53,6 +53,8 @@ img {
   display: block;
 }
 
+img.alignright { float: right; }
+
 center {
   width: 100%;
   min-width: 580px;
