@@ -337,7 +337,7 @@ class SPL_Mailgun_Newsletter {
 
 	// MAILGUN INTEGRATION
 
-	function getNewsletter($id, $template) {
+	function getNewsletterHTML($id, $template) {
 
 		$template = plugin_dir_path(__FILE__).'emails/'.$template;
 		if ( file_exists($template) ) {
@@ -358,15 +358,15 @@ class SPL_Mailgun_Newsletter {
 
 
 		$from = $this->getMailgunFrom();
-		$message = $this->getNewsletter($id);
+		$html = $this->getNewsletter($id, $template);
 
 		if ( !empty($address) ) {
-			$response = $this->sendMailgunMessage($from, $address, $subject, $message);
+			$response = $this->sendMailgunMessage($from, $address, $subject, $html);
 			$this->notifyMailgunResponse($response);
 		}
 
 		if ( !empty($list) ) {
-			$response = $this->sendMailgunMessage($from, $list, $subject, $message);
+			$response = $this->sendMailgunMessage($from, $list, $subject, $html);
 			$this->notifyMailgunResponse($response, $list);
 		}
 		
@@ -382,14 +382,19 @@ class SPL_Mailgun_Newsletter {
 		wp_mail( 'sgirard@spokanelibrary.org', 'mailgun response', $response );
 	}
 	
-	function sendMailgunMessage($from, $to, $subject, $message) {
+	function sendMailgunMessage($from, $to, $subject, $html=null, $text=null) {
 		$api = $this->getMailgunApi().$this->getMailgunDomain().'/'.'messages';
 		$auth = $this->getMailgunPrivateAuth();
 		$params = array('from'=>$from
 									, 'to'=>$to
 									, 'subject'=>$subject
-									, 'text'=>$message
 										);
+		if ( !empty($html) ) {
+			$params['html'] = $html;
+		}
+		if ( !empty($text) ) {
+			$params['text'] = $text;
+		}
 		//return $auth;
 		return $this->curlProxy($api, $params, 'post', $auth);
 	} // sendMailgunMessage()
