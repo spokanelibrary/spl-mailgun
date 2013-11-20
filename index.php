@@ -340,6 +340,9 @@ class SPL_Mailgun_Newsletter {
 	function getNewsletterHTML($id, $template) {
 		$news = get_post($id);
 
+		$title = $news->post_title;
+		$content = str_replace(array('<figure','</figure>'), array('<div', '</div>'), apply_filters('the_content', $news->post_content));
+
 		//$myvar = $newsletter['post_title'];
 
 		//return print_r($_POST, true);
