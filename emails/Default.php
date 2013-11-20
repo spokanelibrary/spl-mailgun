@@ -878,7 +878,7 @@ body.outlook p {
                       <table class="twelve columns">
                         <tr>
                           <td>
-                            <h1><?php echo $newsletter['post_title']; ?></h1>
+                            <h1><?php echo 'test'; ?></h1>
                             <p class="lead">Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae.</p>
                             <p>
 
