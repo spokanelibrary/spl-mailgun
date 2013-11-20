@@ -902,8 +902,8 @@ body.outlook p {
                         <tr>
                           <td class="panel">
                             <p>
-                              <?php echo $trace; ?> 
-                              <a href="#">Click it! »</a></p>
+                              <?php //echo $trace; ?> 
+                              <a href="<?php echo $link; ?> ">Click it! »</a></p>
                           </td>
                           <td class="expander"></td>
                         </tr>

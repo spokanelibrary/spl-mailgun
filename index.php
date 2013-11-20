@@ -343,6 +343,8 @@ class SPL_Mailgun_Newsletter {
 
 		$post = get_post($id);
 
+		$link = get_permalink($id);
+
 		$title = $post->post_title;
 		$content = str_replace(array('<figure','</figure>','<figcaption','</figcaption>')
 													,array('<div', '</div>', '<div', '</div>')
