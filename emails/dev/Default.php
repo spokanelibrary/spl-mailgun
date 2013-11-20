@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width"/>
   <style>
-/**********************************************
+    /**********************************************
 * Ink v1.0.3 - Copyright 2013 ZURB Inc        *
 **********************************************/
 
@@ -297,9 +297,8 @@ img.center {
 
 /* Typography */
 
-body, h1, h2, h3, h4, h5, h6, p { 
+body, table.body, h1, h2, h3, h4, h5, h6, p { 
   color: #222222;
-  display: block; 
   font-family: "Helvetica", "Arial", sans-serif; 
   font-weight: normal; 
   padding:0; 
@@ -318,7 +317,7 @@ h3 {font-size: 32px;}
 h4 {font-size: 28px;}
 h5 {font-size: 24px;}
 h6 {font-size: 20px;}
-body, p {font-size: 14px;line-height:19px;}
+body, table.body, p {font-size: 14px;line-height:19px;}
 
 p { 
   padding-bottom: 10px;
@@ -747,7 +746,6 @@ body.outlook p {
     display: inherit !important;
   }
 }
-
   </style>
   <style>
     
