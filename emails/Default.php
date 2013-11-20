@@ -901,8 +901,8 @@ body.outlook p {
                       <table class="twelve columns">
                         <tr>
                           <td class="panel">
-                            <p>aesfd;
-                              <?php //echo $trace; ?> 
+                            <h2>$subtitle</h2>
+                            <p><?php //echo $trace; ?> 
                               <a href="<?php echo $link; ?> ">Click it! »</a></p>
                           </td>
                           <td class="expander"></td>
