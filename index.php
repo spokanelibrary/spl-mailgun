@@ -142,6 +142,9 @@ class SPL_Mailgun_Newsletter {
 		';
 		echo $subject;
 
+		$templates = scandir(plugin_dir_path(__FILE__).'emails');
+		print_r($templates);
+
 		$tmpl = '
 		<p>
 			<label for="spl-mailgun-newsletter-tempate">Choose a template:</label>
@@ -357,8 +360,7 @@ class SPL_Mailgun_Newsletter {
 	function notifyMailgunResponse($response, $list=null) {
 		
 		if ( !is_null($list) ) {
-			//$response .= $list;
-			$response .= $this->getMailgunMailingList($list);
+			$response .= PHP_EOL.$this->getMailgunMailingList($list);
 		}
 		
 		wp_mail( 'sgirard@spokanelibrary.org', 'mailgun response', $response );
