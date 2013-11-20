@@ -358,7 +358,7 @@ class SPL_Mailgun_Newsletter {
 
 
 		$from = $this->getMailgunFrom();
-		$html = $this->getNewsletter($id, $template);
+		$html = $this->getNewsletterHTML($id, $template);
 
 		if ( !empty($address) ) {
 			$response = $this->sendMailgunMessage($from, $address, $subject, $html);
