@@ -337,8 +337,14 @@ class SPL_Mailgun_Newsletter {
 
 	// MAILGUN INTEGRATION
 
-	function getNewsletter($id) {
-		return 'This is newsletter # '.$id;
+	function getNewsletter($id, $template) {
+
+		$template = plugin_dir_path(__FILE__).'emails/'.$template;
+		if ( file_exists($template) ) {
+			$template = file_get_contents($template);
+		}
+		return $template;
+		//return 'This is newsletter # '.$id;
 	}
 
 	function getNewsletterDefaultSubject() {
@@ -349,7 +355,7 @@ class SPL_Mailgun_Newsletter {
 		//$msg = $this->getMailgunAddressValidation('sgirard@spokanelibrary.org');
 		//$msg = print_r($msg, true);
 		//$msg = $id.'<br />'.$list.'<br />'.$address.'<br />'.$template;
-		
+
 
 		$from = $this->getMailgunFrom();
 		$message = $this->getNewsletter($id);
