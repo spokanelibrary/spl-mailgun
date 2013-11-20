@@ -398,7 +398,7 @@ class SPL_Mailgun_Newsletter {
 			$this->notifyMailgunResponse($response, $list);
 		}
 		
-		echo '<div class="updated">This is my message.</div>';
+		add_action('admin_notices', 'this is my message');
 		
 	} // processNewsletter()
 
