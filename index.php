@@ -143,6 +143,13 @@ class SPL_Mailgun_Newsletter {
 		echo $subject;
 
 		$templates = scandir(plugin_dir_path(__FILE__).'emails');
+		if ( is_array($templates) ) {
+			foreach( $templates as $template ) {
+				if ( !is_dir($template) ) {
+					print_r($template);
+				}
+			}
+		}
 		print_r($templates);
 
 		$tmpl = '
