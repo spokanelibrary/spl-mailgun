@@ -152,7 +152,7 @@ class SPL_Mailgun_Newsletter {
 
 		if ( is_array($templates) ) {
 			foreach( $templates as $template ) {
-				if ( !is_dir(plugin_dir_path(__FILE__).$template) ) {
+				if ( is_dir(plugin_dir_path(__FILE__).$template) ) {
 					$tmpl .= '<option value"'.$template.'">'.$template.'</option>';
 				}
 			}
