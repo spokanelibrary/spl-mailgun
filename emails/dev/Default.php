@@ -831,7 +831,7 @@ body.outlook p {
 
   </style>
 </head>
-<body>
+<body class="outlook">
   <table class="body">
     <tr>
       <td class="center" align="center" valign="top">
