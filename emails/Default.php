@@ -6,7 +6,7 @@
   
   
 </head>
-<body style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;margin: 0;padding: 0;color: #222222;display: block;font-family: "Helvetica", "Arial", sans-serif;font-weight: normal;text-align: left;line-height: 19px;font-size: 14px;width: 100%;">
+<body style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;margin: 0;padding: 0;color: #222222;display: block;font-family: Helvetica, Arial, sans-serif;font-weight: normal;text-align: left;line-height: 19px;font-size: 14px;width: 100%;">
   <table class="body" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;height: 100%;width: 100%;">
     <tr style="padding: 0;vertical-align: top;text-align: left;">
       <td class="center" align="center" valign="top" style="word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;padding: 0;vertical-align: top;text-align: center;border-collapse: collapse;">
@@ -53,9 +53,9 @@
                       <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
                         <tr style="padding: 0;vertical-align: top;text-align: left;">
                           <td style="word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;padding: 0px 0px 10px;vertical-align: top;text-align: left;border-collapse: collapse;">
-                            <h1 style="color: #222222;display: block;font-family: "Helvetica", "Arial", sans-serif;font-weight: normal;padding: 0;margin: 0;text-align: left;line-height: 1.3;word-break: normal;font-size: 40px;">Hi, Susan Calvin</h1>
-                            <p class="lead" style="margin: 0;padding-bottom: 10px;color: #222222;display: block;font-family: "Helvetica", "Arial", sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 14px;">Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae.</p>
-                            <p style="margin: 0;padding-bottom: 10px;color: #222222;display: block;font-family: "Helvetica", "Arial", sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 14px;">Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae. consequat vel lacus. Sed iaculis pulvinar ligula, ornare fringilla ante viverra et. In hac habitasse platea dictumst. Donec vel orci mi, eu congue justo. Integer eget odio est, eget malesuada lorem. Aenean sed tellus dui, vitae viverra risus. Nullam massa sapien, pulvinar eleifend fringilla id, convallis eget nisi. Mauris a sagittis dui. Pellentesque non lacinia mi. Fusce sit amet libero sit amet erat venenatis sollicitudin vitae vel eros. Cras nunc sapien, interdum sit amet porttitor ut, congue quis urna.</p>
+                            <h1 style="color: #222222;display: block;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;margin: 0;text-align: left;line-height: 1.3;word-break: normal;font-size: 40px;">Hi, Susan Calvin</h1>
+                            <p class="lead" style="margin: 0;padding-bottom: 10px;color: #222222;display: block;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 14px;">Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae.</p>
+                            <p style="margin: 0;padding-bottom: 10px;color: #222222;display: block;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 14px;">Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae. consequat vel lacus. Sed iaculis pulvinar ligula, ornare fringilla ante viverra et. In hac habitasse platea dictumst. Donec vel orci mi, eu congue justo. Integer eget odio est, eget malesuada lorem. Aenean sed tellus dui, vitae viverra risus. Nullam massa sapien, pulvinar eleifend fringilla id, convallis eget nisi. Mauris a sagittis dui. Pellentesque non lacinia mi. Fusce sit amet libero sit amet erat venenatis sollicitudin vitae vel eros. Cras nunc sapien, interdum sit amet porttitor ut, congue quis urna.</p>
                           </td>
                           <td class="expander" style="word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;padding: 0;vertical-align: top;text-align: left;visibility: hidden;width: 0px;border-collapse: collapse;"></td>
                         </tr>
@@ -72,7 +72,7 @@
                       <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
                         <tr style="padding: 0;vertical-align: top;text-align: left;">
                           <td class="panel" style="word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;padding: 10px;vertical-align: top;text-align: left;background: #ECF8FF;border: 1px solid #d9d9d9;border-color: #b9e5ff;border-collapse: collapse;">
-                            <p style="margin: 0;padding-bottom: 10px;color: #222222;display: block;font-family: "Helvetica", "Arial", sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 14px;">Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae. <a href="#" style="color: #2ba6cb;text-decoration: none;">Click it! »</a></p>
+                            <p style="margin: 0;padding-bottom: 10px;color: #222222;display: block;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 14px;">Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae. <a href="#" style="color: #2ba6cb;text-decoration: none;">Click it! »</a></p>
                           </td>
                           <td class="expander" style="word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;padding: 0;vertical-align: top;text-align: left;visibility: hidden;width: 0px;border-collapse: collapse;"></td>
                         </tr>
@@ -90,7 +90,7 @@
                         <tr style="padding: 0;vertical-align: top;text-align: left;">
                           <td class="left-text-pad" style="word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;padding: 0px 0px 10px;vertical-align: top;text-align: left;padding-left: 10px;border-collapse: collapse;">
 
-                            <h5 style="color: #222222;display: block;font-family: "Helvetica", "Arial", sans-serif;font-weight: normal;padding: 0;margin: 0;text-align: left;line-height: 1.3;word-break: normal;font-size: 24px;padding-bottom: 10px;">Connect With Us:</h5>
+                            <h5 style="color: #222222;display: block;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;margin: 0;text-align: left;line-height: 1.3;word-break: normal;font-size: 24px;padding-bottom: 10px;">Connect With Us:</h5>
 
                             <table class="tiny-button facebook" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;font-family: Helvetica, Arial, sans-serif;text-decoration: none;width: 100%;overflow: hidden;color: #ffffff;">
                               <tr style="padding: 0;vertical-align: top;text-align: left;">
@@ -131,9 +131,9 @@
                       <table class="six columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 280px;">
                         <tr style="padding: 0;vertical-align: top;text-align: left;">
                           <td class="last right-text-pad" style="word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;padding: 0px 0px 10px;vertical-align: top;text-align: left;padding-right: 0px;border-collapse: collapse;">
-                            <h5 style="color: #222222;display: block;font-family: "Helvetica", "Arial", sans-serif;font-weight: normal;padding: 0;margin: 0;text-align: left;line-height: 1.3;word-break: normal;font-size: 24px;padding-bottom: 10px;">Contact Info:</h5>
-                            <p style="margin: 0;padding-bottom: 10px;color: #222222;display: block;font-family: "Helvetica", "Arial", sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 14px;">Phone: 408.341.0600</p>
-                            <p style="margin: 0;padding-bottom: 10px;color: #222222;display: block;font-family: "Helvetica", "Arial", sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 14px;">Email: <a href="mailto:hseldon@trantor.com" style="color: #2ba6cb;text-decoration: none;">hseldon@trantor.com</a></p>
+                            <h5 style="color: #222222;display: block;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;margin: 0;text-align: left;line-height: 1.3;word-break: normal;font-size: 24px;padding-bottom: 10px;">Contact Info:</h5>
+                            <p style="margin: 0;padding-bottom: 10px;color: #222222;display: block;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 14px;">Phone: 408.341.0600</p>
+                            <p style="margin: 0;padding-bottom: 10px;color: #222222;display: block;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 14px;">Email: <a href="mailto:hseldon@trantor.com" style="color: #2ba6cb;text-decoration: none;">hseldon@trantor.com</a></p>
                           </td>          
                           <td class="expander" style="word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;padding: 0;vertical-align: top;text-align: left;visibility: hidden;width: 0px;border-collapse: collapse;"></td>
                         </tr>
@@ -152,7 +152,7 @@
                         <tr style="padding: 0;vertical-align: top;text-align: left;">
                           <td align="center" style="word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;padding: 0px 0px 10px;vertical-align: top;text-align: left;border-collapse: collapse;">
                             <center style="width: 100%;min-width: 580px;">
-                              <p style="text-align: center;margin: 0;padding-bottom: 10px;color: #222222;display: block;font-family: "Helvetica", "Arial", sans-serif;font-weight: normal;padding: 0;line-height: 19px;font-size: 14px;"><a href="#" style="color: #2ba6cb;text-decoration: none;">Terms</a> | <a href="#" style="color: #2ba6cb;text-decoration: none;">Privacy</a> | <a href="#" style="color: #2ba6cb;text-decoration: none;">Unsubscribe</a></p>
+                              <p style="text-align: center;margin: 0;padding-bottom: 10px;color: #222222;display: block;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;line-height: 19px;font-size: 14px;"><a href="#" style="color: #2ba6cb;text-decoration: none;">Terms</a> | <a href="#" style="color: #2ba6cb;text-decoration: none;">Privacy</a> | <a href="#" style="color: #2ba6cb;text-decoration: none;">Unsubscribe</a></p>
                             </center>
                           </td>
                           <td class="expander" style="word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;padding: 0;vertical-align: top;text-align: left;visibility: hidden;width: 0px;border-collapse: collapse;"></td>
