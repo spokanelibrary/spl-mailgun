@@ -53,9 +53,6 @@ img {
   display: block;
 }
 
-.alignright { float: right; margin-left: 10px; }
-.alignleft { float: left; margin-right: 10px; }
-
 center {
   width: 100%;
   min-width: 580px;
@@ -832,6 +829,11 @@ body.outlook p {
       }
     }
 
+
+  .alignright { float: right; margin-left: 10px; }
+  .alignleft { float: left; margin-right: 10px; }
+  .wp-caption { background-color: #ccc; }
+  .wp-caption-text { font-weight: bold; }
   </style>
 </head>
 <body>
