@@ -880,7 +880,6 @@ body.outlook p {
             <tr>
               <td>
               
-              <!-- content start -->
                 <table class="row">
                   <tr>
                     <td class="wrapper last">
@@ -894,6 +893,10 @@ body.outlook p {
                       </table> 
                     </td>
                   </tr>
+                </table>
+              
+              <!-- content start -->
+                <table class="row">
 
                   <tr>
                     <td class="wrapper">
