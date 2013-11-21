@@ -889,7 +889,7 @@ body.outlook p {
                       <table class="six columns">
                         <tr>
                           <td>
-                            <h2>Hello,<br> Han Fastolfe</h2>
+                            <h2><?php echo $title; ?></h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet.</p>
                           </td>
@@ -934,7 +934,7 @@ body.outlook p {
                       <table class="six columns">
                         <tr>
                           <td class="panel">
-                            <h6>Header Thing</h6>
+                            <h6><?php echo $subtitle; ?></h6>
                             <p>Sub-head or something</p>
                             <table>
                               <tr>
