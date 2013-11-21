@@ -354,13 +354,13 @@ class SPL_Mailgun_Newsletter {
 
 		$trace = print_r($post, true);
 
-		$subtitle = 'MY SUBTITLE';
-		/*
+		//$subtitle = 'MY SUBTITLE';
+		
 		$subtitle = get_post_meta($id
 													, '_spl_mailgun_newsletter_sidebar_headline'
 													, true 
 													);
-		*/
+		
 
 
 		//$myvar = $newsletter['post_title'];
