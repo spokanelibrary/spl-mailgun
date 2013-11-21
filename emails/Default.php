@@ -881,7 +881,6 @@ body.outlook p {
               <td>
               
               <!-- content start -->
-              
                 <table class="row">
                   <tr>
                     <td class="wrapper">
@@ -892,7 +891,13 @@ body.outlook p {
                           </td>
                           <td class="expander"></td>
                         </tr>
-                      </table>  
+                      </table> 
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="wrapper">
+                      
                       <table class="six columns">
                         <tr>
                           <td>
