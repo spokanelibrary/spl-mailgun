@@ -40,8 +40,9 @@ class SPL_Mailgun_Newsletter {
 
 	function initNewsletter() {
 		//$this->registerPostTemplates();
-		/*
+		
 		add_action( 'init', array( $this, 'registerPostType' ) );
+		/*
 		add_action( 'init', array($this, 'initCmbMetaBoxes'), 9999 );
 
 		add_action( 'save_post', array( $this, 'registerSaveHandler' ) );
