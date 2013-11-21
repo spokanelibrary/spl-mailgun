@@ -901,7 +901,7 @@ body.outlook p {
                       <table class="twelve columns">
                         <tr>
                           <td class="panel">
-                            <h2><?php $subtitle; ?></h2>
+                            <h2><?php echo $subtitle; ?></h2>
                             <p><?php //echo $trace; ?> 
                               <a href="<?php echo $link; ?> ">Click it! »</a></p>
                           </td>
