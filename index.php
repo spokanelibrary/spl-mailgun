@@ -60,7 +60,8 @@ class SPL_Mailgun_Newsletter {
       $template = plugin_dir_path(__FILE__) . 'templates/archive-newsletter.php';
     }
     */
-    if ( is_singular( $post_types )
+    if ( 'newsletter' == get_post_type() ) {
+    //if ( is_singular( $post_types )
     	&& ! file_exists( get_stylesheet_directory() . '/single-newsletter.php' ) ) {
       $template = plugin_dir_path(__FILE__) . 'templates/single-newsletter.php';
     }
