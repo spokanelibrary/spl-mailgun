@@ -910,23 +910,10 @@ body.outlook p {
                         </tr>
                       </table>
           
-                      <table class="six columns">
-                        <tr>
-                          <td class="panel">
-                            <h2><?php echo $subtitle; ?></h2>
-                          </td>
-                          
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
           
                       <table class="six columns">
                         <tr>
                           <td>
-                            <br>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet.</p>
                             
                             <table class="button">
                               <tr>
