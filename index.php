@@ -42,12 +42,11 @@ class SPL_Mailgun_Newsletter {
 		//$this->registerPostTemplates();
 		
 		add_action( 'init', array( $this, 'registerPostType' ) );
-		
 		add_action( 'init', array($this, 'initCmbMetaBoxes'), 9999 );
 
 		add_action( 'save_post', array( $this, 'registerSaveHandler' ) );
 
-		//add_filter( 'template_include', array($this, 'registerPostTemplates'));
+		add_filter( 'template_include', array($this, 'registerPostTemplates'));
 		add_filter( 'cmb_meta_boxes', array($this, 'getNewsletterCmbMetaBoxes') );
 		
 	} // initNewsletter()
