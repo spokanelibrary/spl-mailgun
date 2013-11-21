@@ -904,8 +904,7 @@ body.outlook p {
                       <table class="six columns">
                         <tr>
                           <td>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet.</p>
+                            <?php echo $content; ?>
                           </td>
                           <td class="expander"></td>
                         </tr>
