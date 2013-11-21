@@ -40,7 +40,7 @@ class SPL_Mailgun_Newsletter {
 
 	function initNewsletter() {
 		//$this->registerPostTemplates();
-
+		/*
 		add_action( 'init', array( $this, 'registerPostType' ) );
 		add_action( 'init', array($this, 'initCmbMetaBoxes'), 9999 );
 
@@ -48,7 +48,7 @@ class SPL_Mailgun_Newsletter {
 
 		add_filter( 'template_include', array($this, 'registerPostTemplates'));
 		add_filter( 'cmb_meta_boxes', array($this, 'getNewsletterCmbMetaBoxes') );
-		
+		*/
 	} // initNewsletter()
 
 	function registerPostTemplates() {
