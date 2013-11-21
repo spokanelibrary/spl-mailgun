@@ -885,7 +885,7 @@ body.outlook p {
                 <table class="row">
                   <tr>
                     <td class="wrapper">
-                      <table class="six columns">
+                      <table class="twelve columns">
                         <tr>
                           <td>
                             <h2><?php echo $title; ?></h2>
