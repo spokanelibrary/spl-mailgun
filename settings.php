@@ -24,9 +24,9 @@ class SPL_Mailgun_Newsletter_Settings {
     $config = new stdClass();
 
     $headings = array(
-                      'spl-mailgun-newsletter-api' => 'Dig it: all Mailgun settings are REQUIRED'
-                    , 'spl-mailgun-newsletter-display' => 'Filter Posts shown in "Add Posts to Newsletter" menus' 
-                    , 'spl-mailgun-newsletter-defaults' => 'Be sensible.' 
+                  'spl-mailgun-newsletter-api' => 'Dig it: all Mailgun settings are REQUIRED'
+                , 'spl-mailgun-newsletter-display' => 'Filter Posts shown in "Add Posts to Newsletter" menus' 
+                , 'spl-mailgun-newsletter-defaults' => 'Be sensible.' 
                 );
     $config->headings = $headings;
 
@@ -61,7 +61,7 @@ class SPL_Mailgun_Newsletter_Settings {
 
     add_settings_section(
       'spl-mailgun-newsletter-api'              // id
-    , 'Mailgun Api Config'                            // title
+    , 'Mailgun Api Config'                      // title
     , array( $this, 'getSectionHeading' )       // callback
     , 'spl-mailgun-newsletter-settings'         // page
     );  
