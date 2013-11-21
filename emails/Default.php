@@ -885,11 +885,17 @@ body.outlook p {
                 <table class="row">
                   <tr>
                     <td class="wrapper">
-          
                       <table class="six columns">
                         <tr>
                           <td>
                             <h2><?php echo $title; ?></h2>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>  
+                      <table class="six columns">
+                        <tr>
+                          <td>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet.</p>
                           </td>
