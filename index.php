@@ -39,7 +39,7 @@ class SPL_Mailgun_Newsletter {
 	}
 
 	function initNewsletter() {
-		$this->registerPostTemplates();
+		//$this->registerPostTemplates();
 
 		add_action( 'init', array( $this, 'registerPostType' ) );
 		add_action( 'init', array($this, 'initCmbMetaBoxes'), 9999 );
@@ -384,7 +384,6 @@ class SPL_Mailgun_Newsletter {
 		//$msg = print_r($msg, true);
 		//$msg = $id.'<br />'.$list.'<br />'.$address.'<br />'.$template;
 
-
 		$from = $this->getMailgunFrom();
 		$html = $this->getNewsletterHTML($id, $template);
 
@@ -397,8 +396,6 @@ class SPL_Mailgun_Newsletter {
 			$response = $this->sendMailgunMessage($from, $list, $subject, $html);
 			$this->notifyMailgunResponse($response, $list);
 		}
-		
-		add_action( 'admin_head', 'my message' );
 		
 	} // processNewsletter()
 
