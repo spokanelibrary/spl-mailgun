@@ -259,7 +259,7 @@ class SPL_Mailgun_Newsletter {
                                           , array('name' => 'Attribution'
                                                 , 'desc' => 'callout attribution (optional)'
                                                 , 'id' => $prefix . 'sidebar_attribution'
-                                                , 'type' => 'textarea_small'
+                                                , 'type' => 'text'
                                             )
                                       )
                     );
