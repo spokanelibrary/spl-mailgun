@@ -12,7 +12,7 @@
 	<div class="page-header">
     <h1>
     	News &amp; Ideas
-    	<small>from the Library</small>
+    	<small>from your local Library</small>
     </h1>
     <?php// get_template_part('templates/entry-meta'); ?>
   </div>
