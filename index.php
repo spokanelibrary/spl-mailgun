@@ -370,7 +370,7 @@ class SPL_Mailgun_Newsletter {
     }
     // remove dimensions from images,, does not need it!
     //$html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
-    $html = preg_replace( '/(width|height)=\"\d*\"\s/', ' width=50px ', $html );
+    $html = preg_replace( '/(width|height)=\"\d*\"\s/', ' width=50% style="width:50%;" ', $html );
     return $html;
   }
 
