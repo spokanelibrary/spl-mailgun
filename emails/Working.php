@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width"/>
   <style>
 /**********************************************
-* Ink v1.0.4 - Copyright 2013 ZURB Inc        *
+* Ink v1.0.3 - Copyright 2013 ZURB Inc        *
 **********************************************/
 
 /* Client-specific Styles & Reset */
@@ -137,10 +137,6 @@ table.column td.sub-column {
   padding-right: 10px;
 }
 
-td.sub-column, td.sub-columns {
-  min-width: 0px;
-}
-
 table.row td.last,
 table.container td.last {
   padding-right: 0px;
@@ -227,23 +223,16 @@ td.expander {
   padding: 0 !important;
 }
 
-table.columns .text-pad,
-table.column .text-pad {
+table.columns .text-pad {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-table.columns .left-text-pad,
-table.columns .text-pad-left,
-table.column .left-text-pad,
-table.column .text-pad-left {
+table.columns .left-text-pad {
   padding-left: 10px;
 }
 
-table.columns .right-text-pad,
-table.columns .text-pad-right,
-table.column .right-text-pad,
-table.column .text-pad-right {
+table.columns .right-text-pad {
   padding-right: 10px;
 }
 
@@ -373,7 +362,7 @@ h3 a,
 h4 a, 
 h5 a, 
 h6 a {
-  color: #2ba6cb;
+  color: #2ba6cb !important;
 }
 
 h1 a:active, 
@@ -561,6 +550,125 @@ table.round td {
   border-radius: 500px;
 }
 
+.button table,
+.tiny-button table,
+.small-button table,
+.medium-button table,
+.large-button table {
+  width: 100%;
+  overflow: hidden;
+}
+
+.button table td,
+.tiny-button table td,
+.small-button table td,
+.medium-button table td,
+.large-button table td {
+  display: block;
+  width: auto !important;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  background: #2ba6cb;
+  border: 1px solid #2284a1;
+}
+
+.tiny-button table td {
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.button table td,
+.small-button table td {
+  padding: 8px 15px;
+  font-size: 16px;
+}
+
+.medium-button table td {
+  padding: 12px 24px;
+  font-size: 20px;
+}
+
+.large-button table td {
+  padding: 21px 30px;
+  font-size: 24px;
+}
+
+.button:hover table td,
+.tiny-button:hover table td,
+.small-button:hover table td,
+.medium-button:hover table td,
+.large-button:hover table td {
+  background: #2795b6 !important;
+}
+
+.button,
+.button:hover,
+.button:active,
+.button:visited,
+.tiny-button,
+.tiny-button:hover,
+.tiny-button:active,
+.tiny-button:visited,
+.small-button,
+.small-button:hover,
+.small-button:active,
+.small-button:visited,
+.medium-button,
+.medium-button:hover,
+.medium-button:active,
+.medium-button:visited,
+.large-button,
+.large-button:hover,
+.large-button:active,
+.large-button:visited {
+  color: #ffffff !important; 
+  font-family: Helvetica, Arial, sans-serif; 
+  text-decoration: none;
+}
+
+.secondary table td {
+  background: #e9e9e9;
+  border-color: #d0d0d0;
+}
+
+.secondary:hover table td {
+  background: #d0d0d0 !important;
+}
+
+.success table td {
+  background: #5da423;
+  border-color: #457a1a;
+}
+
+.success:hover table td {
+  background: #457a1a !important;
+}
+
+.alert table td {
+  background: #c60f13;
+  border-color: #970b0e;
+}
+
+.alert:hover table td {
+  background: #970b0e !important;
+}
+
+.radius table td {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.round table td {
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+}
+
 /* Outlook First */
 
 body.outlook p {
@@ -632,13 +740,11 @@ body.outlook p {
     width: 9999px !important;
   }
 
-  table[class="body"] .right-text-pad,
-  table[class="body"] .text-pad-right {
+  table[class="body"] .right-text-pad {
     padding-left: 10px !important;
   }
 
-  table[class="body"] .left-text-pad,
-  table[class="body"] .text-pad-left {
+  table[class="body"] .left-text-pad {
     padding-right: 10px !important;
   }
 
@@ -689,10 +795,6 @@ body.outlook p {
       font-size: 11px;
     }
 
-    .callout .wrapper {
-      padding-bottom: 20px;
-    }
-
     .callout .panel {
       background: #ECF8FF;
       border-color: #b9e5ff;
@@ -735,6 +837,9 @@ body.outlook p {
     }
 
   </style>
+  <style>
+  <?php include(plugin_dir_path(__FILE__).'common/wordpress.css'); ?>
+  </style>
 </head>
 <body>
   <table class="body">
@@ -753,13 +858,13 @@ body.outlook p {
             
                         <table class="twelve columns">
                           <tr>
-                            <td class="six sub-columns">
+                            <td class="seven sub-columns">
                               <img src="http://placehold.it/200x50">
                             </td>
-                            <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
-                              <span class="template-label">BASIC</span>
+                            <td class="five sub-columns last" style="text-align:right; vertical-align:middle;">
+                              <span class="template-label">SIDEBAR</span>
                             </td>
-                            <td class="expander"></td>
+                                
                           </tr>
                         </table>
             
@@ -770,8 +875,10 @@ body.outlook p {
                 </center>
               </td>
             </tr>
-          </table> 
-
+          </table>
+         
+         <br>
+         
           <table class="container">
             <tr>
               <td>
@@ -779,49 +886,125 @@ body.outlook p {
                 <table class="row">
                   <tr>
                     <td class="wrapper last">
-                  
                       <table class="twelve columns">
                         <tr>
                           <td>
-                            <h1>Hi, Susan Calvin</h1>
-                            <p class="lead">Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae.</p>
-                            <p>Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae. consequat vel lacus. Sed iaculis pulvinar ligula, ornare fringilla ante viverra et. In hac habitasse platea dictumst. Donec vel orci mi, eu congue justo. Integer eget odio est, eget malesuada lorem. Aenean sed tellus dui, vitae viverra risus. Nullam massa sapien, pulvinar eleifend fringilla id, convallis eget nisi. Mauris a sagittis dui. Pellentesque non lacinia mi. Fusce sit amet libero sit amet erat venenatis sollicitudin vitae vel eros. Cras nunc sapien, interdum sit amet porttitor ut, congue quis urna.</p>
+                            <h2><?php echo $title; ?></h2>
                           </td>
                           <td class="expander"></td>
                         </tr>
-                      </table>
-                  
+                      </table> 
                     </td>
                   </tr>
                 </table>
               
-                <table class="row callout">
-                  <tr>
-                    <td class="wrapper last">
+              <!-- content start -->
+                <table class="row">
 
-                      <table class="twelve columns">
-                        <tr>
-                          <td class="panel">
-                            <p>Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae. <a href="#">Click it! »</a></p>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-
-                    </td>
-                  </tr>
-                </table>
-              
-                <table class="row footer">
                   <tr>
                     <td class="wrapper">
-                            
-                      <table class="six columns">
+                      
+                      <table class="seven columns">
                         <tr>
-                          <td class="left-text-pad">
+                          <td>
+                            <?php echo $content; ?>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+          
+          
+                      <table class="seven columns">
+                        <tr>
+                          <td>
+                            
+                            <table class="button">
+                              <tr>
+                                <td>
+                                  <a href="#">Click Me!</a>
+                                </td>
+                              </tr>
+                            </table>
+                            
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+          
+                    </td>
+                    <td class="wrapper last">
+          
+                      <table class="five columns">
+                        <tr>
+                          <td class="panel">
+                            <h6><?php echo $subtitle; ?></h6>
+                            <?php echo $sidebar; ?>
+                            <table>
+                              <tr>
+                                <td>
+                                  <a href="#">Just a Plain Link &raquo;</a>
+                                </td>
+                              </tr>
+                            </table>
+                            <hr>
+                            <table>
+                              <tr>
+                                <td>
+                                  <a href="#">Just a Plain Link &raquo;</a>
+                                </td>
+                              </tr>
+                            </table>
+                            <hr>
+                            <table>
+                              <tr>
+                                <td>
+                                  <a href="#">Just a Plain Link &raquo;</a>
+                                </td>
+                              </tr>
+                            </table>
+                            <hr>
+                            <table>
+                              <tr>
+                                <td>
+                                  <a href="#">Just a Plain Link &raquo;</a>
+                                </td>
+                              </tr>
+                            </table>
+                            <hr>
+                            <table>
+                              <tr>
+                                <td>
+                                  <a href="#">Just a Plain Link &raquo;</a>
+                                </td>
+                              </tr>
+                            </table>
+                            <hr>
+                            <table>
+                              <tr>
+                                <td>
+                                  <a href="#">Just a Plain Link &raquo;</a>
+                                </td>
+                              </tr>
+                            </table>
+                            <hr>
+                            <table>
+                              <tr>
+                                <td>
+                                  <a href="#">Just a Plain Link &raquo;</a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
 
-                            <h5>Connect With Us:</h5>
-
+                      <br>
+                      
+                      <table class="five columns">
+                        <tr>
+                          <td class="panel">
+                            <h6 style="margin-bottom:5px;">Connect With Us:</h6>
                             <table class="tiny-button facebook">
                               <tr>
                                 <td>
@@ -830,7 +1013,7 @@ body.outlook p {
                               </tr>
                             </table>
 
-                            <br>
+                            <hr>
 
                             <table class="tiny-button twitter">
                               <tr>
@@ -840,7 +1023,7 @@ body.outlook p {
                               </tr>
                             </table>
 
-                            <br>
+                            <hr>
 
                             <table class="tiny-button google-plus">
                               <tr>
@@ -849,6 +1032,31 @@ body.outlook p {
                                 </td>
                               </tr>
                             </table>
+                            <br>
+                            <h6 style="margin-bottom:5px;">Contact Info:</h6>
+                            <p>Phone: <b>408.341.0600</b></p>
+                            <p>Email: <a href="mailto:hseldon@trantor.com">hseldon@trantor.com</a></p>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+          
+                    </td>
+                  </tr>
+                </table>
+                <br>
+                <br>
+
+                <!-- Connect + Contact --> 
+                <table class="row footer">
+                  <tr>
+                    <td class="wrapper">
+                            
+                      <table class="six columns">
+                        <tr>
+                          <td class="left-text-pad">
+
+                            <h5>Connect With Us:</h5>
 
                           </td>
                           <td class="expander"></td>
@@ -861,9 +1069,7 @@ body.outlook p {
                       <table class="six columns">
                         <tr>
                           <td class="last right-text-pad">
-                            <h5>Contact Info:</h5>
-                            <p>Phone: 408.341.0600</p>
-                            <p>Email: <a href="mailto:hseldon@trantor.com">hseldon@trantor.com</a></p>
+                            test
                           </td>          
                           <td class="expander"></td>
                         </tr>
@@ -872,8 +1078,10 @@ body.outlook p {
                     </td>
                   </tr>
                 </table>
-              
-              
+                <br>
+                <br>
+
+                <!-- Legal + Unsubscribe -->            
                 <table class="row">
                   <tr>
                     <td class="wrapper last">
@@ -882,7 +1090,7 @@ body.outlook p {
                         <tr>
                           <td align="center">
                             <center>
-                              <p style="text-align:center;"><a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Unsubscribe</a></p>
+                              <p style="text-align:center;"><a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#"><unsubscribe>Unsubscribe</unsubscribe></a></p>
                             </center>
                           </td>
                           <td class="expander"></td>
