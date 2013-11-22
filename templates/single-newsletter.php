@@ -49,9 +49,11 @@
       </h3>
 
       <div class="panel panel-warning panel-callout-warning">
-        <div class="panel-body text-primary" style="font-style:italic;">
+        <div class="panel-body text-primary">
           <blockquote>
-          <?php spl_news_sidebar_callout($post); ?>
+            <div style="font-style:italic;">
+            <?php spl_news_sidebar_callout($post); ?>
+            </div>
           <small><?php spl_news_sidebar_attribution($post); ?></small>
           </blockquote>
         </div>
