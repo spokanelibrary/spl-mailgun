@@ -44,7 +44,7 @@
     	</div>
     </div><!-- /.col -->
     <div class="col-sm-4">
-      <div class="panel panel-warning panel-callout panel-callout-warning">
+      <div class="panel panel-warning panel-callout-warning">
         <?php spl_news_sidebar_callout($post); ?>
       </div>
     	<h3 class="text-primary">
