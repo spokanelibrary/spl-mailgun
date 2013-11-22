@@ -430,7 +430,7 @@ class SPL_Mailgun_Newsletter {
   } // processNewsletter()
 
   function notifyMailgunResponse($response, $list=null, $html=null) {
-    $response = 'You just sent a newsletter.'.PHP_EOL.'You are a very special snowflake.'.PHP_EOL.$response;
+    //$response = 'You just sent a newsletter.'.PHP_EOL.'You are a very special snowflake.'.PHP_EOL.$response;
     
     if ( !is_null($list) ) {
       $response .= PHP_EOL.$this->getMailgunMailingList($list);
