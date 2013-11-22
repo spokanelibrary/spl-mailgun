@@ -6,3 +6,5 @@
 
 	.wp-caption {  }
 	.wp-caption-text { clear: both; font-style: italic; }
+
+	.img-responsive { width:20px; }

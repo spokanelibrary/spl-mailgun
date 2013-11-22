@@ -360,11 +360,11 @@ class SPL_Mailgun_Newsletter {
   // MAILGUN INTEGRATION
 
   function filterNewsletterImages( $html ){
-    //$classes = 'img-responsive img-rounded'; // separated by spaces, e.g. 'img image-link'
-   
+    $classes = 'img-responsive img-rounded'; // separated by spaces, e.g. 'img image-link'
+
     // check if there are already classes assigned to the anchor
     if ( preg_match('/<img.*? class="/', $html) ) {
-      $html = preg_replace('/(<img.*? style="width:20px;" class=".*?)(".*?\/>)/', '$1 ' . $classes . ' $2', $html);
+      $html = preg_replace('/(<img.*? class=".*?)(".*?\/>)/', '$1 ' . $classes . ' $2', $html);
     } else {
       $html = preg_replace('/(<img.*?)(\/>)/', '$1 class="' . $classes . '" $2', $html);
     }
