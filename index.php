@@ -359,7 +359,7 @@ class SPL_Mailgun_Newsletter {
 
   // MAILGUN INTEGRATION
 
-  function filterNewsletterImages( $html ){
+  function filterNewsletterImages( $html, $sidebar=null ){
     $classes = 'img-responsive img-rounded'; // separated by spaces, e.g. 'img image-link'
 
     // check if there are already classes assigned to the anchor
@@ -371,9 +371,15 @@ class SPL_Mailgun_Newsletter {
     // remove dimensions from images
     //$html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
     // give fixed width to images
-    $html = preg_replace( '/(width|height)=\"\d*\"\s/', ' width=50% style="width:50%;" ', $html );
+    if ( !empty($sidebar) ) {
+      $html = preg_replace( '/(width|height)=\"\d*\"\s/', ' width=100% style="width:100%;" ', $html );
+    }
     return $html;
   }
+
+  function filterNewsletterSidebarImages($html) {
+    return $this->filterNewsletterImages($html, true);
+  } 
 
   function getNewsletterHTML($id, $template) {
     //return 'This is newsletter # '.$id;
@@ -381,9 +387,8 @@ class SPL_Mailgun_Newsletter {
     remove_filter( 'the_content','bootstrap_responsive_images',10 );
     remove_filter( 'post_thumbnail_html', 'bootstrap_responsive_images', 10 );
 
-    add_filter( 'the_content', array($this,'filterNewsletterImages'),10 );
-    add_filter( 'post_thumbnail_html', array($this, 'filterNewsletterImages'), 10 );
-
+    //add_filter( 'the_content', array($this,'filterNewsletterImages'),10 );
+    //add_filter( 'post_thumbnail_html', array($this, 'filterNewsletterImages'), 10 );
 
     $post = get_post($id);
     //$trace = print_r($post, true);
@@ -400,6 +405,9 @@ class SPL_Mailgun_Newsletter {
                           , true 
                           );
     
+    add_filter( 'the_content', array($this,'filterNewsletterSidebarImages'),10 );
+    add_filter( 'post_thumbnail_html', array($this, 'filterNewsletterSidebarImages'), 10 );
+    
     $sidebar = get_post_meta($id
                           , '_spl_mailgun_newsletter_sidebar_content'
                           , true 
@@ -409,9 +417,6 @@ class SPL_Mailgun_Newsletter {
                           ,apply_filters('the_content', $sidebar));
 
     
-
-
-    //$myvar = $newsletter['post_title'];
 
     //return print_r($_POST, true);
     $template = plugin_dir_path(__FILE__).'emails/'.$template;
