@@ -812,7 +812,7 @@ body.outlook p {
                         <tr>
                           <td>
                             <h2><?php echo $subtitle; ?></h2>
-                            <?php echo $content; ?>
+                            <?php echo $sidebar; ?>
                           </td>
                           <td class="expander"></td>
                         </tr>
