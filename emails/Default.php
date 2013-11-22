@@ -1058,16 +1058,6 @@ body.outlook p {
 
                             <h5>Connect With Us:</h5>
 
-                            <table class="tiny-button facebook">
-                              <tr>
-                                <td>
-                                  <a href="#">Facebook</a>
-                                </td>
-                              </tr>
-                            </table>
-
-                            
-
                           </td>
                           <td class="expander"></td>
                         </tr>
