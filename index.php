@@ -375,8 +375,9 @@ class SPL_Mailgun_Newsletter {
       ob_end_clean();
     }
 
-
-
+    $inliner = $this->config->custom->inliner->api.'raw';
+    $inlined = $this->curlJSON($inliner, array('source'=>$template));
+    $template = $inlined['html'];
     return $template;
 
     //return 'This is newsletter # '.$id;
@@ -407,14 +408,13 @@ class SPL_Mailgun_Newsletter {
   } // processNewsletter()
 
   function notifyMailgunResponse($response, $list=null, $html=null) {
+    /*
     if ( !is_null($html) ) {
       $inliner = $this->config->custom->inliner->api.'raw';
       $response .= $this->curlProxy($inliner, array('source'=>$html));
-      //$response .= $this->curlProxy($this->config->custom->inliner->api.'raw';
-      //$response .= $template = $this->curlProxy($this->config->custom->inliner->api.'raw', array('source', $template));
     }
+    */
     
-
     if ( !is_null($list) ) {
       $response .= PHP_EOL.$this->getMailgunMailingList($list);
     }
