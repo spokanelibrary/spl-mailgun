@@ -339,11 +339,13 @@ class SPL_Mailgun_Newsletter {
   // MAILGUN INTEGRATION
 
   function getNewsletterHTML($id, $template) {
+    //return 'This is newsletter # '.$id;
 
     remove_filter( 'the_content','bootstrap_responsive_images',10 );
     remove_filter( 'post_thumbnail_html', 'bootstrap_responsive_images', 10 );
 
     $post = get_post($id);
+    //$trace = print_r($post, true);
 
     $link = get_permalink($id);
 
@@ -352,14 +354,15 @@ class SPL_Mailgun_Newsletter {
                           ,array('<div', '</div>', '<div', '</div>')
                           ,apply_filters('the_content', $post->post_content));
 
-    $trace = print_r($post, true);
-
-    //$subtitle = 'MY SUBTITLE';
-    
     $subtitle = get_post_meta($id
                           , '_spl_mailgun_newsletter_sidebar_headline'
                           , true 
                           );
+    $sidebar = get_post_meta($id
+                          , '_spl_mailgun_newsletter_sidebar_content'
+                          , true 
+                          );
+
     
 
 
@@ -368,7 +371,6 @@ class SPL_Mailgun_Newsletter {
     //return print_r($_POST, true);
     $template = plugin_dir_path(__FILE__).'emails/'.$template;
     if ( file_exists($template) ) {
-      //$template = file_get_contents($template);
       ob_start();
       include($template);
       $template = ob_get_contents();
@@ -377,12 +379,9 @@ class SPL_Mailgun_Newsletter {
 
     $inliner = $this->config->custom->inliner->api.'raw';
     $inlined = $this->curlJSON($inliner, array('source'=>$template));
-    //print_r($inlined);
     $template = $inlined->html;
 
     return $template;
-
-    //return 'This is newsletter # '.$id;
   }
 
   function getNewsletterDefaultSubject() {

@@ -935,7 +935,7 @@ body.outlook p {
                         <tr>
                           <td class="panel">
                             <h6><?php echo $subtitle; ?></h6>
-                            <p>Sub-head or something</p>
+                            <?php echo $sidebar; ?>
                             <table>
                               <tr>
                                 <td>
