@@ -50,7 +50,10 @@
 
       <div class="panel panel-warning panel-callout-warning">
         <div class="panel-body text-primary" style="font-style:italic;">
+          <blockquote>
           <?php spl_news_sidebar_callout($post); ?>
+          <small><?php spl_news_sidebar_attribution($post); ?></small>
+          </blockquote>
         </div>
       </div>
     	

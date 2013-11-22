@@ -252,12 +252,12 @@ class SPL_Mailgun_Newsletter {
                         , 'show_names' => false
                         , 'fields' => array(
                                             array('name' => 'Callout'
-                                                , 'desc' => 'callout box (optional)'
+                                                , 'desc' => 'optional callout box'
                                                 , 'id' => $prefix . 'sidebar_callout'
                                                 , 'type' => 'textarea_small'
                                             )
                                           , array('name' => 'Attribution'
-                                                , 'desc' => 'callout attribution (optional)'
+                                                , 'desc' => 'optional callout attribution'
                                                 , 'id' => $prefix . 'sidebar_attribution'
                                                 , 'type' => 'text'
                                             )

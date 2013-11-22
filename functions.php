@@ -21,6 +21,11 @@ function spl_news_sidebar_callout($post) {
                     ,'_spl_mailgun_newsletter_sidebar_callout'
                     ,true 
                     ));
+  function spl_news_sidebar_attribution($post) {
+  echo get_post_meta($post->ID
+                    ,'_spl_mailgun_newsletter_sidebar_attribution'
+                    ,true 
+                    );
 }
 
 function spl_news_post_select($post, $id) {
