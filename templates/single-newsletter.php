@@ -45,7 +45,7 @@
     </div><!-- /.col -->
     <div class="col-sm-4">
       <blockquote>
-        <php spl_news_sidebar_callout(); ?>
+        <?php spl_news_sidebar_callout($post); ?>
       </blockquote>
     	<h3 class="text-primary">
     		<?php spl_news_sidebar_headline($post); ?>
