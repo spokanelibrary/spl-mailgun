@@ -858,10 +858,10 @@ body.outlook p {
             
                         <table class="twelve columns">
                           <tr>
-                            <td class="six sub-columns">
+                            <td class="seven sub-columns">
                               <img src="http://placehold.it/200x50">
                             </td>
-                            <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
+                            <td class="five sub-columns last" style="text-align:right; vertical-align:middle;">
                               <span class="template-label">SIDEBAR</span>
                             </td>
                                 
@@ -904,7 +904,7 @@ body.outlook p {
                   <tr>
                     <td class="wrapper">
                       
-                      <table class="six columns">
+                      <table class="seven columns">
                         <tr>
                           <td>
                             <?php echo $content; ?>
@@ -914,7 +914,7 @@ body.outlook p {
                       </table>
           
           
-                      <table class="six columns">
+                      <table class="seven columns">
                         <tr>
                           <td>
                             
@@ -934,7 +934,7 @@ body.outlook p {
                     </td>
                     <td class="wrapper last">
           
-                      <table class="six columns">
+                      <table class="five columns">
                         <tr>
                           <td class="panel">
                             <h6><?php echo $subtitle; ?></h6>
@@ -1001,7 +1001,7 @@ body.outlook p {
 
                       <br>
                       
-                      <table class="six columns">
+                      <table class="five columns">
                         <tr>
                           <td class="panel">
                             <h6 style="margin-bottom:5px;">Connect With Us:</h6>
