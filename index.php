@@ -359,7 +359,7 @@ class SPL_Mailgun_Newsletter {
 
   // MAILGUN INTEGRATION
 
-  function bootstrap_responsive_images( $html ){
+  function filterNewsletterImages( $html ){
     //$classes = 'img-responsive img-rounded'; // separated by spaces, e.g. 'img image-link'
    
     // check if there are already classes assigned to the anchor
