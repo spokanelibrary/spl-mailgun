@@ -1056,7 +1056,35 @@ body.outlook p {
                         <tr>
                           <td class="left-text-pad">
 
-                            test
+                            <h5>Connect With Us:</h5>
+
+                            <table class="tiny-button facebook">
+                              <tr>
+                                <td>
+                                  <a href="#">Facebook</a>
+                                </td>
+                              </tr>
+                            </table>
+
+                            <br>
+
+                            <table class="tiny-button twitter">
+                              <tr>
+                                <td>
+                                  <a href="#">Twitter</a>
+                                </td>
+                              </tr>
+                            </table>
+
+                            <br>
+
+                            <table class="tiny-button google-plus">
+                              <tr>
+                                <td>
+                                  <a href="#">Google +</a>
+                                </td>
+                              </tr>
+                            </table>
 
                           </td>
                           <td class="expander"></td>
