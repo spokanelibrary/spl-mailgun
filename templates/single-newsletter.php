@@ -45,7 +45,9 @@
     </div><!-- /.col -->
     <div class="col-sm-4">
       <div class="panel panel-warning panel-callout-warning">
-        <?php spl_news_sidebar_callout($post); ?>
+        <div class="panel-body text-primary italic">
+          <?php spl_news_sidebar_callout($post); ?>
+        </div>
       </div>
     	<h3 class="text-primary">
     		<?php spl_news_sidebar_headline($post); ?>
