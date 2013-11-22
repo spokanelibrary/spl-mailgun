@@ -838,7 +838,7 @@ body.outlook p {
 
   </style>
   <style>
-  <?php include(plugin_dir_path(__FILE__).'wordpress.css'); ?>
+  <?php include(plugin_dir_path(__FILE__).'dev/wordpress.css'); ?>
   </style>
 </head>
 <body>
