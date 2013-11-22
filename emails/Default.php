@@ -334,12 +334,12 @@ h1, h2, h3, h4, h5, h6 {
   word-break: normal;
 }
 
-h1 {font-size: 20px;}
-h2 {font-size: 18px;}
-h3 {font-size: 16px;}
-h4 {font-size: 14px;}
-h5 {font-size: 12px;}
-h6 {font-size: 10px;}
+h1 {font-size: 24px;}
+h2 {font-size: 20px;}
+h3 {font-size: 18px;}
+h4 {font-size: 16px;}
+h5 {font-size: 14px;}
+h6 {font-size: 12px;}
 /*
 h1 {font-size: 40px;}
 h2 {font-size: 36px;}
