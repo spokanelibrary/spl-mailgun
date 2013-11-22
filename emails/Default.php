@@ -699,7 +699,8 @@ body.outlook p {
     }
 
     .header {
-      background: #999999;
+      /*background: #999999;*/
+      background: #0064A0;
     }
 
     .footer .wrapper {
