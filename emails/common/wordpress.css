@@ -7,4 +7,4 @@
 	.wp-caption {  }
 	.wp-caption-text { clear: both; font-style: italic; }
 
-	.img-responsive { max-width:100px; }
+	.img-responsive { max-width:100px !important; }
