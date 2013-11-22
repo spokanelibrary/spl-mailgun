@@ -408,7 +408,7 @@ class SPL_Mailgun_Newsletter {
 
   function notifyMailgunResponse($response, $list=null, $template=null) {
     if ( !is_null($template) ) {
-      $response .= print_r($this->config->custom);
+      $response .= print_r($this->config->custom->inliner);
       //$response .= $this->curlProxy($this->config->custom->inliner->api.'raw';
       //$response .= $template = $this->curlProxy($this->config->custom->inliner->api.'raw', array('source', $template));
     }
