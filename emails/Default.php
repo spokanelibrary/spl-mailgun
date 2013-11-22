@@ -757,7 +757,7 @@ body.outlook p {
                         <table class="twelve columns">
                           <tr>
                             <td class="six sub-columns">
-                              <img src="http://placehold.it/200x50">
+                              <img src="beta.spokanelibrary.org/assets/img/SPL-Logo-inverse.png">
                             </td>
                             <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
                               <span class="template-label">BASIC</span>
