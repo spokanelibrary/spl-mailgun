@@ -837,6 +837,9 @@ body.outlook p {
     }
 
   </style>
+  <style>
+  <?php include('wordpress.css'); ?>
+  </style>
 </head>
 <body>
   <table class="body">
