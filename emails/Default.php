@@ -907,6 +907,7 @@ body.outlook p {
                       <table class="six columns">
                         <tr>
                           <td>
+                            <?php echo plugin_dir_path(__FILE__); ?>
                             <?php echo $content; ?>
                           </td>
                           <td class="expander"></td>
