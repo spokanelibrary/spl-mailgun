@@ -49,12 +49,10 @@
       </h3>
 
       <div class="panel panel-warning panel-callout-warning">
-        <div class="panel-body text-primary">
-          <blockquote>  
+        <div class="panel-body text-primary lead">
           <em>
           <?php spl_news_sidebar_callout($post); ?>
           </em>
-          </blockquote>
         </div>
       </div>
     	
