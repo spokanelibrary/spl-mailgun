@@ -1047,13 +1047,22 @@ body.outlook p {
                 <br>
                 <br>
 
+                <!-- Connect + Contact --> 
                 <table class="row">
                   <tr>
                     <td class="wrapper last">
-                      <table class="twelve columns">
+                      <table class="six columns">
                         <tr>
                           <td>
-                            <h2><?php echo $title; ?></h2>
+                            <h2>Contact</h2>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table> 
+                      <table class="six columns">
+                        <tr>
+                          <td>
+                            <h2>Connect</h2>
                           </td>
                           <td class="expander"></td>
                         </tr>
