@@ -781,7 +781,7 @@ body.outlook p {
               
                 <table class="row">
                   <tr>
-                    <td class="wrapper last">
+                    <td class="wrapper">
                   
                       <table class="eight columns">
                         <tr>
@@ -793,8 +793,9 @@ body.outlook p {
                           <td class="expander"></td>
                         </tr>
                       </table>
-
-                      <table class="4 columns">
+                    </td>
+                    <td class="wrapper last">
+                      <table class="four columns">
                         <tr>
                           <td>
                             <h1>Hi, Susan Calvin</h1>
