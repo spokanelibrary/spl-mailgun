@@ -359,11 +359,30 @@ class SPL_Mailgun_Newsletter {
 
   // MAILGUN INTEGRATION
 
+  function bootstrap_responsive_images( $html ){
+    //$classes = 'img-responsive img-rounded'; // separated by spaces, e.g. 'img image-link'
+   
+    // check if there are already classes assigned to the anchor
+    if ( preg_match('/<img.*? class="/', $html) ) {
+      $html = preg_replace('/(<img.*? class=".*?)(".*?\/>)/', '$1 ' . $classes . ' $2', $html);
+    } else {
+      $html = preg_replace('/(<img.*?)(\/>)/', '$1 class="' . $classes . '" $2', $html);
+    }
+    // remove dimensions from images,, does not need it!
+    //$html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
+    $html = preg_replace( '/(width|height)=\"\d*\"\s/', "20px", $html );
+    return $html;
+  }
+
   function getNewsletterHTML($id, $template) {
     //return 'This is newsletter # '.$id;
 
     remove_filter( 'the_content','bootstrap_responsive_images',10 );
     remove_filter( 'post_thumbnail_html', 'bootstrap_responsive_images', 10 );
+
+    add_filter( 'the_content', array($this,'filterNewsletterImages'),10 );
+    add_filter( 'post_thumbnail_html', array($this, 'filterNewsletterImages'), 10 );
+
 
     $post = get_post($id);
     //$trace = print_r($post, true);
