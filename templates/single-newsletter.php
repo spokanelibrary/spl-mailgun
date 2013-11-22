@@ -48,8 +48,8 @@
         <?php spl_news_sidebar_headline($post); ?>
       </h3>
 
-      <div class="panel panel-warning">
-        <div class="panel-body text-warning" style="font-style:italic;">
+      <div class="panel panel-warning panel-callout-warning">
+        <div class="panel-body text-primary" style="font-style:italic;">
           <?php spl_news_sidebar_callout($post); ?>
         </div>
       </div>

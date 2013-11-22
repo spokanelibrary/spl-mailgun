@@ -252,8 +252,13 @@ class SPL_Mailgun_Newsletter {
                         , 'show_names' => false
                         , 'fields' => array(
                                             array('name' => 'Callout'
-                                                , 'desc' => 'callout box'
+                                                , 'desc' => 'callout box (optional)'
                                                 , 'id' => $prefix . 'sidebar_callout'
+                                                , 'type' => 'textarea_small'
+                                            )
+                                          , array('name' => 'Attribution'
+                                                , 'desc' => 'callout attribution (optional)'
+                                                , 'id' => $prefix . 'sidebar_attribution'
                                                 , 'type' => 'textarea_small'
                                             )
                                       )
