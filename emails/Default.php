@@ -838,7 +838,7 @@ body.outlook p {
 
   </style>
   <style>
-  <?php include('wordpress.css'); ?>
+  <?php include(plugin_dir_path(__FILE__).'wordpress.css'); ?>
   </style>
 </head>
 <body>
@@ -907,7 +907,6 @@ body.outlook p {
                       <table class="six columns">
                         <tr>
                           <td>
-                            <?php echo plugin_dir_path(__FILE__); ?>
                             <?php echo $content; ?>
                           </td>
                           <td class="expander"></td>
