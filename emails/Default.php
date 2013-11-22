@@ -1046,7 +1046,7 @@ body.outlook p {
                 </table>
                 <br>
                 <br>
-                <!-- Contact + Connect -->            
+                           
                 <table class="row footer">
                   <tr>
                     <td class="wrapper">
