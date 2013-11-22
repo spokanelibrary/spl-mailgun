@@ -378,7 +378,8 @@ class SPL_Mailgun_Newsletter {
     $inliner = $this->config->custom->inliner->api.'raw';
     $inlined = $this->curlJSON($inliner, array('source'=>$template));
     print_r($inlined);
-    $template = $inlined['html'];
+    $template = $inlined->html;
+
     return $template;
 
     //return 'This is newsletter # '.$id;
