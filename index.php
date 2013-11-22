@@ -410,9 +410,6 @@ class SPL_Mailgun_Newsletter {
   }
 
   function processNewsletter($id, $subject, $list, $address, $template) {
-    //$msg = $this->getMailgunAddressValidation('sgirard@spokanelibrary.org');
-    //$msg = print_r($msg, true);
-    //$msg = $id.'<br />'.$list.'<br />'.$address.'<br />'.$template;
 
     $from = $this->getMailgunFrom();
     $html = $this->getNewsletterHTML($id, $template);
@@ -434,8 +431,8 @@ class SPL_Mailgun_Newsletter {
     
     
     if ( !is_null($address) ) {
-      //$response .= PHP_EOL.$this->getMailgunAddressValidation($address);
-      $response .= PHP_EOL.$address;
+      $response .= PHP_EOL.$this->getMailgunAddressValidation($address);
+      //$response .= PHP_EOL.$address;
     }
     
     if ( !is_null($list) ) {
@@ -468,7 +465,7 @@ class SPL_Mailgun_Newsletter {
     $auth = $this->getMailgunPublicAuth();
     $params = array('address'=>$address);
 
-    return $this->curlJSON($api, $params, 'get', $auth);
+    return $this->curlProxy($api, $params, 'get', $auth);
   } // getMailgunAddressValidation()
 
   function getMailgunMailingList($address) {
