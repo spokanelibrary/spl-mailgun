@@ -254,7 +254,7 @@ class SPL_Mailgun_Newsletter {
                                             array('name' => 'Callout'
                                                 , 'desc' => 'callout box'
                                                 , 'id' => $prefix . 'sidebar_callout'
-                                                , 'type' => 'textarea'
+                                                , 'type' => 'textarea_small'
                                             )
                                       )
                     );
