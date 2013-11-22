@@ -47,12 +47,14 @@
       <h3 class="text-primary">
         <?php spl_news_sidebar_headline($post); ?>
       </h3>
-      
+
       <div class="panel panel-warning panel-callout-warning">
         <div class="panel-body text-primary">
+          <blockquote>  
           <em>
           <?php spl_news_sidebar_callout($post); ?>
           </em>
+          </blockquote>
         </div>
       </div>
     	
