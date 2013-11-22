@@ -372,7 +372,7 @@ class SPL_Mailgun_Newsletter {
     //$html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
     // give fixed width to images
     if ( !empty($sidebar) ) {
-      $html = preg_replace( '/(width|height)=\"\d*\"\s/', ' width="130px" style="width:130px;" ', $html );
+      $html = preg_replace( '/(width|height)=\"\d*\"\s/', ' width="'.$this->config->custom->sidebar->img_width.'" style="" ', $html );
     }
     return $html;
   }
