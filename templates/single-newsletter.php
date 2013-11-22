@@ -44,14 +44,18 @@
     	</div>
     </div><!-- /.col -->
     <div class="col-sm-4">
+      <h3 class="text-primary">
+        <?php spl_news_sidebar_headline($post); ?>
+      </h3>
+      
       <div class="panel panel-warning panel-callout-warning">
-        <div class="panel-body text-primary italic">
+        <div class="panel-body text-primary">
+          <em>
           <?php spl_news_sidebar_callout($post); ?>
+          </em>
         </div>
       </div>
-    	<h3 class="text-primary">
-    		<?php spl_news_sidebar_headline($post); ?>
-			</h3>
+    	
 			<aside class="aside">
 		  	<?php spl_news_sidebar_content($post); ?>
 		  	<hr />
