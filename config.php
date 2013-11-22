@@ -18,6 +18,11 @@ class SPL_Mailgun_Newsletter_Config {
     
     $settings->post_type = 'newsletter';
 
+    $inliner = new stdClass();
+    $inliner->api = 'http://skate.zurb.com/api/v1/';
+
+    $settings->inliner = $inliner;
+
     $mailgun = new stdClass();
     $mailgun->api = 'https://api.mailgun.net/v2/';
     $mailgun->user = 'api';
