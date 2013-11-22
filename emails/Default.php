@@ -1048,25 +1048,63 @@ body.outlook p {
                 <br>
 
                 <!-- Connect + Contact --> 
-                <table class="row">
+                <table class="row footer">
                   <tr>
+                    <td class="wrapper">
+                            
+                      <table class="six columns">
+                        <tr>
+                          <td class="left-text-pad">
+
+                            <h5>Connect With Us:</h5>
+
+                            <table class="tiny-button facebook">
+                              <tr>
+                                <td>
+                                  <a href="#">Facebook</a>
+                                </td>
+                              </tr>
+                            </table>
+
+                            <br>
+
+                            <table class="tiny-button twitter">
+                              <tr>
+                                <td>
+                                  <a href="#">Twitter</a>
+                                </td>
+                              </tr>
+                            </table>
+
+                            <br>
+
+                            <table class="tiny-button google-plus">
+                              <tr>
+                                <td>
+                                  <a href="#">Google +</a>
+                                </td>
+                              </tr>
+                            </table>
+
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+
+                    </td>
                     <td class="wrapper last">
+
                       <table class="six columns">
                         <tr>
-                          <td>
-                            <h2>Contact</h2>
-                          </td>
+                          <td class="last right-text-pad">
+                            <h5>Contact Info:</h5>
+                            <p>Phone: 408.341.0600</p>
+                            <p>Email: <a href="mailto:hseldon@trantor.com">hseldon@trantor.com</a></p>
+                          </td>          
                           <td class="expander"></td>
                         </tr>
-                      </table> 
-                      <table class="six columns">
-                        <tr>
-                          <td>
-                            <h2>Connect</h2>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table> 
+                      </table>
+
                     </td>
                   </tr>
                 </table>
