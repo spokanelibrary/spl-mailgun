@@ -377,6 +377,7 @@ class SPL_Mailgun_Newsletter {
 
     $inliner = $this->config->custom->inliner->api.'raw';
     $inlined = $this->curlJSON($inliner, array('source'=>$template));
+    print_r($inlined);
     $template = $inlined['html'];
     return $template;
 
@@ -397,7 +398,7 @@ class SPL_Mailgun_Newsletter {
 
     if ( !empty($address) ) {
       $response = $this->sendMailgunMessage($from, $address, $subject, $html);
-      $this->notifyMailgunResponse($response, null, $html);
+      $this->notifyMailgunResponse($response, null);
     }
 
     if ( !empty($list) ) {
