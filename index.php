@@ -243,6 +243,22 @@ class SPL_Mailgun_Newsletter {
                                       )
                     );
 
+    $meta_boxes[] = array('id' => $prefix . 'sidebar_callout_id'
+                        , 'title' => 'Sidebar Callout'
+                        , 'pages' => array('newsletter') // post type
+                        //, 'show_on' => array()
+                        , 'context' => 'normal'
+                        , 'priority' => 'high'
+                        , 'show_names' => false
+                        , 'fields' => array(
+                                            array('name' => 'Callout'
+                                                , 'desc' => 'callout box'
+                                                , 'id' => $prefix . 'sidebar_callout'
+                                                , 'type' => 'textarea'
+                                            )
+                                      )
+                    );
+
     $meta_boxes[] = array('id' => $prefix . 'sidebar_content_id'
                         , 'title' => 'Sidebar Content'
                         , 'pages' => array('newsletter') // post type
