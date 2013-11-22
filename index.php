@@ -362,8 +362,8 @@ class SPL_Mailgun_Newsletter {
   function getNewsletterHTML($id, $template) {
     //return 'This is newsletter # '.$id;
 
-    //remove_filter( 'the_content','bootstrap_responsive_images',10 );
-    //remove_filter( 'post_thumbnail_html', 'bootstrap_responsive_images', 10 );
+    remove_filter( 'the_content','bootstrap_responsive_images',10 );
+    remove_filter( 'post_thumbnail_html', 'bootstrap_responsive_images', 10 );
 
     $post = get_post($id);
     //$trace = print_r($post, true);
