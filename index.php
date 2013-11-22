@@ -432,10 +432,11 @@ class SPL_Mailgun_Newsletter {
   function notifyMailgunResponse($response, $address=null, $list=null) {
     $response = 'You just sent out a newsletter.'.PHP_EOL.'You are a very special snowflake.'.PHP_EOL.$response;
     
+    /*
     if ( !is_null($address) ) {
       $response .= PHP_EOL.$this->getMailgunAddressValidation($address);
     }
-
+    */
     if ( !is_null($list) ) {
       $response .= PHP_EOL.$this->getMailgunMailingList($list);
     }
