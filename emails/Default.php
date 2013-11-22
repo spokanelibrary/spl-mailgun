@@ -778,7 +778,22 @@ body.outlook p {
           <table class="container">
             <tr>
               <td>
-              
+                
+                <table class="row">
+                  <tr>
+                    <td class="wrapper last">
+                      <table class="twelve columns">
+                        <tr>
+                          <td>
+                            <h1><?php echo $title; ?></h1>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table> 
+                    </td>
+                  </tr>
+                </table>
+
                 <table class="row">
                   <tr>
                     <td class="wrapper">
@@ -786,7 +801,6 @@ body.outlook p {
                       <table class="eight columns">
                         <tr>
                           <td>
-                            <h1>Hi, Susan Calvin</h1>
                             <p class="lead">Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae.</p>
                             <p>Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae. consequat vel lacus. Sed iaculis pulvinar ligula, ornare fringilla ante viverra et. In hac habitasse platea dictumst. Donec vel orci mi, eu congue justo. Integer eget odio est, eget malesuada lorem. Aenean sed tellus dui, vitae viverra risus. Nullam massa sapien, pulvinar eleifend fringilla id, convallis eget nisi. Mauris a sagittis dui. Pellentesque non lacinia mi. Fusce sit amet libero sit amet erat venenatis sollicitudin vitae vel eros. Cras nunc sapien, interdum sit amet porttitor ut, congue quis urna.</p>
                           </td>
@@ -798,7 +812,7 @@ body.outlook p {
                       <table class="four columns">
                         <tr>
                           <td>
-                            <h1>Hi, Susan Calvin</h1>
+                            <h2><h1><?php echo $subtitle; ?></h1></h2>
                             <p class="lead">Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae.</p>
                             <p>Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae. consequat vel lacus. Sed iaculis pulvinar ligula, ornare fringilla ante viverra et. In hac habitasse platea dictumst. Donec vel orci mi, eu congue justo. Integer eget odio est, eget malesuada lorem. Aenean sed tellus dui, vitae viverra risus. Nullam massa sapien, pulvinar eleifend fringilla id, convallis eget nisi. Mauris a sagittis dui. Pellentesque non lacinia mi. Fusce sit amet libero sit amet erat venenatis sollicitudin vitae vel eros. Cras nunc sapien, interdum sit amet porttitor ut, congue quis urna.</p>
                           </td>
