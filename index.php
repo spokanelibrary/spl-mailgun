@@ -419,19 +419,23 @@ class SPL_Mailgun_Newsletter {
 
     if ( !empty($address) ) {
       $response = $this->sendMailgunMessage($from, $address, $subject, $html);
-      $this->notifyMailgunResponse($response, null);
+      $this->notifyMailgunResponse($response, $address, null);
     }
 
     if ( !empty($list) ) {
       $response = $this->sendMailgunMessage($from, $list, $subject, $html);
-      $this->notifyMailgunResponse($response, $list);
+      $this->notifyMailgunResponse($response, null, $list);
     }
     
   } // processNewsletter()
 
-  function notifyMailgunResponse($response, $list=null, $html=null) {
+  function notifyMailgunResponse($response, $address=null, $list=null) {
     $response = 'You just sent out a newsletter.'.PHP_EOL.'You are a very special snowflake.'.PHP_EOL.$response;
     
+    if ( !is_null($address) ) {
+      $response .= PHP_EOL.$this->getMailgunAddressValidation($address);
+    }
+
     if ( !is_null($list) ) {
       $response .= PHP_EOL.$this->getMailgunMailingList($list);
     }
