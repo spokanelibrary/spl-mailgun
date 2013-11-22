@@ -53,7 +53,7 @@
           <div style="font-style:italic;">
           <?php spl_news_sidebar_callout($post); ?>
           </div>
-          <span class="help-block">&ndash; <?php spl_news_sidebar_attribution($post); ?></span>
+          <span class="help-block">&mdash;<?php spl_news_sidebar_attribution($post); ?></span>
         </div>
       </div>
     	
