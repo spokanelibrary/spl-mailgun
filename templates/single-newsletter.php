@@ -44,9 +44,11 @@
     	</div>
     </div><!-- /.col -->
     <div class="col-sm-4">
-      <blockquote>
+      <div class="panel panel-alert">
+        <div class="panel-body">
         <?php spl_news_sidebar_callout($post); ?>
-      </blockquote>
+        </div>
+      </div>
     	<h3 class="text-primary">
     		<?php spl_news_sidebar_headline($post); ?>
 			</h3>
