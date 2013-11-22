@@ -368,8 +368,9 @@ class SPL_Mailgun_Newsletter {
     } else {
       $html = preg_replace('/(<img.*?)(\/>)/', '$1 class="' . $classes . '" $2', $html);
     }
-    // remove dimensions from images,, does not need it!
+    // remove dimensions from images
     //$html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
+    // give fixed width to images
     $html = preg_replace( '/(width|height)=\"\d*\"\s/', ' width=50% style="width:50%;" ', $html );
     return $html;
   }
@@ -398,10 +399,14 @@ class SPL_Mailgun_Newsletter {
                           , '_spl_mailgun_newsletter_sidebar_headline'
                           , true 
                           );
+    
     $sidebar = get_post_meta($id
                           , '_spl_mailgun_newsletter_sidebar_content'
                           , true 
                           );
+    $sidebar = str_replace(array('<figure','</figure>','<figcaption','</figcaption>')
+                          ,array('<div', '</div>', '<div', '</div>')
+                          ,apply_filters('the_content', $sidebar));
 
     
 
