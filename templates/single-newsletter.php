@@ -49,10 +49,8 @@
       </h3>
 
       <div class="panel panel-warning panel-callout-warning">
-        <div class="panel-body text-primary">
-          <em>
+        <div class="panel-body text-primary" style="font-style:italic;">
           <?php spl_news_sidebar_callout($post); ?>
-          </em>
         </div>
       </div>
     	
