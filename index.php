@@ -396,7 +396,7 @@ class SPL_Mailgun_Newsletter {
 
     if ( !empty($address) ) {
       $response = $this->sendMailgunMessage($from, $address, $subject, $html);
-      $this->notifyMailgunResponse($response, null, $template);
+      $this->notifyMailgunResponse($response, null, $html);
     }
 
     if ( !empty($list) ) {
@@ -406,9 +406,10 @@ class SPL_Mailgun_Newsletter {
     
   } // processNewsletter()
 
-  function notifyMailgunResponse($response, $list=null, $template=null) {
+  function notifyMailgunResponse($response, $list=null, $html=null) {
     if ( !is_null($template) ) {
-      $response .= print_r($this->config->custom->inliner->api.'raw');
+      $inliner = $this->config->custom->inliner->api.'raw';
+      $response .= $this->curlProxy($inliner, array($html));
       //$response .= $this->curlProxy($this->config->custom->inliner->api.'raw';
       //$response .= $template = $this->curlProxy($this->config->custom->inliner->api.'raw', array('source', $template));
     }
