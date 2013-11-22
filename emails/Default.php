@@ -1081,7 +1081,7 @@ body.outlook p {
                             <table class="tiny-button google-plus">
                               <tr>
                                 <td>
-                                  <a href="#">Google +</a>
+                                  <a href="#">Google</a>
                                 </td>
                               </tr>
                             </table>
