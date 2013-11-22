@@ -334,20 +334,12 @@ h1, h2, h3, h4, h5, h6 {
   word-break: normal;
 }
 
-h1 {font-size: 24px;}
-h2 {font-size: 20px;}
-h3 {font-size: 18px;}
-h4 {font-size: 16px;}
-h5 {font-size: 14px;}
-h6 {font-size: 12px;}
-/*
 h1 {font-size: 40px;}
 h2 {font-size: 36px;}
 h3 {font-size: 32px;}
 h4 {font-size: 28px;}
 h5 {font-size: 24px;}
 h6 {font-size: 20px;}
-*/
 body, table.body, p {font-size: 14px;line-height:19px;}
 
 p { 
@@ -819,7 +811,7 @@ body.outlook p {
                     <td class="wrapper last">
                       <table class="four columns">
                         <tr>
-                          <td>
+                          <td class="panel sidebar">
                             <h2><?php echo $subtitle; ?></h2>
                             <?php echo $sidebar; ?>
                           </td>
