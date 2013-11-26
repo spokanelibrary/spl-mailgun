@@ -821,12 +821,7 @@ body.outlook p {
                           </td>
                           <td class="expander"></td>
                         </tr>
-                        <tr>
-                          <td class="sidebar">
-                            <p class="separator">&nbsp;</p>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
+
                         <tr>
                           <td class="sidebar">
                             <h2 class="subtitle"><?php echo $subtitle; ?></h2>
