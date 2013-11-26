@@ -817,7 +817,7 @@ body.outlook p {
                           <td class="expander"></td>
                         </tr>
                         <tr>
-                          <td class="panel sidebar">
+                          <td class="callout sidebar">
                             <h2><?php echo $sidebar; ?></h2>
                           </td>
                           <td class="expander"></td>
