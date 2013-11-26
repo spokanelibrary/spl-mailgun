@@ -699,8 +699,7 @@ body.outlook p {
     }
 
     .header {
-      /*background: #999999;*/
-      background: #0064A0;
+      background: #999999;
     }
 
     .footer .wrapper {
@@ -786,7 +785,7 @@ body.outlook p {
                       <table class="twelve columns">
                         <tr>
                           <td>
-                            <h2><?php echo $title; ?></h2>
+                            <h2 style="color:#0064A0;"><?php echo $title; ?></h2>
                           </td>
                           <td class="expander"></td>
                         </tr>
