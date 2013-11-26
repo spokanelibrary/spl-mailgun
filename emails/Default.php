@@ -786,7 +786,7 @@ body.outlook p {
                       <table class="twelve columns">
                         <tr>
                           <td>
-                            <h1><?php echo $title; ?></h1>
+                            <h2><?php echo $title; ?></h2>
                           </td>
                           <td class="expander"></td>
                         </tr>
@@ -817,7 +817,7 @@ body.outlook p {
                           <td class="expander"></td>
                         </tr>
                         <tr>
-                          <td class="panel sidebar">
+                          <td class="sidebar">
                             <h2><?php echo $sidebar; ?></h2>
                           </td>
                           <td class="expander"></td>
