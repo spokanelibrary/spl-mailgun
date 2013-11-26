@@ -5,6 +5,12 @@
   .title { color: #64964B; }
   .subtitle { color: #005587; }
 
+  .callout .warning {
+    background: #fefbed;
+    border-color: #f1e7bc;
+  }
+
+
 	.alignnone {  }
 	.aligncenter {  }
 
