@@ -395,7 +395,7 @@ class SPL_Mailgun_Newsletter {
 
     $link = get_permalink($id);
 
-    $date = $post->post_date;
+    $date = apply_filters('get_the_date', $post->post_date);
 
     $title = $post->post_title;
     $content = str_replace(array('<figure','</figure>','<figcaption','</figcaption>')
