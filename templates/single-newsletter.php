@@ -44,10 +44,6 @@
     	</div>
     </div><!-- /.col -->
     <div class="col-sm-4">
-      <h3 class="text-primary">
-        <?php spl_news_sidebar_headline($post); ?>
-      </h3>
-
       <div class="panel panel-warning panel-callout-warning">
         <div class="panel-body text-primary">
           <div style="font-style:italic;">
@@ -56,7 +52,11 @@
           <span class="help-block">&mdash;<?php spl_news_sidebar_attribution($post); ?></span>
         </div>
       </div>
-    	
+      
+      <h3 class="text-primary">
+        <?php spl_news_sidebar_headline($post); ?>
+      </h3>
+
 			<aside class="aside">
 		  	<?php spl_news_sidebar_content($post); ?>
 		  	<hr />
