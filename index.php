@@ -391,9 +391,11 @@ class SPL_Mailgun_Newsletter {
     //add_filter( 'post_thumbnail_html', array($this, 'filterNewsletterImages'), 10 );
 
     $post = get_post($id);
-    $trace = print_r($post, true);
+    //$trace = print_r($post, true);
 
     $link = get_permalink($id);
+
+    $date = the_date($id);
 
     $title = $post->post_title;
     $content = str_replace(array('<figure','</figure>','<figcaption','</figcaption>')
