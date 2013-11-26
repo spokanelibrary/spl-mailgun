@@ -795,7 +795,7 @@ body.outlook p {
                   </tr>
                 </table>
 
-                <table class="row">
+                <table class="row callout">
                   <tr>
                     <td class="wrapper">
                   
@@ -817,7 +817,7 @@ body.outlook p {
                           <td class="expander"></td>
                         </tr>
                         <tr>
-                          <td class="callout sidebar">
+                          <td class="sidebar">
                             <h2><?php echo $sidebar; ?></h2>
                           </td>
                           <td class="expander"></td>
