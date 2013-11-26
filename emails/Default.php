@@ -818,8 +818,9 @@ body.outlook p {
                         <tr>
                           <td class="warning panel sidebar">
                             <?php echo $callout; ?>
-                            <br />
+                            <p class="muted small">
                             —<?php echo $attribute; ?>
+                            </p>
                           </td>
                           <td class="expander"></td>
                         </tr>
