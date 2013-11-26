@@ -809,7 +809,6 @@ body.outlook p {
                     </td>
                     <td class="wrapper last">
                       <table class="four columns">
-                        
                         <tr>
                           <td class="warning panel sidebar">
                             <p class="highlight">
@@ -821,14 +820,18 @@ body.outlook p {
                           </td>
                           <td class="expander"></td>
                         </tr>
-
+                        <tr>
+                          <td class="sidebar">
+                            <p class="separator">&nbsp;</p>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
                         <tr>
                           <td class="sidebar">
                             <h2 class="subtitle"><?php echo $subtitle; ?></h2>
                           </td>
                           <td class="expander"></td>
                         </tr>
-                        
                         <tr>
                           <td class="panel sidebar">
                             <?php echo $sidebar; ?>
