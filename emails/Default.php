@@ -823,7 +823,7 @@ body.outlook p {
                         </tr>
                         <tr>
                           <td class="panel sidebar">
-                            <?php echo $callout; ?>
+                            <?php echo $sidebar; ?>
                           </td>
                           <td class="expander"></td>
                         </tr>
