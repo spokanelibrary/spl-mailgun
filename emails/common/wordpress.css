@@ -8,12 +8,12 @@
   .callout .warning {
     background: #fefbed;
     border-color: #f1e7bc;
-    color: #005587;
   }
 
   .separator { padding:0; margin: 0 0 4px 0 !important; }
 
   .muted { color: #666666; }
+  .highlight { color: #005587; }
   .small { font-size: 12px; }
 
 	.alignnone {  }
