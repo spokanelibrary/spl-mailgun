@@ -405,10 +405,10 @@ class SPL_Mailgun_Newsletter {
                           , true 
                           );
     
-    $callout = get_post_meta($id
+    $callout = nl2br(get_post_meta($id
                           , '_spl_mailgun_newsletter_sidebar_callout'
                           , true 
-                          );
+                          ));
     $attribute = get_post_meta($id
                           , '_spl_mailgun_newsletter_sidebar_attribution'
                           , true 
