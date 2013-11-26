@@ -941,7 +941,7 @@ body.outlook p {
                     </td>
                   </tr>
                 </table>
-              
+              <?php echo $trace; ?>
               <!-- container end below -->
               </td>
             </tr>
