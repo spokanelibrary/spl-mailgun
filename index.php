@@ -405,6 +405,11 @@ class SPL_Mailgun_Newsletter {
                           , true 
                           );
     
+    $callout = get_post_meta($id
+                          , '_spl_mailgun_newsletter_sidebar_callout'
+                          , true 
+                          );
+
     add_filter( 'the_content', array($this,'filterNewsletterSidebarImages'),10 );
     add_filter( 'post_thumbnail_html', array($this, 'filterNewsletterSidebarImages'), 10 );
     
