@@ -823,7 +823,7 @@ body.outlook p {
                         </tr>
                         <tr>
                           <td class="sidebar">
-                            <p>&nbsp;</p>
+                          
                           </td>
                           <td class="expander"></td>
                         </tr>
