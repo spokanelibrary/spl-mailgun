@@ -785,7 +785,7 @@ body.outlook p {
                       <table class="twelve columns">
                         <tr>
                           <td>
-                            <h2 style="color:#0064A0;"><?php echo $title; ?></h2>
+                            <h1 class="title"><?php echo $title; ?></h1>
                           </td>
                           <td class="expander"></td>
                         </tr>
@@ -811,12 +811,12 @@ body.outlook p {
                       <table class="four columns">
                         <tr>
                           <td class="sidebar">
-                            <h2><?php echo $subtitle; ?></h2>
+                            <h2 class="subtitle"><?php echo $subtitle; ?></h2>
                           </td>
                           <td class="expander"></td>
                         </tr>
                         <tr>
-                          <td class="sidebar">
+                          <td class="panel sidebar">
                             <h2><?php echo $sidebar; ?></h2>
                           </td>
                           <td class="expander"></td>
