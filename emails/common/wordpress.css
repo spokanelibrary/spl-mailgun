@@ -11,7 +11,7 @@
     color: #005587;
   }
 
-  p.separator { padding:0; margin-bottom: 4px !important; }
+  .separator { padding:0; margin: 0 0 4px 0 !important; }
 
 	.alignnone {  }
 	.aligncenter {  }
