@@ -744,8 +744,8 @@ body.outlook p {
     <tr>
       <td class="center" align="center" valign="top">
         <center>
-         
-          <table class="row header">
+
+          <table class="row">
             <tr>
               <td class="center" align="center">
                 <center>
@@ -767,6 +767,23 @@ body.outlook p {
                     </tr>
                   </table>
           
+                </center>
+              </td>
+            </tr>
+          </table> 
+
+
+
+                  
+
+
+
+         
+          <table class="row header">
+            <tr>
+              <td class="center" align="center">
+                <center>
+
                   <table class="container">
                     <tr>
                       <td class="wrapper last">
