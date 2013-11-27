@@ -407,7 +407,8 @@ class SPL_Mailgun_Newsletter {
         if (!empty($attach->post_excerpt)) { 
           $post->content .= wpautop($attach->post_excerpt);
         } else {
-          $post->content .= wpautop(wp_trim_words($attach->post_content, $trim));
+          $post->content .= apply_filters('the_content', $attach->post_content);
+          //$post->content .= wpautop(wp_trim_words($attach->post_content, $trim));
         }
       } else {
         $post->content .= wpautop($attach->post_content);
