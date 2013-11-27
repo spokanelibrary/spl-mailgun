@@ -896,6 +896,30 @@ body.outlook p {
                     </td>
                   </tr>
                 </table>
+
+
+                <table class="row">
+                  <tr>
+                    <td class="wrapper last">
+
+                      <table class="twelve columns">
+                        
+                        <tr>
+                          <td class="six sub-columns">
+                            Post 1
+                          </td>
+                          <td class="six sub-columns last">
+                            Post 2
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+
+                      </table>
+
+                    </td>
+                  </tr>
+                </table>
+
               
                 <table class="row footer">
                   <tr>
