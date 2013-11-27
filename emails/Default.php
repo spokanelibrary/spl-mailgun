@@ -887,6 +887,7 @@ body.outlook p {
                       <table class="twelve columns">
                         <tr>
                           <td class="panel transparent">
+                            <h4>Check out what's happening at the Library</h4>
                             <p>Static library stuff here <a href="#">Click it! »</a></p>
                           </td>
                           <td class="expander"></td>
