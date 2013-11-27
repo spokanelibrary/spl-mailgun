@@ -883,22 +883,22 @@ body.outlook p {
                 
 
 
-                <table class="row">
+                <table class="container">
                   <tr>
-                    <td class="wrapper last">
+                    <td>
 
                       <table class="block-grid two-up">
-                        
                         <tr>
                           <td>
-                            Post 1
-                          </td><td>
-                            Post 2
-                          </td><td>
-                            Post 2
+
+                            Column #1
+
+                          </td><td> <!-- Make sure the tags are directly next to each other -->
+
+                            Column #2
+
                           </td>
                         </tr>
-
                       </table>
 
                     </td>
