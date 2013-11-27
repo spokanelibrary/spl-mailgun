@@ -880,22 +880,7 @@ body.outlook p {
                   </tr>
                 </table>
               
-                <table class="row callout">
-                  <tr>
-                    <td class="wrapper last">
-
-                      <table class="twelve columns">
-                        <tr>
-                          <td class="panel">
-                            <p>Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae. <a href="#">Click it! »</a></p>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-
-                    </td>
-                  </tr>
-                </table>
+                
 
 
                 <table class="row">
@@ -908,12 +893,34 @@ body.outlook p {
                           <td class="six sub-columns">
                             Post 1
                           </td>
+                          <td class="six sub-columns">
+                            Post 1
+                          </td>
                           <td class="six sub-columns last">
                             Post 2
                           </td>
                           <td class="expander"></td>
                         </tr>
 
+                      </table>
+
+                    </td>
+                  </tr>
+                </table>
+
+
+
+                <table class="row callout">
+                  <tr>
+                    <td class="wrapper last">
+
+                      <table class="twelve columns">
+                        <tr>
+                          <td class="panel">
+                            <p>Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae. <a href="#">Click it! »</a></p>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
                       </table>
 
                     </td>
