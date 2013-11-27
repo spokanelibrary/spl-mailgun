@@ -454,6 +454,12 @@ class SPL_Mailgun_Newsletter {
                           , true 
                           );
 
+    // attached posts
+    $post_one = $this->getPostSelect($id, 1);
+    $post_two = $this->getPostSelect($id, 2);
+    $post_three = $this->getPostSelect($id, 3);
+    $post_four = $this->getPostSelect($id, 4);
+
     add_filter( 'the_content', array($this,'filterNewsletterSidebarImages'),10 );
     add_filter( 'post_thumbnail_html', array($this, 'filterNewsletterSidebarImages'), 10 );
     
@@ -465,11 +471,7 @@ class SPL_Mailgun_Newsletter {
                           ,array('<div', '</div>', '<div', '</div>')
                           ,apply_filters('the_content', $sidebar));
 
-    // attached posts
-    $post_one = $this->getPostSelect($id, 1);
-    $post_two = $this->getPostSelect($id, 2);
-    $post_three = $this->getPostSelect($id, 3);
-    $post_four = $this->getPostSelect($id, 4);
+    
 
     
 
