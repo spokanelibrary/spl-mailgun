@@ -879,17 +879,31 @@ body.outlook p {
                     </td>
                   </tr>
                 </table>
-              
                 
-
-
                 <table class="row">
+                  <tr>
+                    <td class="wrapper last">
+
+                      <table class="twelve columns">
+                        <tr>
+                          <td class="panel">
+                            <p>Static library stuff here <a href="#">Click it! »</a></p>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+
+                    </td>
+                  </tr>
+                </table>
+
+                <table class="row callout">
                   <tr>
                     <td class="wrapper">
 
                       <table class="six columns">
                         <tr>
-                          <td class="panel">
+                          <td>
                             <h4 class="subtitle">My Title</h4>
                           </td>
                           <td class="expander"></td>
@@ -931,22 +945,7 @@ body.outlook p {
 
 
 
-                <table class="row callout">
-                  <tr>
-                    <td class="wrapper last">
-
-                      <table class="twelve columns">
-                        <tr>
-                          <td class="panel">
-                            <p>Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae. <a href="#">Click it! »</a></p>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-
-                    </td>
-                  </tr>
-                </table>
+                
 
               
                 <table class="row footer">
