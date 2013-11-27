@@ -384,11 +384,11 @@ class SPL_Mailgun_Newsletter {
   static function getPostSelect($post, $order) {
     $html = null;
 
-    $select = get_post_meta($post->ID
+    $select = get_post_meta($post
                             ,'_spl_mailgun_newsletter_post_select_'.$order
                             ,true 
                           );
-    $excerpt = get_post_meta($post->ID
+    $excerpt = get_post_meta($post
                             ,'_spl_mailgun_newsletter_post_select_excerpt_'.$order
                             ,true 
                             ); 
