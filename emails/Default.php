@@ -756,15 +756,10 @@ body.outlook p {
             
                         <table class="twelve columns">
                           <tr>
-                            <td class="small center">
+                            <td class="small center panel">
                               <center>
-                                <table class="tiny-button">
-                                  <tr>
-                                    <td>
-                                      <a href="#"><strong>http://beta.spokanelibrary.org/newsletter/</strong></a>
-                                    </td>
-                                  </tr>
-                                </table>
+                                <a href="#"><strong>http://beta.spokanelibrary.org/newsletter/</strong></a>
+                              </center>
                             </td>
                             <td class="expander"></td>
                           </tr>
