@@ -880,13 +880,13 @@ body.outlook p {
                   </tr>
                 </table>
                 
-                <table class="row">
+                <table class="row callout">
                   <tr>
                     <td class="wrapper last">
 
                       <table class="twelve columns">
                         <tr>
-                          <td class="panel">
+                          <td class="panel transparent">
                             <p>Static library stuff here <a href="#">Click it! »</a></p>
                           </td>
                           <td class="expander"></td>
