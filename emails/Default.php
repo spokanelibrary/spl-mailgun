@@ -757,7 +757,7 @@ body.outlook p {
                         <table class="twelve columns">
                           <tr>
                             <td>
-                              Trouble reading this message?
+                              <a href="#">You can also read this newsletter online:</a>
                             </td>
                             <td class="expander"></td>
                           </tr>
