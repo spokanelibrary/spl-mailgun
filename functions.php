@@ -43,7 +43,7 @@ function spl_news_post_select($post, $id) {
   if ( !empty($select) ) {
     $attach = get_post($select);
 
-    echo wp_get_attachment_url( get_post_thumbnail_id($attach->ID) );
+    echo get_the_post_thumbnail($attach->ID);
 
     $permalink = get_permalink($select);
     echo '<p class="lead"><a href="'.$permalink.'">'.$attach->post_title.'</a></p>';
