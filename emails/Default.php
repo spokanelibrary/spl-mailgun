@@ -909,7 +909,7 @@ body.outlook p {
                           <td class="expander"></td>
                         </tr>
                         <tr>
-                          <td class="panel">
+                          <td class="">
 
                             Anim keffiyeh carles cardigan. Velit seitan mcsweeney’s photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven’t heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic.
 
@@ -929,7 +929,7 @@ body.outlook p {
                           <td class="expander"></td>
                         </tr>
                         <tr>
-                          <td class="panel">
+                          <td class="">
 
                             Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
 
