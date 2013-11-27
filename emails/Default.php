@@ -932,7 +932,7 @@ body.outlook p {
                         <tr>
                           <td class="">
 
-                            <?php echo $post_select_one; ?>
+                            <?php echo $post_one->title; ?>
 
                           </td>
                           <td class="expander"></td>

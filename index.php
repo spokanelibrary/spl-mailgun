@@ -381,42 +381,41 @@ class SPL_Mailgun_Newsletter {
     return $this->filterNewsletterImages($html, true);
   } 
 
-  static function getPostSelect($post, $order) {
-    $html = null;
+  static function getPostSelect($pid, $order) {
+    $post = null;
 
-    $select = get_post_meta($post
+    $select = get_post_meta($pid
                             ,'_spl_mailgun_newsletter_post_select_'.$order
                             ,true 
                           );
-    $excerpt = get_post_meta($post
+    $excerpt = get_post_meta($pid
                             ,'_spl_mailgun_newsletter_post_select_excerpt_'.$order
                             ,true 
                             ); 
 
     if ( !empty($select) ) {
-      $attach = get_post($select);
-      $permalink = get_permalink($select);
-      $html .= '<p class="lead"><a href="'.$permalink.'">'.$attach->post_title.'</a></p>';
+      $post = new stdClass();
 
+      $attach = get_post($select);
+
+      $post->link = get_permalink($select);
+      $post->title = $attach->post_title;
+
+      // todo: featured img
+      
       if ( !empty($excerpt) ) {
         if (!empty($attach->post_excerpt)) { 
-          $html .= wpautop($attach->post_excerpt);
+          $post->content .= wpautop($attach->post_excerpt);
         } else {
-          $html .= wpautop(wp_trim_words($attach->post_content, 80));
+          $post->content .= wpautop(wp_trim_words($attach->post_content, 80));
         }
       } else {
-        $html .= wpautop($attach->post_content);
+        $post->content .= wpautop($attach->post_content);
       }
-      $anchor = '
-      <p>
-      <a href="'.$permalink.'"
-          class="btn btn-success">Read More &rarr;</a>
-      </p>
-      ';
-      $html .= $anchor;
+
     }
     
-    return $html;
+    return $post;
   }
 
   function getNewsletterHTML($id, $template) {
@@ -465,7 +464,8 @@ class SPL_Mailgun_Newsletter {
                           ,array('<div', '</div>', '<div', '</div>')
                           ,apply_filters('the_content', $sidebar));
 
-    $post_select_one = $this->getPostSelect($id, 1);
+    // attached posts
+    $post_one = $this->getPostSelect($id, 1);
 
     
 
