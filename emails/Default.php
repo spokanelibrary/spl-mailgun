@@ -880,7 +880,7 @@ body.outlook p {
                   </tr>
                 </table>
                 
-                <table class="row callout">
+                <table class="row">
                   <tr>
                     <td class="wrapper last">
 
