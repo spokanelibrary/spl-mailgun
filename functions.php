@@ -49,7 +49,7 @@ function spl_news_post_select($post, $id) {
       if (!empty($attach->post_excerpt)) { 
         echo wpautop($attach->post_excerpt);
       } else {
-        echo apply_filters('img_caption', $attach->post_content);
+        echo apply_filters('the_content', $attach->post_content);
         //echo apply_filters('img_caption', (wp_trim_words($attach->post_content, 80)) );
       }
     } else {
