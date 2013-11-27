@@ -382,7 +382,41 @@ class SPL_Mailgun_Newsletter {
   } 
 
   static function getPostSelect($post, $order) {
-    return 'This is some text';
+    $html = null;
+
+    $select = get_post_meta($post->ID
+                            ,'_spl_mailgun_newsletter_post_select_'.$order
+                            ,true 
+                          );
+    $excerpt = get_post_meta($post->ID
+                            ,'_spl_mailgun_newsletter_post_select_excerpt_'.$order
+                            ,true 
+                            ); 
+
+    if ( !empty($select) ) {
+      $attach = get_post($select);
+      $permalink = get_permalink($select);
+      $html .= '<p class="lead"><a href="'.$permalink.'">'.$attach->post_title.'</a></p>';
+
+      if ( !empty($excerpt) ) {
+        if (!empty($attach->post_excerpt)) { 
+          $html .= wpautop($attach->post_excerpt);
+        } else {
+          $html .= wpautop(wp_trim_words($attach->post_content, 80));
+        }
+      } else {
+        $html .= wpautop($attach->post_content);
+      }
+      $anchor = '
+      <p>
+      <a href="'.$permalink.'"
+          class="btn btn-success">Read More &rarr;</a>
+      </p>
+      ';
+      $html .= $anchor;
+    }
+    
+    return $html;
   }
 
   function getNewsletterHTML($id, $template) {
