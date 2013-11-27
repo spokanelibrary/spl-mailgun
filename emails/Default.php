@@ -758,7 +758,7 @@ body.outlook p {
                           <tr>
                             <td class="small center">
                               <center>
-                                <table class="tiny-button twitter">
+                                <table class="tiny-button">
                                   <tr>
                                     <td>
                                       <a href="#"><strong>http://beta.spokanelibrary.org/newsletter/</strong></a>
