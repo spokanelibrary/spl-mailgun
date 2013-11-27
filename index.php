@@ -289,7 +289,7 @@ class SPL_Mailgun_Newsletter {
                         'type' => 'title',
                         'id' => $prefix . 'post_select_title'
                       );
-    for ( $i=1; $i<=9; $i++ ) {
+    for ( $i=1; $i<=12; $i++ ) {
       $fields[] = array('name' => 'Post # ' . $i . ':'
                       , 'desc' => ''
                       , 'id' => $prefix . 'post_select_'.$i
