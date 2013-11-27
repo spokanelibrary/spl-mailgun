@@ -883,31 +883,39 @@ body.outlook p {
                 
 
 
-                <table class="container">
+                <table class="row">
                   <tr>
-                    <td>
+                    <td class="wrapper">
 
-                      <table class="block-grid two-up">
+                      <table class="six columns">
                         <tr>
                           <td>
 
-                            Column #1
-
-                          </td><td> <!-- Make sure the tags are directly next to each other -->
-
-                            Column #2
-
-                          </td><td> <!-- Make sure the tags are directly next to each other -->
-
-                            Column #2
+                            Anim keffiyeh carles cardigan. Velit seitan mcsweeney’s photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven’t heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic.
 
                           </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+
+                    </td>
+                    <td class="wrapper last">
+
+                      <table class="six columns">
+                        <tr>
+                          <td>
+
+                            Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
+
+                          </td>
+                          <td class="expander"></td>
                         </tr>
                       </table>
 
                     </td>
                   </tr>
                 </table>
+
 
 
 
