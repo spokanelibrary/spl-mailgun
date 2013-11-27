@@ -758,8 +758,8 @@ body.outlook p {
                           <tr>
                             <td class="small center">
                               <center>
-                                Read this newsletter online:
-                                <a href="#">http://beta.spokanelibrary.org/newsletter/</a>
+                                <strong>Read this newsletter online:</strong>
+                                <a href="#"><strong>http://beta.spokanelibrary.org/newsletter/</strong></a>
                               </a>
                             </td>
                             <td class="expander"></td>
