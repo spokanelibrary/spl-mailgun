@@ -756,9 +756,9 @@ body.outlook p {
             
                         <table class="twelve columns">
                           <tr>
-                            <td class="small center panel">
+                            <td class="small center">
                               <center>
-                                <a href="#"><strong>http://beta.spokanelibrary.org/newsletter/</strong></a>
+                                <a href="#"><strong>beta.spokanelibrary.org/newsletter/</strong></a>
                               </center>
                             </td>
                             <td class="expander"></td>
