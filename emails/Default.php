@@ -890,6 +890,12 @@ body.outlook p {
                       <table class="six columns">
                         <tr>
                           <td class="panel">
+                            <h3 class="subtitle">My TItle</h3>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                        <tr>
+                          <td class="panel">
 
                             Anim keffiyeh carles cardigan. Velit seitan mcsweeney’s photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven’t heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic.
 
@@ -902,6 +908,12 @@ body.outlook p {
                     <td class="wrapper last">
 
                       <table class="six columns">
+                        <tr>
+                          <td class="panel">
+                            <h3 class="subtitle">My TItle</h3>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
                         <tr>
                           <td class="panel">
 
