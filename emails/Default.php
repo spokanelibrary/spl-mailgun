@@ -905,15 +905,16 @@ body.outlook p {
                       <table class="six columns">
                         <tr>
                           <td>
-                            <h4 class="subtitle">My Title</h4>
+                            <h4 class="subtitle"><a href="<?php echo $post_one->link; ?>"><?php echo $post_one->title; ?></a></h4>
                           </td>
                           <td class="expander"></td>
                         </tr>
                         <tr>
                           <td class="">
 
-                            Anim keffiyeh carles cardigan. Velit seitan mcsweeney’s photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven’t heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic.
+                            <?php echo $post_one->content; ?>
 
+                            <a href="<?php echo $post_one->link; ?>">More »</a>
                           </td>
                           <td class="expander"></td>
                         </tr>
@@ -925,16 +926,16 @@ body.outlook p {
                       <table class="six columns">
                         <tr>
                           <td>
-                            <h4 class="subtitle"><a href="<?php echo $post_one->link; ?>"><?php echo $post_one->title; ?></a></h4>
+                            <h4 class="subtitle"><a href="<?php echo $post_two->link; ?>"><?php echo $post_two->title; ?></a></h4>
                           </td>
                           <td class="expander"></td>
                         </tr>
                         <tr>
                           <td class="">
 
-                            <?php echo $post_one->content; ?>
+                            <?php echo $post_two->content; ?>
 
-                            <a href="<?php echo $post_one->link; ?>">More »</a>
+                            <a href="<?php echo $post_two->link; ?>">More »</a>
                           </td>
                           <td class="expander"></td>
                         </tr>
