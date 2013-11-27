@@ -925,15 +925,16 @@ body.outlook p {
                       <table class="six columns">
                         <tr>
                           <td>
-                            <h4 class="subtitle">My Title</h4>
+                            <h4 class="subtitle"><a href="<?php echo $post_one->link; ?>"><?php echo $post_one->title; ?></a></h4>
                           </td>
                           <td class="expander"></td>
                         </tr>
                         <tr>
                           <td class="">
 
-                            <?php echo $post_one->title; ?>
+                            <?php echo $post_one->content; ?>
 
+                            <a href="<?php echo $post_one->link; ?>">More »</a>
                           </td>
                           <td class="expander"></td>
                         </tr>
