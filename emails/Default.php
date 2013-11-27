@@ -897,6 +897,10 @@ body.outlook p {
 
                             Column #2
 
+                          </td><td> <!-- Make sure the tags are directly next to each other -->
+
+                            Column #2
+
                           </td>
                         </tr>
                       </table>
