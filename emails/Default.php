@@ -749,6 +749,23 @@ body.outlook p {
             <tr>
               <td class="center" align="center">
                 <center>
+
+                  <table class="container">
+                    <tr>
+                      <td class="wrapper last">
+            
+                        <table class="twelve columns">
+                          <tr>
+                            <td>
+                              Trouble reading this message?
+                            </td>
+                            <td class="expander"></td>
+                          </tr>
+                        </table>
+            
+                      </td>
+                    </tr>
+                  </table>
           
                   <table class="container">
                     <tr>
