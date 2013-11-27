@@ -890,7 +890,7 @@ body.outlook p {
                       <table class="six columns">
                         <tr>
                           <td class="panel">
-                            <h3 class="subtitle">My TItle</h3>
+                            <h4 class="subtitle">My Title</h4>
                           </td>
                           <td class="expander"></td>
                         </tr>
@@ -909,8 +909,8 @@ body.outlook p {
 
                       <table class="six columns">
                         <tr>
-                          <td class="panel">
-                            <h3 class="subtitle">My TItle</h3>
+                          <td>
+                            <h4 class="subtitle">My Title</h4>
                           </td>
                           <td class="expander"></td>
                         </tr>
