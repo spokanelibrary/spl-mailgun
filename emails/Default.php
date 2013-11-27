@@ -932,7 +932,7 @@ body.outlook p {
                         <tr>
                           <td class="">
 
-                            Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
+                            <?php echo $post_select_one; ?>
 
                           </td>
                           <td class="expander"></td>

@@ -381,6 +381,10 @@ class SPL_Mailgun_Newsletter {
     return $this->filterNewsletterImages($html, true);
   } 
 
+  static function getPostSelect($post, $order) {
+    return 'This is some text';
+  }
+
   function getNewsletterHTML($id, $template) {
     //return 'This is newsletter # '.$id;
 
@@ -426,6 +430,8 @@ class SPL_Mailgun_Newsletter {
     $sidebar = str_replace(array('<figure','</figure>','<figcaption','</figcaption>')
                           ,array('<div', '</div>', '<div', '</div>')
                           ,apply_filters('the_content', $sidebar));
+
+    $post_select_one = $this->getPostSelect($id, 1);
 
     
 
