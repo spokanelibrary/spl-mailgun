@@ -402,7 +402,7 @@ class SPL_Mailgun_Newsletter {
       $post->title = $attach->post_title;
 
       // todo: featured img
-      
+
       if ( !empty($excerpt) ) {
         if (!empty($attach->post_excerpt)) { 
           $post->content .= wpautop($attach->post_excerpt);
@@ -466,6 +466,9 @@ class SPL_Mailgun_Newsletter {
 
     // attached posts
     $post_one = $this->getPostSelect($id, 1);
+    $post_two = $this->getPostSelect($id, 2);
+    $post_three = $this->getPostSelect($id, 3);
+    $post_four = $this->getPostSelect($id, 4);
 
     
 
