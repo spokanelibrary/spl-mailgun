@@ -760,7 +760,7 @@ body.outlook p {
                               <img src="http://beta.spokanelibrary.org/assets/img/SPL-Logo-inverse.png" style="height:80px; width:170px;">
                             </td>
                             <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
-                              <span class="template-label serif"><?php echo $date; ?></span>
+                              <span class="template-label"><?php echo $date; ?></span>
                             </td>
                             <td class="expander"></td>
                           </tr>
@@ -797,10 +797,9 @@ body.outlook p {
                 <table class="row callout">
                   <tr>
                     <td class="wrapper">
-                  
                       <table class="eight columns">
                         <tr>
-                          <td>
+                          <td class="panel">
                             <?php echo $content; ?>
                           </td>
                           <td class="expander"></td>
