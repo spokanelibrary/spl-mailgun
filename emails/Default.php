@@ -799,7 +799,7 @@ body.outlook p {
                     <td class="wrapper">
                       <table class="eight columns">
                         <tr>
-                          <td class="panel">
+                          <td>
                             <?php echo $content; ?>
                           </td>
                           <td class="expander"></td>
