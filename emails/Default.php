@@ -898,6 +898,8 @@ body.outlook p {
                   </tr>
                 </table>
 
+
+
                 <table class="row callout">
                   <tr>
                     <td class="wrapper">
@@ -922,7 +924,7 @@ body.outlook p {
                       <?php endif; ?>
                     </td>
                     <td class="wrapper last">
-
+                      <?php if ( !is_null($post_two) ) : ?>
                       <table class="six columns">
                         <tr>
                           <td>
@@ -940,7 +942,7 @@ body.outlook p {
                           <td class="expander"></td>
                         </tr>
                       </table>
-
+                      <?php endif; ?>
                     </td>
                   </tr>
                 </table>

@@ -381,7 +381,7 @@ class SPL_Mailgun_Newsletter {
     return $this->filterNewsletterImages($html, true);
   } 
 
-  static function getPostSelect($pid, $order) {
+  static function getPostSelect($pid, $order, $trim=60) {
     $post = null;
 
     $select = get_post_meta($pid
@@ -407,7 +407,7 @@ class SPL_Mailgun_Newsletter {
         if (!empty($attach->post_excerpt)) { 
           $post->content .= wpautop($attach->post_excerpt);
         } else {
-          $post->content .= wpautop(wp_trim_words($attach->post_content, 80));
+          $post->content .= wpautop(wp_trim_words($attach->post_content, $trim));
         }
       } else {
         $post->content .= wpautop($attach->post_content);
