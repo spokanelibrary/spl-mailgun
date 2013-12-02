@@ -27,8 +27,8 @@
   .highlight { color: #005587; }
   .small { font-size: 12px; }
 
-	.alignnone {  }
-	.aligncenter {  }
+	.alignnone {  margin-bottom: 10px; }
+	.aligncenter { margin: auto; }
 
 	.alignright { float: right; margin-left: 10px; }
 	.alignleft { float: left; margin-right: 10px; }
