@@ -28,7 +28,7 @@
   .small { font-size: 12px; }
 
 	.alignnone {  margin-bottom: 10px; }
-	.aligncenter { margin: auto; }
+	.aligncenter { text-align: center; margin-left: auto; margin-right:auto; margin-bottom:10px; }
 
 	.alignright { float: right; margin-left: 10px; }
 	.alignleft { float: left; margin-right: 10px; }
