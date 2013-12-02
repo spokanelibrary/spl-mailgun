@@ -3,6 +3,10 @@
 	  text-decoration: none;
 	}
 
+	.tiny-button a {
+		color: #ffffff;
+	}
+
 	.header {
     background: #0064A0;
   }
