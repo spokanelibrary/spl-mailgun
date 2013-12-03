@@ -95,7 +95,7 @@
                               <p class="white condensed">Read. Learn. Discover.</p>
                             </td>
                             <td class="five sub-columns last" style="text-align:right; vertical-align:middle;">
-                              <p class="white condensed"><?php echo $date; ?></p>
+                              <p class="white condensed text-right"><?php echo $date; ?></p>
                             </td>
                             <td class="expander"></td>
                           </tr>
