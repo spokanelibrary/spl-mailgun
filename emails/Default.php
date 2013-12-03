@@ -908,7 +908,7 @@ body.outlook p {
                   <tr>
                     <td class="wrapper">
                       <?php 
-                      SPL_Mailgun_Newsletter::formatPostSelect($post_one); 
+                      echo SPL_Mailgun_Newsletter::formatPostSelect($post_one); 
                       ?>
                     </td>
                     <td class="wrapper last">
