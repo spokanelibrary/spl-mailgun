@@ -12,7 +12,7 @@
 <body>
   <table class="body" style="background-color: #ccc;">
     <tr>
-      <td class="center" align="center" valign="top">
+      <td class="center" align="center" valign="top" style="background-color: #fff;">
         <center>
 
           <table class="row">
