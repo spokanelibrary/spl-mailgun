@@ -95,7 +95,7 @@
                               <span class="color-light">Read. Learn. Discover.</span>
                             </td>
                             <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
-                              <span class="template-label"><?php echo $date; ?></span>
+                              <span class="color-light"><?php echo $date; ?></span>
                             </td>
                             <td class="expander"></td>
                           </tr>
