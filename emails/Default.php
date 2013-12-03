@@ -10,7 +10,7 @@
   </style>
 </head>
 <body>
-  <table class="body" style="background-color: #ccc;">
+  <table class="body">
     <tr>
       <td class="center" align="center" valign="top">
         <center>
@@ -113,7 +113,7 @@
 
 
 
-          <table class="container text-pad" style="background-color: #fff;">
+          <table class="container">
             <tr>
               <td>
                 
