@@ -92,7 +92,7 @@
                         <table class="twelve columns">
                           <tr>
                             <td class="seven sub-columns">
-                              <span class="color-light">Read. Learn. Discover.</span>
+                              <span class="muted">Read. Learn. Discover.</span>
                             </td>
                             <td class="five sub-columns last" style="text-align:right; vertical-align:middle;">
                               <span class="color-light"><?php echo $date; ?></span>
