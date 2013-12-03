@@ -903,42 +903,25 @@ body.outlook p {
 
 
                 
-
+                <?php if ( !is_null($post_one) ) : ?>
                 <table class="row callout">
                   <tr>
                     <td class="wrapper">
-                      <?php 
-                      echo SPL_Mailgun_Newsletter::formatPostSelect($post_one); 
-                      ?>
+                    <?php 
+                    echo SPL_Mailgun_Newsletter::formatPostSelect($post_one); 
+                    ?>
                     </td>
                     <td class="wrapper last">
-                      <?php if ( !is_null($post_two) ) : ?>
-                      <table class="six columns">
-                        <tr>
-                          <td>
-                            <h4 class="subtitle"><a href="<?php echo $post_two->link; ?>"><?php echo $post_two->title; ?></a></h4>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                        <tr>
-                          <td class="">
-
-                            <?php echo $post_two->content; ?>
-
-                            <a href="<?php echo $post_two->link; ?>">More »</a>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-                      <?php endif; ?>
+                    <?php 
+                    echo SPL_Mailgun_Newsletter::formatPostSelect($post_two); 
+                    ?>
                     </td>
                   </tr>
                 </table>
+                <?php endif; ?>
 
 
 
-
-                
 
               
                 <table class="row footer">
