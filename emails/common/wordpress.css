@@ -15,6 +15,10 @@
     background: #005587;
   }
 
+  .header, .masthead {
+  	color: #ffffff;
+  }
+
   .title { color: #64964B; }
   .subtitle { color: #005587; }
 
