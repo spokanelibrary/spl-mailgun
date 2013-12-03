@@ -92,10 +92,10 @@
                         <table class="twelve columns">
                           <tr>
                             <td class="seven sub-columns">
-                              <p class="color-light">Read. Learn. Discover.</p>
+                              <p class="white">Read. Learn. Discover.</p>
                             </td>
                             <td class="five sub-columns last" style="text-align:right; vertical-align:middle;">
-                              <span class="white"><?php echo $date; ?></span>
+                              <p class="white"><?php echo $date; ?></p>
                             </td>
                             <td class="expander"></td>
                           </tr>
