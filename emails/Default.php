@@ -64,7 +64,7 @@
                             </td>
                             <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
                               <h1 class="serif text-right color-light">News</h1>
-                              <span class="serif text-right color-light"><em>from your library</em></span>
+                              <span class="serif text-right white"><em>from your library</em></span>
                             </td>
                             <td class="expander"></td>
                           </tr>
@@ -92,7 +92,7 @@
                         <table class="twelve columns">
                           <tr>
                             <td class="seven sub-columns">
-                              <span class="white">Read. Learn. Discover.</span>
+                              <p class="color-light">Read. Learn. Discover.</p>
                             </td>
                             <td class="five sub-columns last" style="text-align:right; vertical-align:middle;">
                               <span class="white"><?php echo $date; ?></span>
