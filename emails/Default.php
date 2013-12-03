@@ -777,10 +777,6 @@ body.outlook p {
 
 
 
-                  
-
-
-
          
           <table class="row header">
             <tr>
@@ -804,12 +800,36 @@ body.outlook p {
                             <td class="expander"></td>
                           </tr>
                         </table>
+            
+                      </td>
+                    </tr>
+                  </table>
+          
+                </center>
+              </td>
+            </tr>
+          </table> 
 
+
+          <table class="row header">
+            <tr>
+              <td class="center" align="center">
+                <center>
+
+                  <table class="container">
+                    <tr>
+                      <td class="wrapper last">
+            
                         <table class="twelve columns">
                           <tr>
-                            <td style="background-color:red;">
+                            <td class="six sub-columns">
                               test
                             </td>
+                            <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
+                              
+                              <span class="template-label">Subhead</span>
+                            </td>
+                            <td class="expander"></td>
                           </tr>
                         </table>
             
@@ -821,6 +841,9 @@ body.outlook p {
               </td>
             </tr>
           </table> 
+
+
+
 
           <table class="container">
             <tr>
