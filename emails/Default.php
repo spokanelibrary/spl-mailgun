@@ -91,10 +91,10 @@
             
                         <table class="twelve columns">
                           <tr>
-                            <td class="six sub-columns">
-                              <strong class="color-light small">Read. Learn. Discover.</strong>
+                            <td class="seven sub-columns">
+                              <strong class="color-light">Read. Learn. Discover.</strong>
                             </td>
-                            <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
+                            <td class="five sub-columns last" style="text-align:right; vertical-align:middle;">
                               <span class="color-light"><?php echo $date; ?></span>
                             </td>
                             <td class="expander"></td>
