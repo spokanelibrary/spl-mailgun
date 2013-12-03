@@ -48,6 +48,8 @@
 
 	.text-right { text-align: right; }
 
+	.serif { font-family: Georgia, "Times New Roman", Times, serif; }
+
 	/* ink is a little bit */
 	h1 {font-size: 30px;}
 	h2 {font-size: 26px;}
