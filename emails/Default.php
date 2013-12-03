@@ -903,7 +903,7 @@ body.outlook p {
 
 
                 
-                <?php if ( !is_null($posts[$i]) ) : ?>
+                <?php if ( !is_null($posts[1]) ) : ?>
                 <table class="row callout">
                   <tr>
                     <td class="wrapper">
