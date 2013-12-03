@@ -381,6 +381,10 @@ class SPL_Mailgun_Newsletter {
     return $this->filterNewsletterImages($html, true);
   } 
 
+  static function formatPostSelect($post) {
+    echo 'this is a post';
+  }
+
   static function getPostSelect($pid, $order, $trim=60) {
     $post = null;
 

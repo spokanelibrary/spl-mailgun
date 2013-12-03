@@ -831,6 +831,8 @@ body.outlook p {
                   </tr>
                 </table>
 
+                <?php SPL_Mailgun_Newsletter::formatPostSelect('test'); ?>
+
                 <table class="row callout">
                   <tr>
                     <td class="wrapper">
