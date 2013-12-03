@@ -16,11 +16,11 @@
   }
 
   .color-light {
-  	color: #f0f7fd;	
+  	color: #fefbed;	
   }
 
   .white {
-  	color: #fefbed;
+  	color: #f0f7fd;
   }
 
   .title { color: #64964B; }
@@ -29,10 +29,6 @@
   .callout .warning {
     background: #fefbed;
     border-color: #f1e7bc;
-  }
-
-  .callout .panel {
-  	background: #f0f7fd;
   }
 
   .transparent { background-color: transparent !important; }
