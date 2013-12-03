@@ -382,7 +382,30 @@ class SPL_Mailgun_Newsletter {
   } 
 
   static function formatPostSelect($post) {
-    echo 'this is a post';
+    $html = '';
+    if ( !is_null($post) ) {
+      $html =  <<<EOT
+      <table class="six columns">
+        <tr>
+          <td>
+            <h4 class="subtitle"><a href="$post->link">$post->title</a></h4>
+          </td>
+          <td class="expander"></td>
+        </tr>
+        <tr>
+          <td class="">
+
+            $post->content
+
+            <a href="$post->link">More »</a>
+          </td>
+          <td class="expander"></td>
+        </tr>
+      </table>
+EOT;
+    }
+
+    return $html;
   }
 
   static function getPostSelect($pid, $order, $trim=60) {

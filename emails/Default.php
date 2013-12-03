@@ -831,7 +831,6 @@ body.outlook p {
                   </tr>
                 </table>
 
-                <?php SPL_Mailgun_Newsletter::formatPostSelect('test'); ?>
 
                 <table class="row callout">
                   <tr>
@@ -902,28 +901,15 @@ body.outlook p {
 
 
 
+
+                
+
                 <table class="row callout">
                   <tr>
                     <td class="wrapper">
-                      <?php if ( !is_null($post_one) ) : ?>
-                      <table class="six columns">
-                        <tr>
-                          <td>
-                            <h4 class="subtitle"><a href="<?php echo $post_one->link; ?>"><?php echo $post_one->title; ?></a></h4>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                        <tr>
-                          <td class="">
-
-                            <?php echo $post_one->content; ?>
-
-                            <a href="<?php echo $post_one->link; ?>">More »</a>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-                      <?php endif; ?>
+                      <?php 
+                      SPL_Mailgun_Newsletter::formatPostSelect($post_one); 
+                      ?>
                     </td>
                     <td class="wrapper last">
                       <?php if ( !is_null($post_two) ) : ?>
