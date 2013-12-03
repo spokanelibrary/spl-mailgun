@@ -493,11 +493,10 @@ EOT;
                           ,apply_filters('the_content', $sidebar));
 
     // attached posts
-    $post_one = $this->getPostSelect($id, 1);
-    $post_two = $this->getPostSelect($id, 2);
-    $post_three = $this->getPostSelect($id, 3);
-    $post_four = $this->getPostSelect($id, 4);
-
+    $posts = array();
+    for ( $i=1; $i<= 12; $i++ ) {
+      $posts[$i] = $this->getPostSelect($id, $i);
+    }
     
 
     //return print_r($_POST, true);

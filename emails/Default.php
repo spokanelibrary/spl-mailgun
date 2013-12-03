@@ -903,17 +903,17 @@ body.outlook p {
 
 
                 
-                <?php if ( !is_null($post_one) ) : ?>
+                <?php if ( !is_null($posts[$i]) ) : ?>
                 <table class="row callout">
                   <tr>
                     <td class="wrapper">
                     <?php 
-                    echo SPL_Mailgun_Newsletter::formatPostSelect($post_one); 
+                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[1]); 
                     ?>
                     </td>
                     <td class="wrapper last">
                     <?php 
-                    echo SPL_Mailgun_Newsletter::formatPostSelect($post_two); 
+                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[2]); 
                     ?>
                     </td>
                   </tr>
