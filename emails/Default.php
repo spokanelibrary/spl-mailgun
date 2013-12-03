@@ -10,7 +10,7 @@
   </style>
 </head>
 <body>
-  <table class="body">
+  <table class="body" style="background-color: #ccc;">
     <tr>
       <td class="center" align="center" valign="top">
         <center>
