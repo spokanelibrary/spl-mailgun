@@ -793,7 +793,7 @@ body.outlook p {
                               <img src="http://beta.spokanelibrary.org/assets/img/SPL-Logo-inverse.png" style="height:80px; width:170px;">
                             </td>
                             <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
-                              <h1 class="serif text-right color-light" style="font-size: 40px;">News</h1>
+                              <h1 class="serif text-right color-light">News</h1>
                               <span class="serif text-right color-light">from your library</span>
                             </td>
                             <td class="expander"></td>
