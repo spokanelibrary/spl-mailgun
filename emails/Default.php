@@ -811,7 +811,7 @@ body.outlook p {
           </table> 
 
 
-          <table class="row header">
+          <table class="row masthead">
             <tr>
               <td class="center" align="center">
                 <center>
