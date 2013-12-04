@@ -6,6 +6,13 @@
 	h5 {font-size: 18px;}
 	h6 {font-size: 16px;}
 
+	h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 { color: #666666; }
+
 	a {
 	  color: #0064A0 !important; 
 	  text-decoration: none;
@@ -35,16 +42,15 @@
 
   .title { color: #64964B; }
 
-  .sidebar p { color: #666666; }
-
+  .subtitle { color: #666666 !important; }
+  
   .sidebar h1,
   .sidebar h2,
   .sidebar h3,
   .sidebar h4,
   .sidebar h5,
   .sidebar h6 { color: #64964B; }
-
-  .subtitle { color: #666666 !important; }
+  .sidebar p { color: #666666; }
 
   .sidebar h1 {font-size: 22px;}
 	.sidebar h2 {font-size: 22px;}
