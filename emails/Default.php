@@ -148,6 +148,12 @@
                     <td class="wrapper last">
                       <table class="four columns">
                         <tr>
+                          <td class="sidebar">
+                            <p class="separator">&nbsp;</p>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                        <tr>
                           <td class="warning panel sidebar">
                             <p class="highlight">
                             <?php echo $callout; ?>
