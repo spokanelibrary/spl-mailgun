@@ -30,9 +30,6 @@
     background: #005587;
   }
 
-  .color-dark {
-  	color: #003C50;	
-  }
 
   .white {
   	color: #ffffff;
@@ -40,7 +37,7 @@
 
   .header h1 { font-size: 42px; font-weight: normal; }
 
-  .title { color: #64964B; }
+  .title { /*color: #64964B;*/ }
 
   .subtitle { color: #666666 !important; }
   
