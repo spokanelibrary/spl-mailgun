@@ -406,7 +406,7 @@ class SPL_Mailgun_Newsletter {
             <table class="tiny-button spl">
               <tr>
                 <td>
-                  <a href="$post->link">More »</a>
+                  <a href="$post->link">Read Online »</a>
                 </td>
               </tr>
             </table>

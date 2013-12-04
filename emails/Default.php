@@ -319,26 +319,6 @@
                               </tr>
                             </table>
 
-                            <br>
-
-                            <table class="tiny-button twitter">
-                              <tr>
-                                <td>
-                                  <a href="#">Twitter</a>
-                                </td>
-                              </tr>
-                            </table>
-
-                            <br>
-
-                            <table class="tiny-button google-plus">
-                              <tr>
-                                <td>
-                                  <a href="#">Google +</a>
-                                </td>
-                              </tr>
-                            </table>
-
                           </td>
                           <td class="expander"></td>
                         </tr>
@@ -350,9 +330,9 @@
                       <table class="six columns">
                         <tr>
                           <td class="last right-text-pad">
-                            <h5>Contact Info:</h5>
-                            <p>Phone: 408.341.0600</p>
-                            <p>Email: <a href="mailto:hseldon@trantor.com">hseldon@trantor.com</a></p>
+                            <h5>Contact Us:</h5>
+                            <p>Phone: 509.444.5333</p>
+                            <p>Email: <a href="mailto:news@spokanelibrary.org">news@spokanelibrary.org</a></p>
                           </td>          
                           <td class="expander"></td>
                         </tr>
