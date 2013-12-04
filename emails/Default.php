@@ -133,7 +133,7 @@
                 </table>
 
 
-                <table class="row callout">
+                <table class="row">
                   <tr>
                     <td class="wrapper">
                       <table class="eight columns">
@@ -147,23 +147,6 @@
                     </td>
                     <td class="wrapper last">
                       <table class="four columns">
-                        <tr>
-                          <td class="sidebar">
-                            <p class="separator">&nbsp;</p>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                        <tr>
-                          <td class="warning panel sidebar">
-                            <p class="highlight">
-                            <?php echo $callout; ?>
-                            </p>
-                            <span class="muted small">
-                            —<?php echo $attribute; ?>
-                            </span>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
                         <tr>
                           <td class="sidebar">
                             <p class="separator">&nbsp;</p>
