@@ -20,6 +20,8 @@
 
 	.tiny-button a {
 		color: #ffffff !important;
+		border-color: #0064A0;
+		background-color: #005587;
 	}
 
 	.header {
