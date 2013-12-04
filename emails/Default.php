@@ -63,7 +63,7 @@
                               <a href="http://beta.spokanelibrary.org"><img src="http://beta.spokanelibrary.org/assets/img/SPL-Logo-inverse.png" style="height:80px; width:170px;"></a>
                             </td>
                             <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
-                              <h1 class="serif text-right color-light">News</h1>
+                              <h1 class="serif text-right white">News</h1>
                               <span class="serif text-right white"><em>from your library</em></span>
                             </td>
                             <td class="expander"></td>
@@ -92,10 +92,10 @@
                         <table class="twelve columns">
                           <tr>
                             <td class="seven sub-columns">
-                              <p class="white condensed">Read. Learn. Discover.</p>
+                              <p class="color-light condensed">Read. Learn. Discover.</p>
                             </td>
                             <td class="five sub-columns last" style="text-align:right; vertical-align:middle;">
-                              <p class="white condensed text-right"><?php echo $date; ?></p>
+                              <p class="color-light condensed text-right"><?php echo $date; ?></p>
                             </td>
                             <td class="expander"></td>
                           </tr>
