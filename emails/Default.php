@@ -148,7 +148,7 @@
                       </table>
                     </td>
                     <td class="wrapper last">
-                      <table class="four columns secondary">
+                      <table class="four columns">
                         <tr>
                           <td class="sidebar condensed">
                             <p class="condensed">&nbsp;</p>
