@@ -397,7 +397,7 @@ class SPL_Mailgun_Newsletter {
 
             $post->content
 
-            <a href="$post->link">More »</a>
+            <a href="$post->link"><strong>More »</strong></a>
           </td>
           <td class="expander"></td>
         </tr>
