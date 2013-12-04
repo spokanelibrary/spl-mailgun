@@ -34,7 +34,7 @@
   .header h1 { font-size: 42px; font-weight: normal; }
 
   .title { color: #64964B; }
-  .subtitle { color: #666666; }
+
   .sidebar p { color: #666666; }
 
   .sidebar h1,
@@ -42,7 +42,9 @@
   .sidebar h3,
   .sidebar h4,
   .sidebar h5,
-  .sidebar h6 { color: #64964B;; }
+  .sidebar h6 { color: #64964B; }
+
+  .subtitle { color: #666666; }
 
   .sidebar h1 {font-size: 22px;}
 	.sidebar h2 {font-size: 22px;}
