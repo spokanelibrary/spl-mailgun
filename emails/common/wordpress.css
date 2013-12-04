@@ -60,6 +60,7 @@
   .transparent { background-color: transparent !important; }
 
   .separator { padding:0; margin: 0 0 4px 0 !important; }
+  .separator p { padding:0; margin: 0 !important; }
 
   .muted { color: #666666; }
   .highlight { color: #005587 !important; }
