@@ -63,8 +63,8 @@
                               <a href="http://beta.spokanelibrary.org"><img src="http://beta.spokanelibrary.org/assets/img/SPL-Logo-inverse.png" style="height:80px; width:170px;"></a>
                             </td>
                             <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
-                              <h1 class="serif text-right white condensed">News</h1>
-                              <span class="serif text-right color-light condensed"><em>from your library</em></span>
+                              <h1 class="serif text-right color-dark condensed">News</h1>
+                              <span class="serif text-right color-dark condensed"><em>from your library</em></span>
                             </td>
                             <td class="expander"></td>
                           </tr>
