@@ -154,8 +154,8 @@
                           <td class="expander"></td>
                         </tr>
                         <tr>
-                          <td class="warning panel sidebar">
-                            <p class="highlight">
+                          <td class="warning panel">
+                            <p class="highlight serif">
                             <?php echo $callout; ?>
                             </p>
                             <span class="muted small">
