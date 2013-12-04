@@ -171,13 +171,13 @@
                           <td class="expander"></td>
                         </tr>
                         <tr>
-                          <td class="sidebar transparent">
+                          <td class="sidebar">
                             <h2 class="subtitle"><?php echo $subtitle; ?></h2>
                           </td>
                           <td class="expander"></td>
                         </tr>
                         <tr>
-                          <td class="panel sidebar">
+                          <td class="panel sidebar transparent">
                             <?php echo $sidebar; ?>
                           </td>
                           <td class="expander"></td>
