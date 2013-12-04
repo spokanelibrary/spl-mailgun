@@ -148,7 +148,7 @@
                     <td class="wrapper last">
                       <table class="four columns">
                         <tr>
-                          <td class="sidebar">
+                          <td class="sidebar condensed">
                             <p class="condensed">&nbsp;</p>
                           </td>
                           <td class="expander"></td>
@@ -168,7 +168,7 @@
                           <td class="condensed">
                             <p class="condensed">&nbsp;</p>
                           </td>
-                          <td class="expander condensed"></td>
+                          <td class="expander"></td>
                         </tr>
                         <tr>
                           <td class="sidebar">
