@@ -20,6 +20,9 @@
 
 	.tiny-button a {
 		color: #ffffff !important;
+	}
+
+	.tiny-button {
 		border-color: #0064A0;
 		background-color: #005587;
 	}
