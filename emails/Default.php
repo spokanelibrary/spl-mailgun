@@ -194,9 +194,13 @@
 
                       <table class="twelve columns">
                         <tr>
-                          <td class="panel transparent">
-                            <h4>Check it out:</h4>
-                            <p>Static library stuff here <a href="#">Click it! »</a></p>
+                          <td class="warning panel sidebar">
+                            <p class="highlight">
+                            <?php echo $callout; ?>
+                            </p>
+                            <span class="muted small">
+                            —<?php echo $attribute; ?>
+                            </span>
                           </td>
                           <td class="expander"></td>
                         </tr>
