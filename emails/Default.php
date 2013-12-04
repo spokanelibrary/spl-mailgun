@@ -198,7 +198,7 @@
 
                 
                 <?php if ( !is_null($posts[1]) ) : ?>
-                <table class="row callout">
+                <table class="row callout post">
                   <tr>
                     <td class="wrapper">
                     <?php 
