@@ -155,8 +155,8 @@
                         </tr>
                         <tr>
                           <td class="warning panel">
-                            <p class="highlight serif">
-                            <?php echo $callout; ?>
+                            <p class="highlight">
+                            <em class="serif"><?php echo $callout; ?></em>
                             </p>
                             <span class="muted small">
                             —<?php echo $attribute; ?>
