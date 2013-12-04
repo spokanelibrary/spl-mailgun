@@ -149,7 +149,7 @@
                       <table class="four columns">
                         <tr>
                           <td class="sidebar">
-                            <p class="separator">&nbsp;</p>
+                            <span class="separator">&nbsp;</span>
                           </td>
                           <td class="expander"></td>
                         </tr>
@@ -166,7 +166,7 @@
                         </tr>
                         <tr>
                           <td class="sidebar">
-                            <p class="separator">&nbsp;</p>
+                            <span class="separator">&nbsp;</span>
                           </td>
                           <td class="expander"></td>
                         </tr>
