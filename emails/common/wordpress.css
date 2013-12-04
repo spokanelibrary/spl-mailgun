@@ -41,7 +41,8 @@
   .sidebar h3,
   .sidebar h4,
   .sidebar h5,
-  .sidebar h6 { color: #666666; }
+  .sidebar h6,
+  .sidebar p { color: #666666; }
 
   .sidebar h1 {font-size: 22px;}
 	.sidebar h2 {font-size: 22px;}
