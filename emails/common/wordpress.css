@@ -45,7 +45,7 @@
 
   .title { /*color: #64964B;*/ color: #005587; }
 
-  .subtitle { color: #666666 !important; text-align: left !important; }
+  .subtitle { color: #666666; font-size: 22px; }
 
 	.wp-caption { color: #666666; }
 
@@ -59,7 +59,7 @@
   .sidebar h1,
   .sidebar h2,
   .sidebar h3,
-  .sidebar h4 { border: 1px solid #64964B; color: #64964B; padding: 2px; }
+  .sidebar h4 { border: 1px solid #64964B; color: #64964B; padding: 2px; margin-bottom: 2px; }
 
   .sidebar p { color: #444444; }
   .post p { color: #444444; }
