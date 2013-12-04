@@ -154,7 +154,7 @@
                           <td class="expander"></td>
                         </tr>
                         <tr>
-                          <td class="panel sidebar transparent">
+                          <td class="sidebar">
                             <?php echo $sidebar; ?>
                           </td>
                           <td class="expander"></td>
