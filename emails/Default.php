@@ -314,7 +314,7 @@
                             <table class="tiny-button facebook">
                               <tr>
                                 <td>
-                                  <a href="#">Facebook</a>
+                                  <a href="http://facebook.com/spokanelibrary">Facebook</a>
                                 </td>
                               </tr>
                             </table>
