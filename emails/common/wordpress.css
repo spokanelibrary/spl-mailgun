@@ -41,7 +41,7 @@
 
   .subtitle { color: #333333 !important; }
 
-	.wp-caption { color: red; }
+	.wp-caption { color: #666666; }
 
   .sidebar h1,
   .sidebar h2,
@@ -55,7 +55,7 @@
   .sidebar h3,
   .sidebar h4 { color: #64964B; }
 
-  .sidebar p { color: #666666; }
+  .sidebar p { color: #444444; }
 
   .sidebar h1 {font-size: 22px;}
 	.sidebar h2 {font-size: 22px;}
