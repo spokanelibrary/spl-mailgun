@@ -148,10 +148,10 @@
                     <td class="wrapper last">
                       <table class="four columns">
                         <tr>
-                          <td class="sidebar condensed">
+                          <td class="sidebar">
                             <p class="condensed">&nbsp;</p>
                           </td>
-                          <td class="expander condensed"></td>
+                          <td class="expander"></td>
                         </tr>
                         <tr>
                           <td class="warning panel">
