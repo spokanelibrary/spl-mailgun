@@ -188,22 +188,25 @@
                   </tr>
                 </table>
                 
+
+
+
+
+
+
                 <table class="row callout">
                   <tr>
                     <td class="wrapper">
-                      
                       <table class="eight columns">
                         <tr>
-                          <td class="">
-                            Static Stuff
+                          <td>
+                            Static Content
                           </td>
                           <td class="expander"></td>
                         </tr>
                       </table>
-
                     </td>
-                    <td class="wrapper">
-
+                    <td class="wrapper last">
                       <table class="four columns">
                         <tr>
                           <td class="warning panel sidebar">
@@ -217,10 +220,14 @@
                           <td class="expander"></td>
                         </tr>
                       </table>
-
                     </td>
                   </tr>
                 </table>
+
+
+
+
+
 
 
 
