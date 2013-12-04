@@ -148,8 +148,8 @@
                     <td class="wrapper last">
                       <table class="four columns">
                         <tr>
-                          <td class="sidebar">
-                            <span class="separator">&nbsp;</span>
+                          <td class="sidebar separator">
+                            <p class="separator">&nbsp;</p>
                           </td>
                           <td class="expander"></td>
                         </tr>
@@ -166,7 +166,7 @@
                         </tr>
                         <tr>
                           <td class="sidebar">
-                            <span class="separator">&nbsp;</span>
+                            <p class="separator">&nbsp;</p>
                           </td>
                           <td class="expander"></td>
                         </tr>
