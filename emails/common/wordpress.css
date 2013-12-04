@@ -1,3 +1,11 @@
+	/* ink is a little big*/
+	h1 {font-size: 30px;}
+	h2 {font-size: 26px;}
+	h3 {font-size: 24px;}
+	h4 {font-size: 22px;}
+	h5 {font-size: 18px;}
+	h6 {font-size: 16px;}
+
 	a {
 	  color: #0064A0 !important; 
 	  text-decoration: none;
@@ -23,8 +31,25 @@
   	color: #ffffff;
   }
 
+  .header h1 { font-size: 42px; font-weight: normal; }
+
   .title { color: #64964B; }
   .subtitle { color: #666666; }
+
+  .sidebar h1,
+  .sidebar h2,
+  .sidebar h3,
+  .sidebar h4,
+  .sidebar h5,
+  .sidebar h6 { color: #666666; }
+
+  .sidebar h1 {font-size: 22px;}
+	.sidebar h2 {font-size: 22px;}
+	.sidebar h3 {font-size: 22px;}
+	.sidebar h4 {font-size: 18px;}
+	.sidebar h5 {font-size: 16px;}
+	.sidebar h6 {font-size: 14px;}
+
 
   .callout .warning {
     background: #fefbed;
@@ -56,19 +81,4 @@
 
 	.condensed { margin:0; padding:0; line-height:1; }
 
-	/* ink is a little bit */
-	h1 {font-size: 30px;}
-	h2 {font-size: 26px;}
-	h3 {font-size: 24px;}
-	h4 {font-size: 22px;}
-	h5 {font-size: 18px;}
-	h6 {font-size: 16px;}
-
-	.header h1 { font-size: 42px; font-weight: normal; }
-
-	.sidebar h1 {font-size: 22px;}
-	.sidebar h2 {font-size: 22px;}
-	.sidebar h3 {font-size: 22px;}
-	.sidebar h4 {font-size: 18px;}
-	.sidebar h5 {font-size: 16px;}
-	.sidebar h6 {font-size: 14px;}
+	
