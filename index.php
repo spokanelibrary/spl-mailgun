@@ -401,9 +401,27 @@ class SPL_Mailgun_Newsletter {
           </td>
           <td class="expander"></td>
         </tr>
+        <tr>
+          <td class="">
+
+            <table class="tiny-button">
+              <tr>
+                <td>
+                  <a href="$post->link"><strong>More »</strong></a>
+                </td>
+              </tr>
+            </table>
+
+          </td>
+          <td class="expander"></td>
+        </tr>
       </table>
 EOT;
     }
+
+
+    
+
 
     return $html;
   }
