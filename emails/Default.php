@@ -192,9 +192,9 @@
                   <tr>
                     <td class="wrapper">
                       
-                      <table class="six columns">
+                      <table class="eight columns">
                         <tr>
-                          <td class="panel warning">
+                          <td class="">
                             Static Stuff
                           </td>
                           <td class="expander"></td>
@@ -204,10 +204,15 @@
                     </td>
                     <td class="wrapper">
 
-                      <table class="six columns">
+                      <table class="four columns">
                         <tr>
-                          <td class="">
-                            Static Stuff
+                          <td class="warning panel sidebar">
+                            <p class="highlight">
+                            <?php echo $callout; ?>
+                            </p>
+                            <span class="muted small">
+                            —<?php echo $attribute; ?>
+                            </span>
                           </td>
                           <td class="expander"></td>
                         </tr>
