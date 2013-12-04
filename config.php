@@ -19,7 +19,7 @@ class SPL_Mailgun_Newsletter_Config {
     $settings->post_type = 'newsletter';
 
     $sidebar = new stdClass();
-    $sidebar->img_width = '170px';
+    $sidebar->img_width = '175px';
 
     $settings->sidebar = $sidebar;
 
