@@ -188,19 +188,23 @@
                   </tr>
                 </table>
                 
-                <table class="row">
+                <table class="row callout">
                   <tr>
                     <td class="wrapper last">
-
-                      <table class="twelve columns">
+                      
+                      <table class="six columns">
                         <tr>
-                          <td class="warning panel sidebar">
-                            <p class="highlight">
-                            <?php echo $callout; ?>
-                            </p>
-                            <span class="muted small">
-                            —<?php echo $attribute; ?>
-                            </span>
+                          <td class="panel alert">
+                            Static Stuff
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+
+                      <table class="six columns">
+                        <tr>
+                          <td class="">
+                            Static Stuff
                           </td>
                           <td class="expander"></td>
                         </tr>
