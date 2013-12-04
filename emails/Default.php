@@ -172,12 +172,12 @@
                         </tr>
                         <tr>
                           <td class="sidebar">
-                            <h2 class="subtitle serif"><?php echo $subtitle; ?></h2>
+                            <h2 class="subtitle"><?php echo $subtitle; ?></h2>
                           </td>
                           <td class="expander"></td>
                         </tr>
                         <tr>
-                          <td class="sidebar panel transparent">
+                          <td class="sidebar ">
                             <?php echo $sidebar; ?>
                           </td>
                           <td class="expander"></td>
