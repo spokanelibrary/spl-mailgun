@@ -401,11 +401,10 @@ class SPL_Mailgun_Newsletter {
           <td class="expander"></td>
         </tr>
         <tr>
-          <td class="panel">
-
-            
-                  <a href="$post->link">More »</a>
-            
+          <td class="panel center">
+            <center>
+              <a href="$post->link">More »</a>
+            </center>
           </td>
           <td class="expander"></td>
         </tr>
