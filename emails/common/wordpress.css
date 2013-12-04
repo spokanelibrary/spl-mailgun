@@ -39,8 +39,10 @@
 
   .title { /*color: #64964B;*/ color: #333333; }
 
-  .subtitle { color: #666666 !important; }
-  
+  .subtitle { color: #333333 !important; }
+
+	.wp-caption { color: red; }
+
   .sidebar h1,
   .sidebar h2,
   .sidebar h3,
