@@ -123,7 +123,9 @@
                       <table class="twelve columns">
                         <tr>
                           <td>
-                            <h1 class="title serif"><?php echo $title; ?></h1>
+                            <h1 class="title serif">
+                              <a href="<?php echo $link; ?>"><?php echo $title; ?></a>
+                            </h1>
                           </td>
                           <td class="expander"></td>
                         </tr>
