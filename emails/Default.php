@@ -64,7 +64,7 @@
                             </td>
                             <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
                               <h1 class="serif text-right color-light condensed">News</h1>
-                              <span class="serif text-right color-light condensed"><em>from your library</em></span>
+                              <span class="serif text-right color-light condensed"><em>&amp; new ideas</em></span>
                             </td>
                             <td class="expander"></td>
                           </tr>
