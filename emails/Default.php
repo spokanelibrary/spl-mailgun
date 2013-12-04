@@ -194,42 +194,6 @@
 
 
 
-                <table class="row callout">
-                  <tr>
-                    <td class="wrapper">
-                      <table class="eight columns">
-                        <tr>
-                          <td>
-                            Static Content
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td class="wrapper last">
-                      <table class="four columns">
-                        <tr>
-                          <td class="warning panel sidebar">
-                            <p class="highlight">
-                            <?php echo $callout; ?>
-                            </p>
-                            <span class="muted small">
-                            —<?php echo $attribute; ?>
-                            </span>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-
-
-
-
-
-
-
 
 
                 
