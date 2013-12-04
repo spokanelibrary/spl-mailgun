@@ -190,16 +190,19 @@
                 
                 <table class="row callout">
                   <tr>
-                    <td class="wrapper last">
+                    <td class="wrapper">
                       
                       <table class="six columns">
                         <tr>
-                          <td class="panel alert">
+                          <td class="panel warning">
                             Static Stuff
                           </td>
                           <td class="expander"></td>
                         </tr>
                       </table>
+
+                    </td>
+                    <td class="wrapper">
 
                       <table class="six columns">
                         <tr>
