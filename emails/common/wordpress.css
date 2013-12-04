@@ -54,7 +54,7 @@
 
 	.serif { font-family: Georgia, "Times New Roman", Times, serif; }
 
-	.condensed { margin:0 !important; padding:0 !important; }
+	.condensed { margin:0; padding:0; line-height:1; }
 
 	/* ink is a little bit */
 	h1 {font-size: 30px;}
