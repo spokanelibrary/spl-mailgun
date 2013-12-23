@@ -18,6 +18,11 @@ require('config.php');
 require('settings.php');
 require('functions.php');
 
+function activateNewsletter() {
+  flush_rewrite_rules(false);
+}
+register_activation_hook( __FILE__, activateNewsletter() );
+
 $config = new SPL_Mailgun_Newsletter_Config();
 $newsletter = new SPL_Mailgun_Newsletter($config);
 
@@ -105,7 +110,7 @@ class SPL_Mailgun_Newsletter {
     );
 
     register_post_type( 'newsletter', $args );  
-    register_activation_hook( __FILE__, array( $this, 'activateNewsletter' ) );
+    //register_activation_hook( __FILE__, array( $this, 'activateNewsletter' ) );
   } // registerPostType()
 
   function getPostTypeLabels() {
