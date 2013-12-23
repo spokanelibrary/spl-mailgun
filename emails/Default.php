@@ -29,7 +29,7 @@
                             <td class="small center">
                               <center>
                                 <strong>Online:</strong>
-                                <a href="#"><strong>beta.spokanelibrary.org/newsletter/</strong></a>
+                                <a href="#"><strong>news.spokanelibrary.org/</strong></a>
                               </center>
                             </td>
                             <td class="expander"></td>
