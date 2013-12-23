@@ -94,7 +94,7 @@ class SPL_Mailgun_Newsletter {
                               //, 'comments' 
                               )
     , 'has_archive'   => true
-    , 'slug'          => 'newsletters'
+    , 'slug'          => 'newsletter'
     , 'register_meta_box_cb' => array($this, 'initPublishControls')
     );
 
