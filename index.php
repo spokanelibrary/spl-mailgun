@@ -40,12 +40,8 @@ class SPL_Mailgun_Newsletter {
   }
 
   static function activateNewsletter() {
+    // false does not attempt to overwrite .htaccess
     flush_rewrite_rules(false);
-    echo 'test';
-    // this may or may not work.
-    // if not, hit the permalinks page and save
-    //global $wp_rewrite;
-    //$wp_rewrite->flush_rules( false );
   }
 
   function initNewsletter() {
