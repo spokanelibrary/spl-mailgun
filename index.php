@@ -31,7 +31,7 @@ class SPL_Mailgun_Newsletter {
 
   function __construct($config=null) {
     register_activation_hook( __FILE__, array( 'SPL_Mailgun_Newsletter', 'activateNewsletter' ) );
-    flush_rewrite_rules(false);
+    
     if ( !is_null($config) 
           && isset($config->plugin['mailgun-public-key']) 
           && isset($config->plugin['mailgun-private-key']) ) {
@@ -47,7 +47,7 @@ class SPL_Mailgun_Newsletter {
 
   function initNewsletter() {
     //$this->registerPostTemplates();
-    
+    flush_rewrite_rules(false);
     add_action( 'init', array( $this, 'registerPostType' ) );
     add_action( 'init', array($this, 'initCmbMetaBoxes'), 9999 );
 
