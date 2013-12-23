@@ -42,7 +42,7 @@ class SPL_Mailgun_Newsletter {
 
   static function activateNewsletter() {
     // false does not attempt to overwrite .htaccess
-    flush_rewrite_rules(false);
+    print_r(flush_rewrite_rules(false));
   }
 
   function initNewsletter() {
