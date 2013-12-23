@@ -31,7 +31,7 @@ class SPL_Mailgun_Newsletter {
 
   function __construct($config=null) {
     register_activation_hook( __FILE__, array( 'SPL_Mailgun_Newsletter', 'activateNewsletter' ) );
-
+    flush_rewrite_rules(false);
     if ( !is_null($config) 
           && isset($config->plugin['mailgun-public-key']) 
           && isset($config->plugin['mailgun-private-key']) ) {
@@ -42,7 +42,6 @@ class SPL_Mailgun_Newsletter {
 
   static function activateNewsletter() {
     // false does not attempt to overwrite .htaccess
-    echo 'flush';
     flush_rewrite_rules(false);
   }
 
