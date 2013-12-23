@@ -21,7 +21,7 @@ require('functions.php');
 function activateNewsletter() {
   flush_rewrite_rules(false);
 }
-register_activation_hook( __FILE__, activateNewsletter() );
+register_activation_hook( __FILE__, 'activateNewsletter' );
 
 $config = new SPL_Mailgun_Newsletter_Config();
 $newsletter = new SPL_Mailgun_Newsletter($config);
