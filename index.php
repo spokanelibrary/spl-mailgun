@@ -40,6 +40,7 @@ class SPL_Mailgun_Newsletter {
 
   function activateNewsletter() {
     flush_rewrite_rules();
+    print_r('flushing');
   }
 
   function initNewsletter() {
