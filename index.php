@@ -22,7 +22,6 @@ $config = new SPL_Mailgun_Newsletter_Config();
 $newsletter = new SPL_Mailgun_Newsletter($config);
 
 if ( is_admin() ) {
-  register_activation_hook( __FILE__, array( 'SPL_Mailgun_Newsletter', 'activateNewsletter' ) );
   $admin = new SPL_Mailgun_Newsletter_Settings();
 }
 
@@ -39,7 +38,7 @@ class SPL_Mailgun_Newsletter {
     }
   }
 
-  static function activateNewsletter() {
+  function activateNewsletter() {
     // false does not attempt to overwrite .htaccess
     flush_rewrite_rules(false);
   }
@@ -55,7 +54,6 @@ class SPL_Mailgun_Newsletter {
     add_filter( 'template_include', array($this, 'registerPostTemplates'));
     add_filter( 'cmb_meta_boxes', array($this, 'getNewsletterCmbMetaBoxes') );
     
-    //register_activation_hook( __FILE__, array( $this, 'activateNewsletter' ) );
 
   } // initNewsletter()
 
@@ -107,6 +105,7 @@ class SPL_Mailgun_Newsletter {
     );
 
     register_post_type( 'newsletter', $args );  
+    register_activation_hook( __FILE__, array( $this, 'activateNewsletter' ) );
   } // registerPostType()
 
   function getPostTypeLabels() {
