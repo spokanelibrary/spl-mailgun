@@ -18,11 +18,6 @@ require('config.php');
 require('settings.php');
 require('functions.php');
 
-function activateNewsletter() {
-  flush_rewrite_rules(false);
-}
-register_activation_hook( __FILE__, 'activateNewsletter' );
-
 $config = new SPL_Mailgun_Newsletter_Config();
 $newsletter = new SPL_Mailgun_Newsletter($config);
 
@@ -35,6 +30,8 @@ class SPL_Mailgun_Newsletter {
   var $config;
 
   function __construct($config=null) {
+    register_activation_hook( __FILE__, array( 'SPL_Mailgun_Newsletter', 'activateNewsletter' ) );
+
     if ( !is_null($config) 
           && isset($config->plugin['mailgun-public-key']) 
           && isset($config->plugin['mailgun-private-key']) ) {
@@ -110,7 +107,7 @@ class SPL_Mailgun_Newsletter {
     );
 
     register_post_type( 'newsletter', $args );  
-    //register_activation_hook( __FILE__, array( $this, 'activateNewsletter' ) );
+  
   } // registerPostType()
 
   function getPostTypeLabels() {
