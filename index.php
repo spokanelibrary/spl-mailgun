@@ -39,11 +39,11 @@ class SPL_Mailgun_Newsletter {
   }
 
   function activateNewsletter() {
-    //flush_rewrite_rules();
+    flush_rewrite_rules();
     // this may or may not work.
     // if not, hit the permalinks page and save
-    global $wp_rewrite;
-    $wp_rewrite->flush_rules( false );
+    //global $wp_rewrite;
+    //$wp_rewrite->flush_rules( false );
   }
 
   function initNewsletter() {
