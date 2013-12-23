@@ -47,7 +47,7 @@ class SPL_Mailgun_Newsletter {
 
   function initNewsletter() {
     //$this->registerPostTemplates();
-    flush_rewrite_rules(false);
+    
     add_action( 'init', array( $this, 'registerPostType' ) );
     add_action( 'init', array($this, 'initCmbMetaBoxes'), 9999 );
 
