@@ -38,7 +38,7 @@ class SPL_Mailgun_Newsletter {
     }
   }
 
-  static function activateNewsletter() {
+  function activateNewsletter() {
     flush_rewrite_rules();
   }
 
