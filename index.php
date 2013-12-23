@@ -41,6 +41,7 @@ class SPL_Mailgun_Newsletter {
 
   static function activateNewsletter() {
     flush_rewrite_rules();
+    echo 'test';
     // this may or may not work.
     // if not, hit the permalinks page and save
     //global $wp_rewrite;
