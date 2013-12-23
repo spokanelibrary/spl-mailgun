@@ -39,18 +39,16 @@ class SPL_Mailgun_Newsletter {
   }
 
   function activateNewsletter() {
-    flush_rewrite_rules();
+    //flush_rewrite_rules();
     // this may or may not work.
     // if not, hit the permalinks page and save
-    //global $wp_rewrite;
-    //$wp_rewrite->flush_rules( false );
+    global $wp_rewrite;
+    $wp_rewrite->flush_rules( false );
   }
 
   function initNewsletter() {
     //$this->registerPostTemplates();
     
-    register_activation_hook( __FILE__, array( $this, 'activateNewsletter' ) );
-
     add_action( 'init', array( $this, 'registerPostType' ) );
     add_action( 'init', array($this, 'initCmbMetaBoxes'), 9999 );
 
@@ -59,6 +57,8 @@ class SPL_Mailgun_Newsletter {
     add_filter( 'template_include', array($this, 'registerPostTemplates'));
     add_filter( 'cmb_meta_boxes', array($this, 'getNewsletterCmbMetaBoxes') );
     
+    register_activation_hook( __FILE__, array( $this, 'activateNewsletter' ) );
+
   } // initNewsletter()
 
   function registerPostTemplates($template) {
