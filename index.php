@@ -39,8 +39,11 @@ class SPL_Mailgun_Newsletter {
   }
 
   function activateNewsletter() {
-    flush_rewrite_rules();
-    print_r('flushing');
+    //flush_rewrite_rules();
+    // this may or may not work.
+    // if not, hit the permalinks page and save
+    global $wp_rewrite;
+    $wp_rewrite->flush_rules( false );
   }
 
   function initNewsletter() {
@@ -68,14 +71,12 @@ class SPL_Mailgun_Newsletter {
     }
     */
     //if ( 'newsletter' == get_post_type( get_the_ID() ) ) {
-    /*
+    
     if ( is_singular( $post_types )
       && ! file_exists( get_stylesheet_directory() . '/single-newsletter.php' ) ) {
       $template = plugin_dir_path(__FILE__) . 'templates/single-newsletter.php';
     }
-    */
-    print_r( get_post_type( get_the_ID() ) );
-    //$template = plugin_dir_path(__FILE__) . 'templates/single-newsletter.php';
+    
     return $template;
   } // registerPostTemplates()
 
