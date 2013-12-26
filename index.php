@@ -48,12 +48,13 @@ class SPL_Mailgun_Newsletter {
     flush_rewrite_rules(false);
   }
 
-  static function getNewsletterMetadata($id) {
+  static function getNewsletterMetadata($post) {
     $meta = false;
 
-    if ( isset($id) ) {
+    if ( isset($post->ID) ) {
       $meta = new stdClass();
-      $meta->id = $id;
+      $meta->id = $post->ID;
+      
       $meta->sb_headline = get_post_meta($post->ID
                           ,'_spl_mailgun_newsletter_sidebar_headline'
                           ,true 
