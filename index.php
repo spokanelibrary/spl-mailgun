@@ -48,28 +48,28 @@ class SPL_Mailgun_Newsletter {
     flush_rewrite_rules(false);
   }
 
-  static function getNewsletterMetadata($post) {
-    $meta = false;
+  static function getNewsletter($post) {
+    $news = false;
 
     if ( isset($post->ID) ) {
-      $meta = new stdClass();
-      $meta->id = $post->ID;
-      
-      $meta->sb_headline = get_post_meta($post->ID
+      $news = new stdClass();
+      $news->id = $post->ID;
+
+      $news->sb_headline = get_post_meta($post->ID
                           ,'_spl_mailgun_newsletter_sidebar_headline'
                           ,true 
                           );
-      $meta->sb_content = apply_filters('the_content', get_post_meta($post->ID
+      $news->sb_content = apply_filters('the_content', get_post_meta($post->ID
                           ,'_spl_mailgun_newsletter_sidebar_content'
                           ,true 
                           ));
-      $meta->sb_callout = apply_filters('the_content', get_post_meta($post->ID
+      $news->sb_callout = apply_filters('the_content', get_post_meta($post->ID
                           ,'_spl_mailgun_newsletter_sidebar_callout'
                           ,true 
                           ));
     }
 
-    return $meta;
+    return $news;
   }
 
   function initNewsletter() {
