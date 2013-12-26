@@ -7,7 +7,7 @@
   $settings = get_option( 'spl-mailgun-newsletter' );
   print_r($settings);
   */
-  $meta = SPL_Mailgun_Newsletter::getNewsletterMetadata( the_id() );
+  $meta = SPL_Mailgun_Newsletter::getNewsletterMetadata( get_the_id() );
   echo '<pre>';
   print_r( $meta );
   echo '</pre>';

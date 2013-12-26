@@ -56,7 +56,7 @@ class SPL_Mailgun_Newsletter {
       $meta->id = $id;
     }
 
-    return $news;
+    return $meta;
   }
 
   function initNewsletter() {
