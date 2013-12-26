@@ -644,7 +644,7 @@ EOT;
   }
 
   function getNewsletterDefaultRecipient() {
-    return $this->config->plugin['default-campaign'];
+    return $this->config->plugin['default-recipient'];
   }
 
   function processNewsletter($id, $subject, $list, $address, $template) {
