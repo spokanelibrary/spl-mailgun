@@ -50,9 +50,10 @@ class SPL_Mailgun_Newsletter {
 
   static function getNewsletter($id) {
     $news = false;
-    
+
     if ( isset($id) ) {
       $news = new stdClass();
+      $news->id = $id;
     }
 
     return $news;
