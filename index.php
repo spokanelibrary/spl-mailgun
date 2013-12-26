@@ -537,7 +537,8 @@ EOT;
       $post->title = $attach->post_title;
 
       // todo: featured img
-      $post->thumbnail = get_the_post_thumbnail($attach->ID, 'medium', array('class'=>'img-responsive'));
+      //$post->thumbnail = get_the_post_thumbnail($attach->ID, 'medium', array('class'=>'img-responsive'));
+      $post->thumbnail = $attach->ID;
 
       if ( !empty($excerpt) ) {
         if (!empty($attach->post_excerpt)) { 
