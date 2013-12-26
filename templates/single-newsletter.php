@@ -53,7 +53,16 @@
     </div><!-- /.col -->
     <div class="col-sm-4">
 
-      
+      <?php if ( isset($meta->callout && $meta->callout['content']) ) :  ?>
+      <!-- sidebar callout -->
+      <div class="panel panel-warning panel-callout-warning">
+        <div class="panel-body text-primary">
+          <div style="font-style:italic;">
+          <?php echo $meta->callout['content']; ?>
+          </div>
+        </div>
+      </div>
+      <?php endif; ?>
       <?php if ( isset($meta->sidebar) ) :  ?>
         <!-- sidebar -->
         <?php if ( isset($meta->sidebar['headline']) ) :  ?>
