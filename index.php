@@ -75,7 +75,7 @@ class SPL_Mailgun_Newsletter {
       $posts = array();
       for ( $i=1; $i<= 12; $i++ ) {
         $select = SPL_Mailgun_Newsletter::getPostSelect($post->ID, $i);
-        if ( is_array($select) ) {
+        if ( !emtpy($select) ) {
           $posts[$i] = $select;
         }
       }
