@@ -49,17 +49,17 @@
     	</div>
     </div><!-- /.col -->
     <div class="col-sm-4">
-      <?php if ( isset($meta->sb_callout) ) :  ?>
 
+      <?php if ( isset($meta->sb_callout) ) :  ?>
+      <!-- sidebar callout -->
       <div class="panel panel-warning panel-callout-warning">
         <div class="panel-body text-primary">
           <div style="font-style:italic;">
-          <?php spl_news_sidebar_callout($post); ?>
+          <?php echo $meta->sb_callout; ?>
           </div>
           <span class="help-block">&mdash;<?php spl_news_sidebar_attribution($post); ?></span>
         </div>
       </div>
-
       <?php endif; ?>
       
       <h3 class="text-primary">
