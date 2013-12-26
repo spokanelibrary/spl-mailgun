@@ -48,6 +48,19 @@ class SPL_Mailgun_Newsletter {
     flush_rewrite_rules(false);
   }
 
+  static function getNewsletterPostSelectFormatted($select) {
+    $html = '';
+    if ( is_array($select) ) {
+      $html .= '<p class="lead">
+                <a href="'.$select['link'].'">'.$select['title'].'</a>
+                </p>';
+    
+      $html .= '<hr>';
+    }
+
+    return $html;
+  }
+
   static function getNewsletterMetadata($post) {
     $meta = false;
 
