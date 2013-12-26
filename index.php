@@ -79,7 +79,6 @@ class SPL_Mailgun_Newsletter {
           $posts[$i] = $select;
         }
       }
-
       if ( !empty($posts) ) {
         $meta->posts = $posts;
       }
@@ -468,8 +467,6 @@ class SPL_Mailgun_Newsletter {
 EOT;
     }
 
-
-    
 
 
     return $html;
