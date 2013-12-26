@@ -8,9 +8,9 @@
   print_r($settings);
   */
   //print_r($post);
-  $news = SPL_Mailgun_Newsletter::getNewsletter( $post );
+  $meta = SPL_Mailgun_Newsletter::getNewsletterMetadata( $post );
   echo '<pre>';
-  print_r( $news );
+  print_r( $meta );
   echo '</pre>';
 ?>
 
