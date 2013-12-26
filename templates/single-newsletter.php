@@ -87,7 +87,6 @@
   <?php if ( isset($meta->posts) ) :  ?>
   <div class="row">
 		<div class="col-sm-4 spl-news-post">
-      <?php print_r($meta->posts[1]); ?>
 			<?php echo SPL_Mailgun_Newsletter::getNewsletterPostSelectFormatted($meta->posts[1]); ?>
 		</div><!-- /.col -->
 		<div class="col-sm-4 spl-news-post">

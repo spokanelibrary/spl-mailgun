@@ -52,7 +52,7 @@ class SPL_Mailgun_Newsletter {
     $html = '';
     if ( is_array($select) ) {
       $html .= '<p class="lead">
-                <a href="'.$select['link'].'">'.$select['title'].'</a>
+                <a href="'.$select->link.'">'.$select->title.'</a>
                 </p>';
     
       $html .= '<hr>';
