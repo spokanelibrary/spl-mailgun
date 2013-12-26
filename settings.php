@@ -187,7 +187,7 @@ class SPL_Mailgun_Newsletter_Settings {
     , 'spl-mailgun-newsletter-defaults'         // section
     , array('option'=>'spl-mailgun-newsletter'  // callback args
           , 'id'=>'default-campaign'
-          , 'class'=>'widefat'
+          , 'label'=>'Leave empty if you do not wish to auto-populate Campaign ID field'
           ) 
     );
 
