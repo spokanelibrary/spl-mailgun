@@ -48,12 +48,12 @@ class SPL_Mailgun_Newsletter {
     flush_rewrite_rules(false);
   }
 
-  static function getNewsletter($id) {
-    $news = false;
+  static function getNewsletterMetadata($id) {
+    $meta = false;
 
     if ( isset($id) ) {
-      $news = new stdClass();
-      $news->id = $id;
+      $meta = new stdClass();
+      $meta->id = $id;
     }
 
     return $news;

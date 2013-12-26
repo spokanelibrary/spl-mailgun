@@ -1,16 +1,18 @@
 <?php //get_template_part('templates/content', 'single'); ?>
 
-<?php
-	/*
-	$settings = get_option( 'spl-mailgun-newsletter' );
-	print_r($settings);
-	*/
-  $news = SPL_Mailgun_Newsletter::getNewsletter( get_the_id() );
-  print_r( $news );
-?>
-
 <div class="spl-news">
 <?php while (have_posts()) : the_post(); ?>
+<?php
+  /*
+  $settings = get_option( 'spl-mailgun-newsletter' );
+  print_r($settings);
+  */
+  $meta = SPL_Mailgun_Newsletter::getNewsletterMetadata( get_the_id() );
+  echo '<pre>';
+  print_r( $news );
+  echo '</pre>';
+?>
+
 	<div class="page-header">
     <h1>
     	News &amp; Ideas
