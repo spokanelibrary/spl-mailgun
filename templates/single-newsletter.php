@@ -10,11 +10,11 @@
   //print_r($post);
   
   $meta = SPL_Mailgun_Newsletter::getNewsletterMetadata( $post );
-  /*
+  
   echo '<pre>';
   print_r( $meta );
   echo '</pre>';
-  */
+  
 ?>
 
 	<div class="page-header">
