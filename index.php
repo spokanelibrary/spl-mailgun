@@ -74,9 +74,9 @@ class SPL_Mailgun_Newsletter {
 
       $posts = array();
       for ( $i=1; $i<= 12; $i++ ) {
-        $posts[$i] = $this->getPostSelect($id, $i);
+        $posts[$i] = $this->getPostSelect($post->ID, $i);
       }
-      
+
       if ( !empty($posts) ) {
         $meta->posts = $posts;
       }
