@@ -54,6 +54,10 @@ class SPL_Mailgun_Newsletter {
     if ( isset($id) ) {
       $meta = new stdClass();
       $meta->id = $id;
+      $meta->sidebar_headline = get_post_meta($post->ID
+                              , '_spl_mailgun_newsletter_sidebar_headline'
+                              , true 
+                              );
     }
 
     return $meta;
