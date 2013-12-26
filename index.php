@@ -75,22 +75,25 @@ class SPL_Mailgun_Newsletter {
       }
 
 
-
-      $callout = apply_filters('the_content', get_post_meta($post->ID
+      $callout = array();
+      $content = apply_filters('the_content', get_post_meta($post->ID
                 ,'_spl_mailgun_newsletter_sidebar_callout'
                 ,true 
                 ));
-      if ( !empty($callout) ) {
-        $meta->sb_callout = $callout;
+      if ( !empty($content) ) {
+        $callout['content'] = $content;
       }
-
       $attrib = get_post_meta($post->ID
                 ,'_spl_mailgun_newsletter_sidebar_attribution'
                 ,true 
                 );
       if ( !empty($attrib) ) {
-        $meta->sb_attrib = $attrib;
+        $callout['attrib'] = $attrib;
       }
+      if ( !empty($callout) ) {
+        $meta->callout = $callout;
+      }
+
 
       $posts = array();
       for ( $i=1; $i<= 12; $i++ ) {

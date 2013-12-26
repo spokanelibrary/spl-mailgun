@@ -10,11 +10,11 @@
   //print_r($post);
   
   $meta = SPL_Mailgun_Newsletter::getNewsletterMetadata( $post );
-  /*
+  
   echo '<pre>';
   print_r( $meta );
   echo '</pre>';
-  */
+  
 ?>
 
 	<div class="page-header">
@@ -53,15 +53,15 @@
     </div><!-- /.col -->
     <div class="col-sm-4">
 
-      <?php if ( isset($meta->sb_callout) ) :  ?>
+      <?php if ( isset($meta->callout && $meta->callout['content']) ) :  ?>
       <!-- sidebar callout -->
       <div class="panel panel-warning panel-callout-warning">
         <div class="panel-body text-primary">
           <div style="font-style:italic;">
-          <?php echo $meta->sb_callout; ?>
+          <?php echo $meta->callout['content']; ?>
           </div>
-          <?php if ( isset($meta->sb_attrib) ) :  ?>
-          <span class="help-block">&mdash;<?php echo $meta->sb_attrib; ?></span>
+          <?php if ( isset($meta->callout['attrib']) ) :  ?>
+          <span class="help-block">&mdash;<?php echo $meta->callout['attrib']; ?></span>
           <?php endif; ?>
         </div>
       </div>
