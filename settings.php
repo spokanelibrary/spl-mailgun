@@ -24,7 +24,7 @@ class SPL_Mailgun_Newsletter_Settings {
     $config = new stdClass();
 
     $headings = array(
-                  'spl-mailgun-newsletter-api' => 'Dig it: all Mailgun settings are REQUIRED. Also: you MUST go to the Permalinks page and hit Save one time.'
+                  'spl-mailgun-newsletter-api' => 'Dig it: all Mailgun settings are REQUIRED. <br> Also: you MUST go to the Permalinks page and hit "Save Changes" one time.'
                 , 'spl-mailgun-newsletter-display' => 'Filter Posts shown in "Add Posts to Newsletter" menus' 
                 , 'spl-mailgun-newsletter-defaults' => 'Be sensible.' 
                 );
