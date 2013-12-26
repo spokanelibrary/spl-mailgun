@@ -62,6 +62,10 @@ class SPL_Mailgun_Newsletter {
                           ,'_spl_mailgun_newsletter_sidebar_content'
                           ,true 
                           ));
+      $meta->sb_callout = apply_filters('the_content', get_post_meta($post->ID
+                          ,'_spl_mailgun_newsletter_sidebar_callout'
+                          ,true 
+                          ));
     }
 
     return $meta;
