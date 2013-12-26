@@ -54,7 +54,7 @@ class SPL_Mailgun_Newsletter {
       $html .= '<p class="lead">
                 <a href="'.$select->link.'">'.$select->title.'</a>
                 </p>';
-      if ( !empty($post->thumbnail) ) {
+      if ( isset($post->thumbnail) ) {
         $html .= $post->thumbnail;
       }
       $html .= $select->content;
