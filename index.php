@@ -294,6 +294,15 @@ class SPL_Mailgun_Newsletter {
     </p>
     ';
 
+    $campaign = '
+    <p>
+      <label for="spl-mailgun-newsletter-campaign">Enter a Campaign ID (optional):</label>
+      <br />
+      <input value="'.$this->getNewsletterDefaultCampaign().'" class="widefat" type="text" name="spl-mailgun-newsletter-campaign" id="spl-mailgun-newsletter-campaign" />
+    </p>
+    ';
+    echo $campaign;
+
     echo '<hr />';
 
     echo '
@@ -628,6 +637,10 @@ EOT;
 
   function getNewsletterDefaultSubject() {
     return $this->config->plugin['default-subject'];
+  }
+
+  function getNewsletterDefaultCampaign() {
+    return $this->config->plugin['default-campaign'];
   }
 
   function processNewsletter($id, $subject, $list, $address, $template) {
