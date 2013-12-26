@@ -8,10 +8,12 @@
   print_r($settings);
   */
   //print_r($post);
+  /*
   $meta = SPL_Mailgun_Newsletter::getNewsletterMetadata( $post );
   echo '<pre>';
   print_r( $meta );
   echo '</pre>';
+  */
 ?>
 
 	<div class="page-header">
@@ -63,15 +65,19 @@
         </div>
       </div>
       <?php endif; ?>
-      
+      <!-- sidebar -->
+      <?php if ( isset($meta->sb_headline) ) :  ?>
       <h3 class="text-primary">
-        <?php spl_news_sidebar_headline($post); ?>
+        <?php echo $meta->sb_headline; ?>
       </h3>
-
+      <?php endif; ?>
+      <?php if ( isset($meta->sb_content) ) :  ?>
 			<aside class="aside">
-		  	<?php spl_news_sidebar_content($post); ?>
+		  	<?php echo $meta->sb_content; ?>
 		  	<hr />
 		  </aside>
+      <?php endif; ?>
+
     </div><!-- /.col -->
   </div><!-- /.row -->
 
