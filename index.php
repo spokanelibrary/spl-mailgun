@@ -48,12 +48,15 @@ class SPL_Mailgun_Newsletter {
     flush_rewrite_rules(false);
   }
 
-  static function getNewsletterPostSelectFormatted($select) {
+  static function getPostSelectFormatted($select) {
     $html = '';
     if ( !empty($select) ) {
       $html .= '<p class="lead">
                 <a href="'.$select->link.'">'.$select->title.'</a>
                 </p>';
+      if ( !empty($post->thumbnail) ) {
+        $html .= $post->thumbnail;
+      }
       $html .= $select->content;
       $html .= '<p>
                 <a href="'.$select->link.'"
