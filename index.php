@@ -54,7 +54,12 @@ class SPL_Mailgun_Newsletter {
       $html .= '<p class="lead">
                 <a href="'.$select->link.'">'.$select->title.'</a>
                 </p>';
-    
+      $html .= $select->content;
+      $html .= '<p>
+                <a href="'.$select->link.'"
+                    class="btn btn-success">Read More &rarr;</a>
+                </p>';
+
       $html .= '<hr>';
     }
 
