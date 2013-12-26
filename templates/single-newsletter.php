@@ -49,6 +49,8 @@
     	</div>
     </div><!-- /.col -->
     <div class="col-sm-4">
+      <?php if ( isset($meta->sb_callout) ) :  ?>
+
       <div class="panel panel-warning panel-callout-warning">
         <div class="panel-body text-primary">
           <div style="font-style:italic;">
@@ -57,6 +59,8 @@
           <span class="help-block">&mdash;<?php spl_news_sidebar_attribution($post); ?></span>
         </div>
       </div>
+
+      <?php endif; ?>
       
       <h3 class="text-primary">
         <?php spl_news_sidebar_headline($post); ?>
