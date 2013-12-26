@@ -290,7 +290,7 @@ class SPL_Mailgun_Newsletter {
     <p>
       <label for="spl-mailgun-newsletter-address">Send to this address:</label>
       <br />
-      <input value="sgirard@spokanelibrary.org" class="widefat" type="text" name="spl-mailgun-newsletter-address" id="spl-mailgun-newsletter-address" />
+      <input value="'.$this->getNewsletterDefaultRecipient().'" class="widefat" type="text" name="spl-mailgun-newsletter-address" id="spl-mailgun-newsletter-address" />
     </p>
     ';
 
@@ -640,6 +640,10 @@ EOT;
   }
 
   function getNewsletterDefaultCampaign() {
+    return $this->config->plugin['default-campaign'];
+  }
+
+  function getNewsletterDefaultRecipient() {
     return $this->config->plugin['default-campaign'];
   }
 
