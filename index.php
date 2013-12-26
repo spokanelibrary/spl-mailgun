@@ -50,7 +50,7 @@ class SPL_Mailgun_Newsletter {
 
   static function getNewsletterPostSelectFormatted($select) {
     $html = '';
-    if ( is_array($select) ) {
+    if ( !empty($select) ) {
       $html .= '<p class="lead">
                 <a href="'.$select->link.'">'.$select->title.'</a>
                 </p>';
