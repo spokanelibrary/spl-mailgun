@@ -87,7 +87,7 @@
   <?php if ( isset($meta->posts) ) :  ?>
   <div class="row">
 		<div class="col-sm-4 spl-news-post">
-			<?php spl_news_post_select($post, 1); ?>
+			<?php echo $meta->posts[1]; ?>
 			<hr />
 		</div><!-- /.col -->
 		<div class="col-sm-4 spl-news-post">
