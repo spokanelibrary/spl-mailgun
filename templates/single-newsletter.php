@@ -57,7 +57,9 @@
           <div style="font-style:italic;">
           <?php echo $meta->sb_callout; ?>
           </div>
-          <span class="help-block">&mdash;<?php spl_news_sidebar_attribution($post); ?></span>
+          <?php if ( isset($meta->sb_attrib) ) :  ?>
+          <span class="help-block">&mdash;<?php echo $meta->sb_attrib; ?></span>
+          <?php endif; ?>
         </div>
       </div>
       <?php endif; ?>
