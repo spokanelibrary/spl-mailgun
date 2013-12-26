@@ -71,6 +71,16 @@ class SPL_Mailgun_Newsletter {
                           ,'_spl_mailgun_newsletter_sidebar_attribution'
                           ,true 
                           );
+
+      $posts = array();
+      for ( $i=1; $i<= 12; $i++ ) {
+        $posts[$i] = $this->getPostSelect($id, $i);
+      }
+      
+      if ( !empty($posts) ) {
+        $meta->posts = $posts;
+      }
+
     }
 
     return $meta;
