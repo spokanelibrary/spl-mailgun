@@ -56,25 +56,36 @@ class SPL_Mailgun_Newsletter {
       $meta->id = $post->ID;
 
       $headline = get_post_meta($post->ID
-                          ,'_spl_mailgun_newsletter_sidebar_headline'
-                          ,true 
-                          );
+                  ,'_spl_mailgun_newsletter_sidebar_headline'
+                  ,true 
+                  );
       if ( !empty($headline) ) {
         $meta->sb_headline = $headline;
       }
 
-      $meta->sb_content = apply_filters('the_content', get_post_meta($post->ID
-                          ,'_spl_mailgun_newsletter_sidebar_content'
-                          ,true 
-                          ));
-      $meta->sb_callout = apply_filters('the_content', get_post_meta($post->ID
-                          ,'_spl_mailgun_newsletter_sidebar_callout'
-                          ,true 
-                          ));
-      $meta->sb_attrib = get_post_meta($post->ID
-                          ,'_spl_mailgun_newsletter_sidebar_attribution'
-                          ,true 
-                          );
+      $sidebar = apply_filters('the_content', get_post_meta($post->ID
+                ,'_spl_mailgun_newsletter_sidebar_content'
+                ,true 
+                ));
+      if ( !empty($sidebar) ) {
+        $meta->sb_content = $sidebar;
+      }
+
+      $callout = apply_filters('the_content', get_post_meta($post->ID
+                ,'_spl_mailgun_newsletter_sidebar_callout'
+                ,true 
+                ));
+      if ( !empty($callout) ) {
+        $meta->sb_callout = $callout;
+      }
+
+      $attrib = get_post_meta($post->ID
+                ,'_spl_mailgun_newsletter_sidebar_attribution'
+                ,true 
+                );
+      if ( !empty($attrib) ) {
+        $meta->sb_attrib = $attrib;
+      }
 
       $posts = array();
       for ( $i=1; $i<= 12; $i++ ) {
