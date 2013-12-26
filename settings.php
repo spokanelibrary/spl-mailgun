@@ -180,6 +180,19 @@ class SPL_Mailgun_Newsletter_Settings {
     );
 
     add_settings_field(
+      'default-recipient'                       // id
+    , 'Default Recipient'                       // title
+    , array( $this, 'getSettingsFieldText' )    // callback
+    , 'spl-mailgun-newsletter-settings'         // page
+    , 'spl-mailgun-newsletter-defaults'         // section
+    , array('option'=>'spl-mailgun-newsletter'  // callback args
+          , 'id'=>'default-recipient'
+          , 'class'=>'widefat'
+          , 'label'=>'Optional: auto-populate Recipient Address (for testing)'
+          ) 
+    );
+
+    add_settings_field(
       'default-campaign'                        // id
     , 'Default Campaign ID'                     // title
     , array( $this, 'getSettingsFieldText' )    // callback
