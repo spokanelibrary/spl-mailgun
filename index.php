@@ -55,21 +55,26 @@ class SPL_Mailgun_Newsletter {
       $meta = new stdClass();
       $meta->id = $post->ID;
 
+      $sidebar = array();
       $headline = get_post_meta($post->ID
                   ,'_spl_mailgun_newsletter_sidebar_headline'
                   ,true 
                   );
       if ( !empty($headline) ) {
-        $meta->sb_headline = $headline;
+        $sidebar['headline'] = $headline;
       }
-
-      $sidebar = apply_filters('the_content', get_post_meta($post->ID
+      $content = apply_filters('the_content', get_post_meta($post->ID
                 ,'_spl_mailgun_newsletter_sidebar_content'
                 ,true 
                 ));
-      if ( !empty($sidebar) ) {
-        $meta->sb_content = $sidebar;
+      if ( !empty($content) ) {
+        $sidebar['content'] = $content;
       }
+      if ( !empty($sidebar) ) {
+        $meta->sidebar = $sidebar;
+      }
+
+
 
       $callout = apply_filters('the_content', get_post_meta($post->ID
                 ,'_spl_mailgun_newsletter_sidebar_callout'

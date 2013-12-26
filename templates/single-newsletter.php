@@ -66,17 +66,19 @@
         </div>
       </div>
       <?php endif; ?>
-      <!-- sidebar -->
-      <?php if ( isset($meta->sb_headline) ) :  ?>
-      <h3 class="text-primary">
-        <?php echo $meta->sb_headline; ?>
-      </h3>
-      <?php endif; ?>
-      <?php if ( isset($meta->sb_content) ) :  ?>
-			<aside class="aside">
-		  	<?php echo $meta->sb_content; ?>
-		  	<hr />
-		  </aside>
+      <?php if ( isset($meta->sidebar) ) :  ?>
+        <!-- sidebar -->
+        <?php if ( isset($meta->sidebar['headline']) ) :  ?>
+        <h3 class="text-primary">
+          <?php echo $meta->sidebar['headline']; ?>
+        </h3>
+        <?php endif; ?>
+        <?php if ( isset($meta->sidebar['content']) ) :  ?>
+  			<aside class="aside">
+  		  	<?php echo $meta->sidebar['content']; ?>
+  		  	<hr />
+  		  </aside>
+        <?php endif; ?>
       <?php endif; ?>
 
     </div><!-- /.col -->
