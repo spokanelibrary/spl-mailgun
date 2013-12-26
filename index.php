@@ -30,8 +30,10 @@ class SPL_Mailgun_Newsletter {
   var $config;
 
   function __construct($config=null) {
-    register_activation_hook( __FILE__, array( 'SPL_Mailgun_Newsletter', 'activateNewsletter' ) );
-    
+    // can't get this working.
+    // for now just hit permalinks page
+    //register_activation_hook( __FILE__, array( 'SPL_Mailgun_Newsletter', 'activateNewsletter' ) );
+
     if ( !is_null($config) 
           && isset($config->plugin['mailgun-public-key']) 
           && isset($config->plugin['mailgun-private-key']) ) {
@@ -40,9 +42,20 @@ class SPL_Mailgun_Newsletter {
     }
   }
 
+  // WARNING: this doesn't actually work, yet!
   static function activateNewsletter() {
     // false does not attempt to overwrite .htaccess
     flush_rewrite_rules(false);
+  }
+
+  static function getNewsletter($id) {
+    $news = false;
+    
+    if ( isset($id) ) {
+      $news = new stdClass();
+    }
+
+    return $news;
   }
 
   function initNewsletter() {

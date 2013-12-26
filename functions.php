@@ -17,7 +17,7 @@ function spl_news_sidebar_content($post) {
 }
 
 function spl_news_sidebar_callout($post) {
-  echo apply_filters('the_content', get_post_meta($post->ID
+  $html = apply_filters('the_content', get_post_meta($post->ID
                     ,'_spl_mailgun_newsletter_sidebar_callout'
                     ,true 
                     ));

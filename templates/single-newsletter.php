@@ -5,6 +5,8 @@
 	$settings = get_option( 'spl-mailgun-newsletter' );
 	print_r($settings);
 	*/
+  //$news = SPL_Mailgun_Newsletter::getNewsletter();
+  print_r( get_the_id() );
 ?>
 
 <div class="spl-news">
