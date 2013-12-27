@@ -60,7 +60,7 @@
                         <table class="twelve columns">
                           <tr>
                             <td class="six sub-columns">
-                              <a href="http://beta.spokanelibrary.org"><img src="http://beta.spokanelibrary.org/assets/img/SPL-Logo-inverse-hidpi.png" style="height:80px; width:170px"></a>
+                              <a href="http://beta.spokanelibrary.org"><img alt="Spokane Public Library" src="http://beta.spokanelibrary.org/assets/img/SPL-Logo-inverse-hidpi.png" style="height:80px; width:170px"></a>
                             </td>
                             <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
                               <h1 class="serif text-right condensed">News</h1>
