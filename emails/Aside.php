@@ -36,7 +36,7 @@
   }
 
   .header h1 { font-size: 42px; font-weight: normal; color: #ffffff; }
-  .header h5 { font-size: 14px; font-weight: normal; color: #ffffff; }
+  .header h5 { font-size: 12px; font-weight: normal; color: #ffffff; }
 
   .title { /*color: #64964B;*/ color: #005587; }
 
@@ -117,7 +117,7 @@
                             </td>
                             <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
                               <h1 class="serif text-right condensed">News</h1>
-                              <h5 class="serif text-right"><em>&amp; new ideas</em></h5>
+                              <h5 class="serif text-right condensed"><em>from your library</em></h5>
                             </td>
                             <td class="expander"></td>
                           </tr>
