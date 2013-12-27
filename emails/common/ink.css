@@ -348,6 +348,7 @@ small {
 a {
   color: #2ba6cb; 
   text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif; /* spl */
 }
 
 a:hover { 
