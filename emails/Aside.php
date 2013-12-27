@@ -14,7 +14,7 @@
   </style>
   <style>
   /* Overrides */
-  a 
+  a, 
   h1 a,
   h2 a,
   h3 a,
