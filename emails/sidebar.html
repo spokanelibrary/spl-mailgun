@@ -172,8 +172,21 @@ table.ten center { min-width: 480px; }
 table.eleven center { min-width: 530px; }
 table.twelve center { min-width: 580px; }
 
+table.one .panel center { min-width: 10px; }
+table.two .panel center { min-width: 60px; }
+table.three .panel center { min-width: 110px; }
+table.four .panel center { min-width: 160px; }
+table.five .panel center { min-width: 210px; }
+table.six .panel center { min-width: 260px; }
+table.seven .panel center { min-width: 310px; }
+table.eight .panel center { min-width: 360px; }
+table.nine .panel center { min-width: 410px; }
+table.ten .panel center { min-width: 460px; }
+table.eleven .panel center { min-width: 510px; }
+table.twelve .panel center { min-width: 560px; }
+
 .body .columns td.one,
-.body .column td.one, { width: 8.333333% !important; }
+.body .column td.one { width: 8.333333% !important; }
 .body .columns td.two,
 .body .column td.two { width: 16.666666% !important; }
 .body .columns td.three,
@@ -208,18 +221,6 @@ td.offset-by-eight { padding-left: 400px; }
 td.offset-by-nine { padding-left: 450px; }
 td.offset-by-ten { padding-left: 500px; }
 td.offset-by-eleven { padding-left: 550px; }
-
-td.sub-offset-by-one { padding-left: 5.172413% !important; }
-td.sub-offset-by-two { padding-left: 13.793102% !important; }
-td.sub-offset-by-three { padding-left: 22.413791% !important; }
-td.sub-offset-by-four { padding-left: 31.034480% !important; }
-td.sub-offset-by-five { padding-left: 39.655169% !important; }
-td.sub-offset-by-six { padding-left: 48.275858% !important; }
-td.sub-offset-by-seven { padding-left: 56.896547% !important; }
-td.sub-offset-by-eight { padding-left: 65.517236% !important; }
-td.sub-offset-by-nine { padding-left: 74.137925% !important; }
-td.sub-offset-by-ten { padding-left: 82.758614% !important; }
-td.sub-offset-by-eleven { padding-left: 91.379303% !important; }
 
 td.expander {
   visibility: hidden;
@@ -343,7 +344,7 @@ h6 {font-size: 20px;}
 body, table.body, p {font-size: 14px;line-height:19px;}
 
 p { 
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 small {
@@ -396,7 +397,7 @@ h6 a:visited {
 
 /* Panels */
 
-td.panel {
+.panel {
   background: #f2f2f2;
   border: 1px solid #d9d9d9;
   padding: 10px !important;
@@ -628,8 +629,8 @@ body.outlook p {
     padding-left: 0 !important;
   }
 
-  table[class="body"] .expander {
-    width: 9999px !important;
+  table[class="body"] table.columns td.expander {
+    width: 1px !important;
   }
 
   table[class="body"] .right-text-pad,
@@ -655,7 +656,7 @@ body.outlook p {
 
   </style>
   <style>
-		
+    
     table.facebook td {
       background: #3b5998;
       border-color: #2d4473;
@@ -687,10 +688,6 @@ body.outlook p {
       color: #ffffff;
       font-weight: bold;
       font-size: 11px;
-    }
-
-    .callout .wrapper {
-      padding-bottom: 20px;
     }
 
     .callout .panel {
@@ -734,7 +731,7 @@ body.outlook p {
       }
     }
 
-	</style>
+  </style>
 </head>
 <body>
 	<table class="body">
@@ -757,7 +754,7 @@ body.outlook p {
                               <img src="http://placehold.it/200x50">
                             </td>
                             <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
-                              <span class="template-label">BASIC</span>
+                              <span class="template-label">SIDEBAR</span>
                             </td>
                             <td class="expander"></td>
                           </tr>
@@ -770,58 +767,136 @@ body.outlook p {
                 </center>
               </td>
             </tr>
-          </table> 
-
+          </table>
+				 
+				 <br>
+				 
           <table class="container">
             <tr>
               <td>
               
+              <!-- content start -->
+              
                 <table class="row">
                   <tr>
-                    <td class="wrapper last">
-                  
-                      <table class="twelve columns">
+                    <td class="wrapper">
+          
+                      <table class="six columns">
                         <tr>
                           <td>
-                            <h1><a href="http://news.spokanelibrary.org">Hi, Susan Calvin</a></h1>
-                						<p class="lead">Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae.</p>
-                						<p>Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae. consequat vel lacus. Sed iaculis pulvinar ligula, ornare fringilla ante viverra et. In hac habitasse platea dictumst. Donec vel orci mi, eu congue justo. Integer eget odio est, eget malesuada lorem. Aenean sed tellus dui, vitae viverra risus. Nullam massa sapien, pulvinar eleifend fringilla id, convallis eget nisi. Mauris a sagittis dui. Pellentesque non lacinia mi. Fusce sit amet libero sit amet erat venenatis sollicitudin vitae vel eros. Cras nunc sapien, interdum sit amet porttitor ut, congue quis urna.</p>
+                            <h2>Hello,<br> Han Fastolfe</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet.</p>
                           </td>
                           <td class="expander"></td>
                         </tr>
                       </table>
-                  
-                    </td>
-                  </tr>
-                </table>
-              
-                <table class="row callout">
-                  <tr>
-                    <td class="wrapper last">
-
-                      <table class="twelve columns">
+          
+                      <table class="six columns">
                         <tr>
                           <td class="panel">
                             <p>Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae. <a href="#">Click it! »</a></p>
                           </td>
+                          
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+          
+                      <table class="six columns">
+                        <tr>
+                          <td>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet.</p>
+                            
+                            <table class="button">
+                              <tr>
+                                <td>
+                                  <a href="#">Click Me!</a>
+                                </td>
+                              </tr>
+                            </table>
+                            
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+          
+                    </td>
+                    <td class="wrapper last">
+          
+                      <table class="six columns">
+                        <tr>
+                          <td class="panel">
+                            <h6>Header Thing</h6>
+                            <p>Sub-head or something</p>
+                            <table>
+                              <tr>
+                                <td>
+                                  <a href="#">Just a Plain Link &raquo;</a>
+                                </td>
+                              </tr>
+                            </table>
+                            <hr>
+                            <table>
+                              <tr>
+                                <td>
+                                  <a href="#">Just a Plain Link &raquo;</a>
+                                </td>
+                              </tr>
+                            </table>
+                            <hr>
+                            <table>
+                              <tr>
+                                <td>
+                                  <a href="#">Just a Plain Link &raquo;</a>
+                                </td>
+                              </tr>
+                            </table>
+                            <hr>
+                            <table>
+                              <tr>
+                                <td>
+                                  <a href="#">Just a Plain Link &raquo;</a>
+                                </td>
+                              </tr>
+                            </table>
+                            <hr>
+                            <table>
+                              <tr>
+                                <td>
+                                  <a href="#">Just a Plain Link &raquo;</a>
+                                </td>
+                              </tr>
+                            </table>
+                            <hr>
+                            <table>
+                              <tr>
+                                <td>
+                                  <a href="#">Just a Plain Link &raquo;</a>
+                                </td>
+                              </tr>
+                            </table>
+                            <hr>
+                            <table>
+                              <tr>
+                                <td>
+                                  <a href="#">Just a Plain Link &raquo;</a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
                           <td class="expander"></td>
                         </tr>
                       </table>
 
-                    </td>
-                  </tr>
-                </table>
-              
-                <table class="row footer">
-                  <tr>
-                    <td class="wrapper">
-                            
+                      <br>
+                      
                       <table class="six columns">
                         <tr>
-                          <td class="left-text-pad">
-
-                            <h5>Connect With Us:</h5>
-
+                          <td class="panel">
+                            <h6 style="margin-bottom:5px;">Connect With Us:</h6>
                             <table class="tiny-button facebook">
                               <tr>
                                 <td>
@@ -830,7 +905,7 @@ body.outlook p {
                               </tr>
                             </table>
 
-                            <br>
+                            <hr>
 
                             <table class="tiny-button twitter">
                               <tr>
@@ -840,7 +915,7 @@ body.outlook p {
                               </tr>
                             </table>
 
-                            <br>
+                            <hr>
 
                             <table class="tiny-button google-plus">
                               <tr>
@@ -849,31 +924,21 @@ body.outlook p {
                                 </td>
                               </tr>
                             </table>
-
+                            <br>
+                            <h6 style="margin-bottom:5px;">Contact Info:</h6>
+                            <p>Phone: <b>408.341.0600</b></p>
+                            <p>Email: <a href="mailto:hseldon@trantor.com">hseldon@trantor.com</a></p>
                           </td>
                           <td class="expander"></td>
                         </tr>
                       </table>
-
-                    </td>
-                    <td class="wrapper last">
-
-                      <table class="six columns">
-                        <tr>
-                          <td class="last right-text-pad">
-                            <h5>Contact Info:</h5>
-                            <p>Phone: 408.341.0600</p>
-                            <p>Email: <a href="mailto:hseldon@trantor.com">hseldon@trantor.com</a></p>
-                          </td>          
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-
+          
                     </td>
                   </tr>
                 </table>
-              
-              
+                <br>
+                <br>
+                <!-- Legal + Unsubscribe -->            
                 <table class="row">
                   <tr>
                     <td class="wrapper last">
@@ -882,7 +947,7 @@ body.outlook p {
                         <tr>
                           <td align="center">
                             <center>
-                              <p style="text-align:center;"><a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Unsubscribe</a></p>
+                              <p style="text-align:center;"><a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#"><unsubscribe>Unsubscribe</unsubscribe></a></p>
                             </center>
                           </td>
                           <td class="expander"></td>
