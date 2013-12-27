@@ -19,6 +19,9 @@
   center {
     font-family: Helvetica, Arial, sans-serif;
   }
+  .tiny-button a {
+    color: #ffffff !important;
+  }
 
   .header {
     background: #0064A0;
@@ -97,9 +100,8 @@
               </td>
             </tr>
           </table> 
-
           <!-- header -->
-          <table class="row header" cellpadding="0" cellspacing="0">
+          <table class="row header" style="margin:0 padding:0" cellpadding="0" cellspacing="0">
             <tr>
               <td class="center" align="center">
                 <center>
@@ -129,7 +131,7 @@
             </tr>
           </table>
           <!-- masthead -->
-          <table class="row masthead" cellpadding="0" cellspacing="0">
+          <table class="row masthead" style="margin:0 padding:0" cellpadding="0" cellspacing="0">
             <tr>
               <td class="center" align="center">
                 <center>
