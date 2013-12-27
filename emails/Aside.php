@@ -72,10 +72,10 @@
                         <table class="twelve columns">
                           <tr>
                             <td class="six sub-columns">
-                              <a href="http://news.spokanelibrary.org"><img src="http://beta.spokanelibrary.org/assets/img/SPL-Logo-inverse-hidpi.png" style="height:80px; width:170px" height="80" width="170"></a>
+                              <a href="http://news.spokanelibrary.org"><img height="80" width="170" style="height:80px; width:170px" src="http://beta.spokanelibrary.org/assets/img/SPL-Logo-inverse-hidpi.png"></a>
                             </td>
                             <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
-                              <span class="template-label">SIDEBAR</span>
+                              <span class="template-label">News</span>
                             </td>
                             <td class="expander"></td>
                           </tr>
