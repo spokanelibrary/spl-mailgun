@@ -14,7 +14,7 @@
   </style>
   <style>
   /* Overrides */
-  a { color: #0064A0; }
+  a { color: #0064A0 !important; }
   .header {
     background: #0064A0;
   }
