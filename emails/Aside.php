@@ -15,7 +15,8 @@
     color: #0064A0;
   }
   a, 
-  table.body.td {
+  td,
+  center {
     font-family: Helvetica, Arial, sans-serif;
     font-family: Helvetica, Arial, sans-serif;
   }
