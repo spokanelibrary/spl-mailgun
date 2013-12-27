@@ -143,6 +143,24 @@
           <table class="container">
             <tr>
               <td>
+
+                <!-- title -->
+                <table class="row">
+                  <tr>
+                    <td class="wrapper last">
+                      <table class="twelve columns">
+                        <tr>
+                          <td>
+                            <h1 class="title serif">
+                              <a href="<?php echo $link; ?>"><?php echo $title; ?></a>
+                            </h1>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table> 
+                    </td>
+                  </tr>
+                </table>
               
               <!-- content start -->
               
