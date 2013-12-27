@@ -6,7 +6,7 @@
   
   <?php include(plugin_dir_path(__FILE__).'common/ink-orig.css'); ?>
   <style>
-  <?php include(plugin_dir_path(__FILE__).'common/wordpress.css'); ?>
+  <?php include(plugin_dir_path(__FILE__).'common/wordpress-orig.css'); ?>
   </style>
 </head>
 <body>

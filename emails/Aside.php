@@ -7,7 +7,7 @@
   <?php include(plugin_dir_path(__FILE__).'common/ink.css'); ?>
   </style>
   <style>
-  <?php include(plugin_dir_path(__FILE__).'common/ink-custom.css'); ?>
+  <?php //include(plugin_dir_path(__FILE__).'common/ink-custom.css'); ?>
   </style>
   <style>
   <?php //include(plugin_dir_path(__FILE__).'common/wordpress.css'); ?>
@@ -117,7 +117,7 @@
                             </td>
                             <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
                               <h1 class="serif text-right condensed">News</h1>
-                              <h5 class="serif text-right condensed" style="color:#005587"><em>from your library</em></h5>
+                              <h5 class="serif text-right condensed"><em>from your library</em></h5>
                             </td>
                             <td class="expander"></td>
                           </tr>
