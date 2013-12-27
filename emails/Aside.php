@@ -60,7 +60,7 @@
                               
                               <center>
                                 <strong>Online:</strong>
-                                <a href="<?php echo $link; ?>"><strong><?php bloginfo( 'wpurl' ); ?></strong></a>
+                                <a href="<?php echo $link; ?>"><strong><?php echo home_url() ?></strong></a>
                               </center>
 
                             </td>
@@ -89,7 +89,7 @@
                         <table class="twelve columns">
                           <tr>
                             <td class="six sub-columns">
-                              <a href="http://news.spokanelibrary.org"><img height="80" width="170" style="height:80px; width:170px" src="http://news.spokanelibrary.org/assets/img/SPL-Logo-inverse-hidpi.png"></a>
+                              <a href="<?php echo home_url() ?>"><img height="80" width="170" style="height:80px; width:170px" src="http://news.spokanelibrary.org/assets/img/SPL-Logo-inverse-hidpi.png"></a>
                             </td>
                             <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
                               <h1 class="serif text-right condensed">News</h1>
