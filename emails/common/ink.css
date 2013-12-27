@@ -346,8 +346,8 @@ small {
 }
 
 a {
-  /*color: #2ba6cb;*/ /* spl */
-  color: #0064A0; /* spl */
+  color: #2ba6cb; /* spl */
+
   text-decoration: none;
   font-family: Helvetica, Arial, sans-serif; /* spl */
 }

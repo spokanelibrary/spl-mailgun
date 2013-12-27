@@ -11,6 +11,10 @@
   </style>
   <style>
   <?php //include(plugin_dir_path(__FILE__).'common/wordpress.css'); ?>
+  a {
+  color: #0064A0;
+  }
+
   </style>
 </head>
 <body>
