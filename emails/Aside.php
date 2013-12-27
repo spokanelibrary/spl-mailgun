@@ -19,6 +19,12 @@
   center {
     font-family: Helvetica, Arial, sans-serif;
   }
+
+
+  .white {
+    color: #ffffff;
+  }
+
   </style>
 </head>
 <body>
