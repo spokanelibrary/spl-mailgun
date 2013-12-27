@@ -520,10 +520,10 @@ class SPL_Mailgun_Newsletter {
         </tr>
         <tr>
           <td>
-            <table class="tiny-button facebook">
+            <table class="tiny-button">
               <tr>
                 <td>
-                  <a href="http://facebook.com/spokanelibrary">Facebook</a>
+                  <a href="$post->link">More »</a>
                 </td>
               </tr>
             </table>
