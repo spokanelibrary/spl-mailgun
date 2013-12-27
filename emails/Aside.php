@@ -138,8 +138,8 @@
             </tr>
           </table>
 
-				 
-				 
+				 <!-- message body -->
+				 <!-- <br> -->
           <table class="container">
             <tr>
               <td>

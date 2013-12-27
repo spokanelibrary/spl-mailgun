@@ -567,7 +567,7 @@ EOT;
     return $post;
   }
 
-  function getNewsletterHTML($id, $template) {
+  function getNewsletterHTMLEmail($id, $template) {
     //return 'This is newsletter # '.$id;
 
     remove_filter( 'the_content','bootstrap_responsive_images',10 );
@@ -651,7 +651,7 @@ EOT;
   function processNewsletter($id, $subject, $list, $address, $template) {
 
     $from = $this->getMailgunFrom();
-    $html = $this->getNewsletterHTML($id, $template);
+    $html = $this->getNewsletterHTMLEmail($id, $template);
 
     if ( !empty($address) ) {
       $response = $this->sendMailgunMessage($from, $address, $subject, $html);
