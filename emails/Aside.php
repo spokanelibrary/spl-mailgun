@@ -120,7 +120,7 @@
                         <table class="twelve columns">
                           <tr>
                             <td class="seven sub-columns">
-                              <p class="white condensed">Read. Learn. Discover.</p>
+                              <p class="white condensed"><?php bloginfo( 'description' ); ?></p>
                             </td>
                             <td class="five sub-columns last" style="text-align:right; vertical-align:middle;">
                               <p class="white condensed text-right"><?php echo $date; ?></p>
