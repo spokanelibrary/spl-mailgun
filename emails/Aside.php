@@ -36,12 +36,12 @@
                         <table class="twelve columns">
                           <tr>
                             <td class="small center">
-                              <center>
-                                <p>
+                              <p>
+                                <center>
                                   <strong>Online:</strong>
                                   <a href="http://news.spokanelibrary.org/"><strong>http://news.spokanelibrary.org/</strong></a>
-                                </p>
-                              </center>
+                                </center>
+                              </p>
                             </td>
                             <td class="expander"></td>
                           </tr>
