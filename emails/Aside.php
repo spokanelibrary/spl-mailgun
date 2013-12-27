@@ -37,8 +37,10 @@
                           <tr>
                             <td class="small center">
                               <center>
-                                <strong>Online:</strong>
-                                <a href="http://news.spokanelibrary.org/"><strong>http://news.spokanelibrary.org/</strong></a>
+                                <p>
+                                  <strong>Online:</strong>
+                                  <a href="http://news.spokanelibrary.org/"><strong>http://news.spokanelibrary.org/</strong></a>
+                                </p>
                               </center>
                             </td>
                             <td class="expander"></td>
