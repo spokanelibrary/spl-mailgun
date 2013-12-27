@@ -21,48 +21,15 @@
   h5,
   h6 { color: #666666; }
 
-	a,
-	a:hover,
-	a:active,
-	a:visited
-	 {
-	  color: #0064A0;
-	}
-
-	.tiny-button a {
+  /* Keep the buttons neat */
+	.tiny-button a,
+	.tiny-button a:hover,
+	.tiny-button a:visited,
+	.tiny-button a:active {
 		color: #ffffff !important;
 	}
 
-	table.spl td {
-		border-color: #003C50;
-		background-color: #0064A0;
-	}
-
-	.header {
-    background: #0064A0;
-  }
-
-  .masthead {
-    background: #005587;
-  }
-
-
-  .white {
-  	color: #ffffff;
-  }
-
-/*
-  .header h1 { font-size: 42px; font-weight: normal; color: #003C50; }
-  .header h5 { font-size: 12px; font-weight: normal; color: #003C50; }
-*/
-	.header h1 { font-size: 42px; font-weight: normal; color: #ffffff; }
-  .header h5 { font-size: 12px; font-weight: normal; color: #ffffff; }
-
-  .title { /*color: #64964B;*/ color: #005587; }
-
-  .subtitle { color: #666666; font-size: 22px; }
-
-	.wp-caption { color: #666666; }
+	/* Sidebar Headlines */
 
   .sidebar h1,
   .sidebar h2,
@@ -76,9 +43,6 @@
   .sidebar h3,
   .sidebar h4 { /*border: 1px solid #64964B;*/ color: #64964B; margin-bottom: 4px; }
 
-  .sidebar p { color: #444444; }
-  .post p { color: #444444; }
-
   .sidebar h1 {font-size: 22px;}
 	.sidebar h2 {font-size: 22px;}
 	.sidebar h3 {font-size: 22px;}
@@ -87,17 +51,22 @@
 	.sidebar h6 {font-size: 14px;}
 	.sidebar p  {font-size: 12px;}
 
-  .warning {
-    background: #fefbed !important;
-    border-color: #f1e7bc !important;
-  }
-
-  .transparent { background-color: transparent !important; }
-
-
+	/* Utilities */
+	
+	.white { color: #ffffff; }
   .muted { color: #666666; }
   .highlight { color: #005587 !important; }
+	.transparent { background-color: transparent !important; }
+	.warning { background: #fefbed !important; border-color: #f1e7bc !important; }
+
+  .text-right { text-align: right; }
+	.serif { font-family: Georgia, "Times New Roman", Times, serif; }
+	.condensed { margin:0; padding:0; line-height:1; }
   .small { font-size: 12px; }
+
+  
+  /* WordPress and Bootstrap specific */
+  .wp-caption { color: #666666; }
 
 	.alignnone {  margin-bottom: 10px; }
 	.aligncenter { margin: auto; margin-bottom:10px; } /* doesn't really work */
@@ -110,10 +79,6 @@
 
 	.img-responsive {  }
 
-	.text-right { text-align: right; }
 
-	.serif { font-family: Georgia, "Times New Roman", Times, serif; }
-
-	.condensed { margin:0; padding:0; line-height:1; }
 
 	
