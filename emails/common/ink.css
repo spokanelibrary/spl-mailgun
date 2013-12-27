@@ -1,4 +1,3 @@
-<style>
 /**********************************************
 * Ink v1.0.4 - Copyright 2013 ZURB Inc        *
 **********************************************/
@@ -167,8 +166,21 @@ table.ten center { min-width: 480px; }
 table.eleven center { min-width: 530px; }
 table.twelve center { min-width: 580px; }
 
+table.one .panel center { min-width: 10px; }
+table.two .panel center { min-width: 60px; }
+table.three .panel center { min-width: 110px; }
+table.four .panel center { min-width: 160px; }
+table.five .panel center { min-width: 210px; }
+table.six .panel center { min-width: 260px; }
+table.seven .panel center { min-width: 310px; }
+table.eight .panel center { min-width: 360px; }
+table.nine .panel center { min-width: 410px; }
+table.ten .panel center { min-width: 460px; }
+table.eleven .panel center { min-width: 510px; }
+table.twelve .panel center { min-width: 560px; }
+
 .body .columns td.one,
-.body .column td.one, { width: 8.333333% !important; }
+.body .column td.one { width: 8.333333% !important; }
 .body .columns td.two,
 .body .column td.two { width: 16.666666% !important; }
 .body .columns td.three,
@@ -203,18 +215,6 @@ td.offset-by-eight { padding-left: 400px; }
 td.offset-by-nine { padding-left: 450px; }
 td.offset-by-ten { padding-left: 500px; }
 td.offset-by-eleven { padding-left: 550px; }
-
-td.sub-offset-by-one { padding-left: 5.172413% !important; }
-td.sub-offset-by-two { padding-left: 13.793102% !important; }
-td.sub-offset-by-three { padding-left: 22.413791% !important; }
-td.sub-offset-by-four { padding-left: 31.034480% !important; }
-td.sub-offset-by-five { padding-left: 39.655169% !important; }
-td.sub-offset-by-six { padding-left: 48.275858% !important; }
-td.sub-offset-by-seven { padding-left: 56.896547% !important; }
-td.sub-offset-by-eight { padding-left: 65.517236% !important; }
-td.sub-offset-by-nine { padding-left: 74.137925% !important; }
-td.sub-offset-by-ten { padding-left: 82.758614% !important; }
-td.sub-offset-by-eleven { padding-left: 91.379303% !important; }
 
 td.expander {
   visibility: hidden;
@@ -338,7 +338,7 @@ h6 {font-size: 20px;}
 body, table.body, p {font-size: 14px;line-height:19px;}
 
 p { 
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 small {
@@ -391,7 +391,7 @@ h6 a:visited {
 
 /* Panels */
 
-td.panel {
+.panel {
   background: #f2f2f2;
   border: 1px solid #d9d9d9;
   padding: 10px !important;
@@ -623,8 +623,8 @@ body.outlook p {
     padding-left: 0 !important;
   }
 
-  table[class="body"] .expander {
-    width: 9999px !important;
+  table[class="body"] table.columns td.expander {
+    width: 1px !important;
   }
 
   table[class="body"] .right-text-pad,
@@ -647,86 +647,3 @@ body.outlook p {
     display: inherit !important;
   }
 }
-
-  </style>
-  <style>
-    
-    table.facebook td {
-      background: #3b5998;
-      border-color: #2d4473;
-    }
-
-    table.facebook:hover td {
-      background: #2d4473 !important;
-    }
-
-    table.twitter td {
-      background: #00acee;
-      border-color: #0087bb;
-    }
-
-    table.twitter:hover td {
-      background: #0087bb !important;
-    }
-
-    table.google-plus td {
-      background-color: #DB4A39;
-      border-color: #CC0000;
-    }
-
-    table.google-plus:hover td {
-      background: #CC0000 !important;
-    }
-
-    .template-label {
-      color: #ffffff;
-      font-weight: bold;
-      font-size: 11px;
-    }
-
-    .callout .wrapper {
-      padding-bottom: 20px;
-    }
-
-    .callout .panel {
-      background: #ECF8FF;
-      border-color: #b9e5ff;
-    }
-
-    .header {
-      background: #999999;
-    }
-
-    .footer .wrapper {
-      background: #ebebeb;
-    }
-
-    .footer h5 {
-      padding-bottom: 10px;
-    }
-
-    table.columns .text-pad {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-
-    table.columns .left-text-pad {
-      padding-left: 10px;
-    }
-
-    table.columns .right-text-pad {
-      padding-right: 10px;
-    }
-
-    @media only screen and (max-width: 600px) {
-
-      table[class="body"] .right-text-pad {
-        padding-left: 10px !important;
-      }
-
-      table[class="body"] .left-text-pad {
-        padding-right: 10px !important;
-      }
-    }
-
-  </style>
