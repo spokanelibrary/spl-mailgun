@@ -30,14 +30,6 @@
   h5 a:hover,
   h6 a:hover { color: #005587 !important; }
 
-  .button a,
-  .tiny-button a,
-  .small-button a,
-  .medium-button a,
-  .large-button a {
-    color: #ffffff !important;
-  }
-
   .header {
     background: #0064A0;
   }
