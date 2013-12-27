@@ -99,7 +99,7 @@
           </table> 
 
           <!-- header -->
-          <table class="row header">
+          <table class="row header" cellpadding="0" cellspacing="0">
             <tr>
               <td class="center" align="center">
                 <center>
@@ -129,7 +129,7 @@
             </tr>
           </table>
           <!-- masthead -->
-          <table class="row masthead">
+          <table class="row masthead" cellpadding="0" cellspacing="0">
             <tr>
               <td class="center" align="center">
                 <center>
