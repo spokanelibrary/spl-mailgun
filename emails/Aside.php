@@ -203,9 +203,11 @@
                             <p class="highlight">
                             <em class="serif"><?php echo $callout; ?></em>
                             </p>
+                            <?php if ( !empty($attribute) ) : ?>
                             <span class="muted small">
                             —<?php echo $attribute; ?>
                             </span>
+                            <?php endif; ?>
                           </td>
                           <td class="expander"></td>
                         </tr>
