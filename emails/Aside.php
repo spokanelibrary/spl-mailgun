@@ -36,7 +36,7 @@
   }
 
   .header h1 { font-size: 42px; font-weight: normal; color: #ffffff; }
-  .header h5 { font-size: 12px; font-weight: normal; color: #ffffff; }
+  .header h5 { font-size: 14px; font-weight: normal; color: #ffffff; }
 
   .title { /*color: #64964B;*/ color: #005587; }
 
