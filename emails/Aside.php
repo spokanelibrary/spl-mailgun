@@ -18,6 +18,40 @@
 		<tr>
 			<td class="center" align="center" valign="top">
         <center>
+
+          <!-- link -->
+          <table class="row">
+            <tr>
+              <td class="center" align="center">
+                <center>
+
+                  <table class="container">
+                    <tr>
+                      <td class="wrapper last">
+            
+                        <table class="twelve columns">
+                          <tr>
+                            <td class="small center">
+                              <center>
+                                <strong>Online:</strong>
+                                <a href="http://news.spokanelibrary.org/"><strong>http://news.spokanelibrary.org/</strong></a>
+                              </center>
+                            </td>
+                            <td class="expander"></td>
+                          </tr>
+                        </table>
+            
+                      </td>
+                    </tr>
+                  </table>
+          
+                </center>
+              </td>
+            </tr>
+          </table> 
+
+
+
          
           <table class="row header">
             <tr>
