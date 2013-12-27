@@ -29,6 +29,14 @@
 		color: #ffffff !important;
 	}
 
+	table.button td,
+	table.tiny-button td,
+	table.small-button td,
+	table.medium-button td,
+	table.large-button td {
+		color: #ffffff !important;
+	}
+
 	/* Sidebar Headlines */
 
   .sidebar h1,
