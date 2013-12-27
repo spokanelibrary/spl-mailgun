@@ -518,6 +518,18 @@ class SPL_Mailgun_Newsletter {
           </td>
           <td class="expander"></td>
         </tr>
+        <tr>
+          <td>
+            <table class="tiny-button facebook">
+              <tr>
+                <td>
+                  <a href="http://facebook.com/spokanelibrary">Facebook</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td class="expander"></td>
+        </tr>
       </table>
 EOT;
     }
@@ -569,7 +581,7 @@ EOT;
 
   function getNewsletterHTMLEmail($id, $template) {
     //return 'This is newsletter # '.$id;
-    
+
     remove_filter( 'the_content','bootstrap_responsive_images',10 );
     remove_filter( 'post_thumbnail_html', 'bootstrap_responsive_images', 10 );
 
