@@ -72,7 +72,7 @@
                         <table class="twelve columns">
                           <tr>
                             <td class="six sub-columns">
-                              <img src="http://placehold.it/200x50">
+                              <a href="http://news.spokanelibrary.org"><img src="http://beta.spokanelibrary.org/assets/img/SPL-Logo-inverse-hidpi.png" style="height:80px; width:170px"></a>
                             </td>
                             <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
                               <span class="template-label">SIDEBAR</span>
