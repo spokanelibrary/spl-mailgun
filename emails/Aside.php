@@ -11,7 +11,10 @@
   </style>
   <style>
   <?php include(plugin_dir_path(__FILE__).'common/wordpress.css'); ?>
-
+  </style>
+  <style>
+  /* Overrides */
+  
   </style>
 </head>
 <body>

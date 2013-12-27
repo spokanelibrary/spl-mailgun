@@ -5,7 +5,7 @@
     font-family: Helvetica, Arial, sans-serif;
   }
 
-	/* ink is a little big*/
+	/* Ink headings are little big */
 	h1 {font-size: 30px;}
 	h2 {font-size: 26px;}
 	h3 {font-size: 24px;}
@@ -13,6 +13,7 @@
 	h5 {font-size: 18px;}
 	h6 {font-size: 16px;}
 
+	/* Lighten headlines */
 	h1,
   h2,
   h3,
@@ -25,7 +26,7 @@
 	a:active,
 	a:visited
 	 {
-	  color: #0064A0;
+	  color: #0064A0 !important;
 	}
 
 	.tiny-button a {
