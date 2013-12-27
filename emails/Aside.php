@@ -98,7 +98,7 @@
             </tr>
           </table> 
 
-          <!-- masthead -->
+          <!-- header -->
           <table class="row header">
             <tr>
               <td class="center" align="center">
@@ -120,7 +120,25 @@
                           </tr>
                         </table>
 
-                        <table class="twelve columns masthead">
+                      </td>
+                    </tr>
+                  </table>
+          
+                </center>
+              </td>
+            </tr>
+          </table>
+          <!-- masthead -->
+          <table class="row masthead">
+            <tr>
+              <td class="center" align="center">
+                <center>
+          
+                  <table class="container">
+                    <tr>
+                      <td class="wrapper last">
+
+                        <table class="twelve columns">
                           <tr>
                             <td class="seven sub-columns">
                               <p class="white condensed">Read. Learn. Discover.</p>
@@ -140,6 +158,7 @@
               </td>
             </tr>
           </table>
+
 				 
 				 <br>
 				 
