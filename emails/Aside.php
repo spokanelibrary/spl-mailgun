@@ -342,7 +342,7 @@
                 <!-- colophon -->
                 <br>
                 <br>
-                <table class="row footer">
+                <table class="row ">
                   <tr>
                     <td class="wrapper">
                             
