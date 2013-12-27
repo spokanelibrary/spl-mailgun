@@ -117,6 +117,7 @@
                             </td>
                             <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
                               <h1 class="serif text-right condensed">News</h1>
+                              <h5 class="serif text-right"><em>&amp; new ideas</em></h5>
                             </td>
                             <td class="expander"></td>
                           </tr>
@@ -131,7 +132,7 @@
             </tr>
           </table>
           <!-- masthead -->
-          <table class="row header masthead">
+          <table class="row masthead">
             <tr>
               <td class="center" align="center">
                 <center>
