@@ -224,6 +224,112 @@
                   </tr>
                 </table>
 
+                <!-- selected posts -->
+                <?php if ( !is_null($posts[1]) ) : ?>
+                <table class="row callout post">
+                  <tr>
+                    <td class="wrapper">
+                    <?php 
+                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[1]); 
+                    ?>
+                    </td>
+                    <td class="wrapper last">
+                    <?php 
+                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[2]); 
+                    ?>
+                    </td>
+                  </tr>
+                </table>
+                <?php endif; ?>
+
+                <?php if ( !is_null($posts[3]) ) : ?>
+                <table class="row callout post">
+                  <tr>
+                    <td class="wrapper">
+                    <?php 
+                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[3]); 
+                    ?>
+                    </td>
+                    <td class="wrapper last">
+                    <?php 
+                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[4]); 
+                    ?>
+                    </td>
+                  </tr>
+                </table>
+                <?php endif; ?>
+
+                <?php if ( !is_null($posts[5]) ) : ?>
+                <table class="row callout post">
+                  <tr>
+                    <td class="wrapper">
+                    <?php 
+                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[5]); 
+                    ?>
+                    </td>
+                    <td class="wrapper last">
+                    <?php 
+                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[6]); 
+                    ?>
+                    </td>
+                  </tr>
+                </table>
+                <?php endif; ?>
+
+                <?php if ( !is_null($posts[7]) ) : ?>
+                <table class="row callout post">
+                  <tr>
+                    <td class="wrapper">
+                    <?php 
+                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[7]); 
+                    ?>
+                    </td>
+                    <td class="wrapper last">
+                    <?php 
+                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[8]); 
+                    ?>
+                    </td>
+                  </tr>
+                </table>
+                <?php endif; ?>
+
+                <?php if ( !is_null($posts[9]) ) : ?>
+                <table class="row callout post">
+                  <tr>
+                    <td class="wrapper">
+                    <?php 
+                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[9]); 
+                    ?>
+                    </td>
+                    <td class="wrapper last">
+                    <?php 
+                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[10]); 
+                    ?>
+                    </td>
+                  </tr>
+                </table>
+                <?php endif; ?>
+
+                <?php if ( !is_null($posts[11]) ) : ?>
+                <table class="row callout post">
+                  <tr>
+                    <td class="wrapper">
+                    <?php 
+                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[11]); 
+                    ?>
+                    </td>
+                    <td class="wrapper last">
+                    <?php 
+                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[12]); 
+                    ?>
+                    </td>
+                  </tr>
+                </table>
+                <?php endif; ?>
+
+
+
+
               <!-- content start -->
               
                 <table class="row">
