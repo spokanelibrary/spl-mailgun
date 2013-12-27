@@ -13,6 +13,10 @@
   <?php //include(plugin_dir_path(__FILE__).'common/wordpress.css'); ?>
   a {
     color: #0064A0;
+  }
+  a, 
+  table.body.td {
+    font-family: Helvetica, Arial, sans-serif;
     font-family: Helvetica, Arial, sans-serif;
   }
   </style>
@@ -36,12 +40,12 @@
                         <table class="twelve columns">
                           <tr>
                             <td class="small center">
-                              <p>
-                                <center>
-                                  <strong>Online:</strong>
-                                  <a href="http://news.spokanelibrary.org/"><strong>http://news.spokanelibrary.org/</strong></a>
-                                </center>
-                              </p>
+                              
+                              <center>
+                                <strong>Online:</strong>
+                                <a href="http://news.spokanelibrary.org/"><strong>http://news.spokanelibrary.org/</strong></a>
+                              </center>
+
                             </td>
                             <td class="expander"></td>
                           </tr>
