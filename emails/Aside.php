@@ -10,55 +10,7 @@
   <?php include(plugin_dir_path(__FILE__).'common/ink-custom.css'); ?>
   </style>
   <style>
-  <?php //include(plugin_dir_path(__FILE__).'common/wordpress.css'); ?>
-  a {
-    color: #0064A0;
-  }
-  a, 
-  td,
-  center {
-    font-family: Helvetica, Arial, sans-serif;
-  }
-  .tiny-button a {
-    color: #ffffff !important;
-  }
-
-  .header {
-    background: #0064A0;
-  }
-
-  .masthead {
-    background: #005587;
-  }
-
-  .white {
-    color: #ffffff;
-  }
-
-  .header h1 { font-size: 42px; font-weight: normal; color: #ffffff; }
-  .header h5 { font-size: 12px; font-weight: normal; color: #ffffff; }
-
-  .title { /*color: #64964B;*/ color: #005587; }
-
-  .subtitle { color: #666666; font-size: 22px; }
-
-
-  .alignnone {  margin-bottom: 10px; }
-  .aligncenter { margin: auto; margin-bottom:10px; } /* doesn't really work */
-
-  .alignright { float: right; margin-left: 10px; }
-  .alignleft { float: left; margin-right: 10px; }
-
-  .wp-caption {  }
-  .wp-caption-text { clear: both; font-style: italic; }
-
-  .img-responsive {  }
-
-  .text-right { text-align: right; }
-
-  .serif { font-family: Georgia, "Times New Roman", Times, serif; }
-
-  .condensed { margin:0; padding:0; line-height:1; }
+  <?php include(plugin_dir_path(__FILE__).'common/wordpress.css'); ?>
 
   </style>
 </head>
