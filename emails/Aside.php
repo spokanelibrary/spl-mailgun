@@ -120,7 +120,7 @@
                           </tr>
                         </table>
 
-                        <table class="twelve columns">
+                        <table class="twelve columns masthead">
                           <tr>
                             <td class="seven sub-columns">
                               <p class="white condensed">Read. Learn. Discover.</p>
