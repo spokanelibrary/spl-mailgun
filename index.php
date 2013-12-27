@@ -520,7 +520,7 @@ class SPL_Mailgun_Newsletter {
         </tr>
         <tr>
           <td>
-            <table class="tiny-button">
+            <table class="button">
               <tr>
                 <td>
                   <a href="$post->link">More »</a>
