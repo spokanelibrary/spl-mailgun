@@ -20,7 +20,7 @@
   h3 a,
   h4 a,
   h5 a,
-  h6 a { color: #0064A0 }
+  h6 a { color: #0064A0; }
 
   a:hover, 
   h1 a:hover,
@@ -28,7 +28,7 @@
   h3 a:hover,
   h4 a:hover,
   h5 a:hover,
-  h6 a:hover { color: #005587 }
+  h6 a:hover { color: #005587; }
 
   .header {
     background: #0064A0;
