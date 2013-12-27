@@ -32,6 +32,13 @@
     color: #ffffff;
   }
 
+  .header h1 { font-size: 42px; font-weight: normal; color: #ffffff; }
+  .header h5 { font-size: 12px; font-weight: normal; color: #ffffff; }
+
+  .title { /*color: #64964B;*/ color: #005587; }
+
+  .subtitle { color: #666666; font-size: 22px; }
+
 
   .alignnone {  margin-bottom: 10px; }
   .aligncenter { margin: auto; margin-bottom:10px; } /* doesn't really work */
@@ -107,7 +114,7 @@
                               <a href="http://news.spokanelibrary.org"><img height="80" width="170" style="height:80px; width:170px" src="http://news.spokanelibrary.org/assets/img/SPL-Logo-inverse-hidpi.png"></a>
                             </td>
                             <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
-                              <span class="template-label">News</span>
+                              <h1 class="serif text-right condensed">News</h1>
                             </td>
                             <td class="expander"></td>
                           </tr>
