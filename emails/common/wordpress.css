@@ -29,11 +29,11 @@
 		color: #ffffff !important;
 	}
 
-	.button a,
-	.tiny-button a,
-	.small-button a,
-	.medium-button a,
-	.large-button a {
+	table.button td a,
+	table.tiny-button td a,
+	table.small-button td a,
+	table.medium-button td a,
+	table.large-button td a{
 		color: #ffffff !important;
 	}
 

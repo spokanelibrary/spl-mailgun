@@ -20,7 +20,7 @@
   h3 a,
   h4 a,
   h5 a,
-  h6 a { color: #0064A0 !important; }
+  h6 a { color: #0064A0; }
 
   a:hover, 
   h1 a:hover,
@@ -46,12 +46,10 @@
   .post p,
   .sidebar p { color: #444444; }
 
-  /*
   table.spl td {
     border-color: #003C50;
     background-color: #0064A0;
   }
-  */
 
   </style>
 </head>
@@ -407,6 +405,9 @@
 
 
               <!-- content start -->
+              
+                
+              
               <!-- container end below -->
               </td>
             </tr>
