@@ -20,10 +20,35 @@
     font-family: Helvetica, Arial, sans-serif;
   }
 
+  .header {
+    background: #0064A0;
+  }
+
+  .masthead {
+    background: #005587;
+  }
 
   .white {
     color: #ffffff;
   }
+
+
+  .alignnone {  margin-bottom: 10px; }
+  .aligncenter { margin: auto; margin-bottom:10px; } /* doesn't really work */
+
+  .alignright { float: right; margin-left: 10px; }
+  .alignleft { float: left; margin-right: 10px; }
+
+  .wp-caption {  }
+  .wp-caption-text { clear: both; font-style: italic; }
+
+  .img-responsive {  }
+
+  .text-right { text-align: right; }
+
+  .serif { font-family: Georgia, "Times New Roman", Times, serif; }
+
+  .condensed { margin:0; padding:0; line-height:1; }
 
   </style>
 </head>
@@ -65,6 +90,7 @@
               </td>
             </tr>
           </table> 
+
           <!-- masthead -->
           <table class="row header">
             <tr>
