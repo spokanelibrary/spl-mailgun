@@ -1,3 +1,10 @@
+	/* Preserve type in Outlook reply/forward */
+	a, 
+  td,
+  center {
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
 	/* ink is a little big*/
 	h1 {font-size: 30px;}
 	h2 {font-size: 26px;}
@@ -18,8 +25,7 @@
 	a:active,
 	a:visited
 	 {
-	  color: #0064A0 !important; 
-	  text-decoration: none;
+	  color: #0064A0;
 	}
 
 	.tiny-button a {
