@@ -197,6 +197,7 @@
                           </td>
                           <td class="expander"></td>
                         </tr>
+                        <?php if ( !empty($callout) ) : ?>
                         <tr>
                           <td class="warning panel">
                             <p class="highlight">
@@ -214,6 +215,7 @@
                           </td>
                           <td class="expander"></td>
                         </tr>
+                        <?php endif; ?>
                         <tr>
                           <td class="">
                             <h2 class="subtitle"><?php echo $subtitle; ?></h2>
