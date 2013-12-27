@@ -101,7 +101,7 @@
             </tr>
           </table> 
           <!-- header -->
-          <table class="row header" style="margin:0 padding:0" cellpadding="0" cellspacing="0">
+          <table class="row header">
             <tr>
               <td class="center" align="center">
                 <center>
@@ -131,7 +131,7 @@
             </tr>
           </table>
           <!-- masthead -->
-          <table class="row masthead" style="margin:0 padding:0" cellpadding="0" cellspacing="0">
+          <table class="row header masthead">
             <tr>
               <td class="center" align="center">
                 <center>
