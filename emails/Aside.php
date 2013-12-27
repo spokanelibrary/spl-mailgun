@@ -138,8 +138,7 @@
             </tr>
           </table>
 
-				 <!-- message body -->
-				 <!-- <br> -->
+				  <!-- <br> -->
           <table class="container">
             <tr>
               <td>
@@ -161,7 +160,63 @@
                     </td>
                   </tr>
                 </table>
-              
+
+                <!-- message body -->
+                <table class="row">
+                  <tr>
+                    <td class="wrapper">
+                      <table class="eight columns">
+                        <tr>
+                          <td>
+                            <?php echo $content; ?>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="wrapper last">
+                      <table class="four columns">
+                        <tr>
+                          <td class="sidebar condensed">
+                            <p class="condensed">&nbsp;</p>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                        <tr>
+                          <td class="warning panel">
+                            <p class="highlight">
+                            <em class="serif"><?php echo $callout; ?></em>
+                            </p>
+                            <span class="muted small">
+                            —<?php echo $attribute; ?>
+                            </span>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                        <tr>
+                          <td class="condensed">
+                            <p class="condensed">&nbsp;</p>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                        <tr>
+                          <td class="">
+                            <h2 class="subtitle"><?php echo $subtitle; ?></h2>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                        <tr>
+                          <td class="sidebar ">
+                            <?php echo $sidebar; ?>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+                  
+                    </td>
+                  </tr>
+                </table>
+
               <!-- content start -->
               
                 <table class="row">
