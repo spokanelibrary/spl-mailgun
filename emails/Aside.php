@@ -12,9 +12,9 @@
   <style>
   <?php //include(plugin_dir_path(__FILE__).'common/wordpress.css'); ?>
   a {
-  color: #0064A0;
+    color: #0064A0;
+    font-family: Helvetica, Arial, sans-serif;
   }
-
   </style>
 </head>
 <body>
