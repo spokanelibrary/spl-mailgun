@@ -15,15 +15,12 @@
   <style>
   /* Overrides */
   a { color: #0064A0; }
-
   .header {
     background: #0064A0;
   }
-
   .masthead {
     background: #005587;
   }
-
   .header h1 { font-size: 42px; font-weight: normal; color: #ffffff; }
   .header h5 { font-size: 12px; font-weight: normal; color: #ffffff; }
 
@@ -142,7 +139,6 @@
           </table>
 
 				 
-				 <br>
 				 
           <table class="container">
             <tr>
