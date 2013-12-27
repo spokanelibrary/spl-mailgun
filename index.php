@@ -30,6 +30,7 @@ class SPL_Mailgun_Newsletter {
   var $config;
 
   function __construct($config=null) {
+    
     // can't get this working.
     // for now just hit permalinks page
     //register_activation_hook( __FILE__, array( 'SPL_Mailgun_Newsletter', 'activateNewsletter' ) );

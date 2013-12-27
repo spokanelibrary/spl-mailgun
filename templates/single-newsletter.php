@@ -19,7 +19,7 @@
 
 	<div class="page-header">
     <h1>
-    	News &amp; Ideas
+    	News &amp; New Ideas
     	<small>from your local Library</small>
     </h1>
     <?php// get_template_part('templates/entry-meta'); ?>
