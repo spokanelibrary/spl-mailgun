@@ -28,7 +28,7 @@
   h3 a:hover,
   h4 a:hover,
   h5 a:hover,
-  h6 a:hover { color: #005587 !important; }
+  h6 a:hover { color: #005587; }
 
   .header {
     background: #0064A0;
