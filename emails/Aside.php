@@ -46,10 +46,12 @@
   .post p,
   .sidebar p { color: #444444; }
 
+  /*
   table.spl td {
     border-color: #003C50;
     background-color: #0064A0;
   }
+  */
 
   </style>
 </head>
