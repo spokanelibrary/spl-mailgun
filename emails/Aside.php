@@ -18,7 +18,6 @@
   td,
   center {
     font-family: Helvetica, Arial, sans-serif;
-    font-family: Helvetica, Arial, sans-serif;
   }
   </style>
 </head>
@@ -28,7 +27,7 @@
 			<td class="center" align="center" valign="top">
         <center>
 
-          <!-- link -->
+          <!-- online link -->
           <table class="row">
             <tr>
               <td class="center" align="center">
@@ -60,10 +59,7 @@
               </td>
             </tr>
           </table> 
-
-
-
-         
+          <!-- masthead -->
           <table class="row header">
             <tr>
               <td class="center" align="center">
