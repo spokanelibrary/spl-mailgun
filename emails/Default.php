@@ -3,9 +3,8 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width"/>
-  <style>
-  <?php include(plugin_dir_path(__FILE__).'common/ink.css'); ?>
-  </style>
+  
+  <?php include(plugin_dir_path(__FILE__).'common/ink-orig.css'); ?>
   <style>
   <?php include(plugin_dir_path(__FILE__).'common/wordpress.css'); ?>
   </style>
