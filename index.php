@@ -740,7 +740,8 @@ EOT;
                     , 'address'=>$address
                       );
       //return $api;
-      return $this->curlProxy($api, $params, 'post', $auth);
+      //return $this->curlProxy($api, $params, 'post', $auth);
+      return $this->curlJSON($api, $params, 'post', $auth);
     }
     return $result;
   }
