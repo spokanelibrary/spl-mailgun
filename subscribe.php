@@ -24,8 +24,14 @@
           Optional
         </span>
       </label>
-      <div class="col-sm-8">
-        <input type="email" class="form-control" id="subscribe-email" placeholder="">
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="subscribe-name[first]" placeholder="">
+        <span class="help-block">
+          This is a help block
+        </span>
+      </div>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="subscribe-name[last]" placeholder="">
         <span class="help-block">
           This is a help block
         </span>
