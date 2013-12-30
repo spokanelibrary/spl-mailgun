@@ -7,10 +7,10 @@
   <?php include(plugin_dir_path(__FILE__).'common/ink.css'); ?>
   </style>
   <style>
-  <?php include(plugin_dir_path(__FILE__).'common/ink-custom.css'); ?>
+  <?php include(plugin_dir_path(__FILE__).'common/wordpress.css'); ?>
   </style>
   <style>
-  <?php include(plugin_dir_path(__FILE__).'common/wordpress.css'); ?>
+  <?php include(plugin_dir_path(__FILE__).'common/ink-custom.css'); ?>
   </style>
   <style>
   /* Additional overrides and customs, but be careful here */
