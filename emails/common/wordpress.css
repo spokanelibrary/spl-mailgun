@@ -22,7 +22,7 @@
   h6 { color: #666666; }
 
   /* Keep the buttons neat */
-	
+	/*
 	.button a,
 	.button a:hover,
 	.button a:visited,
@@ -49,15 +49,15 @@
 	.large-button a:active {
 		color: #ffffff !important;
 	}
+	*/
 
-	/*
+	
 	.tiny-button a,
 	.tiny-button a:hover,
 	.tiny-button a:visited,
 	.tiny-button a:active {
 		color: #ffffff !important;
 	}
-	*/
 
 	/*
 	table.tiny-button tbody td a,
