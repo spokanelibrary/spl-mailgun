@@ -4,7 +4,7 @@
     <div class="form-group">
       <label for="inputEmail3" class="col-sm-4 control-label">
         Your Email Address 
-        <small class="glyphicon glyphicon-envelope"></small>
+        <small class="text-muted glyphicon glyphicon-envelope"></small>
       </label>
       <div class="col-sm-8">
         <input type="email" class="form-control" id="inputEmail3" placeholder="Email Address">
@@ -15,7 +15,7 @@
     </div>
     <div class="form-group">
       <div class="col-sm-offset-4 col-sm-8">
-        <button type="submit" class="btn btn-primary">
+        <button type="submit" class="btn btn-success">
           <small class="glyphicon glyphicon-inbox"></small>
           Subscribe &rarr;
         </button>
