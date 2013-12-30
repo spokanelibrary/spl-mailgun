@@ -1,3 +1,3 @@
 <form class="">
-	<input type="text">
+	<input class="form-control" type="text">
 </form>
