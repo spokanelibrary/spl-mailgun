@@ -1,3 +1,4 @@
+<div class="row">
 <form class="form-horizontal" role="form">
   <div class="form-group">
     <label for="inputEmail3" class="col-sm-4 control-label">Your Email Address</label>
@@ -14,3 +15,4 @@
     </div>
   </div>
 </form>
+</div>
