@@ -859,11 +859,10 @@ EOT;
     }
  
     // grab URL
-    //$result = curl_exec($ch);
     $result->response = curl_exec($ch);
 
     // grab http response code
-    //$result->http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    $result->httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
      
     // close cURL resource, and free up system resources
     curl_close($ch);
