@@ -9,7 +9,7 @@
         <small class="text-muted glyphicon glyphicon-envelope"></small>
       </label>
       <div class="col-sm-8">
-        <input type="email" class="form-control" id="subscribe-email" placeholder="Email">
+        <input type="email" class="form-control" id="subscribe-email" name="subscribe[email]" placeholder="Email">
         <span class="help-block">
           We will not share your email address with anyone. 
           <br>
@@ -19,18 +19,18 @@
     </div>
     
     <div class="form-group">
-      <label for="subscribe-email" class="col-sm-4 control-label">
+      <label for="subscribe-name-first" class="col-sm-4 control-label">
         Your Name 
         <small class="text-muted glyphicon glyphicon-user"></small>
       </label>
       <div class="col-sm-4">
-        <input type="text" class="form-control" id="subscribe-name[first]" placeholder="First">
+        <input type="text" class="form-control" id="subscribe-name-first" name="subscribe[name][first]" placeholder="First">
         <span class="help-block">
           Your first name
         </span>
       </div>
       <div class="col-sm-4">
-        <input type="text" class="form-control" id="subscribe-name[last]" placeholder="Last">
+        <input type="text" class="form-control" id="subscribe-name-last" name="subscribe[name][last]" placeholder="Last">
         <span class="help-block">
           Your last name
         </span>
