@@ -22,22 +22,22 @@
   h6 { color: #666666; }
 
   /* Keep the buttons neat */
-	/*
+	
 	.tiny-button a,
 	.tiny-button a:hover,
 	.tiny-button a:visited,
 	.tiny-button a:active {
 		color: #ffffff !important;
 	}
-	*/
 	
+	/*
 	table.tiny-button tbody td a,
 	table.tiny-button td a:hover,
 	table.tiny-button td a:visited,
 	table.tiny-button td a:active {
 		color: #ffffff;
 	}
-
+	*/
 	/*
 	table.button td a,
 	table.tiny-button td a,
