@@ -819,7 +819,8 @@ EOT;
 
   function curlProxy($url, $params, $method='post', $auth=null) {
     $result = new stdClass();
-
+    $result->response = false;
+    
     // create a new cURL resource
     $ch = curl_init();
     
