@@ -2,12 +2,18 @@
 	a:active,
   a:visited,
   h1 a:active,
+  h1 a:visited,
   h2 a:active,
+  h2 a:visited,
   h3 a:active,
+  h3 a:visited,
   h4 a:active,
+  h4 a:visited,
   h5 a:active,
-  h6 a:active {
-  	color: #0064A0 !important;
+  h2 a:visited,
+  h6 a:active,
+  h6 a:visited {
+  	color: #0064A0;
   }
 
   a,
