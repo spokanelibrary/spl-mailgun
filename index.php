@@ -728,7 +728,9 @@ EOT;
       $params['text'] = $text;
     }
     //return $auth;
-    return $this->curlProxy($api, $params, 'post', $auth);
+    $curl = $this->curlProxy($api, $params, 'post', $auth);
+    return $curl->response;
+    //return $this->curlProxy($api, $params, 'post', $auth);
   } // sendMailgunMessage()
 
   function addAddressToMailingList($address, $list, $name=null, $description=null, $vars=null) {
@@ -741,7 +743,9 @@ EOT;
                       );
       //return $api;
       //return $this->curlProxy($api, $params, 'post', $auth);
-      return $this->curlJSON($api, $params, 'post', $auth);
+      $curl = $this->curlJSON($api, $params, 'post', $auth);
+      return $curl->response;
+      //return $this->curlJSON($api, $params, 'post', $auth);
     }
     return $result;
   }
@@ -752,7 +756,9 @@ EOT;
     $auth = $this->getMailgunPublicAuth();
     $params = array('address'=>$address);
 
-    return $this->curlProxy($api, $params, 'get', $auth);
+    $curl = $this->curlProxy($api, $params, 'get', $auth);
+    return $curl->response;
+    //return $this->curlProxy($api, $params, 'get', $auth);
   } // getMailgunAddressValidation()
 
   function getMailgunMailingList($address) {
@@ -760,7 +766,9 @@ EOT;
     $auth = $this->getMailgunPrivateAuth();
     $params = array();
 
-    return $this->curlProxy($api, $params, 'get', $auth);
+    $curl = $this->curlProxy($api, $params, 'get', $auth);
+    return $curl->response;
+    //return $this->curlProxy($api, $params, 'get', $auth);
   } // getMailgunMailingList()
 
   function getMailgunMailingLists() {
