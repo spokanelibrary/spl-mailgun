@@ -41,6 +41,14 @@ class SPL_Mailgun_Newsletter {
       $this->config = $config;
       $this->initNewsletter();
     }
+
+
+    add_shortcode('spl_mailgun_subscribe', array($this, 'widgetSubscribe'));
+
+  }
+
+  function widgetSubscribe() {
+    echo 'Subscribe Widget';
   }
 
   // WARNING: this doesn't actually work, yet!
