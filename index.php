@@ -42,13 +42,21 @@ class SPL_Mailgun_Newsletter {
       $this->initNewsletter();
     }
 
-
     add_shortcode('spl_mailgun_subscribe', array($this, 'widgetSubscribe'));
 
   }
 
   function widgetSubscribe() {
-    echo 'Subscribe Widget';
+    //echo 'Subscribe Widget';
+    $template = plugin_dir_path(__FILE__).'subscribe.php';
+    if ( file_exists($template) ) {
+      ob_start();
+      include($template);
+      $template = ob_get_contents();
+      ob_end_clean();
+      echo $template;
+    }
+    
   }
 
   // WARNING: this doesn't actually work, yet!
