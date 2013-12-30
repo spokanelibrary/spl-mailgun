@@ -9,9 +9,7 @@
   <style>
   <?php include(plugin_dir_path(__FILE__).'common/ink-custom.css'); ?>
   </style>
-  <style>
-  <?php include(plugin_dir_path(__FILE__).'common/wordpress.css'); ?>
-  </style>
+  
   <style>
   /* Overrides */
   a, 
@@ -29,13 +27,6 @@
   h4 a:hover,
   h5 a:hover,
   h6 a:hover { color: #005587 !important; }
-  
-  .tiny-button a,
-  .tiny-button a:hover,
-  .tiny-button a:visited,
-  .tiny-button a:active {
-    color: #ffffff !important;
-  }
   
   .header {
     background: #0064A0;
@@ -58,6 +49,9 @@
     background-color: #0064A0;
   }
 
+  </style>
+  <style>
+  <?php include(plugin_dir_path(__FILE__).'common/wordpress.css'); ?>
   </style>
 </head>
 <body>
