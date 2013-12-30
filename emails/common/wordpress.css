@@ -30,14 +30,14 @@
 		color: #ffffff !important;
 	}
 	*/
-	
-	table.tiny-button td a,
+	/*
+	table.tiny-button tbody td a,
 	table.tiny-button td a:hover,
 	table.tiny-button td a:visited,
 	table.tiny-button td a:active {
 		color: #ffffff;
 	}
-
+	*/
 	/*
 	table.button td a,
 	table.tiny-button td a,
