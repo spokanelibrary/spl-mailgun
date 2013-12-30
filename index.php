@@ -857,7 +857,7 @@ EOT;
     }
  
     // grab URL
-    $result = curl_exec($ch);
+    //$result = curl_exec($ch);
     $result->response = curl_exec($ch);
 
     // grab http response code
