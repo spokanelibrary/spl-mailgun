@@ -1,21 +1,4 @@
-	/* Overrides & Customs */
-	a:active,
-  a:visited,
-  h1 a:active,
-  h1 a:visited,
-  h2 a:active,
-  h2 a:visited,
-  h3 a:active,
-  h3 a:visited,
-  h4 a:active,
-  h4 a:visited,
-  h5 a:active,
-  h2 a:visited,
-  h6 a:active,
-  h6 a:visited {
-  	color: #0064A0 !important;
-  }
-
+	/* Do not use !important on anchors */
   a,
   h1 a,
   h2 a,
@@ -23,14 +6,29 @@
   h4 a,
   h5 a,
   h6 a { color: #0064A0; }
-  
+ 
+ 	/* Do use !important on pseudo states */
   a:hover, 
+  a:active,
+  a:visited,
   h1 a:hover,
+  h1 a:active,
+  h1 a:visited,
   h2 a:hover,
+  h2 a:active,
+  h2 a:visited,
   h3 a:hover,
+  h3 a:active,
+  h3 a:visited,
   h4 a:hover,
+  h4 a:active,
+  h4 a:visited,
   h5 a:hover,
-  h6 a:hover { color: #005587 !important; }
+  h5 a:active,
+  h2 a:visited,
+  h6 a:hover,
+  h6 a:active,
+  h6 a:visited { color: #005587 !important; }
   
   .masthead {
     background: #0064A0;
@@ -49,6 +47,7 @@
 
   .subtitle { color: #666666; font-size: 22px; }
 
+  /* Deemphasize some text */
   .post p,
   .sidebar p { color: #444444; }
 
