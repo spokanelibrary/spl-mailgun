@@ -1,6 +1,6 @@
 <form class="form-horizontal" role="form">
   <fieldset>
-    <legend>Your ideas intrigue me</legend>
+    <legend>We'll just need your email address</legend>
   <div class="form-group">
     <label for="inputEmail3" class="col-sm-4 control-label">Your Email Address</label>
     <div class="col-sm-8">
