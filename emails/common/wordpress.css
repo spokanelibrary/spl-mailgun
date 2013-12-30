@@ -80,6 +80,7 @@
 	table.medium-button td,
 	table.large-button td {
 		background: #0064A0;
+		border: 1px solid #005587;
 	}
 
 	/* Custom */
