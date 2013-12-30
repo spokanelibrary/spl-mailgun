@@ -1,4 +1,4 @@
-<form class="form-horizontal" role="form">
+<form class="form-horizontal" method="post" role="form">
   <fieldset>
     <legend class="text-muted">Subscribe</legend>
     

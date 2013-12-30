@@ -55,11 +55,19 @@ class SPL_Mailgun_Newsletter {
       $subscribe = ob_get_contents();
       ob_end_clean();
      
-
-      $subscribe .= print_r($_REQUEST['subscribe'], true);
+      $subscribe .= $this->addAddressToMailingList('sgirard@spokanelibrary.org', 'news@spokanelibrary.mailgun.org');
+      //$subscribe .= print_r($_REQUEST['subscribe'], true);
 
       return $subscribe;
     }
+    
+  }
+
+  function subscribeEmailAddress($address, $name=null) {
+
+  }
+
+  function unsubscribeEmailAddress($address) {
     
   }
 
@@ -719,6 +727,11 @@ EOT;
     //return $auth;
     return $this->curlProxy($api, $params, 'post', $auth);
   } // sendMailgunMessage()
+
+  function addAddressToMailingList($address, $list, $name=null, $description=null, $vars=null) {
+
+    return 'addAddressToMailingList';
+  }
   
 
   function getMailgunAddressValidation($address) {
