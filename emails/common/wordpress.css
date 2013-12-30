@@ -8,7 +8,7 @@
   h3 a,
   h4 a,
   h5 a,
-  h6 a { color: #0064A0; }
+  h6 a { color: #0064A0 !important; }
   
   a:hover, 
   h1 a:hover,
