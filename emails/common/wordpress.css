@@ -21,71 +21,6 @@
   h5,
   h6 { color: #666666; }
 
-  /* Keep the buttons neat */
-	/*
-	.button a,
-	.button a:hover,
-	.button a:visited,
-	.button a:active,
-
-	.tiny-button a,
-	.tiny-button a:hover,
-	.tiny-button a:visited,
-	.tiny-button a:active,
-
-	.small-button a,
-	.small-button a:hover,
-	.small-button a:visited,
-	.small-button a:active,
-
-	.medium-button a,
-	.medium-button a:hover,
-	.medium-button a:visited,
-	.medium-button a:active,
-
-	.large-button a,
-	.large-button a:hover,
-	.large-button a:visited,
-	.large-button a:active {
-		color: #ffffff !important;
-	}
-	*/
-
-
-	.button a:hover,
-	.tiny-button a:hover,
-	.small-button a:hover,
-	.medium-button a:hover,
-	.large-button a:hover {
-		color: #ffffff !important;
-	}
-
-	/*
-	.tiny-button a,
-	.tiny-button a:hover,
-	.tiny-button a:visited,
-	.tiny-button a:active {
-		color: #ffffff !important;
-	}
-	*/
-
-	/*
-	table.tiny-button tbody td a,
-	table.tiny-button td a:hover,
-	table.tiny-button td a:visited,
-	table.tiny-button td a:active {
-		color: #ffffff;
-	}
-	*/
-	/*
-	table.button td a,
-	table.tiny-button td a,
-	table.small-button td a,
-	table.medium-button td a,
-	table.large-button td a{
-		color: #ffffff !important;
-	}
-	*/
 	/* Sidebar Headlines */
 
   .sidebar h1,
@@ -135,6 +70,16 @@
 	.wp-caption-text { clear: both; font-style: italic; }
 
 	.img-responsive {  }
+
+	/* Reset button hovers */
+	.button a:hover,
+	.tiny-button a:hover,
+	.small-button a:hover,
+	.medium-button a:hover,
+	.large-button a:hover {
+		color: #ffffff !important;
+	}
+
 
 
 
