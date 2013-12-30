@@ -9,9 +9,9 @@
         <small class="text-muted glyphicon glyphicon-envelope"></small>
       </label>
       <div class="col-sm-8">
-        <input type="email" class="form-control" id="subscribe-email" placeholder="">
+        <input type="email" class="form-control" id="subscribe-email" placeholder="Email">
         <span class="help-block">
-          This is a help block
+          We don't like spam either.
         </span>
       </div>
     </div>
@@ -20,20 +20,20 @@
       <label for="subscribe-email" class="col-sm-4 control-label">
         Your Name 
         <small class="text-muted glyphicon glyphicon-user"></small>
-        <span class="help-block">
+        <em class="help-block">
           Optional
-        </span>
+        </em>
       </label>
       <div class="col-sm-4">
-        <input type="text" class="form-control" id="subscribe-name[first]" placeholder="">
+        <input type="text" class="form-control" id="subscribe-name[first]" placeholder="First">
         <span class="help-block">
-          This is a help block
+          Your first name
         </span>
       </div>
       <div class="col-sm-4">
-        <input type="text" class="form-control" id="subscribe-name[last]" placeholder="">
+        <input type="text" class="form-control" id="subscribe-name[last]" placeholder="Last">
         <span class="help-block">
-          This is a help block
+          Your last name
         </span>
       </div>
     </div>
