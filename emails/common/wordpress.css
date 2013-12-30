@@ -69,20 +69,28 @@
 	.sidebar h6 {font-size: 14px;}
 	.sidebar p  {font-size: 12px;}
 
-	/* Utilities */
-	
+	/* Buttons */
+	table.button td,
+	table.tiny-button td,
+	table.small-button td,
+	table.medium-button td,
+	table.large-button td {
+		background: #f0c;
+	}
+
+	/* Custom */
 	.white { color: #ffffff; }
   .muted { color: #666666; }
   .highlight { color: #005587 !important; }
-	.transparent { background-color: transparent !important; }
 	.warning { background-color: #fefbed !important; border-color: #f1e7bc !important; }
 
-  .text-right { text-align: right; }
+	/* Utilities */
+	.transparent { background-color: transparent !important; }
+	.text-right { text-align: right; }
 	.serif { font-family: Georgia, "Times New Roman", Times, serif; }
 	.condensed { margin:0; padding:0; line-height:1; }
   .small { font-size: 12px; }
 
-  
   /* WordPress and Bootstrap specific */
   .wp-caption { color: #666666; }
 
