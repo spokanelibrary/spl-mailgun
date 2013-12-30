@@ -1,1 +1,3 @@
-subscribe.php
+<form class="">
+	<input type="text">
+</form>
