@@ -860,7 +860,7 @@ EOT;
     // close cURL resource, and free up system resources
     curl_close($ch);
 
-    $result->response_code = curl_getinfo($http, CURLINFO_HTTP_CODE);
+    $result->response_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     
     return $result;
   }
