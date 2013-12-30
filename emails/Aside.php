@@ -14,7 +14,7 @@
   </style>
   <style>
   /* Additional overrides and customs, but be careful here */
-  
+
   </style>
 </head>
 <body>
@@ -55,8 +55,8 @@
               </td>
             </tr>
           </table> 
-          <!-- header -->
-          <table class="row header">
+          <!-- masthead -->
+          <table class="row masthead">
             <tr>
               <td class="center" align="center">
                 <center>
@@ -86,8 +86,8 @@
               </td>
             </tr>
           </table>
-          <!-- masthead -->
-          <table class="row masthead">
+          <!-- dateline -->
+          <table class="row dateline">
             <tr>
               <td class="center" align="center">
                 <center>
