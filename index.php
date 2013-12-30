@@ -54,7 +54,7 @@ class SPL_Mailgun_Newsletter {
       include($template);
       $subscribe = ob_get_contents();
       ob_end_clean();
-      echo $subscribe;
+      return $subscribe;
     }
     
   }
