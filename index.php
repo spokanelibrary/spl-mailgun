@@ -856,12 +856,13 @@ EOT;
  
     // grab URL
     $result = curl_exec($ch);
- 
+
+    // grab http response code
+    $result->response_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+     
     // close cURL resource, and free up system resources
     curl_close($ch);
 
-    $result->response_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-    
     return $result;
   }
 
