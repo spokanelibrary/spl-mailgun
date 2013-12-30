@@ -11,43 +11,7 @@
   </style>
   
   <style>
-  /* Overrides */
-  a, 
-  h1 a,
-  h2 a,
-  h3 a,
-  h4 a,
-  h5 a,
-  h6 a { color: #0064A0; }
   
-  a:hover, 
-  h1 a:hover,
-  h2 a:hover,
-  h3 a:hover,
-  h4 a:hover,
-  h5 a:hover,
-  h6 a:hover { color: #005587 !important; }
-  
-  .header {
-    background: #0064A0;
-  }
-  .masthead {
-    background: #005587;
-  }
-  .header h1 { font-size: 42px; font-weight: normal; color: #ffffff; }
-  .header h5 { font-size: 12px; font-weight: normal; color: #ffffff; }
-
-  .title { /*color: #64964B;*/ color: #005587; }
-
-  .subtitle { color: #666666; font-size: 22px; }
-
-  .post p,
-  .sidebar p { color: #444444; }
-
-  table.spl td {
-    border-color: #003C50;
-    background-color: #0064A0;
-  }
 
   </style>
   <style>
@@ -98,7 +62,7 @@
               <td class="center" align="center">
                 <center>
           
-                  <table class="container spl">
+                  <table class="container">
                     <tr>
                       <td class="wrapper last">
             
