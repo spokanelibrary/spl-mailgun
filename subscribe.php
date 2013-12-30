@@ -11,7 +11,7 @@
       <div class="col-sm-8">
         <input type="email" class="form-control" id="subscribe-email" placeholder="Email">
         <span class="help-block">
-          We don't like spam either.
+          We will not share your email address. <a href="/privacy">Read our privacy policy.</a>
         </span>
       </div>
     </div>
@@ -20,9 +20,6 @@
       <label for="subscribe-email" class="col-sm-4 control-label">
         Your Name 
         <small class="text-muted glyphicon glyphicon-user"></small>
-        <em class="help-block">
-          Optional
-        </em>
       </label>
       <div class="col-sm-4">
         <input type="text" class="form-control" id="subscribe-name[first]" placeholder="First">
