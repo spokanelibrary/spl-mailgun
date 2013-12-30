@@ -3,6 +3,9 @@
     <label for="inputEmail3" class="col-sm-4 control-label">Your Email Address</label>
     <div class="col-sm-8">
       <input type="email" class="form-control" id="inputEmail3" placeholder="Email Address">
+      <span class="help-block">
+        This is a help block
+      </span>
     </div>
   </div>
   <div class="form-group">
