@@ -59,7 +59,7 @@ class SPL_Mailgun_Newsletter {
       $subscribe .= $result->response;
       //$subscribe .= print_r($_REQUEST['subscribe'], true);
 
-      //return $subscribe->response;
+      return $subscribe;
     }
     
   }
