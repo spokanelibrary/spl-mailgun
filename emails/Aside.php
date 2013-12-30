@@ -21,7 +21,7 @@
   h4 a,
   h5 a,
   h6 a { color: #0064A0; }
-  
+  /*  
   a:hover, 
   h1 a:hover,
   h2 a:hover,
@@ -29,24 +29,7 @@
   h4 a:hover,
   h5 a:hover,
   h6 a:hover { color: #005587 !important; }
-
-  table.button:hover td a,
-  table.button:active td a,
-  table.button td a:visited,
-  table.tiny-button:hover td a,
-  table.tiny-button:active td a,
-  table.tiny-button td a:visited,
-  table.small-button:hover td a,
-  table.small-button:active td a,
-  table.small-button td a:visited,
-  table.medium-button:hover td a,
-  table.medium-button:active td a,
-  table.medium-button td a:visited,
-  table.large-button:hover td a,
-  table.large-button:active td a,
-  table.large-button td a:visited {
-    color: #ffffff !important; 
-  }
+  */
 
   
   .header {
