@@ -732,8 +732,12 @@ EOT;
     $result = false;
     if ( $address && $list ) {
       $api = $this->getMailgunApi().'lists'.'/'.$list.'/memebers';
+      $auth = $this->getMailgunPrivateAuth();
+      $params = array('subscribed'=>true
+                    , 'address'=>$address
+                      );
     
-      $result = $api;
+      return $this->curlProxy($api, $params, 'post', $auth);
     }
     return $result;
   }
