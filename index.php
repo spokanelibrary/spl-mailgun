@@ -56,7 +56,7 @@ class SPL_Mailgun_Newsletter {
       ob_end_clean();
      
 
-      $subscribe .= print_r($_REQUEST['subscribe']);
+      $subscribe .= print_r($_REQUEST['subscribe'], true);
 
       return $subscribe;
     }
