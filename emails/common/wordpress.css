@@ -52,7 +52,11 @@
 	*/
 
 
-	.tiny-button a:hover {
+	.button a:hover,
+	.tiny-button a:hover,
+	.small-button a:hover,
+	.medium-button a:hover,
+	.large-button a:hover {
 		color: #ffffff !important;
 	}
 
