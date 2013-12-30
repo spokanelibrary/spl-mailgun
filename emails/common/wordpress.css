@@ -29,6 +29,14 @@
 		color: #ffffff !important;
 	}
 
+	table.tiny-button td a,
+	table.tiny-button td a:hover,
+	table.tiny-button td a:visited,
+	table.tiny-button td a:active {
+		color: #ffffff !important;
+	}
+
+
 	table.button td a,
 	table.tiny-button td a,
 	table.small-button td a,
