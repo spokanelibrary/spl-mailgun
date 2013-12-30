@@ -52,9 +52,9 @@ class SPL_Mailgun_Newsletter {
     if ( file_exists($template) ) {
       ob_start();
       include($template);
-      $template = ob_get_contents();
+      $subscribe = ob_get_contents();
       ob_end_clean();
-      echo $template;
+      echo $subscribe;
     }
     
   }
