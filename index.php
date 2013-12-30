@@ -55,7 +55,8 @@ class SPL_Mailgun_Newsletter {
       $subscribe = ob_get_contents();
       ob_end_clean();
      
-      $subscribe .= $this->addAddressToMailingList('seangirard@yahoo.com', 'news@spokanelibrary.mailgun.org');
+      $result = $this->addAddressToMailingList('seangirard@yahoo.com', 'news@spokanelibrary.mailgun.org');
+      $subscribe = $result->response;
       //$subscribe .= print_r($_REQUEST['subscribe'], true);
 
       //return $subscribe->response;
@@ -820,7 +821,7 @@ EOT;
   function curlProxy($url, $params, $method='post', $auth=null) {
     $result = new stdClass();
     $result->response = false;
-    
+
     // create a new cURL resource
     $ch = curl_init();
     
