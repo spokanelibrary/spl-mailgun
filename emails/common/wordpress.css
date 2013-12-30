@@ -30,7 +30,7 @@
 
   .post p,
   .sidebar p { color: #444444; }
-  
+
 	/* Ink headings are little big */
 	h1 {font-size: 30px;}
 	h2 {font-size: 26px;}
@@ -75,7 +75,7 @@
   .muted { color: #666666; }
   .highlight { color: #005587 !important; }
 	.transparent { background-color: transparent !important; }
-	.warning { background: #fefbed !important; border-color: #f1e7bc !important; }
+	.warning { background-color: #fefbed !important; border-color: #f1e7bc !important; }
 
   .text-right { text-align: right; }
 	.serif { font-family: Georgia, "Times New Roman", Times, serif; }

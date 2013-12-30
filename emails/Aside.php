@@ -9,13 +9,12 @@
   <style>
   <?php include(plugin_dir_path(__FILE__).'common/ink-custom.css'); ?>
   </style>
-  
-  <style>
-  
-
-  </style>
   <style>
   <?php include(plugin_dir_path(__FILE__).'common/wordpress.css'); ?>
+  </style>
+  <style>
+  /* Additional overrides and customs, but be careful here */
+  
   </style>
 </head>
 <body>
