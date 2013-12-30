@@ -815,7 +815,9 @@ EOT;
 
   function curlJSON($url, $params, $method='post', $auth=null) {
     //return $this->curlProxy($url, $params, $method, $auth);
-    return json_decode($this->curlProxy($url, $params, $method, $auth));
+    //return json_decode($this->curlProxy($url, $params, $method, $auth));
+    $proxy = $this->curlProxy($url, $params, $method, $auth);
+    return json_decode($proxy->response); 
   }
 
   function curlProxy($url, $params, $method='post', $auth=null) {
