@@ -55,7 +55,7 @@ class SPL_Mailgun_Newsletter {
       $subscribe = ob_get_contents();
       ob_end_clean();
      
-      $subscribe .= $this->addAddressToMailingList('seangirard', 'news@spokanelibrary.mailgun.org');
+      $subscribe .= $this->addAddressToMailingList('seangirard@yahoo.com', 'news@spokanelibrary.mailgun.org');
       //$subscribe .= print_r($_REQUEST['subscribe'], true);
 
       return $subscribe;
@@ -859,6 +859,8 @@ EOT;
  
     // close cURL resource, and free up system resources
     curl_close($ch);
+
+    $result->response_code = curl_getinfo($http, CURLINFO_HTTP_CODE);
     
     return $result;
   }
