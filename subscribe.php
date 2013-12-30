@@ -9,7 +9,7 @@
         <small class="text-muted glyphicon glyphicon-envelope"></small>
       </label>
       <div class="col-sm-8">
-        <input type="email" class="form-control" id="subscribe-email" name="subscribe[email]" placeholder="Email">
+        <input type="email" class="form-control required" id="subscribe-email" name="subscribe[email]" placeholder="Email">
         <span class="help-block">
           We will not share your email address with anyone. 
           <br>
