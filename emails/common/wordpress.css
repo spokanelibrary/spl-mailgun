@@ -1,14 +1,16 @@
 	/* Overrides & Customs */
+	a:active,
+  a:visited {
+  	color: #0064A0 !important;
+  }
 
-  a, 
-  a:active,
-  a:visited,
+  a,
   h1 a,
   h2 a,
   h3 a,
   h4 a,
   h5 a,
-  h6 a { color: #0064A0 !important; }
+  h6 a { color: #0064A0; }
   
   a:hover, 
   h1 a:hover,
