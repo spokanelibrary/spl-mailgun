@@ -744,7 +744,7 @@ EOT;
       //return $api;
       //return $this->curlProxy($api, $params, 'post', $auth);
       $curl = $this->curlJSON($api, $params, 'post', $auth);
-      return $curl->response;
+      return $curl;
       //return $this->curlJSON($api, $params, 'post', $auth);
     }
     return $result;
