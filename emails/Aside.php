@@ -316,7 +316,7 @@
 
                             <h5>Connect With Us:</h5>
 
-                            <table class="tiny-button facebook">
+                            <table class="button facebook">
                               <tr>
                                 <td>
                                   <a href="http://facebook.com/spokanelibrary">Facebook</a>
