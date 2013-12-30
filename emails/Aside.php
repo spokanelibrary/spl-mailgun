@@ -98,7 +98,7 @@
               <td class="center" align="center">
                 <center>
           
-                  <table class="container">
+                  <table class="container spl">
                     <tr>
                       <td class="wrapper last">
             

@@ -1,10 +1,4 @@
-	/* Preserve type in Outlook reply/forward */
-	a, 
-  td,
-  center {
-    font-family: Helvetica, Arial, sans-serif;
-  }
-
+	
 	/* Ink headings are little big */
 	h1 {font-size: 30px;}
 	h2 {font-size: 26px;}
@@ -70,6 +64,13 @@
 	.wp-caption-text { clear: both; font-style: italic; }
 
 	.img-responsive {  }
+
+	/* Preserve type in Outlook reply/forward */
+	a, 
+  td,
+  center {
+    font-family: Helvetica, Arial, sans-serif;
+  }
 
 	/* Reset button hovers */
 	.button a:hover,
