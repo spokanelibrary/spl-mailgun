@@ -3,6 +3,7 @@
     <legend class="text-muted">Subscribe</legend>
     <div class="form-group">
       <label for="inputEmail3" class="col-sm-4 control-label">
+        <sup class="text-danger">*</sup>
         Your Email Address 
         <small class="text-muted glyphicon glyphicon-envelope"></small>
       </label>
