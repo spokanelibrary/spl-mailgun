@@ -729,7 +729,7 @@ EOT;
   } // sendMailgunMessage()
 
   function addAddressToMailingList($address, $list, $name=null, $description=null, $vars=null) {
-    $api = $this->getMailgunApi().$this->getMailgunDomain().'/'.'lists';
+    $api = $this->getMailgunApi().'/'.'lists';
 
     return $api.'/'.$list.'/memebers/'.$address;
     return 'addAddressToMailingList';
