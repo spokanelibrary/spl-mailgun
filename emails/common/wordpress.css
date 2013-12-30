@@ -21,7 +21,7 @@
   h5,
   h6 { color: #666666; }
 
-  /* Keep the buttons neat */
+  /* Keep the buttons neat 
 	.tiny-button a,
 	.tiny-button a:hover,
 	.tiny-button a:visited,
@@ -44,7 +44,7 @@
 	table.large-button td a{
 		color: #ffffff !important;
 	}
-
+	*/
 	/* Sidebar Headlines */
 
   .sidebar h1,
