@@ -1,6 +1,12 @@
 	/* Overrides & Customs */
 	a:active,
-  a:visited {
+  a:visited,
+  h1 a:active,
+  h2 a:active,
+  h3 a:active,
+  h4 a:active,
+  h5 a:active,
+  h6 a:active {
   	color: #0064A0 !important;
   }
 
