@@ -55,7 +55,7 @@ class SPL_Mailgun_Newsletter {
       $subscribe = ob_get_contents();
       ob_end_clean();
      
-      $subscribe .= $this->addAddressToMailingList('seangirard@yahoo.com', 'news@spokanelibrary.mailgun.org');
+      $subscribe .= $this->addAddressToMailingList('seangirard', 'news@spokanelibrary.mailgun.org');
       //$subscribe .= print_r($_REQUEST['subscribe'], true);
 
       return $subscribe;
