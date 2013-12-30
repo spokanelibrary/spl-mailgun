@@ -11,7 +11,9 @@
       <div class="col-sm-8">
         <input type="email" class="form-control" id="subscribe-email" placeholder="Email">
         <span class="help-block">
-          We will not share your email address. <a href="/privacy">Read our privacy policy.</a>
+          We will not share your email address or send unsolicited mail. 
+          <br>
+          <a href="/privacy">Read our privacy policy.</a>
         </span>
       </div>
     </div>
