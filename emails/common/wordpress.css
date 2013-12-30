@@ -13,7 +13,7 @@
   h2 a:visited,
   h6 a:active,
   h6 a:visited {
-  	color: #0064A0;
+  	color: #0064A0 !important;
   }
 
   a,
