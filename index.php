@@ -736,8 +736,8 @@ EOT;
       $params = array('subscribed'=>true
                     , 'address'=>$address
                       );
-    
-      return $this->curlProxy($api, $params, 'put', $auth);
+      return $api;
+      //return $this->curlProxy($api, $params, 'put', $auth);
     }
     return $result;
   }
