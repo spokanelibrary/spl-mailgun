@@ -731,7 +731,7 @@ EOT;
   function addAddressToMailingList($address, $list, $name=null, $description=null, $vars=null) {
     $result = false;
     if ( $address && $list ) {
-      $api = $this->getMailgunApi().'lists'.'/'.$list.'/memebers';
+      $api = $this->getMailgunApi().'lists'.'/'.$list.'/members';
       $auth = $this->getMailgunPrivateAuth();
       $params = array('subscribed'=>true
                     , 'address'=>$address
