@@ -21,7 +21,7 @@
   h4 a,
   h5 a,
   h6 a { color: #0064A0; }
-  /*  
+  
   a:hover, 
   h1 a:hover,
   h2 a:hover,
@@ -29,8 +29,13 @@
   h4 a:hover,
   h5 a:hover,
   h6 a:hover { color: #005587 !important; }
-  */
-
+  
+  .tiny-button a,
+  .tiny-button a:hover,
+  .tiny-button a:visited,
+  .tiny-button a:active {
+    color: #ffffff !important;
+  }
   
   .header {
     background: #0064A0;
