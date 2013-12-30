@@ -26,7 +26,7 @@
 	.tiny-button a:hover,
 	.tiny-button a:visited,
 	.tiny-button a:active {
-		color: #ffffff !important;
+		color: #ffffff;
 	}
 	/*
 	table.tiny-button td a,
