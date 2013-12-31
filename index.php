@@ -939,7 +939,7 @@ EOT;
       curl_setopt($ch, CURLOPT_POST, 1);
       // 'cause cURL doesn't like multi-dimensional arrays
       curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
-    } elseif ( 'get' == $method || 'put' == $method ) {
+    } elseif ( 'get' == $method ) {
       if ( is_array($params) ) {
       $url .= '?' . http_build_query($params);
       }
@@ -947,6 +947,7 @@ EOT;
       curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'DELETE');
     } elseif ( 'put' == $method ) {
       curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'PUT');
+      curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
     }
 
 
