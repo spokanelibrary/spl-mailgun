@@ -755,6 +755,7 @@ EOT;
     if ( $address && $list ) {
       $api = $this->getMailgunApi().'lists'.'/'.$list.'/members/'.$address;
       $auth = $this->getMailgunPrivateAuth();
+      return $api;
       
       return $this->curlJSON($api, null, 'delete', $auth);
     }
