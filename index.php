@@ -742,6 +742,7 @@ EOT;
                     , 'address'=>$address
                       );
       $params = false;
+      $api .= '/'.$address;
       
       return $this->curlJSON($api, $params, 'delete', $auth);
     }
