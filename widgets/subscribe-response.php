@@ -7,6 +7,17 @@
 <?php else: ?>
 <div class="alert alert-warning">
   <h3>Whoops!</h3>
+  <p>
+    Something went wrong with your subscription:
+  </p>
+  <p>
+    <?php echo $vars->result->message; ?>
+  </p>
+  <p>
+    <a href="<?php echo $slug->subscribe; ?>" class="btn btn-warning">
+      Try Again &rarr;
+    </a>
+  </p>
 </div>
 
 <pre>
