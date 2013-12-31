@@ -826,7 +826,7 @@ EOT;
       $api = $this->getMailgunApi().'lists'.'/'.$list.'/members/'.$address;
       $auth = $this->getMailgunPrivateAuth();
       $params = array('subscribed'=>false
-                      'name'=>'my name'
+                    , 'name'=>'my name'
                       );
 
       return $this->curlJSON($api, $params, 'put', $auth);
