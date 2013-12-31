@@ -55,7 +55,9 @@ class SPL_Mailgun_Newsletter {
       $subscribe = ob_get_contents();
       ob_end_clean();
      
-      $result = $this->addAddressToMailingList('seangirard@yahoo.com', 'news@spokanelibrary.mailgun.org');
+      //$result = $this->addAddressToMailingList('seangirard@yahoo.com', 'news@spokanelibrary.mailgun.org');
+      
+      $result = $this->removeAddressFromMailingList('seangirard@yahoo.com', 'news@spokanelibrary.mailgun.org');
       $subscribe .= print_r($result, true);
       //$subscribe .= $result->response;
       //$subscribe .= $result->httpcode;
@@ -741,8 +743,20 @@ EOT;
       $params = array('subscribed'=>true
                     , 'address'=>$address
                       );
-      
+
       return $this->curlJSON($api, $params, 'post', $auth);
+    }
+
+    return $result;
+  }
+
+  function removeAddressFromMailingList($address, $list) {
+    $result = false;
+    if ( $address && $list ) {
+      $api = $this->getMailgunApi().'lists'.'/'.$list.'/members/'.$address;
+      $auth = $this->getMailgunPrivateAuth();
+      
+      return $this->curlJSON($api, null, 'post', $auth);
     }
 
     return $result;
