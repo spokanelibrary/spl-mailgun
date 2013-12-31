@@ -48,7 +48,7 @@ class SPL_Mailgun_Newsletter {
 
   function widgetSubscribe() {
 
-    wp_enqueue_script( 'spl-mailgun', plugins_url( 'js/spl-mailgun.js', __FILE__ ), false, false );
+    wp_enqueue_script( 'spl-mailgun', plugins_url( 'js/spl-mailgun.js', __FILE__ ), false, null );
 
     if ( !empty($_REQUEST['spl-subscribe']) ) {
       //$result = $this->addAddressToMailingList('seangirard@yahoo.com', 'news@spokanelibrary.mailgun.org');
