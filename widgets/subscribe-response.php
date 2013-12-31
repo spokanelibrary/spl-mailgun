@@ -1,7 +1,7 @@
 <?php if ( '200' == $vars->result->httpcode ) : ?> 
 
 <div class="alert alert-success">
-  <h3>Thank You!</h3>
+  <h3>Thanks!</h3>
   <p>
     We have added you to our distribution list.
   </p>
@@ -12,7 +12,7 @@
 <div class="alert alert-warning">
   <h3>Whoops!</h3>
   <p>
-    Something went wrong with your subscription:
+    <strong>Something went wrong with your subscription:</strong>
   </p>
   <blockquote>
     <em><?php echo $vars->result->message; ?></em>
