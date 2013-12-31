@@ -111,7 +111,7 @@ class SPL_Mailgun_Newsletter {
     if ( !empty($_REQUEST['spl-subscribe']) ) {
       $tmpl = 'subscribe-response.php';
       //$vars->result = $this->addAddressToMailingList('seangirard@yahoo.com', $params['list']);
-      $vars->result = $this->updateAddressOnMailingList('seangirard@yahoo.com', $params['list']);
+      $vars->result = $this->updateAddressOnMailingList('seangirard@yahoo.com', $params['list'], false);
     }
     $subscribe = $this->loadWidgetFile($tmpl, $vars);
     
