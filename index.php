@@ -43,6 +43,7 @@ class SPL_Mailgun_Newsletter {
     }
 
     add_shortcode('spl_mailgun_subscribe', array($this, 'widgetSubscribe'));
+    add_shortcode('spl_mailgun_unsubscribe', array($this, 'widgetUnsubscribe'));
 
   }
 
@@ -81,19 +82,27 @@ class SPL_Mailgun_Newsletter {
     if ( !isset($params['list']) ) {
       return $this->throwWidgetError('No list specified.  ');
     }
+    // note: jquery.validate.js included by default
+    // see switch in config.php to disable
     $this->loadWidgetJS();
+    
     $tmpl = 'subscribe.php';
-
-    $result = $params;
     if ( !empty($_REQUEST['spl-subscribe']) ) {
       $tmpl = 'subscribe-response.php';
       $result = $this->addAddressToMailingList('seangirard@yahoo.com', $params['list']);
       //$result = $this->removeAddressFromMailingList('seangirard@yahoo.com', 'news@spokanelibrary.mailgun.org');
     }
-
     $subscribe = $this->loadWidgetFile($tmpl, $result);
     
     return $subscribe;
+  }
+
+  function widgetUnsubscribe($params) {
+    // without a list this widget is pretty pointless
+    if ( !isset($params['list']) ) {
+      return $this->throwWidgetError('No list specified.  ');
+    }
+
   }
 
   function subscribeEmailAddress($address, $name=null) {
