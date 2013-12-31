@@ -1,5 +1,5 @@
 Respond!
 
 <pre>
-<?php print_r($result) ?>
+<?php print_r($vars) ?>
 </pre>

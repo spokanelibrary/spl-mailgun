@@ -64,7 +64,7 @@ class SPL_Mailgun_Newsletter {
     return $html;
   }
 
-  function loadWidgetFile($file) {
+  function loadWidgetFile($file, $vars=null) {
     $widget = null;
     $template = plugin_dir_path(__FILE__).'widgets/'.$file;
     if ( file_exists($template) ) {
@@ -95,7 +95,7 @@ class SPL_Mailgun_Newsletter {
     }
 
     //echo 'Subscribe Widget';
-    $subscribe = $this->loadWidgetFile($tmpl);
+    $subscribe = $this->loadWidgetFile($tmpl, $result);
     /*
     $template = plugin_dir_path(__FILE__).'widgets/'.$tmpl;
     if ( file_exists($template) ) {
