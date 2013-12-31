@@ -110,7 +110,7 @@ class SPL_Mailgun_Newsletter {
     $tmpl = 'subscribe.php';
     if ( !empty($_REQUEST['spl-subscribe']) ) {
       $tmpl = 'subscribe-response.php';
-      $vars->result = $this->subscribeEmailAddress($_REQUEST['spl-subscribe']['email'], $params['list'])
+      $vars->result = $this->subscribeEmailAddress($_REQUEST['spl-subscribe']['email'], $params['list']);
     }
     $subscribe = $this->loadWidgetFile($tmpl, $vars);
     
@@ -140,7 +140,7 @@ class SPL_Mailgun_Newsletter {
   }
 
   function subscribeEmailAddress($address, $list, $name=null) {
-    //return $this->addAddressToMailingList($address, $list);
+    return $this->addAddressToMailingList($address, $list);
   }
 
   function updateEmailAddress($address, $name=null) {
