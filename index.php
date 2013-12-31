@@ -821,6 +821,7 @@ EOT;
       $auth = $this->getMailgunPrivateAuth();
       $params = array('subscribed'=>$subscribed
                     , 'address'=>$address
+                    , 'description'=>'Added manually'
                       );
 
       return $this->curlJSON($api, $params, 'post', $auth);
