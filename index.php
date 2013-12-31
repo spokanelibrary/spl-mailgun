@@ -48,13 +48,13 @@ class SPL_Mailgun_Newsletter {
 
   function widgetSubscribe() {
 
-
+    wp_enqueue_script( 'spl-mailgun', plugins_url( 'js/spl-mailgun.js', __FILE__ ), false );
 
     if ( !empty($_REQUEST['spl-subscribe']) ) {
       //$result = $this->addAddressToMailingList('seangirard@yahoo.com', 'news@spokanelibrary.mailgun.org');
       //$result = $this->removeAddressFromMailingList('seangirard@yahoo.com', 'news@spokanelibrary.mailgun.org');
       //$result =  $_REQUEST['spl-subscribe']; 
-      $result = plugins_url( 'js/spl-mailgun.js', __FILE__ );
+      
     }
 
     //echo 'Subscribe Widget';
