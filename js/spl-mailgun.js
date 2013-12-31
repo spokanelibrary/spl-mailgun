@@ -22,7 +22,7 @@ var org = {
 , initMailgun: function() {
 		$form = $('form.spl-mailgun');
 		$form.validate();		
-		console.log($form);
+		//console.log($form);
 		//$form.validate();
 		//console.log('validate');
   } // initValues()
