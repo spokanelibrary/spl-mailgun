@@ -73,7 +73,8 @@ class SPL_Mailgun_Newsletter {
 
     $result = $params;
     if ( !empty($_REQUEST['spl-subscribe']) ) {
-      $result = $this->addAddressToMailingList('seangirard@yahoo.com', $list);
+      //$result = 'test';
+      $result = $this->addAddressToMailingList('seangirard@yahoo.com', $params['list']);
       //$result = $this->removeAddressFromMailingList('seangirard@yahoo.com', 'news@spokanelibrary.mailgun.org');
       //$result =  $_REQUEST['spl-subscribe']; 
 
