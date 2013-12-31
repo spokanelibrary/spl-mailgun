@@ -945,6 +945,8 @@ EOT;
       }
     } elseif ( 'delete' == $method ) {
       curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'DELETE');
+    } elseif ( 'put' == $method ) {
+      curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'PUT');
     }
 
 
