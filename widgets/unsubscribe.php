@@ -13,10 +13,14 @@
       </div>
     </div>
 
-    <div class="checkbox">
-      <label>
-        <input type="checkbox" name="spl-unsubscribe[delete]"> Delete permanently?
-      </label>
+    <div class="form-group">
+      <div class="col-sm-8 col-offset-sm-4">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="spl-unsubscribe[delete]"> Delete permanently?
+          </label>
+        </div>
+      </div>
     </div>
 
     <div class="form-group">
