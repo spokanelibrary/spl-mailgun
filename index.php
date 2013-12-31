@@ -68,11 +68,11 @@ class SPL_Mailgun_Newsletter {
   function getWidgetSlugs($params) {
     // see config.php for slug defs (default: /subscribe + /unsubscribe)
     $slug = new stdClass();
-    $slug->subscribe = '/';
-    $slug->unsubscribe = '/';
+    $slug->subscribe = home_url('/');
+    $slug->unsubscribe = home_url('/');
     if ( isset($params['slug']) ) {
-      $slug->subscribe = $params['slug'].'/';
-      $slug->unsubscribe = $params['slug'].'/';
+      $slug->subscribe = home_url('/'.$params['slug'].'/');
+      $slug->unsubscribe = home_url('/'.$params['slug'].'/');
     }
     $slug->subscribe .= $this->config->custom->widgets->subscribe.'/';
     $slug->unsubscribe .= $this->config->custom->widgets->unsubscribe.'/';
