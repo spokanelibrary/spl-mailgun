@@ -92,7 +92,6 @@ class SPL_Mailgun_Newsletter {
       ob_end_clean();
     }
     $widget .= '<pre>'.print_r($vars, true).'</pre>';
-    $widget .= '<pre>'.print_r($_REQUEST, true).'</pre>';
     return $widget;
   }
 
@@ -129,32 +128,35 @@ class SPL_Mailgun_Newsletter {
 
     $vars = new stdClass();
     $vars->params = $params;
+    $vars->request = $_REQUEST;
     $tmpl = 'unsubscribe.php';
     if ( !empty($_REQUEST['spl-unsubscribe']) ) {
       $tmpl = 'unsubscribe-response.php';
-      
-      //$vars->result = $this->updateAddressOnMailingList($_REQUEST['spl-unsubscribe']['email'], $params['list'], false);
-      $vars->result = $this->removeAddressFromMailingList($_REQUEST['spl-unsubscribe']['email'], $params['list']);
+      if ( $_REQUEST['spl-unsubscribe']['delete'] ) {
+        $vars->result = $this->deleteEmailAddress($_REQUEST['spl-unsubscribe']['email'], $params['list']);
+      } else {
+        $vars->result =  $this->unsubscribeEmailAddress($_REQUEST['spl-unsubscribe']['email'], $params['list']);;
+      }
     }
     $subscribe = $this->loadWidgetFile($tmpl, $vars);
     
     return $subscribe;
   }
 
-  function subscribeEmailAddress($address, $list, $name=null) {
-    return $this->addAddressToMailingList($address, $list, true, $name);
+  function subscribeEmailAddress($address, $list, $name=null, $vars=null) {
+    return $this->addAddressToMailingList($address, $list, true, $name, $vars);
   }
 
-  function updateEmailAddress($address, $name=null) {
+  function updateEmailAddress($address, $list, $name=null, $vars=null) {
     
   }
 
-  function unsubscribeEmailAddress($address) {
-    
+  function unsubscribeEmailAddress($address, $list) {
+    return $this->updateAddressOnMailingList($address, $list, false);
   }
 
-  function deleteEmailAddress($address) {
-    
+  function deleteEmailAddress($address, $list) {
+    return $this->removeAddressFromMailingList($address, $list);
   }
 
   // WARNING: this doesn't actually work, yet!
