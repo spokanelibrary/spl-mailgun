@@ -825,7 +825,7 @@ EOT;
     if ( $address && $list ) {
       $api = $this->getMailgunApi().'lists'.'/'.$list.'/members/'.$address;
       $auth = $this->getMailgunPrivateAuth();
-      $params = array('subscribed'=>false
+      $params = array('subscribed'=>True
                     , 'name'=>'my name'
                       );
 
