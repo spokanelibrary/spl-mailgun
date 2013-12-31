@@ -53,7 +53,7 @@ class SPL_Mailgun_Newsletter {
     wp_enqueue_script( 'spl-mailgun', plugins_url( 'js/spl-mailgun.js', __FILE__ ), false, null );    
   }
 
-  function getWidgetError($error) {
+  function throwWidgetError($error) {
     $html = null;
     $html .= '<div class="alert alert-danger">';
     $html .= '<strong>Whoops:</strong>';
@@ -67,13 +67,13 @@ class SPL_Mailgun_Newsletter {
   function widgetSubscribe($params) {
     // without a list this widget is pretty pointless
     if ( !isset($params['list']) ) {
-      return $this->getWidgetError('No list specified.  ');
+      return $this->throwWidgetError('No list specified.  ');
     }
     $this->loadWidgetJS();
 
     $result = $params;
     if ( !empty($_REQUEST['spl-subscribe']) ) {
-      //$result = $this->addAddressToMailingList('seangirard@yahoo.com', 'news@spokanelibrary.mailgun.org');
+      $result = $this->addAddressToMailingList('seangirard@yahoo.com', $list);
       //$result = $this->removeAddressFromMailingList('seangirard@yahoo.com', 'news@spokanelibrary.mailgun.org');
       //$result =  $_REQUEST['spl-subscribe']; 
 
