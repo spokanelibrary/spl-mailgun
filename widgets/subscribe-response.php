@@ -1,8 +1,14 @@
-Respond!
+<?php if ( '200' == $vars->result->httpcode ) : ?> 
 
-<pre>
-<?php print_r($vars) ?>
-</pre>
+  Success
+
+<?php else: ?>
+  <pre>
+  <?php print_r($vars) ?>
+  </pre>  
+<?php endif; ?>
+
+
 
 <a href="<?php echo $slug->subscribe; ?>">Subscribe</a>
 <br>
