@@ -87,29 +87,12 @@ class SPL_Mailgun_Newsletter {
     $result = $params;
     if ( !empty($_REQUEST['spl-subscribe']) ) {
       $tmpl = 'subscribe-response.php';
-      //$result = 'test';
       $result = $this->addAddressToMailingList('seangirard@yahoo.com', $params['list']);
       //$result = $this->removeAddressFromMailingList('seangirard@yahoo.com', 'news@spokanelibrary.mailgun.org');
-      //$result =  $_REQUEST['spl-subscribe']; 
-
     }
 
-    //echo 'Subscribe Widget';
     $subscribe = $this->loadWidgetFile($tmpl, $result);
-    /*
-    $template = plugin_dir_path(__FILE__).'widgets/'.$tmpl;
-    if ( file_exists($template) ) {
-      ob_start();
-      include($template);
-      $subscribe = ob_get_contents();
-      ob_end_clean();
-    }
-    */
-
-    //$subscribe .= '<pre>'.print_r($result, true).'</pre>';
-    //$subscribe .= $result->response;
-    //$subscribe .= $result->httpcode;
-    //$subscribe .= print_r($_REQUEST['subscribe'], true);
+    
     return $subscribe;
   }
 
