@@ -50,7 +50,7 @@ class SPL_Mailgun_Newsletter {
 
     wp_enqueue_script( 'spl-mailgun', plugins_url( 'js/spl-mailgun.js', __FILE__ ), false, null );
 
-    $result = $this->config->validateJS;
+    $result = $this->config;->settings;
     if ( !empty($_REQUEST['spl-subscribe']) ) {
       //$result = $this->addAddressToMailingList('seangirard@yahoo.com', 'news@spokanelibrary.mailgun.org');
       //$result = $this->removeAddressFromMailingList('seangirard@yahoo.com', 'news@spokanelibrary.mailgun.org');
