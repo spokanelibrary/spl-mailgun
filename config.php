@@ -34,8 +34,14 @@ class SPL_Mailgun_Newsletter_Config {
 
     $settings->mailgun = $mailgun;
 
+    $widgets = new stdClass();
     // load jquery.validate.js?
-    $settings->validateJS = true;
+    $widgets->validateJS = true;
+    // widget slugs
+    $widgets->subscribe = '/subscribe';
+    $widgets->unsubscribe = '/unsubscribe';
+
+    $settings->widgets = $widgets;
 
     return $settings;
   }
