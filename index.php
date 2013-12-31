@@ -131,8 +131,8 @@ class SPL_Mailgun_Newsletter {
     $tmpl = 'unsubscribe.php';
     if ( !empty($_REQUEST['spl-unsubscribe']) ) {
       $tmpl = 'unsubscribe-response.php';
-      //$vars->result = $this->updateAddressOnMailingList('seangirard@yahoo.com', $params['list'], false);
-      $vars->result = $this->removeAddressFromMailingList('seangirard@yahoo.com', $params['list']);
+      //$vars->result = $this->updateAddressOnMailingList($_REQUEST['spl-subscribe']['email'], $params['list'], false);
+      $vars->result = $this->removeAddressFromMailingList($_REQUEST['spl-subscribe']['email'], $params['list']);
     }
     $subscribe = $this->loadWidgetFile($tmpl, $vars);
     
@@ -140,7 +140,7 @@ class SPL_Mailgun_Newsletter {
   }
 
   function subscribeEmailAddress($address, $list, $name=null) {
-    return $this->addAddressToMailingList($address, $list);
+    return $this->addAddressToMailingList($address, $list, 'My Name');
   }
 
   function updateEmailAddress($address, $name=null) {
@@ -814,14 +814,15 @@ EOT;
     //return $this->curlProxy($api, $params, 'post', $auth);
   } // sendMailgunMessage()
 
-  function addAddressToMailingList($address, $list, $subscribed=true, $name=null, $description=null, $vars=null) {
+  function addAddressToMailingList($address, $list, $subscribed=true, $name=null, $vars=null) {
     $result = false;
     if ( $address && $list ) {
       $api = $this->getMailgunApi().'lists'.'/'.$list.'/'.'members';
       $auth = $this->getMailgunPrivateAuth();
       $params = array('subscribed'=>$subscribed
                     , 'address'=>$address
-                    , 'description'=>'Added manually'
+                    , 'name'=>$name
+                    , 'vars'=>$vars
                       );
 
       return $this->curlJSON($api, $params, 'post', $auth);
@@ -829,12 +830,14 @@ EOT;
     return $result;
   }
 
-  function updateAddressOnMailingList($address, $list, $subscribed=true, $name=null, $description=null, $vars=null) {
+  function updateAddressOnMailingList($address, $list, $subscribed=true, $name=null, $vars=null) {
     $result = false;
     if ( $address && $list ) {
       $api = $this->getMailgunApi().'lists'.'/'.$list.'/members/'.$address;
       $auth = $this->getMailgunPrivateAuth();
       $params = array('subscribed'=>$subscribed
+                    , 'name'=>$name
+                    , 'vars'=>$vars
                       );
 
       return $this->curlJSON($api, $params, 'put', $auth);
