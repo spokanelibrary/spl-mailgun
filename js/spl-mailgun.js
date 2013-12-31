@@ -29,4 +29,6 @@ var org = {
 
 };
 
-org.init();
+$(function() {
+  org.init();
+});
