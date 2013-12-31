@@ -47,7 +47,7 @@ class SPL_Mailgun_Newsletter {
   }
 
   function loadWidgetJS() {
-    if ( $this->config->custom->validateJS ) {
+    if ( $this->config->custom->widgets->validateJS ) {
       wp_enqueue_script( 'jquery-validate', plugins_url( 'js/jquery.validate.js', __FILE__ ), false, null );
     }
     wp_enqueue_script( 'spl-mailgun', plugins_url( 'js/spl-mailgun.js', __FILE__ ), false, null );    
