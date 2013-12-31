@@ -35,7 +35,7 @@ class SPL_Mailgun_Newsletter_Config {
     $settings->mailgun = $mailgun;
 
     // load jquery.validate.js?
-    $settings->validateJS = false;
+    $settings->validateJS = true;
 
     return $settings;
   }
