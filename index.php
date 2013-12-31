@@ -53,10 +53,18 @@ class SPL_Mailgun_Newsletter {
     wp_enqueue_script( 'spl-mailgun', plugins_url( 'js/spl-mailgun.js', __FILE__ ), false, null );    
   }
 
+  function getWidgetError($error) {
+    $html = null;
+    $html .= '<div class="alert alert-danger">';
+    $html .= '<h3>Error</h3>';
+    $html .= $error;
+    $html .= '</div>';
+  }
+
   function widgetSubscribe($params) {
     // without a list this widget is pretty pointless
     if ( !isset($params['list']) ) {
-      return;
+      return $this->getWidgetError('No list specified.');
     }
     $this->loadWidgetJS();
 
