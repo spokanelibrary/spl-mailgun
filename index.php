@@ -862,7 +862,10 @@ EOT;
       if ( is_array($params) ) {
       $url .= '?' . http_build_query($params);
       }
+    } elseif ( 'delete' == $method ) {
+      curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'DELETE');
     }
+
 
     // set URL and other appropriate options
     curl_setopt($ch, CURLOPT_URL, $url);
