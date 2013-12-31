@@ -10,9 +10,9 @@
   <p>
     Something went wrong with your subscription:
   </p>
-  <p>
+  <blockquote>
     <?php echo $vars->result->message; ?>
-  </p>
+  </blockquote>
   <p>
     <a href="<?php echo $slug->subscribe; ?>" class="btn btn-warning">
       Try Again &rarr;
