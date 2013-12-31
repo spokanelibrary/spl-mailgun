@@ -131,8 +131,8 @@ class SPL_Mailgun_Newsletter {
     $tmpl = 'unsubscribe.php';
     if ( !empty($_REQUEST['spl-unsubscribe']) ) {
       $tmpl = 'unsubscribe-response.php';
-      //$vars->result = $this->updateAddressOnMailingList($_REQUEST['spl-subscribe']['email'], $params['list'], false);
-      $vars->result = $this->removeAddressFromMailingList($_REQUEST['spl-subscribe']['email'], $params['list']);
+      //$vars->result = $this->updateAddressOnMailingList($_REQUEST['spl-unsubscribe']['email'], $params['list'], false);
+      $vars->result = $this->removeAddressFromMailingList($_REQUEST['spl-unsubscribe']['email'], $params['list']);
     }
     $subscribe = $this->loadWidgetFile($tmpl, $vars);
     
