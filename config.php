@@ -38,8 +38,8 @@ class SPL_Mailgun_Newsletter_Config {
     // load jquery.validate.js?
     $widgets->validateJS = true;
     // widget slugs
-    $widgets->subscribe = '/subscribe';
-    $widgets->unsubscribe = '/unsubscribe';
+    $widgets->subscribe = 'subscribe';
+    $widgets->unsubscribe = 'unsubscribe';
 
     $settings->widgets = $widgets;
 
