@@ -934,12 +934,12 @@ EOT;
     // create a new cURL resource
     $ch = curl_init();
     
-    if ( 'post' == $method || 'put' == $method ) {
+    if ( 'post' == $method ) {
       // setup for an http post
       curl_setopt($ch, CURLOPT_POST, 1);
       // 'cause cURL doesn't like multi-dimensional arrays
       curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
-    } elseif ( 'get' == $method ) {
+    } elseif ( 'get' == $method || 'put' == $method ) {
       if ( is_array($params) ) {
       $url .= '?' . http_build_query($params);
       }
