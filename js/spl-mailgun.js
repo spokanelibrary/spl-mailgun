@@ -29,4 +29,4 @@ var org = {
 
 };
 
-org.init
+org.init();
