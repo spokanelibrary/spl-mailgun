@@ -92,7 +92,7 @@ class SPL_Mailgun_Newsletter {
       ob_end_clean();
     }
     $widget .= '<pre>'.print_r($vars, true).'</pre>';
-
+    $widget .= '<pre>'.print_r($_REQUEST, true).'</pre>';
     return $widget;
   }
 
@@ -110,9 +110,7 @@ class SPL_Mailgun_Newsletter {
     $tmpl = 'subscribe.php';
     if ( !empty($_REQUEST['spl-subscribe']) ) {
       $tmpl = 'subscribe-response.php';
-
       $name = trim($_REQUEST['spl-subscribe']['name']['first'].' '.$_REQUEST['spl-subscribe']['name']['last']);
-
       $vars->result = $this->subscribeEmailAddress($_REQUEST['spl-subscribe']['email'], $params['list'], $name);
     }
     $subscribe = $this->loadWidgetFile($tmpl, $vars);
@@ -134,6 +132,7 @@ class SPL_Mailgun_Newsletter {
     $tmpl = 'unsubscribe.php';
     if ( !empty($_REQUEST['spl-unsubscribe']) ) {
       $tmpl = 'unsubscribe-response.php';
+      
       //$vars->result = $this->updateAddressOnMailingList($_REQUEST['spl-unsubscribe']['email'], $params['list'], false);
       $vars->result = $this->removeAddressFromMailingList($_REQUEST['spl-unsubscribe']['email'], $params['list']);
     }
