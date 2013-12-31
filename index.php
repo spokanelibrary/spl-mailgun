@@ -140,7 +140,7 @@ class SPL_Mailgun_Newsletter {
   }
 
   function subscribeEmailAddress($address, $list, $name=null) {
-    return $this->addAddressToMailingList($address, $list);
+    //return $this->addAddressToMailingList($address, $list);
   }
 
   function updateEmailAddress($address, $name=null) {
