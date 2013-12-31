@@ -1,11 +1,18 @@
 <?php if ( '200' == $vars->result->httpcode ) : ?> 
 
-  Success
+<div class="alert alert-success">
+  <h3>Thank You!</h3>
+</div>
 
 <?php else: ?>
-  <pre>
-  <?php print_r($vars) ?>
-  </pre>  
+<div class="alert alert-warning">
+  <h3>Whoops!</h3>
+</div>
+
+<pre>
+<?php print_r($vars) ?>
+</pre>  
+
 <?php endif; ?>
 
 
