@@ -64,6 +64,18 @@ class SPL_Mailgun_Newsletter {
     return $html;
   }
 
+  function loadWidgetFile($file) {
+    $widget = null;
+    $template = plugin_dir_path(__FILE__).'widgets/'.$file;
+    if ( file_exists($template) ) {
+      ob_start();
+      include($template);
+      $widget = ob_get_contents();
+      ob_end_clean();
+    }
+    return $widget;
+  }
+
   function widgetSubscribe($params) {
     // without a list this widget is pretty pointless
     if ( !isset($params['list']) ) {
@@ -83,7 +95,8 @@ class SPL_Mailgun_Newsletter {
     }
 
     //echo 'Subscribe Widget';
-    $subscribe = null;
+    $subscribe = $this->loadWidgetFile($tmpl);
+    /*
     $template = plugin_dir_path(__FILE__).'widgets/'.$tmpl;
     if ( file_exists($template) ) {
       ob_start();
@@ -91,6 +104,7 @@ class SPL_Mailgun_Newsletter {
       $subscribe = ob_get_contents();
       ob_end_clean();
     }
+    */
 
     //$subscribe .= '<pre>'.print_r($result, true).'</pre>';
     //$subscribe .= $result->response;
