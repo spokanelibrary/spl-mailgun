@@ -92,7 +92,7 @@ class SPL_Mailgun_Newsletter {
       ob_end_clean();
     }
 
-    $subscribe .= '<pre>'.print_r($result, true).'</pre>';
+    //$subscribe .= '<pre>'.print_r($result, true).'</pre>';
     //$subscribe .= $result->response;
     //$subscribe .= $result->httpcode;
     //$subscribe .= print_r($_REQUEST['subscribe'], true);
