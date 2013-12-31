@@ -47,6 +47,13 @@ class SPL_Mailgun_Newsletter {
   }
 
   function widgetSubscribe() {
+
+    if ( !empty($_REQUEST['spl-subscribe']) ) {
+      //$result = $this->addAddressToMailingList('seangirard@yahoo.com', 'news@spokanelibrary.mailgun.org');
+      //$result = $this->removeAddressFromMailingList('seangirard@yahoo.com', 'news@spokanelibrary.mailgun.org');
+      $result =  $_REQUEST['spl-subscribe']; 
+    }
+
     //echo 'Subscribe Widget';
     $template = plugin_dir_path(__FILE__).'subscribe.php';
     if ( file_exists($template) ) {
@@ -55,9 +62,6 @@ class SPL_Mailgun_Newsletter {
       $subscribe = ob_get_contents();
       ob_end_clean();
      
-      //$result = $this->addAddressToMailingList('seangirard@yahoo.com', 'news@spokanelibrary.mailgun.org');
-      
-      $result = $this->removeAddressFromMailingList('seangirard@yahoo.com', 'news@spokanelibrary.mailgun.org');
       $subscribe .= '<pre>'.print_r($result, true).'</pre>';
       //$subscribe .= $result->response;
       //$subscribe .= $result->httpcode;
@@ -746,7 +750,6 @@ EOT;
 
       return $this->curlJSON($api, $params, 'post', $auth);
     }
-
     return $result;
   }
 
@@ -755,11 +758,8 @@ EOT;
     if ( $address && $list ) {
       $api = $this->getMailgunApi().'lists'.'/'.$list.'/members/'.$address;
       $auth = $this->getMailgunPrivateAuth();
-      //return $api;
-      
       return $this->curlJSON($api, null, 'delete', $auth);
     }
-
     return $result;
   }
   
