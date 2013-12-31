@@ -103,6 +103,7 @@ class SPL_Mailgun_Newsletter {
       return $this->throwWidgetError('No list specified.  ');
     }
 
+    return 'unsub';
   }
 
   function subscribeEmailAddress($address, $name=null) {
