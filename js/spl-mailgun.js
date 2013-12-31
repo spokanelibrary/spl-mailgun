@@ -28,3 +28,5 @@ var org = {
   } // initValues()
 
 };
+
+org.init
