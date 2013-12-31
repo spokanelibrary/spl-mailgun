@@ -823,10 +823,9 @@ EOT;
   function updateAddressOnMailingList($address, $list, $subscribed=true, $name=null, $description=null, $vars=null) {
     $result = false;
     if ( $address && $list ) {
-      $api = $this->getMailgunApi().'lists'.'/'.$list.'/'.'members';
+      $api = $this->getMailgunApi().'lists'.'/'.$list.'/members/'.$address;
       $auth = $this->getMailgunPrivateAuth();
       $params = array('subscribed'=>$subscribed
-                    , 'address'=>$address
                       );
 
       return $this->curlJSON($api, $params, 'put', $auth);
