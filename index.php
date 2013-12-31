@@ -56,7 +56,8 @@ class SPL_Mailgun_Newsletter {
   function getWidgetError($error) {
     $html = null;
     $html .= '<div class="alert alert-danger">';
-    $html .= '<h3>Error</h3>';
+    $html .= '<strong>Whoops:</strong>';
+    $html .= '<br>';
     $html .= $error;
     $html .= '</div>';
 
