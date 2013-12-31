@@ -71,8 +71,8 @@ class SPL_Mailgun_Newsletter {
     $slug->subscribe = '/';
     $slug->unsubscribe = '/';
     if ( isset($params['slug']) ) {
-      $slug->subscribe = $vars->params['slug'].'/';
-      $slug->unsubscribe = $vars->params['slug'].'/';
+      $slug->subscribe = $params['slug'].'/';
+      $slug->unsubscribe = $params['slug'].'/';
     }
     $slug->subscribe .= $this->config->custom->widgets->subscribe.'/';
     $slug->unsubscribe .= $this->config->custom->widgets->unsubscribe.'/';
