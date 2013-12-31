@@ -94,7 +94,6 @@ class SPL_Mailgun_Newsletter {
     
     $vars = new stdClass();
     $vars->params = $params;
-
     $tmpl = 'subscribe.php';
     if ( !empty($_REQUEST['spl-subscribe']) ) {
       $tmpl = 'subscribe-response.php';
@@ -114,12 +113,14 @@ class SPL_Mailgun_Newsletter {
     // see switch in config.php to disable
     $this->loadWidgetJS();
 
+    $vars = new stdClass();
+    $vars->params = $params;
     $tmpl = 'unsubscribe.php';
     if ( !empty($_REQUEST['spl-unsubscribe']) ) {
       $tmpl = 'unsubscribe-response.php';
-      $result = $this->removeAddressFromMailingList('seangirard@yahoo.com', $params['list']);
+      $vars->result = $this->removeAddressFromMailingList('seangirard@yahoo.com', $params['list']);
     }
-    $subscribe = $this->loadWidgetFile($tmpl, $result);
+    $subscribe = $this->loadWidgetFile($tmpl, $vars);
     
     return $subscribe;
   }
