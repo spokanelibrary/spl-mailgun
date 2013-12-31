@@ -70,9 +70,11 @@ class SPL_Mailgun_Newsletter {
       return $this->throwWidgetError('No list specified.  ');
     }
     $this->loadWidgetJS();
+    $tmpl = 'subscribe.php';
 
     $result = $params;
     if ( !empty($_REQUEST['spl-subscribe']) ) {
+      $tmpl = 'subscribe-response.php';
       //$result = 'test';
       $result = $this->addAddressToMailingList('seangirard@yahoo.com', $params['list']);
       //$result = $this->removeAddressFromMailingList('seangirard@yahoo.com', 'news@spokanelibrary.mailgun.org');
@@ -81,21 +83,20 @@ class SPL_Mailgun_Newsletter {
     }
 
     //echo 'Subscribe Widget';
-    $template = plugin_dir_path(__FILE__).'subscribe.php';
+    $subscribe = null;
+    $template = plugin_dir_path(__FILE__).'widgets/'.$tmpl;
     if ( file_exists($template) ) {
       ob_start();
       include($template);
       $subscribe = ob_get_contents();
       ob_end_clean();
-     
-      $subscribe .= '<pre>'.print_r($result, true).'</pre>';
-      //$subscribe .= $result->response;
-      //$subscribe .= $result->httpcode;
-      //$subscribe .= print_r($_REQUEST['subscribe'], true);
-
-      return $subscribe;
     }
-    
+
+    $subscribe .= '<pre>'.print_r($result, true).'</pre>';
+    //$subscribe .= $result->response;
+    //$subscribe .= $result->httpcode;
+    //$subscribe .= print_r($_REQUEST['subscribe'], true);
+    return $subscribe;
   }
 
   function subscribeEmailAddress($address, $name=null) {
