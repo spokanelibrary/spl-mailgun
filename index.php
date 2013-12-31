@@ -59,12 +59,14 @@ class SPL_Mailgun_Newsletter {
     $html .= '<h3>Error</h3>';
     $html .= $error;
     $html .= '</div>';
+
+    return $html;
   }
 
   function widgetSubscribe($params) {
     // without a list this widget is pretty pointless
     if ( !isset($params['list']) ) {
-      return $this->getWidgetError('No list specified.');
+      return $this->getWidgetError('No list specified.  ');
     }
     $this->loadWidgetJS();
 
