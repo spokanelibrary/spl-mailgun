@@ -741,10 +741,8 @@ EOT;
       $params = array('subscribed'=>true
                     , 'address'=>$address
                       );
-      $params = false;
-      $api .= '/'.$address;
       
-      return $this->curlJSON($api, $params, 'delete', $auth);
+      return $this->curlJSON($api, $params, 'post', $auth);
     }
 
     return $result;
