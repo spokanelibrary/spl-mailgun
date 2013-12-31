@@ -5,6 +5,9 @@
   <p>
     We added you to our distribution list.
   </p>
+  <blockquote>
+    <em><?php echo $vars->result->member->address; ?></em>
+  </blockquote>
 </div>
 
 <?php else: ?>
