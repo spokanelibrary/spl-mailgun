@@ -66,11 +66,14 @@ class SPL_Mailgun_Newsletter {
   }
 
   function loadWidgetFile($file, $vars=null) {
-    // ToDo: add a slug base in widget params?
     // see config.php for slug defs (default: /subscribe + /unsubscribe)
     $slug = new stdClass();
-    $slug->subscribe = $this->config->custom->widgets->subscribe;
-    $slug->unsubscribe = $this->config->custom->widgets->unsubscribe;
+    if ( isset($vars->params->slug) ) {
+      $slug->subscribe = $vars->params->slug.'/';
+      $slug->unsubscribe = $vars->params->slug.'/';
+    }
+    $slug->subscribe .= $this->config->custom->widgets->subscribe;
+    $slug->unsubscribe .= $this->config->custom->widgets->unsubscribe;
 
     $widget = null;
     $template = plugin_dir_path(__FILE__).'widgets/'.$file;
