@@ -825,7 +825,7 @@ EOT;
     if ( $address && $list ) {
       $api = $this->getMailgunApi().'lists'.'/'.$list.'/members/'.$address;
       $auth = $this->getMailgunPrivateAuth();
-      $params = array('subscribed'=>True
+      $params = array('subscribed'=>false
                     , 'name'=>'my name'
                       );
 
@@ -934,7 +934,7 @@ EOT;
     // create a new cURL resource
     $ch = curl_init();
     
-    if ( 'post' == $method ) {
+    if ( 'post' == $method || 'put' == $method ) {
       // setup for an http post
       curl_setopt($ch, CURLOPT_POST, 1);
       // 'cause cURL doesn't like multi-dimensional arrays
