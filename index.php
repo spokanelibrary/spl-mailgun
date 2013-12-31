@@ -110,8 +110,7 @@ class SPL_Mailgun_Newsletter {
     $tmpl = 'subscribe.php';
     if ( !empty($_REQUEST['spl-subscribe']) ) {
       $tmpl = 'subscribe-response.php';
-      //$vars->result = $this->addAddressToMailingList('seangirard@yahoo.com', $params['list']);
-      $vars->result = $this->updateAddressOnMailingList('seangirard@yahoo.com', $params['list'], false);
+      $vars->result = $this->subscribeEmailAddress($_REQUEST['spl-subscribe']['email'], $params['list'])
     }
     $subscribe = $this->loadWidgetFile($tmpl, $vars);
     
@@ -132,6 +131,7 @@ class SPL_Mailgun_Newsletter {
     $tmpl = 'unsubscribe.php';
     if ( !empty($_REQUEST['spl-unsubscribe']) ) {
       $tmpl = 'unsubscribe-response.php';
+      //$vars->result = $this->updateAddressOnMailingList('seangirard@yahoo.com', $params['list'], false);
       $vars->result = $this->removeAddressFromMailingList('seangirard@yahoo.com', $params['list']);
     }
     $subscribe = $this->loadWidgetFile($tmpl, $vars);
@@ -139,11 +139,19 @@ class SPL_Mailgun_Newsletter {
     return $subscribe;
   }
 
-  function subscribeEmailAddress($address, $name=null) {
+  function subscribeEmailAddress($address, $list, $name=null) {
+    return $this->addAddressToMailingList($address, $list);
+  }
 
+  function updateEmailAddress($address, $name=null) {
+    
   }
 
   function unsubscribeEmailAddress($address) {
+    
+  }
+
+  function deleteEmailAddress($address) {
     
   }
 
