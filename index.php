@@ -65,12 +65,12 @@ class SPL_Mailgun_Newsletter {
     return $html;
   }
 
-  function getWidgetSlugs() {
+  function getWidgetSlugs($params) {
     // see config.php for slug defs (default: /subscribe + /unsubscribe)
     $slug = new stdClass();
     $slug->subscribe = '/';
     $slug->unsubscribe = '/';
-    if ( isset($vars->params['slug']) ) {
+    if ( isset($params['slug']) ) {
       $slug->subscribe = $vars->params['slug'].'/';
       $slug->unsubscribe = $vars->params['slug'].'/';
     }
@@ -81,8 +81,8 @@ class SPL_Mailgun_Newsletter {
   }
 
   function loadWidgetFile($file, $vars=null) {
-    $slug = $this->getWidgetSlugs();
-    
+    $slug = $this->getWidgetSlugs($vars->params);
+
     $widget = null;
     $template = plugin_dir_path(__FILE__).'widgets/'.$file;
     if ( file_exists($template) ) {
