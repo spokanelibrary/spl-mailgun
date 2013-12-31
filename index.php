@@ -91,7 +91,7 @@ class SPL_Mailgun_Newsletter {
       $widget = ob_get_contents();
       ob_end_clean();
     }
-    //$widget .= '<pre>'.print_r($vars, true).'</pre>';
+    $widget .= '<pre>'.print_r($vars, true).'</pre>';
 
     return $widget;
   }

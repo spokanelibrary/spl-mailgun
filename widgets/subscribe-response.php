@@ -3,7 +3,7 @@
 <div class="alert alert-success">
   <h3>Thanks!</h3>
   <p>
-    We have added you to our distribution list.
+    We added you to our distribution list.
   </p>
 </div>
 
