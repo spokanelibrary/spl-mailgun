@@ -110,7 +110,8 @@ class SPL_Mailgun_Newsletter {
     $tmpl = 'subscribe.php';
     if ( !empty($_REQUEST['spl-subscribe']) ) {
       $tmpl = 'subscribe-response.php';
-      $vars->result = $this->addAddressToMailingList('seangirard@yahoo.com', $params['list']);
+      //$vars->result = $this->addAddressToMailingList('seangirard@yahoo.com', $params['list']);
+      $vars->result = $this->updateAddressOnMailingList('seangirard@yahoo.com', $params['list']);
     }
     $subscribe = $this->loadWidgetFile($tmpl, $vars);
     
@@ -805,16 +806,30 @@ EOT;
     //return $this->curlProxy($api, $params, 'post', $auth);
   } // sendMailgunMessage()
 
-  function addAddressToMailingList($address, $list, $name=null, $description=null, $vars=null) {
+  function addAddressToMailingList($address, $list, $subscribed=true, $name=null, $description=null, $vars=null) {
     $result = false;
     if ( $address && $list ) {
       $api = $this->getMailgunApi().'lists'.'/'.$list.'/'.'members';
       $auth = $this->getMailgunPrivateAuth();
-      $params = array('subscribed'=>true
+      $params = array('subscribed'=>$subscribed
                     , 'address'=>$address
                       );
 
       return $this->curlJSON($api, $params, 'post', $auth);
+    }
+    return $result;
+  }
+
+  function updateAddressOnMailingList($address, $list, $subscribed=true, $name=null, $description=null, $vars=null) {
+    $result = false;
+    if ( $address && $list ) {
+      $api = $this->getMailgunApi().'lists'.'/'.$list.'/'.'members';
+      $auth = $this->getMailgunPrivateAuth();
+      $params = array('subscribed'=>$subscribed
+                    , 'address'=>$address
+                      );
+
+      return $this->curlJSON($api, $params, 'put', $auth);
     }
     return $result;
   }
