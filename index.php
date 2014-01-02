@@ -820,7 +820,7 @@ EOT;
 
   function addAddressToMailingList($address, $list, $subscribed=true, $name=null, $vars=null) {
     $result = false;
-    $vars = json_encode(array('my'=>'var'));
+    $vars = '{"age": 26}';
     if ( $address && $list ) {
       $api = $this->getMailgunApi().'lists'.'/'.$list.'/'.'members';
       $auth = $this->getMailgunPrivateAuth();
