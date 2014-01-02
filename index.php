@@ -827,6 +827,7 @@ EOT;
       $params = array('subscribed'=>$subscribed
                     , 'address'=>$address
                     , 'name'=>$name
+                    , 'description'=>'my description'
                     , 'vars'=>$vars
                       );
 
