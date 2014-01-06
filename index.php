@@ -91,7 +91,7 @@ class SPL_Mailgun_Newsletter {
       $widget = ob_get_contents();
       ob_end_clean();
     }
-    $widget .= '<pre>'.print_r($vars, true).'</pre>';
+    //$widget .= '<pre>'.print_r($vars, true).'</pre>';
     return $widget;
   }
 
@@ -820,9 +820,9 @@ EOT;
 
   function addAddressToMailingList($address, $list, $subscribed=true, $name=null, $vars=null) {
     $result = false;
-    //$vars = '{"age": 26}';
-    //$vars = json_encode(array('my'=>'var'));
-    $vars = json_encode($vars);
+    if ( !empty($vars) ) {
+      $vars = json_encode($vars);
+    }
     if ( $address && $list ) {
       $api = $this->getMailgunApi().'lists'.'/'.$list.'/'.'members';
       $auth = $this->getMailgunPrivateAuth();
@@ -839,6 +839,9 @@ EOT;
 
   function updateAddressOnMailingList($address, $list, $subscribed=true, $name=null, $vars=null) {
     $result = false;
+    if ( !empty($vars) ) {
+      $vars = json_encode($vars);
+    }
     if ( $address && $list ) {
       $api = $this->getMailgunApi().'lists'.'/'.$list.'/members/'.$address;
       $auth = $this->getMailgunPrivateAuth();

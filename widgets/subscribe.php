@@ -1,5 +1,5 @@
 <form class="form-horizontal spl-mailgun" method="post" role="form">
-  <input type="hidden" name="spl-subscribe[vars][method]" value="Website" />
+  <input type="hidden" name="spl-subscribe[vars][add_via]" value="Website" />
 
   <fieldset>
     <legend class="text-muted">Subscribe</legend>
