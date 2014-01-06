@@ -110,7 +110,7 @@ class SPL_Mailgun_Newsletter {
     if ( !empty($_REQUEST['spl-subscribe']) ) {
       $tmpl = 'subscribe-response.php';
       $name = trim($_REQUEST['spl-subscribe']['name']['first'].' '.$_REQUEST['spl-subscribe']['name']['last']);
-      $vars->result = $this->subscribeEmailAddress($_REQUEST['spl-subscribe']['email'], $params['list'], $name);
+      $vars->result = $this->subscribeEmailAddress($_REQUEST['spl-subscribe']['email'], $params['list'], $name, $_REQUEST['spl-subscribe']['vars']);
     }
     $subscribe = $this->loadWidgetFile($tmpl, $vars);
     
@@ -821,7 +821,8 @@ EOT;
   function addAddressToMailingList($address, $list, $subscribed=true, $name=null, $vars=null) {
     $result = false;
     //$vars = '{"age": 26}';
-    $vars = json_encode(array('my'=>'var'));
+    //$vars = json_encode(array('my'=>'var'));
+    $vars = json_encode($vars);
     if ( $address && $list ) {
       $api = $this->getMailgunApi().'lists'.'/'.$list.'/'.'members';
       $auth = $this->getMailgunPrivateAuth();
