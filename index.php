@@ -102,8 +102,9 @@ class SPL_Mailgun_Newsletter {
     //$this->loadWidgetJS();
 
     $q = new WP_Query( 'post_type=newsletter&posts_per_page=1' );
-    //$guid = $q->post->guid;
-    return '<pre>'.print_r($q->post->post_name, true).'</pre>';
+    $slug = $q->post->post_name;
+    $page = get_page_by_slug($slug);
+    return '<pre>'.print_r($page, true).'</pre>';
 
   }
 
