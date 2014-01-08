@@ -102,10 +102,12 @@ class SPL_Mailgun_Newsletter {
     //$this->loadWidgetJS();
 
     $q = new WP_Query( 'post_type=newsletter&posts_per_page=1' );
+    //return '<pre>'.print_r($q->post, true).'</pre>';
     $slug = $q->post->post_name;
     $page = get_page_by_path($slug);
-    return '<pre>'.print_r($page, true).'</pre>';
+    $content = apply_filters('the_content', $page->post_content);
 
+    return $content;
   }
 
   function widgetSubscribe($params) {
