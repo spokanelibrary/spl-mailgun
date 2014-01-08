@@ -99,46 +99,20 @@ class SPL_Mailgun_Newsletter {
 
   function widgetCurrentLink( $params ) {
 
+    //ob_start();
     //$this->loadWidgetJS();
 
-    $html = null;
-    return $html;
     $q = new WP_Query( 'post_type=newsletter&post_status=publish&posts_per_page=1' );
     //return '<pre>'.print_r($q->post, true).'</pre>';
+    //$guid = $q->post->guid;
     if ( isset($params['title']) && !empty($params['title']) ) {
       $title = $params['title'];
     } else{
       $title = $q->post->post_title;
     }
-
-    switch ( $params['title'] ) {
-      case 'display':
-        $html .= '<h3>';
-        $html .= '<a class="'.$params['class'].'" href="'.get_permalink($q->post->ID).'" title="'.$title.'">'.$title.'</a>'
-        $html .= '</h3>';
-        /*
-        $posts = array();
-        for ( $i=1; $i<= 12; $i++ ) {
-          $select = SPL_Mailgun_Newsletter::getPostSelect($q->post->ID, $i);
-          if ( !empty($select) ) {
-            $posts[$i] = $select;
-          }
-        }
-        if ( !empty($posts) ) {
-          $meta->posts = $posts;
-        }
-        return '<pre>'.print_r($posts, true).'</pre>';
-        */
-
-        $html .= '<ul class="list-unstyled">';
-        $html .= '</ul>';
-        break;
-      default:
-        $html = '<a class="'.$params['class'].'" href="'.get_permalink($q->post->ID).'" title="'.$title.'">'.$title.'</a>';
-        break;
-    }
-    
-    return $html;
+    $link = '<a class="'.$params['class'].'" href="'.get_permalink($q->post->ID).'" title="'.$title.'">'.$title.'</a>';
+    return $link;
+    //return ob_get_clean();
   }
 
   function widgetSubscribe($params) {
