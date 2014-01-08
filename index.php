@@ -297,7 +297,7 @@ class SPL_Mailgun_Newsletter {
   function registerPostType() {
     $args = array(
       'labels'        => $this->getPostTypeLabels()
-    , 'description'   => 'Newsletter Archives'
+    , 'description'   => 'Newsletters'
     , 'public'        => true
     , 'menu_position' => 30
     , 'supports'      => array( 'title'
@@ -317,7 +317,7 @@ class SPL_Mailgun_Newsletter {
 
   function getPostTypeLabels() {
     $labels = array(
-      'name'               => _x( 'Newsletter Archives', 'post type general name' )
+      'name'               => _x( 'Newsletters', 'post type general name' )
     , 'singular_name'      => _x( 'Newsletter', 'post type singular name' )
     , 'add_new'            => _x( 'Add New', 'newsletter' )
     , 'add_new_item'       => __( 'Add a New Newsletter' )
@@ -330,6 +330,7 @@ class SPL_Mailgun_Newsletter {
     , 'not_found_in_trash' => __( 'No newsletters found in the Trash' )
     , 'parent_item_colon'  => ''
     , 'menu_name'          => 'Newsletters'
+    , 'archive_title'      => 'These are the archives'
     );
 
     return $labels;
