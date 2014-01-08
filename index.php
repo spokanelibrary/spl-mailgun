@@ -112,25 +112,32 @@ class SPL_Mailgun_Newsletter {
     }
 
     $link = '<a class="'.$params['class'].'" href="'.get_permalink($q->post->ID).'" title="'.$title.'">'.$title.'</a>';
+    
+    $posts = array();
+    for ( $i=1; $i<= 12; $i++ ) {
+      $select = SPL_Mailgun_Newsletter::getPostSelect($q->post->ID, $i);
+      if ( !empty($select) ) {
+        $posts[$i] = $select;
+      }
+    }
 
     switch ( $params['format'] ) {
       case 'toc':
         $html .= '<h4>';
         $html .= $link;
         $html .= '</h4>';
-        $html .= '<ul>';
-        $html .= '</ul>';
-
-        $posts = array();
-        for ( $i=1; $i<= 12; $i++ ) {
-          $select = SPL_Mailgun_Newsletter::getPostSelect($q->post->ID, $i);
-          if ( !empty($select) ) {
-            $posts[$i] = $select;
-          }
-        }
         if ( !empty($posts) ) {
-          $html .= print_r($posts, true);
+          $html .= '<ul>';
+          foreach ( $posts as $post ) {
+            $html .= '<li><a href="'.$post->link.'">'.$post->title.'</a></li>';
+          }
+          $html .= '</ul>';
+          //$html .= print_r($posts, true);
         }
+        
+
+        
+        
 
         break;
       default:
