@@ -134,7 +134,7 @@ class SPL_Mailgun_Newsletter {
           }
           $html .= '</ul>';
           */
-          $html .= '<p style="text-muted">';
+          $html .= '<p class="text-muted">';
           foreach ( $posts as $post ) {
             $html .= '<strong>'.$post->title.'</strong> ';
           }
