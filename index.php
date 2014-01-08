@@ -103,8 +103,8 @@ class SPL_Mailgun_Newsletter {
 
     $q = new WP_Query( 'post_type=newsletter&posts_per_page=1' );
     $guid = $q->post->guid;
-    header('Location: '.$q->post->guid, true, 301);
-    exit;
+    wp_redirect('Location: '.$q->post->guid);
+    //exit;
     //return '<pre>'.print_r($q->post->guid, true).'</pre>';
 
   }
