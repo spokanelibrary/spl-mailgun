@@ -115,8 +115,11 @@ class SPL_Mailgun_Newsletter {
 
     switch ( $params['format'] ) {
       case 'toc':
+        $html .= '<h3>';
         $html .= $link;
-        $html .= 'Table of contents';
+        $html .= '</h3>';
+        $html .= '<ul>';
+        $html .= '</ul>';
         break;
       default:
         $html = $link;
