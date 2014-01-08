@@ -44,10 +44,12 @@ class SPL_Mailgun_Newsletter {
 
     add_shortcode('spl_mailgun_subscribe', array($this, 'widgetSubscribe'));
     add_shortcode('spl_mailgun_unsubscribe', array($this, 'widgetUnsubscribe'));
-
+    add_shortcode('spl_mailgun_current_edition', array($this, 'widgetCurrentEdition'));
   }
 
   function loadWidgetJS() {
+    // note: jquery.validate.js included by default
+    // see switch in config.php to disable
     if ( $this->config->custom->widgets->validateJS ) {
       wp_enqueue_script( 'jquery-validate', plugins_url( 'js/jquery.validate.js', __FILE__ ), false, null );
     }
@@ -95,13 +97,20 @@ class SPL_Mailgun_Newsletter {
     return $widget;
   }
 
+  function widgetCurrentEdition( $params ) {
+
+    $this->loadWidgetJS();
+
+    return 'This is the current edition';
+
+  }
+
   function widgetSubscribe($params) {
     // without a list this widget is pretty pointless
     if ( !isset($params['list']) ) {
       return $this->throwWidgetError('No list specified.  ');
     }
-    // note: jquery.validate.js included by default
-    // see switch in config.php to disable
+    
     $this->loadWidgetJS();
     
     $vars = new stdClass();
@@ -122,8 +131,7 @@ class SPL_Mailgun_Newsletter {
     if ( !isset($params['list']) ) {
       return $this->throwWidgetError('No list specified.  ');
     }
-    // note: jquery.validate.js included by default
-    // see switch in config.php to disable
+
     $this->loadWidgetJS();
 
     $vars = new stdClass();
