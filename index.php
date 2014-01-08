@@ -115,7 +115,7 @@ class SPL_Mailgun_Newsletter {
         $html .= '<h3>';
         $html .= '<a class="'.$params['class'].'" href="'.get_permalink($q->post->ID).'" title="'.$title.'">'.$title.'</a>'
         $html .= '</h3>';
-
+        /*
         $posts = array();
         for ( $i=1; $i<= 12; $i++ ) {
           $select = SPL_Mailgun_Newsletter::getPostSelect($q->post->ID, $i);
@@ -127,7 +127,7 @@ class SPL_Mailgun_Newsletter {
           $meta->posts = $posts;
         }
         return '<pre>'.print_r($posts, true).'</pre>';
-
+        */
 
         $html .= '<ul class="list-unstyled">';
         $html .= '</ul>';
