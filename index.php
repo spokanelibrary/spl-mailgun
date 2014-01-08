@@ -127,18 +127,19 @@ class SPL_Mailgun_Newsletter {
         $html .= $link;
         $html .= '</h4>';
         if ( !empty($posts) ) {
-          /*
-          $html .= '<ul class="nav nav-pills">';
-          foreach ( $posts as $post ) {
-            $html .= '<li><a href="'.$post->link.'">'.$post->title.'</a></li>';
+          if ( isset($params['link_posts']) ) {
+            $html .= '<ul class="nav nav-pills">';
+            foreach ( $posts as $post ) {
+              $html .= '<li><a href="'.$post->link.'">'.$post->title.'</a></li>';
+            }
+            $html .= '</ul>';
+          } else {
+            $html .= '<p class="text-muted">';
+            foreach ( $posts as $post ) {
+              $html .= '<strong>'.$post->title.'</strong> ';
+            }
+            $html .= '</p>';
           }
-          $html .= '</ul>';
-          */
-          $html .= '<p class="text-muted">';
-          foreach ( $posts as $post ) {
-            $html .= '<strong>'.$post->title.'</strong> ';
-          }
-          $html .= '</p>';
         }
         break;
       default:
