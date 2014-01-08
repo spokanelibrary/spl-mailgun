@@ -99,15 +99,15 @@ class SPL_Mailgun_Newsletter {
 
   function widgetCurrentEdition( $params ) {
 
-    ob_start();
+    //ob_start();
     //$this->loadWidgetJS();
 
     $q = new WP_Query( 'post_type=newsletter&posts_per_page=1' );
-    //return '<pre>'.print_r($q->post, true).'</pre>';
+    return '<pre>'.print_r($q->post, true).'</pre>';
     $guid = $q->post->guid;
     wp_redirect($guid);
     return '';
-    return ob_get_clean();
+    //return ob_get_clean();
   }
 
   function widgetSubscribe($params) {
