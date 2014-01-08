@@ -99,9 +99,11 @@ class SPL_Mailgun_Newsletter {
 
   function widgetCurrentEdition( $params ) {
 
-    $this->loadWidgetJS();
+    //$this->loadWidgetJS();
 
-    return 'This is the current edition';
+    $queryObject = new WP_Query( 'post_type=newsletter&posts_per_page=1' );
+
+    return print_r($queryObject, true);
 
   }
 
