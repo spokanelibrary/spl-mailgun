@@ -103,7 +103,7 @@ class SPL_Mailgun_Newsletter {
     //$this->loadWidgetJS();
 
     $q = new WP_Query( 'post_type=newsletter&post_status=publish&posts_per_page=1' );
-    return '<pre>'.print_r($q->post, true).'</pre>';
+    //return '<pre>'.print_r($q->post, true).'</pre>';
     //$guid = $q->post->guid;
     if ( isset($params['title']) && !empty($params['title']) ) {
       $title = $params['title'];
