@@ -297,7 +297,7 @@ class SPL_Mailgun_Newsletter {
   function registerPostType() {
     $args = array(
       'labels'        => $this->getPostTypeLabels()
-    , 'description'   => 'Newsletters'
+    , 'description'   => 'Newsletter Archives'
     , 'public'        => true
     , 'menu_position' => 30
     , 'supports'      => array( 'title'
