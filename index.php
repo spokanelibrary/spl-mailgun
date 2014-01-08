@@ -103,7 +103,7 @@ class SPL_Mailgun_Newsletter {
 
     $queryObject = new WP_Query( 'post_type=newsletter&posts_per_page=1' );
 
-    return '<pre>'.print_r($queryObject, true).'</pre>';
+    return '<pre>'.print_r($queryObject->post, true).'</pre>';
 
   }
 
