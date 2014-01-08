@@ -106,6 +106,7 @@ class SPL_Mailgun_Newsletter {
     //return '<pre>'.print_r($q->post, true).'</pre>';
     $guid = $q->post->guid;
     wp_redirect($guid);
+    return '';
     return ob_get_clean();
   }
 
