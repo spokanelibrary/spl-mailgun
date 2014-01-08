@@ -111,7 +111,7 @@ class SPL_Mailgun_Newsletter {
       $title = $q->post->post_title;
     }
 
-    switch ( $params['display'] ) {
+    switch ( $params['format'] ) {
       case 'toc':
         $html .= 'Table of contents';
         break;
