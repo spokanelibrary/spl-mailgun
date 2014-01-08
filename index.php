@@ -112,10 +112,10 @@ class SPL_Mailgun_Newsletter {
     }
 
     switch ( $params['format'] ) {
-      case 'toc':
-        $html .= 'Table of contents';
-        
-        break;
+      //case 'toc':
+        //$html .= 'Table of contents';
+
+        //break;
       default:
         $html = '<a class="'.$params['class'].'" href="'.get_permalink($q->post->ID).'" title="'.$title.'">'.$title.'</a>';
         break;
