@@ -44,7 +44,7 @@ class SPL_Mailgun_Newsletter {
 
     add_shortcode('spl_mailgun_subscribe', array($this, 'widgetSubscribe'));
     add_shortcode('spl_mailgun_unsubscribe', array($this, 'widgetUnsubscribe'));
-    add_shortcode('spl_mailgun_current_edition', array($this, 'widgetCurrentEdition'));
+    add_shortcode('spl_mailgun_current', array($this, 'widgetCurrentEdition'));
   }
 
   function loadWidgetJS() {
