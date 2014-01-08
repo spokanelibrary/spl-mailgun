@@ -101,6 +101,7 @@ class SPL_Mailgun_Newsletter {
 
     //$this->loadWidgetJS();
 
+    $html = null;
     $q = new WP_Query( 'post_type=newsletter&post_status=publish&posts_per_page=1' );
     //return '<pre>'.print_r($q->post, true).'</pre>';
     
@@ -112,11 +113,11 @@ class SPL_Mailgun_Newsletter {
 
     switch ( $params['display'] ) {
       default:
-        $link = '<a class="'.$params['class'].'" href="'.get_permalink($q->post->ID).'" title="'.$title.'">'.$title.'</a>';
+        $html = '<a class="'.$params['class'].'" href="'.get_permalink($q->post->ID).'" title="'.$title.'">'.$title.'</a>';
         break;
     }
     
-    return $link;
+    return $html;
   }
 
   function widgetSubscribe($params) {
