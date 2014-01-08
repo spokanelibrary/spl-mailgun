@@ -123,7 +123,7 @@ class SPL_Mailgun_Newsletter {
 
         $posts = array();
         for ( $i=1; $i<= 12; $i++ ) {
-          $select = SPL_Mailgun_Newsletter::getPostSelect($post->ID, $i);
+          $select = SPL_Mailgun_Newsletter::getPostSelect($q->post->ID, $i);
           if ( !empty($select) ) {
             $posts[$i] = $select;
           }
