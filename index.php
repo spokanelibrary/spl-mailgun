@@ -115,6 +115,7 @@ class SPL_Mailgun_Newsletter {
 
     switch ( $params['format'] ) {
       case 'toc':
+        $html .= $link;
         $html .= 'Table of contents';
         break;
       default:
