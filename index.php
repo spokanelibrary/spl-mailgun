@@ -110,7 +110,7 @@ class SPL_Mailgun_Newsletter {
     } else{
       $title = $q->post->post_title;
     }
-    $link = '<a class="'.$params['class'].'" href="'.get_permalink($post['ID']).'" title="'.$title.'">'.$title.'</a>';
+    $link = '<a class="'.$params['class'].'" href="'.get_permalink($q->post->ID).'" title="'.$title.'">'.$title.'</a>';
     return $link;
     //return ob_get_clean();
   }
