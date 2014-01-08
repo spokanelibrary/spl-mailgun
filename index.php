@@ -44,7 +44,7 @@ class SPL_Mailgun_Newsletter {
 
     add_shortcode('spl_mailgun_subscribe', array($this, 'widgetSubscribe'));
     add_shortcode('spl_mailgun_unsubscribe', array($this, 'widgetUnsubscribe'));
-    add_shortcode('spl_mailgun_current', array($this, 'widgetCurrentEdition'));
+    add_shortcode('spl_mailgun_current', array($this, 'widgetCurrentLink'));
   }
 
   function loadWidgetJS() {
@@ -97,16 +97,17 @@ class SPL_Mailgun_Newsletter {
     return $widget;
   }
 
-  function widgetCurrentEdition( $params ) {
+  function widgetCurrentLink( $params ) {
 
     //ob_start();
     //$this->loadWidgetJS();
 
-    $q = new WP_Query( 'post_type=newsletter&posts_per_page=1' );
-    return '<pre>'.print_r($q->post, true).'</pre>';
+    $q = new WP_Query( 'post_type=newsletter&post_status=publish&posts_per_page=1' );
+    //return '<pre>'.print_r($q->post, true).'</pre>';
     $guid = $q->post->guid;
-    wp_redirect($guid);
-    return '';
+    $title = $q->post->post_title;
+    $link = '<a href="'.$guid.'">'.$title.'</a>';
+    return $link;
     //return ob_get_clean();
   }
 
