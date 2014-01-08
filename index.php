@@ -115,11 +115,23 @@ class SPL_Mailgun_Newsletter {
 
     switch ( $params['format'] ) {
       case 'toc':
-        $html .= '<h3>';
+        $html .= '<h4>';
         $html .= $link;
-        $html .= '</h3>';
+        $html .= '</h4>';
         $html .= '<ul>';
         $html .= '</ul>';
+
+        $posts = array();
+        for ( $i=1; $i<= 12; $i++ ) {
+          $select = SPL_Mailgun_Newsletter::getPostSelect($post->ID, $i);
+          if ( !empty($select) ) {
+            $posts[$i] = $select;
+          }
+        }
+        if ( !empty($posts) ) {
+          $html .= print_r($posts, true);
+        }
+
         break;
       default:
         $html = $link;
