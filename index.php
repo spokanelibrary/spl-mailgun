@@ -127,18 +127,12 @@ class SPL_Mailgun_Newsletter {
         $html .= $link;
         $html .= '</h4>';
         if ( !empty($posts) ) {
-          $html .= '<ul>';
+          $html .= '<ul class="nav nav-pills">';
           foreach ( $posts as $post ) {
             $html .= '<li><a href="'.$post->link.'">'.$post->title.'</a></li>';
           }
           $html .= '</ul>';
-          //$html .= print_r($posts, true);
         }
-        
-
-        
-        
-
         break;
       default:
         $html = $link;
