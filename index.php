@@ -317,7 +317,7 @@ class SPL_Mailgun_Newsletter {
 
   function getPostTypeLabels() {
     $labels = array(
-      'name'               => _x( 'Newsletters', 'post type general name' )
+      'name'               => _x( 'Newsletter Archives', 'post type general name' )
     , 'singular_name'      => _x( 'Newsletter', 'post type singular name' )
     , 'add_new'            => _x( 'Add New', 'newsletter' )
     , 'add_new_item'       => __( 'Add a New Newsletter' )
