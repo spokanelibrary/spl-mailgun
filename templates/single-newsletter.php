@@ -86,10 +86,9 @@
             <?php endif; ?>
             <?php if ( isset($meta->sidebar['content']) ) :  ?>
             <div class="panel-body">
-            <aside class="aside">
-              <?php echo $meta->sidebar['content']; ?>
-              <hr />
-            </aside>
+              <aside class="aside">
+                <?php echo $meta->sidebar['content']; ?>
+              </aside>
             </div><!-- /.panel-body -->
             <?php endif; ?>
             </div><!-- /.panel -->
