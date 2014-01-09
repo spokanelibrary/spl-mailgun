@@ -236,7 +236,7 @@ class SPL_Mailgun_Newsletter {
                       class="btn btn-success">Read More &rarr;</a>
                   </p>';
       }
-      $html .= '<hr>';
+      //$html .= '<hr>';
 
       
     }
