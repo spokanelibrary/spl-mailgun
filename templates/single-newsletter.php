@@ -32,7 +32,7 @@
     		<div class="panel-heading">
     			<span class="pull-right">
     				<i class="glyphicon glyphicon-envelope text-primary"></i>
-    				<a href="#">Subscribe</a>
+    				<a href="/subscribe">Subscribe</a>
     			</span>
     			<span class="text-muted">
     				<i class="glyphicon glyphicon-send"></i>
