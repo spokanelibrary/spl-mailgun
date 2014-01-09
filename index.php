@@ -123,7 +123,7 @@ class SPL_Mailgun_Newsletter {
 
     switch ( $params['format'] ) {
       case 'toc':
-        $html .= mysql2date( get_option('date_format'), $q->post->post_date );
+        $html .= mysql2date( 'F, Y', $q->post->post_date );
         
         $html .= '<h4>';
         $html .= $link;
