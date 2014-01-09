@@ -17,7 +17,6 @@
   */
 ?>
 
-<!--
 	<div class="page-header">
     <h1>
     	News &amp; new ideas
@@ -25,7 +24,7 @@
     </h1>
     <?php// get_template_part('templates/entry-meta'); ?>
   </div>
--->
+
   <div class="row">
     <div class="col-sm-8">
     	<div class="panel panel-default" style="border-left-width:5px;">
