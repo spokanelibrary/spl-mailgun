@@ -131,17 +131,19 @@ class SPL_Mailgun_Newsletter {
 
         if ( !empty($posts) ) {
           if ( isset($params['link_posts']) ) {
-            $html .= '<ul class="nav nav-pills">';
+            $html .= '<ul class="nav nav-pills nav-stacked">';
             foreach ( $posts as $post ) {
               $html .= '<li><a href="'.$post->link.'">'.$post->title.'</a></li>';
             }
             $html .= '</ul>';
           } else {
+            $html .= '<ul class="text-muted">';
             foreach ( $posts as $post ) {
-              $html .= '<p class="text-muted text-center">';
-              $html .= ''.$post->title.'';
-              $html .= '</p>';
+              $html .= '<li>';
+              $html .= ''.$post->title.'</strong> ';
+              $html .= '</li>';
             }
+            $html .= '</ul>';
           }
         }
         break;
