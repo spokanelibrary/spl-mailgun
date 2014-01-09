@@ -64,6 +64,71 @@
             &hellip;
           </p>
 
+          
+
+          
+
+
+
+          <?php if ( isset($meta->posts) ) :  ?>
+          
+          <div class="row">
+          <div class="col-sm-6 spl-news-post">
+            <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[1]); ?>
+          </div><!-- /.col -->
+          <div class="col-sm-6 spl-news-post">
+            <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[2]); ?>
+          </div><!-- /.col -->
+          </div>
+
+          <div class="row">
+          <div class="col-sm-6 spl-news-post">
+            <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[3]); ?>
+          </div><!-- /.col -->
+          <div class="col-sm-6 spl-news-post">
+            <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[4]); ?>
+          </div><!-- /.col -->
+          </div>
+
+          <div class="row">
+          <div class="col-sm-6 spl-news-post">
+            <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[5]); ?>
+          </div><!-- /.col -->
+          <div class="col-sm-6 spl-news-post">
+            <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[6]); ?>
+          </div><!-- /.col -->
+          </div>
+
+          <div class="row">
+          <div class="col-sm-6 spl-news-post">
+            <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[7]); ?>
+          </div><!-- /.col -->
+          <div class="col-sm-6 spl-news-post">
+            <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[8]); ?>
+          </div><!-- /.col -->
+          </div>
+
+          <div class="row">
+          <div class="col-sm-6 spl-news-post">
+            <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[9]); ?>
+          </div><!-- /.col -->
+          <div class="col-sm-6 spl-news-post">
+            <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[10]); ?>
+          </div><!-- /.col -->
+          </div>
+
+          <div class="row">
+          <div class="col-sm-6 spl-news-post">
+            <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[11]); ?>
+          </div><!-- /.col -->
+          <div class="col-sm-6 spl-news-post">
+            <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[12]); ?>
+          </div><!-- /.col -->
+          </div>
+
+          <?php endif; ?>
+
+
         </div><!-- /.col -->
         <div class="col-sm-4">
 
@@ -100,50 +165,6 @@
           <?php endif; ?>
         </div><!-- /.col -->
       
-
-        <?php if ( isset($meta->posts) ) :  ?>
-      
-        <div class="col-sm-4 spl-news-post">
-          <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[1]); ?>
-        </div><!-- /.col -->
-        <div class="col-sm-4 spl-news-post">
-          <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[2]); ?>
-        </div><!-- /.col -->
-        <div class="col-sm-4 spl-news-post">
-          <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[3]); ?>
-        </div><!-- /.col -->
-      
-        <div class="col-sm-4 spl-news-post">
-          <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[4]); ?>
-        </div><!-- /.col -->
-        <div class="col-sm-4 spl-news-post">
-          <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[5]); ?>
-        </div><!-- /.col -->
-        <div class="col-sm-4 spl-news-post">
-          <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[6]); ?>
-        </div><!-- /.col -->
-      
-        <div class="col-sm-4 spl-news-post">
-          <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[7]); ?>
-        </div><!-- /.col -->
-        <div class="col-sm-4 spl-news-post">
-          <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[8]); ?>
-        </div><!-- /.col -->
-        <div class="col-sm-4 spl-news-post">
-          <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[9]); ?>
-        </div><!-- /.col -->
-      
-        <div class="col-sm-4 spl-news-post">
-          <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[10]); ?>
-        </div><!-- /.col -->
-        <div class="col-sm-4 spl-news-post">
-          <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[11]); ?>
-        </div><!-- /.col -->
-        <div class="col-sm-4 spl-news-post">
-          <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[12]); ?>
-        </div><!-- /.col -->
-      
-        <?php endif; ?>
 
       </div><!-- /.row -->
 
