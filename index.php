@@ -126,7 +126,9 @@ class SPL_Mailgun_Newsletter {
         $html .= '<h4>';
         $html .= $link;
         $html .= '</h4>';
-        $html .= $q->post->post_date;
+
+        $html .= mysql2date( get_option('date_format'), $q->post->post_date );
+
         if ( !empty($posts) ) {
           if ( isset($params['link_posts']) ) {
             $html .= '<ul class="nav nav-pills">';
