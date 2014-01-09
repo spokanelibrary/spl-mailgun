@@ -139,7 +139,7 @@ class SPL_Mailgun_Newsletter {
           } else {
             foreach ( $posts as $post ) {
               $html .= '<p class="text-muted">';
-              $html .= '<strong>'.$post->title.'</strong> ';
+              $html .= ''.$post->title.'';
               $html .= '</p>';
             }
           }
