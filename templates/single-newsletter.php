@@ -79,9 +79,9 @@
             <!-- sidebar -->
             <?php if ( isset($meta->sidebar['headline']) ) :  ?>
             <div class="panel-heading">
-              <h3 class="">
+              <h4 class="text-center">
                 <?php echo $meta->sidebar['headline']; ?>
-              </h3>
+              </h4>
             </div><!-- /.panel-heading -->  
             <?php endif; ?>
             <?php if ( isset($meta->sidebar['content']) ) :  ?>
