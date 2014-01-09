@@ -507,22 +507,6 @@ class SPL_Mailgun_Newsletter {
   function getNewsletterCmbMetaBoxes( $meta_boxes ) {
     $prefix = '_spl_mailgun_newsletter_'; // Prefix for all fields
 
-    $meta_boxes[] = array('id' => $prefix . 'sidebar_headline_id'
-                        , 'title' => 'Sidebar Headline'
-                        , 'pages' => array('newsletter') // post type
-                        //, 'show_on' => array()
-                        , 'context' => 'normal'
-                        , 'priority' => 'high'
-                        , 'show_names' => false
-                        , 'fields' => array(
-                                            array('name' => 'Headline'
-                                                , 'desc' => 'optional'
-                                                , 'id' => $prefix . 'sidebar_headline'
-                                                , 'type' => 'text'
-                                            )
-                                      )
-                    );
-
     $meta_boxes[] = array('id' => $prefix . 'sidebar_callout_id'
                         , 'title' => 'Sidebar Callout'
                         , 'pages' => array('newsletter') // post type
@@ -539,6 +523,22 @@ class SPL_Mailgun_Newsletter {
                                           , array('name' => 'Attribution'
                                                 , 'desc' => 'optional callout attribution'
                                                 , 'id' => $prefix . 'sidebar_attribution'
+                                                , 'type' => 'text'
+                                            )
+                                      )
+                    );
+    
+    $meta_boxes[] = array('id' => $prefix . 'sidebar_headline_id'
+                        , 'title' => 'Sidebar Headline'
+                        , 'pages' => array('newsletter') // post type
+                        //, 'show_on' => array()
+                        , 'context' => 'normal'
+                        , 'priority' => 'high'
+                        , 'show_names' => false
+                        , 'fields' => array(
+                                            array('name' => 'Headline'
+                                                , 'desc' => 'optional'
+                                                , 'id' => $prefix . 'sidebar_headline'
                                                 , 'type' => 'text'
                                             )
                                       )
