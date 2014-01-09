@@ -50,9 +50,9 @@
 
       <div class="row">
         <div class="col-sm-8">
-          <h3 class="page-header text-success">
+          <h2 class="page-header text-success">
             <?php the_title(); ?>
-          </h3>
+          </h2>
           <?php the_content(); ?>
           <p class="lead text-center text-muted">
             &hellip;
