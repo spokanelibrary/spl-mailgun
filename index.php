@@ -734,6 +734,7 @@ EOT;
           $post->content .= wpautop(wp_trim_words(apply_filters('the_content', $attach->post_content), 60));
           //$post->content .= wpautop(wp_trim_words($attach->post_content, $trim));
         }
+        $post->excerpt = true;
       } else {
         $post->content .= wpautop($attach->post_content);
       }
