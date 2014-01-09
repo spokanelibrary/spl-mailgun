@@ -143,7 +143,7 @@ class SPL_Mailgun_Newsletter {
             }
             $html .= '</ul>';
           } else {
-            $html .= '<ul class="list-unstyled text-muted">';
+            $html .= '<ul class="list-unstyled text-success">';
             foreach ( $posts as $post ) {
               $html .= '<li>';
               $html .= ''.$post->title.'</strong> ';
