@@ -134,11 +134,11 @@ class SPL_Mailgun_Newsletter {
             }
             $html .= '</ul>';
           } else {
-            $html .= '<p class="text-muted">';
             foreach ( $posts as $post ) {
+              $html .= '<p class="text-muted">';
               $html .= '<strong>'.$post->title.'</strong> ';
+              $html .= '</p>';
             }
-            $html .= '</p>';
           }
         }
         break;
