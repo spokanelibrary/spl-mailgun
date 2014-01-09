@@ -69,7 +69,7 @@
           <?php if ( isset($meta->callout) && isset($meta->callout['content']) ) :  ?>
           <!-- sidebar callout -->
             <div class="alert alert-warning">
-              <div class="text-primary" style="font-style:italic;">
+              <div class="text-primary serif" style="font-style:italic;">
               <?php echo $meta->callout['content']; ?>
               </div>
               <?php if ( isset($meta->callout['attrib']) ) :  ?>
