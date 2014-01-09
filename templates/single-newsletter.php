@@ -53,7 +53,11 @@
           <h2 class="page-header text-success">
             <?php the_title(); ?>
           </h2>
+
+          <article class="article">
           <?php the_content(); ?>
+          </article>
+
           <p class="lead text-center text-muted">
             &hellip;
             <i class="glyphicon glyphicon-leaf" style="padding: 0 8px 0 12px;"></i>
