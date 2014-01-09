@@ -26,64 +26,75 @@
     <?php// get_template_part('templates/entry-meta'); ?>
   </div>
 -->
-  <div class="row">
-    <div class="col-sm-8">
-    	<div class="panel panel-default" style="border-left-width:5px;">
-    		<div class="panel-heading">
-    			<span class="pull-right">
-    				<i class="glyphicon glyphicon-envelope text-primary"></i>
-    				<a href="/subscribe">Subscribe</a>
-    			</span>
-    			<span class="text-muted">
-    				<i class="glyphicon glyphicon-send"></i>
-    				<strong><?php the_date(); ?></strong>
-    			</span>
-    		</div>
-    		<div class="panel-body">
-		      <h3 class="page-header text-success">
-    				<?php the_title(); ?>
-    			</h3>
-		      <?php the_content(); ?>
-      	</div>
-    		<p class="lead text-center text-muted">
-    			&hellip;
-	      	<i class="glyphicon glyphicon-leaf" style="padding: 0 8px 0 12px;"></i>
-	      	&hellip;
-	      </p>
-    	</div>
-    </div><!-- /.col -->
-    <div class="col-sm-4">
+  
+	<div class="panel panel-default" style="border-left-width:5px;">
+		<div class="panel-heading">
+			<span class="pull-right">
+				<i class="glyphicon glyphicon-envelope text-primary"></i>
+				<a href="/subscribe">Subscribe</a>
+			</span>
+			<span class="text-muted">
+				<i class="glyphicon glyphicon-send"></i>
+				<strong><?php the_date(); ?></strong>
+			</span>
+		</div><!-- /.panel-heading -->
+		<div class="panel-body">
 
-      <?php if ( isset($meta->callout) && isset($meta->callout['content']) ) :  ?>
-      <!-- sidebar callout -->
-      <div class="panel panel-warning panel-callout-warning">
-        <div class="panel-body text-primary">
-          <div style="font-style:italic;">
-          <?php echo $meta->callout['content']; ?>
+      <h3 class="page-header text-success">
+				<?php the_title(); ?>
+			</h3>
+      
+      <div class="row">
+        <div class="col-sm-8">
+          <?php the_content(); ?>
+        </div><!-- /.col -->
+        <div class="col-sm-4">
+          <?php if ( isset($meta->callout) && isset($meta->callout['content']) ) :  ?>
+          <!-- sidebar callout -->
+          <div class="panel panel-warning panel-callout-warning">
+            <div class="panel-body text-primary">
+              <div style="font-style:italic;">
+              <?php echo $meta->callout['content']; ?>
+              </div>
+              <?php if ( isset($meta->callout['attrib']) ) :  ?>
+              <span class="help-block">&mdash;<?php echo $meta->callout['attrib']; ?></span>
+              <?php endif; ?>
+            </div>
           </div>
-          <?php if ( isset($meta->callout['attrib']) ) :  ?>
-          <span class="help-block">&mdash;<?php echo $meta->callout['attrib']; ?></span>
           <?php endif; ?>
-        </div>
-      </div>
-      <?php endif; ?>
-      <?php if ( isset($meta->sidebar) ) :  ?>
-        <!-- sidebar -->
-        <?php if ( isset($meta->sidebar['headline']) ) :  ?>
-        <h3 class="text-primary">
-          <?php echo $meta->sidebar['headline']; ?>
-        </h3>
-        <?php endif; ?>
-        <?php if ( isset($meta->sidebar['content']) ) :  ?>
-  			<aside class="aside">
-  		  	<?php echo $meta->sidebar['content']; ?>
-  		  	<hr />
-  		  </aside>
-        <?php endif; ?>
-      <?php endif; ?>
+          <?php if ( isset($meta->sidebar) ) :  ?>
+            <!-- sidebar -->
+            <?php if ( isset($meta->sidebar['headline']) ) :  ?>
+            <h3 class="text-primary">
+              <?php echo $meta->sidebar['headline']; ?>
+            </h3>
+            <?php endif; ?>
+            <?php if ( isset($meta->sidebar['content']) ) :  ?>
+            <aside class="aside">
+              <?php echo $meta->sidebar['content']; ?>
+              <hr />
+            </aside>
+            <?php endif; ?>
+          <?php endif; ?>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+      
+  	</div><!-- /.panel-body -->
 
-    </div><!-- /.col -->
-  </div><!-- /.row -->
+		<p class="lead text-center text-muted">
+			&hellip;
+    	<i class="glyphicon glyphicon-leaf" style="padding: 0 8px 0 12px;"></i>
+    	&hellip;
+    </p>
+
+	</div><!-- /.panel -->
+
+
+
+
+
+  
+
 
   <?php if ( isset($meta->posts) ) :  ?>
   <div class="row">
