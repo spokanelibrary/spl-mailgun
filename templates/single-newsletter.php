@@ -96,9 +96,6 @@
         </div><!-- /.col -->
       </div><!-- /.row -->
 
-  	</div><!-- /.panel-body -->
-
-    <div class="panel-footer">
       <?php if ( isset($meta->posts) ) :  ?>
       <div class="row">
         <div class="col-sm-4 spl-news-post">
@@ -145,7 +142,10 @@
         </div><!-- /.col -->
       </div><!-- /.row -->
       <?php endif; ?>
+      
+  	</div><!-- /.panel-body -->
 
+    <div class="panel-footer">
     </div><!-- /.panel-footer -->
 
 	</div><!-- /.panel -->
