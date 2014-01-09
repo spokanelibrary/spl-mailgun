@@ -49,7 +49,7 @@
 
           <?php if ( isset($meta->callout) && isset($meta->callout['content']) ) :  ?>
           <!-- sidebar callout -->
-          <div class="pull-right">
+          <div class="pull-right" style="width:240px;">
             <div class="panel panel-warning panel-callout-warning">
               <div class="panel-body text-primary">
                 <div style="font-style:italic;">
