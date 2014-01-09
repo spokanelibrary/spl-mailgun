@@ -146,11 +146,11 @@
   	</div><!-- /.panel-body -->
 
     <div class="panel-footer">
-      <p class="text-center">
+      <span class="text-center">
         <a href="/subscribe">Subscribe</a>
         |
         <a href="/unsubscribe">Unsubscribe</a>
-      </p>
+      </span>
     </div><!-- /.panel-footer -->
 
 	</div><!-- /.panel -->
