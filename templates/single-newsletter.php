@@ -50,6 +50,7 @@
 
       <div class="row">
         <div class="col-sm-8">
+          <div class="pull-left">
           <h2 class="page-header text-success serif">
             <?php the_title(); ?>
           </h2>
@@ -63,9 +64,10 @@
             <i class="glyphicon glyphicon-leaf" style="padding: 0 8px 0 12px;"></i>
             &hellip;
           </p>
+          </div>
         </div><!-- /.col -->
         <div class="col-sm-4">
-
+          <div class="pull-left">
           <?php if ( isset($meta->callout) && isset($meta->callout['content']) ) :  ?>
           <!-- sidebar callout -->
             <div class="alert alert-warning">
@@ -97,6 +99,7 @@
             <?php endif; ?>
             </div><!-- /.panel -->
           <?php endif; ?>
+          </div>
         </div><!-- /.col -->
       
 
