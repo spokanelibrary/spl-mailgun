@@ -229,14 +229,16 @@ class SPL_Mailgun_Newsletter {
         $html .= $select->thumbnail;
       }
       $html .= $select->content;
-      $html .= '<p>
-                <a href="'.$select->link.'"
-                    class="btn btn-success">Read More &rarr;</a>
-                </p>';
-
+      
+      if ( $select->excerpt ) {
+        $html .= '<p>
+                  <a href="'.$select->link.'"
+                      class="btn btn-success">Read More &rarr;</a>
+                  </p>';
+      }
       $html .= '<hr>';
 
-      $html .= print_r($select, true);
+      
     }
 
     return $html;
@@ -728,13 +730,13 @@ EOT;
       $post->thumbnail = get_the_post_thumbnail($attach->ID, 'medium', array('class'=>'img-responsive'));
 
       if ( !empty($excerpt) ) {
+        $post->excerpt = true;
         if (!empty($attach->post_excerpt)) { 
           $post->content .= wpautop($attach->post_excerpt);
         } else {
           $post->content .= wpautop(wp_trim_words(apply_filters('the_content', $attach->post_content), 60));
           //$post->content .= wpautop(wp_trim_words($attach->post_content, $trim));
         }
-        $post->excerpt = true;
       } else {
         $post->content .= wpautop($attach->post_content);
       }
