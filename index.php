@@ -235,6 +235,8 @@ class SPL_Mailgun_Newsletter {
                 </p>';
 
       $html .= '<hr>';
+
+      $html .= print_r($select, true);
     }
 
     return $html;
