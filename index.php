@@ -222,7 +222,7 @@ class SPL_Mailgun_Newsletter {
     
     $html = '';
     if ( !empty($select) ) {
-      $html .= '<p class="lead text-primary" style="padding-bottom:0; margin-bottom:none;">';
+      $html .= '<p class="lead text-primary">';
       if ( $select->excerpt ) {
         $html .= '<a href="'.$select->link.'">';
       }
