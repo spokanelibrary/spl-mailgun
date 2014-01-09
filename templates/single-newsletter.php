@@ -47,11 +47,9 @@
       <div class="row">
         <div class="col-sm-8">
 
-          <?php the_content(); ?>
-          
           <?php if ( isset($meta->callout) && isset($meta->callout['content']) ) :  ?>
           <!-- sidebar callout -->
-          <div class="pull-right" style="width:240px;">
+          <div class="pull-right" style="width:240px; margin-top:20px;">
             <div class="panel panel-warning panel-callout-warning">
               <div class="panel-body text-primary">
                 <div style="font-style:italic;">
@@ -65,7 +63,7 @@
           </div>
           <?php endif; ?>
 
-          
+          <?php the_content(); ?>
           <p class="lead text-center text-muted">
             &hellip;
             <i class="glyphicon glyphicon-leaf" style="padding: 0 8px 0 12px;"></i>
