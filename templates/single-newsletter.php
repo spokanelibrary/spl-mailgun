@@ -78,15 +78,19 @@
             <div class="panel panel-primary">
             <!-- sidebar -->
             <?php if ( isset($meta->sidebar['headline']) ) :  ?>
-            <h3 class="text-primary">
-              <?php echo $meta->sidebar['headline']; ?>
-            </h3>
+            <div class="panel-heading">
+              <h3 class="">
+                <?php echo $meta->sidebar['headline']; ?>
+              </h3>
+            </div><!-- /.panel-heading -->  
             <?php endif; ?>
             <?php if ( isset($meta->sidebar['content']) ) :  ?>
+            <div class="panel-body">
             <aside class="aside">
               <?php echo $meta->sidebar['content']; ?>
               <hr />
             </aside>
+            </div><!-- /.panel-body -->
             <?php endif; ?>
             </div><!-- /.panel -->
           <?php endif; ?>
