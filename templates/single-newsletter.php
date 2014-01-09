@@ -75,6 +75,7 @@
           <?php endif; ?>
 
           <?php if ( isset($meta->sidebar) ) :  ?>
+            <div class="panel panel-primary">
             <!-- sidebar -->
             <?php if ( isset($meta->sidebar['headline']) ) :  ?>
             <h3 class="text-primary">
@@ -87,6 +88,7 @@
               <hr />
             </aside>
             <?php endif; ?>
+            </div><!-- /.panel -->
           <?php endif; ?>
         </div><!-- /.col -->
       </div><!-- /.row -->
