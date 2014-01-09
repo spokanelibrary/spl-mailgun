@@ -100,7 +100,7 @@
         </div><!-- /.col -->
       
 
-      <?php if ( isset($meta->posts) ) :  ?>
+        <?php if ( isset($meta->posts) ) :  ?>
       
         <div class="col-sm-4 spl-news-post">
           <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[1]); ?>
@@ -142,7 +142,7 @@
           <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[12]); ?>
         </div><!-- /.col -->
       
-      <?php endif; ?>
+        <?php endif; ?>
 
       </div><!-- /.row -->
 
