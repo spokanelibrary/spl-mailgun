@@ -46,22 +46,32 @@
       
       <div class="row">
         <div class="col-sm-8">
-          <?php the_content(); ?>
-        </div><!-- /.col -->
-        <div class="col-sm-4">
+
           <?php if ( isset($meta->callout) && isset($meta->callout['content']) ) :  ?>
           <!-- sidebar callout -->
-          <div class="panel panel-warning panel-callout-warning">
-            <div class="panel-body text-primary">
-              <div style="font-style:italic;">
-              <?php echo $meta->callout['content']; ?>
+          <div class="pull-right">
+            <div class="panel panel-warning panel-callout-warning">
+              <div class="panel-body text-primary">
+                <div style="font-style:italic;">
+                <?php echo $meta->callout['content']; ?>
+                </div>
+                <?php if ( isset($meta->callout['attrib']) ) :  ?>
+                <span class="help-block">&mdash;<?php echo $meta->callout['attrib']; ?></span>
+                <?php endif; ?>
               </div>
-              <?php if ( isset($meta->callout['attrib']) ) :  ?>
-              <span class="help-block">&mdash;<?php echo $meta->callout['attrib']; ?></span>
-              <?php endif; ?>
             </div>
           </div>
           <?php endif; ?>
+
+          <?php the_content(); ?>
+          <p class="lead text-center text-muted">
+            &hellip;
+            <i class="glyphicon glyphicon-leaf" style="padding: 0 8px 0 12px;"></i>
+            &hellip;
+          </p>
+        </div><!-- /.col -->
+        <div class="col-sm-4">
+          
           <?php if ( isset($meta->sidebar) ) :  ?>
             <!-- sidebar -->
             <?php if ( isset($meta->sidebar['headline']) ) :  ?>
@@ -80,12 +90,6 @@
       </div><!-- /.row -->
       
   	</div><!-- /.panel-body -->
-
-		<p class="lead text-center text-muted">
-			&hellip;
-    	<i class="glyphicon glyphicon-leaf" style="padding: 0 8px 0 12px;"></i>
-    	&hellip;
-    </p>
 
 	</div><!-- /.panel -->
 
