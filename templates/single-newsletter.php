@@ -1,5 +1,7 @@
 <?php //get_template_part('templates/content', 'single'); ?>
 
+<?php get_template_part('templates/header', 'single'); ?>
+
 <div class="spl-news" style="margin-top: 0px;">
 <?php while (have_posts()) : the_post(); ?>
 <?php
@@ -142,7 +144,7 @@
         </div><!-- /.col -->
       </div><!-- /.row -->
       <?php endif; ?>
-      
+
   	</div><!-- /.panel-body -->
 
     <div class="panel-footer">
