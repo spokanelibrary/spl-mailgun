@@ -1,6 +1,6 @@
 <?php //get_template_part('templates/content', 'single'); ?>
 
-<div class="spl-news" style="margin-top: 10px;">
+<div class="spl-news" style="margin-top: 0px;">
 <?php while (have_posts()) : the_post(); ?>
 <?php
   /*
@@ -16,6 +16,13 @@
   echo '</pre>';
   */
 ?>
+
+<div class="page-header">
+  <h1>
+    Library News
+  </h1>
+  <?php// get_template_part('templates/entry-meta'); ?>
+</div>
 
 <!--
 	<div class="page-header">
