@@ -1,6 +1,6 @@
 <?php //get_template_part('templates/content', 'single'); ?>
 
-<?php get_template_part('templates/header', 'single'); ?>
+<?php get_template_part('templates/page', 'header'); ?>
 
 <div class="spl-news" style="margin-top: 0px;">
 <?php while (have_posts()) : the_post(); ?>
