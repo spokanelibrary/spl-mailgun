@@ -58,16 +58,15 @@
           <?php if ( isset($meta->callout) && isset($meta->callout['content']) ) :  ?>
           <!-- sidebar callout -->
           <div class="pull-right" style="width:240px; margin-top:40px;">
-            <div class="panel panel-warning">
-              <div class="panel-body text-primary">
-                <div style="font-style:italic;">
+            <div class="alert alert-warning">
+              <div class="text-primary" style="font-style:italic;">
                 <?php echo $meta->callout['content']; ?>
                 </div>
                 <?php if ( isset($meta->callout['attrib']) ) :  ?>
                 <span class="help-block">&mdash;<?php echo $meta->callout['attrib']; ?></span>
                 <?php endif; ?>
               </div>
-            </div>
+            
           </div>
           <?php endif; ?>
 
