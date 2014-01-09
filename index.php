@@ -123,7 +123,9 @@ class SPL_Mailgun_Newsletter {
 
     switch ( $params['format'] ) {
       case 'toc':
+        $html .= '<span class="text-muted">';
         $html .= mysql2date( 'F, Y', $q->post->post_date );
+        $html .= '</span>';
         
         $html .= '<h4>';
         $html .= $link;
