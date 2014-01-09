@@ -64,7 +64,40 @@
             &hellip;
           </p>
         </div><!-- /.col -->
-        
+        <div class="col-sm-4">
+
+          <?php if ( isset($meta->callout) && isset($meta->callout['content']) ) :  ?>
+          <!-- sidebar callout -->
+            <div class="alert alert-warning">
+              <div class="text-primary" style="font-style:italic;">
+              <?php echo $meta->callout['content']; ?>
+              </div>
+              <?php if ( isset($meta->callout['attrib']) ) :  ?>
+              <span class="help-block">&mdash;<?php echo $meta->callout['attrib']; ?></span>
+              <?php endif; ?>
+            </div>
+          <?php endif; ?>
+
+          <?php if ( isset($meta->sidebar) ) :  ?>
+            <div class="panel panel-primary">
+            <!-- sidebar -->
+            <?php if ( isset($meta->sidebar['headline']) ) :  ?>
+            <div class="panel-heading">
+              <h4 class="text-center">
+                <?php echo $meta->sidebar['headline']; ?>
+              </h4>
+            </div><!-- /.panel-heading -->  
+            <?php endif; ?>
+            <?php if ( isset($meta->sidebar['content']) ) :  ?>
+            <div class="panel-body">
+              <aside class="aside">
+                <?php echo $meta->sidebar['content']; ?>
+              </aside>
+            </div><!-- /.panel-body -->
+            <?php endif; ?>
+            </div><!-- /.panel -->
+          <?php endif; ?>
+        </div><!-- /.col -->
       
 
         <?php if ( isset($meta->posts) ) :  ?>
