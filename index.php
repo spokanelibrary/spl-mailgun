@@ -768,7 +768,8 @@ EOT;
           //$post->content .= wpautop(wp_trim_words($attach->post_content, $trim));
         }
       } else {
-        $post->content .= wpautop($attach->post_content);
+        //$post->content .= wpautop($attach->post_content);
+        $post->content .= apply_filters('the_content', $attach->post_content);
       }
 
     }
