@@ -599,7 +599,9 @@ class SPL_Mailgun_Newsletter {
                         //'name' => 'Select Posts',
                         'desc' => 'Posts are added to the newsletter in the order shown below.
                                   <br>
-                                  Posts 1-6 are displayed.',
+                                  Posts 1-6 are displayed the full width of the article column.
+                                  <br>
+                                  Posts 6-12 are displayed in 2 rows of 3 columns, below the article and sidebar.',
                         'type' => 'title',
                         'id' => $prefix . 'post_select_title'
                       );
