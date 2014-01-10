@@ -60,7 +60,7 @@
           <?php the_content(); ?>
           </article>
 
-          <?php echo get_the_author(); ?>
+          <?php get_template_part('templates/entry-meta'); ?>
 
           <p class="lead text-center text-muted">
             &hellip;
