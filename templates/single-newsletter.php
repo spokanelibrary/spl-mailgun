@@ -53,6 +53,7 @@
           <h2 class="page-header text-success serif">
             <?php the_title(); ?>
           </h2>
+          <hr>
 
           <article class="article">
           <?php the_content(); ?>
