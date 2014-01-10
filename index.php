@@ -757,7 +757,7 @@ EOT;
 
       // todo: featured img
       //$post->thumbnail = $attach->ID;
-      $post->thumbnail = get_the_post_thumbnail($attach->ID, 'medium', array('class'=>'img-responsive'));
+      $post->thumbnail = get_the_post_thumbnail($attach->ID, 'medium', array('class'=>'img-responsive pull-left'));
 
       if ( !empty($excerpt) ) {
         $post->excerpt = true;
