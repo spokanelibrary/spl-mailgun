@@ -50,7 +50,7 @@
 
       <div class="row">
         <div class="col-sm-8">
-          <h2 class="page-header text-success serif" style="margin-bottom:0;">
+          <h2 class="page-header text-success serif" style="padding-bottom:0;">
             <?php the_title(); ?>
           </h2>
           <hr>
