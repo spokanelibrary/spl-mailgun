@@ -233,7 +233,8 @@ class SPL_Mailgun_Newsletter {
     
     $html = '';
     if ( !empty($select) ) {
-      $html .= '<p class="lead text-primary">';
+      //$html .= '<p class="lead text-primary">';
+      $html .= '<h2>';
       if ( $select->excerpt ) {
         $html .= '<a href="'.$select->link.'">';
       }
@@ -241,7 +242,8 @@ class SPL_Mailgun_Newsletter {
       if ( $select->excerpt ) {
         $html .= '</a>';
       }
-      $html .= '</p>';
+      $html .= '</h2>';
+      //$html .= '</p>';
       if ( isset($select->thumbnail) ) {
         $html .= $select->thumbnail;
       }
