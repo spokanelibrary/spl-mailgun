@@ -50,9 +50,11 @@
 
       <div class="row">
         <div class="col-sm-8">
-          <h2 class="page-header text-success serif" style="border-bottom: 1px solid #ccc;">
-            <?php the_title(); ?>
-          </h2>
+          <div style="border-bottom: 1px solid #ccc;">
+            <h2 class="page-header text-success serif">
+              <?php the_title(); ?>
+            </h2>
+          </div>
 
           <article class="article">
           <?php the_content(); ?>
