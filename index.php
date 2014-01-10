@@ -244,7 +244,8 @@ class SPL_Mailgun_Newsletter {
       }
       $html .= '</h3>';
       //$html .= '</p>';
-      if ( isset($select->thumbnail) ) {
+      
+      if ( $select->excerpt && isset($select->thumbnail) ) {
         $html .= $select->thumbnail;
       }
       // clearfix since we might have a floated featured image
