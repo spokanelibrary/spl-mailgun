@@ -768,7 +768,7 @@ EOT;
         if (!empty($attach->post_excerpt)) { 
           $post->content .= wpautop($attach->post_excerpt);
         } else {
-          $post->content .=  'test'. wpautop(wp_trim_words(apply_filters('the_content', $attach->post_content), 60));
+          $post->content .=  nl2br(wp_trim_words(apply_filters('the_content', $attach->post_content), 60));
           //$post->content .= wpautop(wp_trim_words($attach->post_content, $trim));
         }
       } else {
