@@ -248,7 +248,7 @@ class SPL_Mailgun_Newsletter {
         $html .= $select->thumbnail;
       }
       // clearfix since we might have a floated featured image
-      $html .= '<div class="clearfix">';
+      $html .= '<div class="clearfix" style="margin-bottom:4px">';
       $html .= $select->content;
       $html .= '</div>';
       
