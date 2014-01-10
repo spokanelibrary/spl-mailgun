@@ -253,7 +253,8 @@ class SPL_Mailgun_Newsletter {
         $html .= '<p>
                   <a href="'.$select->link.'"
                       class="btn btn-block btn-success">Continue Reading &rarr;</a>
-                  </p>';
+                  </p>
+                  <hr>';
       } else {
         $html .= '<p class="lead text-center text-muted">
                     &hellip;
@@ -261,7 +262,7 @@ class SPL_Mailgun_Newsletter {
                     &hellip;
                   </p>';
       }
-      //$html .= '<hr>';
+      
 
       
     }
