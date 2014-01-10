@@ -234,7 +234,7 @@ class SPL_Mailgun_Newsletter {
     $html = '';
     if ( !empty($select) ) {
       //$html .= '<p class="lead text-primary">';
-      $html .= '<h2>';
+      $html .= '<h2 class="text-success serif">';
       if ( $select->excerpt ) {
         $html .= '<a href="'.$select->link.'">';
       }
