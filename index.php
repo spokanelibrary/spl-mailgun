@@ -250,7 +250,7 @@ class SPL_Mailgun_Newsletter {
       if ( $select->excerpt ) {
         $html .= '<p>
                   <a href="'.$select->link.'"
-                      class="btn btn-success">Read More &rarr;</a>
+                      class="btn btn-block btn-success">Read More &rarr;</a>
                   </p>';
       }
       //$html .= '<hr>';
