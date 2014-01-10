@@ -67,14 +67,18 @@
 
           <?php if ( isset($meta->posts) ) :  ?>
           <div class="row">
-
             <div class="col-sm-6 spl-news-post">
               <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[1]); ?>
             </div><!-- /.col -->
+          </div><!-- /.row -->
+          <div class="row">
             <div class="col-sm-6 spl-news-post">
               <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[2]); ?>
             </div><!-- /.col -->
-            
+          </div><!-- /.row -->
+          
+          <div class="row">
+
             <div class="col-sm-6 spl-news-post">
               <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[3]); ?>
             </div><!-- /.col -->
