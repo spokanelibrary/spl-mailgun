@@ -43,7 +43,7 @@
 			</span>
 			<span class="text-muted">
 				<i class="glyphicon glyphicon-send"></i>
-				<strong><?php the_date(); ?></strong>
+				<strong><?php mysql2date('F, Y', the_date()); ?></strong>
 			</span>
 		</div><!-- /.panel-heading -->
 		<div class="panel-body">
