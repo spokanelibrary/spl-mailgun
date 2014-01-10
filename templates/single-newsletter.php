@@ -50,10 +50,9 @@
 
       <div class="row">
         <div class="col-sm-8">
-          <h2 class="page-header text-success serif" style="padding-bottom:0;">
+          <h2 class="page-header text-success serif" style="border-bottom: 1px solid #ccc;">
             <?php the_title(); ?>
           </h2>
-          <hr>
 
           <article class="article">
           <?php the_content(); ?>
