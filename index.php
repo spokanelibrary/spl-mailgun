@@ -597,11 +597,9 @@ class SPL_Mailgun_Newsletter {
     $fields = array();
     $fields[] = array(
                         //'name' => 'Select Posts',
-                        'desc' => 'Posts are added to the newsletter in the order shown below.
+                        'desc' => 'Posts 1-6 are displayed 1 across in the primary column, below the article.
                                   <br>
-                                  Posts 1-6 are displayed the full width of the article column.
-                                  <br>
-                                  Posts 6-12 are displayed in 2 rows of 3 columns, below the article and sidebar.',
+                                  Posts 6-12 are displayed in 2 rows of 3 columns, across the entire page.',
                         'type' => 'title',
                         'id' => $prefix . 'post_select_title'
                       );
