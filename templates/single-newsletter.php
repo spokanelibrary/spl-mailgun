@@ -76,6 +76,15 @@
             <div class="col-sm-12 post">
               <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[3]); ?>
             </div><!-- /.col -->
+            <div class="col-sm-12 post">
+              <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[4]); ?>
+            </div><!-- /.col -->
+            <div class="col-sm-12 post">
+              <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[5]); ?>
+            </div><!-- /.col -->
+            <div class="col-sm-12 post">
+              <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[6]); ?>
+            </div><!-- /.col -->
           </div><!-- /.row -->
           <?php endif; ?>
 
@@ -122,16 +131,6 @@
       <?php if ( isset($meta->posts) ) :  ?>
       <div class="row">
 
-        <div class="col-sm-4 post">
-          <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[4]); ?>
-        </div><!-- /.col -->
-        <div class="col-sm-4 post">
-          <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[5]); ?>
-        </div><!-- /.col -->
-        <div class="col-sm-4 post">
-          <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[6]); ?>
-        </div><!-- /.col -->
-        
         <div class="col-sm-4 post">
           <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[7]); ?>
         </div><!-- /.col -->
