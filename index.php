@@ -597,7 +597,9 @@ class SPL_Mailgun_Newsletter {
     $fields = array();
     $fields[] = array(
                         //'name' => 'Select Posts',
-                        'desc' => 'Posts are added to the newsletter in the order shown below.',
+                        'desc' => 'Posts are added to the newsletter in the order shown below.
+                                  <br>
+                                  Posts 1-6 are displayed.',
                         'type' => 'title',
                         'id' => $prefix . 'post_select_title'
                       );
