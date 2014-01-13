@@ -679,10 +679,9 @@ class SPL_Mailgun_Newsletter {
 
   function filterNewsletterImages( $html, $sidebar=null ){
     //return $html;
-    //$classes = 'img-responsive img-rounded'; // separated by spaces, e.g. 'img image-link'
-    $classes = null;
+    $classes = 'img-responsive img-rounded'; // separated by spaces, e.g. 'img image-link'
     if ( !empty($sidebar) ) {
-      $classes = $classes . ' center';
+      //$classes = $classes . ' center';
     }
 
     // check if there are already classes assigned to the anchor
