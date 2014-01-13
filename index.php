@@ -678,6 +678,7 @@ class SPL_Mailgun_Newsletter {
   // MAILGUN INTEGRATION
 
   function filterNewsletterImages( $html, $sidebar=null ){
+    return $html;
     $classes = 'img-responsive img-rounded'; // separated by spaces, e.g. 'img image-link'
     if ( !empty($sidebar) ) {
       $classes = $classes . ' center';
@@ -837,8 +838,8 @@ EOT;
                           , true 
                           );
 
-    //add_filter( 'the_content', array($this,'filterNewsletterSidebarImages'),10 );
-    //add_filter( 'post_thumbnail_html', array($this, 'filterNewsletterSidebarImages'), 10 );
+    add_filter( 'the_content', array($this,'filterNewsletterSidebarImages'),10 );
+    add_filter( 'post_thumbnail_html', array($this, 'filterNewsletterSidebarImages'), 10 );
     
     $sidebar = get_post_meta($id
                           , '_spl_mailgun_newsletter_sidebar_content'
