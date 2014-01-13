@@ -165,6 +165,61 @@
                         </tr>
                         <?php endif; ?>
 
+                        <?php if ( !is_null($posts[2]) ) : ?>
+                        <tr>
+                          <td>
+                          <?php 
+                          echo SPL_Mailgun_Newsletter::formatPostSelect($posts[2], 'eight columns'); 
+                          ?>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                        <?php endif; ?>
+
+                        <?php if ( !is_null($posts[3]) ) : ?>
+                        <tr>
+                          <td>
+                          <?php 
+                          echo SPL_Mailgun_Newsletter::formatPostSelect($posts[3], 'eight columns'); 
+                          ?>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                        <?php endif; ?>
+
+                        <?php if ( !is_null($posts[4]) ) : ?>
+                        <tr>
+                          <td>
+                          <?php 
+                          echo SPL_Mailgun_Newsletter::formatPostSelect($posts[4], 'eight columns'); 
+                          ?>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                        <?php endif; ?>
+
+                        <?php if ( !is_null($posts[5]) ) : ?>
+                        <tr>
+                          <td>
+                          <?php 
+                          echo SPL_Mailgun_Newsletter::formatPostSelect($posts[5], 'eight columns'); 
+                          ?>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                        <?php endif; ?>
+
+                        <?php if ( !is_null($posts[6]) ) : ?>
+                        <tr>
+                          <td>
+                          <?php 
+                          echo SPL_Mailgun_Newsletter::formatPostSelect($posts[6], 'eight columns'); 
+                          ?>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                        <?php endif; ?>
+
 
 
                       </table>
@@ -217,57 +272,7 @@
                 </table>
 
                 <!-- selected posts -->
-                <?php if ( !is_null($posts[1]) ) : ?>
-                <table class="row callout post">
-                  <tr>
-                    <td class="wrapper">
-                    <?php 
-                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[1], 'six columns'); 
-                    ?>
-                    </td>
-                    <td class="wrapper last">
-                    <?php 
-                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[2], 'six columns'); 
-                    ?>
-                    </td>
-                  </tr>
-                </table>
-                <?php endif; ?>
-
-                <?php if ( !is_null($posts[3]) ) : ?>
-                <table class="row callout post">
-                  <tr>
-                    <td class="wrapper">
-                    <?php 
-                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[3], 'six columns'); 
-                    ?>
-                    </td>
-                    <td class="wrapper last">
-                    <?php 
-                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[4], 'six columns'); 
-                    ?>
-                    </td>
-                  </tr>
-                </table>
-                <?php endif; ?>
-
-                <?php if ( !is_null($posts[5]) ) : ?>
-                <table class="row callout post">
-                  <tr>
-                    <td class="wrapper">
-                    <?php 
-                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[5], 'six columns'); 
-                    ?>
-                    </td>
-                    <td class="wrapper last">
-                    <?php 
-                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[6], 'six columns'); 
-                    ?>
-                    </td>
-                  </tr>
-                </table>
-                <?php endif; ?>
-
+                
                 <?php if ( !is_null($posts[7]) ) : ?>
                 <table class="row callout post">
                   <tr>
