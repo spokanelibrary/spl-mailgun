@@ -260,7 +260,7 @@
                           <td class="expander"></td>
                         </tr>
                         <tr>
-                          <td class="sidebar ">
+                          <td class="sidebar text-pad">
                             <?php echo $sidebar; ?>
                           </td>
                           <td class="expander"></td>
