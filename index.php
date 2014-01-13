@@ -677,11 +677,11 @@ class SPL_Mailgun_Newsletter {
 
   // MAILGUN INTEGRATION
 
-  function filterNewsletterImages( $html, $sidebar=null ){
+  function filterNewsletterImages( $html, $sidebar=false ){
     //return $html;
     $classes = 'img-responsive img-rounded'; // separated by spaces, e.g. 'img image-link'
-    if ( !empty($sidebar) ) {
-      //$classes = $classes . ' center';
+    if ( true == $sidebar) ) {
+      $classes = $classes . ' center';
     }
 
     // check if there are already classes assigned to the anchor
