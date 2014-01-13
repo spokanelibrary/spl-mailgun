@@ -129,8 +129,8 @@
                       <table class="twelve columns">
                         <tr>
                           <td>
-                            <h1 class="title serif">
-                              <a href="<?php echo $link; ?>"><?php echo $title; ?></a>
+                            <h1 class="title">
+                              <a href="<?php echo $link; ?>"><em class="serif"><?php echo $title; ?></em></a>
                             </h1>
                           </td>
                           <td class="expander"></td>
