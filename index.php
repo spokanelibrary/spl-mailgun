@@ -744,27 +744,28 @@ class SPL_Mailgun_Newsletter {
           <td class="expander"></td>
         </tr>
 EOT;
-
-      $html =  <<<EOT
-        <tr>
-          <td>
-            <table class="button">
-              <tr>
-                <td>
-                  <a href="$post->link">More »</a>
-                </td>
-              </tr>
-            </table>
-          </td>
-          <td class="expander"></td>
-        </tr>
+      if ( $post->excerpt ) {
+        $html =  <<<EOT
+          <tr>
+            <td>
+              <table class="button">
+                <tr>
+                  <td>
+                    <a href="$post->link">More »</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td class="expander"></td>
+          </tr>
 
 EOT;
+      }
     }
 
     $html .= '</table>';
 
-    $html .= print_r($post, true);
+    //$html .= print_r($post, true);
 
     return $html;
   }
