@@ -744,7 +744,7 @@ class SPL_Mailgun_Newsletter {
           <td class="expander"></td>
         </tr>
 EOT;
-      if ( true == $post->excerpt ) {
+      if ( true == $post->excerptonly ) {
         $html .=  <<<EOT
           <tr>
             <td>
@@ -765,7 +765,7 @@ EOT;
 
     $html .= '</table>';
 
-    //$html .= print_r($post, true);
+    $html .= print_r($post, true);
 
     return $html;
   }
