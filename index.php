@@ -838,6 +838,12 @@ EOT;
                           , true 
                           );
 
+    // attached posts
+    $posts = array();
+    for ( $i=1; $i<= 12; $i++ ) {
+      $posts[$i] = $this->getPostSelect($id, $i);
+    }
+
     add_filter( 'the_content', array($this,'filterNewsletterSidebarImages'),10 );
     add_filter( 'post_thumbnail_html', array($this, 'filterNewsletterSidebarImages'), 10 );
     
@@ -849,11 +855,7 @@ EOT;
                           ,array('<div', '</div>', '<div', '</div>')
                           ,apply_filters('the_content', $sidebar));
 
-    // attached posts
-    $posts = array();
-    for ( $i=1; $i<= 12; $i++ ) {
-      $posts[$i] = $this->getPostSelect($id, $i);
-    }
+    
     
 
     //return print_r($_POST, true);
