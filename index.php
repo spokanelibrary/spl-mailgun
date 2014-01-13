@@ -706,7 +706,7 @@ class SPL_Mailgun_Newsletter {
     return $this->filterNewsletterImages($html, true);
   } 
 
-  static function formatPostSelect($post) {
+  static function formatPostSelect($post, $class="twelve columns") {
     $html = '';
     if ( !is_null($post) ) {
       
@@ -716,7 +716,7 @@ class SPL_Mailgun_Newsletter {
       
 
       $html =  <<<EOT
-      <table class="six columns">
+      <table class="$class">
         <tr>
           <td>
             <h4 class="subtitle"><a href="$post->link">$post->title</a></h4>
