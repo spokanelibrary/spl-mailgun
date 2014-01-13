@@ -130,7 +130,7 @@
                         <tr>
                           <td>
                             <h1 class="title">
-                              <a href="<?php echo $link; ?>"><em class="serif"><?php echo $title; ?></em></a>
+                              <a href="<?php echo $link; ?>"><span class="serif"><?php echo $title; ?></span></a>
                             </h1>
                           </td>
                           <td class="expander"></td>
@@ -236,7 +236,7 @@
                         <tr>
                           <td class="warning panel">
                             <p class="highlight">
-                            <em class="serif"><?php echo $callout; ?></em>
+                            <em class=""><?php echo $callout; ?></em>
                             </p>
                             <?php if ( !empty($attribute) ) : ?>
                             <span class="muted small">
