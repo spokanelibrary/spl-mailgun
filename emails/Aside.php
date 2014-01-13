@@ -255,7 +255,7 @@
                         <?php endif; ?>
                         <tr>
                           <td class="">
-                            <h2 class="subtitle"><?php echo $subtitle; ?></h2>
+                            <h2 class="sidebar subtitle"><?php echo $subtitle; ?></h2>
                           </td>
                           <td class="expander"></td>
                         </tr>
