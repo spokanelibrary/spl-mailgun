@@ -227,7 +227,7 @@
                     <td class="wrapper last">
                       <table class="four columns">
                         <tr>
-                          <td class="sidebar condensed">
+                          <td class="condensed">
                             <p class="condensed">&nbsp;</p>
                           </td>
                           <td class="expander"></td>
