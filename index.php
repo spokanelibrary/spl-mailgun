@@ -678,8 +678,9 @@ class SPL_Mailgun_Newsletter {
   // MAILGUN INTEGRATION
 
   function filterNewsletterImages( $html, $sidebar=null ){
-    return $html;
-    $classes = 'img-responsive img-rounded'; // separated by spaces, e.g. 'img image-link'
+    //return $html;
+    //$classes = 'img-responsive img-rounded'; // separated by spaces, e.g. 'img image-link'
+    $classes = null;
     if ( !empty($sidebar) ) {
       $classes = $classes . ' center';
     }
