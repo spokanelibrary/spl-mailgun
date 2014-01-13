@@ -144,7 +144,7 @@
                 <table class="row">
                   <tr>
                     <td class="wrapper">
-                      <table class="nine columns">
+                      <table class="eight columns">
                         <tr>
                           <td>
                             <?php echo $content; ?>
@@ -154,7 +154,7 @@
                       </table>
                     </td>
                     <td class="wrapper last">
-                      <table class="three columns">
+                      <table class="four columns">
                         <tr>
                           <td class="sidebar condensed">
                             <p class="condensed">&nbsp;</p>
