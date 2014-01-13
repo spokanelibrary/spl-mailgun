@@ -87,8 +87,7 @@
 	.sidebar h4 {font-size: 18px;}
 	.sidebar h5 {font-size: 16px;}
 	.sidebar h6 {font-size: 14px;}
-	.sidebar p,
-  .sidebar .wp-caption  {font-size: 12px;}
+	.sidebar p {font-size: 12px;}
 
 	/* Buttons */
 	table.button td,
@@ -114,8 +113,7 @@
   .small { font-size: 12px; }
 
   /* WordPress and Bootstrap specific */
-  .wp-caption { color: #666666; }
-  .sidebar .wp-caption { width: 100%; background:red; }
+  .wp-caption { color: #666666; font-size: 12px; }
 
 	.alignnone {  margin-bottom: 10px; }
 	.aligncenter { margin: auto; margin-bottom:10px; } /* doesn't really work */
