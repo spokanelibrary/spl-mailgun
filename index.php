@@ -712,7 +712,7 @@ class SPL_Mailgun_Newsletter {
 
       $post = str_replace(array('<figure','</figure>','<figcaption','</figcaption>')
                           ,array('<div', '</div>', '<div', '</div>')
-                          ,apply_filters('the_content', $post));
+                          ,$post);
 
 
       $html =  <<<EOT
