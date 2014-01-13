@@ -709,6 +709,12 @@ class SPL_Mailgun_Newsletter {
   static function formatPostSelect($post) {
     $html = '';
     if ( !is_null($post) ) {
+
+      $post = str_replace(array('<figure','</figure>','<figcaption','</figcaption>')
+                          ,array('<div', '</div>', '<div', '</div>')
+                          ,apply_filters('the_content', $post));
+
+
       $html =  <<<EOT
       <table class="six columns">
         <tr>
@@ -805,16 +811,10 @@ EOT;
     $date = mysql2date( get_option('date_format'), $post->post_date );
 
     $title = $post->post_title;
-    /*
+    
     $content = str_replace(array('<figure','</figure>','<figcaption','</figcaption>')
                           ,array('<div', '</div>', '<div', '</div>')
                           ,apply_filters('the_content', $post->post_content));
-    */
-    $content = str_replace(array('<figure ','</figure>','<figcaption ','</figcaption>')
-                          ,array('<div ', '</div>', '<div ', '</div>')
-                          ,$post->post_content);
-
-    $content = $post->post_content;
 
     $subtitle = get_post_meta($id
                           , '_spl_mailgun_newsletter_sidebar_headline'
