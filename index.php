@@ -709,11 +709,11 @@ class SPL_Mailgun_Newsletter {
   static function formatPostSelect($post) {
     $html = '';
     if ( !is_null($post) ) {
-      /*
+      
       $post = str_replace(array('<figure','</figure>','<figcaption','</figcaption>')
                           ,array('<div', '</div>', '<div', '</div>')
-                          ,$post);
-      */
+                          ,$post->post->content);
+      
 
       $html =  <<<EOT
       <table class="six columns">
