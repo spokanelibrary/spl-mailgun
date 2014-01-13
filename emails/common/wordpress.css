@@ -107,7 +107,7 @@
 	}
 
   /* Lists */
-  ul { list-style-position: outside; }
+  ul { list-style-position: inside; }
 
 	/* Custom */
 	.white { color: #ffffff; }
