@@ -121,7 +121,7 @@
 	.alignright { float: right; margin-left: 10px; }
 	.alignleft { float: left; margin-right: 10px; }
 
-	.wp-caption { align:center; }
+	.wp-caption { background:red; }
 	.wp-caption-text { clear: both; font-style: italic; }
 
 	.img-responsive {  }
