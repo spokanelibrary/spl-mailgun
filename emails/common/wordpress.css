@@ -60,9 +60,9 @@
 	h6 {font-size: 16px;}
 
 	/* Lighten headlines */
-	h1 { color: #005587;}
-  h2, 
-  h3 { color: #64964B; }
+	h1, 
+  h2 { color: #64964B; }
+  h3 { color: #005587;}
   h4,
   h5,
   h6 { color: #666666; }
