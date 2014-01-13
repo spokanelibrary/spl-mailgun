@@ -254,7 +254,7 @@
                         </tr>
                         <?php endif; ?>
                         <tr>
-                          <td class="sidebar subtitle">
+                          <td class="sidebar" style="background: #005587;">
                             <h2 class="subtitle"><?php echo $subtitle; ?></h2>
                           </td>
                           <td class="expander"></td>
