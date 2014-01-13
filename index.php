@@ -706,7 +706,7 @@ class SPL_Mailgun_Newsletter {
     return $this->filterNewsletterImages($html, true);
   } 
 
-  static function formatPostSelect($post, $class="twelve columns") {
+  static function formatPostSelect($post, $class=null) {
     $html = '';
     if ( !is_null($post) ) {
       

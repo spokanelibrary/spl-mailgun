@@ -158,7 +158,7 @@
                         <tr>
                           <td>
                           <?php 
-                          echo SPL_Mailgun_Newsletter::formatPostSelect($posts[1]); 
+                          echo SPL_Mailgun_Newsletter::formatPostSelect($posts[1], 'eight columns'); 
                           ?>
                           </td>
                           <td class="expander"></td>
