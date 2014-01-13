@@ -50,7 +50,7 @@
 
       <div class="row">
         <div class="col-sm-12">
-          <div style="border-bottom: 1px solid #ccc;">
+          <div style="border-bottom: 0px solid #ccc;">
             <h2 class="page-header text-success serif">
               <?php the_title(); ?>
             </h2>
