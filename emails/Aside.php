@@ -190,7 +190,7 @@
                         </tr>
                         <tr>
                           <td class="sidebar ">
-                            <?php echo $sidebar; ?>
+                            <?php //echo $sidebar; ?>
                           </td>
                           <td class="expander"></td>
                         </tr>
