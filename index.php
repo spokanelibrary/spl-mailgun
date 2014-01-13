@@ -690,9 +690,7 @@ class SPL_Mailgun_Newsletter {
       $html = preg_replace('/(<img.*?)(\/>)/', '$1 class="' . $classes . '" $2', $html);
     }
 
-    if ( preg_match('/<div.*? class="/wp-caption', $html) ) {
-      $html = preg_replace('/(<div.*? class=".*?)(".*?\/>)/', '$1 ' . 'center' . ' $2', $html);
-    }
+    
 
     // remove dimensions from images
     //$html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
