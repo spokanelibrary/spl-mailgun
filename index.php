@@ -745,7 +745,7 @@ class SPL_Mailgun_Newsletter {
         </tr>
 EOT;
       if ( $post->excerpt ) {
-        $html =  <<<EOT
+        $html .=  <<<EOT
           <tr>
             <td>
               <table class="button">
