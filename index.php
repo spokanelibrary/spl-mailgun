@@ -838,7 +838,6 @@ EOT;
                           , true 
                           );
 
-
     // attached posts
     $posts = array();
     for ( $i=1; $i<= 12; $i++ ) {
@@ -855,7 +854,7 @@ EOT;
     $sidebar = str_replace(array('<figure','</figure>','<figcaption','</figcaption>')
                           ,array('<div', '</div>', '<div', '</div>')
                           ,apply_filters('the_content', $sidebar));
-
+    // these really need to be removed after being run
     remove_filter( 'the_content', array($this,'filterNewsletterSidebarImages'));
     remove_filter( 'post_thumbnail_html', array($this, 'filterNewsletterSidebarImages'));
     

@@ -49,12 +49,17 @@
 		<div class="panel-body">
 
       <div class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-12">
           <div style="border-bottom: 1px solid #ccc;">
             <h2 class="page-header text-success serif">
               <?php the_title(); ?>
             </h2>
           </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8">
 
           <article class="article">
           <?php the_content(); ?>
