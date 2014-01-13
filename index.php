@@ -747,7 +747,7 @@ class SPL_Mailgun_Newsletter {
 EOT;
     }
 
-
+    $html .= print_r($post, true);
 
     return $html;
   }
