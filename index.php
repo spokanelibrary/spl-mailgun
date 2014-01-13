@@ -678,7 +678,7 @@ class SPL_Mailgun_Newsletter {
   // MAILGUN INTEGRATION
 
   function filterNewsletterImages( $html, $sidebar=null ){
-    $classes = 'img-responsive img-rounded'; // separated by spaces, e.g. 'img image-link'
+    $classes = 'img-responsive img-rounded center'; // separated by spaces, e.g. 'img image-link'
 
     // check if there are already classes assigned to the anchor
     if ( preg_match('/<img.*? class="/', $html) ) {
