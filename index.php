@@ -710,7 +710,7 @@ class SPL_Mailgun_Newsletter {
     $html = '';
     if ( !is_null($post) ) {
       
-      $post = str_replace(array('<figure','</figure>','<figcaption','</figcaption>')
+      $post->content = str_replace(array('<figure','</figure>','<figcaption','</figcaption>')
                           ,array('<div', '</div>', '<div', '</div>')
                           ,$post->post->content);
       
