@@ -87,7 +87,8 @@
 	.sidebar h4 {font-size: 18px;}
 	.sidebar h5 {font-size: 16px;}
 	.sidebar h6 {font-size: 14px;}
-	.sidebar p  {font-size: 12px;}
+	.sidebar p,
+  .sidebar .wp-caption  {font-size: 12px;}
 
 	/* Buttons */
 	table.button td,
