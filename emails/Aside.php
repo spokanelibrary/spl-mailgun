@@ -222,12 +222,12 @@
                   <tr>
                     <td class="wrapper">
                     <?php 
-                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[1]); 
+                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[1], 'six columns'); 
                     ?>
                     </td>
                     <td class="wrapper last">
                     <?php 
-                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[2]); 
+                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[2], 'six columns'); 
                     ?>
                     </td>
                   </tr>
@@ -239,12 +239,12 @@
                   <tr>
                     <td class="wrapper">
                     <?php 
-                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[3]); 
+                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[3], 'six columns'); 
                     ?>
                     </td>
                     <td class="wrapper last">
                     <?php 
-                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[4]); 
+                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[4], 'six columns'); 
                     ?>
                     </td>
                   </tr>
@@ -256,12 +256,12 @@
                   <tr>
                     <td class="wrapper">
                     <?php 
-                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[5]); 
+                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[5], 'six columns'); 
                     ?>
                     </td>
                     <td class="wrapper last">
                     <?php 
-                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[6]); 
+                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[6], 'six columns'); 
                     ?>
                     </td>
                   </tr>
@@ -273,12 +273,12 @@
                   <tr>
                     <td class="wrapper">
                     <?php 
-                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[7]); 
+                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[7], 'six columns'); 
                     ?>
                     </td>
                     <td class="wrapper last">
                     <?php 
-                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[8]); 
+                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[8], 'six columns'); 
                     ?>
                     </td>
                   </tr>
@@ -290,12 +290,12 @@
                   <tr>
                     <td class="wrapper">
                     <?php 
-                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[9]); 
+                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[9], 'six columns'); 
                     ?>
                     </td>
                     <td class="wrapper last">
                     <?php 
-                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[10]); 
+                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[10], 'six columns'); 
                     ?>
                     </td>
                   </tr>
@@ -307,12 +307,12 @@
                   <tr>
                     <td class="wrapper">
                     <?php 
-                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[11]); 
+                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[11], 'six columns'); 
                     ?>
                     </td>
                     <td class="wrapper last">
                     <?php 
-                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[12]); 
+                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[12], 'six columns'); 
                     ?>
                     </td>
                   </tr>
