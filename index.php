@@ -838,8 +838,6 @@ EOT;
                           , true 
                           );
 
-    add_filter( 'the_content', array($this,'filterNewsletterImages'),10 );
-    add_filter( 'post_thumbnail_html', array($this, 'filterNewsletterImages'), 10 );
 
     // attached posts
     $posts = array();
@@ -847,8 +845,8 @@ EOT;
       $posts[$i] = $this->getPostSelect($id, $i);
     }
 
-    add_filter( 'the_content', array($this,'filterNewsletterSidebarImages'),10 );
-    add_filter( 'post_thumbnail_html', array($this, 'filterNewsletterSidebarImages'), 10 );
+    //add_filter( 'the_content', array($this,'filterNewsletterSidebarImages'),10 );
+    //add_filter( 'post_thumbnail_html', array($this, 'filterNewsletterSidebarImages'), 10 );
     
     $sidebar = get_post_meta($id
                           , '_spl_mailgun_newsletter_sidebar_content'
