@@ -257,7 +257,7 @@
                           <td class="sidebar">
                             <h2 class="subtitle"><?php echo $subtitle; ?></h2>
                           </td>
-                          <td class="expander"></td>
+                          <td class="expander" style="margin:0; padding:0;"></td>
                         </tr>
                         <tr>
                           <td class="sidebar text-pad-left text-pad-right">
