@@ -45,7 +45,7 @@
 
   .title { /*color: #64964B;*/ /*color: #005587;*/ }
 
-  .subtitle { color: #666666; font-size: 22px; }
+  .subtitle { color: #005587; font-size: 22px; }
 
   /* Deemphasize some text */
   .post p,
@@ -69,7 +69,9 @@
   h3 { color: #005587;}
   h4,
   h5,
-  h6 { color: #666666; }
+  h6 { color: #444444; }
+
+  .sidebar { border: 1px solid #005587; }
 
 	/* Sidebar Headlines */
 
