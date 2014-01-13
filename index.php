@@ -744,7 +744,7 @@ class SPL_Mailgun_Newsletter {
           <td class="expander"></td>
         </tr>
 EOT;
-      if ( $post->excerpt ) {
+      if ( true == $post->excerpt ) {
         $html .=  <<<EOT
           <tr>
             <td>
