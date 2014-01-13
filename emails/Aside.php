@@ -151,6 +151,33 @@
                           </td>
                           <td class="expander"></td>
                         </tr>
+
+
+                        <!-- selected posts -->
+                        <?php if ( !is_null($posts[1]) ) : ?>
+                        <tr>
+                          <td>
+                            <table class="row callout post">
+                              <tr>
+                                <td class="wrapper">
+                                <?php 
+                                echo SPL_Mailgun_Newsletter::formatPostSelect($posts[1]); 
+                                ?>
+                                </td>
+                                <td class="wrapper last">
+                                <?php 
+                                echo SPL_Mailgun_Newsletter::formatPostSelect($posts[2]); 
+                                ?>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                        <?php endif; ?>
+
+
+
                       </table>
                     </td>
                     <td class="wrapper last">
