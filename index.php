@@ -814,6 +814,8 @@ EOT;
                           ,array('<div ', '</div>', '<div ', '</div>')
                           ,$post->post_content);
 
+    $content = $post->post_content;
+
     $subtitle = get_post_meta($id
                           , '_spl_mailgun_newsletter_sidebar_headline'
                           , true 
