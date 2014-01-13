@@ -838,6 +838,9 @@ EOT;
                           , true 
                           );
 
+    add_filter( 'the_content', array($this,'filterNewsletterImages'),10 );
+    add_filter( 'post_thumbnail_html', array($this, 'filterNewsletterImages'), 10 );
+
     // attached posts
     $posts = array();
     for ( $i=1; $i<= 12; $i++ ) {
