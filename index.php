@@ -805,10 +805,15 @@ EOT;
     $date = mysql2date( get_option('date_format'), $post->post_date );
 
     $title = $post->post_title;
+    /*
     $content = str_replace(array('<figure','</figure>','<figcaption','</figcaption>')
                           ,array('<div', '</div>', '<div', '</div>')
                           ,apply_filters('the_content', $post->post_content));
-    $content = 'testing figcaption.';
+    */
+    $content = str_replace(array('<figure','</figure>','<figcaption','</figcaption>')
+                          ,array('<div', '</div>', '<div', '</div>')
+                          ,$post->post_content);
+
     $subtitle = get_post_meta($id
                           , '_spl_mailgun_newsletter_sidebar_headline'
                           , true 
