@@ -736,6 +736,9 @@ class SPL_Mailgun_Newsletter {
       $html .= '<td class="expander"></td>';
       $html .= '<tr>';
       $html .= '<td>';
+      if ( $post->thumbnail ) {
+        $html .= $post->thumbnail;
+      }
       $html .= $post->content;
       
       if ( !$post->excerpt ) {
