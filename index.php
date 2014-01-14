@@ -725,7 +725,7 @@ class SPL_Mailgun_Newsletter {
                           ,apply_filters('the_content', $post->content));
       
 
-      $html .= '<table class="'.$class.'">';
+      $html .= '<table class="post '.$class.'">';
       $html .= '<tr>';
       $html .= '<td>';
       $html .= '<h4 class="subtitle">';
