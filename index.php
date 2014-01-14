@@ -794,7 +794,7 @@ class SPL_Mailgun_Newsletter {
 
       // todo: featured img
       //$post->thumbnail = $attach->ID;
-      $post->thumbnail = get_the_post_thumbnail($attach->ID, 'small', array('class'=>'img-responsive img-rounded alignleft'));
+      $post->thumbnail = get_the_post_thumbnail($attach->ID, 'thumbnail', array('class'=>'img-responsive img-rounded alignleft'));
 
       if ( !empty($excerpt) ) {
         $post->excerpt = true;
