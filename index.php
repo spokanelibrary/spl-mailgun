@@ -254,13 +254,13 @@ class SPL_Mailgun_Newsletter {
       $html .= '</div>';
       
       if ( $select->excerpt ) {
-        $html .= '<p style="margin-bottom:20px;">
+        $html .= '<p>
                     <a href="'.$select->link.'"
                       class="btn btn-block btn-default">
                       <span class="text-primary">Continue Reading &rarr;</span>
                     </a>
                   </p>
-                  <!-- <hr> -->';
+                  <hr>';
       } else {
         $html .= '<p class="lead text-center text-muted">
                     &hellip;
@@ -752,7 +752,7 @@ class SPL_Mailgun_Newsletter {
       if ( $post->excerpt ) {
         $html .= '<tr>';
         $html .= '<td>';
-        $html .= '<table class="button spl-button">';
+        $html .= '<table class="button">';
         $html .= '<tr>';
         $html .= '<td>';
         $html .= '<a href="'.$post->link.'">';
