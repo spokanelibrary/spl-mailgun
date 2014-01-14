@@ -203,7 +203,7 @@
                       </table>
                     </td>
                     <td class="wrapper last">
-                      <table class="four columns">
+                      <table class="four columns" style="margin-bottom: 20px;">
                         <tr>
                           <td class="condensed">
                             <p class="condensed">&nbsp;</p>
@@ -232,7 +232,7 @@
                         </tr>
                         <?php endif; ?>
                         <tr>
-                          <td class="sidebar subtitle" style="margin-bottom: 20px;">
+                          <td class="sidebar subtitle">
                             <h2 class="subtitle"><?php echo $subtitle; ?></h2>
                           </td>
                           <td class="expander"></td>
