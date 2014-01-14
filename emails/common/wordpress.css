@@ -114,7 +114,11 @@
   .sidebar ul {font-size: 12px;}
 
 	/* Buttons */
-	.post table.button td {
+	.post table.button td,
+  .post table.tiny-button td,
+  .post table.small-button td,
+  .post table.medium-button td,
+  .post table.large-button td {
 		/*
     background: #64964b;
 		border: 1px solid #598542;
@@ -122,12 +126,30 @@
     background: #f2f2f2;
     border: 1px solid #005587;
 	}
+
   .post table.button td a,
-  .post table.button td a:visited {
+  .post table.tiny-button td a,
+  .post table.small-button td a,
+  .post table.medium-button td a,
+  .post table.large-button td a,
+  .post table.button td a:visited,
+  .post table.tiny-button td a:visited,
+  .post table.small-button td a:visited,
+  .post table.medium-button td a:visited,
+  .post table.large-button td a:visited {
     color: #005587 !important;
   }
+
   .post table.button td a:hover,
-  .post table.button td a:active {
+  .post table.tiny-button td a:hover,
+  .post table.small-button td a:hover,
+  .post table.medium-button td a:hover,
+  .post table.large-button td a:hover,
+  .post table.button td a:active,
+  .post table.tiny-button td a:active,
+  .post table.small-button td a:active,
+  .post table.medium-button td a:active,
+  .post table.large-button td a:active {
     color: #0064A0 !important;
   }
   
