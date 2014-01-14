@@ -5,7 +5,7 @@
   h3 a,
   h4 a,
   h5 a,
-  h6 a { color: #0064A0; }
+  h6 a { color: #005587; }
  
  	/* Do use !important on pseudo states */
   a:hover, 
@@ -28,7 +28,7 @@
   h2 a:visited,
   h6 a:hover,
   h6 a:active,
-  h6 a:visited { color: #005587 !important; }
+  h6 a:visited { color: #0064A0 !important; }
   
   .masthead {
     background: #0064A0;
