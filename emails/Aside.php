@@ -143,7 +143,7 @@
                 <!-- message body -->
                 <table class="row">
                   <tr>
-                    <td class="wrapper last">
+                    <td class="wrapper">
                       <table class="twelve columns">
                         <tr>
                           <td>
