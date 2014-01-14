@@ -756,7 +756,7 @@ class SPL_Mailgun_Newsletter {
         $html .= '<tr>';
         $html .= '<td>';
         $html .= '<a href="'.$post->link.'">';
-        $html .= 'More »';
+        $html .= 'Continue Reading →';
         $html .= '</a>';
         $html .= '</td>';
         $html .= '</tr>';
