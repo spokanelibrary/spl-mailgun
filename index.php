@@ -716,6 +716,32 @@ class SPL_Mailgun_Newsletter {
                           ,apply_filters('the_content', $post->content));
       
 
+      $html .= '<table class="'.$class.'">';
+      $html .= '<tr>';
+      $html .= '<td>';
+      $html .= '<h4 class="subtitle">';
+      $html .= '<a href="'.$post->link.'">';
+      $html .= '<span class="serif">';
+      $html .= $post->title;
+      $html .= '</a>';
+      $html .= '</span>';
+      $html .= '</h4>';
+      $html .= '</td>';
+      $html .= '<td class="expander"></td>';
+      $html .= '<tr>';
+      $html .= '<td>';
+      $html .= $post->content;
+      $html .= '</td>';
+      $html .= '<td class="expander"></td>';
+      $html .= '</tr>';
+      
+      $html .= '';
+      $html .= '';
+      $html .= '';
+      $html .= '';
+      $html .= '';
+      $html .= '';
+/*
       $html =  <<<EOT
       <table class="$class">
         <tr>
@@ -734,6 +760,7 @@ class SPL_Mailgun_Newsletter {
         </tr>
 
 EOT;
+*/
       if ( true == $post->excerpt ) {
         $html .=  <<<EOT
           <tr>

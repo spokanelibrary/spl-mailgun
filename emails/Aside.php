@@ -148,18 +148,12 @@
                         <tr>
                           <td>
                             <?php echo $content; ?>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                        <tr>
-                          <td>
                             <h4 class="center">
                               <center>...</center>
                             </h4>
                           </td>
                           <td class="expander"></td>
                         </tr>
-                        
 
                         <!-- selected posts -->
                         <?php if ( !is_null($posts[1]) ) : ?>
