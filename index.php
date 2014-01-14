@@ -214,12 +214,12 @@ class SPL_Mailgun_Newsletter {
       return $subscribe;
     } else {
       // try to resubscribe an unsubscribed user
-      return $this->updateAddressOnMailingList($address, $list, true, $name, $vars);
+      return $this->updateEmailAddress($address, $list, true, $name, $vars);
     }
   }
 
-  function updateEmailAddress($address, $list, $name=null, $vars=null) {
-    
+  function updateEmailAddress($address, $list, $subscribed=true, $name=null, $vars=null) {
+    return $this->updateAddressOnMailingList($address, $list, $subscribed, $name, $vars);
   }
 
   function unsubscribeEmailAddress($address, $list) {
