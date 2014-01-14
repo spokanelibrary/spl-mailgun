@@ -123,17 +123,17 @@
               <td>
 
                 <!-- title -->
-                <table class="row">
+                <table class="row" style="margin:0; padding:0;">
                   <tr>
-                    <td class="wrapper last">
-                      <table class="twelve columns">
+                    <td class="wrapper last" style="margin:0; padding:0;">
+                      <table class="twelve columns" style="margin:0; padding:0;">
                         <tr>
-                          <td>
+                          <td style="margin:0; padding:0;">
                             <h1 class="title">
                               <a href="<?php echo $link; ?>"><span class="serif"><?php echo $title; ?></span></a>
                             </h1>
                           </td>
-                          <td class="expander" style="background:red;"></td>
+                          <td class="expander"></td>
                         </tr>
                       </table> 
                     </td>
