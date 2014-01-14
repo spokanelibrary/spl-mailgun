@@ -71,8 +71,8 @@
   h5,
   h6 { color: #444444; }
 
-  .sidebar { border: 1px solid #005587; padding-top: 8px;}
-  .sidebar .subtitle { color: #ffffff; background: #005587; text-align:center; }
+  .sidebar { border: 1px solid #005587;}
+  .sidebar .subtitle { color: #ffffff; background: #005587; text-align:center; padding-top: 8px; }
   .sidebar.subtitle { background: #005587; }
 	/* Sidebar Headlines */
 
@@ -107,7 +107,7 @@
 	}
 
   /* Lists */
-  ul { list-style-position: inside; }
+  ul { margin-left: 4px; }
 
 	/* Custom */
 	.white { color: #ffffff; }
