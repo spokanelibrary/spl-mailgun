@@ -123,13 +123,13 @@
               <td>
 
                 <!-- title -->
-                <table class="row" style="background:red;">
+                <table class="row">
                   <tr>
                     <td class="wrapper last">
                       <table class="twelve columns">
                         <tr>
                           <td>
-                            <h1 class="title">
+                            <h1 class="title"  style="background:red;">
                               <a href="<?php echo $link; ?>"><span class="serif"><?php echo $title; ?></span></a>
                             </h1>
                           </td>
