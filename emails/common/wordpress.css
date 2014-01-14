@@ -107,7 +107,7 @@
 	}
 
   /* Lists */
-  ul { margin:0; padding: 10px; list-style-position: outside; }
+  ul { margin:0; padding: 10px 10px 10px 20px; list-style-position: outside; }
 
 	/* Custom */
 	.white { color: #ffffff; }
