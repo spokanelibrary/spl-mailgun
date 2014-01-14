@@ -110,6 +110,13 @@
     background: #eeeeee;
     border: 1px solid #005587;
 	}
+  table.button td a,
+  table.tiny-button td a,
+  table.small-button td a,
+  table.medium-button td a,
+  table.large-button td a {
+    color: #005587;
+  }
 
   /* Lists */
   ul { margin:0; padding: 10px 10px 10px 20px; list-style-position: outside; }
