@@ -141,12 +141,12 @@
                 </table>
 
                 <!-- message body -->
-                <table class="row" style="margin:0; padding:0;">
+                <table class="row" style="margin-top:0; padding-top:0;">
                   <tr>
-                    <td class="wrapper" style="margin:0; padding:0;">
-                      <table class="eight columns" style="margin:0; padding:0;">
+                    <td class="wrapper">
+                      <table class="eight columns">
                         <tr>
-                          <td style="margin:0; padding:0;">
+                          <td>
                             <?php echo $content; ?>
                             <h4 class="center">
                               <center>...</center>
