@@ -208,8 +208,14 @@ class SPL_Mailgun_Newsletter {
   }
 
   function subscribeEmailAddress($address, $list, $name=null, $vars=null) {
-    //return $this->addAddressToMailingList($address, $list, true, $name, $vars);
-    return $this->updateAddressOnMailingList($address, $list, true, $name, $vars);
+    
+    $subscribe = $this->addAddressToMailingList($address, $list, true, $name, $vars);
+    if ( 200 == $subscribe->result->httpcode ) {
+      return $subscribe;
+    } else {
+      // try to resubscribe an unsubscribed user
+      return $this->updateAddressOnMailingList($address, $list, true, $name, $vars);
+    }
   }
 
   function updateEmailAddress($address, $list, $name=null, $vars=null) {
