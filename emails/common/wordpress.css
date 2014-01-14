@@ -91,7 +91,8 @@
 	.sidebar h4 {font-size: 18px;}
 	.sidebar h5 {font-size: 16px;}
 	.sidebar h6 {font-size: 14px;}
-	.sidebar p {font-size: 12px;}
+	.sidebar p,
+  .sidebar ul {font-size: 12px;}
 
 	/* Buttons */
 	table.button td,
@@ -105,7 +106,7 @@
 
   /* Lists */
   ul { margin:0; padding: 10px 10px 10px 20px; list-style-position: outside; }
-  .sidebar ul { list-style: none; font-size: 12px; padding: 10px;}
+  .sidebar ul { list-style: none; padding: 10px 0;}
 
 	/* Custom */
 	.white { color: #ffffff; }
