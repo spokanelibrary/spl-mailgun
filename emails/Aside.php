@@ -144,20 +144,6 @@
                 <table class="row">
                   <tr>
                     <td class="wrapper">
-                      <table class="twelve columns">
-                        <tr>
-                          <td>
-                            <h1 class="title">
-                              <a href="<?php echo $link; ?>"><span class="serif"><?php echo $title; ?></span></a>
-                            </h1>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table> 
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="wrapper">
                       <table class="eight columns">
                         <tr>
                           <td>
