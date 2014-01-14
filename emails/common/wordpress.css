@@ -105,7 +105,8 @@
 
   /* Lists */
   ul { margin:0; padding: 10px 10px 10px 20px; list-style-position: outside; }
-  .sidebar ul { list-style: none; }
+  .sidebar ul { list-style: none; font-size: 12px; padding: 10px;}
+
 	/* Custom */
 	.white { color: #ffffff; }
   .muted { color: #666666; }
