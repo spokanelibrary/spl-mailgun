@@ -753,8 +753,10 @@ EOT;
       } else {
         $html .=  <<<EOT
           <tr>
-            <td class="center">
-              <center>...</center>
+            <td>
+              <h4 class="center">
+                <center>...</center>
+              </h4>
             </td>
             <td class="expander"></td>
           </tr>
