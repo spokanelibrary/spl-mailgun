@@ -123,7 +123,7 @@
   .small { font-size: 12px; }
 
   /* WordPress and Bootstrap specific */
-  .wp-caption { color: #666666; font-size: 12px; border: 1px solid #666666; }
+  .wp-caption { color: #666666; font-size: 12px; border: 1px solid #666666; padding: 5px; }
 
 	.alignnone {  margin-bottom: 10px; }
 	.aligncenter { margin: auto; margin-bottom:10px; } /* doesn't really work */
