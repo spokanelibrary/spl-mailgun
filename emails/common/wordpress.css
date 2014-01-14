@@ -1,4 +1,20 @@
-	/* Do not use !important on anchors */
+	 /* Preserve type in Outlook reply/forward */
+  a, 
+  td,
+  center {
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  /* Reset button hovers */
+  .button a:hover,
+  .tiny-button a:hover,
+  .small-button a:hover,
+  .medium-button a:hover,
+  .large-button a:hover {
+    color: #ffffff !important;
+  }
+
+  /* Do not use !important on anchors */
   a,
   h1 a,
   h2 a,
@@ -110,13 +126,13 @@
     background: #eeeeee;
     border: 1px solid #005587;
 	}
-  table.button td a,
-  table.tiny-button td a,
-  table.small-button td a,
-  table.medium-button td a,
-  table.large-button td a {
+  table.spl-button td a {
     color: #005587;
   }
+  table.spl-button td a:hover {
+    color: #005587 !important;
+  }
+  
 
   /* Lists */
   ul { margin:0; padding: 10px 10px 10px 20px; list-style-position: outside; }
@@ -148,21 +164,6 @@
 
 	.img-responsive {  }
 
-	/* Preserve type in Outlook reply/forward */
-	a, 
-  td,
-  center {
-    font-family: Helvetica, Arial, sans-serif;
-  }
-
-	/* Reset button hovers */
-	.button a:hover,
-	.tiny-button a:hover,
-	.small-button a:hover,
-	.medium-button a:hover,
-	.large-button a:hover {
-		color: #ffffff !important;
-	}
 
 
 

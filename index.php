@@ -747,7 +747,7 @@ class SPL_Mailgun_Newsletter {
       if ( $post->excerpt ) {
         $html .= '<tr>';
         $html .= '<td>';
-        $html .= '<table class="button">';
+        $html .= '<table class="button spl-button">';
         $html .= '<tr>';
         $html .= '<td>';
         $html .= '<a href="'.$post->link.'">';
