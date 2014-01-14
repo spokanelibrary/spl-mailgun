@@ -232,7 +232,7 @@
                         </tr>
                         <?php endif; ?>
                         <tr>
-                          <td class="sidebar subtitle">
+                          <td class="sidebar subtitle" style="margin-bottom: 20px;">
                             <h2 class="subtitle"><?php echo $subtitle; ?></h2>
                           </td>
                           <td class="expander"></td>
