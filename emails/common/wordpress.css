@@ -124,7 +124,7 @@
 	}
   table.spl-button td a,
   table.spl-button td a:visited {
-    color: #005587;
+    color: #005587 !important;
   }
   table.spl-button td a:hover,
   table.spl-button td a:active {
