@@ -233,7 +233,7 @@ class SPL_Mailgun_Newsletter {
     
     $html = '';
     if ( !empty($select) ) {
-      //$html .= '<p class="lead text-primary">';
+      //$html .= '<p class="lead texf-primary">';
       $html .= '<h3 class="serif">';
       if ( $select->excerpt ) {
         $html .= '<a href="'.$select->link.'">';
@@ -260,7 +260,7 @@ class SPL_Mailgun_Newsletter {
                       <span class="text-primary">Continue Reading &rarr;</span>
                     </a>
                   </p>
-                  <!-- <hr> -->';
+                  <hr>';
       } else {
         $html .= '<p class="lead text-center text-muted">
                     &hellip;
@@ -794,7 +794,7 @@ class SPL_Mailgun_Newsletter {
 
       // todo: featured img
       //$post->thumbnail = $attach->ID;
-      $post->thumbnail = get_the_post_thumbnail($attach->ID, 'medium', array('class'=>'img-responsive alignleft'));
+      $post->thumbnail = get_the_post_thumbnail($attach->ID, 'small', array('class'=>'img-responsive img-rounded alignleft'));
 
       if ( !empty($excerpt) ) {
         $post->excerpt = true;
