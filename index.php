@@ -260,7 +260,7 @@ class SPL_Mailgun_Newsletter {
                       <span class="text-primary">Continue Reading &rarr;</span>
                     </a>
                   </p>
-                  <hr>';
+                  <!-- <hr> -->';
       } else {
         $html .= '<p class="lead text-center text-muted">
                     &hellip;
