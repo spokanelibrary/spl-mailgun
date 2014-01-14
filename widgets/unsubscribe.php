@@ -12,7 +12,7 @@
         <input type="email" class="form-control required" id="unsubscribe-email" name="spl-unsubscribe[email]" placeholder="Email">
       </div>
     </div>
-
+    <!--
     <div class="form-group">
       <div class="col-sm-8 col-sm-offset-4">
         <div class="checkbox">
@@ -22,7 +22,7 @@
         </div>
       </div>
     </div>
-
+    -->
     <div class="form-group">
       <div class="col-sm-offset-4 col-sm-8">
         <button type="submit" class="btn btn-primary">
