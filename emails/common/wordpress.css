@@ -114,23 +114,19 @@
   .sidebar ul {font-size: 12px;}
 
 	/* Buttons */
-	table.button td,
-	table.tiny-button td,
-	table.small-button td,
-	table.medium-button td,
-	table.large-button td {
+	table.spl-button td {
 		/*
     background: #64964b;
 		border: 1px solid #598542;
     */
-    background: #eeeeee;
+    background: #ebebeb;
     border: 1px solid #005587;
 	}
   table.spl-button td a {
     color: #005587;
   }
   table.spl-button td a:hover {
-    color: #005587 !important;
+    color: #0064A0 !important;
   }
   
 
