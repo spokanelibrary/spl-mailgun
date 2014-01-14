@@ -763,7 +763,7 @@ class SPL_Mailgun_Newsletter {
       */
       $html .= '</table>';
       
-/*
+
       $html =  <<<EOT
       <table class="$class">
         <tr>
@@ -782,8 +782,7 @@ class SPL_Mailgun_Newsletter {
         </tr>
 
 EOT;
-*/
-/*
+
       if ( true == $post->excerpt ) {
         $html .=  <<<EOT
           <tr>
@@ -802,7 +801,7 @@ EOT;
 EOT;
       } 
     }
-*/
+
     //$html .= '</table>';
 
     //$html .= print_r($post, true);
