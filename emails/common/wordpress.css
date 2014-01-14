@@ -103,8 +103,12 @@
 	table.small-button td,
 	table.medium-button td,
 	table.large-button td {
-		background: #64964b;
+		/*
+    background: #64964b;
 		border: 1px solid #598542;
+    */
+    background: #eeeeee;
+    border: 1px solid #005587;
 	}
 
   /* Lists */
