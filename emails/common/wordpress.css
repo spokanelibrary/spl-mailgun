@@ -83,7 +83,10 @@
   .sidebar h1,
   .sidebar h2,
   .sidebar h3,
-  .sidebar h4 { border: 1px solid #64964B; color: #468847; padding: 4px 0; margin-bottom: 4px; }
+  .sidebar h4 { margin-bottom: 4px; }
+
+  .sidebar h3 { border: 1px solid #64964B; color: #468847; padding: 4px 0; }
+  .sidebar h4 { color: #005587; }
 
   .sidebar h1 {font-size: 22px;}
 	.sidebar h2 {font-size: 22px;}
