@@ -122,12 +122,12 @@
     background: #f2f2f2;
     border: 1px solid #005587;
 	}
-  table.button.spl-button td a,
-  table.button.spl-button td a:visited {
+  .post table.button td a,
+  .post table.button td a:visited {
     color: #005587 !important;
   }
-  table.button.spl-button td a:hover,
-  table.button.spl-button td a:active {
+  .post table.button td a:hover,
+  .post table.button td a:active {
     color: #0064A0 !important;
   }
   

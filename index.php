@@ -831,7 +831,7 @@ class SPL_Mailgun_Newsletter {
 
     $link = get_permalink($id);
 
-    $date = mysql2date( get_option('date_format'), $post->post_date );
+    $date = mysql2date( get_option('F, Y'), $post->post_date );
 
     $title = $post->post_title;
     
