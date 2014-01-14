@@ -61,8 +61,8 @@
 
 	/* Lighten headlines */
 	h1,
-  h1 a { color: #468847; } 
-  h2, 
+  h1 a,
+  h2 { color: #468847; } 
   h3 { color: #005587;}
   h4,
   h5,
