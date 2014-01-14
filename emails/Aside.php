@@ -143,7 +143,7 @@
                 <!-- message body -->
                 <table class="row">
                   <tr>
-                    <td class="wrapper" style="margin-top:0; padding-top:0;">
+                    <td class="wrapper" style="padding-top:0;">
                       <table class="eight columns">
                         <tr>
                           <td>
