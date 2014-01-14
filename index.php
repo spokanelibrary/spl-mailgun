@@ -720,7 +720,7 @@ class SPL_Mailgun_Newsletter {
       <table class="$class">
         <tr>
           <td>
-            <h4 class="subtitle serif"><a href="$post->link">$post->title</a></h4>
+            <h4 class="subtitle"><a href="$post->link"><span class="serif">$post->title</a></span></h4>
           </td>
           <td class="expander"></td>
         </tr>
