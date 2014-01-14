@@ -735,6 +735,9 @@ class SPL_Mailgun_Newsletter {
       $html .= '<tr>';
       $html .= '<td>';
       $html .= $post->content;
+      if ( $post->excerpt ) {
+        $html .= '<h4 class="center"><center>...</center></h4>';
+      }
       $html .= '</td>';
       $html .= '<td class="expander"></td>';
       $html .= '</tr>';
