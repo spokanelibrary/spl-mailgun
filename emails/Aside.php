@@ -123,7 +123,7 @@
               <td>
 
                 <!-- title -->
-                <table class="row">
+                <table class="">
                   <tr>
                     <td class="wrapper last">
                       <table class="twelve columns">
