@@ -741,6 +741,7 @@ class SPL_Mailgun_Newsletter {
       $html .= '</td>';
       $html .= '<td class="expander"></td>';
       $html .= '</tr>';
+      /*
       if ( $post->excerpt ) {
         $html .= '<tr>';
         $html .= '<td>';
@@ -757,6 +758,7 @@ class SPL_Mailgun_Newsletter {
         $html .= '<td class="expander"></td>';
         $html .= '</tr>';
       }
+      */
       $html .= '</table>';
       
 /*
