@@ -750,6 +750,16 @@ EOT;
           </tr>
 
 EOT;
+      } else {
+        $html .=  <<<EOT
+          <tr>
+            <td class="center">
+              <center>...</center>
+            </td>
+            <td class="expander"></td>
+          </tr>
+
+EOT;
       }
     }
 
