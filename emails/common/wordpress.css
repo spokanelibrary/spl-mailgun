@@ -107,7 +107,7 @@
 	}
 
   /* Lists */
-  ul { margin-left: 4px; }
+  ul { margin-left: 10px; list-style-position: outside; }
 
 	/* Custom */
 	.white { color: #ffffff; }
