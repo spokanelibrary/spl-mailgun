@@ -254,13 +254,13 @@ class SPL_Mailgun_Newsletter {
       $html .= '</div>';
       
       if ( $select->excerpt ) {
-        $html .= '<p>
+        $html .= '<p style="margin-bottom:20px;">
                     <a href="'.$select->link.'"
                       class="btn btn-block btn-default">
                       <span class="text-primary">Continue Reading &rarr;</span>
                     </a>
                   </p>
-                  <hr>';
+                  <!-- <hr> -->';
       } else {
         $html .= '<p class="lead text-center text-muted">
                     &hellip;
