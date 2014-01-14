@@ -71,8 +71,8 @@
   h5,
   h6 { color: #444444; }
 
-  .sidebar { border: 1px solid #005587; padding-top: 30px !important; background: red; }
-  .sidebar .subtitle { color: #ffffff; background: #005587; text-align:center; padding-top: 8px; }
+  .sidebar { border: 1px solid #005587; padding-top: 10px !important; }
+  .sidebar .subtitle { color: #ffffff; background: #005587; text-align:center; }
   .sidebar.subtitle { background: #005587; }
 	/* Sidebar Headlines */
 
