@@ -94,12 +94,12 @@
   .sidebar h3,
   .sidebar h4,
   .sidebar h5,
-  .sidebar h6 { text-align: center; }
+  .sidebar h6 {  }
   
   .sidebar h1,
   .sidebar h2,
   .sidebar h3,
-  .sidebar h4 { margin-bottom: 4px; }
+  .sidebar h4 { text-align: center; margin-bottom: 4px; }
 
   .sidebar h3 { border: 1px solid #64964B; color: #468847; background: #dff0d8; padding: 4px 0; }
   .sidebar h4 { color: #005587; }
