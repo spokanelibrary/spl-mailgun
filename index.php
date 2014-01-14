@@ -735,19 +735,29 @@ class SPL_Mailgun_Newsletter {
       $html .= '<tr>';
       $html .= '<td>';
       $html .= $post->content;
-      if ( $post->excerpt ) {
+      if ( !$post->excerpt ) {
         $html .= '<h4 class="center"><center>...</center></h4>';
       }
       $html .= '</td>';
       $html .= '<td class="expander"></td>';
       $html .= '</tr>';
+      if ( $post->excerpt ) {
+        $html .= '<tr>';
+        $html .= '<td>';
+        $html .= '<table class="button">';
+        $html .= '<tr>';
+        $html .= '<td>';
+        $html .= '<a href="'.$post->link.'">';
+        $html .= 'More »';
+        $html .= '</a>';
+        $html .= '</td>';
+        $html .= '</tr>';
+        $html .= '</table>';
+        $html .= '</td>';
+        $html .= '<td class="expander"></td>';
+        $html .= '</tr>';
+      }
       
-      $html .= '';
-      $html .= '';
-      $html .= '';
-      $html .= '';
-      $html .= '';
-      $html .= '';
 /*
       $html =  <<<EOT
       <table class="$class">
@@ -784,19 +794,7 @@ EOT;
           </tr>
 
 EOT;
-      } else {
-        $html .=  <<<EOT
-          <tr>
-            <td>
-              <h4 class="center">
-                <center>...</center>
-              </h4>
-            </td>
-            <td class="expander"></td>
-          </tr>
-
-EOT;
-      }
+      } 
     }
 
     $html .= '</table>';
