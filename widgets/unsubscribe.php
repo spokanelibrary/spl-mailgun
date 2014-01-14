@@ -6,7 +6,7 @@
       <label for="unsubscribe-email" class="col-sm-4 control-label">
         <sup class="text-danger">*</sup>
         Your Email Address 
-        <small class="text-muted glyphicon glyphicon-envelope"></small>
+        <!-- <small class="text-muted glyphicon glyphicon-envelope"></small> -->
       </label>
       <div class="col-sm-8">
         <input type="email" class="form-control required" id="unsubscribe-email" name="spl-unsubscribe[email]" placeholder="Email">

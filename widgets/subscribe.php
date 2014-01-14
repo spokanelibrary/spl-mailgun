@@ -8,7 +8,7 @@
       <label for="subscribe-email" class="col-sm-4 control-label">
         <sup class="text-danger">*</sup>
         Your Email Address 
-        <small class="text-muted glyphicon glyphicon-envelope"></small>
+        <!-- <small class="text-muted glyphicon glyphicon-envelope"></small> -->
       </label>
       <div class="col-sm-8">
         <input type="email" class="form-control required" id="subscribe-email" name="spl-subscribe[email]" placeholder="Email">
@@ -23,7 +23,7 @@
     <div class="form-group">
       <label for="subscribe-name-first" class="col-sm-4 control-label">
         Your Name 
-        <small class="text-muted glyphicon glyphicon-user"></small>
+        <!-- <small class="text-muted glyphicon glyphicon-user"></small> -->
       </label>
       <div class="col-sm-4">
         <input type="text" class="form-control" id="subscribe-name-first" name="spl-subscribe[name][first]" placeholder="First">
