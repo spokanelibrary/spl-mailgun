@@ -59,7 +59,7 @@
 	h5 {font-size: 18px;}
 	h6 {font-size: 16px;}
 
-  .wrapper { padding-top:0; }
+  td.wrapper { padding-top:0; }
 
 	/* Lighten headlines */
 	h1,
