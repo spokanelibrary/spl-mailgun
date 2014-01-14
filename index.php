@@ -720,10 +720,14 @@ class SPL_Mailgun_Newsletter {
       $html .= '<tr>';
       $html .= '<td>';
       $html .= '<h4 class="subtitle">';
-      $html .= '<a href="'.$post->link.'">';
+      if ( $post->excerpt ) {
+        $html .= '<a href="'.$post->link.'">';
+      }
       $html .= '<span class="serif">';
       $html .= $post->title;
-      $html .= '</a>';
+      if ( $post->excerpt ) {
+        $html .= '</a>';
+      }
       $html .= '</span>';
       $html .= '</h4>';
       $html .= '</td>';
