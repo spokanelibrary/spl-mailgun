@@ -764,44 +764,6 @@ class SPL_Mailgun_Newsletter {
       $html .= '</table>';
       
 
-      $html =  <<<EOT
-      <table class="$class">
-        <tr>
-          <td>
-            <h4 class="subtitle"><a href="$post->link"><span class="serif">$post->title</a></span></h4>
-          </td>
-          <td class="expander"></td>
-        </tr>
-        <tr>
-          <td class="">
-
-            $post->content
-
-          </td>
-          <td class="expander"></td>
-        </tr>
-
-EOT;
-
-      if ( true == $post->excerpt ) {
-        $html .=  <<<EOT
-          <tr>
-            <td>
-              <table class="button">
-                <tr>
-                  <td>
-                    <a href="$post->link">More »</a>
-                  </td>
-                </tr>
-              </table>
-            </td>
-            <td class="expander"></td>
-          </tr>
-
-EOT;
-      } 
-    }
-
     //$html .= '</table>';
 
     //$html .= print_r($post, true);
