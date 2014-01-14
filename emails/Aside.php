@@ -123,12 +123,12 @@
               <td>
 
                 <!-- title -->
-                <table class="row" style="margin:0; padding:0;">
+                <table class="row">
                   <tr>
-                    <td class="wrapper last" style="margin:0; padding:0;">
-                      <table class="twelve columns" style="margin:0; padding:0;">
+                    <td class="wrapper last">
+                      <table class="twelve columns">
                         <tr>
-                          <td style="margin:0; padding:0;">
+                          <td>
                             <h1 class="title">
                               <a href="<?php echo $link; ?>"><span class="serif"><?php echo $title; ?></span></a>
                             </h1>
@@ -141,12 +141,12 @@
                 </table>
 
                 <!-- message body -->
-                <table class="row">
+                <table class="row" style="margin:0; padding:0;">
                   <tr>
-                    <td class="wrapper">
-                      <table class="eight columns">
+                    <td class="wrapper" style="margin:0; padding:0;">
+                      <table class="eight columns" style="margin:0; padding:0;">
                         <tr>
-                          <td>
+                          <td style="margin:0; padding:0;">
                             <?php echo $content; ?>
                             <h4 class="center">
                               <center>...</center>
