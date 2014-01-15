@@ -59,7 +59,7 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-8">
+        <div class="col-md-8">
 
           <article class="article">
           <?php the_content(); ?>
@@ -91,7 +91,7 @@
 
 
         </div><!-- /.col -->
-        <div class="col-lg-4">
+        <div class="col-md-4">
 
           <?php if ( isset($meta->callout) && isset($meta->callout['content']) ) :  ?>
           <!-- sidebar callout -->
