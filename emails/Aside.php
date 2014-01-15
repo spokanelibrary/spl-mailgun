@@ -38,7 +38,7 @@
                             <td class="small center">
                               
                               <center>
-                                <strong class="muted">Online:</strong>
+                                <strong class="muted">Read&nbsp;Online:</strong>
                                 <a href="<?php echo $link; ?>"><strong><?php echo home_url() ?></strong></a>
                               </center>
 
