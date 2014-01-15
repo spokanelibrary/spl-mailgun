@@ -59,7 +59,7 @@
       </div>
 
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-lg-8">
 
           <article class="article">
           <?php the_content(); ?>
@@ -91,7 +91,7 @@
 
 
         </div><!-- /.col -->
-        <div class="col-md-4">
+        <div class="col-lg-4">
 
           <?php if ( isset($meta->callout) && isset($meta->callout['content']) ) :  ?>
           <!-- sidebar callout -->
@@ -131,10 +131,10 @@
 
       <?php if ( isset($meta->posts) ) :  ?>
       <div class="row">
-        <div class="col-md-8 post">
+        <div class="col-lg-8 post">
           <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[5]); ?>
         </div><!-- /.col -->
-        <div class="col-md-8 post">
+        <div class="col-lg-8 post">
           <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[6]); ?>
         </div><!-- /.col -->
       </div><!-- /.row -->
