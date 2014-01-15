@@ -141,10 +141,16 @@
                 </table>
 
                 <!-- message body -->
+                <?php 
+                  $primary_columns = 'eight';
+                  if ( empty($sidebar) ) {
+                    $primary_columns = 'twelve';
+                  }
+                ?>
                 <table class="row">
                   <tr>
                     <td class="wrapper <?php if ( empty($sidebar) ): ?>last<?php endif; ?>" style="padding-top:0;">
-                      <table class="<?php if ( !empty($sidebar) ): ?>eight<?php else: ?>twelve<?php endif; ?> columns">
+                      <table class="<?php echo $primary_columns; ?> columns">
                         <tr>
                           <td>
                             <?php echo $content; ?>
@@ -160,7 +166,7 @@
                         <tr>
                           <td>
                           <?php 
-                          echo SPL_Mailgun_Newsletter::formatPostSelect($posts[1], 'eight columns'); 
+                          echo SPL_Mailgun_Newsletter::formatPostSelect($posts[1], '<?php echo $primary_columns; ?> columns'); 
                           ?>
                           </td>
                           <td class="expander"></td>
@@ -171,7 +177,7 @@
                         <tr>
                           <td>
                           <?php 
-                          echo SPL_Mailgun_Newsletter::formatPostSelect($posts[2], 'eight columns'); 
+                          echo SPL_Mailgun_Newsletter::formatPostSelect($posts[2], '<?php echo $primary_columns; ?> columns'); 
                           ?>
                           </td>
                           <td class="expander"></td>
