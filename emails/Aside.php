@@ -144,7 +144,7 @@
                 <table class="row">
                   <tr>
                     <td class="wrapper" style="padding-top:0;">
-                      <table class="<?php if ( empty($sidebar) ): ?> eight<?php else: ?>twelve<?php endif; ?> columns">
+                      <table class="<?php if ( !empty($sidebar) ): ?> eight<?php else: ?>twelve<?php endif; ?> columns">
                         <tr>
                           <td>
                             <?php echo $content; ?>
