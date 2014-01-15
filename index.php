@@ -881,7 +881,6 @@ class SPL_Mailgun_Newsletter {
     remove_filter( 'post_thumbnail_html', array($this, 'filterNewsletterSidebarImages'));
     
     
-
     //return print_r($_POST, true);
     $template = plugin_dir_path(__FILE__).'emails/'.$template;
     if ( file_exists($template) ) {
