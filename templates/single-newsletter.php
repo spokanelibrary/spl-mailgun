@@ -131,10 +131,10 @@
 
       <?php if ( isset($meta->posts) ) :  ?>
       <div class="row">
-        <div class="col-sm-12 col-lg-8 post">
+        <div class="col-md-8 post">
           <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[5]); ?>
         </div><!-- /.col -->
-        <div class="col-sm-12 col-lg-8 post">
+        <div class="col-md-8 post">
           <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[6]); ?>
         </div><!-- /.col -->
       </div><!-- /.row -->
