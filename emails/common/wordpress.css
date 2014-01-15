@@ -131,13 +131,8 @@
   .post table.tiny-button td a,
   .post table.small-button td a,
   .post table.medium-button td a,
-  .post table.large-button td a,
-  .post table.button td a:visited,
-  .post table.tiny-button td a:visited,
-  .post table.small-button td a:visited,
-  .post table.medium-button td a:visited,
-  .post table.large-button td a:visited {
-    color: #005587 !important;
+  .post table.large-button td a {
+    color: #005587;
   }
 
   .post table.button td a:hover,
@@ -149,7 +144,12 @@
   .post table.tiny-button td a:active,
   .post table.small-button td a:active,
   .post table.medium-button td a:active,
-  .post table.large-button td a:active {
+  .post table.large-button td a:active,
+  .post table.button td a:visited,
+  .post table.tiny-button td a:visited,
+  .post table.small-button td a:visited,
+  .post table.medium-button td a:visited,
+  .post table.large-button td a:visited  {
     color: #0064A0 !important;
   }
   
