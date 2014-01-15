@@ -143,8 +143,8 @@
                 <!-- message body -->
                 <table class="row">
                   <tr>
-                    <td class="wrapper" style="padding-top:0;">
-                      <table class="<?php if ( !empty($sidebar) ): ?> eight<?php else: ?>twelve<?php endif; ?> columns">
+                    <td class="wrapper <?php if ( empty($sidebar) ): ?>last<?php endif; ?>" style="padding-top:0;">
+                      <table class="<?php if ( !empty($sidebar) ): ?>eight<?php else: ?>twelve<?php endif; ?> columns">
                         <tr>
                           <td>
                             <?php echo $content; ?>
@@ -202,7 +202,10 @@
 
                       </table>
                     </td>
+
+                    <?php if ( !empty($sidebar) ): ?>
                     <td class="wrapper last">
+                      
                       <table class="four columns" style="margin-bottom: 20px;">
                         <tr>
                           <td class="condensed">
@@ -246,6 +249,7 @@
                       </table>
                   
                     </td>
+                    <?php endif; ?>
                   </tr>
                 </table>
 
