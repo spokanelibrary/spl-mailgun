@@ -262,7 +262,7 @@
                 <!-- selected posts -->
 
                 <?php if ( !is_null($posts[5]) ) : ?>
-                <table class="row callout post">
+                <table class="row callout">
                   <?php if ( !is_null($posts[5]) ) : ?>
                   <tr>
                     <td>
@@ -287,7 +287,7 @@
                 <?php endif; ?>
                 
                 <?php if ( !is_null($posts[7]) ) : ?>
-                <table class="row callout post">
+                <table class="row callout">
                   <tr>
                     <td class="wrapper">
                     <?php 
@@ -304,7 +304,7 @@
                 <?php endif; ?>
 
                 <?php if ( !is_null($posts[9]) ) : ?>
-                <table class="row callout post">
+                <table class="row callout">
                   <tr>
                     <td class="wrapper">
                     <?php 
@@ -321,7 +321,7 @@
                 <?php endif; ?>
 
                 <?php if ( !is_null($posts[11]) ) : ?>
-                <table class="row callout post">
+                <table class="row callout">
                   <tr>
                     <td class="wrapper">
                     <?php 

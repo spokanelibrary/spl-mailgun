@@ -725,7 +725,7 @@ class SPL_Mailgun_Newsletter {
                           ,apply_filters('the_content', $post->content));
       
 
-      $html .= '<table class="'.$class.'">';
+      $html .= '<table class="post '.$class.'">';
       $html .= '<tr>';
       $html .= '<td>';
       $html .= '<h4 class="subtitle">';
@@ -880,7 +880,7 @@ class SPL_Mailgun_Newsletter {
     remove_filter( 'the_content', array($this,'filterNewsletterSidebarImages'));
     remove_filter( 'post_thumbnail_html', array($this, 'filterNewsletterSidebarImages'));
     
-    
+
     //return print_r($_POST, true);
     $template = plugin_dir_path(__FILE__).'emails/'.$template;
     if ( file_exists($template) ) {
