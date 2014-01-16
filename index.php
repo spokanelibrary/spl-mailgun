@@ -556,7 +556,7 @@ class SPL_Mailgun_Newsletter {
     </p>
     <hr>
     <p>
-      <strong>Defaults:</strong> set in Settings &rarr; SPL Newsletter
+      <strong>Defaults:</strong> Settings &rarr; SPL Newsletter
     </p>
     ';
     echo $note;
