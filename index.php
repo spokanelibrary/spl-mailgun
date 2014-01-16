@@ -401,6 +401,7 @@ class SPL_Mailgun_Newsletter {
     , 'supports'      => array( 'title'
                               , 'editor'
                               , 'thumbnail'
+                              , 'author'
                               //, 'excerpt'
                               //, 'comments' 
                               )
