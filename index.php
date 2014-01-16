@@ -928,6 +928,10 @@ class SPL_Mailgun_Newsletter {
     return $this->config->plugin['default-recipient'];
   }
 
+  function getNewsletterSendReceiptTo() {
+    return $this->config->plugin['config-receipt-to'];
+  }
+
   function processNewsletter($id, $subject, $list, $address, $template, $campaign=null) {
 
     $from = $this->getMailgunFrom();
@@ -956,7 +960,7 @@ class SPL_Mailgun_Newsletter {
       $response .= PHP_EOL.$this->getMailgunMailingList($list);
     }
     
-    wp_mail( 'sgirard@spokanelibrary.org', 'mailgun response', $response );
+    wp_mail( $this->getNewsletterSendReceiptTo(), 'Mailgun API Response', $response );
   }
   
   function sendMailgunMessage($from, $to, $subject, $html=null, $text=null, $campaign=null) {
