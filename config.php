@@ -16,10 +16,10 @@ class SPL_Mailgun_Newsletter_Config {
 
     // ToDo: slug? ...
     
-    $settings->post_type = 'newsletter';
+    $settings->post_type = 'newsletter'; // used?
 
     $sidebar = new stdClass();
-    $sidebar->img_width = '178px';
+    $sidebar->img_width = '178px'; // this is barely used
 
     $settings->sidebar = $sidebar;
 
