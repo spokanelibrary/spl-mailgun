@@ -837,6 +837,9 @@ class SPL_Mailgun_Newsletter {
 
   function getNewsletterHTMLEmail($id, $template) {
     //return 'This is newsletter # '.$id;
+    if ( !empty($_POST['spl-mailgun-newsletter-subject']) ) {
+      $prepend = $_POST['spl-mailgun-newsletter-prepend'];
+    }
 
     remove_filter( 'the_content','bootstrap_responsive_images',10 );
     remove_filter( 'post_thumbnail_html', 'bootstrap_responsive_images', 10 );

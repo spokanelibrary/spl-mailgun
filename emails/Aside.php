@@ -36,7 +36,7 @@
                         <table class="twelve columns">
                           <tr>
                             <td class="small center">
-                              
+                              <?php echo $prepend; ?>
                               <center>
                                 <strong class="muted">Read&nbsp;Online:</strong>
                                 <a href="<?php echo $link; ?>"><strong><?php echo home_url() ?></strong></a>
