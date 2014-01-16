@@ -388,7 +388,7 @@ class SPL_Mailgun_Newsletter {
       && ( $this->config->custom->post_type == $_POST['post_type'])
       && !empty($_POST['spl-mailgun-newsletter-confirm']) ) {
 
-      $this->processNewsletter($id, $_POST['spl-mailgun-newsletter-subject'], $_POST['spl-mailgun-newsletter-list'], $_POST['spl-mailgun-newsletter-address'], $_POST['spl-mailgun-newsletter-template']);
+      $this->processNewsletter($id, $_POST['spl-mailgun-newsletter-subject'], $_POST['spl-mailgun-newsletter-list'], $_POST['spl-mailgun-newsletter-address'], $_POST['spl-mailgun-newsletter-template'], $_POST['spl-mailgun-newsletter-campaign']);
     }
   } // registerSaveHandler()
 
@@ -924,18 +924,18 @@ class SPL_Mailgun_Newsletter {
     return $this->config->plugin['default-recipient'];
   }
 
-  function processNewsletter($id, $subject, $list, $address, $template) {
+  function processNewsletter($id, $subject, $list, $address, $template, $campaign=null) {
 
     $from = $this->getMailgunFrom();
     $html = $this->getNewsletterHTMLEmail($id, $template);
 
     if ( !empty($address) ) {
-      $response = $this->sendMailgunMessage($from, $address, $subject, $html);
+      $response = $this->sendMailgunMessage($from, $address, $subject, $html, null, $campaign);
       $this->notifyMailgunResponse($response, $address, null);
     }
 
     if ( !empty($list) ) {
-      $response = $this->sendMailgunMessage($from, $list, $subject, $html);
+      $response = $this->sendMailgunMessage($from, $list, $subject, $html, null, $campaign);
       $this->notifyMailgunResponse($response, null, $list);
     }
     
@@ -955,7 +955,7 @@ class SPL_Mailgun_Newsletter {
     wp_mail( 'sgirard@spokanelibrary.org', 'mailgun response', $response );
   }
   
-  function sendMailgunMessage($from, $to, $subject, $html=null, $text=null) {
+  function sendMailgunMessage($from, $to, $subject, $html=null, $text=null, $campaign=null) {
     $api = $this->getMailgunApi().$this->getMailgunDomain().'/'.'messages';
     $auth = $this->getMailgunPrivateAuth();
     $params = array('from'=>$from
@@ -967,6 +967,9 @@ class SPL_Mailgun_Newsletter {
     }
     if ( !empty($text) ) {
       $params['text'] = $text;
+    }
+    if ( !empty($campaign) ) {
+      $params['o:campaign'] = $campaign;
     }
     //return $auth;
     $curl = $this->curlProxy($api, $params, 'post', $auth);
