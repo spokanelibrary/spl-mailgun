@@ -519,6 +519,13 @@ class SPL_Mailgun_Newsletter {
     ';
     echo $campaign;
 
+    $prepend = '
+    <p>
+      <textarea class="widefat" name="spl-mailgun-newsletter-prepend" id="spl-mailgun-newsletter-prepend"></textarea>
+    </p>
+    ';
+    echo $prepend;
+
     echo '<hr />';
 
     echo '
