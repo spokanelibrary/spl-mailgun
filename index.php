@@ -930,7 +930,6 @@ class SPL_Mailgun_Newsletter {
   }
 
   function getNewsletterSendReceiptTo() {
-    //return print_r($this->config->plugin, true);
     return $this->config->plugin['config-receipt-to'];
   }
 
@@ -952,17 +951,22 @@ class SPL_Mailgun_Newsletter {
   } // processNewsletter()
 
   function notifyMailgunResponse($response, $address=null, $list=null) {
-    $response = 'You just sent out a newsletter.'.PHP_EOL.'You are a very special snowflake.'.PHP_EOL.$response;
+    $recipient = $this->getNewsletterSendReceiptTo();
+
+    if ( !empty($recipient) ) {
+
+      $response = 'You just sent out a newsletter.'.PHP_EOL.'You are a very special snowflake.'.PHP_EOL.$response;
+      
+      if ( !is_null($address) ) {
+        $response .= PHP_EOL.$this->getMailgunAddressValidation($address);
+      }
+      
+      if ( !is_null($list) ) {
+        $response .= PHP_EOL.$this->getMailgunMailingList($list);
+      }
     
-    if ( !is_null($address) ) {
-      $response .= PHP_EOL.$this->getMailgunAddressValidation($address);
+      wp_mail( $this->getNewsletterSendReceiptTo(), 'Newsletter: Mailgun API Response', $response );
     }
-    
-    if ( !is_null($list) ) {
-      $response .= PHP_EOL.$this->getMailgunMailingList($list);
-    }
-    
-    wp_mail( $this->getNewsletterSendReceiptTo(), 'Mailgun API Response', $response );
   }
   
   function sendMailgunMessage($from, $to, $subject, $html=null, $text=null, $campaign=null) {
