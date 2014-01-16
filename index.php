@@ -521,6 +521,8 @@ class SPL_Mailgun_Newsletter {
 
     $prepend = '
     <p>
+      <label for="spl-mailgun-newsletter-prepend">Add a note (prepended):</label>
+      <br />
       <textarea class="widefat" name="spl-mailgun-newsletter-prepend" id="spl-mailgun-newsletter-prepend"></textarea>
     </p>
     ';
