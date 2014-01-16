@@ -37,7 +37,9 @@
                           <?php if ($prepend) : ?>
                           <tr>
                             <td class="prepend">
+                              <p>
                               <?php echo $prepend; ?>
+                              </p>
                             </td>
                             <td class="expander"></td>
                           </tr>
