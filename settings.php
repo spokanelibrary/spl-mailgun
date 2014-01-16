@@ -188,7 +188,7 @@ class SPL_Mailgun_Newsletter_Settings {
     , array('option'=>'spl-mailgun-newsletter'  // callback args
           , 'id'=>'default-recipient'
           , 'class'=>'widefat'
-          , 'label'=>'Optional: auto-populate Recipient Address (for testing)'
+          , 'label'=>'Optional: auto-populate Recipient Address (for testing or one-offs)'
           ) 
     );
 
@@ -203,6 +203,13 @@ class SPL_Mailgun_Newsletter_Settings {
           , 'label'=>'Optional: auto-populate Mailgun Campaign ID (for tracking)'
           ) 
     );
+
+    add_settings_section(
+      'spl-mailgun-newsletter-config'           // id
+    , 'Additional Configuration'                // title
+    , array( $this, 'getSectionHeading' )       // callback
+    , 'spl-mailgun-newsletter-settings'         // page
+    );  
 
   
   } // initPluginOptionsPage()
