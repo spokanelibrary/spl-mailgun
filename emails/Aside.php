@@ -34,7 +34,7 @@
                       <td class="wrapper last">
             
                         <table class="twelve columns">
-                          <?php if ($prepend;) : ?>
+                          <?php if ($prepend) : ?>
                           <tr>
                             <td class="">
                               <?php echo $prepend; ?>
