@@ -523,7 +523,7 @@ class SPL_Mailgun_Newsletter {
     <p>
       <label for="spl-mailgun-newsletter-prepend">Add a note (prepended):</label>
       <br />
-      <textarea class="widefat" name="spl-mailgun-newsletter-prepend" id="spl-mailgun-newsletter-prepend"></textarea>
+      <textarea class="widefat" rows="3" name="spl-mailgun-newsletter-prepend" id="spl-mailgun-newsletter-prepend"></textarea>
     </p>
     ';
     echo $prepend;
