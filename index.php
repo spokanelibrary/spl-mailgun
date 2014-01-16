@@ -930,7 +930,7 @@ class SPL_Mailgun_Newsletter {
   }
 
   function getNewsletterSendReceiptTo() {
-    return print_r($this->config->plugin, true);
+    //return print_r($this->config->plugin, true);
     return $this->config->plugin['config-receipt-to'];
   }
 

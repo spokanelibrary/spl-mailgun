@@ -218,7 +218,7 @@ class SPL_Mailgun_Newsletter_Settings {
     , 'spl-mailgun-newsletter-settings'         // page
     , 'spl-mailgun-newsletter-config'           // section
     , array('option'=>'spl-mailgun-newsletter'  // callback args
-          , 'id'=>'send-receipt-to'
+          , 'id'=>'config-receipt-to'
           , 'class'=>'widefat'
           , 'label'=>'Optional: Send a Mailgun receipt to this address (api response)'
           ) 
