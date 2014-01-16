@@ -36,16 +36,14 @@
                         <table class="twelve columns">
                           <?php if ($prepend) : ?>
                           <tr>
-                            <td class="">
+                            <td class="prepend">
                               <?php echo $prepend; ?>
-                              <hr>
                             </td>
                             <td class="expander"></td>
                           </tr>
                           <?php endif; ?>
                           <tr>
                             <td class="small center">
-                              <?php echo $prepend; ?>
                               <center>
                                 <strong class="muted">Read&nbsp;Online:</strong>
                                 <a href="<?php echo $link; ?>"><strong><?php echo home_url() ?></strong></a>

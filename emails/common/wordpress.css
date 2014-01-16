@@ -163,6 +163,8 @@
   .muted { color: #666666; }
   .highlight { color: #005587 !important; }
 	.warning { background-color: #fefbed !important; border-color: #f1e7bc !important; }
+  .prepend { border: 1px solid #ccc; padding: 10px; }
+
 
 	/* Utilities */
 	.transparent { background-color: transparent !important; }
