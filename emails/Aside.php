@@ -34,6 +34,15 @@
                       <td class="wrapper last">
             
                         <table class="twelve columns">
+                          <?php if ($prepend;) : ?>
+                          <tr>
+                            <td class="">
+                              <?php echo $prepend; ?>
+                              <hr>
+                            </td>
+                            <td class="expander"></td>
+                          </tr>
+                          <?php endif; ?>
                           <tr>
                             <td class="small center">
                               <?php echo $prepend; ?>
