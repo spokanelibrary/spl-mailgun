@@ -554,6 +554,10 @@ class SPL_Mailgun_Newsletter {
     <p>
       Check the box to make the magic happen.
     </p>
+    <hr>
+    <p>
+      Defaults: set in Settings>SPL Newsletter
+    </p>
     ';
     echo $note;
 
