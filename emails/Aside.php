@@ -259,7 +259,7 @@
 
                             <?php
                             for ( $i=1; $i<= 12; $i++ ) {
-                              echo SPL_Mailgun_Newsletter::getPostSelectFormattedSidebar($sb_posts[$i]);
+                              echo SPL_Mailgun_Newsletter::formatPostSelectSidebar($sb_posts[$i]);
                             }
                             ?>
 
