@@ -121,9 +121,11 @@
                 <?php echo $meta->sidebar['content']; ?>
               </aside>
 
-              <aside class="aside">
-                <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->sidebar['posts'][1]); ?>
-              </aside>
+              <?php
+              for ( $i=1; $i<= 12; $i++ ) {
+                echo SPL_Mailgun_Newsletter::getPostSelectFormattedSidebar($meta->sidebar['posts'][$i]);
+              }
+              ?>
 
             </div><!-- /.panel-body -->
             <?php endif; ?>

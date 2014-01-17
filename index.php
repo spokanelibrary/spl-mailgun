@@ -236,6 +236,57 @@ class SPL_Mailgun_Newsletter {
     flush_rewrite_rules(false);
   }
 
+
+  static function getPostSelectFormattedSidebar($select) {
+    
+    $html = '';
+    if ( !empty($select) ) {
+      $html .= '<aside class="aside">';
+      //$html .= '<p class="lead texf-primary">';
+      $html .= '<h3 class="serif">';
+      if ( $select->excerpt ) {
+        $html .= '<a href="'.$select->link.'">';
+      }
+      $html .= $select->title;
+      if ( $select->excerpt ) {
+        $html .= '</a>';
+      }
+      $html .= '</h3>';
+      //$html .= '</p>';
+
+      if ( $select->excerpt && isset($select->thumbnail) ) {
+        $html .= $select->thumbnail;
+      }
+      // clearfix since we might have a floated featured image
+      $html .= '<div class="clearfix" style="margin-bottom:6px">';
+      $html .= $select->content;
+      $html .= '</div>';
+      
+      if ( $select->excerpt ) {
+        $html .= '<p>
+                    <a href="'.$select->link.'"
+                      class="btn btn-block btn-default">
+                      <span class="text-primary">Continue Reading &rarr;</span>
+                    </a>
+                  </p>
+                  <!-- <hr> -->';
+      } else {
+        $html .= '';
+      }
+
+      $html .= '<p class="lead text-center text-muted">
+                  &hellip;
+                  <i class="glyphicon glyphicon-leaf" style="padding: 0 8px 0 12px;"></i>
+                  &hellip;
+                </p>';
+
+      $html .= '</aside>';
+      
+    }
+
+    return $html;
+  } 
+
   static function getPostSelectFormatted($select) {
     
     $html = '';
