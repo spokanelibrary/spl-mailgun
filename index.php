@@ -837,13 +837,14 @@ class SPL_Mailgun_Newsletter {
 
   static function formatPostSelectSidebar($post, $class=null) {
     $html = '';
+
     if ( !is_null($post) ) {
       $post->content = str_replace(array('<figure','</figure>','<figcaption','</figcaption>')
                           ,array('<div', '</div>', '<div', '</div>')
                           ,apply_filters('the_content', $post->content));
       //$post->content = filterNewsletterSidebarImages($post->content);
     }
-
+    return 'this is a test';
     //$html .= print_r($post, true);
 
     return $html;      
