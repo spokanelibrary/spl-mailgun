@@ -1214,7 +1214,8 @@ class SPL_Mailgun_Newsletter {
   function getMailgunMailingList($address) {
     $api = $this->getMailgunApi().'lists'.'/'.$address;
     $auth = $this->getMailgunPrivateAuth();
-    $params = array('subscribed'=>'yes');
+    //$params = array('subscribed'=>'yes');
+    $params = array();
 
     $curl = $this->curlProxy($api, $params, 'get', $auth);
     return $curl->response;
@@ -1224,6 +1225,7 @@ class SPL_Mailgun_Newsletter {
   function getMailgunMailingLists() {
     $api = $this->getMailgunApi().'lists';
     $auth = $this->getMailgunPrivateAuth();
+    //$params = array('subscribed'=>'yes');
     $params = array();
 
     return $this->curlJSON($api, $params, 'get', $auth);
