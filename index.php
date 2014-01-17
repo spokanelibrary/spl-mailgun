@@ -843,11 +843,12 @@ class SPL_Mailgun_Newsletter {
                           ,array('<div', '</div>', '<div', '</div>')
                           ,apply_filters('the_content', $post->content));
       //$post->content = filterNewsletterSidebarImages($post->content);
-      return 'this is a test';
-    
     }
     //$html .= print_r($post, true);
 
+    $html .= '<h3>'.$post->title.'</h3>';
+    $html .= $post->content;
+    
     return $html;      
   }
 
