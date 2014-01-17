@@ -566,6 +566,48 @@ class SPL_Mailgun_Newsletter {
   function getNewsletterCmbMetaBoxes( $meta_boxes ) {
     $prefix = '_spl_mailgun_newsletter_'; // Prefix for all fields
 
+    // CONTENT
+    $fields = array();
+    $fields[] = array(
+                        //'name' => 'Select Posts',
+                        'desc' => 'Posts 1-4 are displayed 1 across in the primary column, below the main article.
+                                  <br>
+                                  Posts 5-6 are displayed below the primary column and sidebar, width depends on screen size.
+                                  <br>
+                                  Posts 6-12 are displayed in 3 rows of 2 columns, across the entire page.',
+                        'type' => 'title',
+                        'id' => $prefix . 'post_select_title'
+                      );
+    for ( $i=1; $i<=12; $i++ ) {
+      $fields[] = array('name' => 'Post # ' . $i . ':'
+                      , 'desc' => ''
+                      , 'id' => $prefix . 'post_select_'.$i
+                      , 'type' => 'post_select'
+                      , 'limit' => $this->config->plugin['post-quantity-filter'] // limit number of options (posts)
+                      , 'post_type' => 'post' // post_type to query for
+                      , 'category' => $this->config->plugin['post-category-filter']
+                      );
+      $fields[] = array('name' => '',
+                        'desc' => 'Excerpt Only?',
+                        'id' => $prefix . 'post_select_excerpt_'.$i,
+                        'type' => 'checkbox',
+                      );
+    }
+
+    $meta_boxes[] = array('id' => $prefix . 'post_select_id'
+                        , 'title' => 'Add Posts to Newsletter'
+                        , 'pages' => array('newsletter') // post type
+                        //, 'show_on' => array()
+                        , 'context' => 'normal'
+                        , 'priority' => 'high'
+                        , 'show_names' => true  
+                        
+                        , 'fields' => $fields
+                        
+                    );
+
+    // SIDEBAR
+
     $meta_boxes[] = array('id' => $prefix . 'sidebar_callout_id'
                         , 'title' => 'Sidebar Callout'
                         , 'pages' => array('newsletter') // post type
@@ -621,44 +663,7 @@ class SPL_Mailgun_Newsletter {
                                       )
                     );
 
-    $fields = array();
-    $fields[] = array(
-                        //'name' => 'Select Posts',
-                        'desc' => 'Posts 1-4 are displayed 1 across in the primary column, below the main article.
-                                  <br>
-                                  Posts 5-6 are displayed below the primary column and sidebar, width depends on screen size.
-                                  <br>
-                                  Posts 6-12 are displayed in 3 rows of 2 columns, across the entire page.',
-                        'type' => 'title',
-                        'id' => $prefix . 'post_select_title'
-                      );
-    for ( $i=1; $i<=12; $i++ ) {
-      $fields[] = array('name' => 'Post # ' . $i . ':'
-                      , 'desc' => ''
-                      , 'id' => $prefix . 'post_select_'.$i
-                      , 'type' => 'post_select'
-                      , 'limit' => $this->config->plugin['post-quantity-filter'] // limit number of options (posts)
-                      , 'post_type' => 'post' // post_type to query for
-                      , 'category' => $this->config->plugin['post-category-filter']
-                      );
-      $fields[] = array('name' => '',
-                        'desc' => 'Excerpt Only?',
-                        'id' => $prefix . 'post_select_excerpt_'.$i,
-                        'type' => 'checkbox',
-                      );
-    }
-
-    $meta_boxes[] = array('id' => $prefix . 'post_select_id'
-                        , 'title' => 'Add Posts to Newsletter'
-                        , 'pages' => array('newsletter') // post type
-                        //, 'show_on' => array()
-                        , 'context' => 'normal'
-                        , 'priority' => 'high'
-                        , 'show_names' => true  
-                        
-                        , 'fields' => $fields
-                        
-                    );
+    
 
     return $meta_boxes;
   } // getNewsletterCmbMetaBoxes()
