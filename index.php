@@ -841,7 +841,7 @@ class SPL_Mailgun_Newsletter {
       $post->content = str_replace(array('<figure','</figure>','<figcaption','</figcaption>')
                           ,array('<div', '</div>', '<div', '</div>')
                           ,apply_filters('the_content', $post->content));
-      $post->content = filterNewsletterSidebarImages($post->content);
+      //$post->content = filterNewsletterSidebarImages($post->content);
     }
 
     //$html .= print_r($post, true);
