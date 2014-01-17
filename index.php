@@ -903,7 +903,7 @@ class SPL_Mailgun_Newsletter {
     $post = null;
 
     if ( $sidebar ) {
-      $prefix = 'sidebar_'
+      $prefix = 'sidebar_';
     }
 
     $select = get_post_meta($pid
