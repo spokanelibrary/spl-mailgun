@@ -11,11 +11,11 @@
   //print_r($post);
   
   $meta = SPL_Mailgun_Newsletter::getNewsletterMetadata( $post );
-  
+  /*
   echo '<pre>';
   print_r( $meta );
   echo '</pre>';
-  
+  */
 ?>
 
 <div class="page-header">
@@ -120,6 +120,11 @@
               <aside class="aside">
                 <?php echo $meta->sidebar['content']; ?>
               </aside>
+
+              <aside class="aside">
+                <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->sidebar['posts'][1]); ?>
+              </aside>
+
             </div><!-- /.panel-body -->
             <?php endif; ?>
             </div><!-- /.panel -->
