@@ -559,7 +559,7 @@ class SPL_Mailgun_Newsletter {
         <option value="" selected>None</option>
     ';
     foreach ($mailgun->items as $list) {
-      $lists .= '<option value="'.$list->address.'">'.$list->description.'</option>';
+      $lists .= '<option value="'.$list->address.'">'.$list->description.' ('.$list->members_count.')'.'</option>';
     }
     $lists .= '
       </select>
