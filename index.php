@@ -844,8 +844,8 @@ class SPL_Mailgun_Newsletter {
                           ,apply_filters('the_content', $post->content));
       //$post->content = filterNewsletterSidebarImages($post->content);
     }
-    return 'this is a test';
-    //$html .= print_r($post, true);
+    //return 'this is a test';
+    $html .= print_r($post, true);
 
     return $html;      
   }
