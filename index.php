@@ -663,7 +663,40 @@ class SPL_Mailgun_Newsletter {
                                       )
                     );
 
-    
+    $fields = array();
+    $fields[] = array(
+                        //'name' => 'Select Posts',
+                        'desc' => 'Sidebar posts are displayed in a single column.',
+                        'type' => 'title',
+                        'id' => $prefix . 'sidebar_post_select_title'
+                      );
+    for ( $i=1; $i<=12; $i++ ) {
+      $fields[] = array('name' => 'Sidebar Post # ' . $i . ':'
+                      , 'desc' => ''
+                      , 'id' => $prefix . 'sidebar_post_select_'.$i
+                      , 'type' => 'sidebar_post_select'
+                      , 'limit' => $this->config->plugin['post-quantity-filter'] // limit number of options (posts)
+                      , 'post_type' => 'post' // post_type to query for
+                      , 'category' => $this->config->plugin['post-category-filter']
+                      );
+      $fields[] = array('name' => '',
+                        'desc' => 'Excerpt Only?',
+                        'id' => $prefix . 'sidebar_post_select_excerpt_'.$i,
+                        'type' => 'checkbox',
+                      );
+    }
+
+    $meta_boxes[] = array('id' => $prefix . 'sidebar_post_select_id'
+                        , 'title' => 'Add Posts to Sidebar'
+                        , 'pages' => array('newsletter') // post type
+                        //, 'show_on' => array()
+                        , 'context' => 'normal'
+                        , 'priority' => 'high'
+                        , 'show_names' => true  
+                        
+                        , 'fields' => $fields
+                        
+                    );
 
     return $meta_boxes;
   } // getNewsletterCmbMetaBoxes()
