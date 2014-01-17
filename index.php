@@ -307,6 +307,18 @@ class SPL_Mailgun_Newsletter {
       if ( !empty($content) ) {
         $sidebar['content'] = $content;
       }
+
+      $posts = array();
+      for ( $i=1; $i<= 12; $i++ ) {
+        $select = SPL_Mailgun_Newsletter::getPostSelect($post->ID, $i, 'sidebar_');
+        if ( !empty($select) ) {
+          $posts[$i] = $select;
+        }
+      }
+      if ( !empty($posts) ) {
+        $sidebar['posts'] = $posts;
+      }
+
       if ( !empty($sidebar) ) {
         $meta->sidebar = $sidebar;
       }
