@@ -243,7 +243,7 @@ class SPL_Mailgun_Newsletter {
     if ( !empty($select) ) {
       $html .= '<aside class="aside">';
       //$html .= '<p class="lead texf-primary">';
-      $html .= '<h3 class="serif">';
+      $html .= '<h3>';
       if ( $select->excerpt ) {
         $html .= '<a href="'.$select->link.'">';
       }
@@ -361,7 +361,7 @@ class SPL_Mailgun_Newsletter {
 
       $posts = array();
       for ( $i=1; $i<= 12; $i++ ) {
-        $select = SPL_Mailgun_Newsletter::getPostSelect($post->ID, $i, 'sidebar_');
+        $select = SPL_Mailgun_Newsletter::getPostSelect($post->ID, $i, true);
         if ( !empty($select) ) {
           $posts[$i] = $select;
         }
@@ -899,8 +899,12 @@ class SPL_Mailgun_Newsletter {
     return $html;
   }
 
-  static function getPostSelect($pid, $order, $prefix, $trim=60) {
+  static function getPostSelect($pid, $order, $sidebar=false, $trim=60) {
     $post = null;
+
+    if ( $sidebar ) {
+      $prefix = 'sidebar_'
+    }
 
     $select = get_post_meta($pid
                             ,'_spl_mailgun_newsletter_'.$prefix.'post_select_'.$order
@@ -919,9 +923,16 @@ class SPL_Mailgun_Newsletter {
       $post->link = get_permalink($select);
       $post->title = $attach->post_title;
 
-      // todo: featured img
+      // featured img
       //$post->thumbnail = $attach->ID;
-      $post->thumbnail = get_the_post_thumbnail($attach->ID, 'thumbnail', array('class'=>'img-responsive img-rounded alignleft'));
+
+      $thumbnail_classes = 'img-responsive img-rounded ';
+      if ( $sidebar ) {
+        $thumbnail_classes .= 'aligncenter';
+      } else {
+        $thumbnail_classes .= 'alignleft'
+      }
+      $post->thumbnail = get_the_post_thumbnail($attach->ID, 'thumbnail', array('class'=>$thumbnail_classes));
 
       if ( !empty($excerpt) ) {
         $post->excerpt = true;
