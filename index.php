@@ -836,15 +836,15 @@ class SPL_Mailgun_Newsletter {
     return $html;
   }
 
-  static function getPostSelect($pid, $order, $trim=60) {
+  static function getPostSelect($pid, $order, $prefix, $trim=60) {
     $post = null;
 
     $select = get_post_meta($pid
-                            ,'_spl_mailgun_newsletter_post_select_'.$order
+                            ,'_spl_mailgun_newsletter_'.$prefix.'post_select_'.$order
                             ,true 
                           );
     $excerpt = get_post_meta($pid
-                            ,'_spl_mailgun_newsletter_post_select_excerpt_'.$order
+                            ,'_spl_mailgun_newsletter_'.$prefix.'post_select_excerpt_'.$order
                             ,true 
                             ); 
 
