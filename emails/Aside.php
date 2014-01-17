@@ -256,6 +256,13 @@
                         <tr>
                           <td class="sidebar text-pad-left text-pad-right">
                             <?php echo $sidebar; ?>
+
+                            <?php
+                            for ( $i=1; $i<= 12; $i++ ) {
+                              echo SPL_Mailgun_Newsletter::getPostSelectFormattedSidebar($sb_posts[$i]);
+                            }
+                            ?>
+
                           </td>
                           <td class="expander"></td>
                         </tr>

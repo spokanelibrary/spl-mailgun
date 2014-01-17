@@ -1008,6 +1008,14 @@ class SPL_Mailgun_Newsletter {
     $sidebar = str_replace(array('<figure','</figure>','<figcaption','</figcaption>')
                           ,array('<div', '</div>', '<div', '</div>')
                           ,apply_filters('the_content', $sidebar));
+    
+    $sb_posts = array();
+    for ( $i=1; $i<= 12; $i++ ) {
+      $sb_posts[$i] = $this->getPostSelect($id, $i, true);
+    }
+
+    
+
     // these really need to be removed after being run
     remove_filter( 'the_content', array($this,'filterNewsletterSidebarImages'));
     remove_filter( 'post_thumbnail_html', array($this, 'filterNewsletterSidebarImages'));
