@@ -834,6 +834,20 @@ class SPL_Mailgun_Newsletter {
     return $this->filterNewsletterImages($html, true);
   } 
 
+
+  static function formatPostSelectSidebar($post, $class=null) {
+    $html = '';
+    if ( !is_null($post) ) {
+      $post->content = str_replace(array('<figure','</figure>','<figcaption','</figcaption>')
+                          ,array('<div', '</div>', '<div', '</div>')
+                          ,apply_filters('the_content', $post->content));
+    }
+
+    //$html .= print_r($post, true);
+
+    return $html;      
+  }
+
   static function formatPostSelect($post, $class=null) {
     $html = '';
     if ( !is_null($post) ) {
