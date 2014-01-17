@@ -843,9 +843,32 @@ class SPL_Mailgun_Newsletter {
                           ,array('<div', '</div>', '<div', '</div>')
                           ,apply_filters('the_content', $post->content));
 
-      $html .= '<h3>'.$post->title.'</h3>';
+      $html .= '<h3>';      
+      if ( $post->excerpt ) {
+        $html .= '<a href="'.$post->link.'">';
+      }
+      $html .= $post->title;
+      if ( $post->excerpt ) {
+        $html .= '</a>';
+      }
+      $html .= '</h3>';
+      
+      if ( $post->thumbnail ) {
+        $html .= $post->thumbnail;
+      }
+
       $html .= $post->content;
   
+      if ( $post->excerpt ) {
+        $html .= '<p class="center">';
+        $html .= '<center>';
+        $html .= '<a href="'.$post->link.'">';
+        $html .= 'Continue Reading →';
+        $html .= '</a>';
+        $html .= '</center>';
+        $html .= '</p>';
+      }
+
     }
     //$html .= print_r($post, true);
 
