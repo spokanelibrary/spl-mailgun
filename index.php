@@ -671,7 +671,7 @@ class SPL_Mailgun_Newsletter {
                         'id' => $prefix . 'sidebar_post_select_title'
                       );
     for ( $i=1; $i<=12; $i++ ) {
-      $fields[] = array('name' => 'Post # ' . $i . ':'
+      $fields[] = array('name' => 'Sidebar # ' . $i . ':'
                       , 'desc' => ''
                       , 'id' => $prefix . 'sidebar_post_select_'.$i
                       , 'type' => 'post_select'
