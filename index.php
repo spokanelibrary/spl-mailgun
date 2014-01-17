@@ -674,7 +674,7 @@ class SPL_Mailgun_Newsletter {
       $fields[] = array('name' => 'Post # ' . $i . ':'
                       , 'desc' => ''
                       , 'id' => $prefix . 'sidebar_post_select_'.$i
-                      , 'type' => 'sidebar_post_select'
+                      , 'type' => 'post_select'
                       , 'limit' => $this->config->plugin['post-quantity-filter'] // limit number of options (posts)
                       , 'post_type' => 'post' // post_type to query for
                       , 'category' => $this->config->plugin['post-category-filter']
