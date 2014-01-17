@@ -825,7 +825,7 @@ class SPL_Mailgun_Newsletter {
     // give fixed width to images
     if ( !empty($sidebar) ) {
       //$html = preg_replace( '/(width|height)=\"\d*\"\s/', ' width="'.$this->config->custom->sidebar->img_width.'" style="width:'.$this->config->custom->sidebar->img_width.';" ', $html );
-      //$html = preg_replace( '/(width|height)=\"\d*\"\s/', ' width="" style="max-width:'.$this->config->custom->sidebar->img_width.';" ', $html );
+      $html = preg_replace( '/(width|height)=\"\d*\"\s/', ' width="" style="max-width:'.$this->config->custom->sidebar->img_width.'; height: auto;" ', $html );
     }
     return $html;
   }
