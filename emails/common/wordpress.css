@@ -64,7 +64,7 @@
   .subtitle { color: #005587; font-size: 22px; }
 
   /* Deemphasize some text */
-  .post p,
+  /*.post p,*/
   .sidebar p { color: #444444; }
 
 	/* Ink headings are little big */
