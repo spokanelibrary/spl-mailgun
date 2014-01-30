@@ -176,17 +176,8 @@
                         <tr>
                           <td>
                             
-                            <div id="attachment_157" 
-                                class="" 
-                                style="float:right;">
-                                <img class="" alt="Marcia_Michele" src="http://news.spokanelibrary.org/wordpress/media/Marcia_Michele.jpg" 
-                                width="160" height="143"
-                                style="" />
-                                <br />
-                                <div class="" 
-                                style="">Michele who used to be at Shadle (left) and Marcia who was at Indian Trail (right) – both now Downtown</div>
-                            </div>
-                            <hr class="clearboth">
+                            
+
                             <div id="attachment_157" 
                                 class="thumbnail wp-caption alignright" 
                                 style="">
@@ -197,7 +188,23 @@
                                 <div class="caption wp-caption-text" 
                                 style="">Michele who used to be at Shadle (left) and Marcia who was at Indian Trail (right) – both now Downtown</div>
                             </div>
-                            <hr class="clearboth">
+
+
+
+
+                            <div id="attachment_157" 
+                                class="" 
+                                style="float:right;">
+                                <img class="" alt="Marcia_Michele" src="http://news.spokanelibrary.org/wordpress/media/Marcia_Michele.jpg" 
+                                width="160" height="143"
+                                style="" />
+                                <br />
+                                <div class="" 
+                                style="">Michele who used to be at Shadle (left) and Marcia who was at Indian Trail (right) – both now Downtown</div>
+                            </div>
+
+
+
 
                             <?php echo $content; ?>
                             <h4 class="center">
