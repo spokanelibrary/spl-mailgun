@@ -129,7 +129,9 @@
 
 
 
-
+          <table>
+            <tr>
+              <td>
 
           <!-- masthead -->
           <table class="row masthead" cellpadding="0" cellspacing="0" border="0">
@@ -162,6 +164,11 @@
               </td>
             </tr>
           </table>
+
+              </td>
+            </tr>
+            <tr>
+              <td>
           <!-- dateline -->
           <table class="row dateline" cellpadding="0" cellspacing="0" border="0">
             <tr>
@@ -193,7 +200,9 @@
             </tr>
           </table>
 
-
+              </td>
+            </tr>
+          </table>
 
 
 
