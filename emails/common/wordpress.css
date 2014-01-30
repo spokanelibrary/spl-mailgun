@@ -179,7 +179,7 @@
   .clearboth { clear: both; }
 
   /* WordPress and Bootstrap specific */
-  .wp-caption { color: #666666; font-size: 12px; }
+  .wp-caption { clear:both; color: #666666; font-size: 12px; }
 
 	.alignnone {  margin-bottom: 10px; }
 	.aligncenter { margin: auto; margin-bottom:10px; } /* doesn't really work */
@@ -190,7 +190,7 @@
   .alignright img, .alignleft img { clear: both; }
 
 
-	.wp-caption-text { clear:both; float:none; display:block; font-style: italic; }
+	.wp-caption-text {  float:none; display:block; font-style: italic; }
 
 	.img-responsive {  }
 

@@ -178,7 +178,7 @@
                             
                             <div id="attachment_157" 
                                 class="" 
-                                style="">
+                                style="float:right;">
                                 <img class="" alt="Marcia_Michele" src="http://news.spokanelibrary.org/wordpress/media/Marcia_Michele.jpg" 
                                 width="160" height="143"
                                 style="" />
