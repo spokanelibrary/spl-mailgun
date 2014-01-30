@@ -972,7 +972,7 @@ class SPL_Mailgun_Newsletter {
       if ( $sidebar ) {
         $thumbnail_classes .= 'aligncenter';
       } else {
-        //$thumbnail_classes .= 'alignleft';
+        $thumbnail_classes .= 'alignleft';
       }
       $post->thumbnail = get_the_post_thumbnail($attach->ID, 'thumbnail', array('class'=>$thumbnail_classes));
 
