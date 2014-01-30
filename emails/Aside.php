@@ -175,11 +175,7 @@
                       <table class="<?php echo $primary_columns; ?> columns">
                         <tr>
                           <td>
-                            <?php echo $content; ?>
-                            <h4 class="center">
-                              <center>...</center>
-                            </h4>
-
+                            
                             <div id="attachment_157" 
                                 class="thumbnail wp-caption alignright" 
                                 style="width: 160px !important; border:1px solid red; color: #666666; font-size: 12px; float: right; margin-left: 10px;">
@@ -187,10 +183,13 @@
                                 width="160" height="143" 
                                 style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: right; clear: both; display: block; margin-left: 10px;" align="right" />
                                 <br />
-                                <div class="caption wp-caption-text" style="width: inherit; clear: both; font-style: italic;">Michele who used to be at Shadle (left) and Marcia who was at Indian Trail (right) – both now Downtown</div>
+                                <div class="caption wp-caption-text" style="width: inherit; font-style: italic;">Michele who used to be at Shadle (left) and Marcia who was at Indian Trail (right) – both now Downtown</div>
                             </div>
 
-
+                            <?php echo $content; ?>
+                            <h4 class="center">
+                              <center>...</center>
+                            </h4>
                           </td>
                           <td class="expander"></td>
                         </tr>

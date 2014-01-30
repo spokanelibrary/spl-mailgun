@@ -189,7 +189,7 @@
   .alignright img, .alignleft img { clear: both; } 
 
 
-	.wp-caption-text { clear: both; font-style: italic; }
+	.wp-caption-text { /*clear: both;*/ font-style: italic; }
 
 	.img-responsive {  }
 
