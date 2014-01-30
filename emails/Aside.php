@@ -247,13 +247,13 @@
                           <td class="expander"></td>
                         </tr>
                         <?php endif; ?>
-                        <tr style="margin:0; padding:0;">
+                        <tr>
                           <td class="sidebar subtitle">
                             <h2 class="subtitle"><?php echo $subtitle; ?></h2>
                           </td>
-                          <td class="expander"></td>
+                          <!-- <td class="expander"></td> -->
                         </tr>
-                        <tr style="margin:0; padding:0;">
+                        <tr>
                           <td class="sidebar text-pad-left text-pad-right">
                             <?php echo $sidebar; ?>
 
