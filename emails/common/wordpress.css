@@ -186,8 +186,13 @@
 	.alignnone {  margin-bottom: 10px; }
 	.aligncenter { margin: auto; margin-bottom:10px; } /* doesn't really work */
 
-	.alignright, .alignright img { float: right; margin-left: 10px; }
-	.alignleft, .alignleft img { float: left; margin-right: 10px; }
+	.alignright, 
+  .alignright img, 
+  .alignright .wp-caption-text { float: right; margin-left: 10px; }
+	
+  .alignleft, 
+  .alignleft img, 
+  .alignleft .wp-caption-text { float: left; margin-right: 10px; }
   
   .alignright img, .alignleft img { clear: both; }
 
