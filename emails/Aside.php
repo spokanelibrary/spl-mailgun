@@ -187,7 +187,7 @@
                                 width="160" height="143" 
                                 style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: right; clear: both; display: block; margin-left: 10px;" align="right" />
                                 <br />
-                                <div class="caption wp-caption-text" style="clear: both; font-style: italic;">Michele who used to be at Shadle (left) and Marcia who was at Indian Trail (right) – both now Downtown</div>
+                                <div class="caption wp-caption-text" style="width: 160px; clear: both; font-style: italic;">Michele who used to be at Shadle (left) and Marcia who was at Indian Trail (right) – both now Downtown</div>
                             </div>
 
 
