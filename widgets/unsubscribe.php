@@ -9,7 +9,7 @@
         <!-- <small class="text-muted glyphicon glyphicon-envelope"></small> -->
       </label>
       <div class="col-sm-8">
-        <input type="email" class="form-control required" id="unsubscribe-email" name="spl-unsubscribe[email]" placeholder="Email">
+        <input type="email" class="form-control required" id="unsubscribe-email" name="spl-unsubscribe[email]" placeholder="Email" value="<?php echo $_REQUEST['email']; ?>">
       </div>
     </div>
     <!--
