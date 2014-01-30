@@ -425,7 +425,7 @@
                                 |
                                 <a href="http://news.spokanelibrary.org/privacy/">Your Privacy</a> 
                                 | 
-                                <a href="http://news.spokanelibrary.org/unsubscribe/?email=%recipient.address%">Unsubscribe</a>
+                                <a href="http://news.spokanelibrary.org/unsubscribe/?email=%recipient%">Unsubscribe</a>
                               </p>
                             </center>
                           </td>
