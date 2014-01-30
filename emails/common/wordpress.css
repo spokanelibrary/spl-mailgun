@@ -187,7 +187,7 @@
 	.alignright { float: right; margin-left: 10px; }
 	.alignleft { float: left; margin-right: 10px; }
   
-  .alignright img, .alignleft img { clear: both; }
+  .alignright img, .alignleft img { clear: both; float:none; }
 
 
 	.wp-caption-text {  float:none; display:block; font-style: italic; }
