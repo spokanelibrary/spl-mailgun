@@ -249,7 +249,7 @@
                         <?php endif; ?>
                         <tr>
                           <td class="sidebar subtitle" style="background:red;">
-                            <h2 class="subtitle"><?php echo $subtitle; ?></h2>
+                            <h2 class="subtitle" style="padding:0; margin:0;"><?php echo $subtitle; ?></h2>
                           </td>
                           <td class="expander"></td>
                         </tr>
