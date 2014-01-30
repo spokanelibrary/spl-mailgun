@@ -251,7 +251,6 @@
                           <td class="sidebar subtitle">
                             <h2 class="subtitle"><?php echo $subtitle; ?></h2>
                           </td>
-                          <!-- <td class="expander"></td> -->
                         </tr>
                         <tr>
                           <td class="sidebar text-pad-left text-pad-right">
