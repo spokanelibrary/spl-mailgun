@@ -880,7 +880,7 @@ class SPL_Mailgun_Newsletter {
     if ( !is_null($post) ) {
       
       $post->content = str_replace(array('<figure','</figure>','<figcaption','</figcaption>')
-                          ,array('<div', '</div>', '<div', '</div>')
+                          ,array('<div width="160"', '</div>', '<div', '</div>')
                           ,apply_filters('the_content', $post->content));
       
 
