@@ -129,7 +129,7 @@
 
 
 
-          <table>
+          <table class="row">
             <tr>
               <td>
 
