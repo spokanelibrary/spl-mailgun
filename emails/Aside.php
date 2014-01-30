@@ -150,9 +150,9 @@
           <table class="row dateline">
             <tr>
               <td class="center" align="center">
-                <center>
-          
-                  
+                <table class="container">
+                    <tr>
+                      <td class="wrapper last">
 
                         <table class="twelve columns">
                           <tr>
@@ -166,9 +166,9 @@
                           </tr>
                         </table>
             
-                
-          
-                </center>
+                      </td>
+                    </tr>
+                  </table>
               </td>
             </tr>
           </table>
