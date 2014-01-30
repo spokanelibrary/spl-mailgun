@@ -159,7 +159,7 @@
   
 
   /* Lists */
-  ul { font-size: 14px; margin-left:20px; /*margin:10px; padding:0;*/ /*padding: 10px 10px 10px 20px;*/ /*list-style-position: outside;*/ }
+  ul { font-size: 14px; margin-left:20px; padding-left: 0; /*margin:0;*/ /*padding: 10px 10px 10px 20px;*/ /*list-style-position: outside;*/ }
   .sidebar ul { list-style: none; padding: 10px 0;}
 
 	/* Custom */
