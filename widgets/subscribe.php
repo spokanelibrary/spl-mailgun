@@ -11,7 +11,7 @@
         <!-- <small class="text-muted glyphicon glyphicon-envelope"></small> -->
       </label>
       <div class="col-sm-8">
-        <input type="email" class="form-control required" id="subscribe-email" name="spl-subscribe[email]" placeholder="Email">
+        <input type="email" class="form-control required" id="subscribe-email" name="spl-subscribe[email]" placeholder="Email" value="<?php echo $_REQUEST['email']; ?>">
         <span class="help-block">
           We will not share your email address with anyone. 
           <br>
