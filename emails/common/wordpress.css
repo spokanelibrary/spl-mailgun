@@ -184,8 +184,8 @@
 	.alignnone {  margin-bottom: 10px; }
 	.aligncenter { margin: auto; margin-bottom:10px; } /* doesn't really work */
 
-	.alignright, .alignright img { float: right; margin-left: 10px; }
-	.alignleft, .alignleft img { float: left; margin-right: 10px; }
+	.alignright { float: right; margin-left: 10px; }
+	.alignleft { float: left; margin-right: 10px; }
   
   .alignright img, .alignleft img { clear: both; }
 
