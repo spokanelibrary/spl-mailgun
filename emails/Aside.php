@@ -180,7 +180,7 @@
 
                             <div id="attachment_157" 
                                 class="thumbnail wp-caption alignright" 
-                                style="">
+                                style="width:160px !important;">
                                 <img class="size-full wp-image-157 " alt="Marcia_Michele" src="http://news.spokanelibrary.org/wordpress/media/Marcia_Michele.jpg" 
                                 width="160" height="143"
                                 style="" />
