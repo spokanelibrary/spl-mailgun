@@ -152,7 +152,25 @@
               <td class="center" align="center">
                 <center>
           
-                  test 2
+                  <table class="container">
+                    <tr>
+                      <td class="wrapper last">
+
+                        <table class="twelve columns">
+                          <tr>
+                            <td class="seven sub-columns">
+                              <p class="white condensed"><?php bloginfo( 'description' ); ?></p>
+                            </td>
+                            <td class="five sub-columns last" style="text-align:right; vertical-align:middle;">
+                              <p class="white condensed text-right"><?php echo $date; ?></p>
+                            </td>
+                            <td class="expander"></td>
+                          </tr>
+                        </table>
+            
+                      </td>
+                    </tr>
+                  </table>
           
                 </center>
               </td>
