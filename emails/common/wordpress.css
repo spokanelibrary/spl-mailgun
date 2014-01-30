@@ -188,11 +188,11 @@
 
 	.alignright, 
   .alignright img, 
-  .alignright .wp-caption-text { /*float: right;*/ margin-left: 10px; }
+  .alignright .wp-caption-text { float: right; margin-left: 40px; }
 	
   .alignleft, 
   .alignleft img, 
-  .alignleft .wp-caption-text { float: left; margin-right: 10px; }
+  .alignleft .wp-caption-text { float: left; margin-right: 40px; }
   
   .alignright img, .alignleft img { clear: both; }
 
