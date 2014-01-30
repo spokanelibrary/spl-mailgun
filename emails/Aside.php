@@ -186,7 +186,7 @@
                                 <div class="" 
                                 style="">Michele who used to be at Shadle (left) and Marcia who was at Indian Trail (right) – both now Downtown</div>
                             </div>
-                            <hr class="clearfix">
+                            <hr class="clearboth">
                             <div id="attachment_157" 
                                 class="thumbnail wp-caption alignright" 
                                 style="">
@@ -197,7 +197,7 @@
                                 <div class="caption wp-caption-text" 
                                 style="">Michele who used to be at Shadle (left) and Marcia who was at Indian Trail (right) – both now Downtown</div>
                             </div>
-                            <hr class="clearfix">
+                            <hr class="clearboth">
 
                             <?php echo $content; ?>
                             <h4 class="center">
