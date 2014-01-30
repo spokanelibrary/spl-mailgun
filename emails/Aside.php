@@ -176,7 +176,7 @@
                         <tr>
                           <td>
                             
-                            <div style="100px; border:1px solid red;">
+                            <div style="width:100px; border:1px solid red;">
                               test
                             </div>
 
