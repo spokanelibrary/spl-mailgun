@@ -880,7 +880,7 @@ class SPL_Mailgun_Newsletter {
     if ( !is_null($post) ) {
       
       $post->content = str_replace(array('<figure','</figure>','<figcaption','</figcaption>')
-                          ,array('<div width="160px"', '</div>', '<div', '</div>')
+                          ,array('<div', '</div>', '<div', '</div>')
                           ,apply_filters('the_content', $post->content));
       
 
@@ -972,7 +972,7 @@ class SPL_Mailgun_Newsletter {
       if ( $sidebar ) {
         $thumbnail_classes .= 'aligncenter';
       } else {
-        //$thumbnail_classes .= 'alignleft';
+        $thumbnail_classes .= 'alignleft';
       }
       $post->thumbnail = get_the_post_thumbnail($attach->ID, 'thumbnail', array('class'=>$thumbnail_classes));
 
