@@ -63,7 +63,7 @@
             </tr>
           </table> 
           <!-- masthead -->
-          <table class="row masthead" style="margin:0; padding:0; background:green;" cellspacing="0" cellpadding="0">
+          <table class="row masthead">
             <tr>
               <td class="center" align="center">
                 <center>
@@ -85,6 +85,18 @@
                           </tr>
                         </table>
 
+                        <table class="twelve columns">
+                          <tr>
+                            <td class="seven sub-columns">
+                              <p class="white condensed"><?php bloginfo( 'description' ); ?></p>
+                            </td>
+                            <td class="five sub-columns last" style="text-align:right; vertical-align:middle;">
+                              <p class="white condensed text-right"><?php echo $date; ?></p>
+                            </td>
+                            <td class="expander"></td>
+                          </tr>
+                        </table>
+
                       </td>
                     </tr>
                   </table>
@@ -94,7 +106,7 @@
             </tr>
           </table>
           <!-- dateline -->
-          <table class="row dateline"  style="margin:0; padding:0; background:red;" cellspacing="0" cellpadding="0">
+          <table class="row dateline">
             <tr>
               <td class="center" align="center">
                 <center>
