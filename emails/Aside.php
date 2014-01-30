@@ -181,7 +181,6 @@
                               <center>...</center>
                             </h4>
                           </td>
-                          <td class="expander"></td>
                         </tr>
 
                         <!-- selected posts -->

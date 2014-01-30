@@ -184,7 +184,7 @@
   .wp-caption { display:inline-block; color: #666666; font-size: 12px; }
 
 	.alignnone {  margin-bottom: 10px; }
-	.aligncenter { margin: auto; margin-bottom:10px; } /* doesn't really work */
+	.aligncenter { margin: auto; text-align:center; margin-bottom:10px; } /* doesn't really work */
 
 	.alignright { float: right; margin-left: 10px; }
   .alignleft { float: left; margin-right: 10px; }
