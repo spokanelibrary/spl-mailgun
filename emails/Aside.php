@@ -63,7 +63,7 @@
             </tr>
           </table> 
           <!-- masthead -->
-          <table class="row masthead">
+          <table class="row masthead" style="margin:0; padding:0" cellspacing="0" cellpadding="0">
             <tr>
               <td class="center" align="center">
                 <center>
@@ -94,7 +94,7 @@
             </tr>
           </table>
           <!-- dateline -->
-          <table class="row dateline">
+          <table class="row dateline"  style="margin:0; padding:0" cellspacing="0" cellpadding="0">
             <tr>
               <td class="center" align="center">
                 <center>
