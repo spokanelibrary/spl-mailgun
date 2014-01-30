@@ -176,7 +176,9 @@
                         <tr>
                           <td>
                             
-                            
+                            <div style="100px; border:1px solid red;">
+                              test
+                            </div>
 
                             <div id="attachment_157" 
                                 class="thumbnail wp-caption alignright" 
