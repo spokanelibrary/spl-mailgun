@@ -186,18 +186,14 @@
 	.alignnone {  margin-bottom: 10px; }
 	.aligncenter { margin: auto; margin-bottom:10px; } /* doesn't really work */
 
-	.alignright, 
-  .alignright img, 
-  .alignright .wp-caption-text { float: right; margin-left: 40px; }
-	
-  .alignleft, 
-  .alignleft img, 
-  .alignleft .wp-caption-text { float: left; margin-right: 40px; }
+	.alignright { float: right; margin-left: 10px; }
+  .alignleft { float: left; margin-right: 10px; }
   
+  /*
   .alignright img, .alignleft img { clear: both; }
+  */
 
-
-	.wp-caption-text {  float:none; clear:both; display:block; font-style: italic; }
+	.wp-caption-text {  /*float:none; clear:both; display:block;*/ font-style: italic; }
 
 	.img-responsive {  }
 
