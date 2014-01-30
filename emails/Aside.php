@@ -152,9 +152,7 @@
               <td class="center" align="center">
                 <center>
           
-                  <table class="container">
-                    <tr>
-                      <td class="">
+                  
 
                         <table class="twelve columns">
                           <tr>
@@ -168,9 +166,7 @@
                           </tr>
                         </table>
             
-                      </td>
-                    </tr>
-                  </table>
+                
           
                 </center>
               </td>
