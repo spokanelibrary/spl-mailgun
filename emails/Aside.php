@@ -154,7 +154,7 @@
           
                   <table class="container">
                     <tr>
-                      <td class="wrapper last">
+                      <td class="">
 
                         <table class="twelve columns">
                           <tr>
