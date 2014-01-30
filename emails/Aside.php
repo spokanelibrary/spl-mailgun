@@ -132,7 +132,7 @@
 
 
           <!-- masthead -->
-          <table class="row masthead" style="border:1px solid red;">
+          <table class="row masthead" cellpadding="0" cellspacing="0" border="0">
             <tr>
               <td class="center" align="center">
                 <center>
@@ -162,8 +162,8 @@
               </td>
             </tr>
           </table>
-          
-          <table class="row dateline" style="border:1px solid red;">
+          <!-- dateline -->
+          <table class="row dateline" cellpadding="0" cellspacing="0" border="0">
             <tr>
               <td class="center" align="center">
                 <center>
