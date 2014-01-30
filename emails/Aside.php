@@ -81,7 +81,6 @@
                               <h1 class="serif text-right condensed">News</h1>
                               <h5 class="serif text-right condensed"><em>from your library</em></h5>
                             </td>
-                            <td class="expander"></td>
                           </tr>
                         </table>
 
@@ -111,7 +110,6 @@
                             <td class="five sub-columns last" style="text-align:right; vertical-align:middle;">
                               <p class="white condensed text-right"><?php echo $date; ?></p>
                             </td>
-                            <td class="expander"></td>
                           </tr>
                         </table>
             
