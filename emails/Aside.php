@@ -251,9 +251,12 @@
                           <td class="sidebar subtitle">
                             <h2 class="subtitle"><?php echo $subtitle; ?></h2>
                           </td>
+                          <td class="expander"></td>
                         </tr>
                         <tr>
-                          <td class="sidebar text-pad-left text-pad-right">
+                          <td class="sidebar ">
+                            <h2 class="subtitle"><?php echo $subtitle; ?></h2>
+                            <div class="text-pad-left text-pad-right">
                             <?php echo $sidebar; ?>
 
                             <?php
@@ -261,7 +264,7 @@
                               echo SPL_Mailgun_Newsletter::formatPostSelectSidebar($sb_posts[$i]);
                             }
                             ?>
-
+                            </div>
                           </td>
                           <td class="expander"></td>
                         </tr>
