@@ -85,7 +85,7 @@
                           </tr>
                         </table>
 
-                        <table class="twelve columns">
+                        <table class="twelve columns dateline">
                           <tr>
                             <td class="seven sub-columns">
                               <p class="white condensed"><?php bloginfo( 'description' ); ?></p>
