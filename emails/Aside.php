@@ -62,155 +62,82 @@
               </td>
             </tr>
           </table> 
-          <!-- masthead -->
-          <table class="row masthead">
-            <tr>
-              <td class="center" align="center">
-                <center>
-          
-                  <table class="container">
-                    <tr>
-                      <td class="wrapper last">
-            
-                        <table class="twelve columns">
-                          <tr>
-                            <td class="six sub-columns">
-                              <a href="<?php echo home_url() ?>"><img height="80" width="170" style="height:80px; width:170px" src="http://news.spokanelibrary.org/assets/img/SPL-Logo-inverse-hidpi.png"></a>
-                            </td>
-                            <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
-                              <h1 class="serif text-right condensed">News</h1>
-                              <h5 class="serif text-right condensed"><em>from your library</em></h5>
-                            </td>
-                            <td class="expander"></td>
-                          </tr>
-                        </table>
 
-                      </td>
-                    </tr>
-                  </table>
-          
-                </center>
-              </td>
-            </tr>
-          </table>
-          <!-- dateline -->
-          <table class="row dateline">
-            <tr>
-              <td class="center" align="center">
-                <center>
-          
-                  <table class="container">
-                    <tr>
-                      <td class="wrapper last">
-
-                        <table class="twelve columns">
-                          <tr>
-                            <td class="seven sub-columns">
-                              <p class="white condensed"><?php bloginfo( 'description' ); ?></p>
-                            </td>
-                            <td class="five sub-columns last" style="text-align:right; vertical-align:middle;">
-                              <p class="white condensed text-right"><?php echo $date; ?></p>
-                            </td>
-                            <td class="expander"></td>
-                          </tr>
-                        </table>
-            
-                      </td>
-                    </tr>
-                  </table>
-          
-                </center>
-              </td>
-            </tr>
-          </table>
-
-
-
-
-
-
+          <!-- wrap extra row to prevent table spacing -->
           <table class="row">
             <tr>
               <td>
 
-          <!-- masthead -->
-          <table class="row masthead" cellpadding="0" cellspacing="0" border="0">
-            <tr>
-              <td class="center" align="center">
-                <center>
-          
-                  <table class="container">
-                    <tr>
-                      <td class="wrapper last">
-            
-                        <table class="twelve columns">
+                <!-- masthead -->
+                <table class="row masthead" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td class="center" align="center">
+                      <center>
+                
+                        <table class="container">
                           <tr>
-                            <td class="six sub-columns">
-                              <a href="<?php echo home_url() ?>"><img height="80" width="170" style="height:80px; width:170px" src="http://news.spokanelibrary.org/assets/img/SPL-Logo-inverse-hidpi.png"></a>
+                            <td class="wrapper last">
+                  
+                              <table class="twelve columns">
+                                <tr>
+                                  <td class="six sub-columns">
+                                    <a href="<?php echo home_url() ?>"><img height="80" width="170" style="height:80px; width:170px" src="http://news.spokanelibrary.org/assets/img/SPL-Logo-inverse-hidpi.png"></a>
+                                  </td>
+                                  <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
+                                    <h1 class="serif text-right condensed">News</h1>
+                                    <h5 class="serif text-right condensed"><em>from your library</em></h5>
+                                  </td>
+                                  <td class="expander"></td>
+                                </tr>
+                              </table>
+
                             </td>
-                            <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
-                              <h1 class="serif text-right condensed">News</h1>
-                              <h5 class="serif text-right condensed"><em>from your library</em></h5>
-                            </td>
-                            <td class="expander"></td>
                           </tr>
                         </table>
-
-                      </td>
-                    </tr>
-                  </table>
-          
-                </center>
-              </td>
-            </tr>
-          </table>
+                
+                      </center>
+                    </td>
+                  </tr>
+                </table>
 
               </td>
             </tr>
             <tr>
               <td>
-          <!-- dateline -->
-          <table class="row dateline" cellpadding="0" cellspacing="0" border="0">
-            <tr>
-              <td class="center" align="center">
-                <center>
-          
-                  <table class="container">
-                    <tr>
-                      <td class="wrapper last">
-
-                        <table class="twelve columns">
+                <!-- dateline -->
+                <table class="row dateline" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td class="center" align="center">
+                      <center>
+                
+                        <table class="container">
                           <tr>
-                            <td class="seven sub-columns">
-                              <p class="white condensed"><?php bloginfo( 'description' ); ?></p>
+                            <td class="wrapper last">
+
+                              <table class="twelve columns">
+                                <tr>
+                                  <td class="seven sub-columns">
+                                    <p class="white condensed"><?php bloginfo( 'description' ); ?></p>
+                                  </td>
+                                  <td class="five sub-columns last" style="text-align:right; vertical-align:middle;">
+                                    <p class="white condensed text-right"><?php echo $date; ?></p>
+                                  </td>
+                                  <td class="expander"></td>
+                                </tr>
+                              </table>
+                  
                             </td>
-                            <td class="five sub-columns last" style="text-align:right; vertical-align:middle;">
-                              <p class="white condensed text-right"><?php echo $date; ?></p>
-                            </td>
-                            <td class="expander"></td>
                           </tr>
                         </table>
-            
-                      </td>
-                    </tr>
-                  </table>
-          
-                </center>
-              </td>
-            </tr>
-          </table>
+                
+                      </center>
+                    </td>
+                  </tr>
+                </table>
 
               </td>
             </tr>
           </table>
-
-
-
-
-
-
-
-
 
 				  <!-- <br> -->
           <table class="container">
