@@ -178,12 +178,13 @@
                             
                             <div id="attachment_157" 
                                 class="thumbnail wp-caption alignright" 
-                                style="width: 160px !important; border:1px solid red; color: #666666; font-size: 12px; float: right; margin-left: 10px;">
+                                style="">
                                 <img class="size-full wp-image-157 " alt="Marcia_Michele" src="http://news.spokanelibrary.org/wordpress/media/Marcia_Michele.jpg" 
-                                width="160" height="143" 
-                                style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: right; clear: both; display: block; margin-left: 10px;" align="right" />
+                                width="160" height="143"
+                                style="" />
                                 <br />
-                                <div class="caption wp-caption-text" style="width: inherit; font-style: italic;">Michele who used to be at Shadle (left) and Marcia who was at Indian Trail (right) – both now Downtown</div>
+                                <div class="caption wp-caption-text" 
+                                style="">Michele who used to be at Shadle (left) and Marcia who was at Indian Trail (right) – both now Downtown</div>
                             </div>
 
                             <?php echo $content; ?>
