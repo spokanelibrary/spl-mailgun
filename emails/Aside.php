@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width"/>
 	<style>
-  <?php //include(plugin_dir_path(__FILE__).'common/ink.css'); ?>
+  <?php include(plugin_dir_path(__FILE__).'common/ink.css'); ?>
   </style>
   <style>
   <?php include(plugin_dir_path(__FILE__).'common/wordpress.css'); ?>
@@ -176,9 +176,9 @@
                         <tr>
                           <td>
                             
-                            <span style="width:100px; border:1px solid red;">
+                            <div width="100px" style="width:100px !important; border:1px solid red;">
                               test
-                            </span>
+                            </div>
 
                             <div id="attachment_157" 
                                 class="thumbnail wp-caption alignright" 
