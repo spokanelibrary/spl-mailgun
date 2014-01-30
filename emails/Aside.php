@@ -177,6 +177,17 @@
                           <td>
                             
                             <div id="attachment_157" 
+                                class="" 
+                                style="">
+                                <img class="" alt="Marcia_Michele" src="http://news.spokanelibrary.org/wordpress/media/Marcia_Michele.jpg" 
+                                width="160" height="143"
+                                style="" />
+                                <br />
+                                <div class="" 
+                                style="">Michele who used to be at Shadle (left) and Marcia who was at Indian Trail (right) – both now Downtown</div>
+                            </div>
+                            <hr>
+                            <div id="attachment_157" 
                                 class="thumbnail wp-caption alignright" 
                                 style="">
                                 <img class="size-full wp-image-157 " alt="Marcia_Michele" src="http://news.spokanelibrary.org/wordpress/media/Marcia_Michele.jpg" 
@@ -186,6 +197,7 @@
                                 <div class="caption wp-caption-text" 
                                 style="">Michele who used to be at Shadle (left) and Marcia who was at Indian Trail (right) – both now Downtown</div>
                             </div>
+                            <hr>
 
                             <?php echo $content; ?>
                             <h4 class="center">
