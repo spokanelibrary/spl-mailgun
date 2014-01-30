@@ -188,7 +188,7 @@
 
 	.alignright, 
   .alignright img, 
-  .alignright .wp-caption-text { float: right; margin-left: 10px; }
+  .alignright .wp-caption-text { /*float: right;*/ margin-left: 10px; }
 	
   .alignleft, 
   .alignleft img, 
