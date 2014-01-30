@@ -159,7 +159,7 @@
   
 
   /* Lists */
-  ul { font-size: 14px; margin:0; padding: 10px 10px 10px 20px; list-style-position: outside; }
+  ul { font-size: 14px; margin:0; padding: 10px 10px 10px 20px; /*list-style-position: outside;*/ }
   .sidebar ul { list-style: none; padding: 10px 0;}
 
 	/* Custom */
@@ -184,7 +184,7 @@
   .wp-caption { display:inline-block; color: #666666; font-size: 12px; }
 
 	.alignnone {  margin-bottom: 10px; }
-	.aligncenter { margin: auto; text-align:center; margin-bottom:10px; } /* doesn't really work */
+	.aligncenter { margin: auto; margin-bottom:10px; } /* doesn't really work */
 
 	.alignright { float: right; margin-left: 10px; }
   .alignleft { float: left; margin-right: 10px; }
@@ -195,7 +195,7 @@
 
 	.wp-caption-text {  /*float:none; clear:both; display:block;*/ font-style: italic; }
 
-	.img-responsive {  }
+	.img-responsive { /*max-width: 100%;*/ }
 
 
 
