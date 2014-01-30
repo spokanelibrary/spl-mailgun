@@ -131,11 +131,11 @@ class SPL_Mailgun_Newsletter {
         $html .= $link;
         $html .= '</h4>';
 
-        $html .= '<p class="text-centered">';
-        $html .= '<strong>Also in this issue:</strong>';
-        $html .= '</p>';
-
         if ( !empty($posts) ) {
+          $html .= '<p class="text-centered">';
+          $html .= '<strong>Also in this issue:</strong>';
+          $html .= '</p>';
+
           if ( isset($params['link_posts']) ) {
             $html .= '<ul class="nav nav-pills nav-stacked">';
             foreach ( $posts as $post ) {
