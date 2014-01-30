@@ -248,7 +248,7 @@
                         </tr>
                         <?php endif; ?>
                         <tr>
-                          <td class="sidebar subtitle" style="background:red;">
+                          <td class="sidebar subtitle">
                             <h2 class="subtitle" style="margin:0;"><?php echo $subtitle; ?></h2>
                           </td>
                           <td class="expander"></td>
