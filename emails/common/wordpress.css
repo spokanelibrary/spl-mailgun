@@ -184,6 +184,8 @@
 
 	.alignright, .alignright img { float: right; margin-left: 10px; }
 	.alignleft, .alignleft img { float: left; margin-right: 10px; }
+  .alignright img, .alignleft img { clear: both; } 
+
 
 	.wp-caption-text { clear: both; font-style: italic; }
 
