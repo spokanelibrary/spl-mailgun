@@ -439,7 +439,15 @@
 
 
               <!-- content start -->
-              
+              %recipient%
+              <br>
+              %recipient_fname%
+              <br>
+              %recipient_lname%
+              <br>
+              %recipient_address%
+              <br>
+              %recipient_email%
                 
               
               <!-- container end below -->
