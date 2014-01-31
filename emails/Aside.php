@@ -367,67 +367,6 @@
                 <?php endif; ?>
 
                 <!-- colophon -->
-                <table class="row footer">
-                  <tr>
-                    <td class="wrapper">
-                            
-                      <table class="six columns">
-                        <tr>
-                          <td class="left-text-pad">
-
-                            <h5>Connect With Us:</h5>
-
-                            <table class="button facebook">
-                              <tr>
-                                <td>
-                                  <a href="http://facebook.com/spokanelibrary">Facebook</a>
-                                </td>
-                              </tr>
-                            </table>
-
-                            <table class="button twitter">
-                              <tr>
-                                <td>
-                                  <a href="http://twitter.com/spokanelibrary">Twitter</a>
-                                </td>
-                              </tr>
-                            </table>
-
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-
-                    </td>
-                    <td class="wrapper last">
-
-                      <table class="six columns">
-                        <tr>
-                          <td class="last right-text-pad">
-                            <h5>Contact Us:</h5>
-                            <p>
-                              Phone: 509.444.5333
-                              <br>
-                              Email: <a href="mailto:news@spokanelibrary.org">news@spokanelibrary.org</a>
-                            </p>
-                          </td>          
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-
-                    </td>
-                  </tr>
-                </table>
-
-
-
-
-
-
-
-
-
-              
 
                 <table class="row footer" cellpadding="0" cellspacing="0" border="0">
                   <tr>
@@ -572,12 +511,6 @@
                     </td>
                   </tr>
                 </table>
-
-
-
-
-
-
 
 
 
