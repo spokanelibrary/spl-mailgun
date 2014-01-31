@@ -5,7 +5,7 @@
     font-family: Helvetica, Arial, sans-serif;
   }
 
-  img { float: none; max-width: 100%; }
+  img { float: none; max-width: 100% !important; }
 
   /* Reset button hovers */
   .button a:hover,
