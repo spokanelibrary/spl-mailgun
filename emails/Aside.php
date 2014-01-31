@@ -450,7 +450,7 @@
 
                 <table class="row footer" cellpadding="0" cellspacing="0" border="0">
                   <tr>
-                    <td class="wrapper" style="padding-top:0;">
+                    <td class="wrapper" style="padding-top:0">
                             
                       <table class="four columns">
                         <tr>
@@ -468,7 +468,7 @@
                       </table>
 
                     </td>
-                    <td class="wrapper">
+                    <td class="wrapper" style="padding-top:0">
 
                       <table class="four columns">
                         <tr>
@@ -486,7 +486,7 @@
                       </table>
 
                     </td>
-                    <td class="wrapper last">
+                    <td class="wrapper last" style="padding-top:0">
 
                       <table class="four columns">
                         <tr>
