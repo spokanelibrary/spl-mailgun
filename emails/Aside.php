@@ -439,9 +439,7 @@
 
 
               <!-- content start -->
-              %recipient_fname%
-              <br>
-              %recipient_lname%
+              
               
               <!-- container end below -->
               </td>
