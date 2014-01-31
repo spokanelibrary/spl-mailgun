@@ -442,7 +442,7 @@
                             <table class="button facebook" style="vertical-align: middle; text-align:center;">
                               <tr>
                                 <td valign="middle" align="center" style="vertical-align:middle; text-align:center;">
-                                  <a href="http://facebook.com/spokanelibrary"><img style="width:16px; height:16px;" width="16px" height="16px" src="http://news.spokanelibrary.org/hosted/img/icons/16px/facebook.png">&nbsp;Facebook</a>
+                                  <a href="http://facebook.com/spokanelibrary" style="vertical-align:middle; text-align:center;"><img style="clear:none; display:inline; width:16px; height:16px;" width="16px" height="16px" src="http://news.spokanelibrary.org/hosted/img/icons/16px/facebook.png">&nbsp;Facebook</a>
                                 </td>
                               </tr>
                             </table>
