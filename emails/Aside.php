@@ -432,7 +432,7 @@
                 <table class="row footer">
                   <tr>
                     
-                    <td class="wrapper last">
+                    <td class="wrapper">
                             
                       <table class="twelve columns">
                         <tr>
