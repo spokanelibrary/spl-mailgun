@@ -533,7 +533,9 @@
                       <table class="four columns">
                         <tr>
                           <td class="left-text-pad">
-                            509.444.5333
+                            <p>
+                              509.444.5333
+                            </p>
                           </td>
                           <td class="expander"></td>
                         </tr>
@@ -545,7 +547,9 @@
                       <table class="four columns">
                         <tr>
                           <td class="">
-                            <a href="mailto:news@spokanelibrary.org">news@spokanelibrary.org</a>
+                            <p>
+                              <a href="mailto:news@spokanelibrary.org">news@spokanelibrary.org</a>
+                            </p>
                           </td>          
                           <td class="expander"></td>
                         </tr>
@@ -557,7 +561,9 @@
                       <table class="four columns">
                         <tr>
                           <td class="right-text-pad">
-                            <a href="http://www.spokanelibrary.org">spokanelibrary.org</a>
+                            <p>
+                              <a href="http://www.spokanelibrary.org">spokanelibrary.org</a>
+                            </p>
                           </td>          
                           <td class="expander"></td>
                         </tr>
