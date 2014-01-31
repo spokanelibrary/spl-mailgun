@@ -476,10 +476,10 @@
                       <table class="four columns">
                         <tr>
                           <td class="left-text-pad right-text-pad">
-                            <table class="button">
+                            <table class="button spokanelibrary">
                               <tr>
                                 <td>
-                                  <a href="http://blog.spokanelibrary.org">Twitter</a>
+                                  <a href="http://blog.spokanelibrary.org">Library Blog</a>
                                 </td>
                               </tr>
                             </table>
