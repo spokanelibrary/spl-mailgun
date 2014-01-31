@@ -175,7 +175,6 @@
                       <table class="<?php echo $primary_columns; ?> columns">
                         <tr>
                           <td>
-                            
                             <?php echo $content; ?>
                             <h4 class="center">
                               <center>...</center>
@@ -443,7 +442,8 @@
                             <table class="button facebook">
                               <tr>
                                 <td>
-                                  <a href="http://facebook.com/spokanelibrary"><img src="http://connect.spokanelibrary.org/wordpress/assets/img/icons/16px/facebook.png"> Facebook</a>
+                                  <img src="http://connect.spokanelibrary.org/wordpress/assets/img/icons/16px/facebook.png">
+                                  <a href="http://facebook.com/spokanelibrary">Facebook</a>
                                 </td>
                               </tr>
                             </table>
@@ -461,6 +461,7 @@
                             <table class="button twitter">
                               <tr>
                                 <td>
+                                  <img src="http://connect.spokanelibrary.org/wordpress/assets/img/icons/16px/twitter.png">
                                   <a href="http://twitter.com/spokanelibrary">Twitter</a>
                                 </td>
                               </tr>
