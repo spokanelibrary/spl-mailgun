@@ -419,6 +419,12 @@
                       <table class="twelve columns">
                         <tr>
                           <td align="center">
+                            <p class="muted">
+                              <small>
+                              You are receiving this email because either you have a Spokane Public Library card, or your email address was registered to receive this newsletter at http://www.spokanelibrary.org. If you do not wish to receive future newsletter mailings from the library please click Manage my Subscription to unsubscribe from this mailing list or update your email address. 
+                              Please be assured that the library does not share email information with any other agencies.
+                              </small>
+                            </p>
                             <center>
                               <p style="text-align:center;">
                                 <a href="http://news.spokanelibrary.org/subscribe/">Subscribe</a>
