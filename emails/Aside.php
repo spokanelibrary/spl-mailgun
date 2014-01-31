@@ -443,7 +443,7 @@
                             <table class="button facebook">
                               <tr>
                                 <td>
-                                  <a href="http://facebook.com/spokanelibrary">Facebook</a>
+                                  <a href="http://facebook.com/spokanelibrary"><img src="http://connect.spokanelibrary.org/wordpress/assets/img/icons/16px/facebook.png"> Facebook</a>
                                 </td>
                               </tr>
                             </table>
