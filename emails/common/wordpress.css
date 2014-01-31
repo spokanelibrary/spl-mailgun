@@ -7,7 +7,7 @@
 
   img { float: none; max-width: 100% !important; }
 
-  small { line-height: 1em; font-size: 20px; }
+  small { line-height: 1em; font-size: 12px; }
 
   /* Reset button hovers */
   .button a:hover,
