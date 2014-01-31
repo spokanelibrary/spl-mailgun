@@ -424,8 +424,6 @@
                           <td class="muted">
                               <small>
                               You are receiving this email because either you have a Spokane Public Library card, or your email address was registered to receive this newsletter at <a href="http://www.spokanelibrary.org">spokanelibrary.org</a>.
-                              If you do not wish to receive future newsletter mailings from the Library you can <a href="http://news.spokanelibrary.org/unsubscribe/?email=%recipient_email%">unsubscribe from the mailing list</a>. 
-                              You can also <a href="http://news.spokanelibrary.org/subscribe/">subscribe with a different email address</a>. 
                               Please be assured that the library does not share email information with any other agencies.
                               </small>
                           </td>
