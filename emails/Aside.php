@@ -388,6 +388,14 @@
                               </tr>
                             </table>
 
+                            <table class="button twitter">
+                              <tr>
+                                <td>
+                                  <a href="http://twitter.com/spokanelibrary">Facebook</a>
+                                </td>
+                              </tr>
+                            </table>
+
                           </td>
                           <td class="expander"></td>
                         </tr>
