@@ -442,7 +442,7 @@
                             <table class="button facebook" style="vertical-align: middle;">
                               <tr>
                                 <td valign="middle" style="vertical-align:middle;">
-                                  <a href="http://facebook.com/spokanelibrary"><img class="center" src="http://news.spokanelibrary.org/hosted/img/icons/16px/facebook.png">&nbsp;Facebook</a>
+                                  <a href="http://facebook.com/spokanelibrary"><img style="width:16px; height:16px;" width="16px" height="16px" src="http://news.spokanelibrary.org/hosted/img/icons/16px/facebook.png">&nbsp;Facebook</a>
                                 </td>
                               </tr>
                             </table>
@@ -460,7 +460,7 @@
                             <table class="button twitter" style="vertical-align: middle;">
                               <tr>
                                 <td valign="middle" style="vertical-align:middle;">
-                                  <a href="http://twitter.com/spokanelibrary"><img class="center" src="http://news.spokanelibrary.org/hosted/img/icons/16px/twitter.png">&nbsp;Twitter</a>
+                                  <a href="http://twitter.com/spokanelibrary"><img style="width:16px; height:16px;" width="16px" height="16px" src="http://news.spokanelibrary.org/hosted/img/icons/16px/twitter.png">&nbsp;Twitter</a>
                                 </td>
                               </tr>
                             </table>
@@ -478,7 +478,7 @@
                             <table class="button spokanelibrary" style="vertical-align: middle;">
                               <tr>
                                 <td valign="middle" style="vertical-align:middle;">
-                                  <a href="http://blog.spokanelibrary.org"><img class="center" src="http://news.spokanelibrary.org/hosted/img/icons/16px/spl-touch-inverse.png">&nbsp;Library Blog</a>
+                                  <a href="http://blog.spokanelibrary.org"><img style="width:16px; height:16px;" width="16px" height="16px" src="http://news.spokanelibrary.org/hosted/img/icons/16px/spl-touch-inverse.png">&nbsp;Library Blog</a>
                                 </td>
                               </tr>
                             </table>
