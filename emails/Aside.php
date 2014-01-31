@@ -429,7 +429,7 @@
 
               
 
-                <table class="row footer">
+                <table class="row footer" cellpadding="0" cellspacing="0" border="0">
                   <tr>
                     <td class="wrapper last" style="padding-bottom:0;">
                             
@@ -448,7 +448,7 @@
                   </tr>
                 </table>
 
-                <table class="row footer">
+                <table class="row footer" cellpadding="0" cellspacing="0" border="0">
                   <tr>
                     <td class="wrapper" style="padding-top:0;">
                             
