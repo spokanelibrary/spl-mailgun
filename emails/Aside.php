@@ -509,12 +509,31 @@
 
                 <table class="row footer" cellpadding="0" cellspacing="0" border="0">
                   <tr>
+                    <td class="wrapper last" style="padding-bottom:0;">
+                            
+                      <table class="twelve columns">
+                        <tr>
+                          <td class="left-text-pad">
+
+                            <h5>Contact us:</h5>
+
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+
+                    </td>
+                  </tr>
+                </table>
+
+                <table class="row footer" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
                     <td class="wrapper" style="padding-top:0; padding-bottom:0;">
                             
                       <table class="four columns">
                         <tr>
                           <td class="left-text-pad">
-                            Phone
+                            Phone: 509.444.5333
                           </td>
                           <td class="expander"></td>
                         </tr>
@@ -526,7 +545,7 @@
                       <table class="four columns">
                         <tr>
                           <td class="">
-                            Email
+                            Email: <a href="mailto:news@spokanelibrary.org">news@spokanelibrary.org</a>
                           </td>          
                           <td class="expander"></td>
                         </tr>
@@ -538,7 +557,7 @@
                       <table class="four columns">
                         <tr>
                           <td class="right-text-pad">
-                            Web
+                            Web: <a href="http://www.spokanelibrary.org">spokanelibrary.org</a>
                           </td>          
                           <td class="expander"></td>
                         </tr>
