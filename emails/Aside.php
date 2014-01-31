@@ -433,7 +433,7 @@
                   <tr>
                     <td class="wrapper last">
                             
-                      <table class="twelve columns">
+                      <table class="twelve columns" style="padding-bottom:0;">
                         <tr>
                           <td class="left-text-pad">
 
