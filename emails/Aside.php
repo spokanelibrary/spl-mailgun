@@ -389,7 +389,7 @@
 
                 <table class="row footer" cellpadding="0" cellspacing="0" border="0">
                   <tr>
-                    <td class="wrapper" style="padding-top:0; padding-bottom:0;">
+                    <td class="wrapper" style="padding-top:0;">
                             
                       <table class="four columns">
                         <tr>
@@ -448,58 +448,7 @@
 
                 
 
-                <table class="row footer" cellpadding="0" cellspacing="0" border="0">
-                  <tr>
-                    <td class="wrapper" style="padding-top:0; padding-bottom:0;">
-                            
-                      <table class="four columns">
-                        <tr>
-                          <td class="left-text-pad" align="center">
-                            <center>
-                              <p style="text-align:center;">
-                                509.444.5333
-                              </p>
-                            </center>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-
-                    </td>
-                    <td class="wrapper" style="padding-top:0">
-
-                      <table class="four columns">
-                        <tr>
-                          <td class="" align="center">
-                            <center>
-                              <p style="text-align:center;">
-                                <a href="mailto:news@spokanelibrary.org">news@spokanelibrary.org</a>
-                              </p>
-                            </center>
-                          </td>          
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-
-                    </td>
-                    <td class="wrapper last" style="padding-top:0">
-
-                      <table class="four columns">
-                        <tr>
-                          <td class="right-text-pad" align="center">
-                            <center>
-                              <p style="text-align:center;">
-                                <a href="http://www.spokanelibrary.org">spokanelibrary.org</a>
-                              </p>
-                            </center>
-                          </td>          
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-
-                    </td>
-                  </tr>
-                </table>
+                
 
 
 
