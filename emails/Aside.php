@@ -442,7 +442,7 @@
                             <table class="button facebook">
                               <tr>
                                 <td>
-                                  <img src="http://connect.spokanelibrary.org/wordpress/assets/img/icons/16px/facebook.png">
+                                  <img src="http://connect.spokanelibrary.org/wordpress/assets/img/icons/24px/facebook.png">
                                   <a href="http://facebook.com/spokanelibrary">Facebook</a>
                                 </td>
                               </tr>
@@ -461,7 +461,7 @@
                             <table class="button twitter">
                               <tr>
                                 <td>
-                                  <img src="http://connect.spokanelibrary.org/wordpress/assets/img/icons/16px/twitter.png">
+                                  <img src="http://connect.spokanelibrary.org/wordpress/assets/img/icons/24px/twitter.png">
                                   <a href="http://twitter.com/spokanelibrary">Twitter</a>
                                 </td>
                               </tr>
@@ -480,6 +480,7 @@
                             <table class="button spokanelibrary">
                               <tr>
                                 <td>
+                                  <img src="http://beta.spokanelibraryfoundation.org/assets/img/spl-touch-inverse.png">
                                   <a href="http://blog.spokanelibrary.org">Library Blog</a>
                                 </td>
                               </tr>
