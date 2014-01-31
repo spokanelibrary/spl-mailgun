@@ -1138,6 +1138,7 @@ class SPL_Mailgun_Newsletter {
     $params = array('from'=>$from
                   , 'to'=>$to
                   , 'subject'=>$subject
+                  , 'o:tag'=>$subject
                     );
     if ( !empty($html) ) {
       $params['html'] = $html;
