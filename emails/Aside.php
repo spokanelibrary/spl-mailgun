@@ -431,9 +431,9 @@
 
                 <table class="row footer">
                   <tr>
-                    <td class="wrapper last">
+                    <td class="wrapper last" style="padding-bottom:0;">
                             
-                      <table class="twelve columns" style="padding-bottom:0;">
+                      <table class="twelve columns">
                         <tr>
                           <td class="left-text-pad">
 
@@ -450,18 +450,7 @@
 
                 <table class="row footer">
                   <tr>
-                    <td class="wrapper">
-
-                      <table class="twelve columns" style="padding-bottom:0;">
-                        <tr>
-                          <td class="left-text-pad">
-
-                            <h5>Connect with us:</h5>
-
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
+                    <td class="wrapper" style="padding-top:0;">
                             
                       <table class="four columns">
                         <tr>
