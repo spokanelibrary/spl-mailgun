@@ -429,7 +429,25 @@
 
 
 
+                <table class="row footer">
+                  <tr>
+                    <td class="wrapper last">
+                            
+                      <table class="twelve columns">
+                        <tr>
+                          <td class="left-text-pad">
 
+                            <h5>Connect With Us:</h5>
+
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+
+                    </td>
+                    
+                  </tr>
+                </table>
 
 
                 <table class="row footer">
