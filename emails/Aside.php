@@ -368,7 +368,7 @@
 
                 <!-- colophon -->
 
-                <table class="row footer" cellpadding="0" cellspacing="0" border="0">
+                <table class="row footer">
                   <tr>
                     <td class="wrapper last" style="padding-bottom:0;">
                             
@@ -376,7 +376,7 @@
                         <tr>
                           <td class="left-text-pad">
 
-                            <h5>Connect with us:</h5>
+                            <h5 style="padding-bottom:0; margin-bottom:0;">Connect with us:</h5>
 
                           </td>
                           <td class="expander"></td>
@@ -387,7 +387,7 @@
                   </tr>
                 </table>
 
-                <table class="row footer" cellpadding="0" cellspacing="0" border="0">
+                <table class="row footer">
                   <tr>
                     <td class="wrapper" style="padding-top:0;">
                             
@@ -447,7 +447,58 @@
                 </table>
 
                 
+                <table class="row footer">
+                  <tr>
+                    <td class="wrapper" style="padding-top:0;">
+                            
+                      <table class="four columns">
+                        <tr>
+                          <td class="" align="center">
+                            <center>
+                              <p style="text-align:center;">
+                                509.444.5333
+                              </p>
+                            </center>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
 
+                    </td>
+                    <td class="wrapper" style="padding-top:0">
+
+                      <table class="four columns">
+                        <tr>
+                          <td class="" align="center">
+                            <center>
+                              <p style="text-align:center;">
+                                <a href="mailto:news@spokanelibrary.org">news@spokanelibrary.org</a>
+                              </p>
+                            </center>
+                          </td>          
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+
+                    </td>
+                    <td class="wrapper last" style="padding-top:0">
+
+                      <table class="four columns">
+                        <tr>
+                          <td class="" align="center">
+                            <center>
+                              <p style="text-align:center;">
+                                <a href="http://www.spokanelibrary.org">spokanelibrary.org</a>
+                              </p>
+                            </center>
+                          </td>          
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+
+                    </td>
+                  </tr>
+                </table>
                 
 
 
