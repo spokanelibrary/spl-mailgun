@@ -368,8 +368,6 @@
                 <?php endif; ?>
 
                 <!-- colophon -->
-                <br>
-                <br>
                 <table class="row footer">
                   <tr>
                     <td class="wrapper">
@@ -391,7 +389,7 @@
                             <table class="button twitter">
                               <tr>
                                 <td>
-                                  <a href="http://twitter.com/spokanelibrary">Facebook</a>
+                                  <a href="http://twitter.com/spokanelibrary">Twitter</a>
                                 </td>
                               </tr>
                             </table>
