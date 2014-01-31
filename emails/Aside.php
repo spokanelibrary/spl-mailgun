@@ -439,10 +439,10 @@
                       <table class="four columns">
                         <tr>
                           <td class="left-text-pad right-text-pad">
-                            <table class="button facebook">
+                            <table class="button facebook" style="vertical-align: middle;">
                               <tr>
                                 <td valign="middle" style="vertical-align:middle;">
-                                  <img src="http://connect.spokanelibrary.org/wordpress/assets/img/icons/24px/facebook.png">
+                                  <img src="http://connect.spokanelibrary.org/wordpress/assets/img/icons/16px/facebook.png" height="14px">
                                   <a href="http://facebook.com/spokanelibrary">Facebook</a>
                                 </td>
                               </tr>
@@ -458,10 +458,10 @@
                       <table class="four columns">
                         <tr>
                           <td class="left-text-pad right-text-pad">
-                            <table class="button twitter">
+                            <table class="button twitter" style="vertical-align: middle;">
                               <tr>
-                                <td>
-                                  <img src="http://connect.spokanelibrary.org/wordpress/assets/img/icons/24px/twitter.png">
+                                <td valign="middle" style="vertical-align:middle;">
+                                  <img src="http://connect.spokanelibrary.org/wordpress/assets/img/icons/16px/twitter.png">
                                   <a href="http://twitter.com/spokanelibrary">Twitter</a>
                                 </td>
                               </tr>
@@ -477,9 +477,9 @@
                       <table class="four columns">
                         <tr>
                           <td class="left-text-pad right-text-pad">
-                            <table class="button spokanelibrary">
+                            <table class="button spokanelibrary" style="vertical-align: middle;">
                               <tr>
-                                <td>
+                                <td valign="middle" style="vertical-align:middle;">
                                   <img src="http://beta.spokanelibraryfoundation.org/assets/img/spl-touch-inverse.png">
                                   <a href="http://blog.spokanelibrary.org">Library Blog</a>
                                 </td>
