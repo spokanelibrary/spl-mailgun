@@ -439,10 +439,10 @@
                       <table class="four columns">
                         <tr>
                           <td class="left-text-pad">
-                            <table class="button facebook" style="vertical-align: middle;">
+                            <table class="button facebook" style="vertical-align: middle; text-align:center;">
                               <tr>
-                                <td valign="middle" style="vertical-align:middle;">
-                                  <a href="http://facebook.com/spokanelibrary"><img style="width:24px; height:24px;" width="24px" height="24px" src="http://news.spokanelibrary.org/hosted/img/icons/16px/facebook.png">&nbsp;Facebook</a>
+                                <td valign="middle" align="center" style="vertical-align:middle; text-align:center;">
+                                  <a href="http://facebook.com/spokanelibrary"><img style="width:16px; height:16px;" width="16px" height="16px" src="http://news.spokanelibrary.org/hosted/img/icons/16px/facebook.png">&nbsp;Facebook</a>
                                 </td>
                               </tr>
                             </table>
