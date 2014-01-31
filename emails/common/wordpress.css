@@ -124,6 +124,15 @@
     background: #0064A0;
     border: 1px solid #005587;
   }
+  table.spokanelibrary td.button a:hover,
+  table.spokanelibrary td.button a:active,
+  table.spokanelibrary td.button a:visited,
+  table.spokanelibrary td.tiny-button a:hover,
+  table.spokanelibrary td.small-button a:hover,
+  table.spokanelibrary td.medium-button a:hover,
+  table.spokanelibrary td.large-button a:hover {
+    color: #f2f2f2 !important;
+  }
 
 
 	.post table.button td,
