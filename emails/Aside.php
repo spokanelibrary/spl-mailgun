@@ -440,7 +440,13 @@
                       <table class="four columns">
                         <tr>
                           <td class="left-text-pad right-text-pad">
-                            <h5>A</h5>
+                            <table class="button facebook">
+                              <tr>
+                                <td>
+                                  <a href="http://facebook.com/spokanelibrary">Facebook</a>
+                                </td>
+                              </tr>
+                            </table>
                           </td>
                           <td class="expander"></td>
                         </tr>
@@ -452,7 +458,13 @@
                       <table class="four columns">
                         <tr>
                           <td class="left-text-pad right-text-pad">
-                            <h5>B</h5>
+                            <table class="button twitter">
+                              <tr>
+                                <td>
+                                  <a href="http://twitter.com/spokanelibrary">Twitter</a>
+                                </td>
+                              </tr>
+                            </table>
                           </td>          
                           <td class="expander"></td>
                         </tr>
@@ -464,7 +476,13 @@
                       <table class="four columns">
                         <tr>
                           <td class="left-text-pad right-text-pad">
-                            <h5>B</h5>
+                            <table class="button">
+                              <tr>
+                                <td>
+                                  <a href="http://blog.spokanelibrary.org">Twitter</a>
+                                </td>
+                              </tr>
+                            </table>
                           </td>          
                           <td class="expander"></td>
                         </tr>
