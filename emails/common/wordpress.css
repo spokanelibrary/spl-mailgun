@@ -120,7 +120,12 @@
   .sidebar ul {font-size: 12px;}
 
 	/* Buttons */
-  table.spokanelibrary td,
+  table.spokanelibrary td {
+    background: #0064A0;
+    border: 1px solid #005587;
+  }
+
+
 	.post table.button td,
   .post table.tiny-button td,
   .post table.small-button td,
