@@ -420,6 +420,60 @@
                   </tr>
                 </table>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <table class="row footer">
+                  <tr>
+                    <td class="wrapper">
+                            
+                      <table class="six columns">
+                        <tr>
+                          <td class="left-text-pad right-text-pad">
+                            <h5>A</h5>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+
+                    </td>
+                    <td class="wrapper last">
+
+                      <table class="six columns">
+                        <tr>
+                          <td class="last right-text-pad">
+                            <h5>B</h5>
+                          </td>          
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+
+                    </td>
+                  </tr>
+                </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <!-- legal -->
                 <table class="row">
                   <tr>
