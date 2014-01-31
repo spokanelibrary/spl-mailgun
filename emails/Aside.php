@@ -434,11 +434,24 @@
 
                 <table class="row footer">
                   <tr>
+                    <td class="wrapper last">
+                      <table class="twelve columns">
+                        <tr>
+                          <td class="left-text-pad">
+                            <h5>Connect with us</h5>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <tr>
                     <td class="wrapper">
                             
                       <table class="four columns">
                         <tr>
-                          <td class="">
+                          <td class="left-text-pad">
                             <table class="button facebook" style="vertical-align: middle;">
                               <tr>
                                 <td valign="middle" align="center" style="vertical-align:middle;">
@@ -456,7 +469,7 @@
 
                       <table class="four columns">
                         <tr>
-                          <td class="">
+                          <td class="text-pad">
                             <table class="button twitter" style="vertical-align: middle;">
                               <tr>
                                 <td valign="middle" style="vertical-align:middle;">
@@ -474,7 +487,7 @@
 
                       <table class="four columns">
                         <tr>
-                          <td class="">
+                          <td class="right-text-pad">
                             <table class="button spokanelibrary" style="vertical-align: middle;">
                               <tr>
                                 <td valign="middle" style="vertical-align:middle;">
