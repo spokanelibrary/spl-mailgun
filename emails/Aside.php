@@ -450,7 +450,7 @@
 
                 <table class="row footer" cellpadding="0" cellspacing="0" border="0">
                   <tr>
-                    <td class="wrapper" style="padding-top:0">
+                    <td class="wrapper" style="padding-top:0; padding-bottom:0;">
                             
                       <table class="four columns">
                         <tr>
@@ -472,7 +472,7 @@
 
                       <table class="four columns">
                         <tr>
-                          <td class="text-pad">
+                          <td class="">
                             <table class="button twitter" style="vertical-align: middle;">
                               <tr>
                                 <td valign="middle" style="vertical-align:middle;">
