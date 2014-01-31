@@ -441,7 +441,7 @@
                           <td class="left-text-pad right-text-pad">
                             <table class="button facebook">
                               <tr>
-                                <td>
+                                <td valign="middle" style="vertical-align:middle;">
                                   <img src="http://connect.spokanelibrary.org/wordpress/assets/img/icons/24px/facebook.png">
                                   <a href="http://facebook.com/spokanelibrary">Facebook</a>
                                 </td>
