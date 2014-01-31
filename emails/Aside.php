@@ -377,14 +377,17 @@
                       <table class="six columns">
                         <tr>
                           <td class="left-text-pad">
-                            
-                            <h5>Contact Us:</h5>
-                            <p>
-                              Phone: 509.444.5333
-                              <br>
-                              Email: <a href="mailto:news@spokanelibrary.org">news@spokanelibrary.org</a>
-                            </p>
-                            
+
+                            <h5>Connect With Us:</h5>
+
+                            <table class="button facebook">
+                              <tr>
+                                <td>
+                                  <a href="http://facebook.com/spokanelibrary">Facebook</a>
+                                </td>
+                              </tr>
+                            </table>
+
                           </td>
                           <td class="expander"></td>
                         </tr>
@@ -396,17 +399,12 @@
                       <table class="six columns">
                         <tr>
                           <td class="last right-text-pad">
-                            
-                            <h5>Connect With Us:</h5>
-
-                            <table class="button facebook">
-                              <tr>
-                                <td>
-                                  <a href="http://facebook.com/spokanelibrary">Facebook</a>
-                                </td>
-                              </tr>
-                            </table>
-
+                            <h5>Contact Us:</h5>
+                            <p>
+                              Phone: 509.444.5333
+                              <br>
+                              Email: <a href="mailto:news@spokanelibrary.org">news@spokanelibrary.org</a>
+                            </p>
                           </td>          
                           <td class="expander"></td>
                         </tr>
