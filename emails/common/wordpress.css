@@ -124,13 +124,25 @@
     background: #0064A0;
     border: 1px solid #005587;
   }
+  table.spokanelibrary:hover td {
+    background: #005587 !important;
+  }
+
   table.spokanelibrary td.button a:hover,
   table.spokanelibrary td.button a:active,
   table.spokanelibrary td.button a:visited,
   table.spokanelibrary td.tiny-button a:hover,
+  table.spokanelibrary td.tiny-button a:active,
+  table.spokanelibrary td.tiny-button a:visited,
   table.spokanelibrary td.small-button a:hover,
+  table.spokanelibrary td.small-button a:active,
+  table.spokanelibrary td.small-button a:visited,
   table.spokanelibrary td.medium-button a:hover,
-  table.spokanelibrary td.large-button a:hover {
+  table.spokanelibrary td.medium-button a:active,
+  table.spokanelibrary td.medium-button a:visited,
+  table.spokanelibrary td.large-button a:hover,
+  table.spokanelibrary td.large-button a:active,
+  table.spokanelibrary td.large-button a:visited {
     color: #f2f2f2 !important;
   }
 
