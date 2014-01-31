@@ -507,7 +507,46 @@
                   </tr>
                 </table>
 
+                <table class="row footer" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td class="wrapper" style="padding-top:0; padding-bottom:0;">
+                            
+                      <table class="four columns">
+                        <tr>
+                          <td class="left-text-pad">
+                            Phone
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
 
+                    </td>
+                    <td class="wrapper" style="padding-top:0">
+
+                      <table class="four columns">
+                        <tr>
+                          <td class="">
+                            Email
+                          </td>          
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+
+                    </td>
+                    <td class="wrapper last" style="padding-top:0">
+
+                      <table class="four columns">
+                        <tr>
+                          <td class="right-text-pad">
+                            Web
+                          </td>          
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+
+                    </td>
+                  </tr>
+                </table>
 
 
 
