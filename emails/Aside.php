@@ -446,24 +446,7 @@
                   </tr>
                 </table>
 
-                <table class="row footer" cellpadding="0" cellspacing="0" border="0">
-                  <tr>
-                    <td class="wrapper last" style="padding-bottom:0;">
-                            
-                      <table class="twelve columns">
-                        <tr>
-                          <td class="left-text-pad">
-
-                            <h5>Contact us:</h5>
-
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-
-                    </td>
-                  </tr>
-                </table>
+                
 
                 <table class="row footer" cellpadding="0" cellspacing="0" border="0">
                   <tr>
