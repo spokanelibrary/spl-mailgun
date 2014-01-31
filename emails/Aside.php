@@ -533,7 +533,7 @@
                       <table class="four columns">
                         <tr>
                           <td class="left-text-pad">
-                            Phone: 509.444.5333
+                            509.444.5333
                           </td>
                           <td class="expander"></td>
                         </tr>
@@ -545,7 +545,7 @@
                       <table class="four columns">
                         <tr>
                           <td class="">
-                            Email: <a href="mailto:news@spokanelibrary.org">news@spokanelibrary.org</a>
+                            <a href="mailto:news@spokanelibrary.org">news@spokanelibrary.org</a>
                           </td>          
                           <td class="expander"></td>
                         </tr>
@@ -557,7 +557,7 @@
                       <table class="four columns">
                         <tr>
                           <td class="right-text-pad">
-                            Web: <a href="http://www.spokanelibrary.org">spokanelibrary.org</a>
+                            <a href="http://www.spokanelibrary.org">spokanelibrary.org</a>
                           </td>          
                           <td class="expander"></td>
                         </tr>
