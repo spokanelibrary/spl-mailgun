@@ -442,8 +442,7 @@
                             <table class="button facebook" style="vertical-align: middle;">
                               <tr>
                                 <td valign="middle" style="vertical-align:middle;">
-                                  <img src="http://connect.spokanelibrary.org/wordpress/assets/img/icons/16px/facebook.png" height="14px">
-                                  <a href="http://facebook.com/spokanelibrary">Facebook</a>
+                                  <a href="http://facebook.com/spokanelibrary"><img src="http://connect.spokanelibrary.org/wordpress/assets/img/icons/16px/facebook.png">&nbsp;Facebook</a>
                                 </td>
                               </tr>
                             </table>
@@ -461,8 +460,7 @@
                             <table class="button twitter" style="vertical-align: middle;">
                               <tr>
                                 <td valign="middle" style="vertical-align:middle;">
-                                  <img src="http://connect.spokanelibrary.org/wordpress/assets/img/icons/16px/twitter.png">
-                                  <a href="http://twitter.com/spokanelibrary">Twitter</a>
+                                  <a href="http://twitter.com/spokanelibrary"><img src="http://connect.spokanelibrary.org/wordpress/assets/img/icons/16px/twitter.png">&nbsp;Twitter</a>
                                 </td>
                               </tr>
                             </table>
@@ -480,8 +478,7 @@
                             <table class="button spokanelibrary" style="vertical-align: middle;">
                               <tr>
                                 <td valign="middle" style="vertical-align:middle;">
-                                  <img src="http://beta.spokanelibraryfoundation.org/assets/img/spl-touch-inverse.png">
-                                  <a href="http://blog.spokanelibrary.org">Library Blog</a>
+                                  <a href="http://blog.spokanelibrary.org"><img src="http://beta.spokanelibraryfoundation.org/assets/img/spl-touch-inverse.png">&nbsp;Library Blog</a>
                                 </td>
                               </tr>
                             </table>
