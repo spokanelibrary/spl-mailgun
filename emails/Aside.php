@@ -400,8 +400,11 @@
                         <tr>
                           <td class="last right-text-pad">
                             <h5>Contact Us:</h5>
-                            <p>Phone: 509.444.5333</p>
-                            <p>Email: <a href="mailto:news@spokanelibrary.org">news@spokanelibrary.org</a></p>
+                            <p>
+                              Phone: 509.444.5333
+                              <br>
+                              Email: <a href="mailto:news@spokanelibrary.org">news@spokanelibrary.org</a>
+                            </p>
                           </td>          
                           <td class="expander"></td>
                         </tr>
