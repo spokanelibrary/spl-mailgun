@@ -442,7 +442,7 @@
                             <table class="button facebook" style="vertical-align: middle;">
                               <tr>
                                 <td valign="middle" style="vertical-align:middle;">
-                                  <a href="http://facebook.com/spokanelibrary"><img style="float:none;" src="http://connect.spokanelibrary.org/wordpress/assets/img/icons/16px/facebook.png">&nbsp;Facebook</a>
+                                  <a href="http://facebook.com/spokanelibrary"><img style="float:none; margin:0;" src="http://connect.spokanelibrary.org/wordpress/assets/img/icons/16px/facebook.png">&nbsp;Facebook</a>
                                 </td>
                               </tr>
                             </table>
