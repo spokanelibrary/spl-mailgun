@@ -450,7 +450,7 @@
 
                 <table class="row footer">
                   <tr>
-                    <td class="wrapper">
+                    <td class="wrapper" style="padding-top:0;">
                             
                       <table class="four columns">
                         <tr>
