@@ -455,11 +455,11 @@
                       <table class="four columns">
                         <tr>
                           <td class="left-text-pad" align="center">
-                            <p style="text-align:center;">
-                              <center>
-                              509.444.5333
-                              </center>
-                            </p>
+                            <center>
+                              <p style="text-align:center;">
+                                509.444.5333
+                              </p>
+                            </center>
                           </td>
                           <td class="expander"></td>
                         </tr>
@@ -471,11 +471,11 @@
                       <table class="four columns">
                         <tr>
                           <td class="" align="center">
-                            <p style="text-align:center;">
-                              <center>
-                              <a href="mailto:news@spokanelibrary.org">news@spokanelibrary.org</a>
-                              </center>
-                            </p>
+                            <center>
+                              <p style="text-align:center;">
+                                <a href="mailto:news@spokanelibrary.org">news@spokanelibrary.org</a>
+                              </p>
+                            </center>
                           </td>          
                           <td class="expander"></td>
                         </tr>
@@ -487,11 +487,11 @@
                       <table class="four columns">
                         <tr>
                           <td class="right-text-pad" align="center">
-                            <p style="text-align:center;">
-                              <center>
-                              <a href="http://www.spokanelibrary.org">spokanelibrary.org</a>
-                              </center>
-                            </p>
+                            <center>
+                              <p style="text-align:center;">
+                                <a href="http://www.spokanelibrary.org">spokanelibrary.org</a>
+                              </p>
+                            </center>
                           </td>          
                           <td class="expander"></td>
                         </tr>
