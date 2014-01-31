@@ -438,7 +438,7 @@
                             
                       <table class="four columns">
                         <tr>
-                          <td class="left-text-pad right-text-pad">
+                          <td class="left-text-pad">
                             <table class="button facebook" style="vertical-align: middle;">
                               <tr>
                                 <td valign="middle" style="vertical-align:middle;">
@@ -474,7 +474,7 @@
 
                       <table class="four columns">
                         <tr>
-                          <td class="left-text-pad right-text-pad">
+                          <td class="right-text-pad">
                             <table class="button spokanelibrary" style="vertical-align: middle;">
                               <tr>
                                 <td valign="middle" style="vertical-align:middle;">
