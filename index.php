@@ -1125,7 +1125,7 @@ class SPL_Mailgun_Newsletter {
       }
       
       if ( !is_null($list) ) {
-        $response .= PHP_EOL.$this->getMailgunMailingList($list);
+        $response .= PHP_EOL.$this->getMailgunMailingListCount($list);
       }
     
       wp_mail( $this->getNewsletterSendReceiptTo(), 'Newsletter: Mailgun API Response', $response );
@@ -1227,7 +1227,7 @@ class SPL_Mailgun_Newsletter {
     $response = json_decode($curl->response);
 
     return print_r($response, true);
-  } // getMailgunMailingList()
+  } // getMailgunMailingListCount()
 
   function getMailgunMailingList($address) {
     $api = $this->getMailgunApi().'lists'.'/'.$address;
