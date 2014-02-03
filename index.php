@@ -1226,7 +1226,7 @@ class SPL_Mailgun_Newsletter {
     $curl = $this->curlProxy($api, $params, 'get', $auth);
     $response = json_decode($curl->response);
 
-    return print_r($response['total_count'], true);
+    return print_r($response->total_count, true);
   } // getMailgunMailingListCount()
 
   function getMailgunMailingList($address) {
