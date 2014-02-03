@@ -411,7 +411,7 @@
 
                       <table class="four columns">
                         <tr>
-                          <td class="">
+                          <td class="text-pad">
                             <table class="button twitter" style="vertical-align: middle;">
                               <tr>
                                 <td valign="middle" style="vertical-align:middle;">
