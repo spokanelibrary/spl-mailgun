@@ -367,6 +367,9 @@
                 <?php endif; ?>
 
                 <!-- colophon -->
+                <table>
+                  <tr>
+                    <td>
 
                 <table class="row footer">
                   <tr>
@@ -386,6 +389,11 @@
                     </td>
                   </tr>
                 </table>
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
 
                 <table class="row footer">
                   <tr>
@@ -446,6 +454,10 @@
                   </tr>
                 </table>
 
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
                 
                 <table class="row footer">
                   <tr>
@@ -499,8 +511,11 @@
                     </td>
                   </tr>
                 </table>
-                
+                  
+                    </td>
+                  </tr>
 
+                </table>
 
 
 
