@@ -1213,7 +1213,7 @@ class SPL_Mailgun_Newsletter {
     //return $this->curlProxy($api, $params, 'get', $auth);
   } // getMailgunAddressValidation()
 
-  function getMailgunMailingList($address) {
+  function getMailgunMailingListCount($address) {
     $api = $this->getMailgunApi().'lists'.'/'.$address.'/members';
     $auth = $this->getMailgunPrivateAuth();
     
@@ -1221,12 +1221,25 @@ class SPL_Mailgun_Newsletter {
                   , 'limit'=>1
                   );
     
+    //$params = array();
+
+    $curl = $this->curlProxy($api, $params, 'get', $auth);
+    return $curl->response;
+    //return $this->curlProxy($api, $params, 'get', $auth);
+  } // getMailgunMailingList()
+
+  function getMailgunMailingList($address) {
+    $api = $this->getMailgunApi().'lists'.'/'.$address;
+    $auth = $this->getMailgunPrivateAuth();
+    
     $params = array();
 
     $curl = $this->curlProxy($api, $params, 'get', $auth);
     return $curl->response;
     //return $this->curlProxy($api, $params, 'get', $auth);
   } // getMailgunMailingList()
+
+
 
   function getMailgunMailingLists() {
     $api = $this->getMailgunApi().'lists';
