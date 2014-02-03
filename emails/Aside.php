@@ -367,157 +367,156 @@
                 <?php endif; ?>
 
                 <!-- colophon -->
+
+                <!-- wrap the colophon tables to avoid seperation -->
                 <table>
                   <tr>
                     <td>
 
-                <table class="row footer">
-                  <tr>
-                    <td class="wrapper last" style="padding-bottom:0;">
-                            
-                      <table class="twelve columns">
+                      <table class="row footer">
                         <tr>
-                          <td class="left-text-pad">
+                          <td class="wrapper last" style="padding-bottom:0;">
+                                  
+                            <table class="twelve columns">
+                              <tr>
+                                <td class="left-text-pad">
 
-                            <h5 style="padding-bottom:0; margin-bottom:0;">Connect with us:</h5>
+                                  <h5 style="padding-bottom:0; margin-bottom:0;">Connect with us:</h5>
+
+                                </td>
+                                <td class="expander"></td>
+                              </tr>
+                            </table>
 
                           </td>
-                          <td class="expander"></td>
                         </tr>
                       </table>
-
-                    </td>
-                  </tr>
-                </table>
 
                     </td>
                   </tr>
                   <tr>
                     <td>
 
-                <table class="row footer">
-                  <tr>
-                    <td class="wrapper" style="padding-top:0;">
-                            
-                      <table class="four columns">
+                      <table class="row footer">
                         <tr>
-                          <td class="left-text-pad">
-                            <table class="button facebook" style="vertical-align: middle;">
+                          <td class="wrapper" style="padding-top:0;">
+                                  
+                            <table class="four columns">
                               <tr>
-                                <td valign="middle" align="center" style="vertical-align:middle;">
-                                  <a href="http://facebook.com/spokanelibrary"><img style="clear:none; display:inline; width:16px; height:16px;" width="16px" height="16px" src="http://news.spokanelibrary.org/hosted/img/icons/16px/facebook.png">&nbsp;Facebook</a>
+                                <td class="left-text-pad">
+                                  <table class="button facebook" style="vertical-align: middle;">
+                                    <tr>
+                                      <td valign="middle" align="center" style="vertical-align:middle;">
+                                        <a href="http://facebook.com/spokanelibrary"><img style="clear:none; display:inline; width:16px; height:16px;" width="16px" height="16px" src="http://news.spokanelibrary.org/hosted/img/icons/16px/facebook.png">&nbsp;Facebook</a>
+                                      </td>
+                                    </tr>
+                                  </table>
                                 </td>
+                                <td class="expander"></td>
                               </tr>
                             </table>
+
                           </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
+                          <td class="wrapper" style="padding-top:0">
 
-                    </td>
-                    <td class="wrapper" style="padding-top:0">
-
-                      <table class="four columns">
-                        <tr>
-                          <td class="text-pad">
-                            <table class="button twitter" style="vertical-align: middle;">
+                            <table class="four columns">
                               <tr>
-                                <td valign="middle" style="vertical-align:middle;">
-                                  <a href="http://twitter.com/spokanelibrary"><img style="clear:none; display:inline; width:16px; height:16px;" width="16px" height="16px" src="http://news.spokanelibrary.org/hosted/img/icons/16px/twitter.png">&nbsp;Twitter</a>
-                                </td>
+                                <td class="text-pad">
+                                  <table class="button twitter" style="vertical-align: middle;">
+                                    <tr>
+                                      <td valign="middle" style="vertical-align:middle;">
+                                        <a href="http://twitter.com/spokanelibrary"><img style="clear:none; display:inline; width:16px; height:16px;" width="16px" height="16px" src="http://news.spokanelibrary.org/hosted/img/icons/16px/twitter.png">&nbsp;Twitter</a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>          
+                                <td class="expander"></td>
                               </tr>
                             </table>
-                          </td>          
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
 
-                    </td>
-                    <td class="wrapper last" style="padding-top:0">
+                          </td>
+                          <td class="wrapper last" style="padding-top:0">
 
-                      <table class="four columns">
-                        <tr>
-                          <td class="right-text-pad">
-                            <table class="button spokanelibrary" style="vertical-align: middle;">
+                            <table class="four columns">
                               <tr>
-                                <td valign="middle" style="vertical-align:middle;">
-                                  <a href="http://blog.spokanelibrary.org"><img style="clear:none; display:inline; width:16px; height:16px;" width="16px" height="16px" src="http://news.spokanelibrary.org/hosted/img/icons/16px/spl-touch-inverse.png">&nbsp;Library Blog</a>
-                                </td>
+                                <td class="right-text-pad">
+                                  <table class="button spokanelibrary" style="vertical-align: middle;">
+                                    <tr>
+                                      <td valign="middle" style="vertical-align:middle;">
+                                        <a href="http://blog.spokanelibrary.org"><img style="clear:none; display:inline; width:16px; height:16px;" width="16px" height="16px" src="http://news.spokanelibrary.org/hosted/img/icons/16px/spl-touch-inverse.png">&nbsp;Library Blog</a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>          
+                                <td class="expander"></td>
                               </tr>
                             </table>
-                          </td>          
-                          <td class="expander"></td>
+
+                          </td>
                         </tr>
                       </table>
-
-                    </td>
-                  </tr>
-                </table>
 
                     </td>
                   </tr>
                   <tr>
                     <td>
                 
-                <table class="row footer">
-                  <tr>
-                    <td class="wrapper" style="padding-top:0;">
-                            
-                      <table class="four columns">
+                      <table class="row footer">
                         <tr>
-                          <td class="" align="center">
-                            <center>
-                              <p style="text-align:center;">
-                                509.444.5333
-                              </p>
-                            </center>
+                          <td class="wrapper" style="padding-top:0;">
+                                  
+                            <table class="four columns">
+                              <tr>
+                                <td class="" align="center">
+                                  <center>
+                                    <p style="text-align:center;">
+                                      509.444.5333
+                                    </p>
+                                  </center>
+                                </td>
+                                <td class="expander"></td>
+                              </tr>
+                            </table>
+
                           </td>
-                          <td class="expander"></td>
+                          <td class="wrapper" style="padding-top:0">
+
+                            <table class="four columns">
+                              <tr>
+                                <td class="" align="center">
+                                  <center>
+                                    <p style="text-align:center;">
+                                      <a href="mailto:news@spokanelibrary.org">news@spokanelibrary.org</a>
+                                    </p>
+                                  </center>
+                                </td>          
+                                <td class="expander"></td>
+                              </tr>
+                            </table>
+
+                          </td>
+                          <td class="wrapper last" style="padding-top:0">
+
+                            <table class="four columns">
+                              <tr>
+                                <td class="" align="center">
+                                  <center>
+                                    <p style="text-align:center;">
+                                      <a href="http://www.spokanelibrary.org">spokanelibrary.org</a>
+                                    </p>
+                                  </center>
+                                </td>          
+                                <td class="expander"></td>
+                              </tr>
+                            </table>
+
+                          </td>
                         </tr>
                       </table>
-
-                    </td>
-                    <td class="wrapper" style="padding-top:0">
-
-                      <table class="four columns">
-                        <tr>
-                          <td class="" align="center">
-                            <center>
-                              <p style="text-align:center;">
-                                <a href="mailto:news@spokanelibrary.org">news@spokanelibrary.org</a>
-                              </p>
-                            </center>
-                          </td>          
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-
-                    </td>
-                    <td class="wrapper last" style="padding-top:0">
-
-                      <table class="four columns">
-                        <tr>
-                          <td class="" align="center">
-                            <center>
-                              <p style="text-align:center;">
-                                <a href="http://www.spokanelibrary.org">spokanelibrary.org</a>
-                              </p>
-                            </center>
-                          </td>          
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-
-                    </td>
-                  </tr>
-                </table>
                   
                     </td>
                   </tr>
-
                 </table>
-
-
 
 
                 <!-- legal -->
