@@ -1126,10 +1126,10 @@ class SPL_Mailgun_Newsletter {
       
       if ( !is_null($list) ) {
         $count = $this->getMailgunMailingListCount($list);
-        $detail = json_decode($this->getMailgunMailingList($list));
+        $detail = $this->getMailgunMailingList($list);
 
         $response .= PHP_EOL.'Active Subscribers: '.$count;
-        $response .= PHP_EOL.'List Name: '.$detail->description;
+        $response .= PHP_EOL.$detail;
       }
     
       wp_mail( $this->getNewsletterSendReceiptTo(), 'Newsletter: Mailgun API Response', $response );
