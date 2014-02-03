@@ -1214,7 +1214,7 @@ class SPL_Mailgun_Newsletter {
   } // getMailgunAddressValidation()
 
   function getMailgunMailingList($address) {
-    $api = $this->getMailgunApi().'lists'.'/'.$address.'members';
+    $api = $this->getMailgunApi().'lists'.'/'.$address.'/members';
     $auth = $this->getMailgunPrivateAuth();
     
     $params = array('subscribed'=>'yes'
