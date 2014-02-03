@@ -1224,8 +1224,9 @@ class SPL_Mailgun_Newsletter {
     //$params = array();
 
     $curl = $this->curlProxy($api, $params, 'get', $auth);
-    return $curl->response;
-    //return $this->curlProxy($api, $params, 'get', $auth);
+    $response = json_decode($curl->response);
+
+    return print_r($response, true);
   } // getMailgunMailingList()
 
   function getMailgunMailingList($address) {
