@@ -995,7 +995,7 @@ class SPL_Mailgun_Newsletter {
     return $post;
   }
 
-  function getNewsletterHTMLEmail($id, $template) {
+  function getNewsletterHTMLEmail($id, $template, $list) {
     //return 'This is newsletter # '.$id;
     if ( !empty($_POST['spl-mailgun-newsletter-subject']) ) {
       $prepend = wpautop($_POST['spl-mailgun-newsletter-prepend']);
@@ -1097,7 +1097,7 @@ class SPL_Mailgun_Newsletter {
   function processNewsletter($id, $subject, $list, $address, $template, $campaign=null) {
 
     $from = $this->getMailgunFrom();
-    $html = $this->getNewsletterHTMLEmail($id, $template);
+    $html = $this->getNewsletterHTMLEmail($id, $template, $list);
 
     if ( !empty($address) ) {
       $response = $this->sendMailgunMessage($from, $address, $subject, $html, null, $campaign);
@@ -1143,8 +1143,7 @@ class SPL_Mailgun_Newsletter {
                   , 'to'=>$to
                   , 'subject'=>$subject
                   , 'o:tag'=>$subject
-                  , 'v:my-data' => '{"my_message_id":123}'
-                  , 'h:X-Mailgun-Header:%recipient_email%'
+                  //, 'v:my-data' => '{"my_message_id":123}'
                     );
     if ( !empty($html) ) {
       $params['html'] = $html;

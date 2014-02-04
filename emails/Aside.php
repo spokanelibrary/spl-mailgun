@@ -548,6 +548,7 @@
                                 %my-data.my_message_id%
                                 %list_address%
                                 %list.address%
+                                <?php echo $list; ?>
                               </p>
                             </center>
                           </td>
