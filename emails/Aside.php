@@ -548,6 +548,8 @@
                                 %recipient.my_message_ids%
                                 %my_message_id%
                                 %spl.my_message_id%
+                                %spl%
+                                %test%
 
                               </p>
                             </center>
