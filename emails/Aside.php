@@ -545,13 +545,10 @@
                               </p>
                               <p>
                                 <a href="%mailing_list_unsubscribe_url%">auto unsubscribe</a>
-                                %recipient.my_message_id%
+                                %recipient.my_message_ids%
                                 %my_message_id%
-                                %my-custom-data.my_message_id%
-                                %my-custom-data%
-                                %recipient.test%
-                                %to%
-                                %message.to%
+                                %spl.my_message_id%
+
                               </p>
                             </center>
                           </td>
