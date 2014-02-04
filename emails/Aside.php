@@ -549,7 +549,9 @@
                                 %my_message_id%
                                 %my-custom-data.my_message_id%
                                 %my-custom-data%
-                                %test%
+                                %recipient.test%
+                                %to%
+                                %message.to%
                               </p>
                             </center>
                           </td>
