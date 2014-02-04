@@ -1,6 +1,6 @@
 <form class="form-horizontal spl-mailgun" method="post" role="form">
   <input type="hidden" name="spl-subscribe[vars][add_via]" value="Website" />
-
+  <input type="hidden" id="unsubscribe-list" name="spl-subscribe[list]" value="<?php echo $_REQUEST['list']; ?>">
   <fieldset>
     <legend class="text-muted">Subscribe</legend>
     

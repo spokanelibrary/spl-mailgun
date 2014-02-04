@@ -1,4 +1,5 @@
 <form class="form-horizontal spl-mailgun" method="post" role="form">
+  <input type="hidden" id="unsubscribe-list" name="spl-unsubscribe[list]" value="<?php echo $_REQUEST['list']; ?>">
   <fieldset>
     <legend class="text-muted">Unsubscribe</legend>
     
@@ -10,9 +11,6 @@
       </label>
       <div class="col-sm-8">
         <input type="email" class="form-control required" id="unsubscribe-email" name="spl-unsubscribe[email]" placeholder="Email" value="<?php echo $_REQUEST['email']; ?>">
-      </div>
-      <div class="col-sm-8">
-        <input type="email" class="form-control" id="unsubscribe-list" name="spl-unsubscribe[list]" placeholder="List" value="<?php echo $_REQUEST['list']; ?>">
       </div>
     </div>
     <!--

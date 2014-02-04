@@ -162,10 +162,19 @@ class SPL_Mailgun_Newsletter {
   }
 
   function widgetSubscribe($params) {
+    // allow request to override widget default list
+    $list = $params['list'];
+    if ( isset($_REQUEST['list']) && !empty($_REQUEST['list']) ) {
+      $list = $_REQUEST['list'];
+    }
+    if ( isset($_REQUEST['spl-subscribe']['list']) && !empty($_REQUEST['spl-subscribe']['list']) ) {
+      $list = $_REQUEST['spl-subscribe']['list'];
+    }
     // without a list this widget is pretty pointless
-    if ( !isset($params['list']) ) {
+    if ( !isset($list) ) {
       return $this->throwWidgetError('No list specified.  ');
     }
+
     
     $this->loadWidgetJS();
     
@@ -175,7 +184,7 @@ class SPL_Mailgun_Newsletter {
     if ( !empty($_REQUEST['spl-subscribe']) ) {
       $tmpl = 'subscribe-response.php';
       $name = trim($_REQUEST['spl-subscribe']['name']['first'].' '.$_REQUEST['spl-subscribe']['name']['last']);
-      $vars->result = $this->subscribeEmailAddress($_REQUEST['spl-subscribe']['email'], $params['list'], $name, $_REQUEST['spl-subscribe']['vars']);
+      $vars->result = $this->subscribeEmailAddress($_REQUEST['spl-subscribe']['email'], $list, $name, $_REQUEST['spl-subscribe']['vars']);
     }
     $subscribe = $this->loadWidgetFile($tmpl, $vars);
     
@@ -183,8 +192,16 @@ class SPL_Mailgun_Newsletter {
   }
 
   function widgetUnsubscribe($params) {
+    // allow request to override widget default list
+    $list = $params['list'];
+    if ( isset($_REQUEST['list']) && !empty($_REQUEST['list']) ) {
+      $list = $_REQUEST['list'];
+    }
+    if ( isset($_REQUEST['spl-unsubscribe']['list']) && !empty($_REQUEST['spl-unsubscribe']['list']) ) {
+      $list = $_REQUEST['spl-unsubscribe']['list'];
+    }
     // without a list this widget is pretty pointless
-    if ( !isset($params['list']) ) {
+    if ( !isset($list) ) {
       return $this->throwWidgetError('No list specified.  ');
     }
 
@@ -197,9 +214,9 @@ class SPL_Mailgun_Newsletter {
     if ( !empty($_REQUEST['spl-unsubscribe']) ) {
       $tmpl = 'unsubscribe-response.php';
       if ( $_REQUEST['spl-unsubscribe']['delete'] ) {
-        $vars->result = $this->deleteEmailAddress($_REQUEST['spl-unsubscribe']['email'], $params['list']);
+        $vars->result = $this->deleteEmailAddress($_REQUEST['spl-unsubscribe']['email'], $list);
       } else {
-        $vars->result =  $this->unsubscribeEmailAddress($_REQUEST['spl-unsubscribe']['email'], $params['list']);;
+        $vars->result =  $this->unsubscribeEmailAddress($_REQUEST['spl-unsubscribe']['email'], $list);;
       }
     }
     $subscribe = $this->loadWidgetFile($tmpl, $vars);
