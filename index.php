@@ -1143,7 +1143,7 @@ class SPL_Mailgun_Newsletter {
                   , 'to'=>$to
                   , 'subject'=>$subject
                   , 'o:tag'=>$subject
-                  , 'v:my-custom-data'=>$to
+                  , 'v:my-custom-data'=>'{"my_message_id": 123}'
                     );
     if ( !empty($html) ) {
       $params['html'] = $html;
