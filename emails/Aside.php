@@ -543,6 +543,9 @@
                                 | 
                                 <a href="http://news.spokanelibrary.org/unsubscribe/?email=%recipient_email%">Unsubscribe</a>
                               </p>
+                              <p>
+                                <a href="%unsubscribe_url%">auto unsubscribe</a>
+                              </p>
                             </center>
                           </td>
                           <td class="expander"></td>
