@@ -545,6 +545,7 @@
                               </p>
                               <p>
                                 <a href="%mailing_list_unsubscribe_url%">auto unsubscribe</a>
+                                %spl_mailgun_list_address%
                               </p>
                             </center>
                           </td>
