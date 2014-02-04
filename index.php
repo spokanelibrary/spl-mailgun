@@ -1143,7 +1143,7 @@ class SPL_Mailgun_Newsletter {
                   , 'to'=>$to
                   , 'subject'=>$subject
                   , 'o:tag'=>$subject
-                  , 'v:spl_mailgun_list_address'=>$to
+                  , 'v:my-custom-data'=>'"{"spl_mailgun_list_address":"'.$to.'"}"'
                     );
     if ( !empty($html) ) {
       $params['html'] = $html;
