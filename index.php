@@ -1144,7 +1144,7 @@ class SPL_Mailgun_Newsletter {
                   , 'subject'=>$subject
                   , 'o:tag'=>$subject
                   , 'v:my-data' => '{"my_message_id":123}'
-                  , 'h:X-Mailgun-Header:%recipient.id%'
+                  , 'h:X-Mailgun-Header:%recipient_email%'
                     );
     if ( !empty($html) ) {
       $params['html'] = $html;
