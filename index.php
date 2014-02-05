@@ -217,7 +217,7 @@ class SPL_Mailgun_Newsletter {
         $vars->result = $this->deleteEmailAddress($_REQUEST['spl-unsubscribe']['email'], $list);
       } else {
         //$vars->result =  $this->unsubscribeEmailAddress($_REQUEST['spl-unsubscribe']['email'], $list);
-        $vars->result =  $this->unsubscribeEmailAddress($_REQUEST['spl-unsubscribe']['email']);
+        $vars->result =  $this->unsubscribeEmailAddressGlobal($_REQUEST['spl-unsubscribe']['email']);
       }
     }
     $subscribe = $this->loadWidgetFile($tmpl, $vars);
