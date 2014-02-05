@@ -1205,7 +1205,8 @@ class SPL_Mailgun_Newsletter {
     if ( $address ) {
       $api = $this->getMailgunApi().$domain.'/'.'unsubscribes';
       $auth = $this->getMailgunPrivateAuth();
-      $params = array('address'=>$address);
+      $params = array('address'=>$address
+                    , 'tag'=>'*');
       
       return $this->curlJSON($api, $params, 'post', $auth);
     }
