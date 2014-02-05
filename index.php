@@ -1206,7 +1206,7 @@ class SPL_Mailgun_Newsletter {
       $api = $this->getMailgunApi().$domain.'/'.'unsubscribes';
       $auth = $this->getMailgunPrivateAuth();
       $params = array('address'=>$address);
-      return $api;
+      
       return $this->curlJSON($api, $params, 'post', $auth);
     }
     return $result;
