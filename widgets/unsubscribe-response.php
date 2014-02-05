@@ -28,3 +28,5 @@
 </div>
 
 <?php endif; ?>
+
+<?php print_r($vars); ?>
