@@ -216,8 +216,13 @@ class SPL_Mailgun_Newsletter {
       if ( $_REQUEST['spl-unsubscribe']['delete'] ) {
         $vars->result = $this->deleteEmailAddress($_REQUEST['spl-unsubscribe']['email'], $list);
       } else {
-        //$vars->result =  $this->unsubscribeEmailAddress($_REQUEST['spl-unsubscribe']['email'], $list);
-        $vars->result =  $this->unsubscribeEmailAddressGlobal($_REQUEST['spl-unsubscribe']['email'], $list);
+        if ( stristr(urldecode($list), '@') ) {
+          // unsubscribe from list
+          $vars->result =  $this->unsubscribeEmailAddress($_REQUEST['spl-unsubscribe']['email'], $list);
+        } else {
+          // unsubscribe from domain
+          $vars->result =  $this->unsubscribeEmailAddressGlobal($_REQUEST['spl-unsubscribe']['email'], $list);
+        }
       }
     }
     $subscribe = $this->loadWidgetFile($tmpl, $vars);
