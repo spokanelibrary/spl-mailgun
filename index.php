@@ -216,7 +216,8 @@ class SPL_Mailgun_Newsletter {
       if ( $_REQUEST['spl-unsubscribe']['delete'] ) {
         $vars->result = $this->deleteEmailAddress($_REQUEST['spl-unsubscribe']['email'], $list);
       } else {
-        $vars->result =  $this->unsubscribeEmailAddress($_REQUEST['spl-unsubscribe']['email'], $list);;
+        //$vars->result =  $this->unsubscribeEmailAddress($_REQUEST['spl-unsubscribe']['email'], $list);
+        $vars->result =  $this->unsubscribeEmailAddress($_REQUEST['spl-unsubscribe']['email']);
       }
     }
     $subscribe = $this->loadWidgetFile($tmpl, $vars);
@@ -241,6 +242,10 @@ class SPL_Mailgun_Newsletter {
 
   function unsubscribeEmailAddress($address, $list) {
     return $this->updateAddressOnMailingList($address, $list, false);
+  }
+
+  function unsubscribeEmailAddressGlobal($address) {
+    return $this->unsubscribeAddressFromDomain($address);
   }
 
   function deleteEmailAddress($address, $list) {
@@ -1190,6 +1195,17 @@ class SPL_Mailgun_Newsletter {
                     , 'name'=>$name
                     , 'vars'=>$vars
                       );
+
+      return $this->curlJSON($api, $params, 'post', $auth);
+    }
+    return $result;
+  }
+
+  function unsubscribeAddressFromDomain($address) {
+    if ( $address ) {
+      $api = $this->getMailgunApi().'unsubscribes';
+      $auth = $this->getMailgunPrivateAuth();
+      $params = array();
 
       return $this->curlJSON($api, $params, 'post', $auth);
     }
