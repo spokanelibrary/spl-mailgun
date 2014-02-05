@@ -541,7 +541,7 @@
                                 |
                                 <a href="http://news.spokanelibrary.org/privacy/">Your Privacy</a> 
                                 | 
-                                <a href="http://news.spokanelibrary.org/unsubscribe/?email=%recipient_email%&list=<?php echo $list; ?>">Unsubscribe</a>
+                                <a href="http://news.spokanelibrary.org/unsubscribe/?email=%recipient_email%&list=<?php echo 'news.spokanelibrary.org'; ?>">Unsubscribe</a>
                               </p>
                             </center>
                           </td>
