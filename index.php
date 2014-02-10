@@ -1383,7 +1383,7 @@ class SPL_Mailgun_Newsletter {
     // set auth params
     if ( is_array($auth) ) {
       //curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_NTLM);  
-      curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_ANY);
+      curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC); // CURLAUTH_ANY
       curl_setopt($ch, CURLOPT_USERPWD, $auth['user'] . ':' . $auth['pass']);
     }
 
