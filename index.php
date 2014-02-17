@@ -1025,7 +1025,7 @@ class SPL_Mailgun_Newsletter {
   function getNewsletterHTMLEmail($id, $template, $list=null) {
     //return 'This is newsletter # '.$id;
     if ( !empty($_POST['spl-mailgun-newsletter-subject']) ) {
-      $prepend = wpautop($_POST['spl-mailgun-newsletter-prepend']);
+      $prepend = wpautop(stripslashes($_POST['spl-mailgun-newsletter-prepend']));
     }
 
     remove_filter( 'the_content','bootstrap_responsive_images',10 );
