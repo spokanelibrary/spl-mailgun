@@ -411,7 +411,7 @@ class SPL_Mailgun_Newsletter {
       if ( !empty($content) ) {
         $callout['content'] = $content;
       }
-      $attrib = get_post_meta($post->ID
+      $attrib = 'attrib' . get_post_meta($post->ID
                 ,'_spl_mailgun_newsletter_sidebar_attribution'
                 ,true 
                 );
@@ -1062,19 +1062,12 @@ class SPL_Mailgun_Newsletter {
                           , '_spl_mailgun_newsletter_sidebar_callout'
                           , true 
                           ));
-
-    
-
-    $attribute = apply_filters('the_content', get_post_meta($id
-                          , '_spl_mailgun_newsletter_sidebar_attribution'
-                          , true 
-                          ));
-    /*  
+ 
     $attribute = get_post_meta($id
                           , '_spl_mailgun_newsletter_sidebar_attribution'
                           , true 
                           );
-    */
+    
     // attached posts
     $posts = array();
     for ( $i=1; $i<= 12; $i++ ) {
