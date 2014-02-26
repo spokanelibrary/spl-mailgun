@@ -411,16 +411,12 @@ class SPL_Mailgun_Newsletter {
       if ( !empty($content) ) {
         $callout['content'] = $content;
       }
-      /*
+      
       $attrib = get_post_meta($post->ID
                 ,'_spl_mailgun_newsletter_sidebar_attribution'
                 ,true 
                 );
-      */
-      $attrib = apply_filters('the_content', get_post_meta($post->ID
-                ,'_spl_mailgun_newsletter_sidebar_attribution'
-                ,true 
-                ));
+      
       if ( !empty($attrib) ) {
         $callout['attrib'] = $attrib;
       }
