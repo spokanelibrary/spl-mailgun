@@ -735,7 +735,9 @@ class SPL_Mailgun_Newsletter {
                                             array('name' => 'Headline'
                                                 , 'desc' => 'optional'
                                                 , 'id' => $prefix . 'sidebar_headline'
-                                                , 'type' => 'text'
+                                                //, 'type' => 'text'
+                                                , 'type' => 'wysiwyg'
+                                                , 'options' => array()
                                             )
                                       )
                     );
