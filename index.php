@@ -710,12 +710,16 @@ class SPL_Mailgun_Newsletter {
                                             array('name' => 'Callout'
                                                 , 'desc' => 'optional callout box'
                                                 , 'id' => $prefix . 'sidebar_callout'
-                                                , 'type' => 'textarea_small'
+                                                //, 'type' => 'textarea_small'
+                                                , 'type' => 'wysiwyg'
+                                                , 'options' => array()
                                             )
                                           , array('name' => 'Attribution'
                                                 , 'desc' => 'optional callout attribution'
                                                 , 'id' => $prefix . 'sidebar_attribution'
-                                                , 'type' => 'text'
+                                                //, 'type' => 'text'
+                                                , 'type' => 'wysiwyg'
+                                                , 'options' => array()
                                             )
                                       )
                     );
