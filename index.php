@@ -846,7 +846,9 @@ class SPL_Mailgun_Newsletter {
       $classes = $classes . ' center';
     }
 
-    $html = str_ireplace('<img', '<img vspace="10" hspace="10"', $html);
+    if ( !$sidebar ) {
+      $html = str_ireplace('<img', '<img vspace="10" hspace="10"', $html);
+    }
 
     // check if there are already classes assigned to the anchor
     if ( preg_match('/<img.*? class="/', $html) ) {
@@ -1048,7 +1050,7 @@ class SPL_Mailgun_Newsletter {
     remove_filter( 'the_content','bootstrap_responsive_images',10 );
     remove_filter( 'post_thumbnail_html', 'bootstrap_responsive_images', 10 );
 
-    //add_filter( 'the_content', array($this,'filterNewsletterImages'),10 );
+    add_filter( 'the_content', array($this,'filterNewsletterImages'),10 );
     //add_filter( 'post_thumbnail_html', array($this, 'filterNewsletterImages'), 10 );
 
     $post = get_post($id);
