@@ -1025,6 +1025,13 @@ class SPL_Mailgun_Newsletter {
         $post->content .= apply_filters('the_content', $attach->post_content);
       }
 
+      // A regular expression of what to look for.
+      $pattern = '/(<img([^>]*)>)/i';
+      // What to replace it with. $1 refers to the content in the first 'capture group', in parentheses above
+      $replacement = '<div class="alignleft">$1</div>';
+      // run preg_replace() on the $content
+      $post->content = preg_replace( $pattern, $replacement, $content );
+
     }
     
     return $post;
@@ -1055,13 +1062,7 @@ class SPL_Mailgun_Newsletter {
                           ,array('<div', '</div>', '<div', '</div>')
                           ,apply_filters('the_content', $post->post_content));
 
-    // A regular expression of what to look for.
-   $pattern = '/(<img([^>]*)>)/i';
-   // What to replace it with. $1 refers to the content in the first 'capture group', in parentheses above
-   $replacement = '<div class="alignleft">$1</div>';
-
-   // run preg_replace() on the $content
-   $content = preg_replace( $pattern, $replacement, $content );
+    
 
 
 
@@ -1105,7 +1106,6 @@ class SPL_Mailgun_Newsletter {
 
     
     // these really need to be removed after being run
-    // this doesn't make any sense?
     remove_filter( 'the_content', array($this,'filterNewsletterSidebarImages'));
     remove_filter( 'post_thumbnail_html', array($this, 'filterNewsletterSidebarImages'));
     
