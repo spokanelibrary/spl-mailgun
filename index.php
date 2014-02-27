@@ -1028,7 +1028,7 @@ class SPL_Mailgun_Newsletter {
       // A regular expression of what to look for.
       $pattern = '/(<img([^>]*)>)/i';
       // What to replace it with. $1 refers to the content in the first 'capture group', in parentheses above
-      $replacement = '<div class="alignleft">$1</div>';
+      $replacement = '<p class="alignleft">$1</p>';
       // run preg_replace() on the $content
       $post->content = preg_replace( $pattern, $replacement, $post->content );
 
