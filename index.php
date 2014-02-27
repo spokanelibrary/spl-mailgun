@@ -1062,11 +1062,6 @@ class SPL_Mailgun_Newsletter {
                           ,array('<div', '</div>', '<div', '</div>')
                           ,apply_filters('the_content', $post->post_content));
 
-    
-
-
-
-
     $subtitle = get_post_meta($id
                           , '_spl_mailgun_newsletter_sidebar_headline'
                           , true 
