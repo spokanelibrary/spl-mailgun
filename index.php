@@ -846,7 +846,7 @@ class SPL_Mailgun_Newsletter {
       $classes = $classes . ' center';
     }
 
-    $html = str_ireplace('<img', '<img vspace="10" hspace="10"', $html);
+    //$html = str_ireplace('<img', '<img vspace="10" hspace="10"', $html);
 
     // check if there are already classes assigned to the anchor
     if ( preg_match('/<img.*? class="/', $html) ) {
