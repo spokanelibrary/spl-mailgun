@@ -1024,14 +1024,14 @@ class SPL_Mailgun_Newsletter {
         //$post->content .= wpautop($attach->post_content);
         $post->content .= apply_filters('the_content', $attach->post_content);
       }
-
+      /*
       // A regular expression of what to look for.
       $pattern = '/(<img([^>]*)>)/i';
       // What to replace it with. $1 refers to the content in the first 'capture group', in parentheses above
       $replacement = '<p class="alignleft">$1</p>';
       // run preg_replace() on the $content
       $post->content = preg_replace( $pattern, $replacement, $post->content );
-
+      */
     }
     
     return $post;
@@ -1046,8 +1046,8 @@ class SPL_Mailgun_Newsletter {
     remove_filter( 'the_content','bootstrap_responsive_images',10 );
     remove_filter( 'post_thumbnail_html', 'bootstrap_responsive_images', 10 );
 
-    //add_filter( 'the_content', array($this,'filterNewsletterImages'),10 );
-    //add_filter( 'post_thumbnail_html', array($this, 'filterNewsletterImages'), 10 );
+    add_filter( 'the_content', array($this,'filterNewsletterImages'),10 );
+    add_filter( 'post_thumbnail_html', array($this, 'filterNewsletterImages'), 10 );
 
     $post = get_post($id);
     //$trace = print_r($post, true);
