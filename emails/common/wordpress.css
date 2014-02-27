@@ -216,8 +216,8 @@
 	.alignnone {  margin-bottom: 10px; }
 	.aligncenter { margin: auto; margin-bottom:10px; } /* doesn't really work */
 
-	.alignright { float: right; margin-left: 10px; padding-left: 10px; }
-  .alignleft { float: left; margin-right: 10px; padding-right: 10px; }
+	.alignright { float: right; margin-left: 10px; padding-left: 10px; display:inline-block; }
+  .alignleft { float: left; margin-right: 10px; padding-right: 10px; display:inline-block; }
   
   /*
   .alignright img, .alignleft img { clear: both; }
