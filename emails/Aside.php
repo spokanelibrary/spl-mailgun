@@ -262,7 +262,7 @@
                           <td class="expander"></td>
                         </tr>
                         <?php endif; ?>
-                        <?php if (isset($subtitle)): ?>
+                        <?php if (!empty($subtitle)): ?>
                         <tr>
                           <td class="sidebar subtitle">
                             <h2 class="subtitle"><?php echo $subtitle; ?></h2>
