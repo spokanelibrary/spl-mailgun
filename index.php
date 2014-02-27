@@ -45,6 +45,10 @@ class SPL_Mailgun_Newsletter {
     add_shortcode('spl_mailgun_subscribe', array($this, 'widgetSubscribe'));
     add_shortcode('spl_mailgun_unsubscribe', array($this, 'widgetUnsubscribe'));
     add_shortcode('spl_mailgun_current', array($this, 'widgetCurrentLink'));
+  
+
+    remove_filter( 'the_content','bootstrap_responsive_images',10 );
+    remove_filter( 'post_thumbnail_html', 'bootstrap_responsive_images', 10 );
   }
 
   function loadWidgetJS() {
@@ -1047,8 +1051,8 @@ class SPL_Mailgun_Newsletter {
       $prepend = wpautop(stripslashes($_POST['spl-mailgun-newsletter-prepend']));
     }
 
-    //remove_filter( 'the_content','bootstrap_responsive_images',10 );
-    //remove_filter( 'post_thumbnail_html', 'bootstrap_responsive_images', 10 );
+    remove_filter( 'the_content','bootstrap_responsive_images',10 );
+    remove_filter( 'post_thumbnail_html', 'bootstrap_responsive_images', 10 );
 
     add_filter( 'the_content', array($this,'filterNewsletterImages'),10 );
     //add_filter( 'post_thumbnail_html', array($this, 'filterNewsletterImages'), 10 );
