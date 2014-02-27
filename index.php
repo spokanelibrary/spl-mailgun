@@ -45,10 +45,6 @@ class SPL_Mailgun_Newsletter {
     add_shortcode('spl_mailgun_subscribe', array($this, 'widgetSubscribe'));
     add_shortcode('spl_mailgun_unsubscribe', array($this, 'widgetUnsubscribe'));
     add_shortcode('spl_mailgun_current', array($this, 'widgetCurrentLink'));
-  
-
-    remove_filter( 'the_content','bootstrap_responsive_images',10 );
-    remove_filter( 'post_thumbnail_html', 'bootstrap_responsive_images', 10 );
   }
 
   function loadWidgetJS() {
@@ -851,7 +847,7 @@ class SPL_Mailgun_Newsletter {
     }
 
     if ( !$sidebar ) {
-      $html = str_ireplace('<img', '<img vspace="10" hspace="10"', $html);
+      $html = str_ireplace('<img', '<img hspace="10"', $html);
     }
 
     // check if there are already classes assigned to the anchor
