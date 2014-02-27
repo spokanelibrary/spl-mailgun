@@ -5,7 +5,7 @@
     font-family: Helvetica, Arial, sans-serif;
   }
 
-  img { float: none; max-width: 100% !important; }
+  img { /*float: none;*/ max-width: 100% !important; }
 
   small { line-height: 1em; font-size: 11px; }
 
@@ -216,8 +216,8 @@
 	.alignnone {  margin-bottom: 10px; }
 	.aligncenter { margin: auto; margin-bottom:10px; } /* doesn't really work */
 
-	.alignright { float: right; margin-left: 10px; padding-left: 10px; display:inline-block; }
-  .alignleft { float: left; margin-right: 10px; padding-right: 10px; display:inline-block; }
+	.alignright { float: right; margin-left: 10px; padding-left: 10px; }
+  .alignleft { float: left; margin-right: 10px; padding-right: 10px; }
   
   /*
   .alignright img, .alignleft img { clear: both; }

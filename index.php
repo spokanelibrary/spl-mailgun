@@ -847,13 +847,12 @@ class SPL_Mailgun_Newsletter {
     }
 
     // check if there are already classes assigned to the anchor
-    /*
     if ( preg_match('/<img.*? class="/', $html) ) {
       $html = preg_replace('/(<img.*? class=".*?)(".*?\/>)/', '$1 ' . $classes . ' $2', $html);
     } else {
       $html = preg_replace('/(<img.*?)(\/>)/', '$1 class="' . $classes . '" $2', $html);
     }
-    */
+
     
 
     // remove dimensions from images
