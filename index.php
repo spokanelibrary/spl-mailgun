@@ -1030,7 +1030,7 @@ class SPL_Mailgun_Newsletter {
       // What to replace it with. $1 refers to the content in the first 'capture group', in parentheses above
       $replacement = '<div class="alignleft">$1</div>';
       // run preg_replace() on the $content
-      $post->content = preg_replace( $pattern, $replacement, $content );
+      $post->content = preg_replace( $pattern, $replacement, $post->content );
 
     }
     
