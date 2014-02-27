@@ -269,7 +269,7 @@ class SPL_Mailgun_Newsletter {
     $html = '';
     if ( !empty($select) ) {
       $html .= '<aside class="aside">';
-      //$html .= '<p class="lead texf-primary">';
+      //$html .= '<p class="lead text-primary">';
       $html .= '<h3>';
       if ( $select->excerpt ) {
         $html .= '<a href="'.$select->link.'">';
