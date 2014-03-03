@@ -849,7 +849,7 @@ class SPL_Mailgun_Newsletter {
     }
 
     if ( !$sidebar ) {
-      $html = str_ireplace('<img', '<img hspace="10"', $html);
+      $html = str_ireplace('<img', '<img hspace="6"', $html);
     }
 
     // check if there are already classes assigned to the anchor
