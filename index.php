@@ -590,7 +590,7 @@ class SPL_Mailgun_Newsletter {
         <option value="" selected>None</option>
     ';
 
-    $exclude = array('undeliverable');
+    $exclude = array('undeliverable@news.spokanelibrary.org');
     foreach ($mailgun->items as $list) {
       if ( !in_array($list->address, $exclude) ) {
         $lists .= '<option value="'.$list->address.'">'.$list->description.' ('.$list->members_count.')'.'</option>';
