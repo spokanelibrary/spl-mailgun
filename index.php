@@ -589,8 +589,12 @@ class SPL_Mailgun_Newsletter {
       <select class="widefat" name="spl-mailgun-newsletter-list" id="spl-mailgun-newsletter-list">
         <option value="" selected>None</option>
     ';
+
+    $exclude = array('undeliverable');
     foreach ($mailgun->items as $list) {
-      $lists .= '<option value="'.$list->address.'">'.$list->description.' ('.$list->members_count.')'.'</option>';
+      if ( !in_array($list->address, $exclude) ) {
+        $lists .= '<option value="'.$list->address.'">'.$list->description.' ('.$list->members_count.')'.'</option>';
+      }
     }
     $lists .= '
       </select>
