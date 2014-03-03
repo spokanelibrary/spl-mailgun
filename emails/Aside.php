@@ -370,6 +370,9 @@
 
                 <!-- colophon -->
 
+                <br>
+                <br>
+
                 <!-- wrap the colophon tables to avoid seperation -->
                 <table>
                   <tr>
