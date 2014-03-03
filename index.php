@@ -544,7 +544,7 @@ class SPL_Mailgun_Newsletter {
     
     wp_nonce_field( basename( __FILE__ ), 'spl_mailgun_newsletter_send_nonce' );
 
-    echo 'Reminder: Max image width for primary column is 370px. For sidebar, 178px.';
+    echo 'Reminder: Max image width for primary column is 370px. For the sidebar, 160px.';
 
     $subject = '
     <p>
