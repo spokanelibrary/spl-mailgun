@@ -544,6 +544,8 @@ class SPL_Mailgun_Newsletter {
     
     wp_nonce_field( basename( __FILE__ ), 'spl_mailgun_newsletter_send_nonce' );
 
+    echo 'Reminder: Max image width for primary column is 386px. For sidebar, 192px.'
+
     $subject = '
     <p>
       <label for="spl-mailgun-newsletter-subject">Enter a subject line:</label>
