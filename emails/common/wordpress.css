@@ -190,7 +190,7 @@
 
   /* Lists */
   ul { font-size: 14px; /*margin: 10px 10px 10px 24px; padding: 0;*/ /*margin:0;*/ /*padding: 10px 10px 10px 20px;*/ /*list-style-position: outside;*/ }
-  .sidebar ul { list-style: none !important; margin-left: 10px; padding: 10px 0; }
+  .sidebar ul { list-style: none !important; margin-left: 10px; /*padding: 10px 0;*/ }
 
 	/* Custom */
 	.white { color: #ffffff; }
