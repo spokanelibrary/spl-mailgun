@@ -669,11 +669,24 @@ class SPL_Mailgun_Newsletter {
     $fields = array();
     $fields[] = array(
                         //'name' => 'Select Posts',
+                        /*
+                        'desc' => 'Posts 1-4 are displayed 1 across in the primary column, below the main article.
+                                  <br>
+                                  Posts 4-6 are displayed below the primary column and sidebar, width depends on screen size.
+                                  <br>
+                                  Posts 7-12 are displayed in 3 rows of 2 columns, across the entire page.',
+                        */
+                        /*
                         'desc' => 'Posts 1-2 are displayed 1 across in the primary column, below the main article.
                                   <br>
                                   Posts 3-6 are displayed below the primary column and sidebar, width depends on screen size.
                                   <br>
-                                  Posts 6-12 are displayed in 3 rows of 2 columns, across the entire page.',
+                                  Posts 7-12 are displayed in 3 rows of 2 columns, across the entire page.',
+                        */
+                        'desc' => 'Posts 1-6 are displayed 1 across in the primary column, below the main article.
+                        <br>
+                        Posts 7-12 are displayed in 3 rows of 2 columns, across the entire page.',
+                                  
                         'type' => 'title',
                         'id' => $prefix . 'post_select_title'
                       );
