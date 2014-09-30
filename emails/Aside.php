@@ -210,7 +210,8 @@
                         <tr>
                           <td>
                           <?php 
-                          echo SPL_Mailgun_Newsletter::formatPostSelect($posts[3], 'eight columns'); 
+                          //echo SPL_Mailgun_Newsletter::formatPostSelect($posts[3], 'eight columns'); 
+                          echo SPL_Mailgun_Newsletter::formatPostSelect($posts[3], '<?php echo $primary_columns; ?>  columns');
                           ?>
                           </td>
                           <td class="expander"></td>
@@ -221,7 +222,8 @@
                         <tr>
                           <td>
                           <?php 
-                          echo SPL_Mailgun_Newsletter::formatPostSelect($posts[4], 'eight columns'); 
+                          //echo SPL_Mailgun_Newsletter::formatPostSelect($posts[4], 'eight columns'); 
+                          echo SPL_Mailgun_Newsletter::formatPostSelect($posts[4], '<?php echo $primary_columns; ?>  columns'); 
                           ?>
                           </td>
                           <td class="expander"></td>
