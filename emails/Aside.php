@@ -206,6 +206,28 @@
                         </tr>
                         <?php endif; ?>
 
+                        <?php if ( !is_null($posts[3]) ) : ?>
+                        <tr>
+                          <td>
+                          <?php 
+                          echo SPL_Mailgun_Newsletter::formatPostSelect($posts[3], 'eight columns'); 
+                          ?>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                        <?php endif; ?>
+
+                        <?php if ( !is_null($posts[4]) ) : ?>
+                        <tr>
+                          <td>
+                          <?php 
+                          echo SPL_Mailgun_Newsletter::formatPostSelect($posts[4], 'eight columns'); 
+                          ?>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                        <?php endif; ?>
+
                       </table>
                     </td>
 
@@ -269,30 +291,6 @@
                 </table>
 
                 <!-- selected posts -->
-                <?php if ( !is_null($posts[3]) ) : ?>
-                <table class="row callout">
-                  <?php if ( !is_null($posts[3]) ) : ?>
-                  <tr>
-                    <td>
-                    <?php 
-                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[3], 'twelve columns'); 
-                    ?>
-                    </td>
-                    <td class="expander"></td>
-                  </tr>
-                  <?php endif; ?>
-                  <?php if ( !is_null($posts[4]) ) : ?>
-                  <tr>
-                    <td>
-                    <?php 
-                    echo SPL_Mailgun_Newsletter::formatPostSelect($posts[4], 'twelve columns'); 
-                    ?>
-                    </td>
-                    <td class="expander"></td>
-                  </tr>
-                  <?php endif; ?>
-                </table>
-                <?php endif; ?>
 
                 <?php if ( !is_null($posts[5]) ) : ?>
                 <table class="row callout">

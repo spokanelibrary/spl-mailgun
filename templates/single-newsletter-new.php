@@ -80,12 +80,6 @@
             <div class="col-sm-12 post">
               <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[2]); ?>
             </div><!-- /.col -->
-            <div class="col-sm-12 post">
-              <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[3]); ?>
-            </div><!-- /.col -->
-            <div class="col-sm-12 post">
-              <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[4]); ?>
-            </div><!-- /.col -->
           </div><!-- /.row -->
           <?php endif; ?>
 
@@ -138,6 +132,12 @@
 
       <?php if ( isset($meta->posts) ) :  ?>
       <div class="row">
+        <div class="col-lg-8 post">
+          <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[3]); ?>
+        </div><!-- /.col -->
+        <div class="col-lg-8 post">
+          <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[4]); ?>
+        </div><!-- /.col -->
         <div class="col-lg-8 post">
           <?php echo SPL_Mailgun_Newsletter::getPostSelectFormatted($meta->posts[5]); ?>
         </div><!-- /.col -->
