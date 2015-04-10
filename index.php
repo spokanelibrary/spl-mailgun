@@ -499,7 +499,7 @@ class SPL_Mailgun_Newsletter {
                               //, 'comments' 
                               )
     , 'has_archive'   => true
-    , 'rewrite'       => array('slug'=>'newsletter', 'with_front'=>'false')
+    , 'rewrite'       => array('slug'=>'newsletter', 'with_front'=>false)
     //, 'slug'          => 'newsletter'
     , 'register_meta_box_cb' => array($this, 'initPublishControls')
     );
