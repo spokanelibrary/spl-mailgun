@@ -94,7 +94,7 @@
         <div class="col-md-4">
 
           <p style="text-align: center;">
-            <a href="https://epay.spokanelibrary.org/eCommerceWebModule/Home"><img class="size-thumbnail wp-image-1576 aligncenter" alt="Pay Fines" src="http://news.spokanelibrary.org/wordpress/media/Pay_fines-160x120.jpg" width="160" height="120" /></a>
+            <a href="https://epay.spokanelibrary.org/eCommerceWebModule/Home"><img class="aligncenter img-responsive" alt="Pay Fines" src="http://news.spokanelibrary.org/wordpress/media/Pay_fines-160x120.jpg" ></a>
           </p>
 
           <?php if ( isset($meta->callout) && isset($meta->callout['content']) ) :  ?>
