@@ -259,13 +259,14 @@
                     <td class="wrapper last">
                       
                       <table class="four columns" style="margin-bottom: 20px;">
+                        <!--
                         <tr>
                           <td class="condensed">
                             <p class="condensed">&nbsp;</p>
                           </td>
                           <td class="expander"></td>
                         </tr>
-
+                        -->
                         <tr>
                           <td class="">
                             <p style="text-align: center;">
