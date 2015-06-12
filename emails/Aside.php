@@ -265,6 +265,16 @@
                           </td>
                           <td class="expander"></td>
                         </tr>
+
+                        <tr>
+                          <td class="">
+                            <p style="text-align: center;">
+                              <a href="https://epay.spokanelibrary.org/eCommerceWebModule/Home"><img class="aligncenter img-responsive" alt="Pay Fines" src="http://news.spokanelibrary.org/wordpress/media/Pay_fines-160x120.jpg" ></a>
+                            </p>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+
                         <?php if ( !empty($callout) ) : ?>
                         <tr>
                           <td class="warning panel">
