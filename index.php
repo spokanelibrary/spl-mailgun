@@ -918,6 +918,8 @@ class SPL_Mailgun_Newsletter {
       }
 
       $html .= $post->content;
+
+
   
       if ( $post->excerpt ) {
         $html .= '<p class="center">';
@@ -994,6 +996,10 @@ class SPL_Mailgun_Newsletter {
       
       $html .= '</table>';
       
+    }
+
+    if ( $post->excerpt ) {
+      $html = str_ireplace('<img', '<img hspace="6"', $html);
     }
 
     //$html .= print_r($post, true);
