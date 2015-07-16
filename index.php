@@ -1174,12 +1174,12 @@ class SPL_Mailgun_Newsletter {
 
     if ( !empty($address) ) {
       $response = $this->sendMailgunMessage($from, $address, $subject, $html, null, $campaign);
-      //$this->notifyMailgunResponse($response, $address, null);
+      $this->notifyMailgunResponse($response, $address, null);
     }
 
     if ( !empty($list) ) {
       $response = $this->sendMailgunMessage($from, $list, $subject, $html, null, $campaign);
-      //$this->notifyMailgunResponse($response, null, $list);
+      $this->notifyMailgunResponse($response, null, $list);
     }
     
   } // processNewsletter()
