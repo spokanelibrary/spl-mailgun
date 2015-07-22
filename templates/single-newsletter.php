@@ -121,7 +121,7 @@
             <!-- sidebar -->
             <?php if ( isset($meta->sidebar['headline']) ) :  ?>
             <div class="panel-heading">
-              <h4 class="text-center">
+              <h4 class="panel-title text-center">
                 <?php echo $meta->sidebar['headline']; ?>
               </h4>
             </div><!-- /.panel-heading -->  
