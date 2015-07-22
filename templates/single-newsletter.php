@@ -37,10 +37,10 @@
   
 	<div class="panel panel-default" style="border-left-width:5px;">
 		<div class="panel-heading">
-			<span class="pull-right">
+			<div class="text-right">
 				<i class="glyphicon glyphicon-envelope text-primary"></i>
 				<a href="/subscribe">Subscribe</a>
-			</span>
+			</div>
       <!--
 			<span class="text-muted">
 				<i class="glyphicon glyphicon-send"></i>
@@ -61,7 +61,7 @@
         </div>
       </div>
       -->
-      
+
       <div class="row">
         <div class="<?php if ( isset($meta->sidebar) || isset($meta->callout) ) : ?>col-md-8<?php else: ?>col-lg-8<?php endif; ?>">
 
