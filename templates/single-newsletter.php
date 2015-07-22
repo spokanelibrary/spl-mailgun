@@ -20,7 +20,7 @@
 
 <div class="page-header">
   <h1>
-    Library News
+    <?php the_title(); ?>
   </h1>
   <?php// get_template_part('templates/entry-meta'); ?>
 </div>
@@ -41,13 +41,16 @@
 				<i class="glyphicon glyphicon-envelope text-primary"></i>
 				<a href="/subscribe">Subscribe</a>
 			</span>
+      <!--
 			<span class="text-muted">
 				<i class="glyphicon glyphicon-send"></i>
 				<strong><?php  the_time('F, Y'); ?></strong>
 			</span>
+      -->
 		</div><!-- /.panel-heading -->
 		<div class="panel-body">
 
+      <!--
       <div class="row">
         <div class="col-sm-12">
           <div style="border-bottom: 0px solid #ccc;">
@@ -57,7 +60,8 @@
           </div>
         </div>
       </div>
-
+      -->
+      
       <div class="row">
         <div class="<?php if ( isset($meta->sidebar) || isset($meta->callout) ) : ?>col-md-8<?php else: ?>col-lg-8<?php endif; ?>">
 
