@@ -36,7 +36,7 @@
 -->
   
   
-	<div class="panel panel-default" style="border-left-width:5px;">
+	<div class="panel panel-success" style="border-left-width:5px;">
 		
     <div class="panel-heading">
 			<div class="text-right">
