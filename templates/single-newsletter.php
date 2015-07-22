@@ -106,9 +106,9 @@
 
           <p>
             <a class="btn btn-primary btn-block" href="/subscribe/"><i class="glyphicon glyphicon-envelope"></i>
-Subscribe to Libray News &nbsp;</a>
+Subscribe to Libray News &rarr;</a>
           </p>
-          
+
           <?php if ( isset($meta->callout) && isset($meta->callout['content']) ) :  ?>
           <!-- sidebar callout -->
             <div class="alert alert-warning">
