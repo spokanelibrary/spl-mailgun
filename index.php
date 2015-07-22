@@ -953,7 +953,7 @@ class SPL_Mailgun_Newsletter {
       if ( $post->excerpt ) {
         $html .= '<a href="'.$post->link.'">';
       }
-      $html .= '<span class="serif">';
+      $html .= '<span class="">';
       $html .= $post->title;
       if ( $post->excerpt ) {
         $html .= '</a>';
