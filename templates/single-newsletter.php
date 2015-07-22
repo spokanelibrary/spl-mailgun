@@ -19,6 +19,10 @@
 ?>
 
 <div class="page-header">
+  <span class="pull-right">
+    <i class="glyphicon glyphicon-envelope text-primary"></i>
+    <a href="/subscribe">Subscribe</a>
+  </span>
   <h1>
     <?php the_title(); ?>
   </h1>
@@ -35,21 +39,21 @@
   </div>
 -->
   
+  <!--
 	<div class="panel panel-default" style="border-left-width:5px;">
 		<div class="panel-heading">
-			<div class="text-right">
+			<span class="pull-right">
 				<i class="glyphicon glyphicon-envelope text-primary"></i>
 				<a href="/subscribe">Subscribe</a>
-			</div>
-      <!--
-			<span class="text-muted">
+			</span>
+      <span class="text-muted">
 				<i class="glyphicon glyphicon-send"></i>
 				<strong><?php  the_time('F, Y'); ?></strong>
 			</span>
-      -->
-		</div><!-- /.panel-heading -->
+      
+		</div>
 		<div class="panel-body">
-
+    -->
       <!--
       <div class="row">
         <div class="col-sm-12">
@@ -180,18 +184,19 @@
       </div><!-- /.row -->
       <?php endif; ?>
 
-  	</div><!-- /.panel-body -->
+  	<!-- </div>--><!-- /.panel-body -->
 
-    <div class="panel-footer">
+    <!-- <div class="panel-footer"> -->
       <div class="text-center">
         <a href="/subscribe">Subscribe</a>
         |
         <a href="/unsubscribe">Unsubscribe</a>
       </div>
-    </div><!-- /.panel-footer -->
+    <!-- </div> --><!-- /.panel-footer -->
 
-	</div><!-- /.panel -->
+	<!-- </div> --> <!-- /.panel -->
   
+  <hr>
 
   <footer>
     <?php get_template_part('templates/entry-meta'); ?>
