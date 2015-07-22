@@ -39,9 +39,10 @@
   </div>
 -->
   
-  <!--
+  
 	<div class="panel panel-default" style="border-left-width:5px;">
-		<div class="panel-heading">
+		<!--
+    <div class="panel-heading">
 			<span class="pull-right">
 				<i class="glyphicon glyphicon-envelope text-primary"></i>
 				<a href="/subscribe">Subscribe</a>
@@ -50,10 +51,10 @@
 				<i class="glyphicon glyphicon-send"></i>
 				<strong><?php  the_time('F, Y'); ?></strong>
 			</span>
-      
-		</div>
-		<div class="panel-body">
-    -->
+    </div>
+		-->
+    <div class="panel-body">
+    
       <!--
       <div class="row">
         <div class="col-sm-12">
@@ -184,19 +185,18 @@
       </div><!-- /.row -->
       <?php endif; ?>
 
-  	<!-- </div>--><!-- /.panel-body -->
+  	</div><!-- /.panel-body -->
 
-    <!-- <div class="panel-footer"> -->
+    <div class="panel-footer">
       <div class="text-center">
         <a href="/subscribe">Subscribe</a>
         |
         <a href="/unsubscribe">Unsubscribe</a>
       </div>
-    <!-- </div> --><!-- /.panel-footer -->
+    </div><!-- /.panel-footer -->
 
-	<!-- </div> --> <!-- /.panel -->
+	</div><!-- /.panel -->
   
-  <hr>
 
   <footer>
     <?php get_template_part('templates/entry-meta'); ?>
