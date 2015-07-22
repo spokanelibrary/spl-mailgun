@@ -39,10 +39,10 @@
 	<div class="panel panel-default" style="border-left-width:5px;">
 		
     <div class="panel-heading">
-			<span class="pull-right">
+			<div class="text-right">
 				<i class="glyphicon glyphicon-envelope text-primary"></i>
 				<a href="/subscribe">Subscribe</a>
-			</span>
+			</div>
       <!--
       <span class="text-muted">
 				<i class="glyphicon glyphicon-send"></i>
