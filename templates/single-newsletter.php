@@ -20,7 +20,7 @@
 
 <div class="page-header">
 
-    <a class="btn btn-primary pull-right" href="/subscribe/"><i class="glyphicon glyphicon-envelope text-primary"></i>
+    <a class="btn btn-primary pull-right" href="/subscribe/"><i class="glyphicon glyphicon-envelope"></i>
 Subscribe</a>
 
   <h1>
