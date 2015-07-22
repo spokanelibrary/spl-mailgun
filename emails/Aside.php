@@ -81,7 +81,7 @@
                               <table class="twelve columns">
                                 <tr>
                                   <td class="six sub-columns">
-                                    <a href="<?php echo home_url() ?>"><img height="80" width="170" style="height:80px; width:170px" src="http://news.spokanelibrary.org/assets/img/SPL-Logo-inverse-hidpi.png"></a>
+                                    <a href="<?php echo home_url() ?>"><img height="80" width="170" style="height:80px; width:170px" src="http://www.spokanelibrary.org/assets/img/SPL-Logo-inverse-hidpi.png"></a>
                                   </td>
                                   <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
                                     <h1 class="serif text-right condensed">News</h1>
@@ -120,7 +120,7 @@
                                     <p class="white condensed"><?php bloginfo( 'description' ); ?></p>
                                   </td>
                                   <td class="five sub-columns last" style="text-align:right; vertical-align:middle;">
-                                    <p class="white condensed text-right"><?php echo $date; ?></p>
+                                    <p class="white condensed text-right">&nbsp;<?php //echo $date; ?></p>
                                   </td>
                                   <td class="expander"></td>
                                 </tr>
@@ -270,7 +270,7 @@
                         <tr>
                           <td class="">
                             <p style="text-align: center;">
-                              <a href="https://epay.spokanelibrary.org/eCommerceWebModule/Home"><img class="aligncenter img-responsive" alt="Pay Fines" src="http://news.spokanelibrary.org/wordpress/media/Pay_fines-160x120.jpg" ></a>
+                              <a href="https://epay.spokanelibrary.org/eCommerceWebModule/Home"><img class="aligncenter img-responsive" alt="Pay Fines" src="http://www.spokanelibrary.org/wordpress/media/Pay_fines-160x120.jpg" ></a>
                             </p>
                           </td>
                           <td class="expander"></td>
@@ -423,7 +423,7 @@
                                   <table class="button facebook" style="vertical-align: middle;">
                                     <tr>
                                       <td valign="middle" align="center" style="vertical-align:middle;">
-                                        <a href="http://facebook.com/spokanelibrary"><img style="clear:none; display:inline; width:16px; height:16px;" width="16px" height="16px" src="http://news.spokanelibrary.org/hosted/img/icons/16px/facebook.png">&nbsp;Facebook</a>
+                                        <a href="http://facebook.com/spokanelibrary"><img style="clear:none; display:inline; width:16px; height:16px;" width="16px" height="16px" src="http://www.spokanelibrary.org/hosted/img/icons/16px/facebook.png">&nbsp;Facebook</a>
                                       </td>
                                     </tr>
                                   </table>
@@ -441,7 +441,7 @@
                                   <table class="button twitter" style="vertical-align: middle;">
                                     <tr>
                                       <td valign="middle" style="vertical-align:middle;">
-                                        <a href="http://twitter.com/spokanelibrary"><img style="clear:none; display:inline; width:16px; height:16px;" width="16px" height="16px" src="http://news.spokanelibrary.org/hosted/img/icons/16px/twitter.png">&nbsp;Twitter</a>
+                                        <a href="http://twitter.com/spokanelibrary"><img style="clear:none; display:inline; width:16px; height:16px;" width="16px" height="16px" src="http://www.spokanelibrary.org/hosted/img/icons/16px/twitter.png">&nbsp;Twitter</a>
                                       </td>
                                     </tr>
                                   </table>
@@ -459,7 +459,7 @@
                                   <table class="button spokanelibrary" style="vertical-align: middle;">
                                     <tr>
                                       <td valign="middle" style="vertical-align:middle;">
-                                        <a href="http://blog.spokanelibrary.org"><img style="clear:none; display:inline; width:16px; height:16px;" width="16px" height="16px" src="http://news.spokanelibrary.org/hosted/img/icons/16px/spl-touch-inverse.png">&nbsp;Library Blog</a>
+                                        <a href="http://blog.spokanelibrary.org"><img style="clear:none; display:inline; width:16px; height:16px;" width="16px" height="16px" src="http://www.spokanelibrary.org/hosted/img/icons/16px/spl-touch-inverse.png">&nbsp;Library Blog</a>
                                       </td>
                                     </tr>
                                   </table>
@@ -553,11 +553,11 @@
                           <td align="center">
                             <center>
                               <p style="text-align:center;">
-                                <a href="http://news.spokanelibrary.org/subscribe/">Subscribe</a>
+                                <a href="http://www.spokanelibrary.org/subscribe/">Subscribe</a>
                                 |
-                                <a href="http://news.spokanelibrary.org/privacy/">Your Privacy</a> 
+                                <a href="http://www.spokanelibrary.org/privacy/">Your Privacy</a> 
                                 | 
-                                <a href="http://news.spokanelibrary.org/unsubscribe/?email=%recipient_email%&list=<?php echo 'news.spokanelibrary.org'; ?>">Unsubscribe</a>
+                                <a href="http://www.spokanelibrary.org/unsubscribe/?email=%recipient_email%&list=<?php echo 'news.spokanelibrary.org'; ?>">Unsubscribe</a>
                               </p>
                             </center>
                           </td>
