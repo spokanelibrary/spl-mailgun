@@ -103,7 +103,7 @@ Subscribe</a>
         </div><!-- /.col -->
         <div class="col-md-4">
 
-          <a class="btn btn-text btn-block" href="/subscribe/"><i class="glyphicon glyphicon-envelope"></i>
+          <a class="btn btn-primary btn-block" href="/subscribe/"><i class="glyphicon glyphicon-envelope"></i>
 Subscribe to Libray News</a>
 
           <p style="text-align: center;">
