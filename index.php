@@ -132,8 +132,8 @@ class SPL_Mailgun_Newsletter {
         $html .= '</h4>';
 
         if ( !empty($posts) ) {
-          $html .= '<p class="text-centered">';
-          $html .= '<strong>Also in this issue:</strong>';
+          $html .= '<p>';
+          $html .= '<b>also in this issue:</b>';
           $html .= '</p>';
 
           if ( isset($params['link_posts']) ) {
