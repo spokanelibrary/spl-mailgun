@@ -20,9 +20,6 @@
 
 <div class="page-header">
 
-    <a class="btn btn-primary pull-right" href="/subscribe/"><i class="glyphicon glyphicon-envelope"></i>
-Subscribe</a>
-
   <h1>
     <?php the_title(); ?>
   </h1>
@@ -102,10 +99,10 @@ Subscribe</a>
 
         </div><!-- /.col -->
         <div class="col-md-4">
-
-          <a class="btn btn-primary btn-block" href="/subscribe/"><i class="glyphicon glyphicon-envelope"></i>
-Subscribe to Libray News</a>
-
+          <p>
+            <a class="btn btn-primary btn-block" href="/subscribe/"><i class="glyphicon glyphicon-envelope"></i>
+Subscribe sto Libray News &nbsp;</a>
+          </p>
           <p style="text-align: center;">
             <a href="https://epay.spokanelibrary.org/eCommerceWebModule/Home"><img class="aligncenter img-responsive" alt="Pay Fines" src="http://news.spokanelibrary.org/wordpress/media/Pay_fines-160x120.jpg" ></a>
           </p>
