@@ -320,7 +320,7 @@ class SPL_Mailgun_Newsletter {
     $html = '';
     if ( !empty($select) ) {
       //$html .= '<p class="lead texf-primary">';
-      $html .= '<h3 class="serif">';
+      $html .= '<h3 class="">';
       if ( $select->excerpt ) {
         $html .= '<a href="'.$select->link.'">';
       }
