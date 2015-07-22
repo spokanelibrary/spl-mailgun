@@ -19,10 +19,6 @@
 ?>
 
 <div class="page-header">
-  <span class="pull-right">
-    <i class="glyphicon glyphicon-envelope text-primary"></i>
-    <a href="/subscribe">Subscribe</a>
-  </span>
   <h1>
     <?php the_title(); ?>
   </h1>
@@ -41,18 +37,20 @@
   
   
 	<div class="panel panel-default" style="border-left-width:5px;">
-		<!--
+		
     <div class="panel-heading">
 			<span class="pull-right">
 				<i class="glyphicon glyphicon-envelope text-primary"></i>
 				<a href="/subscribe">Subscribe</a>
 			</span>
+      <!--
       <span class="text-muted">
 				<i class="glyphicon glyphicon-send"></i>
 				<strong><?php  the_time('F, Y'); ?></strong>
 			</span>
+      -->
     </div>
-		-->
+		
     <div class="panel-body">
     
       <!--
