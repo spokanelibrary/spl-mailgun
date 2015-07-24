@@ -132,7 +132,7 @@ class SPL_Mailgun_Newsletter {
         $html .= '</h3>';
 
         $html .= '<p>';
-        $html .= $q->post->post_excerpt;
+        $html .= apply_filters('the_excerpt', get_post_field('post_excerpt', $q->post->ID));
         $html .= '</p>';
 
         if ( !empty($posts) ) {
