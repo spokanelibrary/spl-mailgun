@@ -127,9 +127,9 @@ class SPL_Mailgun_Newsletter {
         //$html .= mysql2date( 'F, Y', $q->post->post_date );
         //$html .= '</span>';
         
-        $html .= '<h3>';
+        $html .= '<h2>';
         $html .= $link;
-        $html .= '</h3>';
+        $html .= '</h2>';
 
         if ( in_array('excerpt', $params) ) {
           //setup_postdata( $q->post );
@@ -173,9 +173,9 @@ class SPL_Mailgun_Newsletter {
         if ( !empty($posts) ) {
           $html .= '<div class="row">';
           $html .= '<div class="col col-sm-11 col-sm-offset-1">';
-          $html .= '<h4>';
+          $html .= '<h3>';
           $html .= 'also in this issue:';
-          $html .= '</h4>';
+          $html .= '</h3>';
 
           if ( isset($params['link_posts']) ) {
             $html .= '<ul class="">';
