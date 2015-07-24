@@ -683,7 +683,7 @@ class SPL_Mailgun_Newsletter {
 
     // SUBTITLE
     $meta_boxes[] = array('id' => $prefix . 'subtitle_id'
-                        , 'title' => 'Article Headline'
+                        , 'title' => 'Article Issue'
                         , 'pages' => array('newsletter') // post type
                         //, 'show_on' => array()
                         , 'context' => 'normal'
@@ -691,7 +691,7 @@ class SPL_Mailgun_Newsletter {
                         , 'show_names' => false
                         , 'fields' => array(
                                             array('name' => 'Subtitle'
-                                                //, 'desc' => 'main article headline'
+                                                , 'desc' => 'date, etc.'
                                                 , 'id' => $prefix . 'subtitle'
                                                 , 'type' => 'text'
                                                 //, 'type' => 'text'
