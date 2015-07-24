@@ -70,7 +70,7 @@
 
           <article class="article">
           <?php if ( isset($meta->subtitle) && !empty($meta->subtitle) ): ?>
-          <h3 style="margin-top:0;"><?php echo($meta->subtitle); ?></h3>
+          <h2 style="margin-top:0;"><?php echo($meta->subtitle); ?></h2>
           <?php endif; ?>
           <?php the_content(); ?>
           </article>
