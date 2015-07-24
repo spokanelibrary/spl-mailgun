@@ -152,7 +152,7 @@ class SPL_Mailgun_Newsletter {
           if ( $img_src ) {
             $html .= '<div class="row">';
             $html .= '<div class="col-sm-4">';
-            $html .= '<img class="img-responsive img-rounded" src="'.$img_src.'">';
+            $html .= '<img class="img-responsive img-rounded" style="max-height:200px;" src="'.$img_src.'">';
             $html .= '</div>';
             $html .= '<div class="col-sm-8">';
             $html .= '<p>';
