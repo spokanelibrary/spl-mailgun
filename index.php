@@ -131,19 +131,20 @@ class SPL_Mailgun_Newsletter {
         $html .= $link;
         $html .= '</h3>';
 
+        if ( in_array($params, 'excerpt') ) {
+          if ($q->post->post_excerpt) {
+              // excerpt set, return it
+              $excerpt = apply_filters('the_excerpt', $q->post->post_excerpt);
 
-        if ($q->post->post_excerpt) {
-            // excerpt set, return it
-            $excerpt = apply_filters('the_excerpt', $q->post->post_excerpt);
-
-        } else {
-            setup_postdata( $q->post );
-            $excerpt = get_the_excerpt();
-            wp_reset_postdata();
+          } else {
+              setup_postdata( $q->post );
+              $excerpt = get_the_excerpt();
+              wp_reset_postdata();
+          }
+          $html .= '<p>';
+          $html .= $excerpt;
+          $html .= '</p>';
         }
-        $html .= '<p>';
-        $html .= $excerpt;
-        $html .= '</p>';
 
         if ( !empty($posts) ) {
           $html .= '<p>';
