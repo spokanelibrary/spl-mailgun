@@ -21,7 +21,7 @@
 <div class="page-header">
 
   <h1>
-    <?php the_title(); ?>
+    Library News
   </h1>
   <?php// get_template_part('templates/entry-meta'); ?>
 </div>
@@ -38,18 +38,22 @@
   
   
 	<div class="panel panel-default" style="border-left-width:5px;">
-		<!--
+		
     <div class="panel-heading">
 			<div class="text-right">
 				<i class="glyphicon glyphicon-envelope text-primary"></i>
 				<a href="/subscribe">Subscribe</a>
 			</div>
+      <h4 class="panel-title">
+      <?php echo($meta->subtitle); ?>
+      </h4>
+      <!--
       <span class="text-muted">
 				<i class="glyphicon glyphicon-send"></i>
 				<strong><?php  the_time('F, Y'); ?></strong>
 			</span>
-      
-    </div>-->
+      -->
+    </div>
 		
     <div class="panel-body">
     
@@ -69,9 +73,9 @@
         <div class="<?php if ( isset($meta->sidebar) || isset($meta->callout) ) : ?>col-md-8<?php else: ?>col-lg-8<?php endif; ?>">
 
           <article class="article">
-          <?php if ( isset($meta->subtitle) && !empty($meta->subtitle) ): ?>
-          <h2 style="margin-top:0;"><?php echo($meta->subtitle); ?></h2>
-          <?php endif; ?>
+
+          <h2 style="margin-top:0;"><?php the_title(); ?></h2>
+
           <?php the_content(); ?>
           </article>
 
