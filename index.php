@@ -132,7 +132,7 @@ class SPL_Mailgun_Newsletter {
         $html .= '</h3>';
 
         $html .= '<p>';
-        $html .= wp_trim_excerpt($q->post->post_content);
+        //$html .= wp_trim_excerpt($q->post->post_content);
         //$html .= apply_filters('the_excerpt', $q->post->post_content);
         $html .= '</p>';
 
