@@ -68,6 +68,10 @@
       <div class="row">
         <div class="<?php if ( isset($meta->sidebar) || isset($meta->callout) ) : ?>col-md-8<?php else: ?>col-lg-8<?php endif; ?>">
 
+          <?php if ( isset($meta->subtitle) && !empty($meta->subtitle): ?>
+          <h3><?php echo($meta->subtitle); ?></h3>
+          <?php endif; ?>
+
           <article class="article">
           <?php the_content(); ?>
           </article>
@@ -104,7 +108,7 @@
             <a class="btn btn-success btn-block" href="/subscribe/"><i class="glyphicon glyphicon-envelope"></i>
 Subscribe to Libray News &rarr;</a>
           </p>
-                    
+
           <p style="text-align: center;">
             <a href="https://epay.spokanelibrary.org/eCommerceWebModule/Home"><img class="aligncenter img-responsive" alt="Pay Fines" src="http://news.spokanelibrary.org/wordpress/media/Pay_fines-160x120.jpg" ></a>
           </p>
