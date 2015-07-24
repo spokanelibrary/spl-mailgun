@@ -131,6 +131,10 @@ class SPL_Mailgun_Newsletter {
         $html .= $link;
         $html .= '</h3>';
 
+        $html .= '<p>';
+        $html .= $post->post_excerpt;
+        $html .= '</p>';
+
         if ( !empty($posts) ) {
           $html .= '<p>';
           $html .= '<b>also in this issue:</b>';
