@@ -45,10 +45,8 @@
 		
     <div class="panel-heading">
 			<div class="text-right">
-				<small>
-          <i class="glyphicon glyphicon-envelope text-primary"></i>
+			    <i class="glyphicon glyphicon-envelope text-primary"></i>
 				  <a href="/subscribe">Subscribe</a>
-        </small>
       </div>
       <!--
       <span class="text-muted">
