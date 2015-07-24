@@ -132,26 +132,26 @@ class SPL_Mailgun_Newsletter {
         $html .= '</h3>';
 
         if ( in_array('excerpt', $params) ) {
-          setup_postdata( $q->post );
+          //setup_postdata( $q->post );
           if ($q->post->post_excerpt) {
               // excerpt set, return it
               $excerpt = apply_filters('the_excerpt', $q->post->post_excerpt);
 
           } else {
-              //setup_postdata( $q->post );
+              setup_postdata( $q->post );
               $excerpt = get_the_excerpt();
-              //wp_reset_postdata();
+              wp_reset_postdata();
           }
 
           //if ( has_post_thumbnail() ) { 
             $img = wp_get_attachment_image_src(get_post_thumbnail_id($q->post->ID), 'medium');
             $img_src = $img[0];
           //}
-          wp_reset_postdata();
+          //wp_reset_postdata();
 
           $html .= '<p>';
           if ( $img_src ) {
-            $html .= '<img class="img-rounded pull-left" src="'.$img_src.'">';
+            //$html .= '<img class="img-rounded pull-left" src="'.$img_src.'">';
           }
           $html .= $excerpt;
           $html .= '</p>';
