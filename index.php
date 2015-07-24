@@ -403,6 +403,21 @@ class SPL_Mailgun_Newsletter {
       }
 
 
+      $subtitle = get_post_meta($post->ID
+                  ,'_spl_mailgun_newsletter_subtitle'
+                  ,true 
+                  );
+      //if ( !empty($subtitle) ) {
+        $meta->subtitle = $subtitle;
+      //}
+
+
+
+
+
+
+
+
       $callout = array();
       $content = apply_filters('the_content', get_post_meta($post->ID
                 ,'_spl_mailgun_newsletter_sidebar_callout'
