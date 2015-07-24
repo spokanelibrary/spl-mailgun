@@ -671,7 +671,7 @@ class SPL_Mailgun_Newsletter {
                         , 'title' => 'Subtitle'
                         , 'pages' => array('newsletter') // post type
                         //, 'show_on' => array()
-                        , 'context' => 'advanced'
+                        , 'context' => 'normal'
                         , 'priority' => 'high'
                         , 'show_names' => false
                         , 'fields' => array(
