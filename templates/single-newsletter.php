@@ -75,7 +75,7 @@
 
           <article class="article">
 
-          <h1 style="margin-top:0; color:#222;"><?php the_title(); ?></h1>
+          <h1 style="margin-top:0;" class="text-success"><?php the_title(); ?></h1>
 
           <?php the_content(); ?>
           </article>
