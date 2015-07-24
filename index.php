@@ -127,9 +127,9 @@ class SPL_Mailgun_Newsletter {
         //$html .= mysql2date( 'F, Y', $q->post->post_date );
         //$html .= '</span>';
         
-        $html .= '<h4>';
+        $html .= '<h3>';
         $html .= $link;
-        $html .= '</h4>';
+        $html .= '</h3>';
 
         if ( !empty($posts) ) {
           $html .= '<p>';
@@ -137,7 +137,7 @@ class SPL_Mailgun_Newsletter {
           $html .= '</p>';
 
           if ( isset($params['link_posts']) ) {
-            $html .= '<ul class="nav nav-pills nav-stacked">';
+            $html .= '<ul class="">';
             foreach ( $posts as $post ) {
               $html .= '<li><a href="'.$post->link.'">'.$post->title.'</a></li>';
             }
