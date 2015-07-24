@@ -126,6 +126,18 @@ class SPL_Mailgun_Newsletter {
         //$html .= '<span class="text-muted">';
         //$html .= mysql2date( 'F, Y', $q->post->post_date );
         //$html .= '</span>';
+
+        if ( in_array('subtitle', $params) ) {
+          $subtitle = get_post_meta($q->post->ID
+                  ,'_spl_mailgun_newsletter_subtitle'
+                  ,true 
+                  );
+          if ( !empty($subtitle) ) {
+            $html .= '<h5 class="text-muted">';
+            $html .= $subtitle;
+            $html .= '</h5>';
+          }
+        }
         
         $html .= '<h2>';
         $html .= $link;
