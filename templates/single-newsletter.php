@@ -21,7 +21,11 @@
 <div class="page-header">
 
   <h1>
+    <?php if ( isset($meta->subtitle) && !empty($meta->subtitle) ) : ?>
+    <?php echo($meta->subtitle); ?>
+    <?php else: ?>
     Library News
+    <?php endif; ?>
   </h1>
   <?php// get_template_part('templates/entry-meta'); ?>
 </div>
@@ -44,9 +48,6 @@
 				<i class="glyphicon glyphicon-envelope text-primary"></i>
 				<a href="/subscribe">Subscribe</a>
 			</div>
-      <h4 class="panel-title">
-      <?php echo($meta->subtitle); ?>
-      </h4>
       <!--
       <span class="text-muted">
 				<i class="glyphicon glyphicon-send"></i>
@@ -106,11 +107,12 @@
 
         </div><!-- /.col -->
         <div class="col-md-4">
-
+          <!--
           <p>
             <a class="btn btn-success btn-block" href="/subscribe/"><i class="glyphicon glyphicon-envelope"></i>
 Subscribe to Libray News &rarr;</a>
           </p>
+          -->
 
           <p style="text-align: center;">
             <a href="https://epay.spokanelibrary.org/eCommerceWebModule/Home"><img class="aligncenter img-responsive" alt="Pay Fines" src="http://news.spokanelibrary.org/wordpress/media/Pay_fines-160x120.jpg" ></a>
