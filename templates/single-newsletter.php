@@ -80,11 +80,13 @@
           <?php the_content(); ?>
           </article>
 
+          <!--
           <p class="lead text-center text-muted">
             &hellip;
             <i class="glyphicon glyphicon-leaf" style="padding: 0 8px 0 12px;"></i>
             &hellip;
           </p>
+          -->
 
 
           <?php if ( isset($meta->posts) ) :  ?>
