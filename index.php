@@ -139,7 +139,7 @@ class SPL_Mailgun_Newsletter {
           }
         }
         
-        $html .= '<h2 style="margin-top:0;">';
+        $html .= '<h2>';
         $html .= $link;
         $html .= '</h2>';
 
