@@ -134,7 +134,7 @@ class SPL_Mailgun_Newsletter {
 
         if ($q->post->post_excerpt) {
             // excerpt set, return it
-            $excerpt = apply_filters('the_excerpt', $the_post->post_excerpt);
+            $excerpt = apply_filters('the_excerpt', $q->post->post_excerpt);
 
         } else {
             setup_postdata( $q->post );
