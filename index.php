@@ -678,7 +678,8 @@ class SPL_Mailgun_Newsletter {
                                             array('name' => 'Subtitle'
                                                 //, 'desc' => 'main article headline'
                                                 , 'id' => $prefix . 'subtitle'
-                                                , 'type' => 'text'
+                                                , 'type' => 'title'
+                                                //, 'type' => 'text'
                                                 //, 'type' => 'wysiwyg'
                                                 , 'options' => array()
                                             )
