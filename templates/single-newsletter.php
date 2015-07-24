@@ -75,7 +75,7 @@
 
           <article class="article">
 
-          <h2 style="margin-top:0;"><?php the_title(); ?></h2>
+          <h1 style="margin-top:0;"><?php the_title(); ?></h1>
 
           <?php the_content(); ?>
           </article>
