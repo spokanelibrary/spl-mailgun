@@ -180,7 +180,7 @@ class SPL_Mailgun_Newsletter {
           if ( isset($params['link_posts']) ) {
             $html .= '<ul class="">';
             foreach ( $posts as $post ) {
-              $html .= '<li><a href="'.$post->link.'">'.$post->title.'</a></li>';
+              $html .= '<li><b><a href="'.$post->link.'">'.$post->title.'</a></b></li>';
             }
             $html .= '</ul>';
           } else {
