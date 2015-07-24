@@ -171,9 +171,11 @@ class SPL_Mailgun_Newsletter {
         }
 
         if ( !empty($posts) ) {
-          $html .= '<p>';
-          $html .= '<b>also in this issue:</b>';
-          $html .= '</p>';
+          $html .= '<div class="row">';
+          $html .= '<div class="col col-sm-10 col-sm-offset-2">';
+          $html .= '<h4>';
+          $html .= 'also in this issue:';
+          $html .= '</h4>';
 
           if ( isset($params['link_posts']) ) {
             $html .= '<ul class="">';
@@ -190,6 +192,8 @@ class SPL_Mailgun_Newsletter {
             }
             $html .= '</ul>';
           }
+          $html .= '</div>';
+          $html .= '</div>';
         }
         break;
       default:
