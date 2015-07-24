@@ -133,13 +133,13 @@ class SPL_Mailgun_Newsletter {
                   ,true 
                   );
           if ( !empty($subtitle) ) {
-            $html .= '<h5 class="text-muted text-right" style="margin-bottom:0;">';
+            $html .= '<h5 class="text-muted text-right">';
             $html .= $subtitle;
             $html .= '</h5>';
           }
         }
         
-        $html .= '<h2>';
+        $html .= '<h2 style="margin-top:0;">';
         $html .= $link;
         $html .= '</h2>';
 
