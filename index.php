@@ -666,6 +666,25 @@ class SPL_Mailgun_Newsletter {
   function getNewsletterCmbMetaBoxes( $meta_boxes ) {
     $prefix = '_spl_mailgun_newsletter_'; // Prefix for all fields
 
+    // SUBTITLE
+    $meta_boxes[] = array('id' => $prefix . 'subtitle_id'
+                        , 'title' => 'Subtitle'
+                        , 'pages' => array('newsletter') // post type
+                        //, 'show_on' => array()
+                        , 'context' => 'advanced'
+                        , 'priority' => 'high'
+                        , 'show_names' => false
+                        , 'fields' => array(
+                                            array('name' => 'Subtitle'
+                                                , 'desc' => 'main article headline'
+                                                , 'id' => $prefix . 'subtitle'
+                                                , 'type' => 'text'
+                                                //, 'type' => 'wysiwyg'
+                                                , 'options' => array()
+                                            )
+                                      )
+                    );
+
     // CONTENT
     $fields = array();
     $fields[] = array(
