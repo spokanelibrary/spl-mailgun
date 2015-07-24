@@ -143,10 +143,10 @@ class SPL_Mailgun_Newsletter {
               //wp_reset_postdata();
           }
 
-          if ( has_post_thumbnail() ) { 
-            $img = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), 'medium');
+          //if ( has_post_thumbnail() ) { 
+            $img = wp_get_attachment_image_src(get_post_thumbnail_id($q->post->ID), 'medium');
             $img_src = $img[0];
-          }
+          //}
           wp_reset_postdata();
 
           $html .= '<p>';
