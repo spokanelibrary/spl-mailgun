@@ -172,7 +172,7 @@ class SPL_Mailgun_Newsletter {
 
         if ( !empty($posts) ) {
           $html .= '<div class="row">';
-          $html .= '<div class="col col-sm-10 col-sm-offset-2">';
+          $html .= '<div class="col col-sm-11 col-sm-offset-1">';
           $html .= '<h4>';
           $html .= 'also in this issue:';
           $html .= '</h4>';
