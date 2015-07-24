@@ -131,7 +131,7 @@ class SPL_Mailgun_Newsletter {
         $html .= $link;
         $html .= '</h3>';
 
-        if ( in_array($params, 'excerpt') ) {
+        if ( in_array('excerpt', $params) ) {
           if ($q->post->post_excerpt) {
               // excerpt set, return it
               $excerpt = apply_filters('the_excerpt', $q->post->post_excerpt);
