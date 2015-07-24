@@ -68,11 +68,10 @@
       <div class="row">
         <div class="<?php if ( isset($meta->sidebar) || isset($meta->callout) ) : ?>col-md-8<?php else: ?>col-lg-8<?php endif; ?>">
 
+          <article class="article">
           <?php if ( isset($meta->subtitle) && !empty($meta->subtitle) ): ?>
           <h3><?php echo($meta->subtitle); ?></h3>
           <?php endif; ?>
-
-          <article class="article">
           <?php the_content(); ?>
           </article>
 
