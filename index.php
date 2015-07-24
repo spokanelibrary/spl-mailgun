@@ -515,7 +515,7 @@ class SPL_Mailgun_Newsletter {
                               , 'editor'
                               , 'thumbnail'
                               , 'author'
-                              //, 'excerpt'
+                              , 'excerpt'
                               //, 'comments' 
                               )
     , 'has_archive'   => true
