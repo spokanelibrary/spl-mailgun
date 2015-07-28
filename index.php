@@ -128,7 +128,7 @@ class SPL_Mailgun_Newsletter {
                   ,true 
                   );
         if ( empty($subtitle) ) {
-          $subtitle = $params['default'];
+          $subtitle = $params['default_subtitle'];
         }
         break;
       case 'toc':
