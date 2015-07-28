@@ -130,6 +130,7 @@ class SPL_Mailgun_Newsletter {
         if ( empty($subtitle) ) {
           $subtitle = $params['default_subtitle'];
         }
+        return $subtitle;
         break;
       case 'toc':
         //$html .= '<span class="text-muted">';
