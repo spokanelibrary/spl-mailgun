@@ -152,7 +152,7 @@
                         <tr>
                           <td>
                             <h1 class="title">
-                              <a href="<?php echo $link; ?>"><span class="serif"><?php echo $title; ?></span></a>
+                              <a href="<?php echo $link; ?>"><span class=""><?php echo $title; ?></span></a>
                             </h1>
                           </td>
                           <td class="expander"></td>
