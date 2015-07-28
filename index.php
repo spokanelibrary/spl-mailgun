@@ -208,10 +208,10 @@ class SPL_Mailgun_Newsletter {
             }
             $html .= '</ul>';
           } else {
-            $html .= '<ul class="list-unstyled">';
+            $html .= '<ul class="">';
             foreach ( $posts as $post ) {
               $html .= '<li>';
-              $html .= ''.$post->title.'</strong> ';
+              $html .= '<b>'.$post->title.'</b>';
               $html .= '</li>';
             }
             $html .= '</ul>';
