@@ -63,9 +63,9 @@
   .masthead h1 { font-size: 42px; font-weight: normal; color: #ffffff; }
   .masthead h5 { font-size: 12px; font-weight: normal; color: #ffffff; }
 
-  .title { color: #64964B; /*color: #005587;*/ }
+  .title { /*color: #64964B;*/ /*color: #005587;*/ }
 
-  .subtitle { /*color: #005587;*/ font-size: 22px; }
+  .subtitle { color: #64964B; /*color: #005587;*/ font-size: 22px; }
 
   /* Deemphasize some text */
   /*.post p,*/
