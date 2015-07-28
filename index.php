@@ -122,6 +122,7 @@ class SPL_Mailgun_Newsletter {
     }
 
     switch ( $params['format'] ) {
+
       case 'subtitle':
         $subtitle = get_post_meta($q->post->ID
                   ,'_spl_mailgun_newsletter_subtitle'
@@ -131,6 +132,11 @@ class SPL_Mailgun_Newsletter {
           $subtitle = $params['default_subtitle'];
         }
         return $subtitle;
+        break;
+      case 'home':
+        $html = '';
+        $html .= '';
+        return $html;
         break;
       case 'toc':
         //$html .= '<span class="text-muted">';
