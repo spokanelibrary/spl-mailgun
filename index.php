@@ -216,6 +216,9 @@ class SPL_Mailgun_Newsletter {
             }
             $html .= '</ul>';
           }
+          if ( isset($params['link_button']) ) {
+            $html .= '<a class="btn btn-large btn-success" href="'.get_the_permalink().'">Read this issue &rarr;</a>';
+          }
           $html .= '</div>';
           $html .= '</div>';
         }
