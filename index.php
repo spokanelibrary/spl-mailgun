@@ -174,7 +174,9 @@ class SPL_Mailgun_Newsletter {
           if ( $img_src ) {
             $html .= '<div class="row">';
             $html .= '<div class="col-sm-4">';
+            $html .= '<a href="'.get_permalink($q->post->ID).'" title="'.$title.'">';
             $html .= '<img class="img-responsive img-rounded" style="max-height:200px;" src="'.$img_src.'">';
+            $html .= '</a>';
             $html .= '</div>';
             $html .= '<div class="col-sm-8">';
             $html .= '<p>';
