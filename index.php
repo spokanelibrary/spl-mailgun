@@ -122,6 +122,15 @@ class SPL_Mailgun_Newsletter {
     }
 
     switch ( $params['format'] ) {
+      case 'subtitle':
+        $subtitle = get_post_meta($q->post->ID
+                  ,'_spl_mailgun_newsletter_subtitle'
+                  ,true 
+                  );
+        if ( empty($subtitle) ) {
+          $subtitle = $params['default'];
+        }
+        break;
       case 'toc':
         //$html .= '<span class="text-muted">';
         //$html .= mysql2date( 'F, Y', $q->post->post_date );
