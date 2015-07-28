@@ -176,9 +176,11 @@
                         <tr>
                           <td>
                             <?php echo $content; ?>
+                            <!--
                             <h4 class="center">
                               <center>...</center>
                             </h4>
+                            -->
                           </td>
                           <td class="expander"></td>
                         </tr>
