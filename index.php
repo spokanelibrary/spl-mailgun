@@ -1203,7 +1203,7 @@ class SPL_Mailgun_Newsletter {
                           , true 
                           );
 
-    $issue = get_post_meta($q->post->ID
+    $issue = get_post_meta($id
                   ,'_spl_mailgun_newsletter_subtitle'
                   ,true 
                   );
