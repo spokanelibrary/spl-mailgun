@@ -1202,6 +1202,11 @@ class SPL_Mailgun_Newsletter {
                           , '_spl_mailgun_newsletter_sidebar_headline'
                           , true 
                           );
+
+    $issue = get_post_meta($q->post->ID
+                  ,'_spl_mailgun_newsletter_subtitle'
+                  ,true 
+                  );
     
     $callout = nl2br(get_post_meta($id
                           , '_spl_mailgun_newsletter_sidebar_callout'

@@ -120,7 +120,7 @@
                                     <p class="white condensed"><?php bloginfo( 'description' ); ?></p>
                                   </td>
                                   <td class="five sub-columns last" style="text-align:right; vertical-align:middle;">
-                                    <p class="white condensed text-right">&nbsp;<?php echo $subtitle; //echo $date; ?></p>
+                                    <p class="white condensed text-right">&nbsp;<?php echo $issue; //echo $date; ?></p>
                                   </td>
                                   <td class="expander"></td>
                                 </tr>
