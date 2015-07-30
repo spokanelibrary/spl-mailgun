@@ -1082,7 +1082,7 @@ class SPL_Mailgun_Newsletter {
       $html .= $post->content;
       
       if ( !$post->excerpt ) {
-        //$html .= '<h4 class="center"><center>...</center></h4>';
+        $html .= '<h4 class="center"><center>...</center></h4>';
       }
       
       $html .= '</td>';
