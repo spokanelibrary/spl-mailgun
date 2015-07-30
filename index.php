@@ -377,13 +377,13 @@ class SPL_Mailgun_Newsletter {
         $html .= '';
       }
 
-      
+      /*
       $html .= '<p class="lead text-center text-muted">
                   &hellip;
                   <i class="glyphicon glyphicon-leaf" style="padding: 0 8px 0 12px;"></i>
                   &hellip;
                 </p>';
-      
+      */
       $html .= '</aside>';
       
     }
@@ -433,7 +433,6 @@ class SPL_Mailgun_Newsletter {
                   <i class="glyphicon glyphicon-leaf" style="padding: 0 8px 0 12px;"></i>
                   &hellip;
                 </p>';
-      
 
       
     }
