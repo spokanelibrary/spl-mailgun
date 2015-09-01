@@ -148,6 +148,9 @@
     color: #f2f2f2 !important;
   }
 
+  .post ul li {
+    padding-bottom: 6px;
+  }
 
 	.post table.button td,
   .post table.tiny-button td,
