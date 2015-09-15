@@ -164,14 +164,13 @@ class SPL_Mailgun_Newsletter {
           if ($q->post->post_excerpt) {
               // excerpt set, return it
               $excerpt = apply_filters('the_excerpt', $q->post->post_excerpt);
-              $excerpt .= '<p><a class="" href="'.get_the_permalink($q->post->ID).'">Read more &rarr;</a></p>';
           } else {
               setup_postdata( $q->post );
-              //global $post;
               //$excerpt = apply_filters('the_excerpt', get_the_excerpt() );
               $excerpt = wp_trim_words(get_the_content());
               wp_reset_postdata();
           }
+          $excerpt .= '<p><a class="" href="'.get_the_permalink($q->post->ID).'">Read more &rarr;</a></p>';
 
           //if ( has_post_thumbnail() ) { 
             $img = wp_get_attachment_image_src(get_post_thumbnail_id($q->post->ID), 'medium');
