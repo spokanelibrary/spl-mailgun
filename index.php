@@ -168,7 +168,7 @@ class SPL_Mailgun_Newsletter {
           } else {
               setup_postdata( $q->post );
               //$excerpt = apply_filters('the_excerpt', get_the_excerpt() );
-              $excerpt = apply_filters('the_excerpt', get_the_content('',FALSE,'') );
+              $excerpt = apply_filters('the_excerpt', get_the_excerpt('',FALSE,'') );
               wp_reset_postdata();
           }
 
