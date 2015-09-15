@@ -171,7 +171,7 @@ class SPL_Mailgun_Newsletter {
               wp_reset_postdata();
           }
           //$excerpt .= '<p><a class="" href="'.get_the_permalink($q->post->ID).'">Read more &rarr;</a></p>';
-          $excerpt .= ' <a class="" href="'.get_the_permalink($q->post->ID).'">Read more &rarr;</a>';
+          $excerpt .= ' <a class="" href="'.get_the_permalink($q->post->ID).'">continued &rarr;</a>';
 
           //if ( has_post_thumbnail() ) { 
             $img = wp_get_attachment_image_src(get_post_thumbnail_id($q->post->ID), 'medium');
