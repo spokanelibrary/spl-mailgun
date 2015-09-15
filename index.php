@@ -164,7 +164,7 @@ class SPL_Mailgun_Newsletter {
           if ($q->post->post_excerpt) {
               // excerpt set, return it
               $excerpt = apply_filters('the_excerpt', $q->post->post_excerpt);
-
+              $excerpt .= '<p><a class="" href="'.get_the_permalink($q->post->ID).'">Read this issue of Library News &rarr;</a></p>';
           } else {
               //setup_postdata( $q->post );
               //$excerpt = apply_filters('the_excerpt', get_the_excerpt() );
