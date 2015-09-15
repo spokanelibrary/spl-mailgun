@@ -167,9 +167,9 @@ class SPL_Mailgun_Newsletter {
               $excerpt .= '<p><a class="" href="'.get_the_permalink($q->post->ID).'">Read more &rarr;</a></p>';
           } else {
               setup_postdata( $q->post );
-              global $post;
-              $excerpt = apply_filters('the_excerpt', get_the_excerpt() );
-              //$excerpt = apply_filters('the_excerpt', get_the_excerpt('',FALSE,'') );
+              //global $post;
+              //$excerpt = apply_filters('the_excerpt', get_the_excerpt() );
+              $excerpt = wp_trim_words(get_the_content());
               wp_reset_postdata();
           }
 
