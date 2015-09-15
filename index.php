@@ -168,7 +168,7 @@ class SPL_Mailgun_Newsletter {
           } else {
               setup_postdata( $q->post );
               $excerpt = get_the_excerpt();
-              wp_reset_postdata();
+              //wp_reset_postdata();
           }
 
           //if ( has_post_thumbnail() ) { 
