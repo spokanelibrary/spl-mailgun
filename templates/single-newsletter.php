@@ -18,9 +18,9 @@
   <!--Digest page -->
 <?php
   $template = plugin_dir_path(__FILE__) . 'templates/' . $meta->template;
-  if (file_exists($template)) {
+  ///if (file_exists($template)) {
     echo $template;
-  }
+  //}
 ?>
 
 <?php else: ?>
