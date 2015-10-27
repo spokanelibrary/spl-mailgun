@@ -26,9 +26,11 @@
       -->
       <h3 style="margin-top:8px;">
         
-        Library News <?php if ( isset($meta->subtitle) && !empty($meta->subtitle) ) : ?>
-        : 
+        Library News 
+        <?php if ( isset($meta->subtitle) && !empty($meta->subtitle) ) : ?>
+        <small class="uppercase">
         <?php echo($meta->subtitle); ?>
+        </small>
         <?php endif; ?>
       </h3>
       <?php// get_template_part('templates/entry-meta'); ?>
