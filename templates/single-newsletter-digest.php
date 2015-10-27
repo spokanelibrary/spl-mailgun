@@ -1,22 +1,7 @@
 <?php //get_template_part('templates/page', 'header'); ?>
 <?php //get_template_part('templates/content', 'single'); ?>
-
+Digest Template
 <div class="spl-news" style="margin-top: 0px;">
-<?php while (have_posts()) : the_post(); ?>
-<?php
-  /*
-  $settings = get_option( 'spl-mailgun-newsletter' );
-  print_r($settings);
-  */
-  //print_r($post);
-  
-  $meta = SPL_Mailgun_Newsletter::getNewsletterMetadata( $post );
-  /*
-  echo '<pre>';
-  print_r( $meta );
-  echo '</pre>';
-  */
-?>
 
 <div class="page-header">
 
@@ -217,5 +202,4 @@ Subscribe to Libray News &rarr;</a>
   </footer>
   <?php //comments_template('/templates/comments.php'); ?>
 
-<?php endwhile; ?>
 </div>
