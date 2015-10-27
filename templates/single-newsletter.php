@@ -1,6 +1,6 @@
 <?php while (have_posts()) : the_post(); ?>
 
-<?php if ( 'single-newsletter-digest.php' ) : ?>
+<?php if ( 'test' == 'single-newsletter-digest.php' ) : ?>
   Digest page
 <?php else: ?>
 
