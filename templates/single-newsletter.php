@@ -1,15 +1,4 @@
 <?php while (have_posts()) : the_post(); ?>
-
-<?php if ( 'test' == 'single-newsletter-digest.php' ) : ?>
-  Digest page
-<?php else: ?>
-
-
-<?php //get_template_part('templates/page', 'header'); ?>
-<?php //get_template_part('templates/content', 'single'); ?>
-
-<div class="spl-news" style="margin-top: 0px;">
-
 <?php
   /*
   $settings = get_option( 'spl-mailgun-newsletter' );
@@ -24,6 +13,16 @@
   echo '</pre>';
   */
 ?>
+
+<?php if ( $meta->template == 'single-newsletter-digest.php' ) : ?>
+  Digest page
+<?php else: ?>
+
+
+<?php //get_template_part('templates/page', 'header'); ?>
+<?php //get_template_part('templates/content', 'single'); ?>
+
+<div class="spl-news" style="margin-top: 0px;">
 
 <div class="page-header">
 
