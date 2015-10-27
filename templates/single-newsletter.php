@@ -15,8 +15,8 @@
 ?>
 
 <?php if ( 'default' != $meta->template && basename(__FILE__) != $meta->template ) : ?>
-  Digest page
-<?php else: ?>
+  //Digest page
+<?php //else: ?>
 
 <?php //get_template_part('templates/page', 'header'); ?>
 <?php //get_template_part('templates/content', 'single'); ?>
