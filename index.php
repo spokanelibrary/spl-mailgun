@@ -759,9 +759,24 @@ class SPL_Mailgun_Newsletter {
   function getNewsletterCmbMetaBoxes( $meta_boxes ) {
     $prefix = '_spl_mailgun_newsletter_'; // Prefix for all fields
 
+    $ai = null;
+    $templates = scandir(plugin_dir_path(__FILE__).'templates');
+    if ( is_array($templates) ) {
+      foreach( $templates as $template ) {
+        if ( !is_dir(plugin_dir_path(__FILE__).'templates/'.$template) ) {
+          if ( stristr($template, 'single') ) {
+            $ai .= $template.' ';
+          }
+          //$tmpl .= '<option value="'.$template.'">';
+          //$tmpl .= str_replace(array('.php', '_'), array('',' '), $template);
+          //$tmpl .='</option>';
+        }
+      }
+    }
+
     // SUBTITLE
     $meta_boxes[] = array('id' => $prefix . 'subtitle_id'
-                        , 'title' => 'Article Issue'
+                        , 'title' => 'Article Issue'.' '.$ai
                         , 'pages' => array('newsletter') // post type
                         //, 'show_on' => array()
                         , 'context' => 'normal'
