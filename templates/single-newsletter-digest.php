@@ -23,7 +23,7 @@
 				  <a href="/subscribe">Subscribe</a>
       </div>
       -->
-      <h3>
+      <h3 style="margin-top:8px;">
         <?php if ( isset($meta->subtitle) && !empty($meta->subtitle) ) : ?>
         <?php echo($meta->subtitle); ?>
         <?php else: ?>
