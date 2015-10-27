@@ -25,10 +25,10 @@
       </div>
       -->
       <h3 style="margin-top:8px;">
-        <?php if ( isset($meta->subtitle) && !empty($meta->subtitle) ) : ?>
-        <?php echo($meta->subtitle); ?>
-        <?php else: ?>
         Library News
+        <?php if ( isset($meta->subtitle) && !empty($meta->subtitle) ) : ?>
+        : 
+        <?php echo($meta->subtitle); ?>
         <?php endif; ?>
       </h3>
       <?php// get_template_part('templates/entry-meta'); ?>
