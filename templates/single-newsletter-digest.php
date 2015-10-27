@@ -3,18 +3,6 @@
 
 <div class="spl-news spl-news-digest  " style="margin-top: 0px;">
 
-<div class="page-header">
-
-  <h1>
-    <?php if ( isset($meta->subtitle) && !empty($meta->subtitle) ) : ?>
-    <?php echo($meta->subtitle); ?>
-    <?php else: ?>
-    Library News
-    <?php endif; ?>
-  </h1>
-  <?php// get_template_part('templates/entry-meta'); ?>
-</div>
-
 <!--
 	<div class="page-header">
     <h1>
@@ -26,13 +14,24 @@
 -->
   
   
-	<div class="panel spl-hero-intranet spl-hero-brand-blue-e" style="border-left-width:5px;">
+	<div class="panel spl-hero-intranet spl-hero-brand-blue-e" style="">
 		
     <div class="panel-heading">
-			<div class="text-right">
+	   <!--
+  		<div class="text-right">
 			    <i class="glyphicon glyphicon-envelope text-primary"></i>
 				  <a href="/subscribe">Subscribe</a>
       </div>
+      -->
+      <h3>
+        <?php if ( isset($meta->subtitle) && !empty($meta->subtitle) ) : ?>
+        <?php echo($meta->subtitle); ?>
+        <?php else: ?>
+        Library News
+        <?php endif; ?>
+      </h3>
+      <?php// get_template_part('templates/entry-meta'); ?>
+
       <!--
       <span class="text-muted">
 				<i class="glyphicon glyphicon-send"></i>
