@@ -787,7 +787,7 @@ class SPL_Mailgun_Newsletter {
       foreach( $templates as $template ) {
         if ( !is_dir(plugin_dir_path(__FILE__).'templates/'.$template) ) {
           if ( stristr($template, 'single') ) {
-            $tmpls[$template] = array($template, $template);
+            $tmpls[$template] = array($template);
           }
           //$tmpl .= '<option value="'.$template.'">';
           //$tmpl .= str_replace(array('.php', '_'), array('',' '), $template);
@@ -809,7 +809,13 @@ class SPL_Mailgun_Newsletter {
                                                 , 'type' => 'select'
                                                 //, 'type' => 'text'
                                                 //, 'type' => 'wysiwyg'
-                                                , 'options' => $tmpls
+                                                //, 'options' => $tmpls
+                                                'options' => array(
+                                                    'standard' => __( 'Option One', 'cmb2' ),
+                                                    'custom'   => __( 'Option Two', 'cmb2' ),
+                                                    'none'     => __( 'Option Three', 'cmb2' ),
+                                                ),
+                                                'default' => 'custom',
                                             )
                                       )
                     );
