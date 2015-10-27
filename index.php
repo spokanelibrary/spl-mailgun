@@ -782,7 +782,7 @@ class SPL_Mailgun_Newsletter {
     
     // TEMPLATE
     $tmpls = array();
-    $tmpl[] = array('name'=>'Default', 'value'=>'default'; 
+    $tmpl[] = array('name'=>'Default', 'value'=>'default'); 
     $templates = scandir(plugin_dir_path(__FILE__).'templates');
     if ( is_array($templates) ) {
       foreach( $templates as $template ) {
