@@ -18,8 +18,8 @@
   <!--Digest page -->
 <?php
   $template = plugin_dir_path(__FILE__) . $meta->template;
-  if (file_exists($template)) {
-    echo $template;
+  if ( file_exists($template) ) {
+    include $template;
   }
 ?>
 
