@@ -25,8 +25,8 @@
       </div>
       -->
       <h3 style="margin-top:8px;">
-        Library News
-        <?php if ( isset($meta->subtitle) && !empty($meta->subtitle) ) : ?>
+        
+        Library News <?php if ( isset($meta->subtitle) && !empty($meta->subtitle) ) : ?>
         : 
         <?php echo($meta->subtitle); ?>
         <?php endif; ?>
