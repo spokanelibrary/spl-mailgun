@@ -489,6 +489,14 @@ class SPL_Mailgun_Newsletter {
         $meta->subtitle = $subtitle;
       //}
 
+      $template = get_post_meta($post->ID
+                  ,'_spl_mailgun_newsletter_template'
+                  ,true 
+                  );
+      //if ( !empty($subtitle) ) {
+        $meta->template = $template;
+      //}
+
 
 
 
