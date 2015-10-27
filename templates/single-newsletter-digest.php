@@ -58,7 +58,7 @@
       -->
 
       <div class="row">
-        <div class="<?php if ( isset($meta->sidebar) || isset($meta->callout) ) : ?>col-md-8<?php else: ?>col-lg-8<?php endif; ?>">
+        <div class="<?php if ( isset($meta->sidebar) || isset($meta->callout) ) : ?>col-md-8<?php else: ?>col-lg-12<?php endif; ?>">
 
           <article class="article">
 
