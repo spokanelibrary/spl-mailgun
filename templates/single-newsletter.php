@@ -14,10 +14,9 @@
   */
 ?>
 
-<?php if ( $meta->template == 'single-newsletter-digest.php' ) : ?>
+<?php if ( isset($meta->template) && 'default' != $meta->template && basename(__FILE__) != $meta->template ) : ?>
   Digest page
 <?php else: ?>
-
 
 <?php //get_template_part('templates/page', 'header'); ?>
 <?php //get_template_part('templates/content', 'single'); ?>
