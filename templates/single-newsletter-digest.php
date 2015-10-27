@@ -1,6 +1,7 @@
 <?php //get_template_part('templates/page', 'header'); ?>
 <?php //get_template_part('templates/content', 'single'); ?>
-
+<div class="row">
+<div class="col-lg-10 col-lg-offset-1">
 <div class="spl-news spl-news-digest  " style="margin-top: 0px;">
 
 <!--
@@ -202,4 +203,6 @@ Subscribe to Libray News &rarr;</a>
   </footer>
   <?php //comments_template('/templates/comments.php'); ?>
 
+</div>
+</div>
 </div>
