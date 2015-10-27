@@ -787,7 +787,7 @@ class SPL_Mailgun_Newsletter {
       foreach( $templates as $template ) {
         if ( !is_dir(plugin_dir_path(__FILE__).'templates/'.$template) ) {
           if ( stristr($template, 'single') ) {
-            $tmpls[$template] = $template;
+            $tmpls[$template] = array($template, $template);
           }
           //$tmpl .= '<option value="'.$template.'">';
           //$tmpl .= str_replace(array('.php', '_'), array('',' '), $template);
