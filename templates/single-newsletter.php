@@ -1,8 +1,15 @@
+<?php while (have_posts()) : the_post(); ?>
+
+<?php if ( 'single-newsletter-digest.php' ) : ?>
+  Digest page
+<?php else: ?>
+
+
 <?php //get_template_part('templates/page', 'header'); ?>
 <?php //get_template_part('templates/content', 'single'); ?>
 
 <div class="spl-news" style="margin-top: 0px;">
-<?php while (have_posts()) : the_post(); ?>
+
 <?php
   /*
   $settings = get_option( 'spl-mailgun-newsletter' );
@@ -217,5 +224,8 @@ Subscribe to Libray News &rarr;</a>
   </footer>
   <?php //comments_template('/templates/comments.php'); ?>
 
+  </div>
+
+<?php endif; ?>
 <?php endwhile; ?>
-</div>
+
