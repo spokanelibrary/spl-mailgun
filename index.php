@@ -776,7 +776,7 @@ class SPL_Mailgun_Newsletter {
 
     // SUBTITLE
     $meta_boxes[] = array('id' => $prefix . 'subtitle_id'
-                        , 'title' => 'Article Issue'.' '.$ai
+                        , 'title' => 'Article Issue'.' '.get_the_title().' '.$ai
                         , 'pages' => array('newsletter') // post type
                         //, 'show_on' => array()
                         , 'context' => 'normal'
