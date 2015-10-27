@@ -1,7 +1,7 @@
 <?php //get_template_part('templates/page', 'header'); ?>
 <?php //get_template_part('templates/content', 'single'); ?>
 
-<div class="spl-news spl-news-digest" style="margin-top: 0px;">
+<div class="spl-news spl-news-digest  " style="margin-top: 0px;">
 
 <div class="page-header">
 
@@ -26,7 +26,7 @@
 -->
   
   
-	<div class="panel panel-default" style="border-left-width:5px;">
+	<div class="panel spl-hero-intranet spl-hero-brand-blue-e" style="border-left-width:5px;">
 		
     <div class="panel-heading">
 			<div class="text-right">
