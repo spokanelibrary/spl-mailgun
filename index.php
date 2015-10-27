@@ -805,7 +805,7 @@ class SPL_Mailgun_Newsletter {
                         , 'show_names' => false
                         , 'fields' => array(
                                             array('name' => 'Choose a template'
-                                                , 'desc' => 'for the web version'
+                                                , 'desc' => 'For the web version - leave set to default'
                                                 , 'id' => $prefix . 'template'
                                                 , 'type' => 'select'
                                                 //, 'type' => 'text'
