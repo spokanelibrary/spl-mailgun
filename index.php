@@ -810,6 +810,7 @@ class SPL_Mailgun_Newsletter {
                                                 //, 'type' => 'text'
                                                 //, 'type' => 'wysiwyg'
                                                 , 'options' => $tmpls
+                                                , 'default' => 'single-newsletter.php'
                                             )
                                       )
                     );
