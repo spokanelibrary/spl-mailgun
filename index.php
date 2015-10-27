@@ -809,7 +809,18 @@ class SPL_Mailgun_Newsletter {
                                                 , 'type' => 'select'
                                                 //, 'type' => 'text'
                                                 //, 'type' => 'wysiwyg'
-                                                , 'options' => $tmpls
+                                                //, 'options' => $tmpls
+
+                                                ,'options' => array(
+                                                    'standard' => __( 'Option One', 'cmb2' ),
+                                                    'custom'   => __( 'Option Two', 'cmb2' ),
+                                                    'none'     => __( 'Option Three', 'cmb2' ),
+                                                )
+                                                ,'default' => 'custom'
+
+
+
+
                                             )
                                       )
                     );
