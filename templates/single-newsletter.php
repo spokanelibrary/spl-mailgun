@@ -14,7 +14,7 @@
   */
 ?>
 
-<?php if ( 'default' != $meta->template && basename(__FILE__) != $meta->template ) : ?>
+<?php if ( !empty($meta->template) && 'default' != $meta->template && basename(__FILE__) != $meta->template ) : ?>
   <!--Digest page -->
 <?php //else: ?>
 
