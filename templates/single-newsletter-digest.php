@@ -1,7 +1,7 @@
 <?php //get_template_part('templates/page', 'header'); ?>
 <?php //get_template_part('templates/content', 'single'); ?>
-Digest Template
-<div class="spl-news" style="margin-top: 0px;">
+
+<div class="spl-news spl-news-digest" style="margin-top: 0px;">
 
 <div class="page-header">
 
@@ -100,10 +100,11 @@ Digest Template
 Subscribe to Libray News &rarr;</a>
           </p>
           -->
-
+          <!--
           <p style="text-align: center;">
             <a href="https://epay.spokanelibrary.org/eCommerceWebModule/Home"><img class="aligncenter img-responsive" alt="Pay Fines" src="http://news.spokanelibrary.org/wordpress/media/Pay_fines-160x120.jpg" ></a>
           </p>
+          -->
 
           <?php if ( isset($meta->callout) && isset($meta->callout['content']) ) :  ?>
           <!-- sidebar callout -->
