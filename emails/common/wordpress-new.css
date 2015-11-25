@@ -255,6 +255,15 @@ h4.hero-brand {
 
 li { padding-bottom: 6px; }
 
+.nav-pills li {
+  display: inline-block;
+}
+
+.nav-pills li a {
+  display: inline-block;
+  margin: 10px;
+}
+
 
 
 

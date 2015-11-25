@@ -178,7 +178,7 @@
                             <?php echo $content; ?>
                             
                             <h4 class="center">
-                              <center><hr></center>
+                              <center></center>
                             </h4>
                             
                           </td>
@@ -461,7 +461,7 @@
                                   <table class="button spokanelibrary" style="vertical-align: middle;">
                                     <tr>
                                       <td valign="middle" style="vertical-align:middle;">
-                                        <a href="http://blog.spokanelibrary.org"><img style="clear:none; display:inline; width:16px; height:16px;" width="16px" height="16px" src="http://www.spokanelibrary.org/hosted/img/icons/16px/spl-touch-inverse.png">&nbsp;Library Blog</a>
+                                        <a href="http://www.spokanelibrary.org/blog/"><img style="clear:none; display:inline; width:16px; height:16px;" width="16px" height="16px" src="http://www.spokanelibrary.org/hosted/img/icons/16px/spl-touch-inverse.png">&nbsp;Library Blog</a>
                                       </td>
                                     </tr>
                                   </table>
