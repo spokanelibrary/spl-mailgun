@@ -162,6 +162,9 @@
   .post ul li {
     mso-line-height-rule: exactly;
     line-height: 150% !important;
+    padding-bottom: 10px !important;
+    margin-bottom: 10px !important;
+    color: red;
   }
 
 	.post table.button td,
