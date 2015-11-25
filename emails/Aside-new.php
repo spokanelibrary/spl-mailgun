@@ -178,7 +178,7 @@
                             <?php echo $content; ?>
                             
                             <h4 class="center">
-                              <center>...</center>
+                              <center><hr></center>
                             </h4>
                             
                           </td>
