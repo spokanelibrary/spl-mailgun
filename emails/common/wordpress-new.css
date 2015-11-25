@@ -159,13 +159,6 @@
     color: #f2f2f2 !important;
   }
 
-  .li-space {
-    mso-line-height-rule: exactly;
-    /*line-height: 120% !important;*/
-    padding-bottom: 10px;
-    color: red;
-  }
-
 	.post table.button td,
   .post table.tiny-button td,
   .post table.small-button td,
