@@ -243,11 +243,12 @@ ul { font-size: 14px; /*margin: 10px 10px 10px 24px; padding: 0;*/ /*margin:0;*/
 .text-danger { color:#a94442; }
 
 .hero-brand {
-  padding-top: 0px;
-  padding-bottom: 16px;
-  background-image:url('http://www.spokanelibrary.org/assets/img/png/spl-tile-banner.png');
-  background-position: bottom left;
-  background-repeat: repeat-x;
+  display:block;
+  padding: 8px;
+  border: 1px solid #f5961e;  
+  border-radius:4px; 
+  background:rgb(170,215,240); 
+  color: #7350a0 !important;
 }
 
 
