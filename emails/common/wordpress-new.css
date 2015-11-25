@@ -1,0 +1,246 @@
+	 /* Preserve type in Outlook reply/forward */
+  a, 
+  td,
+  center {
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  img { float: none; max-width: 100% !important; }
+
+  small { line-height: 1em; font-size: 11px; }
+
+  /* Underline anchors */
+  a {
+    text-decoration: none !important;
+  }
+
+  /* Reset button hovers */
+  .button a:hover,
+  .tiny-button a:hover,
+  .small-button a:hover,
+  .medium-button a:hover,
+  .large-button a:hover {
+    color: #f2f2f2 !important;
+  }
+
+  /* Do not use !important on anchors */
+  a,
+  h1 a,
+  h2 a,
+  h3 a,
+  h4 a,
+  h5 a,
+  h6 a { color: #005587; }
+ 
+ 	/* Do use !important on pseudo states */
+  a:hover, 
+  a:active,
+  a:visited,
+  h1 a:hover,
+  h1 a:active,
+  h1 a:visited,
+  h2 a:hover,
+  h2 a:active,
+  h2 a:visited,
+  h3 a:hover,
+  h3 a:active,
+  h3 a:visited,
+  h4 a:hover,
+  h4 a:active,
+  h4 a:visited,
+  h5 a:hover,
+  h5 a:active,
+  h2 a:visited,
+  h6 a:hover,
+  h6 a:active,
+  h6 a:visited { color: #0064A0 !important; }
+  
+  .masthead {
+    background: #0064A0;
+  }
+  .dateline {
+    background: #005587;
+  }
+  .colophon {
+
+  }
+
+  .masthead h1 { font-size: 42px; font-weight: normal; color: #ffffff; }
+  .masthead h5 { font-size: 12px; font-weight: normal; color: #ffffff; }
+
+  .title { /*color: #64964B;*/ /*color: #005587;*/ }
+
+  .subtitle { color: #3c763d; /*color: #005587;*/ font-size: 22px; }
+
+  /* Deemphasize some text */
+  /*.post p,*/
+  .sidebar p
+  .sidebar ul { color: #444444; }
+
+	/* Ink headings are little big */
+	h1 {font-size: 30px;}
+	h2 {font-size: 26px;}
+	h3 {font-size: 24px;}
+	h4 {font-size: 22px;}
+	h5 {font-size: 18px;}
+	h6 {font-size: 16px;}
+
+	/* Lighten headlines */
+	h1,
+  h1 a,
+  h2 { color: #468847; } 
+  h3 { color: #222222; }
+  h4,
+  h5,
+  h6 { color: #444444; }
+
+  .sidebar { border: 1px solid #005587; padding-top: 10px !important; }
+  .sidebar .subtitle { color: #ffffff; background: #005587; text-align:center; }
+  .sidebar.subtitle { background: #005587; }
+	/* Sidebar Headlines */
+
+  .sidebar h1,
+  .sidebar h2,
+  .sidebar h3,
+  .sidebar h4,
+  .sidebar h5,
+  .sidebar h6 {  }
+  
+  .sidebar h1,
+  .sidebar h2,
+  .sidebar h3,
+  .sidebar h4 { text-align: center; margin-bottom: 4px; }
+
+  .sidebar h2.subtitle { margin:0; }
+
+  .sidebar h3 { border: 1px solid #64964B; color: #468847; background: #dff0d8; padding: 4px 0; }
+  .sidebar h4 { color: #005587; }
+
+  .sidebar h1 {font-size: 22px;}
+	.sidebar h2 {font-size: 22px;}
+	.sidebar h3 {font-size: 22px;}
+	.sidebar h4 {font-size: 18px;}
+	.sidebar h5 {font-size: 16px;}
+	.sidebar h6 {font-size: 14px;}
+	.sidebar p,
+  .sidebar ul {font-size: 12px;}
+
+	/* Buttons */
+  table.spokanelibrary td {
+    background: #0064A0;
+    background: #468847;
+    border: 1px solid #005587;
+  }
+  table.spokanelibrary:hover td {
+    background: #005587 !important;
+  }
+
+  table.spokanelibrary td.button a:hover,
+  table.spokanelibrary td.button a:active,
+  table.spokanelibrary td.button a:visited,
+  table.spokanelibrary td.tiny-button a:hover,
+  table.spokanelibrary td.tiny-button a:active,
+  table.spokanelibrary td.tiny-button a:visited,
+  table.spokanelibrary td.small-button a:hover,
+  table.spokanelibrary td.small-button a:active,
+  table.spokanelibrary td.small-button a:visited,
+  table.spokanelibrary td.medium-button a:hover,
+  table.spokanelibrary td.medium-button a:active,
+  table.spokanelibrary td.medium-button a:visited,
+  table.spokanelibrary td.large-button a:hover,
+  table.spokanelibrary td.large-button a:active,
+  table.spokanelibrary td.large-button a:visited {
+    color: #f2f2f2 !important;
+  }
+
+  .post ul li {
+    padding-bottom: 6px;
+  }
+
+	.post table.button td,
+  .post table.tiny-button td,
+  .post table.small-button td,
+  .post table.medium-button td,
+  .post table.large-button td {
+		/*
+    background: #64964b;
+		border: 1px solid #598542;
+    */
+    background: #f2f2f2;
+    border: 1px solid #005587;
+	}
+
+  .post table.button td a,
+  .post table.tiny-button td a,
+  .post table.small-button td a,
+  .post table.medium-button td a,
+  .post table.large-button td a {
+    color: #005587;
+  }
+
+  .post table.button td a:hover,
+  .post table.tiny-button td a:hover,
+  .post table.small-button td a:hover,
+  .post table.medium-button td a:hover,
+  .post table.large-button td a:hover,
+  .post table.button td a:active,
+  .post table.tiny-button td a:active,
+  .post table.small-button td a:active,
+  .post table.medium-button td a:active,
+  .post table.large-button td a:active,
+  .post table.button td a:visited,
+  .post table.tiny-button td a:visited,
+  .post table.small-button td a:visited,
+  .post table.medium-button td a:visited,
+  .post table.large-button td a:visited  {
+    color: #0064A0 !important;
+  }
+  
+
+  /* Lists */
+  ul { font-size: 14px; /*margin: 10px 10px 10px 24px; padding: 0;*/ /*margin:0;*/ /*padding: 10px 10px 10px 20px;*/ /*list-style-position: outside;*/ }
+  .sidebar ul { list-style: none !important; margin-left: 6px; padding: 2px 0; }
+  .sidebar ul li { padding-bottom: 2px; }
+
+	/* Custom */
+	.white { color: #ffffff; }
+  .muted { color: #666666; }
+  /*.highlight { color: #005587 !important; }*/
+	.warning { background-color: #fefbed !important; border-color: #f1e7bc !important; }
+  .prepend p { border-bottom: 1px solid #ccc; padding: 10px; }
+
+
+	/* Utilities */
+	.transparent { background-color: transparent !important; }
+	.text-right { text-align: right; }
+	.serif { font-family: Georgia, "Times New Roman", Times, serif; }
+	.condensed { margin:0; padding:0; line-height:1; }
+  .small { font-size: 12px; }
+  .clearleft { clear: left; }
+  .clearright { clear: right; }
+  .clearboth { clear: both; }
+
+  /* WordPress and Bootstrap specific */
+  .wp-caption { display:inline-block; color: #666666; font-size: 12px; }
+
+	.alignnone {  margin-bottom: 10px; }
+	.aligncenter { margin: auto; margin-bottom:10px; } /* doesn't really work */
+
+	.alignright { float: right; /*margin-left: 10px;*/ padding-left: 10px; }
+  .alignleft { float: left; /*margin-right: 10px;*/ padding-right: 10px; }
+  
+  /*
+  .alignright img, .alignleft img { clear: both; }
+  */
+
+	.wp-caption-text {  /*float:none; clear:both; display:block;*/ font-style: italic; }
+
+	.img-responsive { /*max-width: 100%;*/ }
+
+
+
+
+
+
+
+	
