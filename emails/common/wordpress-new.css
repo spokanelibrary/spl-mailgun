@@ -249,8 +249,8 @@ h4.hero-brand {
   border: 1px solid #f5961e;  
   background:rgb(170,215,240); 
   color: rgb(115,80,160);
-  margin: 40px 4px 10px 4px !important;
-  padding: 3px;
+  margin: 40px 1px 10px 1px !important;
+  padding: 4px 0px;
 } 
 
 li { padding-bottom: 6px; }
