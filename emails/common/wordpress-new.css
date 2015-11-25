@@ -161,9 +161,7 @@
 
   ul li {
     mso-line-height-rule: exactly;
-    line-height: 150% !important;
-    padding-bottom: 10px !important;
-    margin-bottom: 10px !important;
+    line-height: 200% !important;
     color: red;
   }
 
