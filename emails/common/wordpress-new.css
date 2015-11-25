@@ -161,7 +161,7 @@
 
   .post ul li {
     padding-bottom: 6px;
-    line-height: 130%;
+    line-height: 130% !important;
   }
 
 	.post table.button td,
