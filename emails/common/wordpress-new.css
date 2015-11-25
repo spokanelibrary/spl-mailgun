@@ -11,7 +11,7 @@
 
   /* Underline anchors */
   a {
-    text-decoration: none !important;
+    text-decoration: underline;
   }
 
   /* Reset button hovers */
