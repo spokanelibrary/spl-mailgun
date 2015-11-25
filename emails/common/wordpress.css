@@ -11,9 +11,9 @@
 
   /* Underline anchors */
   a {
-  text-decoration: none;
+    text-decoration: none !important;
   }
-  
+
   /* Reset button hovers */
   .button a:hover,
   .tiny-button a:hover,
