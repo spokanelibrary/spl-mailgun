@@ -9,6 +9,11 @@
 
   small { line-height: 1em; font-size: 11px; }
 
+  /* Underline anchors */
+  a {
+  text-decoration: none;
+  }
+  
   /* Reset button hovers */
   .button a:hover,
   .tiny-button a:hover,
