@@ -259,9 +259,10 @@ li { padding-bottom: 6px; }
   display: inline-block;
 }
 
-.nav-pills li a {
-  display: inline-block;
-  margin: 10px;
+ul.nav-pills li a {
+  display: inline-block !important;
+  margin: 10px !important;
+  padding: 10px !important;
 }
 
 
