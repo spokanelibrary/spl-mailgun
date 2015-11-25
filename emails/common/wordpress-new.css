@@ -159,9 +159,9 @@
     color: #f2f2f2 !important;
   }
 
-  ul {
+  ul li {
     mso-line-height-rule: exactly;
-    line-height: 130% !important;
+    line-height: 150% !important;
   }
 
 	.post table.button td,
