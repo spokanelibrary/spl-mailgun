@@ -172,7 +172,7 @@ class SPL_Mailgun_Newsletter {
           }
           //$excerpt .= '<p><a class="" href="'.get_the_permalink($q->post->ID).'">Read more &rarr;</a></p>';
           $excerpt .= '<p>';
-          $excerpt .= ' &nbsp; <a class="" href="'.get_the_permalink($q->post->ID).'"><b>Continued</b></a> <small class="text-muted">&rarr;</small>';
+          $excerpt .= ' &nbsp; <i class="glyphicon glyphicon-share text-muted"></i> <a class="" href="'.get_the_permalink($q->post->ID).'"><b>Continued</b></a> <small class="text-muted">&rarr;</small>';
           $excerpt .= '</p>';
           //if ( has_post_thumbnail() ) { 
             $img = wp_get_attachment_image_src(get_post_thumbnail_id($q->post->ID), 'medium');
