@@ -152,7 +152,7 @@
                         <tr>
                           <td>
 
-                            <h3 class="hero-brand">Staff development half-day closure notice:</h3>
+                            <h3 class="hero-brand">Half-day closure notice</h3>
                               <p>
                                 Our annual staff development day is Thursday, September 15.
                               </p>
