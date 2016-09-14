@@ -151,6 +151,13 @@
                       <table class="twelve columns">
                         <tr>
                           <td>
+
+                            <b>Staff development half-day closure notice:</b>
+
+                            <b>All locations will open at 1pm on Thursday, September 15.</b>
+
+                            <hr>
+
                             <h1 class="title">
                               <a href="<?php echo $link; ?>"><span class=""><?php echo $title; ?></span></a>
                             </h1>
