@@ -154,7 +154,10 @@
 
                             <h3 class="hero-brand">Staff development half-day closure notice:</h3>
                               <p>
-                                <b>Notice:</b> All locations will open at 1pm on Thursday, September 15.
+                                Our annual staff development day is Thursday, September 15.
+                              </p>
+                              <p>
+                                <b>Please note:</b> All locations will open at <b>1pm</b> on Thursday, September 15.
                               </p>
                               <p>&nbsp;</p>
                             <hr>
