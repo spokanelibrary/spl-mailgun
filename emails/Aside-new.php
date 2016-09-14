@@ -152,14 +152,11 @@
                         <tr>
                           <td>
 
-                            <center>
+                            <h3 class="hero-brand">Staff development half-day closure notice:</h3>
                               <p>
-                                <b>Staff development half-day closure notice:</b>
+                                <b>Notice:</b> All locations will open at 1pm on Thursday, September 15.
                               </p>
-                              <p>
-                                All locations will open at 1pm on Thursday, September 15.
-                              </p>
-                            </center>
+                              <p>&nbsp;</p>
                             <hr>
 
                             <h1 class="title">
