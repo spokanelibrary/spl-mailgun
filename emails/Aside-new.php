@@ -154,7 +154,7 @@
 
                             <center>
                               <p>
-                                <b>Staff development half-day closure notice</b>
+                                <b>Staff development half-day closure notice:</b>
                               </p>
                               <p>
                                 All locations will open at 1pm on Thursday, September 15.
