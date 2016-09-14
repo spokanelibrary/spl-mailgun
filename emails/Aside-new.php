@@ -157,7 +157,7 @@
                                 Our annual staff development day is Thursday, September 15.
                               </p>
                               <p>
-                                <b>Please note:</b> All locations will open at <b>1pm</b> on Thursday, September 15.
+                                <b>Please note:</b> All branches will open at <b>1pm</b> on Thursday, September 15.
                               </p>
                               <p>&nbsp;</p>
                             <hr>
