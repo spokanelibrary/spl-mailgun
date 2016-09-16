@@ -152,16 +152,6 @@
                         <tr>
                           <td>
 
-                            <h3 class="hero-brand">Half-day closure notice</h3>
-                              <p>
-                                Our annual staff development day is Thursday, September 15.
-                              </p>
-                              <p>
-                                <b>Please note:</b> All branches will open at <b>1pm</b> on Thursday, September 15.
-                              </p>
-                              <p>&nbsp;</p>
-                            <hr>
-
                             <h1 class="title">
                               <a href="<?php echo $link; ?>"><span class=""><?php echo $title; ?></span></a>
                             </h1>
